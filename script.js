@@ -75,9 +75,9 @@
 
     /* 5. Revelado suave al hacer scroll ---------------------------- */
     const revealTargets = document.querySelectorAll(
-      '.section-head, .statement-lead, .statement-main, .hero-copy, ' +
-      '.card, .benefits li, .about-photo, .about-text, .step, ' +
-      '.faq-item, .contact-intro, .contact-form'
+      '.section-head, .statement-main, .statement-support, .group-label, ' +
+      '.card, .benefits li, .inline-cta, .step, .resource, ' +
+      '.about-photo, .about-text, .faq-item, .contact-intro, .contact-form'
     );
 
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
