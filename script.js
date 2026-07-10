@@ -77,7 +77,7 @@
     const revealTargets = document.querySelectorAll(
       '.section-head, .statement-main, .statement-support, .group-label, ' +
       '.card, .benefits li, .inline-cta, .step, .resource, ' +
-      '.about-photo, .about-text, .faq-item, .contact-intro, .contact-form'
+      '.about-aside, .about-text, .faq-item, .contact-intro, .contact-form'
     );
 
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
