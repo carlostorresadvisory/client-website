@@ -59,9 +59,9 @@
 
     /* 5. Revelado suave -------------------------------------------- */
     var revealTargets = document.querySelectorAll(
-      '.section-head, .statement-main, .statement-support, .group-label, .card, ' +
-      '.beyond-lead, .beyond-list, .process-block, .about-aside, .about-text, ' +
-      '.faq-item, .contact-intro, .contact-form'
+      '.section-head, .card, .about-aside, .about-text, .statement-main, ' +
+      '.statement-support, .process-title, .timeline-v li, .myth, .faq-item, ' +
+      '.contact-intro, .contact-form'
     );
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
       revealTargets.forEach(function (el) { el.classList.add('reveal', 'is-visible'); });
