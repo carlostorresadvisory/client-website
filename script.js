@@ -60,7 +60,7 @@
     /* 5. Revelado suave -------------------------------------------- */
     var revealTargets = document.querySelectorAll(
       '.section-head, .card, .about-aside, .about-text, .statement-main, ' +
-      '.statement-support, .process-title, .timeline-v li, .myth, .faq-item, ' +
+      '.statement-support, .proc-aside, .timeline-v li, .continuity, .faq-item, ' +
       '.contact-intro, .contact-form'
     );
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
