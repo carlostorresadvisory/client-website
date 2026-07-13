@@ -174,20 +174,20 @@
 })();
 
 /* ============================================================
-   Conmutador de audiencia · vendedor / comprador
-   Intercambia el contenido marcado con [data-swap] a partir del
-   JSON embebido en #mode-data. Sin recarga. El contenido "sell"
-   es el que ya está en el HTML (accesible y para SEO).
+   Selector de perspectiva · Empresario (sell) / Comprador (buy)
+   Intercambia el contenido [data-swap] a partir del JSON de
+   #mode-data, sin recarga. El contenido "sell" vive en el HTML
+   (accesible y para SEO); el "buy" se aplica al cambiar de modo.
    ============================================================ */
 (function () {
-  var toggle = document.getElementById('mode-toggle');
+  var opts = document.querySelectorAll('.mode-opt[data-set-mode]');
   var dataEl = document.getElementById('mode-data');
-  if (!toggle || !dataEl) return;
+  if (!opts.length || !dataEl) return;
 
   var buy;
   try { buy = JSON.parse(dataEl.textContent); } catch (e) { return; }
 
-  var sellCache = {};   // guarda el HTML original (vendedor) la primera vez
+  var sellCache = {};
   var nodes = document.querySelectorAll('[data-swap]');
 
   function apply(mode) {
@@ -201,11 +201,17 @@
       }
     });
     document.body.setAttribute('data-mode', mode);
-    toggle.setAttribute('aria-pressed', mode === 'buy' ? 'true' : 'false');
+    opts.forEach(function (o) {
+      var active = o.getAttribute('data-set-mode') === mode;
+      o.classList.toggle('is-active', active);
+      o.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
   }
 
-  toggle.addEventListener('click', function () {
-    var next = document.body.getAttribute('data-mode') === 'buy' ? 'sell' : 'buy';
-    apply(next);
+  opts.forEach(function (o) {
+    o.addEventListener('click', function () {
+      var mode = o.getAttribute('data-set-mode');
+      if (mode !== document.body.getAttribute('data-mode')) apply(mode);
+    });
   });
 })();
