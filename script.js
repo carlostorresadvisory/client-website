@@ -59,9 +59,9 @@
 
     /* 5. Revelado suave -------------------------------------------- */
     var revealTargets = document.querySelectorAll(
-      '.section-head, .card, .about-aside, .about-text, .statement-main, ' +
-      '.statement-support, .proc-aside, .timeline-v li, .continuity, .faq-item, ' +
-      '.contact-intro, .contact-form'
+      '.section-head, .card, .about-aside, .about-text, .case-aside, .case-steps li, ' +
+      '.statement-main, .statement-support, .proc-aside, .timeline-v li, .continuity, ' +
+      '.faq-item, .contact-intro, .contact-form'
     );
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
       revealTargets.forEach(function (el) { el.classList.add('reveal', 'is-visible'); });
@@ -105,12 +105,23 @@
       submitBtn.disabled = on;
     };
 
+    var M = {
+      name:   form.getAttribute('data-msg-name')   || 'Indique su nombre.',
+      email:  form.getAttribute('data-msg-email')  || 'Indique su correo electrónico.',
+      email2: form.getAttribute('data-msg-email2') || 'Compruebe el correo electrónico.',
+      msg:    form.getAttribute('data-msg-msg')    || 'Escriba unas líneas sobre su situación.',
+      review: form.getAttribute('data-msg-review') || 'Revise los campos marcados.',
+      sending:form.getAttribute('data-msg-sending')|| 'Enviando su mensaje…',
+      ok:     form.getAttribute('data-msg-ok')     || 'Gracias. He recibido su mensaje y le responderé personalmente.',
+      error:  form.getAttribute('data-msg-error')  || 'No se pudo enviar. Escríbame a carlostorresadvisory@gmail.com y lo resolvemos.'
+    };
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
       // Honeypot: si está relleno, es un bot. Fingimos éxito y no enviamos.
       var honey = form.querySelector('input[name="_honey"]');
-      if (honey && honey.value) { setStatus('Gracias. Le responderé lo antes posible.', 'ok'); form.reset(); return; }
+      if (honey && honey.value) { setStatus(M.ok, 'ok'); form.reset(); return; }
 
       var data = {
         nombre: form.nombre.value.trim(),
@@ -121,19 +132,19 @@
       setStatus('');
 
       var firstInvalid = null;
-      if (!data.nombre) { setError('nombre', 'Indique su nombre.'); firstInvalid = firstInvalid || 'nombre'; }
-      if (!data.email) { setError('email', 'Indique su correo electrónico.'); firstInvalid = firstInvalid || 'email'; }
-      else if (!isEmail(data.email)) { setError('email', 'Compruebe el correo electrónico.'); firstInvalid = firstInvalid || 'email'; }
-      if (!data.mensaje) { setError('mensaje', 'Escriba unas líneas sobre su situación.'); firstInvalid = firstInvalid || 'mensaje'; }
+      if (!data.nombre) { setError('nombre', M.name); firstInvalid = firstInvalid || 'nombre'; }
+      if (!data.email) { setError('email', M.email); firstInvalid = firstInvalid || 'email'; }
+      else if (!isEmail(data.email)) { setError('email', M.email2); firstInvalid = firstInvalid || 'email'; }
+      if (!data.mensaje) { setError('mensaje', M.msg); firstInvalid = firstInvalid || 'mensaje'; }
       if (firstInvalid) {
         var el = form.querySelector('#' + firstInvalid);
         if (el) el.focus();
-        setStatus('Revise los campos marcados.', 'error');
+        setStatus(M.review, 'error');
         return;
       }
 
       setLoading(true);
-      setStatus('Enviando su mensaje…');
+      setStatus(M.sending);
 
       fetch(form.action, {
         method: 'POST',
@@ -144,14 +155,14 @@
       }).then(function (r) {
         setLoading(false);
         if (r.ok) {
-          setStatus('Gracias. He recibido su mensaje y le responderé personalmente.', 'ok');
+          setStatus(M.ok, 'ok');
           form.reset();
         } else {
-          setStatus('No se pudo enviar. Escríbame a carlostorresadvisory@gmail.com y lo resolvemos.', 'error');
+          setStatus(M.error, 'error');
         }
       }).catch(function () {
         setLoading(false);
-        setStatus('No se pudo enviar. Escríbame a carlostorresadvisory@gmail.com y lo resolvemos.', 'error');
+        setStatus(M.error, 'error');
       });
     });
 

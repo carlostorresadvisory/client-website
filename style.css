@@ -14,7 +14,7 @@
   --accent:#3A5A82;--accent-l:#A7BAD2;
   --serif:"Newsreader",Georgia,"Times New Roman",serif;
   --sans:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-  --wrap:1200px;--gutter:clamp(1.25rem,5vw,3.5rem);--section-y:clamp(5.5rem,10vw,9.5rem);
+  --wrap:1280px;--gutter:clamp(1.25rem,5vw,4rem);--section-y:clamp(5.5rem,10vw,9.5rem);
   --ease:cubic-bezier(0.22,0.61,0.36,1);
 }
 
@@ -79,6 +79,12 @@ a{color:inherit;text-decoration:none;}
 .header-phone{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.9rem;font-weight:500;color:var(--ink);transition:color 0.2s var(--ease);}
 .header-phone .phone-ico{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
 .header-phone:hover{color:var(--accent);}
+.lang-switch{display:inline-flex;align-items:center;font-size:0.8rem;letter-spacing:0.04em;}
+.lang-switch a{color:var(--muted-2);transition:color 0.2s var(--ease);}
+.lang-switch a:hover{color:var(--ink);}
+.lang-switch a.is-current{color:var(--ink);font-weight:600;}
+.lang-switch a:not(:last-child){margin-right:0.5rem;}
+.lang-switch a:not(:last-child)::after{content:"·";color:var(--line-2);margin-left:0.5rem;}
 .nav-toggle{display:none;align-items:center;gap:0.5rem;background:none;border:none;cursor:pointer;font-family:var(--sans);
   font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);padding:0.4rem 0;}
 .nav-toggle-bars{display:inline-grid;gap:5px;}
@@ -93,7 +99,8 @@ a{color:inherit;text-decoration:none;}
 /* 7. Hero ----------------------------------------------------------- */
 .hero{display:flex;align-items:center;min-height:min(72vh,640px);
   padding-top:clamp(3.5rem,8vh,6rem);padding-bottom:clamp(3rem,6vh,5rem);}
-.hero-inner{max-width:760px;}
+.hero .wrap{width:100%;}
+.hero-inner{max-width:820px;margin:0;}
 .hero-eyebrow{font-size:0.74rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin:0 0 1.6rem;}
 .hero-title{font-family:var(--serif);font-weight:300;letter-spacing:-0.012em;font-size:clamp(2.15rem,4.6vw,3.5rem);
   line-height:1.14;margin:0;color:var(--ink);text-wrap:balance;}
@@ -150,6 +157,10 @@ a{color:inherit;text-decoration:none;}
 .process-title{font-family:var(--serif);font-weight:400;font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.2;
   color:var(--ink);margin:0 0 0.85rem;letter-spacing:-0.01em;}
 .proc-aside-note{margin:0;color:var(--muted);font-size:1rem;line-height:1.5;max-width:32ch;}
+.proc-download{display:inline-flex;align-items:center;gap:0.55rem;margin-top:1.5rem;font-size:0.86rem;font-weight:500;
+  color:var(--accent);transition:gap 0.25s var(--ease),color 0.2s var(--ease);}
+.proc-download svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.proc-download:hover{color:var(--ink);gap:0.8rem;}
 
 .timeline-v{list-style:none;margin:0;padding:0;position:relative;max-width:640px;}
 .timeline-v::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--line-2);}
@@ -186,6 +197,17 @@ a{color:inherit;text-decoration:none;}
 .about-facts span{font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted-2);}
 .about-sample{margin:1.5rem 0 0;font-size:0.95rem;font-style:italic;color:var(--muted-2);}
 
+/* 11b. Caso real (anónimo) ------------------------------------------ */
+.section-case{background:var(--paper-3);}
+.case-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start;}
+.case-subject{margin:1.4rem 0 0;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted-2);}
+.case-steps{list-style:none;margin:0;padding:0;display:grid;gap:1.75rem;}
+.case-steps li{display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:start;}
+.case-num{font-family:var(--serif);font-size:1.1rem;color:var(--accent);padding-top:0.1rem;}
+.case-steps h3{font-family:var(--serif);font-weight:400;font-size:1.2rem;margin:0 0 0.35rem;color:var(--ink);line-height:1.25;}
+.case-steps p{margin:0;color:var(--muted);font-size:1rem;line-height:1.6;max-width:54ch;}
+.case-note{margin:2rem 0 0;font-size:0.95rem;font-style:italic;color:var(--muted-2);}
+
 /* 12. Desplegables (guía) ------------------------------------------- */
 .faq{max-width:820px;border-top:1px solid var(--line);}
 .faq-item{border-bottom:1px solid var(--line);}
@@ -209,6 +231,13 @@ a{color:inherit;text-decoration:none;}
 .doc-mini .m-label{font-size:0.68rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);}
 .doc-mini .m-items{color:var(--muted);font-size:0.96rem;}
 .proc-main .faq{max-width:none;}
+.faq-chips{list-style:none;display:flex;flex-wrap:wrap;gap:0.5rem;margin:0.35rem 0 1.15rem;padding:0;}
+.faq-chips li{font-size:0.82rem;color:var(--ink);background:var(--paper-3);border:1px solid var(--line);border-radius:999px;padding:0.4rem 0.9rem;line-height:1.2;}
+.faq-chips li::before{content:none;}
+.faq-steps{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.55rem;margin:0.35rem 0 1.15rem;padding:0;}
+.faq-steps li{display:inline-flex;align-items:center;gap:0.55rem;font-size:0.88rem;color:var(--muted);padding:0;}
+.faq-steps li::before{content:none;}
+.faq-steps li:not(:last-child)::after{content:"→";color:var(--accent-l);font-size:0.9rem;}
 
 /* 13. Contacto ------------------------------------------------------ */
 .section-contact{background:var(--ink);color:#E9EDF3;}
@@ -272,6 +301,7 @@ a{color:inherit;text-decoration:none;}
   .cards-primary .card.card-cta{grid-column:1/-1;}
   .about-grid,.contact-grid{grid-template-columns:1fr;}
   .about-aside{max-width:340px;}
+  .case-grid{grid-template-columns:1fr;gap:1.75rem;}
   .proc-split{grid-template-columns:1fr;gap:1.4rem;}
   .proc-aside{position:static;top:auto;}
   .proc-aside-note{max-width:52ch;}
@@ -291,6 +321,7 @@ a{color:inherit;text-decoration:none;}
   .nav-menu a{display:block;padding:1rem 0;font-size:1rem;color:var(--ink);}
   .nav-menu a::after{display:none;}
   .nav-actions{flex-direction:column;align-items:stretch;gap:1rem;margin-top:1.25rem;}
+  .lang-switch{justify-content:center;order:3;}
   .header-phone{justify-content:center;font-size:1rem;}
   .nav-actions .btn{width:100%;padding-block:0.9rem;}
   .nav-toggle[aria-expanded="true"] .nav-toggle-bars i:first-child{transform:translateY(3.25px) rotate(45deg);}
