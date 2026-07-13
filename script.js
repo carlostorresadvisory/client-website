@@ -59,8 +59,8 @@
 
     /* 5. Revelado suave -------------------------------------------- */
     var revealTargets = document.querySelectorAll(
-      '.section-head, .card, .about-aside, .about-text, .exp-item, ' +
-      '.statement-main, .statement-support, .proc-aside, .tl-phase, .continuity, ' +
+      '.section-head, .phase, .about-aside, .about-text, .testi, ' +
+      '.statement-main, .statement-support, .tl-phase, .continuity, ' +
       '.faq-item, .contact-intro, .contact-form'
     );
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
@@ -170,5 +170,42 @@
       var field = form.querySelector('#' + name);
       if (field) field.addEventListener('input', function () { setError(name, ''); });
     });
+  });
+})();
+
+/* ============================================================
+   Conmutador de audiencia · vendedor / comprador
+   Intercambia el contenido marcado con [data-swap] a partir del
+   JSON embebido en #mode-data. Sin recarga. El contenido "sell"
+   es el que ya está en el HTML (accesible y para SEO).
+   ============================================================ */
+(function () {
+  var toggle = document.getElementById('mode-toggle');
+  var dataEl = document.getElementById('mode-data');
+  if (!toggle || !dataEl) return;
+
+  var buy;
+  try { buy = JSON.parse(dataEl.textContent); } catch (e) { return; }
+
+  var sellCache = {};   // guarda el HTML original (vendedor) la primera vez
+  var nodes = document.querySelectorAll('[data-swap]');
+
+  function apply(mode) {
+    nodes.forEach(function (el) {
+      var key = el.getAttribute('data-swap');
+      if (mode === 'buy') {
+        if (!(key in sellCache)) sellCache[key] = el.innerHTML;
+        if (buy[key] != null) el.innerHTML = buy[key];
+      } else if (key in sellCache) {
+        el.innerHTML = sellCache[key];
+      }
+    });
+    document.body.setAttribute('data-mode', mode);
+    toggle.setAttribute('aria-pressed', mode === 'buy' ? 'true' : 'false');
+  }
+
+  toggle.addEventListener('click', function () {
+    var next = document.body.getAttribute('data-mode') === 'buy' ? 'sell' : 'buy';
+    apply(next);
   });
 })();
