@@ -59,7 +59,7 @@
 
     /* 5. Revelado suave -------------------------------------------- */
     var revealTargets = document.querySelectorAll(
-      '.section-head, .phase, .about-aside, .about-text, .testi, ' +
+      '.section-head, .phase, .about-aside, .about-text, ' +
       '.statement-main, .statement-support, .tl-phase, .continuity, ' +
       '.faq-item, .contact-intro, .contact-form'
     );
@@ -113,7 +113,7 @@
       review: form.getAttribute('data-msg-review') || 'Revise los campos marcados.',
       sending:form.getAttribute('data-msg-sending')|| 'Enviando su mensaje…',
       ok:     form.getAttribute('data-msg-ok')     || 'Gracias. He recibido su mensaje y le responderé personalmente.',
-      error:  form.getAttribute('data-msg-error')  || 'No se pudo enviar. Escríbame a carlostorresadvisory@gmail.com y lo resolvemos.'
+      error:  form.getAttribute('data-msg-error')  || 'No se pudo enviar. Escríbame a carlostorres@ctadvisory.es y lo resolvemos.'
     };
 
     form.addEventListener('submit', function (e) {
