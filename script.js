@@ -124,15 +124,13 @@
       if (honey && honey.value) { setStatus(M.ok, 'ok'); form.reset(); return; }
 
       var data = {
-        nombre: form.nombre.value.trim(),
         email: form.email.value.trim(),
         mensaje: form.mensaje.value.trim()
       };
-      ['nombre', 'email', 'mensaje'].forEach(function (n) { setError(n, ''); });
+      ['email', 'mensaje'].forEach(function (n) { setError(n, ''); });
       setStatus('');
 
       var firstInvalid = null;
-      if (!data.nombre) { setError('nombre', M.name); firstInvalid = firstInvalid || 'nombre'; }
       if (!data.email) { setError('email', M.email); firstInvalid = firstInvalid || 'email'; }
       else if (!isEmail(data.email)) { setError('email', M.email2); firstInvalid = firstInvalid || 'email'; }
       if (!data.mensaje) { setError('mensaje', M.msg); firstInvalid = firstInvalid || 'mensaje'; }
@@ -166,7 +164,7 @@
       });
     });
 
-    ['nombre', 'email', 'mensaje'].forEach(function (name) {
+    ['email', 'mensaje'].forEach(function (name) {
       var field = form.querySelector('#' + name);
       if (field) field.addEventListener('input', function () { setError(name, ''); });
     });
