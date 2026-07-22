@@ -21,7 +21,7 @@
   --serif:"Newsreader",Georgia,"Times New Roman",serif;
   --sans:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
   --wrap:1520px; --gutter:clamp(1.5rem,5vw,5rem); --section-y:clamp(2.75rem,4.5vw,4.75rem);
-  --header-h:88px; --ease:cubic-bezier(0.22,0.61,0.36,1);
+  --header-h:100px; --ease:cubic-bezier(0.22,0.61,0.36,1);
 }
 
 /* 2 · Base */
@@ -67,7 +67,7 @@ a{color:inherit;text-decoration:none;}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem;min-height:var(--header-h);}
 .brand{display:inline-flex;flex-direction:column;align-items:center;line-height:1;gap:0;text-decoration:none;}
 /* Logotipo en cabecera (imagen original) */
-.brand-logo{height:74px;width:auto;display:block;}
+.brand-logo{height:88px;width:auto;display:block;}
 .nav{display:flex;align-items:center;gap:2.5rem;}
 .nav-menu{list-style:none;display:flex;align-items:center;gap:2.1rem;margin:0;padding:0;}
 .nav-menu a{font-size:0.9rem;color:var(--muted);position:relative;padding-block:0.4rem;transition:color 0.2s var(--ease);}
@@ -206,7 +206,7 @@ a{color:inherit;text-decoration:none;}
 .section-contact .eyebrow{color:var(--accent-l);}
 .section-contact .eyebrow::before{background:var(--accent-l);}
 .section-contact .section-title{color:#fff;}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,7vw,6.5rem);align-items:start;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,7vw,6.5rem);align-items:center;}
 .contact-sub{margin:1.3rem 0 0.6rem;font-size:1.25rem;color:#fff;font-weight:400;}
 .contact-microcopy{margin:0 0 1.4rem;font-size:0.92rem;color:var(--accent-l);}
 .contact-details{list-style:none;margin:0;padding:1.75rem 0 0;border-top:1px solid var(--line-dark);}
@@ -245,7 +245,7 @@ a{color:inherit;text-decoration:none;}
 .site-footer{background:var(--navy);color:#B7C2D2;padding-top:clamp(1.75rem,3vw,2.5rem);padding-bottom:clamp(1.75rem,3vw,2.5rem);}
 .footer-inner{display:grid;grid-template-columns:1.4fr 1fr;gap:2rem 3rem;align-items:start;}
 /* Logotipo en el pie: el mismo PNG de cabecera, pasado a blanco con filtro CSS */
-.footer-logo{display:block;height:110px;width:auto;filter:brightness(0) invert(1);}
+.footer-logo{display:block;height:64px;width:auto;filter:brightness(0) invert(1);}
 
 .footer-nav{display:flex;flex-wrap:wrap;gap:0.4rem 1.5rem;justify-content:flex-end;}
 .footer-nav a{font-size:0.9rem;color:#B7C2D2;transition:color 0.2s var(--ease);}
