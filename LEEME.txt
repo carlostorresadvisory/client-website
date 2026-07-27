@@ -1,5 +1,5 @@
-CT ADVISORY · PAQUETE v12 (refinamiento premium)
-================================================
+CT ADVISORY · PAQUETE v13 (servicios y proceso)
+===============================================
 
 CÓMO SUBIRLO A GITHUB
 ---------------------
@@ -13,11 +13,11 @@ CÓMO SUBIRLO A GITHUB
 IMPORTANTÍSIMO
 --------------
 Hay que subir style.css y script.js SÍ O SÍ, no solo los .html.
-Todo el rediseño vive en style.css y toda la interacción en script.js.
+Todo el diseño vive en style.css y toda la interacción en script.js.
 Si subes los html sin esos dos archivos, la web se verá rota y
-desalineada (es exactamente lo que pasó las dos veces anteriores).
+desalineada (es exactamente lo que pasó en entregas anteriores).
 
-Los .html apuntan a style.css?v=12 y script.js?v=12. Ese ?v=12 obliga
+Los .html apuntan a style.css?v=13 y script.js?v=13. Ese ?v=13 obliga
 al navegador a descargar los archivos nuevos en vez de usar los que
 tiene guardados en caché. Si aun así lo ves antiguo: Ctrl+F5
 (Cmd+Shift+R en Mac).
@@ -26,31 +26,54 @@ QUÉ CONTIENE
 ------------
 - 3 páginas principales:  index.html / index-en.html / index-fr.html
 - 6 páginas legales:      aviso-legal(.-en/-fr) y privacidad(.-en/-fr)
-- style.css  (rediseño completo, sección 20 reescrita)
-- script.js  (fases, indicador deslizante, acordeón animado)
+- style.css  (sección 20 reescrita entera)
+- script.js  (fases, chips, proceso interactivo, acordeón)
 - 4 tipografías .woff2, logo, foto, favicon, og-image, CNAME
 
-QUÉ CAMBIA RESPECTO A v11
+QUÉ CAMBIA RESPECTO A v12
 -------------------------
-- FASES: la navegación ya no es un tab. Es una línea de tiempo con un
-  indicador que se desliza al cambiar de fase, punto marcador por fase
-  y el número grande (01/02/03) con entrada animada. En móvil las tres
-  fases se apilan a ancho completo, con área de toque grande.
-- MENOS TEXTO: los bloques se han recortado y se han quitado las cajas
-  y líneas de las filas. Más aire, menos tabla, más editorial.
-- PREPARAR: todo el discurso gira sobre "tomar decisiones con criterio",
-  no sobre el informe. El precio aparece discreto, sin botón de compra.
-- ACOMPAÑAR: "Dirección financiera externa" encabeza la fase, con un
-  bloque final "IA aplicada" al pie del contenido.
-- CTA POR FASE: cada fase termina con su propio botón contextual.
-- EL PROCESO: línea de tiempo horizontal en escritorio (hilo continuo
-  con puntos) y vertical en móvil. Un título de una palabra por paso.
-- PREGUNTAS: apertura escalonada y el signo "+" gira hasta convertirse
-  en "×" al abrir.
-- CIERRE AZUL: filete fino superior, más aire y flecha con micromovimiento.
-- MICROINTERACCIONES en toda la página, suaves, con easing premium.
-- Se respeta prefers-reduced-motion: si el usuario tiene el sistema en
-  "reducir movimiento", nada se anima.
+1. FUERA EL BOTÓN AZUL DE CADA FASE. El único CTA del bloque es el
+   cierre azul "Empiece por una conversación, no por una decisión".
+   Se dejan de competir dos botones por el mismo clic.
+
+2. FUERA LOS CINCO RÓTULOS (Su situación / Lo que implica / Cómo le
+   ayudo / Servicios / Resultado). Ahora cada fase se lee como una
+   página de revista, en este orden:
+     · una frase grande en serif que dice su situación Y lo que se
+       juega, fundidas en una sola idea;
+     · debajo, en letra pequeña, cómo intervengo;
+     · los servicios;
+     · el resultado, destacado con un filete fino, cerrando la fase.
+   El rótulo desaparece porque la propia frase ya dice de qué habla.
+
+3. LOS SERVICIOS SON AHORA BOTONES. Cada uno es una pastilla con un
+   punto circular en azul acento a la izquierda; al pasar por encima el
+   punto se rellena y la pastilla se levanta. Todas llevan a la
+   conversación (#contacto). Debajo, una línea discreta:
+   "Cualquiera de estos servicios empieza por la misma conversación de
+   30 minutos", para que quede claro que no está comprando nada al
+   pulsar.
+
+4. EL PRECIO VA DENTRO DEL PRIMER SERVICIO. "Diagnóstico financiero |
+   Desde 550 € + IVA", en serif y en gris, separado por un filete. Es
+   el único precio de toda la página y no parece una tienda.
+
+5. LAS FASES SE VEN EN HORIZONTAL TAMBIÉN EN MÓVIL. Tres columnas
+   01 / 02 / 03 con el nombre debajo y el hilo con el indicador que se
+   desliza. En un iPhone SE (375 px) cada columna mide unos 109 px y el
+   área de toque sigue muy por encima del mínimo recomendado.
+
+6. EL PROCESO ES INTERACTIVO Y HACE LAS DOS COSAS:
+     · el hilo se dibuja solo cuando la sección entra en pantalla;
+     · cualquier paso se puede pulsar para fijarlo: su punto se rellena,
+       el texto se oscurece y el hilo se colorea hasta ahí.
+   Horizontal en ordenador, vertical en móvil. También funciona con las
+   flechas del teclado.
+
+7. DE LAS FOTOS QUE ME PASASTE se ha tomado la estructura y el nivel de
+   acabado (pastillas redondeadas, puntos, mucho más aire, jerarquía muy
+   marcada), NO el fondo oscuro ni el dorado. La paleta crema/azul se
+   mantiene intacta, como pediste.
 
 NO se ha tocado el hero, "Sobre mí", la paleta, la tipografía ni la
 identidad visual.
@@ -59,6 +82,10 @@ COMPROBADO
 ----------
 Automáticamente en 3 idiomas x 6 anchos (375 iPhone SE, 390, 768,
 820 iPad, 1024 y 1440) y en los dos modos (vendedor y comprador):
-sin desbordamiento horizontal, botones táctiles por encima del mínimo,
-el © de las páginas legales en una sola línea y todo el interactivo
-funcionando también después de cambiar de modo.
+sin desbordamiento horizontal, las tres fases en una sola fila en
+móvil, todas las pastillas apuntando a #contacto y por encima del
+tamaño táctil mínimo, el precio sólo en la fase 01, el hilo del proceso
+llegando exactamente al punto activo, el proceso respondiendo al clic
+también después de cambiar a modo comprador, el © de las páginas
+legales en una sola línea y sin rastro de los botones ni los rótulos
+antiguos.

@@ -294,3 +294,124 @@
     });
   });
 })();
+
+/* =====================================================================
+   10. El proceso: linea de tiempo interactiva
+   El raton dibuja la linea al entrar en pantalla y cada paso se puede
+   fijar con un clic. La geometria del hilo se mide en pixeles porque los
+   pasos no tienen la misma altura en movil: si se calculara en
+   porcentajes el relleno no acabaria nunca sobre un punto.
+   .track-wrap vive FUERA de [data-swap], asi que sobrevive al cambio de
+   modo; solo los <li> del <ol> se reescriben.
+   ===================================================================== */
+(function () {
+  var wrap = document.querySelector('.track-wrap[data-track]');
+  if (!wrap) return;
+  var ol = wrap.querySelector('.track');
+  if (!ol) return;
+
+  var drawn = false;
+  var wide = window.matchMedia ? window.matchMedia('(min-width:900px)') : null;
+
+  function closest(el, sel) {
+    while (el && el.nodeType === 1) { if (el.matches(sel)) return el; el = el.parentElement; }
+    return null;
+  }
+
+  function measure() {
+    var dots = wrap.querySelectorAll('.track-dot');
+    if (!dots.length) return;
+    var box = wrap.getBoundingClientRect();
+    var horiz = wide ? wide.matches : window.innerWidth >= 900;
+    var pos = [];
+    for (var i = 0; i < dots.length; i++) {
+      var r = dots[i].getBoundingClientRect();
+      pos.push(horiz ? (r.left + r.width / 2) - box.left
+                     : (r.top + r.height / 2) - box.top);
+    }
+    var first = pos[0];
+    var last = pos[pos.length - 1];
+    var act = wrap.querySelector('.track-step.is-active .track-dot');
+    var to = first;
+    if (act) {
+      var ar = act.getBoundingClientRect();
+      to = horiz ? (ar.left + ar.width / 2) - box.left : (ar.top + ar.height / 2) - box.top;
+    }
+    wrap.style.setProperty('--rail-o', first.toFixed(2) + 'px');
+    wrap.style.setProperty('--rail-len', Math.max(0, last - first).toFixed(2) + 'px');
+    wrap.style.setProperty('--fill', drawn ? Math.max(0, to - first).toFixed(2) + 'px' : '0px');
+  }
+
+  function activate(idx) {
+    var steps = wrap.querySelectorAll('.track-step');
+    for (var i = 0; i < steps.length; i++) {
+      var on = steps[i].getAttribute('data-step') === idx;
+      steps[i].classList.toggle('is-active', on);
+      var b = steps[i].querySelector('.track-btn');
+      if (b) b.setAttribute('aria-expanded', on ? 'true' : 'false');
+    }
+    wrap.style.setProperty('--i', String(parseInt(idx, 10) || 0));
+    measure();
+  }
+
+  document.addEventListener('click', function (e) {
+    var btn = closest(e.target, '.track-btn');
+    if (!btn || !wrap.contains(btn)) return;
+    activate(btn.getAttribute('data-step'));
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft' &&
+        e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+    var btn = closest(e.target, '.track-btn');
+    if (!btn || !wrap.contains(btn)) return;
+    var btns = Array.prototype.slice.call(wrap.querySelectorAll('.track-btn'));
+    var i = btns.indexOf(btn);
+    var fwd = (e.key === 'ArrowRight' || e.key === 'ArrowDown');
+    var next = btns[(i + (fwd ? 1 : btns.length - 1)) % btns.length];
+    if (!next) return;
+    e.preventDefault();
+    activate(next.getAttribute('data-step'));
+    next.focus();
+  });
+
+  /* La animacion de trazado se activa por clase: si el JS no llegara a
+     ejecutarse, el rail se ve entero en vez de quedarse a escala 0. */
+  wrap.classList.add('tw-anim');
+  measure();
+
+  function draw() {
+    if (drawn) return;
+    drawn = true;
+    wrap.classList.add('is-drawn');
+    measure();
+  }
+
+  if (window.IntersectionObserver) {
+    var io = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) { draw(); io.disconnect(); }
+      }
+    }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+    io.observe(wrap);
+  } else {
+    draw();
+  }
+
+  var raf = 0;
+  function relayout() {
+    if (raf) return;
+    raf = requestAnimationFrame(function () { raf = 0; measure(); });
+  }
+  window.addEventListener('resize', relayout);
+  if (wide && wide.addEventListener) wide.addEventListener('change', relayout);
+  if (window.ResizeObserver) new ResizeObserver(relayout).observe(ol);
+  if (window.MutationObserver) {
+    new MutationObserver(function () {
+      wrap.style.setProperty('--i', '0');
+      relayout();
+    }).observe(ol, { childList: true });
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(relayout);
+  window.addEventListener('load', relayout);
+})();
