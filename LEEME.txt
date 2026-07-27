@@ -1,5 +1,5 @@
-CT ADVISORY · PAQUETE v11 (rediseño de secciones)
-=================================================
+CT ADVISORY · PAQUETE v12 (refinamiento premium)
+================================================
 
 CÓMO SUBIRLO A GITHUB
 ---------------------
@@ -13,30 +13,52 @@ CÓMO SUBIRLO A GITHUB
 IMPORTANTÍSIMO
 --------------
 Hay que subir style.css y script.js SÍ O SÍ, no solo los .html.
-Todo el rediseño vive en style.css. Si subes los html sin el css,
-la web se verá rota y desalineada (es exactamente lo que pasó la vez
-anterior con el pie de página).
+Todo el rediseño vive en style.css y toda la interacción en script.js.
+Si subes los html sin esos dos archivos, la web se verá rota y
+desalineada (es exactamente lo que pasó las dos veces anteriores).
 
-Los .html apuntan a style.css?v=11. Ese ?v=11 obliga al navegador a
-descargar el css nuevo en vez de usar el que tiene guardado en caché.
-Si aun así lo ves antiguo: Ctrl+F5 (Cmd+Shift+R en Mac).
+Los .html apuntan a style.css?v=12 y script.js?v=12. Ese ?v=12 obliga
+al navegador a descargar los archivos nuevos en vez de usar los que
+tiene guardados en caché. Si aun así lo ves antiguo: Ctrl+F5
+(Cmd+Shift+R en Mac).
 
 QUÉ CONTIENE
 ------------
 - 3 páginas principales:  index.html / index-en.html / index-fr.html
 - 6 páginas legales:      aviso-legal(.-en/-fr) y privacidad(.-en/-fr)
-- style.css  (rediseño completo, sección 20)
-- script.js  (fases por click, acordeón animado)
+- style.css  (rediseño completo, sección 20 reescrita)
+- script.js  (fases, indicador deslizante, acordeón animado)
 - 4 tipografías .woff2, logo, foto, favicon, og-image, CNAME
 
-QUÉ CAMBIA RESPECTO A LO QUE TIENES PUBLICADO
----------------------------------------------
-- SERVICIOS: tres fases (01 Preparar / 02 Ejecutar / 03 Acompañar)
-  navegables con click o tap. Modo comprador: Definir / Analizar / Ejecutar.
-- EL PROCESO: cuatro pasos en línea de tiempo, con hilo y puntos.
-- PREGUNTAS: acordeón con apertura y cierre animados.
-- CONTACTO: bloque de compromisos al cierre.
-- Pie de las páginas legales: el © ya no se parte en dos líneas.
+QUÉ CAMBIA RESPECTO A v11
+-------------------------
+- FASES: la navegación ya no es un tab. Es una línea de tiempo con un
+  indicador que se desliza al cambiar de fase, punto marcador por fase
+  y el número grande (01/02/03) con entrada animada. En móvil las tres
+  fases se apilan a ancho completo, con área de toque grande.
+- MENOS TEXTO: los bloques se han recortado y se han quitado las cajas
+  y líneas de las filas. Más aire, menos tabla, más editorial.
+- PREPARAR: todo el discurso gira sobre "tomar decisiones con criterio",
+  no sobre el informe. El precio aparece discreto, sin botón de compra.
+- ACOMPAÑAR: "Dirección financiera externa" encabeza la fase, con un
+  bloque final "IA aplicada" al pie del contenido.
+- CTA POR FASE: cada fase termina con su propio botón contextual.
+- EL PROCESO: línea de tiempo horizontal en escritorio (hilo continuo
+  con puntos) y vertical en móvil. Un título de una palabra por paso.
+- PREGUNTAS: apertura escalonada y el signo "+" gira hasta convertirse
+  en "×" al abrir.
+- CIERRE AZUL: filete fino superior, más aire y flecha con micromovimiento.
+- MICROINTERACCIONES en toda la página, suaves, con easing premium.
+- Se respeta prefers-reduced-motion: si el usuario tiene el sistema en
+  "reducir movimiento", nada se anima.
 
-NO se ha tocado el hero, "Sobre mí", el formulario ni ningún texto
-de conversión.
+NO se ha tocado el hero, "Sobre mí", la paleta, la tipografía ni la
+identidad visual.
+
+COMPROBADO
+----------
+Automáticamente en 3 idiomas x 6 anchos (375 iPhone SE, 390, 768,
+820 iPad, 1024 y 1440) y en los dos modos (vendedor y comprador):
+sin desbordamiento horizontal, botones táctiles por encima del mínimo,
+el © de las páginas legales en una sola línea y todo el interactivo
+funcionando también después de cambiar de modo.

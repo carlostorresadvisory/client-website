@@ -237,6 +237,9 @@
     for (i = 0; i < panels.length; i++) {
       panels[i].classList.toggle('is-active', panels[i].getAttribute('data-phase') === idx);
     }
+    // indicador deslizante de la linea de tiempo
+    var nav = root.querySelector('.phase-nav');
+    if (nav) nav.style.setProperty('--i', String(parseInt(idx, 10) || 0));
   }
   document.addEventListener('click', function (e) {
     var tab = closest(e.target, '.phase-tab');
