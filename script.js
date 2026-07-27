@@ -61,7 +61,7 @@
     var revealTargets = document.querySelectorAll(
       '.section-head, .phase, .about-aside, .about-text, ' +
       '.statement-main, .statement-support, .tl-phase, .continuity, ' +
-      '.faq-item, .contact-intro, .contact-form'
+      '.track-step, .faq-item, .contact-intro, .contact-form, .contact-trust'
     );
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
       revealTargets.forEach(function (el) { el.classList.add('reveal', 'is-visible'); });
@@ -210,6 +210,84 @@
     o.addEventListener('click', function () {
       var mode = o.getAttribute('data-set-mode');
       if (mode !== document.body.getAttribute('data-mode')) apply(mode);
+    });
+  });
+})();
+
+/* =====================================================================
+   8. Fases de servicios (click/tap) · delegacion de eventos
+   Los contenedores [data-swap] se reescriben al cambiar de modo, asi que
+   no se pueden usar listeners directos sobre los botones.
+   ===================================================================== */
+(function () {
+  function closest(el, sel) {
+    while (el && el.nodeType === 1) { if (el.matches(sel)) return el; el = el.parentElement; }
+    return null;
+  }
+  function activate(root, idx) {
+    var tabs = root.querySelectorAll('.phase-tab');
+    var i;
+    for (i = 0; i < tabs.length; i++) {
+      var on = tabs[i].getAttribute('data-phase') === idx;
+      tabs[i].classList.toggle('is-active', on);
+      tabs[i].setAttribute('aria-selected', on ? 'true' : 'false');
+      tabs[i].setAttribute('tabindex', on ? '0' : '-1');
+    }
+    var panels = root.querySelectorAll('.phase-panel');
+    for (i = 0; i < panels.length; i++) {
+      panels[i].classList.toggle('is-active', panels[i].getAttribute('data-phase') === idx);
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var tab = closest(e.target, '.phase-tab');
+    if (!tab) return;
+    var root = closest(tab, '[data-phases]');
+    if (!root) return;
+    activate(root, tab.getAttribute('data-phase'));
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    var tab = closest(e.target, '.phase-tab');
+    if (!tab) return;
+    var root = closest(tab, '[data-phases]');
+    if (!root) return;
+    var tabs = Array.prototype.slice.call(root.querySelectorAll('.phase-tab'));
+    var i = tabs.indexOf(tab);
+    var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+    if (!next) return;
+    e.preventDefault();
+    activate(root, next.getAttribute('data-phase'));
+    next.focus();
+  });
+
+  /* 9. FAQ: apertura y cierre animados -------------------------------- */
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.addEventListener('click', function (e) {
+    var sm = closest(e.target, '.faq-item > summary');
+    if (!sm) return;
+    var item = sm.parentElement;
+    var ans = item.querySelector('.faq-answer');
+    if (!ans || reduce) return;
+    e.preventDefault();
+    if (item.classList.contains('is-animating')) return;
+    var opening = !item.hasAttribute('open');
+
+    var finish = function (ev) {
+      if (ev.propertyName !== 'height') return;
+      ans.removeEventListener('transitionend', finish);
+      item.classList.remove('is-animating');
+      ans.style.height = '';
+      if (!opening) item.removeAttribute('open');
+    };
+
+    if (opening) item.setAttribute('open', '');
+    item.classList.add('is-animating');
+    ans.style.height = (opening ? 0 : ans.scrollHeight) + 'px';
+    ans.addEventListener('transitionend', finish);
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        ans.style.height = (opening ? ans.scrollHeight : 0) + 'px';
+      });
     });
   });
 })();

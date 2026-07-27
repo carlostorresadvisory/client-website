@@ -1,0 +1,42 @@
+CT ADVISORY · PAQUETE v11 (rediseño de secciones)
+=================================================
+
+CÓMO SUBIRLO A GITHUB
+---------------------
+1. Descomprime este zip. Verás 20 archivos SUELTOS (sin carpetas).
+2. En github.com, entra en el repositorio carlostorresadvisory.github.io
+3. Add file -> Upload files
+4. Arrastra LOS 20 ARCHIVOS A LA VEZ. No arrastres la carpeta:
+   si arrastras la carpeta, GitHub crea un subdirectorio y la web se rompe.
+5. Commit changes.
+
+IMPORTANTÍSIMO
+--------------
+Hay que subir style.css y script.js SÍ O SÍ, no solo los .html.
+Todo el rediseño vive en style.css. Si subes los html sin el css,
+la web se verá rota y desalineada (es exactamente lo que pasó la vez
+anterior con el pie de página).
+
+Los .html apuntan a style.css?v=11. Ese ?v=11 obliga al navegador a
+descargar el css nuevo en vez de usar el que tiene guardado en caché.
+Si aun así lo ves antiguo: Ctrl+F5 (Cmd+Shift+R en Mac).
+
+QUÉ CONTIENE
+------------
+- 3 páginas principales:  index.html / index-en.html / index-fr.html
+- 6 páginas legales:      aviso-legal(.-en/-fr) y privacidad(.-en/-fr)
+- style.css  (rediseño completo, sección 20)
+- script.js  (fases por click, acordeón animado)
+- 4 tipografías .woff2, logo, foto, favicon, og-image, CNAME
+
+QUÉ CAMBIA RESPECTO A LO QUE TIENES PUBLICADO
+---------------------------------------------
+- SERVICIOS: tres fases (01 Preparar / 02 Ejecutar / 03 Acompañar)
+  navegables con click o tap. Modo comprador: Definir / Analizar / Ejecutar.
+- EL PROCESO: cuatro pasos en línea de tiempo, con hilo y puntos.
+- PREGUNTAS: acordeón con apertura y cierre animados.
+- CONTACTO: bloque de compromisos al cierre.
+- Pie de las páginas legales: el © ya no se parte en dos líneas.
+
+NO se ha tocado el hero, "Sobre mí", el formulario ni ningún texto
+de conversión.
