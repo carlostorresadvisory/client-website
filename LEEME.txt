@@ -1,91 +1,92 @@
-CT ADVISORY · PAQUETE v13 (servicios y proceso)
-===============================================
+CT ADVISORY · v14
+===============================================================
 
-CÓMO SUBIRLO A GITHUB
----------------------
-1. Descomprime este zip. Verás 20 archivos SUELTOS (sin carpetas).
-2. En github.com, entra en el repositorio carlostorresadvisory.github.io
-3. Add file -> Upload files
-4. Arrastra LOS 20 ARCHIVOS A LA VEZ. No arrastres la carpeta:
-   si arrastras la carpeta, GitHub crea un subdirectorio y la web se rompe.
-5. Commit changes.
+IMPORTANTISIMO
+---------------------------------------------------------------
+Suba TODOS los archivos de esta carpeta, no solo los .html.
 
-IMPORTANTÍSIMO
---------------
-Hay que subir style.css y script.js SÍ O SÍ, no solo los .html.
-Todo el diseño vive en style.css y toda la interacción en script.js.
-Si subes los html sin esos dos archivos, la web se verá rota y
-desalineada (es exactamente lo que pasó en entregas anteriores).
+Si sube los .html pero NO sube style.css y script.js, la web se
+vera rota: sin rejilla de servicios, sin linea de tiempo en el
+proceso y con el formulario descolocado. Es el fallo mas comun.
 
-Los .html apuntan a style.css?v=13 y script.js?v=13. Ese ?v=13 obliga
-al navegador a descargar los archivos nuevos en vez de usar los que
-tiene guardados en caché. Si aun así lo ves antiguo: Ctrl+F5
-(Cmd+Shift+R en Mac).
+Los tres archivos que SIEMPRE tienen que ir juntos son:
 
-QUÉ CONTIENE
-------------
-- 3 páginas principales:  index.html / index-en.html / index-fr.html
-- 6 páginas legales:      aviso-legal(.-en/-fr) y privacidad(.-en/-fr)
-- style.css  (sección 20 reescrita entera)
-- script.js  (fases, chips, proceso interactivo, acordeón)
-- 4 tipografías .woff2, logo, foto, favicon, og-image, CNAME
+    index.html   (y sus versiones -en y -fr)
+    style.css
+    script.js
 
-QUÉ CAMBIA RESPECTO A v12
--------------------------
-1. FUERA EL BOTÓN AZUL DE CADA FASE. El único CTA del bloque es el
-   cierre azul "Empiece por una conversación, no por una decisión".
-   Se dejan de competir dos botones por el mismo clic.
+Esta version cambia el numero de cache a ?v=14 dentro del HTML.
+Ese numero es el que obliga al navegador a descargar la hoja de
+estilos nueva. Si el HTML pide ?v=14 y usted no ha subido el
+style.css nuevo, el navegador pedira un archivo que no existe
+todavia con ese contenido y se quedara con el viejo.
 
-2. FUERA LOS CINCO RÓTULOS (Su situación / Lo que implica / Cómo le
-   ayudo / Servicios / Resultado). Ahora cada fase se lee como una
-   página de revista, en este orden:
-     · una frase grande en serif que dice su situación Y lo que se
-       juega, fundidas en una sola idea;
-     · debajo, en letra pequeña, cómo intervengo;
-     · los servicios;
-     · el resultado, destacado con un filete fino, cerrando la fase.
-   El rótulo desaparece porque la propia frase ya dice de qué habla.
 
-3. LOS SERVICIOS SON AHORA BOTONES. Cada uno es una pastilla con un
-   punto circular en azul acento a la izquierda; al pasar por encima el
-   punto se rellena y la pastilla se levanta. Todas llevan a la
-   conversación (#contacto). Debajo, una línea discreta:
-   "Cualquiera de estos servicios empieza por la misma conversación de
-   30 minutos", para que quede claro que no está comprando nada al
-   pulsar.
+COMO SUBIRLO (GitHub)
+---------------------------------------------------------------
+1. Entre en su repositorio en github.com.
+2. Boton "Add file" > "Upload files".
+3. Arrastre los 21 archivos de esta carpeta de golpe.
+   (Puede arrastrar la carpeta entera; GitHub la desempaqueta.)
+4. Abajo, en el mensaje del commit, escriba: v14
+5. "Commit changes".
+6. Espere 1-2 minutos y abra www.ctadvisory.es.
+7. Si ve algo raro, recargue con Ctrl+F5 (Cmd+Shift+R en Mac).
 
-4. EL PRECIO VA DENTRO DEL PRIMER SERVICIO. "Diagnóstico financiero |
-   Desde 550 € + IVA", en serif y en gris, separado por un filete. Es
-   el único precio de toda la página y no parece una tienda.
+El archivo CNAME tiene que subirse tambien: es el que mantiene
+el dominio www.ctadvisory.es apuntando a la pagina.
 
-5. LAS FASES SE VEN EN HORIZONTAL TAMBIÉN EN MÓVIL. Tres columnas
-   01 / 02 / 03 con el nombre debajo y el hilo con el indicador que se
-   desliza. En un iPhone SE (375 px) cada columna mide unos 109 px y el
-   área de toque sigue muy por encima del mínimo recomendado.
 
-6. EL PROCESO ES INTERACTIVO Y HACE LAS DOS COSAS:
-     · el hilo se dibuja solo cuando la sección entra en pantalla;
-     · cualquier paso se puede pulsar para fijarlo: su punto se rellena,
-       el texto se oscurece y el hilo se colorea hasta ahí.
-   Horizontal en ordenador, vertical en móvil. También funciona con las
-   flechas del teclado.
+QUE CAMBIA EN LA v14
+---------------------------------------------------------------
+Todo lo que cambia esta en tres sitios: servicios, proceso y
+contacto. Ni el hero, ni "Sobre mi", ni los colores, ni las
+tipografias se han tocado.
 
-7. DE LAS FOTOS QUE ME PASASTE se ha tomado la estructura y el nivel de
-   acabado (pastillas redondeadas, puntos, mucho más aire, jerarquía muy
-   marcada), NO el fondo oscuro ni el dorado. La paleta crema/azul se
-   mantiene intacta, como pediste.
+CONTACTO
+  · Fuera el bloque "Como trabajo" entero. Menos lineas y el
+    formulario entra antes en pantalla.
+  · Los campos son ahora recuadros con borde, del mismo ancho y
+    alineados entre si. Se ve donde hay que escribir.
+  · Fuera la linea divisoria que sobraba encima de los datos.
 
-NO se ha tocado el hero, "Sobre mí", la paleta, la tipografía ni la
-identidad visual.
+SERVICIOS
+  · Cada pestaña (Preparar / Ejecutar / Acompañar) lleva debajo
+    una promesa corta que dice que gana usted si pulsa ahi.
+  · Los servicios son pastillas alineadas en rejilla de dos
+    columnas. Antes iban sueltas y de anchos distintos.
+  · El precio sale de dentro de la pastilla: ahora va en letra
+    pequeña gris debajo de la lista, y SOLO en Preparar, que es
+    la unica fase con precio de entrada.
+  · "IA aplicada" deja de ser un bloque de texto gris y pasa a
+    ser un servicio mas, en las dos versiones de la pagina.
+    Sustituye a "Preparacion para una futura venta".
+  · La invitacion de los 30 minutos aparece UNA sola vez, al pie
+    de la seccion, en vez de repetirse en cada fase.
+  · El texto habla del beneficio para usted, no de mi: "Recibira",
+    "Tendra", "Dispondra", "Sabra".
+  · La frase de apertura de "Acompañar" ya no ataca: describe el
+    momento en que hace falta criterio financiero, sin decirle a
+    nadie lo que le falta.
 
-COMPROBADO
-----------
-Automáticamente en 3 idiomas x 6 anchos (375 iPhone SE, 390, 768,
-820 iPad, 1024 y 1440) y en los dos modos (vendedor y comprador):
-sin desbordamiento horizontal, las tres fases en una sola fila en
-móvil, todas las pastillas apuntando a #contacto y por encima del
-tamaño táctil mínimo, el precio sólo en la fase 01, el hilo del proceso
-llegando exactamente al punto activo, el proceso respondiendo al clic
-también después de cambiar a modo comprador, el © de las páginas
-legales en una sola línea y sin rastro de los botones ni los rótulos
-antiguos.
+PROCESO
+  · Los numeros 01-04 SON la linea de tiempo. Se acabaron los
+    puntos sueltos y desalineados.
+  · Los cuatro titulos estan siempre visibles. El texto largo,
+    solo el del paso que usted pulse.
+  · En movil la linea es vertical y los numeros son los nodos.
+  · La linea se pinta sola al entrar la seccion en pantalla.
+
+
+PENDIENTE EN SU LADO (no depende de mi)
+---------------------------------------------------------------
+1. Confirmar con su gestoria si es sujeto obligado de la Ley
+   10/2010 de prevencion de blanqueo.
+2. Conectar Cal.com con sus calendarios y activar
+   "Check for conflicts", o el boton de reserva dara horas que
+   usted no tiene libres.
+3. Activar FormSubmit: envie un mensaje de prueba desde la web,
+   confirme el correo que le llegara, y despues sustituya su
+   direccion por el alias aleatorio que le da FormSubmit. Si no
+   lo hace, su correo queda visible en el codigo de la pagina.
+4. Subir esta carpeta ENTERA, incluidos style.css y script.js.

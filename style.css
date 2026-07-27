@@ -334,9 +334,9 @@ a{color:inherit;text-decoration:none;}
 .footer-nav .footer-sep{color:#4A5A75;}
 
 /* =====================================================================
-   20 · REDISEÑO 2026 · v13 editorial · mobile first
-   Fases (horizontal en todos los anchos, sin rótulos, servicios clicables)
-   Proceso interactivo · FAQ · Contacto · Microinteracciones · Correcciones
+   20 · REDISEÑO 2026 · v14 · mobile first
+   Fases (horizontal en todos los anchos, servicios en rejilla)
+   Proceso: los números SON la línea · FAQ · Contacto con recuadros
    ===================================================================== */
 
 /* --- 20.1 Fases · línea de tiempo horizontal (móvil y escritorio) ----- */
@@ -348,7 +348,7 @@ a{color:inherit;text-decoration:none;}
   transform:translateX(calc(var(--i,0) * 100%));transition:transform 0.5s var(--ease);}
 
 .phase-tab{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:0.42rem;
-  width:100%;min-height:64px;margin:0;padding:1.35rem 0.55rem 0.4rem 0;
+  width:100%;min-height:64px;margin:0;padding:1.35rem 0.55rem 0.9rem 0;
   border:0;background:none;font:inherit;text-align:left;cursor:pointer;
   -webkit-tap-highlight-color:transparent;appearance:none;}
 .phase-tab-mark{position:absolute;left:0;top:-5px;width:9px;height:9px;border-radius:50%;
@@ -357,11 +357,20 @@ a{color:inherit;text-decoration:none;}
 .phase-tab.is-active .phase-tab-mark{background:var(--ink);border-color:var(--ink);transform:scale(1);}
 .phase-tab-num{font-family:var(--sans);font-size:0.68rem;font-weight:500;letter-spacing:0.16em;
   color:var(--muted-2);transition:color 0.35s var(--ease);}
-.phase-tab-name{font-family:var(--serif);font-weight:400;font-size:clamp(0.92rem,3.4vw,1.3rem);
-  line-height:1.14;letter-spacing:-0.005em;color:var(--muted);
+/* el nombre en azul, no en gris: tiene que leerse como algo que se pulsa */
+.phase-tab-name{position:relative;font-family:var(--serif);font-weight:400;
+  font-size:clamp(0.92rem,3.4vw,1.3rem);line-height:1.14;letter-spacing:-0.005em;color:var(--navy);
   overflow-wrap:break-word;hyphens:auto;transition:color 0.35s var(--ease);}
+.phase-tab-name::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1px;
+  background:var(--accent);transition:right 0.4s var(--ease);}
+.phase-tab:hover .phase-tab-name::after{right:0;}
+.phase-tab.is-active .phase-tab-name::after{right:100%;}
+/* la micropromesa: la razón para pulsar. Oculta donde no cabe */
+.phase-tab-say{display:none;font-family:var(--sans);font-size:0.8rem;line-height:1.4;
+  color:var(--muted-2);max-width:22ch;text-wrap:pretty;transition:color 0.35s var(--ease);}
 .phase-tab.is-active .phase-tab-num{color:var(--accent);}
 .phase-tab.is-active .phase-tab-name{color:var(--ink);}
+.phase-tab.is-active .phase-tab-say{color:var(--muted);}
 .phase-tab:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
 
 /* --- 20.1b Paneles --------------------------------------------------- */
@@ -381,113 +390,119 @@ a{color:inherit;text-decoration:none;}
 /* --- 20.1c Cuerpo editorial · sin rótulos ---------------------------- */
 .phase-body{margin-top:clamp(2.5rem,7vw,3rem);}
 
-/* la frase: situación y riesgo fundidos en una sola voz */
 .phase-say{margin:0 0 clamp(1.35rem,3.5vw,1.65rem);font-family:var(--serif);font-weight:300;
   font-size:clamp(1.24rem,4.7vw,1.62rem);line-height:1.36;letter-spacing:-0.013em;
   color:var(--ink);max-width:38ch;text-wrap:pretty;}
-/* cómo le ayudo */
 .phase-help{margin:0;font-size:1rem;line-height:1.68;color:var(--muted);max-width:58ch;text-wrap:pretty;}
 
-/* --- 20.1d Servicios · chips clicables con marcador circular --------- */
+/* --- 20.1d Servicios · rejilla alineada de pastillas clicables -------- */
 .phase-svc{list-style:none;margin:clamp(1.75rem,4.2vw,2.1rem) 0 0;padding:0;
-  display:flex;flex-wrap:wrap;gap:0.55rem;}
-.phase-svc li{margin:0;padding:0;}
-.svc-chip{display:inline-flex;align-items:center;flex-wrap:wrap;gap:0 0.62rem;row-gap:0.1rem;
-  min-height:44px;padding:0.6rem 1.05rem 0.6rem 0.85rem;
+  display:grid;grid-template-columns:1fr;gap:0.5rem;}
+.phase-svc li{margin:0;padding:0;display:flex;}
+.svc-chip{display:flex;align-items:center;gap:0.7rem;width:100%;min-height:48px;
+  padding:0.7rem 1.15rem 0.7rem 0.95rem;
   border:1px solid var(--line-2);border-radius:999px;background:var(--paper-2);
-  font-family:var(--sans);font-weight:400;font-size:0.9rem;line-height:1.3;color:var(--navy);
+  font-family:var(--sans);font-weight:400;font-size:0.9rem;line-height:1.32;color:var(--navy);
   -webkit-tap-highlight-color:transparent;
   transition:border-color 0.28s var(--ease),background-color 0.28s var(--ease),
              color 0.28s var(--ease),transform 0.28s var(--ease);}
 .chip-dot{flex:none;width:8px;height:8px;border-radius:50%;background:transparent;
   border:1.5px solid var(--accent);
   transition:background-color 0.28s var(--ease),box-shadow 0.28s var(--ease);}
-.chip-name{display:inline-block;}
-.chip-price{font-family:var(--serif);font-size:0.86rem;color:var(--muted);white-space:nowrap;
-  flex-basis:100%;margin-left:1.47rem;}
+.chip-name{display:block;text-wrap:pretty;}
 .svc-chip:hover{border-color:var(--accent);background:#fff;color:var(--ink);transform:translateY(-1px);}
 .svc-chip:hover .chip-dot{background:var(--accent);box-shadow:0 0 0 3px rgba(58,90,130,0.14);}
 .svc-chip:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
 .svc-chip:active{transform:translateY(0);}
 
-.phase-hint{margin:1rem 0 0;font-size:0.83rem;line-height:1.5;color:var(--muted-2);max-width:48ch;}
+/* el precio, en letra pequeña, bajo la lista y solo donde lo hay */
+.phase-price-note{margin:0.95rem 0 0;font-size:0.83rem;line-height:1.55;color:var(--muted-2);
+  max-width:56ch;text-wrap:pretty;}
 
-/* --- 20.1e IA aplicada ----------------------------------------------- */
-.phase-note{margin-top:clamp(2rem,4.5vw,2.4rem);padding:1.35rem 1.5rem;background:var(--paper-3);}
-.phase-note-k{margin:0 0 0.45rem;font-family:var(--sans);font-size:0.65rem;font-weight:500;letter-spacing:0.18em;
-  text-transform:uppercase;color:var(--accent);}
-.phase-note p:last-child{margin:0;font-size:0.94rem;line-height:1.65;color:var(--muted);max-width:58ch;text-wrap:pretty;}
-
-/* --- 20.1f El resultado, destacado, cierra la fase ------------------- */
+/* --- 20.1e El resultado, destacado, cierra la fase ------------------- */
 .phase-out{position:relative;margin:clamp(2.1rem,4.6vw,2.6rem) 0 0;padding-top:1.35rem;}
 .phase-out-rule{position:absolute;top:0;left:0;width:48px;height:1px;background:var(--accent);}
 .phase-out-t{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(1.06rem,3.6vw,1.24rem);
   line-height:1.5;letter-spacing:-0.008em;color:var(--ink);max-width:48ch;text-wrap:pretty;}
 
-@media (min-width:420px){
-  .chip-price{flex-basis:auto;margin-left:0;padding-left:0.68rem;border-left:1px solid var(--line-2);}
+/* --- 20.1f La invitación · una sola vez en toda la sección ------------ */
+/* el filete cruza entero; la medida de lectura la marca el padding */
+.phase-hint{margin:clamp(2.2rem,5vw,2.8rem) 0 0;padding:1.15rem 0 0;
+  border-top:1px solid var(--line);
+  font-size:0.86rem;line-height:1.55;color:var(--muted-2);text-wrap:pretty;}
+
+@media (min-width:620px){
+  .phase-tab-say{display:block;}
 }
 @media (min-width:720px){
-  .phase-tab{gap:0.55rem;padding:1.6rem 1.75rem 0 0;min-height:0;}
+  .phase-tab{gap:0.55rem;padding:1.6rem 1.75rem 0.9rem 0;min-height:0;}
   .phase-tab-num{font-size:0.7rem;}
-  .svc-chip{font-size:0.94rem;padding:0.62rem 1.15rem 0.62rem 0.95rem;}
-  .phase-hint{max-width:72ch;}
+  .phase-svc{grid-template-columns:repeat(2,1fr);gap:0.6rem;max-width:44rem;}
+  .svc-chip{font-size:0.94rem;padding:0.72rem 1.25rem 0.72rem 1.05rem;}
+  .phase-hint{padding-right:max(0px,calc(100% - 78ch));}
 }
 @media (min-width:960px){
   .phase-panel.is-active{display:grid;grid-template-columns:minmax(15rem,20rem) 1fr;
     gap:clamp(2.5rem,5vw,5rem);align-items:start;}
   .phase-body{margin-top:0;}
-  .phase-note{padding:1.5rem 1.75rem;}
 }
 
-/* --- 20.2 Proceso · línea de tiempo interactiva ----------------------- */
+/* --- 20.2 Proceso · los números SON la línea de tiempo ---------------- */
 .track-wrap{position:relative;}
-.track-rail{position:absolute;left:5px;top:var(--rail-o,0.95rem);width:1px;
-  height:var(--rail-len,calc(100% - 5rem));background:var(--line-2);}
+.track{list-style:none;margin:0;padding:0;position:relative;display:grid;gap:0;}
+
+.track-rail{position:absolute;left:calc(var(--rail-c,13px) - 0.5px);top:var(--rail-o,0);
+  width:1px;height:var(--rail-len,0px);background:var(--line-2);}
 .track-wrap.tw-anim .track-rail{transform:scaleY(0);transform-origin:top center;
   transition:transform 0.9s var(--ease);}
 .track-wrap.tw-anim.is-drawn .track-rail{transform:scaleY(1);}
 .track-rail-fill{position:absolute;left:0;top:0;width:1px;height:var(--fill,0px);
-  background:var(--accent);transition:height 0.65s var(--ease);}
+  background:var(--accent);transition:height 0.6s var(--ease),width 0.6s var(--ease);}
 
-.track{list-style:none;margin:0;padding:0;position:relative;}
-.track-step{position:relative;padding:0 0 2.3rem 2.35rem;}
-.track-step:last-child{padding-bottom:0;}
-/* tapa el hilo por debajo del último punto */
-.track-step:last-child::after{content:"";position:absolute;left:0;top:1.55rem;bottom:-2px;width:12px;
-  background:var(--paper-2);}
-
-.track-btn{display:flex;flex-direction:column;align-items:flex-start;gap:0.35rem;width:100%;min-height:44px;
-  margin:0;padding:0.2rem 0 0.25rem;border:0;background:none;font:inherit;text-align:left;cursor:pointer;
+.track-step{position:relative;}
+.track-btn{display:flex;align-items:center;gap:0.9rem;width:100%;min-height:52px;
+  margin:0;padding:0.7rem 0;border:0;background:none;font:inherit;text-align:left;cursor:pointer;
   -webkit-tap-highlight-color:transparent;appearance:none;}
 .track-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
-.track-dot{position:absolute;left:0;top:0.68rem;width:9px;height:9px;border-radius:50%;
-  border:1px solid var(--accent);background:var(--paper-2);
-  transition:background-color 0.35s var(--ease),transform 0.35s var(--ease),box-shadow 0.35s var(--ease);}
-.track-step.is-active .track-dot{background:var(--accent);transform:scale(1.15);
-  box-shadow:0 0 0 4px rgba(58,90,130,0.12);}
-.track-n{font-family:var(--sans);font-size:0.65rem;font-weight:500;letter-spacing:0.18em;
+
+/* el número: nodo opaco que interrumpe el hilo */
+.track-n{position:relative;z-index:1;flex:none;display:inline-flex;align-items:center;justify-content:center;
+  width:1.7rem;padding:0.34rem 0;background:var(--paper-2);
+  font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.09em;
+  font-variant-numeric:tabular-nums;
   color:var(--muted-2);transition:color 0.3s var(--ease);}
-.track-step.is-active .track-n{color:var(--accent);}
-.track-title{font-family:var(--serif);font-weight:400;font-size:1.28rem;line-height:1.18;color:var(--navy);
-  letter-spacing:-0.01em;transition:color 0.3s var(--ease);}
+.track-step.is-active .track-n{color:var(--accent);font-weight:600;}
+.track-btn:hover .track-n{color:var(--accent);}
+
+.track-title{font-family:var(--serif);font-weight:400;font-size:1.18rem;line-height:1.2;color:var(--navy);
+  letter-spacing:-0.01em;text-wrap:pretty;transition:color 0.3s var(--ease);}
 .track-step.is-active .track-title{color:var(--ink);}
-.track-text{margin:0.45rem 0 0;font-size:0.97rem;line-height:1.62;color:var(--muted);max-width:52ch;
-  text-wrap:pretty;transition:color 0.3s var(--ease);}
-.track-step.is-active .track-text{color:var(--navy);}
 .track-btn:hover .track-title{color:var(--ink);}
-.track-btn:hover .track-dot{background:var(--accent-l);}
+
+/* el texto: solo el del paso activo */
+.track-text{margin:0;font-size:0.97rem;line-height:1.62;color:var(--navy);max-width:56ch;text-wrap:pretty;}
+.track-step:not(.is-active) .track-text{display:none;}
+.track-step.is-active .track-text{padding:0 0 1.35rem 2.5rem;
+  animation:trackIn 0.4s var(--ease) both;}
+@keyframes trackIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
 
 @media (min-width:900px){
-  .track-rail{left:var(--rail-o,0);top:0;width:var(--rail-len,75%);height:1px;}
+  .track-rail{left:var(--rail-o,0);top:calc(var(--rail-c,10px) - 0.5px);
+    width:var(--rail-len,0px);height:1px;}
   .track-wrap.tw-anim .track-rail{transform:scaleX(0);transform-origin:left center;}
   .track-wrap.tw-anim.is-drawn .track-rail{transform:scaleX(1);}
-  .track-rail-fill{width:var(--fill,0px);height:1px;transition:width 0.65s var(--ease);}
-  .track{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
-  .track-step{padding:2.4rem 2.5rem 0 0;}
-  .track-step:last-child::after{display:none;}
-  .track-dot{top:-5px;left:0;}
-  .track-text{max-width:32ch;}
+  .track-rail-fill{width:var(--fill,0px);height:1px;}
+
+  .track{grid-template-columns:repeat(4,1fr);column-gap:clamp(1.5rem,3vw,2.75rem);}
+  /* los cuatro títulos viven en la línea; debajo, un solo panel */
+  .track-step{display:contents;}
+  .track-btn{grid-row:1;flex-direction:column;align-items:flex-start;gap:0.85rem;
+    padding:0 1.5rem 0 0;min-height:0;align-self:start;}
+  .track-n{width:auto;padding:0 0.6rem;margin-left:-0.6rem;}
+  .track-title{font-size:1.24rem;}
+  .track-step.is-active .track-text{grid-row:2;grid-column:1/-1;
+    max-width:none;padding:1.9rem max(0px,calc(100% - 66ch)) 0 0;
+    border-top:1px solid var(--line);margin-top:1.9rem;}
 }
 
 /* --- 20.3 FAQ elevada ------------------------------------------------ */
@@ -512,22 +527,22 @@ a{color:inherit;text-decoration:none;}
   .faq-inner{padding-bottom:2.1rem;padding-right:3rem;}
 }
 
-/* --- 20.4 Contacto · bloque de confianza ----------------------------- */
-.contact-grid{align-items:start;}
-.contact-trust{grid-column:1/-1;margin-top:clamp(2.75rem,6vw,4.25rem);padding-top:clamp(1.75rem,3vw,2.25rem);
-  border-top:1px solid var(--line-dark);}
-.trust-eyebrow{margin:0 0 clamp(1.25rem,2.5vw,1.75rem);font-family:var(--sans);font-size:0.7rem;font-weight:500;
-  letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-l);}
-.trust-grid{display:grid;gap:1.6rem;}
-.trust-item{position:relative;padding-left:1.15rem;}
-.trust-item::before{content:"";position:absolute;left:0;top:0.55em;width:6px;height:1px;background:var(--accent-l);
-  transition:width 0.3s var(--ease);}
-.trust-item:hover::before{width:11px;}
-.trust-h{margin:0 0 0.35rem;font-family:var(--serif);font-size:1.08rem;font-weight:400;color:#fff;letter-spacing:-0.005em;}
-.trust-t{margin:0;font-size:0.92rem;line-height:1.58;color:#9AA8BC;max-width:42ch;text-wrap:pretty;}
-@media (min-width:820px){
-  .trust-grid{grid-template-columns:repeat(3,1fr);gap:2.5rem;}
-}
+/* --- 20.4 Contacto · menos líneas, campos en recuadro ---------------- */
+.contact-grid{align-items:start;row-gap:clamp(2.5rem,5vw,3.75rem);}
+/* fuera el filete que partía la columna izquierda */
+.contact-details{padding-top:0;border-top:0;}
+
+.contact-form{gap:1.15rem;}
+.field{gap:0.45rem;}
+.field input,.field textarea{width:100%;border:1px solid var(--line-dark);border-radius:2px;
+  padding:0.85rem 0.95rem;background:rgba(255,255,255,0.02);
+  transition:border-color 0.25s var(--ease),background-color 0.25s var(--ease);}
+.field input:hover,.field textarea:hover{border-color:#43608B;background:rgba(255,255,255,0.04);}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent-l);
+  background:rgba(255,255,255,0.05);}
+.field textarea{min-height:104px;}
+.field.has-error input,.field.has-error textarea{border-color:#C9736B;}
+.field-error:empty{display:none;}
 
 /* --- 20.5 «La idea» · más aire --------------------------------------- */
 .statement{padding-block:clamp(3rem,5.5vw,4.5rem);}
@@ -554,8 +569,6 @@ p.footer-legal,.footer-legal-solo{display:block;text-align:left;}
 .footer-legal .nb,.footer-legal-solo .nb{white-space:nowrap;}
 
 /* --- 20.8 Ajustes finos ---------------------------------------------- */
-.contact-grid{row-gap:clamp(2.5rem,5vw,3.75rem);}
-.contact-trust{margin-top:0;}
 @media (min-width:1080px){
   #preguntas .wrap{display:grid;grid-template-columns:minmax(15rem,21rem) 1fr;
     gap:0 clamp(3rem,6vw,6rem);align-items:start;}
@@ -568,9 +581,10 @@ p.footer-legal,.footer-legal-solo{display:block;text-align:left;}
 /* --- 20.9 Movimiento reducido ---------------------------------------- */
 @media (prefers-reduced-motion:reduce){
   .phase-panel.is-active,.phase-panel.is-active .phase-lead-num,
-  .faq-item[open] .faq-lead,.faq-item[open] .faq-inner p:last-child{animation:none;}
-  .phase-rail-fill,.phase-tab-mark,.faq-sign,.svc-chip,.chip-dot,
-  .svc-close-arrow,.track-dot,.track-rail-fill{transition:none;}
+  .faq-item[open] .faq-lead,.faq-item[open] .faq-inner p:last-child,
+  .track-step.is-active .track-text{animation:none;}
+  .phase-rail-fill,.phase-tab-mark,.phase-tab-name::after,.faq-sign,.svc-chip,.chip-dot,
+  .svc-close-arrow,.track-n,.track-rail-fill{transition:none;}
   .track-wrap.tw-anim .track-rail,
   .track-wrap.tw-anim.is-drawn .track-rail{transform:none!important;transition:none;}
 }

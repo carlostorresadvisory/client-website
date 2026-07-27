@@ -318,26 +318,33 @@
     return null;
   }
 
+  /* Los numeros son los nodos de la linea. Se mide en pixeles porque los
+     pasos no tienen la misma altura en movil y un porcentaje nunca caeria
+     justo encima de un numero. --rail-c es el eje transversal: donde pasa
+     el hilo, para que el CSS no tenga que adivinarlo. */
   function measure() {
-    var dots = wrap.querySelectorAll('.track-dot');
-    if (!dots.length) return;
+    var nodes = wrap.querySelectorAll('.track-n');
+    if (!nodes.length) return;
     var box = wrap.getBoundingClientRect();
     var horiz = wide ? wide.matches : window.innerWidth >= 900;
-    var pos = [];
-    for (var i = 0; i < dots.length; i++) {
-      var r = dots[i].getBoundingClientRect();
+    var pos = [], cross = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var r = nodes[i].getBoundingClientRect();
       pos.push(horiz ? (r.left + r.width / 2) - box.left
                      : (r.top + r.height / 2) - box.top);
+      cross.push(horiz ? (r.top + r.height / 2) - box.top
+                       : (r.left + r.width / 2) - box.left);
     }
     var first = pos[0];
     var last = pos[pos.length - 1];
-    var act = wrap.querySelector('.track-step.is-active .track-dot');
+    var act = wrap.querySelector('.track-step.is-active .track-n');
     var to = first;
     if (act) {
       var ar = act.getBoundingClientRect();
       to = horiz ? (ar.left + ar.width / 2) - box.left : (ar.top + ar.height / 2) - box.top;
     }
     wrap.style.setProperty('--rail-o', first.toFixed(2) + 'px');
+    wrap.style.setProperty('--rail-c', cross[0].toFixed(2) + 'px');
     wrap.style.setProperty('--rail-len', Math.max(0, last - first).toFixed(2) + 'px');
     wrap.style.setProperty('--fill', drawn ? Math.max(0, to - first).toFixed(2) + 'px' : '0px');
   }
