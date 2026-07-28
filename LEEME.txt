@@ -1,4 +1,4 @@
-CT ADVISORY · v14
+CT ADVISORY · v16
 ===============================================================
 
 IMPORTANTISIMO
@@ -6,8 +6,7 @@ IMPORTANTISIMO
 Suba TODOS los archivos de esta carpeta, no solo los .html.
 
 Si sube los .html pero NO sube style.css y script.js, la web se
-vera rota: sin rejilla de servicios, sin linea de tiempo en el
-proceso y con el formulario descolocado. Es el fallo mas comun.
+vera rota. Es el fallo mas comun y ya ha pasado antes.
 
 Los tres archivos que SIEMPRE tienen que ir juntos son:
 
@@ -15,78 +14,151 @@ Los tres archivos que SIEMPRE tienen que ir juntos son:
     style.css
     script.js
 
-Esta version cambia el numero de cache a ?v=14 dentro del HTML.
+Esta version cambia el numero de cache a ?v=16 dentro del HTML.
 Ese numero es el que obliga al navegador a descargar la hoja de
-estilos nueva. Si el HTML pide ?v=14 y usted no ha subido el
-style.css nuevo, el navegador pedira un archivo que no existe
-todavia con ese contenido y se quedara con el viejo.
+estilos nueva. Si el HTML pide ?v=16 y usted no ha subido el
+style.css nuevo, el navegador se quedara con el viejo y la
+seccion de servicios se vera con los huecos mal repartidos.
 
 
 COMO SUBIRLO (GitHub)
 ---------------------------------------------------------------
 1. Entre en su repositorio en github.com.
 2. Boton "Add file" > "Upload files".
-3. Arrastre los 21 archivos de esta carpeta de golpe.
-   (Puede arrastrar la carpeta entera; GitHub la desempaqueta.)
-4. Abajo, en el mensaje del commit, escriba: v14
+3. Arrastre los 20 archivos de esta carpeta de golpe.
+4. Abajo, en el mensaje del commit, escriba: v16
 5. "Commit changes".
 6. Espere 1-2 minutos y abra www.ctadvisory.es.
 7. Si ve algo raro, recargue con Ctrl+F5 (Cmd+Shift+R en Mac).
 
-El archivo CNAME tiene que subirse tambien: es el que mantiene
-el dominio www.ctadvisory.es apuntando a la pagina.
+El archivo CNAME tiene que subirse tambien.
 
 
-QUE CAMBIA EN LA v14
+QUE CAMBIA EN LA v16
 ---------------------------------------------------------------
-Todo lo que cambia esta en tres sitios: servicios, proceso y
-contacto. Ni el hero, ni "Sobre mi", ni los colores, ni las
-tipografias se han tocado.
+Solo se ha tocado una cosa: el texto de la seccion Servicios,
+entre el selector y el bloque azul. No hay rediseño, no hay
+secciones nuevas, no hay colores ni tipografias nuevas. El hero
+y "Sobre mi" estan intactos.
 
-CONTACTO
-  · Fuera el bloque "Como trabajo" entero. Menos lineas y el
-    formulario entra antes en pantalla.
-  · Los campos son ahora recuadros con borde, del mismo ancho y
-    alineados entre si. Se ve donde hay que escribir.
-  · Fuera la linea divisoria que sobraba encima de los datos.
+Se ha quitado texto. De 379 palabras a 161. Un 58 por ciento
+menos, sin perder una sola informacion: las pastillas ya dicen
+que servicios hay.
 
-SERVICIOS
-  · Cada pestaña (Preparar / Ejecutar / Acompañar) lleva debajo
-    una promesa corta que dice que gana usted si pulsa ahi.
-  · Los servicios son pastillas alineadas en rejilla de dos
-    columnas. Antes iban sueltas y de anchos distintos.
-  · El precio sale de dentro de la pastilla: ahora va en letra
-    pequeña gris debajo de la lista, y SOLO en Preparar, que es
-    la unica fase con precio de entrada.
-  · "IA aplicada" deja de ser un bloque de texto gris y pasa a
-    ser un servicio mas, en las dos versiones de la pagina.
-    Sustituye a "Preparacion para una futura venta".
-  · La invitacion de los 30 minutos aparece UNA sola vez, al pie
-    de la seccion, en vez de repetirse en cada fase.
-  · El texto habla del beneficio para usted, no de mi: "Recibira",
-    "Tendra", "Dispondra", "Sabra".
-  · La frase de apertura de "Acompañar" ya no ataca: describe el
-    momento en que hace falta criterio financiero, sin decirle a
-    nadie lo que le falta.
+LO QUE SE ELIMINA, Y POR QUE
 
-PROCESO
-  · Los numeros 01-04 SON la linea de tiempo. Se acabaron los
-    puntos sueltos y desalineados.
-  · Los cuatro titulos estan siempre visibles. El texto largo,
-    solo el del paso que usted pulse.
-  · En movil la linea es vertical y los numeros son los nodos.
-  · La linea se pinta sola al entrar la seccion en pantalla.
+  · El subtitulo de la seccion ("Empiece por la situacion que
+    mejor describa la suya"). El recuadro de tres opciones ya es
+    la instruccion: se ve que hay que elegir. Decirlo ademas por
+    escrito trata al visitante como si no supiera leer una web.
+
+  · El subtitulo de cada fase ("Tomar decisiones con criterio,
+    antes de que las decidan las circunstancias"). Repetia lo
+    que ya decia la frase grande de debajo.
+
+  · El parrafo gris de cada fase ("Recibira sus numeros
+    ordenados y su negocio analizado..."). Tercera vez que se
+    decia lo mismo. Era el sitio donde el lector abandonaba.
+
+  · El rotulo HONORARIOS y su linea horizontal. Convertia el
+    precio en un apartado, y un apartado de precios en una web
+    de banca de inversion invita a comparar, no a llamar.
+
+  · "Pulse cualquier servicio y hablamos de el en una
+    conversacion de 30 minutos, sin coste ni compromiso."
+    Tenia usted razon: el bloque azul ya lo dice, y mejor.
+
+  · En movil, el numero grande y el nombre de la fase que
+    aparecian justo debajo del selector. Repetian palabra por
+    palabra el segmento que el visitante acababa de pulsar, y
+    empujaban el texto util fuera de la pantalla. En escritorio
+    siguen ahi: alli son la columna izquierda, no una
+    repeticion. Si prefiere recuperarlos tambien en movil, es un
+    minuto.
+
+LO QUE SE CONDENSA
+
+  · La frase grande de cada fase pasa de unas 35 palabras a
+    unas 20. Ahora dice una sola cosa, y la dice de golpe:
+
+      Preparar   "Su empresa funciona, pero no sabe lo que vale
+                  ni por que. Sin ese suelo, cualquier cifra que
+                  le ofrezcan le sonara razonable."
+
+      Ejecutar   "Hay una operacion sobre la mesa y enfrente
+                  alguien que hace esto varias veces al año.
+                  Usted, una vez en la vida."
+
+      Acompañar  "Las decisiones grandes las toma usted solo.
+                  Contrastarlas con alguien de confianza, antes
+                  de tomarlas, cambia el resultado."
+
+  · Los honorarios: una sola linea pequeña y gris debajo de las
+    pastillas, en tono de nota al pie. Informa, no vende.
+
+      Preparar   "Diagnostico desde 550 € + IVA. El resto,
+                  cerrado por escrito antes de empezar."
+      Ejecutar   "Una parte fija y una parte ligada al cierre,
+                  cerradas por escrito antes de empezar."
+      Acompañar  "Una cuota mensual fija, acordada segun la
+                  dedicacion."
+
+  · El cierre de cada fase (la frase tras la rayita azul) se
+    acorta y pierde la coletilla "Sin ninguna obligacion de
+    hacer nada con ello". Esa frase defendia al lector de un
+    riesgo que nadie le habia planteado: sembraba la duda en vez
+    de quitarla.
+
+LO QUE NO SE TOCA
+
+  · El titulo: "El apoyo adecuado en cada momento".
+  · El selector Preparar / Ejecutar / Acompañar, tal cual.
+  · Las pastillas de servicios, incluida "IA aplicada".
+  · El bloque azul del cierre y su llamada.
+  · Hero, "Sobre mi", colores, tipografias, proceso, preguntas,
+    contacto y paginas legales.
+
+
+DOS DECISIONES QUE HE TOMADO YO
+---------------------------------------------------------------
+Le pregunte por ellas y me dijo que siguiera, asi que decidi.
+Las dos se revierten en un minuto si no le convencen:
+
+1. El "desde 550 € + IVA" SE QUEDA, pero como nota al pie, no
+   como reclamo. Es la unica cifra de toda la pagina y es su
+   puerta de entrada barata: sin ella, el visitante que quiere
+   probarle no sabe por donde empezar.
+
+2. La coletilla "Sin ninguna obligacion de hacer nada con ello"
+   SE VA. En un cierre en serif, una clausula defensiva rebaja
+   el tono del resto.
+
+
+COMPROBADO ANTES DE ENTREGAR
+---------------------------------------------------------------
+Tres idiomas x seis anchos de pantalla (375, 390, 768, 820,
+1024 y 1440 px) x los dos modos, vendedor y comprador. Sin un
+solo fallo: nada se corta, nada se desalinea, no aparece barra
+lateral, las tres fases siguen teniendo su nota de honorarios y
+no queda ni un resto del texto retirado en ninguno de los seis
+idiomas y modos.
 
 
 PENDIENTE EN SU LADO (no depende de mi)
 ---------------------------------------------------------------
-1. Confirmar con su gestoria si es sujeto obligado de la Ley
+1. Decirme si la redaccion de las notas de honorarios de
+   Ejecutar y Acompañar le vale tal cual. Sigue sin contestarme
+   y es un compromiso comercial que va publicado.
+2. Confirmar con su gestoria si es sujeto obligado de la Ley
    10/2010 de prevencion de blanqueo.
-2. Conectar Cal.com con sus calendarios y activar
-   "Check for conflicts", o el boton de reserva dara horas que
-   usted no tiene libres.
-3. Activar FormSubmit: envie un mensaje de prueba desde la web,
-   confirme el correo que le llegara, y despues sustituya su
-   direccion por el alias aleatorio que le da FormSubmit. Si no
-   lo hace, su correo queda visible en el codigo de la pagina.
-4. Subir esta carpeta ENTERA, incluidos style.css y script.js.
+3. Conectar Cal.com con sus calendarios y activar
+   "Check for conflicts".
+4. Activar FormSubmit y sustituir su correo por el alias
+   aleatorio, o su direccion queda visible en el codigo.
+5. Subir esta carpeta ENTERA, incluidos style.css y script.js.
+
+Y una que sigue abierta desde la v14: los cuatro pasos de "El
+proceso" siguen hablando en primera persona ("Lo hago
+personalmente", "Me cuenta su situacion"). En el resto de la
+pagina hablamos del beneficio para el cliente. Digame si los
+paso a segunda persona.
