@@ -429,10 +429,11 @@ a{color:inherit;text-decoration:none;}
 .svc-chip::after{content:"\2192";flex:none;font-family:var(--sans);font-size:0.95rem;line-height:1;
   color:var(--accent);opacity:0.55;transform:translateX(-4px);
   transition:opacity 0.28s var(--ease),transform 0.28s var(--ease),color 0.28s var(--ease);}
-.svc-chip:hover{border-color:var(--accent);background:#fff;color:var(--ink);transform:translateY(-1px);}
+/* v25 · hover sereno: la pastilla invita a seguir, no imita un boton.
+   Sin elevacion y sin contorno azul; el fondo aclara y la flecha entra. */
+.svc-chip:hover{background:#fff;color:var(--ink);}
 .svc-chip:hover::after{opacity:1;transform:translateX(0);}
 .svc-chip:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
-.svc-chip:active{transform:translateY(0);}
 
 /* cómo se cobra · una sola línea, en tono de nota al pie, bajo las
    pastillas. Sin rótulo y sin bloque propio: informa, no vende.

@@ -1,6 +1,6 @@
 ====================================================================
-CT ADVISORY - v24
-Auditoria final de conversion. Solo texto y detalles de acabado.
+CT ADVISORY - v25
+Revision de detalle: subtitulos de El proceso, CTA, pastillas.
 ====================================================================
 
 
@@ -8,8 +8,7 @@ Auditoria final de conversion. Solo texto y detalles de acabado.
 1. ANTES DE NADA: SUBA LOS 10 ARCHIVOS, NO SOLO LOS HTML
 --------------------------------------------------------------------
 
-Esto le ha pasado ya varias veces y la web se ve rota. Este envio
-lleva 10 archivos. Suba LOS DIEZ, sustituyendo los que hay:
+Este envio lleva 10 archivos. Suba LOS DIEZ, sustituyendo los que hay:
 
     index.html
     index-en.html
@@ -22,177 +21,122 @@ lleva 10 archivos. Suba LOS DIEZ, sustituyendo los que hay:
     privacidad-en.html
     privacidad-fr.html
 
-Si sube los HTML y NO sube style.css, la web se vera descolocada,
-porque los HTML piden "style.css?v=24" y en el servidor seguira
-estando el v23.
+Si sube los HTML y NO sube style.css, la web se vera descolocada:
+los HTML piden "style.css?v=25" y en el servidor seguiria el v24.
 
-script.js NO CAMBIA en esta version. No hace falta subirlo (si lo
-sube igualmente, no pasa nada: es el mismo).
+script.js NO CAMBIA en esta version. No hace falta subirlo.
 
-Las 6 paginas legales cambian solo en una linea: la referencia a
-style.css?v=24. Su texto legal no se ha tocado.
-
-Los demas archivos (fotos, fuentes, CNAME, favicon, og-image) no se
-tocan y siguen donde estan. No los borre.
+Las 6 paginas legales cambian solo en una linea (la referencia
+v25 a la hoja de estilos). Su texto legal no se ha tocado.
 
 
 --------------------------------------------------------------------
-2. QUE HE CAMBIADO
+2. QUE HE CAMBIADO (todo aprobado por usted, punto por punto)
 --------------------------------------------------------------------
 
-51 cambios de texto en total: los mismos 17 en cada uno de los tres
-idiomas. Todos son los que usted aprobo. Ademas, siete ajustes de
-acabado en style.css.
+EL PROCESO - los cuatro subtitulos, en una sola idea cada uno
 
+  01 Conversacion
+     "Usted habla. Yo le digo como ayudarle y por donde empezar."
+     (Como usted pidio: nada de "si puedo ayudarle"; se da por
+     hecho que puedo, la conversacion es para ver como, y ademas
+     empuja al primer paso.)
 
-TEXTO - Fase "Preparar"
-  El titulo pasa de "Saber lo que vale" a "Negociar con criterio".
-  La frase de debajo dice ahora "no sabe cuanto vale ni por que" y
-  "cualquier cifra puede parecer razonable", mas corta y mas directa.
+  02 Propuesta
+     "Alcance, plazos y honorarios por escrito. Nada empieza antes."
 
-TEXTO - Fase "Ejecutar"
-  Gancho nuevo: "Al otro lado hay alguien que hace esto varias veces
-  al ano. Usted, probablemente una sola vez." Empieza por el cliente,
-  no por la operacion.
-  El cierre: "Llegara al cierre entendiendo cada decision y con un
-  unico responsable de principio a fin."
+  03 Trabajo
+     "El trabajo lo hago yo, y usted sabe en todo momento donde
+     estamos."
 
-TEXTO - Fase "Acompanar"
-  El titulo pasa de "Decidir acompanado cada mes" a "Criterio
-  financiero permanente".
-  La frase de debajo se acorta quitando "antes de tomarlas".
+  04 Decisiones
+     "El informe no es el final: nos sentamos a decidir con el."
 
-TEXTO - Pastillas de servicio
-  "Contraste de decisiones estrategicas" -> "Decisiones estrategicas"
-  "Riesgos y contingencias"              -> "Riesgos ocultos"
-  Y en compra: "Las mejores oportunidades rara vez salen al mercado."
-  (antes: "estan donde nadie ha llamado todavia")
+  En modo COMPRADOR, el paso 02 va en paralelo:
+     "Tesis, alcance, plazos y honorarios por escrito. Nada
+     empieza antes."
+  Los otros tres pasos de comprador no necesitaban cambio y no se
+  han tocado. Ingles y frances van coherentes con todo lo anterior.
 
-TEXTO - Las cuatro repeticiones de "treinta minutos"
-  Aparecia cinco veces en la misma pagina. Ahora aparece una sola vez,
-  donde de verdad hace falta. Las otras cuatro frases se han quedado
-  solo con lo que aportan:
-     "Saldra con las ideas mas claras, decida lo que decida."
-     "Me cuenta su situacion y le digo con franqueza si puedo ayudarle."
-     "Afinamos que busca y como llegar a ello."
-     "Hablamos de que busca y con que criterios."
+CTA DEL PROCESO
+  "Solicitar una conversacion" -> "Empiece por la conversacion".
+  Enlaza con el paso 01 que el lector tiene delante y con el titular
+  del bloque azul ("Empiece por una conversacion, no por una
+  decision"), y deja de repetirse letra por letra con el CTA de ese
+  bloque. EN: "Start with a conversation". FR: "Commencez par un
+  echange".
 
-TEXTO - Tres frases eliminadas enteras
-  - "Treinta minutos, sin coste ni compromiso." (bajo el boton del proceso)
-  - "Que ocurre, con metodo y sin sorpresas, despues de hablar"
-  - "Y si le queda una duda, la resolvemos en una conversacion"
-  Las tres decian algo que el titulo de encima ya dice. He comprobado
-  que no queda ningun hueco raro donde estaban.
+PRIMERA PREGUNTA FRECUENTE ("No tengo claro que necesito")
+  El cierre "decidir si hay trabajo que hacer. Si creo que no lo
+  hay, se lo digo" pasa a "decidir por donde empezar". Misma
+  filosofia de venta que el nuevo paso 01: la conversacion siempre
+  desemboca en un camino. (En los tres idiomas; en modo comprador
+  esa pregunta no existe y no se toca nada.)
 
-
-ACABADO (style.css)
-
-  Contraste de lectura. El gris secundario pasa de #8A93A0 a #5F6875.
-  Estaba en 3,1 sobre blanco (por debajo del minimo legal de 4,5) y
-  ahora esta en 5,6. Afecta a textos pequenos de apoyo. Se sigue
-  viendo gris, solo que legible. El gris del copyright del pie pasa
-  de #7E8AA0 a #8894AA: de 4,2 a 4,8.
-
-  Objetivos tactiles. Ocho enlaces median menos de 24px de alto, que
-  es el minimo para el dedo en movil: el selector de idioma, el
-  telefono de la cabecera, los cuatro enlaces del pie, el "En que
-  puedo ayudarle" del hero y el "volver" de las paginas legales.
-  Todos a 24px. No cambia como se ven: solo la zona que responde al
-  toque.
-
-  Flecha del hero. Antes se movia sin parar, indefinidamente. Ahora
-  hace el gesto tres veces y se queda quieta. Llama la atencion al
-  entrar y luego deja de distraer mientras se lee.
-
-  Los pasos del proceso ahora se ve que se pueden abrir. Cada paso
-  cerrado lleva un filete gris muy tenue debajo del titulo, que
-  desaparece en el paso abierto. En ordenador esto ya se intuia al
-  pasar el raton; en movil no hay raton y no habia forma de saberlo.
+PASTILLAS DE SERVICIO (style.css)
+  Hover sereno: al pasar el raton ya no se elevan ni se contornean
+  en azul. El fondo aclara, el texto se oscurece y la flecha entra.
+  Invitan a seguir, no imitan un boton. En reposo y en movil no
+  cambia absolutamente nada.
 
 
 --------------------------------------------------------------------
-3. TRES COSAS QUE DEBE SABER, AUNQUE NO ME LAS HAYA PREGUNTADO
+3. QUE HE REVISADO Y HE DEJADO IGUAL, A PROPOSITO
 --------------------------------------------------------------------
 
-(a) Toque tambien el modo COMPRA, y eso no me lo aprobo expresamente.
+Usted pidio revision critica de geometrias, espaciados, ritmo,
+jerarquia, hovers, alineaciones y movil. La hice con mediciones:
 
-    Usted aprobo los recortes de "treinta minutos" viendo el modo
-    venta. Dos de esas cuatro frases ("Afinamos que busca y como
-    llegar a ello." y "Hablamos de que busca y con que criterios.")
-    viven en el modo compra. Las he cambiado igual, porque su norma
-    de siempre es que compra y venta vayan coherentes, y dejar
-    "Treinta minutos para..." solo en compra habria quedado
-    descuadrado.
+  - Geometria: hay dos familias y es lenguaje, no mezcla. Lo que es
+    elegir/explorar es redondo (selector de modo, pastillas, numeros
+    del proceso); lo que es comprometerse es rectangular casi vivo
+    (botones, formulario, foto, a 2px). El selector de tres momentos
+    esta a 3px porque es una caja grande: correccion optica, no
+    inconsistencia. Unificarlo lo empeoraria.
+  - Alineaciones: todos los bloques principales caen en la misma
+    vertical exacta (72,0 px medidos, del hero al CTA del proceso).
+  - Ritmo vertical: la alternancia 72/65/50 es deliberada y va con
+    el cambio de fondo de cada seccion.
+  - Hovers: un solo sistema en toda la pagina (color + flecha que
+    avanza). Las pastillas eran la unica excepcion; ya no.
+  - Movil: sin cortes, solapes ni objetivos tactiles fuera de norma
+    (cerrado en v24 y reverificado ahora).
 
-    Si prefiere que en compra vuelva a estar la version larga, se
-    revierte en dos minutos. Digamelo.
-
-(b) La repeticion de "Sobre mi" sigue ahi, porque usted lo eligio.
-
-    El gancho nuevo de "Ejecutar" repite una idea que ya esta en
-    "Sobre mi". Se lo plantee y usted respondio "Tu frase, y asumo
-    la repeticion". Queda constancia aqui para que no le sorprenda
-    cuando lo lea seguido.
-
-(c) Dos cosas que propuse y NO he tocado, porque no las aprobo.
-
-    - Condensar el parrafo de confidencialidad.
-    - Quitar la duplicacion de "de verdad" en dos frases distintas.
-
-    Siguen exactamente como estaban. Si quiere que las mire, digalo.
+  Lo unico que borre esta version son las dos frases del proceso y
+  de la FAQ que usted aprobo condensar. Nada mas sobraba.
 
 
 --------------------------------------------------------------------
 4. LO QUE HE COMPROBADO ANTES DE ENVIARSELO
 --------------------------------------------------------------------
 
-  - Contraste de todo el texto en las 9 paginas: cero fallos.
-  - Acordeon del proceso: abre y cierra en los cuatro pasos, en los
-    tres idiomas, y sigue funcionando despues de cambiar de modo.
-  - Preguntas frecuentes: las cinco abren y cierran, en los tres
-    idiomas, y tambien despues de cambiar de modo. (Usted me habia
-    dicho que "a veces no cargaba"; en esta version no he conseguido
-    reproducirlo en ninguna prueba.)
-  - Formulario: sigue avisando de los 4 campos obligatorios.
-  - Anchos de 320 a 1920 pixeles.
-
-  Cosas que he encontrado y he decidido NO tocar, para que las sepa:
-
-  - A 320px (movil muy estrecho, tipo iPhone SE) una pastilla del
-    modo compra se parte en dos lineas, en cada idioma. Ya pasaba en
-    la v23. No es feo; es solo dos lineas.
-  - A 768px en frances, dos subtitulos de fase se parten en dos
-    lineas. Tambien venia de la v23; alli eran tres y ahora son dos,
-    porque el titulo nuevo de "Acompanar" cabe mejor.
-  - El punto separador "·" del pie tiene poco contraste, pero es
-    decorativo y esta marcado como tal para los lectores de pantalla.
-    No cuenta.
-  - El pie de las paginas legales tiene una estructura distinta al de
-    la portada. No afecta a como se ve. Lo apunto porque, si algun
-    dia cambiamos el pie, hay que cambiarlo en dos sitios.
+  - Los cuatro subtitulos nuevos, en los tres idiomas, en venta y
+    en comprador, y que al cambiar de modo y volver siguen siendo
+    los nuevos (no una copia vieja en cache).
+  - El acordeon del proceso abre y cierra antes y despues de
+    cambiar de modo.
+  - El CTA nuevo cabe en una linea de 320 a 1440 px en los tres
+    idiomas.
+  - El hover de las pastillas: sin desplazamiento y sin contorno
+    azul, medido en el navegador, no a ojo.
+  - Capturas del proceso y de las preguntas revisadas visualmente.
 
 
 --------------------------------------------------------------------
 5. SIGUE PENDIENTE EN SU LADO
 --------------------------------------------------------------------
 
-  1. ACTIVAR FORMSUBMIT. Es lo mas importante de esta lista, con
-     diferencia. Ahora mismo el formulario no le entrega nada: quien
-     lo rellene no llega a usted. Hay que confirmar el correo en
-     FormSubmit y poner el alias aleatorio en los tres index.
-
-  2. Confirmar como quiere redactar los honorarios de "Ejecutar".
-
-  3. Preguntar a su gestoria si usted es sujeto obligado segun la
-     Ley 10/2010 de blanqueo. Cambia lo que debe decir el aviso legal.
-
+  1. ACTIVAR FORMSUBMIT. Sigue siendo lo mas importante: el
+     formulario aun no le entrega nada.
+  2. Confirmar la redaccion de los honorarios de "Ejecutar".
+  3. Preguntar a su gestoria si es sujeto obligado (Ley 10/2010).
   4. Conectar Cal.com con "Check for conflicts" activado.
+  5. Confirmar o rechazar los tres acortamientos de pastillas en
+     frances propuestos en su dia.
 
-  5. Decidir si los cuatro textos de los pasos del proceso pasan de
-     primera a segunda persona. Esta sin responder desde la v14.
-
-  6. Confirmar o rechazar los tres acortamientos de las pastillas en
-     frances que le propuse.
+  (La duda de primera o segunda persona en los pasos del proceso,
+  pendiente desde la v14, queda resuelta con esta version: los
+  subtitulos nuevos que usted ha elegido hablan de usted y de mi.)
 
 
 --------------------------------------------------------------------
@@ -201,11 +145,8 @@ ACABADO (style.css)
 
   1. Entre en github.com y abra su repositorio.
   2. "Add file" > "Upload files".
-  3. Arrastre LOS DIEZ archivos de esta carpeta (no LEEME.txt: este
-     es para usted, no para la web).
-  4. Abajo, "Commit changes".
-  5. Espere 1-2 minutos y abra www.ctadvisory.es.
-  6. Si ve algo raro, pulse Ctrl+F5 (o Cmd+Shift+R en Mac) para
-     forzar la recarga.
+  3. Arrastre LOS DIEZ archivos (LEEME.txt no: es para usted).
+  4. "Commit changes", espere 1-2 minutos y abra www.ctadvisory.es.
+  5. Si ve algo raro, Ctrl+F5 (Cmd+Shift+R en Mac).
 
 Si algo no encaja, digamelo y lo dejamos como estaba.
