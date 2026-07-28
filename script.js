@@ -188,6 +188,27 @@
   var sellCache = {};
   var nodes = document.querySelectorAll('[data-swap]');
 
+  /* El revelado por scroll (bloque 5) marca los nodos con .reveal y solo les
+     anade .is-visible cuando entran en pantalla, observandolos de uno en uno.
+     Al reescribir innerHTML los nodos observados se quedan huerfanos: los
+     nuevos no los mira nadie. Y si la cache se tomo ANTES de bajar a esa
+     seccion, guarda .reveal sin .is-visible, asi que al volver al modo
+     empresario Preguntas y El proceso se quedaban a opacidad 0 para siempre.
+     Tras cada intercambio se dan por revelados: el visitante que ya ha
+     tocado el selector no necesita que le aparezcan otra vez. */
+  function revelar(el) {
+    if (el.classList.contains('reveal')) el.classList.add('is-visible');
+    var hijos = el.querySelectorAll('.reveal');
+    for (var i = 0; i < hijos.length; i++) hijos[i].classList.add('is-visible');
+    /* La cache tambien puede haber capturado una pregunta a medio abrir:
+       .is-animating pendiente y una altura fija en linea. Sin limpiarlo, esa
+       pregunta ya no vuelve a abrirse nunca. */
+    var sucios = el.querySelectorAll('.faq-item.is-animating');
+    for (var j = 0; j < sucios.length; j++) sucios[j].classList.remove('is-animating');
+    var alturas = el.querySelectorAll('.faq-answer[style]');
+    for (var k = 0; k < alturas.length; k++) alturas[k].style.height = '';
+  }
+
   function apply(mode) {
     nodes.forEach(function (el) {
       var key = el.getAttribute('data-swap');
@@ -197,6 +218,7 @@
       } else if (key in sellCache) {
         el.innerHTML = sellCache[key];
       }
+      revelar(el);
     });
     document.body.setAttribute('data-mode', mode);
     opts.forEach(function (o) {
@@ -275,18 +297,26 @@
     if (item.classList.contains('is-animating')) return;
     var opening = !item.hasAttribute('open');
 
+    /* Si la transicion se cancela (cambio de modo, reflow, hoja de estilos
+       vieja en cache) transitionend no llega nunca y la pregunta se queda
+       bloqueada con .is-animating para siempre. Red de seguridad por tiempo. */
+    var guard = null;
     var finish = function (ev) {
-      if (ev.propertyName !== 'height') return;
+      if (ev && ev.propertyName !== 'height') return;
+      if (guard) { clearTimeout(guard); guard = null; }
       ans.removeEventListener('transitionend', finish);
+      ans.removeEventListener('transitioncancel', finish);
       item.classList.remove('is-animating');
       ans.style.height = '';
       if (!opening) item.removeAttribute('open');
     };
+    guard = setTimeout(function () { finish(null); }, 700);
 
     if (opening) item.setAttribute('open', '');
     item.classList.add('is-animating');
     ans.style.height = (opening ? 0 : ans.scrollHeight) + 'px';
     ans.addEventListener('transitionend', finish);
+    ans.addEventListener('transitioncancel', finish);
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
         ans.style.height = (opening ? ans.scrollHeight : 0) + 'px';

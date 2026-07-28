@@ -386,8 +386,12 @@ a{color:inherit;text-decoration:none;}
    los lectores de pantalla. En escritorio son la columna izquierda. */
 .phase-lead-num{display:none;font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,12vw,3.6rem);line-height:0.9;
   color:var(--line-2);margin:0 0 0.7rem;letter-spacing:-0.02em;}
-.phase-panel.is-active .phase-lead-num{animation:numIn 0.55s var(--ease) both 0.04s;}
-@keyframes numIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+/* El numero entra con el panel, no despues: la duracion cabe dentro de la
+   del panel (0.32s + 0.04s de retardo) para que la columna izquierda deje
+   de moverse cuando el resto ya se ha parado. El nombre de fase lo sigue
+   a 0.09s, escalonado, en vez de aparecer de golpe. */
+.phase-panel.is-active .phase-lead-num{animation:leadIn 0.30s var(--ease) both 0.04s;}
+@keyframes leadIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
 
 .phase-lead-title{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
   clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;
@@ -400,7 +404,7 @@ a{color:inherit;text-decoration:none;}
 
 .phase-say{margin:0;font-family:var(--serif);font-weight:300;
   font-size:clamp(1.24rem,4.7vw,1.62rem);line-height:1.36;letter-spacing:-0.013em;
-  color:var(--ink);max-width:38ch;text-wrap:pretty;}
+  color:var(--ink);max-width:38ch;text-wrap:balance;}
 
 /* --- 20.1d Servicios · rejilla alineada de pastillas clicables -------- */
 .phase-svc{list-style:none;margin:clamp(1.75rem,4.2vw,2.1rem) 0 0;padding:0;
@@ -413,25 +417,31 @@ a{color:inherit;text-decoration:none;}
   -webkit-tap-highlight-color:transparent;
   transition:border-color 0.28s var(--ease),background-color 0.28s var(--ease),
              color 0.28s var(--ease),transform 0.28s var(--ease);}
-.chip-dot{flex:none;width:8px;height:8px;border-radius:50%;background:transparent;
-  border:1.5px solid var(--accent);
-  transition:background-color 0.28s var(--ease),box-shadow 0.28s var(--ease);}
+/* El punto pasa a ser un signo +: en movil no hay hover y nada indicaba
+   que la pastilla se pueda pulsar. Al pasar el raton gira un cuarto de
+   vuelta, que en un + no cambia la forma: solo la hace acusar el gesto. */
+.chip-dot{flex:none;position:relative;width:10px;height:10px;
+  transition:transform 0.28s var(--ease);}
+.chip-dot::before,.chip-dot::after{content:"";position:absolute;left:50%;top:50%;
+  background:var(--accent);transition:background-color 0.28s var(--ease);}
+.chip-dot::before{width:10px;height:1.5px;transform:translate(-50%,-50%);}
+.chip-dot::after{width:1.5px;height:10px;transform:translate(-50%,-50%);}
 .chip-name{display:block;text-wrap:pretty;}
 .svc-chip:hover{border-color:var(--accent);background:#fff;color:var(--ink);transform:translateY(-1px);}
-.svc-chip:hover .chip-dot{background:var(--accent);box-shadow:0 0 0 3px rgba(58,90,130,0.14);}
+.svc-chip:hover .chip-dot{transform:rotate(90deg);}
 .svc-chip:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
 .svc-chip:active{transform:translateY(0);}
 
 /* cómo se cobra · una sola línea, en tono de nota al pie, bajo las
    pastillas. Sin rótulo y sin bloque propio: informa, no vende. */
 .phase-fee{margin:clamp(0.95rem,2.6vw,1.15rem) 0 0;font-size:0.8rem;line-height:1.6;
-  color:var(--muted-2);max-width:62ch;text-wrap:pretty;}
+  color:var(--muted-2);max-width:62ch;text-wrap:balance;}
 
 /* --- 20.1e El resultado, destacado, cierra la fase ------------------- */
 .phase-out{position:relative;margin:clamp(2.1rem,4.6vw,2.6rem) 0 0;padding-top:1.35rem;}
 .phase-out-rule{position:absolute;top:0;left:0;width:48px;height:1px;background:var(--accent);}
 .phase-out-t{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(1.06rem,3.6vw,1.24rem);
-  line-height:1.5;letter-spacing:-0.008em;color:var(--ink);max-width:48ch;text-wrap:pretty;}
+  line-height:1.5;letter-spacing:-0.008em;color:var(--ink);max-width:48ch;text-wrap:balance;}
 
 @media (min-width:620px){
   .phase-tab-say{display:block;}
@@ -450,7 +460,26 @@ a{color:inherit;text-decoration:none;}
   .phase-lead-num{display:block;}
   .phase-lead-title{position:static;width:auto;height:auto;margin:0;overflow:visible;
     clip:auto;clip-path:none;white-space:normal;}
+  /* solo aqui: en movil el titulo esta recortado para lectores de pantalla
+     y no se debe animar nada sobre el */
+  .phase-panel.is-active .phase-lead-title{animation:leadIn 0.30s var(--ease) both 0.09s;}
   .phase-tab{padding:1.3rem 1.6rem 1.4rem;}
+}
+
+/* Entre 960 y 1280 la columna de pastillas es la mas estrecha de toda la
+   pagina: el panel ya se ha partido en dos columnas pero el ancho total
+   todavia no ha crecido. Medido: es justo aqui, y casi solo aqui, donde
+   los nombres largos se parten en dos lineas y deforman su fila. Se
+   recupera el espacio del acolchado, no del cuerpo de letra, para no
+   tocar ni una palabra del texto. */
+@media (min-width:720px) and (max-width:1279.98px){
+  .phase-svc{gap:0.5rem;}
+  .svc-chip{gap:0.6rem;padding:0.72rem 0.95rem 0.72rem 0.85rem;}
+}
+@media (min-width:960px) and (max-width:1279.98px){
+  /* la columna del numero se estrecha y el hueco se cierra: todo lo que
+     suelta la izquierda lo gana la rejilla de la derecha */
+  .phase-panel.is-active{grid-template-columns:minmax(9rem,11.5rem) 1fr;gap:2.5rem;}
 }
 
 /* --- 20.2 Proceso · los números SON la línea de tiempo ---------------- */
@@ -610,6 +639,7 @@ p.footer-legal,.footer-legal-solo{display:block;text-align:left;}
 /* --- 20.9 Movimiento reducido ---------------------------------------- */
 @media (prefers-reduced-motion:reduce){
   .phase-panel.is-active,.phase-panel.is-active .phase-lead-num,
+  .phase-panel.is-active .phase-lead-title,
   .faq-item[open] .faq-lead,.faq-item[open] .faq-inner p:last-child,
   .track-step.is-active .track-text{animation:none;}
   .phase-seg-ind,.phase-tab,.faq-sign,.svc-chip,.chip-dot,.svc-close-arrow,
