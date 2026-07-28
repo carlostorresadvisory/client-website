@@ -55,7 +55,7 @@ a{color:inherit;text-decoration:none;}
 .btn-arrow{transition:transform 0.25s var(--ease);}
 .btn:hover .btn-arrow{transform:translateX(4px);}
 .btn-spinner{display:none;width:16px;height:16px;border:2px solid rgba(255,255,255,0.35);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite;}
-.section-contact .btn-spinner{border-color:rgba(12,30,56,0.25);border-top-color:var(--ink);}
+.section-contact .btn-spinner{border-color:rgba(255,255,255,0.35);border-top-color:#fff;}
 .btn.is-loading{pointer-events:none;}
 .btn.is-loading .btn-label{opacity:0.55;}
 .btn.is-loading .btn-spinner{display:inline-block;}
@@ -220,8 +220,12 @@ a{color:inherit;text-decoration:none;}
 .contact-details a{color:var(--accent-l);transition:color 0.2s var(--ease);}
 .contact-details a:hover{color:#fff;}
 /* Reserva directa de agenda (Cal.com) */
-.btn-book{display:inline-flex;align-items:center;gap:0.6rem;margin:0 0 1.9rem;padding:0.95rem 1.6rem;border:1px solid var(--accent-l);border-radius:2px;color:#fff;font-size:0.95rem;font-weight:500;transition:background-color 0.25s var(--ease),color 0.25s var(--ease),border-color 0.25s var(--ease);}
-.btn-book:hover{background:#fff;border-color:#fff;color:var(--ink);}
+/* v23 · se invierte la jerarquía. Reservar una llamada cierra más que un
+   formulario, y hasta ahora era el botón secundario al lado de uno relleno
+   y del doble de ancho. Ahora éste es el sólido y el de enviar, el de
+   contorno. Misma altura los dos: 57 px. */
+.btn-book{display:inline-flex;align-items:center;justify-content:center;gap:0.6rem;margin:0 0 1.9rem;min-height:57px;padding:0.95rem 1.6rem;border:1px solid #fff;border-radius:2px;background:#fff;color:var(--ink);font-size:0.95rem;font-weight:500;transition:background-color 0.25s var(--ease),color 0.25s var(--ease),border-color 0.25s var(--ease);}
+.btn-book:hover{background:#E9EDF3;border-color:#E9EDF3;color:var(--ink);}
 .btn-book .c-ico{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none;}
 .contact-form{display:grid;gap:1.3rem;}
 .form-intro{margin:0 0 -0.2rem;font-size:1.05rem;font-weight:500;color:#E9EDF3;}
@@ -229,14 +233,20 @@ a{color:inherit;text-decoration:none;}
 .field{display:grid;gap:0.5rem;}
 .field label{font-size:0.85rem;font-weight:500;color:#C7D0DD;}
 .field input,.field textarea{font-family:var(--sans);font-size:1rem;color:#fff;background:transparent;border:none;border-bottom:1px solid var(--line-dark);padding:0.7rem 0.1rem;transition:border-color 0.25s var(--ease);}
-.field input::placeholder,.field textarea::placeholder{color:#6C788E;}
+/* v23 · el gris anterior (#6C788E) daba 3,75:1 sobre el fondo, por debajo
+   del mínimo de 4,5:1. Éste da 5,37:1 y es un gris que ya está en la web. */
+.field input::placeholder,.field textarea::placeholder{color:#8A93A0;}
 .field input:hover,.field textarea:hover{border-bottom-color:#43608B;}
-.field input:focus,.field textarea:focus{outline:none;border-bottom-color:var(--accent-l);}
+/* v23 · anillo de foco visible. Antes solo cambiaba el color del borde
+   1 px: quien navega con teclado no veía dónde estaba. Los botones de la
+   web ya lo tenían; los campos, no. */
+.field input:focus-visible,.field textarea:focus-visible{outline:2px solid var(--accent-l);outline-offset:2px;}
+.field input:focus,.field textarea:focus{border-bottom-color:var(--accent-l);}
 .field textarea{resize:vertical;min-height:92px;}
 .field-error{font-size:0.82rem;color:#E9A7A0;min-height:0;}
 .field.has-error input,.field.has-error textarea{border-bottom-color:#C9736B;}
-.section-contact .btn-primary{background:#fff;color:var(--ink);margin-top:0.5rem;}
-.section-contact .btn-primary:hover{background:#E9EDF3;}
+.section-contact .btn-primary{background:transparent;color:#fff;border-color:var(--accent-l);min-height:57px;margin-top:0.5rem;}
+.section-contact .btn-primary:hover{background:rgba(255,255,255,0.08);border-color:#fff;color:#fff;transform:none;box-shadow:none;}
 .form-reassure{margin:0.9rem 0 0;font-size:0.85rem;color:#8A93A0;text-align:center;}
 .form-status{margin:0.4rem 0 0;font-size:0.95rem;min-height:1.2em;text-align:center;}
 .form-status.is-ok{color:var(--accent-l);}
@@ -381,22 +391,11 @@ a{color:inherit;text-decoration:none;}
 .phase-panel.is-active{display:block;animation:phaseIn 0.32s var(--ease) both;}
 @keyframes phaseIn{from{opacity:0;transform:translateX(14px);}to{opacity:1;transform:none;}}
 
-/* En móvil el número y el nombre repiten palabra por palabra el segmento
-   activo que queda justo encima. Se ocultan: el nombre sigue estando para
-   los lectores de pantalla. En escritorio son la columna izquierda. */
-.phase-lead-num{display:none;font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,12vw,3.6rem);line-height:0.9;
-  color:var(--line-2);margin:0 0 0.7rem;letter-spacing:-0.02em;}
-/* El numero entra con el panel, no despues: la duracion cabe dentro de la
-   del panel (0.32s + 0.04s de retardo) para que la columna izquierda deje
-   de moverse cuando el resto ya se ha parado. El nombre de fase lo sigue
-   a 0.09s, escalonado, en vez de aparecer de golpe. */
-.phase-panel.is-active .phase-lead-num{animation:leadIn 0.30s var(--ease) both 0.04s;}
-@keyframes leadIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
-
-.phase-lead-title{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
-  clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;
-  font-family:var(--serif);font-weight:300;font-size:clamp(1.95rem,7vw,2.5rem);line-height:1.12;
-  letter-spacing:-0.018em;color:var(--ink);}
+/* v23 · el número grande y el nombre de fase ya no existen. La pestaña
+   activa dice «03 / Acompañar» treinta píxeles más arriba; repetirlo
+   costaba 154 px de sección y no aportaba ninguna información nueva. El
+   panel se sigue anunciando por su pestaña (aria-labelledby). En móvil
+   llevaban ocultos desde la v16, así que allí no cambia nada. */
 
 /* --- 20.1c Cuerpo editorial · sin rótulos ---------------------------- */
 /* En móvil el panel es un bloque y los cuatro elementos van uno detrás de
@@ -411,35 +410,33 @@ a{color:inherit;text-decoration:none;}
 .phase-svc{list-style:none;margin:clamp(1.75rem,4.2vw,2.1rem) 0 0;padding:0;
   display:grid;grid-template-columns:1fr;gap:0.5rem;}
 .phase-svc li{margin:0;padding:0;display:flex;}
-.svc-chip{display:flex;align-items:center;gap:0.7rem;width:100%;min-height:48px;
-  padding:0.7rem 1.15rem 0.7rem 0.95rem;
+.svc-chip{display:flex;align-items:center;justify-content:space-between;gap:0.7rem;
+  width:100%;min-height:48px;padding:0.7rem 1.15rem;
   border:1px solid var(--line-2);border-radius:999px;background:var(--paper-2);
   font-family:var(--sans);font-weight:400;font-size:0.9rem;line-height:1.32;color:var(--navy);
   -webkit-tap-highlight-color:transparent;
   transition:border-color 0.28s var(--ease),background-color 0.28s var(--ease),
              color 0.28s var(--ease),transform 0.28s var(--ease);}
-/* El punto pasa a ser un signo +: en movil no hay hover y nada indicaba
-   que la pastilla se pueda pulsar. Al pasar el raton gira un cuarto de
-   vuelta, que en un + no cambia la forma: solo la hace acusar el gesto. */
-.chip-dot{flex:none;position:relative;width:10px;height:10px;
-  transition:transform 0.28s var(--ease);}
-.chip-dot::before,.chip-dot::after{content:"";position:absolute;left:50%;top:50%;
-  background:var(--accent);transition:background-color 0.28s var(--ease);}
-.chip-dot::before{width:10px;height:1.5px;transform:translate(-50%,-50%);}
-.chip-dot::after{width:1.5px;height:10px;transform:translate(-50%,-50%);}
-.chip-name{display:block;text-wrap:pretty;}
+/* v23 · el «+» a la izquierda prometía desplegar, y la pastilla lo que
+   hace es llevar al contacto. Pasa a ser una flecha a la derecha, que es
+   lo que promete de verdad: ir a algún sitio. Alineada al borde derecho,
+   entra al pasar el ratón y en móvil se queda visible al 55 %, que es la
+   única señal de «esto se pulsa» que había en pantallas sin hover. */
+.chip-name{display:block;text-wrap:pretty;flex:1;}
+.svc-chip::after{content:"\2192";flex:none;font-family:var(--sans);font-size:0.95rem;line-height:1;
+  color:var(--accent);opacity:0.55;transform:translateX(-4px);
+  transition:opacity 0.28s var(--ease),transform 0.28s var(--ease),color 0.28s var(--ease);}
 .svc-chip:hover{border-color:var(--accent);background:#fff;color:var(--ink);transform:translateY(-1px);}
-.svc-chip:hover .chip-dot{transform:rotate(90deg);}
+.svc-chip:hover::after{opacity:1;transform:translateX(0);}
 .svc-chip:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
 .svc-chip:active{transform:translateY(0);}
 
 /* cómo se cobra · una sola línea, en tono de nota al pie, bajo las
    pastillas. Sin rótulo y sin bloque propio: informa, no vende.
-   Va separado por un filete fino y un punto más pequeño que el resto para
-   que se lea como lo que es, un pie de página, y no como parte del bloque
-   de servicios. */
-.phase-fee{margin:clamp(1rem,2.6vw,1.2rem) 0 0;padding-top:0.8rem;
-  border-top:1px solid var(--line);
+   v23 · sin filete. Había dos reglas a 42 px una de otra —ésta, de lado a
+   lado, y la del cierre, de 48 px— y la más ancha era la del elemento menos
+   importante. El cuerpo pequeño y el gris ya separan bastante. */
+.phase-fee{margin:clamp(1rem,2.6vw,1.2rem) 0 0;
   font-size:0.74rem;line-height:1.6;
   color:var(--muted-2);max-width:62ch;text-wrap:balance;}
 
@@ -470,7 +467,9 @@ a{color:inherit;text-decoration:none;}
      rejilla del panel. Ahora el número va encima, en el raíl, y el gancho,
      las pastillas, los honorarios y el cierre arrancan todos en la misma x. */
   .phase-panel.is-active{display:block;}
-  .phase-lead{margin:0 0 clamp(1.6rem,2.6vw,2rem);}
+  /* sin cabecera, el panel arranca antes: el aire de arriba lo pone ahora
+     el propio panel y no un bloque vacío. */
+  .phase-panel{padding-top:clamp(2rem,4vw,2.6rem);}
   /* SIN TOPE DE MEDIDA. El tope de 62 caracteres que puse en la v20 era
      teoría de manual aplicada al elemento equivocado: obligaba a partir en
      dos toda frase de más de 62 caracteres, y «text-wrap:balance» repartía
@@ -491,12 +490,6 @@ a{color:inherit;text-decoration:none;}
   .phase-fee{max-width:none;}
   .phase-out{margin-top:clamp(2.1rem,3.4vw,2.6rem);}
   .phase-out-t{max-width:none;}
-  .phase-lead-num{display:block;}
-  .phase-lead-title{position:static;width:auto;height:auto;margin:0;overflow:visible;
-    clip:auto;clip-path:none;white-space:normal;}
-  /* solo aqui: en movil el titulo esta recortado para lectores de pantalla
-     y no se debe animar nada sobre el */
-  .phase-panel.is-active .phase-lead-title{animation:leadIn 0.30s var(--ease) both 0.09s;}
   .phase-tab{padding:1.3rem 1.6rem 1.4rem;}
 }
 
@@ -513,7 +506,13 @@ a{color:inherit;text-decoration:none;}
    pastillas recuperan su acolchado normal. */
 @media (min-width:720px) and (max-width:959.98px){
   .phase-svc{gap:0.5rem;}
-  .svc-chip{gap:0.6rem;padding:0.72rem 0.95rem 0.72rem 0.85rem;}
+  /* v23 · la flecha ocupa 18,6 px y el punto que sustituye ocupaba 10. En
+     esta banda —la única con dos columnas dentro de un ancho todavía
+     pequeño— esos 8,6 px partían en dos «A sounding board for strategic
+     decisions» y «Due diligence financière et commerciale». Se recupera el
+     hueco con menos acolchado y un cuerpo algo menor. Medido en el peor
+     caso de los tres idiomas a 720 px: sobran 10 px, antes faltaban 22. */
+  .svc-chip{gap:0.4rem;padding:0.72rem 0.8rem;font-size:0.86rem;}
 }
 
 /* --- 20.2 Proceso · los números SON la línea de tiempo ---------------- */
@@ -640,8 +639,9 @@ a{color:inherit;text-decoration:none;}
   padding:0.85rem 0.95rem;background:rgba(255,255,255,0.02);
   transition:border-color 0.25s var(--ease),background-color 0.25s var(--ease);}
 .field input:hover,.field textarea:hover{border-color:#43608B;background:rgba(255,255,255,0.04);}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent-l);
+.field input:focus,.field textarea:focus{border-color:var(--accent-l);
   background:rgba(255,255,255,0.05);}
+.field input:focus-visible,.field textarea:focus-visible{outline:2px solid var(--accent-l);outline-offset:2px;}
 .field textarea{min-height:104px;}
 .field.has-error input,.field.has-error textarea{border-color:#C9736B;}
 .field-error:empty{display:none;}
@@ -682,11 +682,10 @@ p.footer-legal,.footer-legal-solo{display:block;text-align:left;}
 
 /* --- 20.9 Movimiento reducido ---------------------------------------- */
 @media (prefers-reduced-motion:reduce){
-  .phase-panel.is-active,.phase-panel.is-active .phase-lead-num,
-  .phase-panel.is-active .phase-lead-title,
+  .phase-panel.is-active,
   .faq-item[open] .faq-lead,.faq-item[open] .faq-inner p:last-child,
   .track-step.is-active .track-text{animation:none;}
-  .phase-seg-ind,.phase-tab,.faq-sign,.svc-chip,.chip-dot,.svc-close-arrow,
+  .phase-seg-ind,.phase-tab,.faq-sign,.svc-chip,.svc-chip::after,.svc-close-arrow,
   .track-n,.track-title::after,.track-cta-arrow,.track-rail-fill{transition:none;}
   .track-wrap.tw-anim .track-rail,
   .track-wrap.tw-anim.is-drawn .track-rail{transform:none!important;transition:none;}

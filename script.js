@@ -83,6 +83,9 @@
     if (!form) return;
     var statusEl = document.getElementById('form-status');
     var submitBtn = document.getElementById('submit-btn');
+    // v23: cerrojo propio. El disabled del boton se ponia despues de
+    // validar, asi que dos Intro seguidos disparaban dos peticiones.
+    var sending = false;
 
     var setError = function (name, message) {
       var field = form.querySelector('#' + name);
@@ -93,7 +96,14 @@
       if (errorEl) errorEl.textContent = message || '';
       if (message) field.setAttribute('aria-invalid', 'true'); else field.removeAttribute('aria-invalid');
     };
-    var isEmail = function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); };
+    // v23: la anterior daba por buenos «a@b..c» y «a@-b.c». Esta exige
+    // etiquetas de dominio que empiecen y acaben en alfanumerico y una
+    // extension de dos letras o mas. Sigue siendo permisiva a proposito:
+    // en un formulario de contacto vale mas dejar pasar una rareza valida
+    // que rechazar a un cliente por una direccion poco comun.
+    var isEmail = function (v) {
+      return /^[^\s@]+@[A-Za-z0-9]([A-Za-z0-9-]*[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]*[A-Za-z0-9])?)*\.[A-Za-z]{2,}$/.test(v);
+    };
     var setStatus = function (msg, kind) {
       if (!statusEl) return;
       statusEl.textContent = msg || '';
@@ -106,7 +116,6 @@
     };
 
     var M = {
-      name:   form.getAttribute('data-msg-name')   || 'Indique su nombre.',
       email:  form.getAttribute('data-msg-email')  || 'Indique su correo electrónico.',
       email2: form.getAttribute('data-msg-email2') || 'Compruebe el correo electrónico.',
       msg:    form.getAttribute('data-msg-msg')    || 'Escriba unas líneas sobre su situación.',
@@ -118,6 +127,7 @@
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (sending) return;
 
       // Honeypot: si está relleno, es un bot. Fingimos éxito y no enviamos.
       var honey = form.querySelector('input[name="_honey"]');
@@ -141,6 +151,7 @@
         return;
       }
 
+      sending = true;
       setLoading(true);
       setStatus(M.sending);
 
@@ -151,14 +162,19 @@
       }).then(function (res) {
         return res.json().catch(function () { return {}; }).then(function (json) { return { ok: res.ok, json: json }; });
       }).then(function (r) {
+        sending = false;
         setLoading(false);
         if (r.ok) {
           setStatus(M.ok, 'ok');
           form.reset();
+          // v23: tras enviar, el foco se quedaba en el body. Se lleva al
+          // mensaje de gracias, que es lo unico que ha cambiado en pantalla.
+          if (statusEl) { statusEl.setAttribute('tabindex', '-1'); statusEl.focus(); }
         } else {
           setStatus(M.error, 'error');
         }
       }).catch(function () {
+        sending = false;
         setLoading(false);
         setStatus(M.error, 'error');
       });
