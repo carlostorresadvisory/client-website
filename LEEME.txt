@@ -1,4 +1,4 @@
-CT ADVISORY · VERSIÓN 17
+CT ADVISORY · VERSIÓN 18
 ========================
 
 QUÉ HAY QUE SUBIR
@@ -7,10 +7,10 @@ Los 20 ficheros de esta carpeta, sustituyendo los que ya hay en el
 repositorio. NO subas este LEEME.txt.
 
 *** IMPORTANTE ***
-Sube TAMBIÉN style.css y script.js, no solo los .html.
+Sube TAMBIÉN style.css, no solo los .html.
 Es el fallo que se ha repetido en las últimas versiones: si subes solo
-los .html, la web se ve rota. Esta vez además hay cambios de verdad en
-los dos ficheros, así que sin ellos no funcionará nada de lo de abajo.
+los .html, la web se ve rota. En esta versión el cambio está ENTERO en
+style.css: si no lo subes, no verás absolutamente nada nuevo.
 
 Después de subir, abre la web con Ctrl+F5 (o Cmd+Shift+R en Mac) la
 primera vez.
@@ -18,58 +18,46 @@ primera vez.
 
 QUÉ CAMBIA EN ESTA VERSIÓN
 --------------------------
+Solo dos cosas, las dos de alineación en escritorio. No cambia ni una
+palabra del texto, ni una sección, ni un color.
 
-1 · Preguntas y El proceso ya no se quedan en blanco
-    Era un fallo real, no una impresión tuya. Se reproducía siempre:
-    si alguien pulsaba «Comprador» y volvía a «Empresario» ANTES de
-    bajar por la página, las cinco preguntas y los cuatro pasos del
-    proceso se quedaban invisibles para el resto de la visita. También
-    podía dejar una pregunta bloqueada, sin poder abrirla nunca más.
-    Las dos causas están corregidas en script.js.
+1 · Servicios · el panel llega hasta el borde
+    Tenías razón y se puede medir: a 1440 px la tira de pestañas y el
+    bloque azul ocupaban 1.296 px de ancho, y las pastillas solo 704.
+    Sobraban 296 px muertos a la derecha, justo lo que se veía.
+    Ahora la rejilla de pastillas acaba exactamente donde acaba la tira
+    de pestañas de arriba (comprobado: menos de 2 px de diferencia en
+    los tres idiomas, los dos modos y las tres fases).
 
-2 · Las pastillas ya no se quedan a 5
-    Preparar pasa de 5 a 4: sale «Opinión independiente». No es un
-    servicio que se contrate, es un atributo de todo lo demás.
-    Analizar (modo comprador) pasa de 5 a 6: entra «Riesgos y
-    contingencias», detrás de la due diligence, que es donde afloran.
-    Ahora todas las fases tienen 4 o 6 y la rejilla cuadra siempre.
+2 · Servicios · menos líneas, más largas, mismo orden
+    Como pediste. El gancho pasa de tres líneas cortas a dos largas en
+    los 54 casos medidos, y el cierre de fase cabe en una sola línea en
+    la mayoría. Ninguna línea final baja del 88 % del ancho de la más
+    larga. El orden de lectura es el de siempre: gancho, pastillas,
+    honorarios, cierre.
 
-3 · Ninguna pastilla se parte en dos líneas
-    Comprobado en español, inglés y francés, y en seis anchos de
-    pantalla (móvil, tableta y escritorio): cero pastillas partidas.
-    En español se han acortado las dos que se partían, como acordamos.
-    En francés se han acortado tres siguiendo el mismo criterio:
-      · «Un regard sur vos décisions stratégiques»
-             -> «Regard extérieur sur vos décisions»
-      · «Cartographie du marché et liste de cibles»
-             -> «Cartographie et liste de cibles»
-      · «Cohérence stratégique et création de valeur»
-             -> «Cohérence et création de valeur»
-    En inglés no se ha tocado ni una palabra.
-    El resto se ha resuelto con espacio, no con tijeras.
+3 · El proceso · la línea de tiempo llega al borde
+    Se paraba 274 px antes que las reglas horizontales de debajo. Ahora
+    el cuarto nodo cae en el borde derecho y los cuatro quedan a la
+    misma distancia exacta entre sí (420 px a 1440, 441 a 1920, 264 a
+    920). No cambia ningún texto ni la animación de la línea.
 
-4 · Las líneas ya no acaban a medio ancho
-    El gancho, la línea de honorarios y el cierre de cada fase ahora
-    reparten el texto entre las líneas en vez de dejar la última con
-    tres palabras. Medido: antes había 20 bloques de 36 que acababan
-    por debajo del 35% del ancho; ahora, cero de 123.
+Sobre lo de empujar las pastillas a la derecha: al final no hace falta.
+Ahora la rejilla empieza donde empieza el texto y acaba donde acaba la
+tira de pestañas, así que está alineada por los dos lados. Empujarlas a
+la derecha rompería la alineación con el gancho y el cierre, que es la
+línea vertical que ordena todo el panel.
 
-5 · El número grande y el nombre de fase entran con el panel
-    Antes el número seguía moviéndose casi el doble de tiempo que el
-    resto, y el nombre aparecía de golpe. Ahora entran escalonados y
-    terminan a la vez que el panel.
-
-6 · La pastilla se ve que se puede pulsar
-    El punto azul pasa a ser un signo «+». En móvil no hay ratón y
-    nada indicaba que las pastillas fueran clicables. Al pasar el
-    ratón por encima gira un cuarto de vuelta.
+En móvil y tableta no cambia nada: todo esto entra a partir de 1280 px
+(servicios) y 900 px (proceso).
 
 
 QUÉ NO SE HA TOCADO
 -------------------
 Hero, «Sobre mí», paleta, tipografías, título de la sección, control
-segmentado Preparar · Ejecutar · Acompañar, el bloque azul del cierre
-y su frase «Empiece por una conversación, no por una decisión.»
+segmentado Preparar · Ejecutar · Acompañar, las pastillas y sus nombres,
+el bloque azul del cierre y su frase «Empiece por una conversación, no
+por una decisión.»
 
 
 LO QUE SIGUE PENDIENTE EN TU LADO
@@ -83,3 +71,8 @@ LO QUE SIGUE PENDIENTE EN TU LADO
 · Decidir si los cuatro textos del proceso siguen en primera persona
   («Lo hago personalmente», «Me cuenta su situación», «Nos sentamos a
   hablar») o pasan a hablar de usted. Sigue sin respuesta desde la v14.
+· Una propuesta de una línea que sigue esperando tu sí o tu no: en
+  Acompañar, cambiar «Una cuota mensual fija, acordada según la
+  dedicación.» por «Una cuota mensual fija, cerrada por escrito antes de
+  empezar.» Las otras cinco líneas de honorarios cierran con un
+  compromiso por escrito; esta es la única que no.
