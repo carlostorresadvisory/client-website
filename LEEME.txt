@@ -1,4 +1,4 @@
-CT ADVISORY · VERSIÓN 20
+CT ADVISORY · VERSIÓN 22
 ========================
 
 QUÉ HAY QUE SUBIR
@@ -7,112 +7,196 @@ Los 20 ficheros de esta carpeta, sustituyendo los que ya hay en el
 repositorio. NO subas este LEEME.txt.
 
 *** IMPORTANTE ***
-Esta vez el cambio está ENTERO en style.css. El HTML no cambia ni una
-coma (solo el número de versión de la caché). Si subes los .html y te
-olvidas de style.css, no verás absolutamente ningún cambio.
+Esta vez el cambio SÍ está en los tres .html (index.html, index-en.html,
+index-fr.html). style.css y script.js no cambian de contenido, solo de
+número de versión de caché (v=22), pero súbelos igualmente: si no, el
+navegador puede seguir sirviendo los antiguos.
 
-Después de subir, abre la web con Ctrl+F5 (o Cmd+Shift+R en Mac) la
-primera vez.
-
-
-EL PROBLEMA QUE HABÍAS DETECTADO
---------------------------------
-Tenías razón las tres veces, y las tres veces yo estuve buscando donde no
-era. Medido a 1.440 px, la sección tenía cuatro bordes izquierdos:
-
-  · 72   «SERVICIOS», el título, la tira de pestañas, el bloque azul
-  · 72   el número grande 02
-  · 307  el gancho y la frase de cierre  ← el texto de verdad
-  · 1000 las pastillas y el renglón de honorarios
-
-Y un quinto desajuste, vertical: la columna de texto terminaba en y=685 y
-la de pastillas en y=772. Debajo del texto quedaban 87 px muertos y a la
-derecha del cierre, media página vacía.
-
-La causa no estaba dentro del panel. Estaba en la rejilla del panel: el
-número grande ocupaba una columna propia a la izquierda, y entre esa
-columna y su hueco empujaban TODO el contenido unos 235 px hacia dentro
-respecto al título y a las pestañas. Mientras esa columna existiese, el
-texto no podía estar alineado con el resto de la sección por mucho que yo
-moviese las pastillas. Eso es lo que hice en la v18 (llevar la rejilla al
-borde) y en la v19 (poner las pastillas al lado): dos arreglos correctos
-sobre un diagnóstico equivocado.
+Después de subir, abre la web con Ctrl+F5 (o Cmd+Shift+R en Mac).
 
 
-QUÉ CAMBIA EN LA V20
+QUÉ CAMBIA EN LA V22
 --------------------
-Una sola columna, anclada al mismo raíl que todo lo demás.
+Solo texto, y solo dentro de la sección Servicios. Siete líneas por
+idioma: las seis frases de cierre y la línea de honorarios de Acompañar.
+Nada más. Ni una etiqueta, ni una clase, ni un píxel de CSS.
 
-1 · El número grande y el nombre de fase pasan de estar AL LADO del texto
-    a estar ENCIMA, en el raíl. Mismo tamaño, mismo color, misma
-    animación que hoy: solo cambia dónde se apoyan.
+Son exactamente los tres cambios que aprobaste:
 
-2 · El gancho, las pastillas, los honorarios y el cierre arrancan todos
-    en la misma x que «SERVICIOS», el título, la tira de pestañas y el
-    bloque azul. Un único borde izquierdo en toda la sección.
+  1. Las seis frases de cierre nuevas  →  «Sí, las seis»
+  2. La línea de honorarios se queda donde está, entre las pastillas y
+     el cierre  →  «No, dejarlo donde está»
+  3. La línea de honorarios de Acompañar deja de obligar a una cuota
+     mensual  →  «si cambiala y no obligues a que sea mensual»
 
-3 · Las pastillas pasan a rejilla de dos columnas de raíl a raíl: cuatro
-    dan un 2×2 y seis dan un 2×3. Siempre un rectángulo cerrado, nunca
-    una pastilla huérfana, y la rejilla termina exactamente donde termina
-    la tira de pestañas de arriba.
 
-4 · El renglón de honorarios se separa con un filete fino y baja de
-    cuerpo (de 0,80 a 0,74 rem). Es lo que pediste: que se lea como nota
-    al pie y no como parte del bloque de servicios. Sigue debajo de las
-    pastillas, sigue sin rótulo y sigue sin bloque propio.
+LAS SEIS FRASES DE CIERRE
+-------------------------
+VENDER
 
-5 · El bloque azul del cierre se queda centrado, como estaba. Lo elegiste
-    tú y no se ha tocado.
+  01 Preparar
+     antes:  Un rango de valor que puede defender, los riesgos con
+             nombre y una lista corta de decisiones.
+     ahora:  Sabrá lo que vale su empresa, y por qué, antes de que otro
+             le ponga precio.
 
-6 · El texto lleva medida de lectura (62 caracteres). Eso es tipografía,
-    no un margen inventado: por encima de esa medida la línea cansa.
+  02 Ejecutar
+     antes:  Una operación cerrada en condiciones que entiende y puede
+             explicar, con un solo responsable de principio a fin.
+     ahora:  Cerrará en condiciones que entiende y puede explicar, con
+             un solo responsable de principio a fin.
 
-Desaparece el hueco muerto y la sección encoge unos 90 px.
+  03 Acompañar
+     antes:  Un empresario que decide con los números encima de la mesa
+             y una empresa preparada para cuando llegue el momento.
+     ahora:  Decidirá con los números delante y la empresa llegará
+             preparada al momento que importa.
 
-No cambia ni una palabra, ni un color, ni una tipografía, ni un nombre de
-servicio, ni el orden de lectura: número, gancho, pastillas, honorarios,
-cierre. El mismo de siempre.
+COMPRAR
 
-En móvil no cambia nada salvo el filete de honorarios, que se aplica en
-todos los anchos para que la nota se lea igual en el móvil y en el
-escritorio. El número grande sigue oculto por debajo de 960 px, porque
-ahí repetiría la pestaña activa que tiene justo encima.
+  01 Definir
+     antes:  Un criterio escrito con el que decir que no deprisa, y un
+             flujo de oportunidades que nadie más está mirando.
+     ahora:  Dirá que no deprisa, y verá empresas que no está mirando
+             nadie más.
+
+  02 Analizar
+     antes:  Una cifra que puede defender, y la lista de los puntos que
+             justifican renegociar.
+     ahora:  Sabrá qué precio puede defender y en qué puntos puede
+             renegociar.
+
+  03 Ejecutar
+     antes:  Una operación cerrada en las condiciones que usted decidió,
+             no en las que le propusieron.
+     ahora:  Cerrará en las condiciones que usted decidió, no en las que
+             le propusieron.
+
+El inglés y el francés van traducidos con el mismo criterio: sujeto,
+futuro, un solo beneficio y sin enumeraciones. Los tienes abajo, en
+«REDACCIONES QUE NO HAS VISTO».
+
+
+POR QUÉ ESTAS Y NO LAS DE ANTES
+-------------------------------
+Tres de las seis anteriores enumeraban entregables. Las pastillas están
+justo encima y ya contestan al «¿qué me das?». Repetirlo en serif no
+añade nada y gasta la única frase que te queda antes del CTA.
+
+Cinco de las seis no tenían sujeto: «Un rango de valor…», «Un empresario
+que…». El lector tenía que traducir «un empresario» por «yo» justo en el
+momento de decidir si escribe o cierra la pestaña.
+
+El panel contesta tres preguntas en este orden: ¿esto es para mí? (la
+frase grande de arriba), ¿qué me llevo? (las pastillas), ¿qué cambia para
+mí? (el cierre). El cierre estaba contestando a la pregunta anterior.
+
+Y lo de fondo: un entregable se compara por precio; un resultado no.
+
+
+HONORARIOS DE ACOMPAÑAR
+-----------------------
+  antes:  Una cuota mensual fija, acordada según la dedicación.
+  ahora:  Una cuota fija, cerrada por escrito antes de empezar.
+
+Fuera «mensual», como pediste: no te obligas a publicar una cadencia.
+Y entra «cerrada por escrito antes de empezar», que es con lo que cierran
+las otras cinco líneas de honorarios; era la única que no lo hacía.
+
+
+LOS SEIS GANCHOS NO SE TOCAN
+----------------------------
+Ni una coma. Son lo mejor que hay escrito en la página: «Hay una
+operación sobre la mesa y enfrente alguien que hace esto varias veces al
+año. Usted, una vez en la vida.» Eso no se mejora, se protege.
 
 
 CÓMO SE HA COMPROBADO
 ---------------------
-162 combinaciones: 9 anchos (390, 768, 900, 960, 1024, 1280, 1347, 1440 y
-1920 px) × 3 idiomas × 2 modos × 3 fases. Se verifica que el gancho, las
-pastillas, los honorarios y el cierre empiezan todos en el mismo píxel
-que la tira de pestañas; que el bloque azul empieza y acaba en ese mismo
-raíl; que la rejilla de pastillas termina en el borde derecho; que todas
-las filas de pastillas están completas (2×2 o 2×3); que ninguna pastilla
-se parte en dos líneas; que no se abre ningún hueco entre bloques; y que
-por debajo de 960 px el número sigue oculto y el orden de lectura no
-cambia. Más la batería de regresión de siempre. Sin incidencias.
+· Las seis frases nuevas están por debajo de 100 caracteres a propósito.
+  Medido: de 65 a 97 en español, de 69 a 96 en inglés, de 63 a 97 en
+  francés.
+· Resultado en pantalla, sobre 90 combinaciones (5 anchos × 3 idiomas ×
+  2 modos × 3 fases): las 90 frases de cierre se resuelven en UNA SOLA
+  línea. En la v21 eran 105 de 108; ahora no queda ninguna partida.
+· Las 162 combinaciones de la batería de siempre (9 anchos × 3 idiomas ×
+  2 modos × 3 fases) y la batería de regresión completa: sin incidencias
+  en ninguna de las dos.
+· Comparación del HTML generado línea a línea contra la v21: exactamente
+  7 diferencias por idioma. Las 6 frases de cierre y la de honorarios.
+  Ninguna otra.
 
 
 QUÉ NO SE HA TOCADO
 -------------------
 Hero, «Sobre mí», paleta, tipografías, título de la sección, control
-segmentado Preparar · Ejecutar · Acompañar, las pastillas y sus nombres,
-el bloque azul del cierre —que sigue centrado— y su frase «Empiece por
-una conversación, no por una decisión.»
+segmentado, los seis ganchos, las pastillas y sus nombres, las otras
+cinco líneas de honorarios, el bloque azul del cierre y su frase «Empiece
+por una conversación, no por una decisión.»
+
+
+REDACCIONES QUE NO HAS VISTO (aprobaste la intención, no estas palabras)
+-----------------------------------------------------------------------
+Dime si alguna no te suena y la cambio.
+
+Inglés · vender
+  You will know what your company is worth, and why, before anyone else
+  puts a price on it.
+  You will close on terms you understand and can explain, with one person
+  accountable throughout.
+  You will decide with the numbers in front of you, and the company will
+  be ready when it matters.
+Inglés · comprar
+  You will say no quickly, and see companies nobody else is looking at.
+  You will know what price you can defend, and where you can renegotiate.
+  You will close on the terms you decided, not the ones you were offered.
+Inglés · honorarios de Acompañar
+  A fixed retainer, agreed in writing before starting.
+
+Francés · vender
+  Vous saurez ce que vaut votre entreprise, et pourquoi, avant qu'un
+  autre y mette un prix.
+  Vous conclurez à des conditions que vous comprenez et pouvez expliquer,
+  avec un seul responsable.
+  Vous déciderez avec les chiffres devant vous, et l'entreprise sera
+  prête le moment venu.
+Francés · comprar
+  Vous direz non vite, et verrez des entreprises que personne d'autre ne
+  regarde.
+  Vous saurez quel prix défendre, et sur quels points renégocier.
+  Vous conclurez aux conditions que vous avez décidées, pas à celles
+  qu'on vous a proposées.
+Francés · honorarios de Acompañar
+  Un forfait fixe, convenu par écrit avant de commencer.
+
+Y la línea española de honorarios de Acompañar, que también es propuesta
+mía: «Una cuota fija, cerrada por escrito antes de empezar.»
+
+
+UNA COSA QUE HE VISTO Y NO HE TOCADO
+------------------------------------
+Si has quitado «mensual» de los honorarios de Acompañar para no obligarte
+a una cadencia, entonces el subtítulo de la pestaña 03 dice lo mismo por
+otra vía: «Decidir acompañado cada mes». Sale en el control segmentado,
+en los tres idiomas, y es lo primero que se lee de esa fase.
+
+No lo he cambiado porque no me lo has pedido. Si quieres, la alternativa
+más corta que respeta el ritmo de las otras dos («Saber lo que vale»,
+«Cerrar en buenas condiciones») sería «Decidir acompañado». Dos palabras
+menos y ningún compromiso de frecuencia. Tú dirás.
 
 
 LO QUE SIGUE PENDIENTE EN TU LADO
 ---------------------------------
-· Confirmar la redacción de honorarios de Ejecutar y Acompañar. Es un
-  compromiso comercial publicado y lo propuse yo; nunca lo has
-  confirmado.
+· Confirmar la redacción de honorarios de Ejecutar. Es un compromiso
+  comercial publicado, lo propuse yo y nunca lo has confirmado.
 · Preguntar a tu gestoría si eres sujeto obligado por la Ley 10/2010.
 · Conectar Cal.com con tus calendarios y activar «Check for conflicts».
 · Activar FormSubmit y poner el alias aleatorio en el formulario.
 · Decidir si los cuatro textos del proceso siguen en primera persona
   («Lo hago personalmente», «Me cuenta su situación», «Nos sentamos a
   hablar») o pasan a hablar de usted. Sigue sin respuesta desde la v14.
-· Una propuesta de una línea que sigue esperando tu sí o tu no: en
-  Acompañar, cambiar «Una cuota mensual fija, acordada según la
-  dedicación.» por «Una cuota mensual fija, cerrada por escrito antes de
-  empezar.» Las otras cinco líneas de honorarios cierran con un
-  compromiso por escrito; esta es la única que no.
+· Tres ofertas mías de una línea que siguen esperando un sí o un no:
+  hacer corto (48 px) el filete de honorarios en vez de a todo lo ancho;
+  cambiar el «+» de las pastillas por una flecha «→»; y deshacer los tres
+  acortamientos de pastillas en francés.

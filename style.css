@@ -471,7 +471,18 @@ a{color:inherit;text-decoration:none;}
      las pastillas, los honorarios y el cierre arrancan todos en la misma x. */
   .phase-panel.is-active{display:block;}
   .phase-lead{margin:0 0 clamp(1.6rem,2.6vw,2rem);}
-  .phase-say{max-width:62ch;}
+  /* SIN TOPE DE MEDIDA. El tope de 62 caracteres que puse en la v20 era
+     teoría de manual aplicada al elemento equivocado: obligaba a partir en
+     dos toda frase de más de 62 caracteres, y «text-wrap:balance» repartía
+     esa frase en dos líneas iguales. Resultado medido a 1.366 px: el gancho
+     ocupaba entre el 37 % y el 71 % del ancho de la rejilla de pastillas y
+     el cierre entre el 44 % y el 76 %, con cinco bordes derechos distintos
+     dentro de una misma sección. Eso es lo que se veía «a medias».
+     Sin tope, 105 de 108 combinaciones resuelven el cierre en UNA sola
+     línea y el gancho llega hasta el raíl derecho. Cuando una frase sí
+     necesita dos líneas (anchos pequeños, francés), «balance» las deja
+     iguales: medido, ninguna última línea baja del 70 %. */
+  .phase-say{max-width:none;}
   /* dos columnas de pastillas: 4 dan un 2×2 y 6 un 2×3. Siempre un
      rectángulo cerrado, nunca una pastilla huérfana, y la rejilla termina
      justo donde termina la tira de pestañas de arriba. */
@@ -479,7 +490,7 @@ a{color:inherit;text-decoration:none;}
     margin-top:clamp(1.9rem,3vw,2.3rem);}
   .phase-fee{max-width:none;}
   .phase-out{margin-top:clamp(2.1rem,3.4vw,2.6rem);}
-  .phase-out-t{max-width:62ch;}
+  .phase-out-t{max-width:none;}
   .phase-lead-num{display:block;}
   .phase-lead-title{position:static;width:auto;height:auto;margin:0;overflow:visible;
     clip:auto;clip-path:none;white-space:normal;}
