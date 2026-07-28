@@ -399,9 +399,10 @@ a{color:inherit;text-decoration:none;}
   letter-spacing:-0.018em;color:var(--ink);}
 
 /* --- 20.1c Cuerpo editorial · sin rótulos ---------------------------- */
-/* en móvil no hay columna izquierda: el aire lo pone el panel */
-.phase-body{margin-top:0;}
-
+/* En móvil el panel es un bloque y los cuatro elementos van uno detrás de
+   otro en el orden de siempre: gancho, pastillas, honorarios, cierre. No
+   hay envoltorio: en escritorio eso permite mandar las pastillas a una
+   tercera columna sin cambiar ese orden. */
 .phase-say{margin:0;font-family:var(--serif);font-weight:300;
   font-size:clamp(1.24rem,4.7vw,1.62rem);line-height:1.36;letter-spacing:-0.013em;
   color:var(--ink);max-width:38ch;text-wrap:balance;}
@@ -433,8 +434,13 @@ a{color:inherit;text-decoration:none;}
 .svc-chip:active{transform:translateY(0);}
 
 /* cómo se cobra · una sola línea, en tono de nota al pie, bajo las
-   pastillas. Sin rótulo y sin bloque propio: informa, no vende. */
-.phase-fee{margin:clamp(0.95rem,2.6vw,1.15rem) 0 0;font-size:0.8rem;line-height:1.6;
+   pastillas. Sin rótulo y sin bloque propio: informa, no vende.
+   Va separado por un filete fino y un punto más pequeño que el resto para
+   que se lea como lo que es, un pie de página, y no como parte del bloque
+   de servicios. */
+.phase-fee{margin:clamp(1rem,2.6vw,1.2rem) 0 0;padding-top:0.8rem;
+  border-top:1px solid var(--line);
+  font-size:0.74rem;line-height:1.6;
   color:var(--muted-2);max-width:62ch;text-wrap:balance;}
 
 /* --- 20.1e El resultado, destacado, cierra la fase ------------------- */
@@ -454,9 +460,26 @@ a{color:inherit;text-decoration:none;}
   .svc-chip{font-size:0.94rem;padding:0.72rem 1.25rem 0.72rem 1.05rem;}
 }
 @media (min-width:960px){
-  .phase-panel.is-active{display:grid;grid-template-columns:minmax(10rem,14rem) 1fr;
-    gap:clamp(2.5rem,5vw,5rem);align-items:start;}
-  .phase-body{margin-top:0;}
+  /* UNA SOLA COLUMNA, anclada al mismo raíl que «SERVICIOS», el título de
+     la sección, la tira de pestañas y el bloque azul del cierre.
+     Hasta la v19 el número grande ocupaba una columna propia a la
+     izquierda: entre esa columna y su hueco empujaba TODO el contenido del
+     panel unos 235 px hacia dentro. Por eso el texto nunca podía quedar
+     alineado con el resto de la sección por mucho que se moviesen las
+     pastillas: el desajuste no estaba dentro del panel, estaba en la
+     rejilla del panel. Ahora el número va encima, en el raíl, y el gancho,
+     las pastillas, los honorarios y el cierre arrancan todos en la misma x. */
+  .phase-panel.is-active{display:block;}
+  .phase-lead{margin:0 0 clamp(1.6rem,2.6vw,2rem);}
+  .phase-say{max-width:62ch;}
+  /* dos columnas de pastillas: 4 dan un 2×2 y 6 un 2×3. Siempre un
+     rectángulo cerrado, nunca una pastilla huérfana, y la rejilla termina
+     justo donde termina la tira de pestañas de arriba. */
+  .phase-svc{grid-template-columns:repeat(2,1fr);max-width:none;gap:0.6rem;
+    margin-top:clamp(1.9rem,3vw,2.3rem);}
+  .phase-fee{max-width:none;}
+  .phase-out{margin-top:clamp(2.1rem,3.4vw,2.6rem);}
+  .phase-out-t{max-width:62ch;}
   .phase-lead-num{display:block;}
   .phase-lead-title{position:static;width:auto;height:auto;margin:0;overflow:visible;
     clip:auto;clip-path:none;white-space:normal;}
@@ -472,27 +495,14 @@ a{color:inherit;text-decoration:none;}
    los nombres largos se parten en dos lineas y deforman su fila. Se
    recupera el espacio del acolchado, no del cuerpo de letra, para no
    tocar ni una palabra del texto. */
-@media (min-width:720px) and (max-width:1279.98px){
+/* Entre 720 y 960 la rejilla de pastillas es la mas estrecha de toda la
+   pagina y los nombres largos se partian en dos lineas. Se recupera el
+   espacio del acolchado, no del cuerpo de letra, para no tocar ni una
+   palabra. A partir de 960 la rejilla ya llega de raíl a raíl y las
+   pastillas recuperan su acolchado normal. */
+@media (min-width:720px) and (max-width:959.98px){
   .phase-svc{gap:0.5rem;}
   .svc-chip{gap:0.6rem;padding:0.72rem 0.95rem 0.72rem 0.85rem;}
-}
-@media (min-width:960px) and (max-width:1279.98px){
-  /* la columna del numero se estrecha y el hueco se cierra: todo lo que
-     suelta la izquierda lo gana la rejilla de la derecha */
-  .phase-panel.is-active{grid-template-columns:minmax(9rem,11.5rem) 1fr;gap:2.5rem;}
-}
-
-/* De 1280 en adelante el panel dejaba 296 px muertos a su derecha: la tira
-   de pestañas de arriba y el bloque azul de abajo llegaban al borde y el
-   contenido no. Se corrige sin mover nada de sitio y sin tocar una palabra:
-   la rejilla de pastillas pierde su tope y el gancho y el cierre reparten
-   el mismo texto en menos lineas y mas largas. Medido en tres idiomas, dos
-   modos, tres fases y tres anchos: el gancho pasa de tres lineas a dos en
-   los 54 casos, y ninguna ultima linea baja del 88% de la mas ancha. */
-@media (min-width:1280px){
-  .phase-svc{max-width:none;}
-  .phase-say{max-width:56ch;}
-  .phase-out-t{max-width:66ch;}
 }
 
 /* --- 20.2 Proceso · los números SON la línea de tiempo ---------------- */

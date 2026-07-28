@@ -1,4 +1,4 @@
-CT ADVISORY · VERSIÓN 18
+CT ADVISORY · VERSIÓN 20
 ========================
 
 QUÉ HAY QUE SUBIR
@@ -7,57 +7,97 @@ Los 20 ficheros de esta carpeta, sustituyendo los que ya hay en el
 repositorio. NO subas este LEEME.txt.
 
 *** IMPORTANTE ***
-Sube TAMBIÉN style.css, no solo los .html.
-Es el fallo que se ha repetido en las últimas versiones: si subes solo
-los .html, la web se ve rota. En esta versión el cambio está ENTERO en
-style.css: si no lo subes, no verás absolutamente nada nuevo.
+Esta vez el cambio está ENTERO en style.css. El HTML no cambia ni una
+coma (solo el número de versión de la caché). Si subes los .html y te
+olvidas de style.css, no verás absolutamente ningún cambio.
 
 Después de subir, abre la web con Ctrl+F5 (o Cmd+Shift+R en Mac) la
 primera vez.
 
 
-QUÉ CAMBIA EN ESTA VERSIÓN
---------------------------
-Solo dos cosas, las dos de alineación en escritorio. No cambia ni una
-palabra del texto, ni una sección, ni un color.
+EL PROBLEMA QUE HABÍAS DETECTADO
+--------------------------------
+Tenías razón las tres veces, y las tres veces yo estuve buscando donde no
+era. Medido a 1.440 px, la sección tenía cuatro bordes izquierdos:
 
-1 · Servicios · el panel llega hasta el borde
-    Tenías razón y se puede medir: a 1440 px la tira de pestañas y el
-    bloque azul ocupaban 1.296 px de ancho, y las pastillas solo 704.
-    Sobraban 296 px muertos a la derecha, justo lo que se veía.
-    Ahora la rejilla de pastillas acaba exactamente donde acaba la tira
-    de pestañas de arriba (comprobado: menos de 2 px de diferencia en
-    los tres idiomas, los dos modos y las tres fases).
+  · 72   «SERVICIOS», el título, la tira de pestañas, el bloque azul
+  · 72   el número grande 02
+  · 307  el gancho y la frase de cierre  ← el texto de verdad
+  · 1000 las pastillas y el renglón de honorarios
 
-2 · Servicios · menos líneas, más largas, mismo orden
-    Como pediste. El gancho pasa de tres líneas cortas a dos largas en
-    los 54 casos medidos, y el cierre de fase cabe en una sola línea en
-    la mayoría. Ninguna línea final baja del 88 % del ancho de la más
-    larga. El orden de lectura es el de siempre: gancho, pastillas,
-    honorarios, cierre.
+Y un quinto desajuste, vertical: la columna de texto terminaba en y=685 y
+la de pastillas en y=772. Debajo del texto quedaban 87 px muertos y a la
+derecha del cierre, media página vacía.
 
-3 · El proceso · la línea de tiempo llega al borde
-    Se paraba 274 px antes que las reglas horizontales de debajo. Ahora
-    el cuarto nodo cae en el borde derecho y los cuatro quedan a la
-    misma distancia exacta entre sí (420 px a 1440, 441 a 1920, 264 a
-    920). No cambia ningún texto ni la animación de la línea.
+La causa no estaba dentro del panel. Estaba en la rejilla del panel: el
+número grande ocupaba una columna propia a la izquierda, y entre esa
+columna y su hueco empujaban TODO el contenido unos 235 px hacia dentro
+respecto al título y a las pestañas. Mientras esa columna existiese, el
+texto no podía estar alineado con el resto de la sección por mucho que yo
+moviese las pastillas. Eso es lo que hice en la v18 (llevar la rejilla al
+borde) y en la v19 (poner las pastillas al lado): dos arreglos correctos
+sobre un diagnóstico equivocado.
 
-Sobre lo de empujar las pastillas a la derecha: al final no hace falta.
-Ahora la rejilla empieza donde empieza el texto y acaba donde acaba la
-tira de pestañas, así que está alineada por los dos lados. Empujarlas a
-la derecha rompería la alineación con el gancho y el cierre, que es la
-línea vertical que ordena todo el panel.
 
-En móvil y tableta no cambia nada: todo esto entra a partir de 1280 px
-(servicios) y 900 px (proceso).
+QUÉ CAMBIA EN LA V20
+--------------------
+Una sola columna, anclada al mismo raíl que todo lo demás.
+
+1 · El número grande y el nombre de fase pasan de estar AL LADO del texto
+    a estar ENCIMA, en el raíl. Mismo tamaño, mismo color, misma
+    animación que hoy: solo cambia dónde se apoyan.
+
+2 · El gancho, las pastillas, los honorarios y el cierre arrancan todos
+    en la misma x que «SERVICIOS», el título, la tira de pestañas y el
+    bloque azul. Un único borde izquierdo en toda la sección.
+
+3 · Las pastillas pasan a rejilla de dos columnas de raíl a raíl: cuatro
+    dan un 2×2 y seis dan un 2×3. Siempre un rectángulo cerrado, nunca
+    una pastilla huérfana, y la rejilla termina exactamente donde termina
+    la tira de pestañas de arriba.
+
+4 · El renglón de honorarios se separa con un filete fino y baja de
+    cuerpo (de 0,80 a 0,74 rem). Es lo que pediste: que se lea como nota
+    al pie y no como parte del bloque de servicios. Sigue debajo de las
+    pastillas, sigue sin rótulo y sigue sin bloque propio.
+
+5 · El bloque azul del cierre se queda centrado, como estaba. Lo elegiste
+    tú y no se ha tocado.
+
+6 · El texto lleva medida de lectura (62 caracteres). Eso es tipografía,
+    no un margen inventado: por encima de esa medida la línea cansa.
+
+Desaparece el hueco muerto y la sección encoge unos 90 px.
+
+No cambia ni una palabra, ni un color, ni una tipografía, ni un nombre de
+servicio, ni el orden de lectura: número, gancho, pastillas, honorarios,
+cierre. El mismo de siempre.
+
+En móvil no cambia nada salvo el filete de honorarios, que se aplica en
+todos los anchos para que la nota se lea igual en el móvil y en el
+escritorio. El número grande sigue oculto por debajo de 960 px, porque
+ahí repetiría la pestaña activa que tiene justo encima.
+
+
+CÓMO SE HA COMPROBADO
+---------------------
+162 combinaciones: 9 anchos (390, 768, 900, 960, 1024, 1280, 1347, 1440 y
+1920 px) × 3 idiomas × 2 modos × 3 fases. Se verifica que el gancho, las
+pastillas, los honorarios y el cierre empiezan todos en el mismo píxel
+que la tira de pestañas; que el bloque azul empieza y acaba en ese mismo
+raíl; que la rejilla de pastillas termina en el borde derecho; que todas
+las filas de pastillas están completas (2×2 o 2×3); que ninguna pastilla
+se parte en dos líneas; que no se abre ningún hueco entre bloques; y que
+por debajo de 960 px el número sigue oculto y el orden de lectura no
+cambia. Más la batería de regresión de siempre. Sin incidencias.
 
 
 QUÉ NO SE HA TOCADO
 -------------------
 Hero, «Sobre mí», paleta, tipografías, título de la sección, control
 segmentado Preparar · Ejecutar · Acompañar, las pastillas y sus nombres,
-el bloque azul del cierre y su frase «Empiece por una conversación, no
-por una decisión.»
+el bloque azul del cierre —que sigue centrado— y su frase «Empiece por
+una conversación, no por una decisión.»
 
 
 LO QUE SIGUE PENDIENTE EN TU LADO
