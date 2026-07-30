@@ -178,7 +178,10 @@ a{color:inherit;text-decoration:none;}
 .step-b p{font-size:0.97rem;line-height:1.58;color:var(--muted);margin:0;max-width:64ch;}
 @media (max-width:560px){.step{grid-template-columns:1.75rem 1fr;gap:0.9rem;}}
 /* 10 · Sobre mí */
-.about-grid{display:grid;grid-template-columns:minmax(0,357px) 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:start;}
+/* v27 · 357px dejaba la foto colgando 56 px por debajo de la columna de texto
+   desde que la lista de credenciales pasó de cuatro filas a tres. Con 313 px
+   (y la proporción 4/5) las dos columnas terminan a la misma altura. */
+.about-grid{display:grid;grid-template-columns:minmax(0,313px) 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:start;}
 .about-photo{margin:0;}
 .about-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:2px;filter:grayscale(100%) contrast(1.02);background:var(--paper-3);}
 .about-id{margin-top:1.4rem;padding-top:1.3rem;border-top:2px solid var(--ink);}
@@ -189,6 +192,15 @@ a{color:inherit;text-decoration:none;}
 .about-facts{list-style:none;margin:2rem 0 0;padding:0;border-top:1px solid var(--line);}
 .about-facts li{padding:0.9rem 0;border-bottom:1px solid var(--line);font-size:0.98rem;color:var(--ink);display:grid;grid-template-columns:150px 1fr;gap:1rem;align-items:baseline;}
 .about-facts span{font-size:0.7rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted-2);}
+/* v27 · LinkedIn junto al nombre. Icono de linea, del mismo tamano optico que
+   el resto de iconos del sitio, alineado a la altura de la mayuscula. */
+.about-name{display:inline-flex;align-items:center;gap:0.55rem;}
+.about-in{display:inline-flex;align-items:center;justify-content:center;
+  width:22px;height:22px;color:var(--muted-2);transition:color 0.2s var(--ease);}
+.about-in svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;}
+.about-in:hover{color:var(--accent);}
+.about-in:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px;}
 
 
 
@@ -623,6 +635,51 @@ a{color:inherit;text-decoration:none;}
     max-width:none;padding:1.9rem 0 0;font-size:1.02rem;min-height:3.5rem;
     border-top:1px solid var(--line);margin-top:1.9rem;}
 }
+
+/* --- 20.25 Insights --------------------------------------------------- */
+/* INVISIBLE HASTA QUE SE ENCIENDA.
+   La sección nace con el atributo `hidden`, que el navegador ya oculta por sí
+   solo. Para publicarla basta con BORRAR ESA PALABRA en los tres index. Esta
+   regla se encarga de que su entrada del menú desaparezca y reaparezca con
+   ella, para que no quede un enlace que no lleva a ningún sitio. */
+body:has(#novedades[hidden]) .nav-menu li:has(a[href="#novedades"]){display:none;}
+
+/* Fondo propio: #proceso ya es paper-2 y #preguntas es paper. Con cualquiera de
+   los dos, Insights se fundía con el bloque de al lado en una mancha continua.
+   paper-3 la separa de ambos y devuelve la alternancia de la página. */
+.section-insights{background:var(--paper-3);border-block:1px solid var(--line);}
+.insights-list{list-style:none;margin:0;padding:0;display:grid;gap:1px;
+  background:var(--line);border:1px solid var(--line);
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+.insights-list:empty{display:none;border:0;}
+.insight{margin:0;display:flex;}
+.insight-link{position:relative;display:block;width:100%;background:var(--paper-2);
+  padding:1.6rem 1.7rem 2.9rem;transition:background 0.25s var(--ease);}
+.insight-link:hover{background:var(--paper-3);}
+.insight-meta{margin:0 0 0.7rem;font-size:0.72rem;font-weight:500;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--muted-2);}
+.insight-title{font-family:var(--serif);font-weight:400;font-size:1.16rem;line-height:1.3;
+  color:var(--ink);margin:0 0 0.5rem;letter-spacing:-0.005em;text-wrap:pretty;}
+.insight-text{margin:0;font-size:0.93rem;line-height:1.55;color:var(--muted);}
+.insight-go{position:absolute;left:1.7rem;bottom:1.5rem;display:inline-flex;align-items:center;
+  gap:0.45rem;font-size:0.88rem;font-weight:500;color:var(--accent);}
+.insight-arrow{transition:transform 0.25s var(--ease);}
+.insight-link:hover .insight-arrow{transform:translateX(4px);}
+
+/* texto de entrada de la sección. Permanente: explica dónde se publica, haya
+   o no tarjetas debajo. */
+.insights-empty{margin:0;padding:0;font-size:1.02rem;line-height:1.6;
+  color:var(--muted);max-width:56ch;text-wrap:pretty;}
+.insights-list:not(:empty) + .insights-empty{padding-top:2.2rem;}
+.insights-cta{display:inline-flex;align-items:center;gap:0.6rem;margin-top:1.9rem;
+  font-size:0.98rem;font-weight:500;color:var(--ink);
+  border-bottom:1px solid var(--line-2);padding-bottom:0.28rem;
+  transition:color 0.25s var(--ease),border-color 0.25s var(--ease);}
+.insights-cta .c-ico{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;flex:none;}
+.insights-cta:hover{color:var(--accent);border-color:var(--accent);}
+.insights-arrow{transition:transform 0.3s var(--ease);}
+.insights-cta:hover .insights-arrow{transform:translateX(5px);}
 
 /* --- 20.3 FAQ elevada ------------------------------------------------ */
 .faq{border-top:1px solid var(--line-2);max-width:940px;}
