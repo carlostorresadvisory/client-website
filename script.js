@@ -119,6 +119,7 @@
       email:  form.getAttribute('data-msg-email')  || 'Indique su correo electrónico.',
       email2: form.getAttribute('data-msg-email2') || 'Compruebe el correo electrónico.',
       msg:    form.getAttribute('data-msg-msg')    || 'Escriba unas líneas sobre su situación.',
+      consent:form.getAttribute('data-msg-consent')|| 'Confirme que ha leído la política de privacidad.',
       review: form.getAttribute('data-msg-review') || 'Revise los campos marcados.',
       sending:form.getAttribute('data-msg-sending')|| 'Enviando su mensaje…',
       ok:     form.getAttribute('data-msg-ok')     || 'Gracias. He recibido su mensaje y le responderé personalmente.',
@@ -137,13 +138,17 @@
         email: form.email.value.trim(),
         mensaje: form.mensaje.value.trim()
       };
-      ['email', 'mensaje'].forEach(function (n) { setError(n, ''); });
+      ['email', 'mensaje', 'consent'].forEach(function (n) { setError(n, ''); });
       setStatus('');
 
       var firstInvalid = null;
       if (!data.email) { setError('email', M.email); firstInvalid = firstInvalid || 'email'; }
       else if (!isEmail(data.email)) { setError('email', M.email2); firstInvalid = firstInvalid || 'email'; }
       if (!data.mensaje) { setError('mensaje', M.msg); firstInvalid = firstInvalid || 'mensaje'; }
+      // Casilla informativa del art. 13 RGPD. No es consentimiento: la base
+      // juridica sigue siendo el art. 6.1.b (medidas precontractuales).
+      var consentEl = form.querySelector('#consent');
+      if (consentEl && !consentEl.checked) { setError('consent', M.consent); firstInvalid = firstInvalid || 'consent'; }
       if (firstInvalid) {
         var el = form.querySelector('#' + firstInvalid);
         if (el) el.focus();
@@ -180,7 +185,7 @@
       });
     });
 
-    ['email', 'mensaje'].forEach(function (name) {
+    ['email', 'mensaje', 'consent'].forEach(function (name) {
       var field = form.querySelector('#' + name);
       if (field) field.addEventListener('input', function () { setError(name, ''); });
     });
@@ -188,7 +193,7 @@
 })();
 
 /* ============================================================
-   Selector de perspectiva · Empresario (sell) / Comprador (buy)
+   Selector de perspectiva · Empresario (sell) / Inversor (buy)
    Intercambia el contenido [data-swap] a partir del JSON de
    #mode-data, sin recarga. El contenido "sell" vive en el HTML
    (accesible y para SEO); el "buy" se aplica al cambiar de modo.
@@ -244,12 +249,41 @@
     });
   }
 
+  /* v26 · Enlace directo al modo Inversor, para poder mandar una URL que
+     aterrice ya en la version correcta:
+       ES  ?modo=inversor      EN  ?mode=investor    FR  ?mode=investisseur
+     Se aceptan tambien los valores antiguos (comprador/buyer/acquereur) por
+     si algun enlace ya circula. Reutiliza apply(): no duplica logica. */
+  var VALORES_BUY = ['inversor', 'investor', 'investisseur', 'comprador', 'buyer', 'acquereur'];
+  var SLUG_BUY = { es: 'inversor', en: 'investor', fr: 'investisseur' };
+  var idioma = document.documentElement.lang || 'es';
+  var PARAM = idioma === 'es' ? 'modo' : 'mode';
+
+  function sincronizarUrl(mode) {
+    if (!window.history || !history.replaceState || typeof URL !== 'function') return;
+    try {
+      var url = new URL(window.location.href);
+      // se limpian ambos nombres para no dejar el parametro del otro idioma
+      url.searchParams.delete('modo');
+      url.searchParams.delete('mode');
+      if (mode === 'buy') url.searchParams.set(PARAM, SLUG_BUY[idioma] || 'investor');
+      // replaceState, no pushState: no ensucia el boton Atras del navegador
+      history.replaceState(null, '', url.toString());
+    } catch (e) { /* URL no soportada: el modo funciona igual, solo no se refleja */ }
+  }
+
   opts.forEach(function (o) {
     o.addEventListener('click', function () {
       var mode = o.getAttribute('data-set-mode');
-      if (mode !== document.body.getAttribute('data-mode')) apply(mode);
+      if (mode !== document.body.getAttribute('data-mode')) { apply(mode); sincronizarUrl(mode); }
     });
   });
+
+  try {
+    var q = new URLSearchParams(window.location.search);
+    var pedido = (q.get('modo') || q.get('mode') || '').toLowerCase();
+    if (VALORES_BUY.indexOf(pedido) !== -1) apply('buy');
+  } catch (e) { /* navegador sin URLSearchParams: arranca en modo empresario */ }
 })();
 
 /* =====================================================================
