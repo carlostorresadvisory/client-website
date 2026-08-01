@@ -762,19 +762,36 @@ body:has(#novedades[hidden]) .nav-menu li:has(a[href="#novedades"]){display:none
    campo de texto y borde; hay que neutralizarlo o la casilla sale deforme. */
 .field-consent{margin:0.25rem 0 1rem;}
 .consent-label{display:flex;gap:0.6rem;align-items:flex-start;font-size:0.82rem;line-height:1.45;cursor:pointer;}
-.consent-label input{flex:0 0 auto;width:1rem;height:1rem;margin-top:0.2rem;padding:0;border:0;background:none;accent-color:currentColor;}
-.consent-label input:hover{background:none;border:0;}
+/* v35 · casilla DIBUJADA POR NOSOTROS, no por el navegador. Antes usaba el
+   render nativo con `background:none` + `accent-color`, y Safari en iOS deja de
+   pintar el estado marcado con esa combinacion: se marcaba de verdad pero no se
+   veia. Con appearance:none el aspecto es identico en todos los navegadores. */
+.consent-label input{appearance:none;-webkit-appearance:none;position:relative;
+  flex:0 0 auto;width:1.15rem;height:1.15rem;margin-top:0.16rem;padding:0;
+  border:1px solid var(--accent-l);border-radius:3px;background-color:transparent;
+  cursor:pointer;
+  transition:background-color 0.18s var(--ease),border-color 0.18s var(--ease);}
+.consent-label input:checked{background-color:var(--accent-l);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%230C1E38' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.4l3 3 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;background-size:74%;}
+.consent-label input:hover{border-color:#fff;}
+.consent-label input:checked:hover{background-color:#fff;}
+.consent-label input:focus-visible{outline:2px solid var(--accent-l);outline-offset:2px;}
+.field-consent.has-error .consent-label input{border-color:#E9A7A0;}
 .consent-label a{color:var(--accent-l);text-decoration:underline;text-underline-offset:2px;}
 .consent-label a:hover{color:#fff;}
 .field-consent.has-error .consent-label{color:#E9A7A0;}
 /* v35 · en movil la casilla de 16 px era practicamente inalcanzable con el
    dedo: por debajo del minimo de 24x24 de la WCAG 2.5.8, y compitiendo con el
    enlace de la politica, que ocupa media primera linea y se lleva el toque.
-   Se agranda a 26 px y se separa del texto. El criterio es el TIPO DE PUNTERO,
+   La casilla se queda pequeña, como estaba: lo que se agranda es el AREA
+   TACTIL, con un pseudoelemento invisible de 44x44 centrado sobre ella. Asi se
+   cumple el minimo sin engordar el dibujo. El criterio es el TIPO DE PUNTERO,
    no el ancho: una tableta tambien se toca con el dedo. Con raton no cambia. */
 @media (pointer:coarse){
-  .consent-label{gap:0.8rem;}
-  .consent-label input{width:1.625rem;height:1.625rem;margin-top:0.05rem;}
+  .consent-label{gap:0.75rem;}
+  .consent-label input::after{content:"";position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);width:44px;height:44px;}
 }
 
 /* --- 20.5 «La idea» · más aire --------------------------------------- */
