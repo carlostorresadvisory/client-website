@@ -767,6 +767,15 @@ body:has(#novedades[hidden]) .nav-menu li:has(a[href="#novedades"]){display:none
 .consent-label a{color:var(--accent-l);text-decoration:underline;text-underline-offset:2px;}
 .consent-label a:hover{color:#fff;}
 .field-consent.has-error .consent-label{color:#E9A7A0;}
+/* v35 · en movil la casilla de 16 px era practicamente inalcanzable con el
+   dedo: por debajo del minimo de 24x24 de la WCAG 2.5.8, y compitiendo con el
+   enlace de la politica, que ocupa media primera linea y se lleva el toque.
+   Se agranda a 26 px y se separa del texto. El criterio es el TIPO DE PUNTERO,
+   no el ancho: una tableta tambien se toca con el dedo. Con raton no cambia. */
+@media (pointer:coarse){
+  .consent-label{gap:0.8rem;}
+  .consent-label input{width:1.625rem;height:1.625rem;margin-top:0.05rem;}
+}
 
 /* --- 20.5 «La idea» · más aire --------------------------------------- */
 .statement{padding-block:clamp(3rem,5.5vw,4.5rem);}
