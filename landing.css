@@ -287,14 +287,7 @@
 .cd-sobre{font-size:.86rem; text-decoration:underline; text-underline-offset:3px;}
 .cd-sobre::before{content:"\00B7"; margin-right:.55rem; text-decoration:none; display:inline-block; color:rgba(255,255,255,.45);}
 
-/* Plazo del encargo. Va en versalitas para que se lea como un dato de ficha
-   y no como una frase más de la descripción. */
-/* Selector con la misma especificidad que `.lp-precios td span`, que si no
-   gana y deja el plazo con el cuerpo de la descripción. */
-.lp-precios td span.lp-plazo{
-  display:block; margin-top:.5rem; font-family:var(--sans); font-size:.7rem;
-  font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--muted-2);
-}
+/* El plazo del encargo se mudó a la celda del importe (v10, más abajo). */
 
 /* La comisión es el argumento comercial de las dos landings de colaboración:
    sale de la letra pequeña y se convierte en el único bloque oscuro de la
@@ -450,44 +443,80 @@
    blanco contra un hueso, que a un metro de la pantalla no se ve. Las dos
    primeras pasan a ser el contexto y la tercera, el bloque oscuro que ya
    usan la comisión y el caso. */
-.lp-compl-col{background:transparent;}
+.lp-compl-col{background:var(--paper-2);}
 .lp-compl-h{color:var(--muted-2);}
 .lp-compl-col.is-mine{background:var(--ink); border-color:var(--ink);}
 .lp-compl-col.is-mine .lp-compl-h{color:var(--accent-l);}
 .lp-compl-col.is-mine li{color:rgba(255,255,255,.78);}
 .lp-compl-col.is-mine li::before{background:var(--accent-l);}
 
-/* --- Football field: una escala común en vez de cinco barras --------------
-   Cada método llevaba su barra desde cero, así que las cinco salían casi
-   iguales (del 84 % al 100 %) y ocupaban 428 px sin decir nada. Sobre una
-   escala única de 1,05 a 1,35 M€, con la banda de valor sombreada, se ve de
-   un vistazo lo único que importa: que las cuatro rutas caen dentro. */
-.lp-ff .lp-puente-row{padding:.6rem 0 .7rem;}
-.lp-ff .lp-puente-lbl{margin-bottom:.5rem;}
-.lp-ff .lp-puente-bar{position:relative; height:9px; background:rgba(255,255,255,.07);}
-.lp-ff .lp-puente-bar::before{content:""; position:absolute; inset:0 16.7%; background:rgba(255,255,255,.15);}
-.lp-ff .lp-puente-bar i{
-  position:absolute; left:var(--x); top:-3px; margin-left:-1.5px;
-  width:3px; height:15px; background:var(--accent-l);
+
+/* =====================================================================
+   v10 · Contenido por audiencia y remate del caso
+   ===================================================================== */
+
+/* --- La frase de cierre, al lado de las cifras y no encima ----------------
+   Suelta y a 28 px dejaba media sección vacía a su derecha y pesaba más que
+   el titular del caso. Comparte fila con las cifras y baja de cuerpo: es el
+   remate del relato, no un segundo titular. */
+.lp-case .lp-case-golpe{font-size:clamp(1.15rem,1.7vw,1.5rem); max-width:38ch;}
+/* `.lp p` y `.lp li` (0,1,1) le ganaban a la lista de titulares (0,1,0), así
+   que medio sitio se quedaba en `pretty`. Todo lo que son pies, epígrafes y
+   textos de dos o tres líneas se equilibra: `pretty` solo evita la palabra
+   suelta y deja últimas líneas del 11 % del ancho, que es lo que se veía. El
+   texto corrido de verdad —relato, letra pequeña, respuestas— sigue en
+   `pretty`, que es donde `balance` estrecharía de más. */
+.lp .lp-case-golpe, .lp .lp-hero-sub, .lp .lp-gana-list span,
+.lp .lp-case-fig span, .lp .lp-alcance span, .lp .lp-precios td span,
+.lp .lp-card ul li, .lp .lp-compl-col li, .lp .lp-ruta p,
+.lp .lp-destacado em, .lp .lp-comision em, .lp .lp-dl-text span,
+.lp .lp-destacado span, .lp .lp-comision span,
+.lp .lp-puente-lbl span{text-wrap:balance;}
+
+@media (min-width:1080px){
+  .lp-case .wrap > .lp-case-golpe{grid-column:1; max-width:none; margin:2.2rem 0 0;}
+  .lp-case .wrap > .lp-case-grid{grid-column:2; margin:2.2rem 0 0;}
+  .lp-case .wrap > .lp-case-note{margin-top:1.6rem;}
 }
-.lp-ff .lp-puente-row.is-hito .lp-puente-bar i{width:5px; margin-left:-2.5px; background:#fff;}
-/* La escala va arriba y hace de leyenda: los extremos a los lados y, en el
-   centro de la banda, lo que la banda es. `.lp-case p` gana a cualquier clase
-   suelta, así que se escribe con el prefijo o sale con el cuerpo del relato. */
-.lp-case .lp-ff-scale{
-  display:flex; justify-content:space-between; align-items:center;
-  gap:1rem; margin:0 0 .55rem;
-  font-family:var(--sans); font-size:.7rem; font-weight:500; letter-spacing:.13em;
-  text-transform:uppercase; color:rgba(255,255,255,.58);
+
+/* --- Alcance del análisis: lo que hay detrás de la cifra ------------------
+   Para asesorías y despachos el argumento no es el gráfico de valoración,
+   que a ellos no les dice nada: es la extensión de lo que se revisa. Cada
+   bloque con su rótulo y una línea de qué se mira dentro. */
+.lp-alcance{
+  list-style:none; margin:2.1rem 0 0; padding:0;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:0 clamp(1.8rem,3vw,3rem);
 }
-.lp-ff-key{
-  padding:.28rem .7rem; border-radius:2px;
-  background:rgba(255,255,255,.15); color:rgba(255,255,255,.82);
+.lp-alcance li{padding:.8rem 0 .85rem; border-top:1px solid rgba(255,255,255,.14);}
+.lp-alcance b{display:block; font-weight:500; color:#fff; font-size:.95rem; margin-bottom:.2rem;}
+.lp-alcance span{display:block; font-size:.84rem; line-height:1.45; color:rgba(255,255,255,.62);}
+@media (max-width:900px){ .lp-alcance{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:560px){ .lp-alcance{grid-template-columns:1fr;} }
+
+/* --- Registro de hallazgos: menos filetes ---------------------------------
+   Cada fila cerraba con su línea, así que la última quedaba pegada a la del
+   remate y el bloque se leía como una reja. */
+.lp-find tbody tr:last-child td{border-bottom:0;}
+
+/* --- El plazo, bajo el importe -------------------------------------------
+   Es un dato del encargo, no de la descripción: va donde el lector ya está
+   mirando cuando compara. */
+.lp-precios td:last-child .lp-plazo{
+  display:block; margin-top:.45rem; font-family:var(--sans); font-size:.7rem;
+  font-weight:500; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted-2); white-space:nowrap;
 }
 @media (max-width:560px){
-  .lp-case .lp-ff-scale{flex-wrap:wrap; justify-content:flex-start; gap:.5rem .9rem;}
+  .lp-precios td:last-child .lp-plazo{margin-top:.35rem;}
 }
-/* El pie va delante de las filas, así que `:first-child` ya no cae en la
-   primera fila y el filete de arriba se perdía. */
-.lp-ff .lp-puente-row:first-of-type{border-top:1px solid rgba(255,255,255,.10);}
-.lp-ff .lp-puente-row:last-of-type{border-bottom:0;}
+
+/* --- El bloque oscuro de la tarjeta, también para empresas e inversores ---
+   Era el argumento comercial de las dos landings de colaboración; en las
+   otras dos hace el mismo papel: lo que resuelvo, fuera de la lista. */
+.lp-destacado{margin:1.2rem 0 0; padding:1rem 1.1rem; background:var(--ink); border-radius:3px;}
+.lp-destacado b{
+  display:block; font-family:var(--serif); font-weight:300; font-size:1.32rem;
+  line-height:1.2; color:#fff; letter-spacing:-.01em;
+}
+.lp-destacado em{display:block; font-style:normal; margin-top:.4rem; font-size:.92rem; line-height:1.5; color:#fff;}
+.lp-destacado span{display:block; margin-top:.5rem; font-size:.82rem; line-height:1.5; color:rgba(255,255,255,.7);}
