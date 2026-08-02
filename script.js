@@ -116,6 +116,9 @@
     };
 
     var M = {
+      // Las landings piden ademas el nombre; la home no lo tiene y el campo
+      // simplemente no existe, asi que la comprobacion se salta sola.
+      nombre: form.getAttribute('data-msg-nombre') || 'Escriba su nombre.',
       email:  form.getAttribute('data-msg-email')  || 'Indique su correo electrónico.',
       email2: form.getAttribute('data-msg-email2') || 'Compruebe el correo electrónico.',
       msg:    form.getAttribute('data-msg-msg')    || 'Escriba unas líneas sobre su situación.',
@@ -138,10 +141,12 @@
         email: form.email.value.trim(),
         mensaje: form.mensaje.value.trim()
       };
-      ['email', 'mensaje', 'consent'].forEach(function (n) { setError(n, ''); });
+      ['nombre', 'email', 'mensaje', 'consent'].forEach(function (n) { setError(n, ''); });
       setStatus('');
 
       var firstInvalid = null;
+      var nombreEl = form.querySelector('#nombre');
+      if (nombreEl && !nombreEl.value.trim()) { setError('nombre', M.nombre); firstInvalid = firstInvalid || 'nombre'; }
       if (!data.email) { setError('email', M.email); firstInvalid = firstInvalid || 'email'; }
       else if (!isEmail(data.email)) { setError('email', M.email2); firstInvalid = firstInvalid || 'email'; }
       if (!data.mensaje) { setError('mensaje', M.msg); firstInvalid = firstInvalid || 'mensaje'; }
@@ -185,7 +190,7 @@
       });
     });
 
-    ['email', 'mensaje', 'consent'].forEach(function (name) {
+    ['nombre', 'email', 'mensaje', 'consent'].forEach(function (name) {
       var field = form.querySelector('#' + name);
       if (field) field.addEventListener('input', function () { setError(name, ''); });
     });
