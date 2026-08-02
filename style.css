@@ -838,3 +838,13 @@ p.footer-legal,.footer-legal-solo{display:block;text-align:left;}
   .track-wrap.tw-anim .track-rail,
   .track-wrap.tw-anim.is-drawn .track-rail{transform:none!important;transition:none;}
 }
+
+/* --- Colaboración con prescriptores (home) ------------------------------- */
+.section-colabora{background:var(--paper-3);}
+.colabora-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem 3rem;margin-top:2.5rem;}
+@media (max-width:820px){.colabora-grid{grid-template-columns:1fr;gap:2rem;}}
+.colabora-card{border-top:2px solid var(--ink);padding-top:1.4rem;}
+.colabora-card h3{font-family:var(--serif);font-weight:300;font-size:1.5rem;line-height:1.2;color:var(--ink);margin:0 0 .8rem;letter-spacing:-.01em;}
+.colabora-card p{color:var(--muted);line-height:1.65;margin:0 0 1.2rem;max-width:46ch;}
+.colabora-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.95rem;font-weight:500;color:var(--ink);border-bottom:1px solid var(--line-2);padding-bottom:.2rem;transition:color .2s,border-color .2s;}
+.colabora-link:hover{color:var(--accent);border-color:var(--accent);}

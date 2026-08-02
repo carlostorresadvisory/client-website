@@ -1,0 +1,259 @@
+/* =====================================================================
+   CT Advisory · landing.css
+   Solo para las páginas de campaña (/asesorias, /despachos, /inversores,
+   /empresas). No se carga en el sitio principal y no modifica style.css.
+
+   Criterio de maquetación: la caja del sitio (1520 px) está pensada para
+   componentes multicolumna. Una landing es texto, así que se estrecha a
+   1180 px y todo lo que quede a la derecha se llena con contenido útil
+   —cifras, precios, alcance—, nunca con aire.
+   ===================================================================== */
+
+.lp .wrap{max-width:1180px;}
+
+/* --- Cabecera reducida -------------------------------------------------- */
+.lp-header{
+  position:sticky; top:0; z-index:100;
+  background:rgba(252,251,249,.92);
+  backdrop-filter:saturate(180%) blur(10px);
+  -webkit-backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.lp-header .wrap{display:flex; align-items:center; justify-content:space-between; gap:1.5rem; min-height:72px;}
+.lp-header .brand-logo{height:52px;}
+.lp-header-right{display:flex; align-items:center; gap:1.25rem;}
+.btn-ghost{background:transparent; color:var(--ink); border:1px solid var(--line-2);}
+.btn-ghost:hover{border-color:var(--accent); color:var(--accent);}
+@media (max-width:520px){ .lp-header .btn-ghost{padding-inline:.85rem;} }
+
+/* --- Hero a dos columnas: argumento a la izquierda, prueba a la derecha -- */
+.lp-hero{padding:clamp(2.5rem,5vw,4.5rem) 0 clamp(2.5rem,4vw,3.5rem); background:var(--paper-2); border-bottom:1px solid var(--line);}
+.lp-hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(2rem,5vw,4.5rem); align-items:start;}
+@media (max-width:900px){ .lp-hero-grid{grid-template-columns:1fr; gap:2.5rem;} }
+
+.lp-hero .hero-title{max-width:none; font-size:clamp(2rem,3.6vw,3.05rem);}
+.lp-hero-sub{margin:1.3rem 0 0; font-size:clamp(1.02rem,1.35vw,1.16rem); line-height:1.62; color:var(--muted); max-width:46ch;}
+.lp-hero-cta{display:flex; flex-wrap:wrap; align-items:center; gap:.9rem 1.4rem; margin-top:2rem;}
+.lp-hero-note{font-size:.85rem; color:var(--muted);}
+
+/* Tarjeta lateral del hero */
+.lp-card{border:1px solid var(--line-2); border-radius:3px; background:var(--paper); padding:1.6rem 1.7rem;}
+.lp-card-h{
+  font-family:var(--sans); font-size:.72rem; font-weight:500; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--accent); margin:0 0 1.1rem;
+}
+.lp-card-h{margin:0 0 1.1rem;}
+.lp-card dl{margin:0; display:grid; grid-template-columns:1fr auto; gap:.05rem 1rem;}
+.lp-card dt{color:var(--ink); font-size:.93rem; padding:.62rem 0; border-bottom:1px solid var(--line);}
+.lp-card dd{margin:0; text-align:right; font-size:.93rem; font-weight:500; color:var(--ink); white-space:nowrap; padding:.62rem 0; border-bottom:1px solid var(--line);}
+.lp-card dl > dt:last-of-type, .lp-card dl > dd:last-of-type{border-bottom:0;}
+.lp-card dd.soft{font-weight:400; color:var(--muted);}
+.lp-card .lp-card-note{margin:1.1rem 0 0; font-size:.82rem; line-height:1.5; color:var(--muted);}
+.lp-card ul{list-style:none; margin:0; padding:0;}
+.lp-card ul li{position:relative; padding:.5rem 0 .5rem 1.4rem; font-size:.93rem; line-height:1.5; color:var(--muted); border-bottom:1px solid var(--line);}
+.lp-card ul li:last-child{border-bottom:0;}
+.lp-card ul li::before{content:""; position:absolute; left:0; top:1.12em; width:.65rem; height:1px; background:var(--accent);}
+.lp-card ul li b{color:var(--ink); font-weight:500;}
+
+/* --- Cifras del problema ------------------------------------------------ */
+.lp-figures{display:grid; grid-template-columns:repeat(3,1fr); gap:2rem 2.5rem; margin:0 0 1.5rem;}
+@media (max-width:760px){ .lp-figures{grid-template-columns:1fr;} }
+.lp-fig{border-top:2px solid var(--ink); padding-top:.9rem;}
+.lp-fig b{
+  display:block; font-family:var(--serif); font-weight:300;
+  font-size:clamp(1.9rem,2.8vw,2.5rem); line-height:1; color:var(--ink); letter-spacing:-.02em;
+}
+.lp-fig span{display:block; margin-top:.5rem; font-size:.9rem; line-height:1.45; color:var(--muted);}
+.lp-source{font-size:.79rem; color:var(--muted-2); margin:0;}
+
+/* --- Dos columnas de contenido ------------------------------------------ */
+.lp-two{display:grid; grid-template-columns:1fr 1fr; gap:2rem 3.5rem;}
+@media (max-width:820px){ .lp-two{grid-template-columns:1fr;} }
+.lp-list{list-style:none; margin:0; padding:0;}
+.lp-list li{position:relative; padding-left:1.5rem; margin-bottom:.95rem; color:var(--muted); line-height:1.6; font-size:.97rem;}
+.lp-list li::before{content:""; position:absolute; left:0; top:.72em; width:.72rem; height:1px; background:var(--accent);}
+.lp-list li b{color:var(--ink); font-weight:500;}
+
+/* --- Tabla de honorarios ------------------------------------------------ */
+.lp-precios{width:100%; border-collapse:collapse; margin:0 0 1.2rem;}
+.lp-precios th{
+  text-align:left; font-size:.72rem; font-weight:500; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); padding:0 0 .7rem; border-bottom:1px solid var(--line-2);
+}
+.lp-precios th:last-child, .lp-precios td:last-child{text-align:right;}
+.lp-precios td{padding:.95rem 0; border-bottom:1px solid var(--line); vertical-align:top;}
+.lp-precios td:first-child{color:var(--ink); padding-right:2rem;}
+.lp-precios td b{display:block; font-weight:500; color:var(--ink); margin-bottom:.15rem;}
+.lp-precios td span{font-size:.88rem; color:var(--muted); line-height:1.45;}
+.lp-precios td:last-child{font-weight:500; color:var(--ink); white-space:nowrap;}
+.lp-precios .soft td:last-child{font-weight:400; color:var(--muted);}
+
+/* --- Caso práctico ------------------------------------------------------ */
+.lp-case{background:var(--ink); color:#fff; padding:clamp(2.5rem,5vw,4rem) 0;}
+.lp-case .eyebrow{color:var(--accent-l);}
+.lp-case .eyebrow::before{background:var(--accent-l);}
+.lp-case h2{
+  font-family:var(--serif); font-weight:300; color:#fff;
+  font-size:clamp(1.7rem,2.8vw,2.3rem); line-height:1.15; margin:0 0 1.2rem; max-width:22ch;
+}
+.lp-case-cols{display:grid; grid-template-columns:1fr 1fr; gap:0 3.5rem;}
+@media (max-width:820px){ .lp-case-cols{grid-template-columns:1fr; gap:1rem;} }
+.lp-case p{color:rgba(255,255,255,.78); max-width:none; line-height:1.65; font-size:.97rem;}
+.lp-case .lp-case-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem 2rem; margin:2rem 0 1.2rem;}
+@media (max-width:820px){ .lp-case .lp-case-grid{grid-template-columns:repeat(2,1fr);} }
+.lp-case .lp-case-fig{border-top:1px solid rgba(255,255,255,.28); padding-top:.85rem;}
+.lp-case .lp-case-fig b{display:block; font-family:var(--serif); font-weight:300; font-size:clamp(1.4rem,2.1vw,1.85rem); color:#fff; line-height:1;}
+.lp-case .lp-case-fig span{display:block; margin-top:.4rem; font-size:.82rem; color:rgba(255,255,255,.62); line-height:1.4;}
+.lp-case .lp-case-note{font-size:.83rem; color:rgba(255,255,255,.55); margin-top:1.4rem;}
+.lp-case .lp-case-note a{color:rgba(255,255,255,.82); text-decoration:underline; text-underline-offset:2px;}
+
+/* --- Descarga ------------------------------------------------------------ */
+.lp-dl{
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  gap:1rem 2rem; border:1px solid var(--line-2); border-radius:3px;
+  padding:1.3rem 1.5rem; background:var(--paper-2); margin-top:2rem;
+}
+.lp-dl-text b{display:block; color:var(--ink); font-weight:500; margin-bottom:.15rem;}
+.lp-dl-text span{font-size:.87rem; color:var(--muted);}
+.lp-dl-btns{display:flex; gap:.55rem; flex-wrap:wrap;}
+
+/* --- FAQ: título arriba, preguntas a todo el ancho ----------------------- */
+.lp-faq .section-head{margin-bottom:1.8rem;}
+.lp-faq .faq{max-width:none;}
+
+/* Títulos de las columnas de contenido */
+.lp-col-title{
+  font-family:var(--serif); font-weight:300; font-size:1.32rem; line-height:1.25;
+  color:var(--ink); margin:0 0 1rem; letter-spacing:-.008em;
+}
+
+
+/* --- Frase de apertura del problema (patrón «phase-say» del sitio) -------- */
+.lp-say{
+  font-family:var(--serif); font-weight:300; letter-spacing:-.008em;
+  font-size:clamp(1.25rem,2vw,1.6rem); line-height:1.35; color:var(--ink);
+  max-width:34ch; margin:0 0 2.2rem; padding-left:1.1rem;
+  border-left:2px solid var(--accent);
+}
+.lp-problema .section-head{margin-bottom:2rem;}
+
+/* --- Proceso en cuatro pasos --------------------------------------------- */
+.lp-steps{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:2rem 2.5rem; counter-reset:p;}
+@media (max-width:900px){ .lp-steps{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:520px){ .lp-steps{grid-template-columns:1fr; gap:1.5rem;} }
+.lp-steps li{border-top:1px solid var(--line-2); padding-top:1rem;}
+.lp-step-n{display:block; font-family:var(--serif); font-size:.95rem; color:var(--accent); margin-bottom:.5rem;}
+.lp-steps b{display:block; font-weight:500; color:var(--ink); font-size:1.02rem; margin-bottom:.4rem;}
+.lp-steps p{margin:0; font-size:.92rem; line-height:1.5; color:var(--muted);}
+
+
+/* --- Barra de acción fija en móvil ---------------------------------------
+   La página se abre casi siempre desde un WhatsApp o un correo, en el móvil
+   y de pie. La acción tiene que estar siempre a un toque, sin buscarla.  */
+.lp-bar{display:none;}
+@media (max-width:760px){
+  .lp-bar{
+    display:flex; position:fixed; left:0; right:0; bottom:0; z-index:200;
+    gap:.5rem; padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom,0));
+    background:rgba(252,251,249,.96); border-top:1px solid var(--line-2);
+    backdrop-filter:saturate(180%) blur(10px);
+    -webkit-backdrop-filter:saturate(180%) blur(10px);
+  }
+  .lp-bar .btn{flex:1 1 0; padding-block:.85rem; font-size:.92rem;}
+  .lp-bar .lp-bar-tel{
+    flex:0 0 auto; display:inline-flex; align-items:center; justify-content:center;
+    width:48px; border:1px solid var(--line-2); border-radius:2px; background:#fff;
+  }
+  .lp-bar .lp-bar-tel svg{width:20px; height:20px; fill:none; stroke:var(--ink); stroke-width:1.6;}
+  body.lp{padding-bottom:74px;}
+}
+
+
+/* --- Rejillas según el número de elementos ------------------------------- */
+.lp-case-grid.lp-case-3{grid-template-columns:repeat(3,1fr);}
+.lp-case-grid.lp-case-4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:820px){ .lp-case-grid.lp-case-3, .lp-case-grid.lp-case-4{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:480px){ .lp-case-grid.lp-case-3, .lp-case-grid.lp-case-4{grid-template-columns:1fr;} }
+.lp-steps.lp-steps-3{grid-template-columns:repeat(3,1fr);}
+.lp-steps.lp-steps-4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){ .lp-steps.lp-steps-3, .lp-steps.lp-steps-4{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:520px){ .lp-steps.lp-steps-3, .lp-steps.lp-steps-4{grid-template-columns:1fr;} }
+
+/* --- Bloque de frase sin cifras ------------------------------------------ */
+.lp-frase{padding-block:clamp(2rem,4vw,3rem);}
+.lp-say-lg{font-size:clamp(1.35rem,2.3vw,1.85rem); max-width:40ch; margin-bottom:1.5rem;}
+
+
+/* --- Resultados: qué se lleva el cliente --------------------------------- */
+.lp-gana-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 3.5rem;}
+@media (max-width:820px){.lp-gana-list{grid-template-columns:1fr;}}
+.lp-gana-list li{border-top:1px solid var(--line-2);padding:1.35rem 0;}
+.lp-gana-list li b{display:block;font-family:var(--serif);font-weight:300;font-size:1.28rem;line-height:1.25;color:var(--ink);margin-bottom:.5rem;letter-spacing:-.008em;}
+.lp-gana-list li span{display:block;font-size:.94rem;line-height:1.6;color:var(--muted);max-width:46ch;}
+
+/* --- Complementariedad: su despacho, lo que le pedirán, dónde entro ------- */
+.lp-compl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem 2.5rem;margin-top:2.5rem;}
+@media (max-width:900px){.lp-compl-grid{grid-template-columns:1fr;gap:2rem;}}
+.lp-compl-col{border-top:2px solid var(--line-2);padding-top:1.1rem;}
+.lp-compl-col.is-mine{border-top-color:var(--ink);}
+.lp-compl-h{font-family:var(--sans);font-size:.74rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 1rem;}
+.lp-compl-col.is-mine .lp-compl-h{color:var(--accent);}
+.lp-compl-col ul{list-style:none;margin:0;padding:0;}
+.lp-compl-col li{position:relative;padding-left:1.3rem;margin-bottom:.85rem;font-size:.95rem;line-height:1.55;color:var(--muted);}
+.lp-compl-col li::before{content:"";position:absolute;left:0;top:.68em;width:.6rem;height:1px;background:var(--accent);}
+.lp-compl-cierre{margin:2.2rem 0 0;padding-top:1.4rem;border-top:1px solid var(--line);font-size:1.02rem;line-height:1.6;color:var(--ink);}
+
+/* --- v7 ------------------------------------------------------------------
+   v5: tabla lp-precios con cabecera. v6: puente de cifras (.lp-puente) e
+   identidad (.lp-id). v7: puente a ancho completo, identidad legible sobre
+   el contacto oscuro, cierre de complementariedad a ancho completo y
+   proceso como raíl estático (.lp-ruta) con todos los pasos a la vista. */
+
+/* --- Puente de cifras: la evidencia del caso, en barras ------------------- */
+.lp-puente{margin:1.7rem 0 1.9rem;}
+.lp-puente-row{padding:.7rem 0 .85rem;border-bottom:1px solid rgba(255,255,255,.10);}
+.lp-puente-row:first-child{border-top:1px solid rgba(255,255,255,.10);}
+.lp-puente-lbl{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;margin-bottom:.55rem;}
+.lp-puente-lbl span{font-size:.88rem;line-height:1.4;color:rgba(255,255,255,.66);}
+.lp-puente-lbl em{display:block;font-style:normal;font-size:.78rem;color:rgba(255,255,255,.45);margin-top:.1rem;}
+.lp-puente-lbl b{font-family:var(--serif);font-weight:300;font-size:1.35rem;color:#fff;white-space:nowrap;}
+.lp-puente-bar{height:5px;background:rgba(255,255,255,.10);}
+.lp-puente-bar i{display:block;height:100%;width:var(--w,0%);background:var(--accent-l);}
+.lp-puente-row.is-hito .lp-puente-bar i{background:#fff;}
+.lp-puente-row.is-hito .lp-puente-lbl span{color:#fff;}
+@media (max-width:560px){.lp-puente-lbl b{font-size:1.12rem;}}
+
+/* --- Identidad breve en el bloque de contacto -----------------------------
+   El contacto de las landings es oscuro: los colores se definen para ese
+   fondo, con la variante clara por si el bloque se reutiliza en claro. */
+.lp-id{display:flex;align-items:center;gap:1.1rem;margin-top:1.8rem;padding-top:1.5rem;border-top:1px solid var(--line);}
+.lp-id img{width:72px;height:90px;object-fit:cover;border-radius:2px;flex:0 0 auto;}
+.lp-id b{display:block;font-weight:500;color:var(--ink);font-size:.98rem;margin-bottom:.15rem;}
+.lp-id span{display:block;font-size:.84rem;line-height:1.5;color:var(--muted);}
+.section-contact .lp-id{border-top-color:rgba(255,255,255,.18);}
+.section-contact .lp-id b{color:#fff;}
+.section-contact .lp-id span{color:rgba(255,255,255,.66);}
+
+/* --- Ruta del proceso: raíl estático, todos los pasos a la vista ----------- */
+.lp-ruta{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0 2.5rem;position:relative;}
+.lp-ruta::before{content:"";position:absolute;top:14px;left:14px;right:14px;height:1px;background:var(--line-2);}
+.lp-ruta li{position:relative;padding-top:2.5rem;}
+.lp-ruta-n{position:absolute;top:0;left:0;width:29px;height:29px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line-2);border-radius:50%;background:var(--paper);font-family:var(--serif);font-size:.83rem;color:var(--accent);z-index:1;}
+.lp-ruta b{display:block;font-family:var(--serif);font-weight:300;font-size:1.18rem;line-height:1.25;color:var(--ink);margin-bottom:.45rem;letter-spacing:-.008em;}
+.lp-ruta p{margin:0;font-size:.92rem;line-height:1.55;color:var(--muted);}
+@media (max-width:820px){
+  .lp-ruta{grid-template-columns:1fr;gap:1.6rem;}
+  .lp-ruta::before{display:none;}
+  .lp-ruta li{padding:0 0 0 2.7rem;}
+  .lp-ruta-n{top:-2px;}
+}
+
+/* --- Caso como relato ---------------------------------------------------- */
+.lp-case-relato{columns:2;column-gap:3.5rem;margin-bottom:1.8rem;}
+@media (max-width:820px){.lp-case-relato{columns:1;}}
+.lp-case-relato p{break-inside:avoid;margin:0 0 1rem;}
+.lp-case-golpe{
+  font-family:var(--serif);font-weight:300;font-size:clamp(1.3rem,2.2vw,1.75rem);
+  line-height:1.35;color:#fff;max-width:52ch;margin:.5rem 0 1rem;
+  padding-left:1.3rem;border-left:2px solid var(--accent-l);letter-spacing:-.008em;
+}
