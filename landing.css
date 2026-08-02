@@ -285,15 +285,32 @@
 .cd-sobre{font-size:.86rem; text-decoration:underline; text-underline-offset:3px;}
 .cd-sobre::before{content:"\00B7"; margin-right:.55rem; text-decoration:none; display:inline-block; color:rgba(255,255,255,.45);}
 
-/* Plazo del encargo, separado de la descripción */
-.lp-plazo{display:block; margin-top:.4rem; font-size:.82rem; color:var(--muted-2); letter-spacing:.02em;}
+/* Plazo del encargo. Va en versalitas para que se lea como un dato de ficha
+   y no como una frase más de la descripción. */
+/* Selector con la misma especificidad que `.lp-precios td span`, que si no
+   gana y deja el plazo con el cuerpo de la descripción. */
+.lp-precios td span.lp-plazo{
+  display:block; margin-top:.5rem; font-family:var(--sans); font-size:.7rem;
+  font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--muted-2);
+}
 
-/* Cambio de idioma, sobre la tarjeta de alcance */
-.lp-aside{display:flex; flex-direction:column;}
-.lp-lang{margin:0 0 .55rem; text-align:right; font-size:.82rem;}
-.lp-lang a{color:var(--muted); border-bottom:1px solid var(--line-2); padding-bottom:1px;}
-.lp-lang a:hover{color:var(--accent); border-color:var(--accent);}
-@media (max-width:900px){ .lp-lang{text-align:left;} }
+/* La comisión es el argumento comercial de las dos landings de colaboración:
+   sale de la letra pequeña y se convierte en el único bloque oscuro de la
+   tarjeta. */
+.lp-comision{margin:1.2rem 0 0; padding:1rem 1.1rem; background:var(--ink); border-radius:3px;}
+.lp-comision b{
+  display:block; font-family:var(--serif); font-weight:300; font-size:1.6rem;
+  line-height:1; color:#fff; letter-spacing:-.01em;
+}
+.lp-comision em{display:block; font-style:normal; margin-top:.35rem; font-size:.92rem; color:#fff;}
+.lp-comision span{display:block; margin-top:.5rem; font-size:.82rem; line-height:1.5; color:rgba(255,255,255,.7);}
+
+/* Cambio de idioma en la cabecera, con el mismo componente que la home. No
+   toca el logo porque es texto, no un botón más. */
+.lp-header .lang-switch{margin-right:.35rem;}
+/* En pantallas estrechas el hueco se lo queda el idioma: «Ir al inicio» es
+   redundante porque el logotipo ya lleva a la home. */
+@media (max-width:520px){ .lp-header .btn-ghost{display:none;} }
 
 /* Medida de lectura dentro del marco ancho de la home */
 .lp-precios{max-width:1120px;}
