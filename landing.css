@@ -28,7 +28,9 @@
 .lp-header-right{display:flex; align-items:center; gap:1.25rem;}
 .btn-ghost{background:transparent; color:var(--ink); border:1px solid var(--line-2);}
 .btn-ghost:hover{border-color:var(--accent); color:var(--accent);}
-@media (max-width:520px){ .lp-header .btn-ghost{padding-inline:.85rem;} }
+/* La flecha va en el propio botón y no en el HTML: así las cinco landings
+   comparten el gesto sin tocar su marcado. */
+.lp-header .btn-ghost::before{content:"\2190"; margin-right:.5rem; opacity:.7;}
 
 /* --- Hero a dos columnas: argumento a la izquierda, prueba a la derecha -- */
 .lp-hero{padding:clamp(2.5rem,5vw,4.5rem) 0 clamp(2.5rem,4vw,3.5rem); background:var(--paper-2); border-bottom:1px solid var(--line);}
@@ -308,9 +310,22 @@
 /* Cambio de idioma en la cabecera, con el mismo componente que la home. No
    toca el logo porque es texto, no un botón más. */
 .lp-header .lang-switch{margin-right:.35rem;}
-/* En pantallas estrechas el hueco se lo queda el idioma: «Ir al inicio» es
-   redundante porque el logotipo ya lleva a la home. */
-@media (max-width:520px){ .lp-header .btn-ghost{display:none;} }
+/* Estaba oculto por debajo de 520 px dando por hecho que el logotipo bastaba,
+   pero un logotipo no se lee como salida. En el móvil se queda, sin caja y en
+   cuerpo pequeño, para no competir con la llamada a la acción. */
+@media (max-width:520px){
+  .lp-header-right{gap:.9rem;}
+  .lp-header .btn-ghost{
+    border:0; padding:0; font-size:.84rem; color:var(--muted);
+    text-decoration:underline; text-underline-offset:3px;
+  }
+  .lp-header .btn-ghost:hover{color:var(--accent);}
+  /* «Hablemos» ya está fijo en la barra inferior a partir de 760 px, así que
+     en la cabecera sobra: con el selector de idioma y la salida a la home,
+     los tres juntos dejaban el logotipo en cero a 320 px. */
+  .lp-header .btn-primary{display:none;}
+}
+.lp-header .brand{flex:none;}
 
 /* Medida de lectura dentro del marco ancho de la home */
 .lp-precios{max-width:1120px;}
@@ -374,6 +389,105 @@
 .lp-case-relato p{margin:0;}
 .lp-case-golpe{
   font-family:var(--serif);font-weight:300;font-size:clamp(1.3rem,2.2vw,1.75rem);
-  line-height:1.35;color:#fff;max-width:52ch;margin:.5rem 0 1rem;
+  line-height:1.35;color:#fff;margin:.5rem 0 1rem;
   padding-left:1.3rem;border-left:2px solid var(--accent-l);letter-spacing:-.008em;
 }
+/* `.lp-case p` (0,1,1) le ganaba a `.lp-case-golpe` (0,1,0) en todo lo que
+   comparten: la frase de cierre salía a 15,5 px y en blanco al 78 %, es
+   decir, con el cuerpo y el color del relato, no como remate del caso. */
+.lp-case .lp-case-golpe{
+  max-width:44ch; font-size:clamp(1.3rem,2.2vw,1.75rem);
+  line-height:1.35; color:#fff;
+}
+
+
+/* =====================================================================
+   v9 · Encuadre
+   Las landings heredaban el marco ancho de la home pero no su rejilla:
+   cada bloque se paraba en un ancho distinto (1.060, 1.120, 1.281) y el
+   borde derecho quedaba en escalera. Aquí se alinea todo al mismo raíl y
+   el hueco de la derecha se llena con contenido, no con aire.
+   ===================================================================== */
+
+/* --- Caso: cabecera a la izquierda, relato a la derecha -------------------
+   Es la misma rejilla que usan las preguntas de la home y el FAQ de estas
+   páginas: rótulo y titular en una columna estrecha, contenido en la ancha.
+   Debajo, las cifras siguen ocupando el ancho completo. */
+@media (min-width:1080px){
+  .lp-case .wrap{
+    /* Proporcional y no en rem: con un tope fijo, a 1.080 px el titular se
+       quedaba 544 px y el relato 374, que es media columna. */
+    display:grid; grid-template-columns:minmax(18rem,1.05fr) minmax(0,1fr);
+    gap:0 clamp(3rem,5vw,5rem); align-items:start;
+  }
+  .lp-case .wrap > *{grid-column:1 / -1;}
+  .lp-case .wrap > .eyebrow{grid-column:1; grid-row:1;}
+  .lp-case .wrap > h2{grid-column:1; grid-row:2; max-width:none;}
+  .lp-case .wrap > .lp-case-ficha{grid-column:1; grid-row:3; margin-bottom:0;}
+  .lp-case .wrap > .lp-case-relato{grid-column:2; grid-row:1 / span 3; margin-bottom:0;}
+  /* Ya está en su propia columna: dos dentro de dos dejaban párrafos de
+     nueve palabras por línea. */
+  .lp-case-relato{grid-template-columns:1fr; gap:1rem 0; max-width:none;}
+  .lp-case .wrap > .lp-puente, .lp-case .wrap > .lp-find{margin-top:2.1rem;}
+}
+
+/* --- Tabla de honorarios al ancho de la sección ---------------------------
+   Se paraba en 1.120 px y la columna de importes quedaba 160 px por dentro
+   del titular que tiene encima. Lo que se acota es la descripción, que es
+   texto, no la tabla. */
+.lp-precios{max-width:none;}
+.lp-precios td:first-child{padding-right:clamp(2rem,6vw,6rem);}
+.lp-precios td:first-child > span{display:block; max-width:74ch;}
+/* El registro de hallazgos se quedaba 27 px por dentro del raíl: poco, pero
+   lo justo para que el borde derecho del caso salga en escalera. */
+.lp-find{max-width:none;}
+/* La letra pequeña del precio caía en 765 px bajo una tabla de 1.266: se
+   estira hasta donde la línea sigue siendo legible. */
+.lp-source{max-width:112ch;}
+
+/* --- «Cómo encaja»: tres tarjetas, un solo destino ------------------------
+   Las tres pesaban igual y la que importa (mi encargo) se distinguía por un
+   blanco contra un hueso, que a un metro de la pantalla no se ve. Las dos
+   primeras pasan a ser el contexto y la tercera, el bloque oscuro que ya
+   usan la comisión y el caso. */
+.lp-compl-col{background:transparent;}
+.lp-compl-h{color:var(--muted-2);}
+.lp-compl-col.is-mine{background:var(--ink); border-color:var(--ink);}
+.lp-compl-col.is-mine .lp-compl-h{color:var(--accent-l);}
+.lp-compl-col.is-mine li{color:rgba(255,255,255,.78);}
+.lp-compl-col.is-mine li::before{background:var(--accent-l);}
+
+/* --- Football field: una escala común en vez de cinco barras --------------
+   Cada método llevaba su barra desde cero, así que las cinco salían casi
+   iguales (del 84 % al 100 %) y ocupaban 428 px sin decir nada. Sobre una
+   escala única de 1,05 a 1,35 M€, con la banda de valor sombreada, se ve de
+   un vistazo lo único que importa: que las cuatro rutas caen dentro. */
+.lp-ff .lp-puente-row{padding:.6rem 0 .7rem;}
+.lp-ff .lp-puente-lbl{margin-bottom:.5rem;}
+.lp-ff .lp-puente-bar{position:relative; height:9px; background:rgba(255,255,255,.07);}
+.lp-ff .lp-puente-bar::before{content:""; position:absolute; inset:0 16.7%; background:rgba(255,255,255,.15);}
+.lp-ff .lp-puente-bar i{
+  position:absolute; left:var(--x); top:-3px; margin-left:-1.5px;
+  width:3px; height:15px; background:var(--accent-l);
+}
+.lp-ff .lp-puente-row.is-hito .lp-puente-bar i{width:5px; margin-left:-2.5px; background:#fff;}
+/* La escala va arriba y hace de leyenda: los extremos a los lados y, en el
+   centro de la banda, lo que la banda es. `.lp-case p` gana a cualquier clase
+   suelta, así que se escribe con el prefijo o sale con el cuerpo del relato. */
+.lp-case .lp-ff-scale{
+  display:flex; justify-content:space-between; align-items:center;
+  gap:1rem; margin:0 0 .55rem;
+  font-family:var(--sans); font-size:.7rem; font-weight:500; letter-spacing:.13em;
+  text-transform:uppercase; color:rgba(255,255,255,.58);
+}
+.lp-ff-key{
+  padding:.28rem .7rem; border-radius:2px;
+  background:rgba(255,255,255,.15); color:rgba(255,255,255,.82);
+}
+@media (max-width:560px){
+  .lp-case .lp-ff-scale{flex-wrap:wrap; justify-content:flex-start; gap:.5rem .9rem;}
+}
+/* El pie va delante de las filas, así que `:first-child` ya no cae en la
+   primera fila y el filete de arriba se perdía. */
+.lp-ff .lp-puente-row:first-of-type{border-top:1px solid rgba(255,255,255,.10);}
+.lp-ff .lp-puente-row:last-of-type{border-bottom:0;}
