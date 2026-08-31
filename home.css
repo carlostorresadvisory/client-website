@@ -512,6 +512,24 @@ p,li,summary,dd,label,.pp-x,.pp-pie,.puente-n{text-wrap:pretty}
     color:var(--ink-2);margin:0 0 var(--e-4);
   }
   .hero-eyebrow::before{content:"";width:1.75rem;height:1px;background:var(--accent);flex:0 0 auto}
+  /* 31-ago-2026 (Carlos, desde su móvil): el eyebrow tenía tamaño fijo en todos los anchos
+     mientras el titular sí encoge (64->35 px), así que en el teléfono pesaba el doble en
+     proporción (35 % del h1 frente a 19 % en escritorio) y partía en TRES líneas de mayúsculas:
+     competía con el titular en vez de etiquetarlo. Un punto menos y tracking más corto, solo en
+     móvil. Los demás eyebrows (.eb, .svc-eb, .ph-eb) no comparten el problema: se midieron. */
+  @media (max-width:700px){
+    .hero-eyebrow{font-size:.6875rem;letter-spacing:.12em}
+  }
+
+  /* 31-ago-2026 (Carlos, desde su móvil otra vez): la prosa de la página va
+     justificada a sus dos márgenes, como los documentos de la casa, y como
+     allí SIN partir palabras. Solo la prosa: titulares, eyebrows, listas
+     cortas y microcopy de una línea siguen en bandera, y el hero es
+     composición, no párrafo. */
+  .si-inner p,.faq-a p,.ph-sub,.idea-p,.puente-n,.pp-x,.ci-d,.brf-lectura,
+  .phase-cierre,.cont-sub,.pie-legal,.intel-aviso,.ci-aviso{
+    text-align:justify;hyphens:none;
+  }
   /* Cada frase ocupa UNA línea en escritorio: sin max-width que la parta,
      sin text-wrap:balance (reequilibra y provoca saltos), y un tope de
      tamaño calculado para que la frase larga (46 caracteres) quepa entera. */
