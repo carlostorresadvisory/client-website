@@ -940,12 +940,16 @@ var COPY = {
   var mq = window.matchMedia('(max-width:1000px)');
   var TRAMAS = ['orbita', 'embudo', 'onda'];
 
-  /* Que fases estan abiertas. En movil, ninguna: Carlos, 31-ago-2026, «no
-     quiero nada abierto por defecto en movil», que sustituye a su decision
-     del 29-ago de arrancar en "Ejecutar". En escritorio se copia el marcado
-     (ir(1) ya ha dejado la fase 1 activa): un tablist sin seleccion no es
-     un estado valido. */
-  var abierta = tabs.map(function(t){ return mq.matches ? false : t.classList.contains('is-active'); });
+  /* Que fases estan abiertas. En movil, SOLO LA PRIMERA: Carlos, 31-ago-2026
+     a las 20:44 («3. Si» a "primera tarjeta abierta, resto cerradas"), que
+     sustituye a su «no quiero nada abierto por defecto en movil» de esa misma
+     manana (y aquella a la del 29-ago de arrancar en "Ejecutar"). El porque:
+     la primera abierta ensena con el ejemplo que las tarjetas se despliegan
+     (con todo cerrado, parte del publico 55-65 ni intuye que se puede) y da
+     sustancia al primer golpe de vista sin el muro de texto de todo abierto.
+     En escritorio se copia el marcado (ir(1) ya ha dejado la fase 1 activa):
+     un tablist sin seleccion no es un estado valido. */
+  var abierta = tabs.map(function(t, i){ return mq.matches ? i === 0 : t.classList.contains('is-active'); });
   /* Los roles de pestana solo valen en escritorio: en el acordeon varias
      fases pueden estar abiertas a la vez y un tablist con dos seleccionadas
      es marcado invalido. Se guardan para poder devolverlos al cruzar. */
