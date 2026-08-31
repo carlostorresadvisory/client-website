@@ -1,0 +1,1130 @@
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:300 500;font-display:swap;src:url('/newsreader.woff2') format('woff2')}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;font-display:swap;src:url('/newsreader-italic.woff2') format('woff2')}
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:400;font-display:swap;src:url('/librefranklin-400.woff2') format('woff2')}
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:500;font-display:swap;src:url('/librefranklin-500.woff2') format('woff2')}
+html{font-synthesis-weight:none}
+
+
+html,body{background:var(--ground)}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SISTEMA MEDIANOCHE · fichero fuente único
+   Se inyecta idéntico en todos los artefactos del rebranding. El día que
+   esto pase a producción, este bloque va a `style.css` y las páginas se
+   quedan con las mismas clases que ya usan. No duplicar tokens en ningún
+   artefacto: si algo falta, se añade aquí.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root{
+  --ground:#0F172A; --surface:#1E293B; --ink:#F1EFE9;
+  --ink-2:#A7BAD2; --ink-3:#8CA1C4; --accent:#38BDF8;
+  --line:rgba(241, 239, 233,.12); --line-2:rgba(241, 239, 233,.22);
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --wrap:1520px; --gutter:clamp(1.25rem,5vw,5rem); --header-h:88px;
+}
+
+/* ⟦ESCALA⟧ — bloque generado hacia la home y Wealth por `inyectar-tokens.js`.
+   Este es el original: se edita AQUÍ y se ejecuta el inyector. Lo que hay en
+   los otros dos ficheros es una copia y se pisa.
+
+   ── POR QUÉ EXISTE ──────────────────────────────────────────────────────
+   Medidos los ocho ficheros fuente el 26-ago: 63 tamaños de letra distintos
+   en 202 usos, 23 de ellos apretados entre 10 y 17 píxeles. Nadie distingue
+   .92rem de .94rem; lo que sí se ve es que la misma etiqueta cambia de
+   tamaño al cambiar de página, y eso es exactamente lo que hace que un
+   sitio parezca montado por partes en vez de construido.
+
+   Al mapear los 35 valores fijos contra la escala del HUD, 33 caían dentro
+   del 8% de un escalón. Es decir: la variación era ruido, no intención, y
+   la escala que ya funciona en el HUD describe la web entera. No se inventa
+   una nueva habiendo una probada en producción.
+
+   ── DÓNDE SE PARTE EN DOS, QUE ES LA ÚNICA DECISIÓN DE VERDAD ───────────
+   Lo fijo llega hasta el cuerpo destacado. De ahí para arriba todo es
+   fluido, porque todo lo que hay por encima es un título, y un título tiene
+   que encoger en un móvil. Los dos únicos valores que no encajaban en
+   ninguna parte (`.si-t` a 1,34rem y `.about-name` a 1,32rem) eran títulos
+   de tarjeta: no eran una excepción a la escala, estaban en el lado
+   equivocado del corte.
+
+   El `10rem` de `.ci-lead::after` se queda fuera a propósito: es un signo
+   decorativo, no texto, y meterlo en una escala de lectura no significa
+   nada. */
+:root{
+  /* Fijos. Los cinco primeros escalones del HUD: 11 / 12,5 / 14 / 16 / 19. */
+  --t-0:.6875rem;   /* 11px    · micro-etiqueta, eyebrow */
+  --t-1:.78rem;     /* 12,5px  · pie, nota, pastilla */
+  --t-2:.875rem;    /* 14px    · UI: botón, chip, dato de apoyo */
+  --t-3:1rem;       /* 16px    · cuerpo */
+  --t-4:1.1875rem;  /* 19px    · entradilla, cuerpo destacado */
+
+  /* Fluidos. Cinco papeles, no cinco tamaños: el nombre dice qué es, y por
+     eso se elige por función y no por cuánto mide en la pantalla de quien
+     lo escribe. */
+  /* El mínimo de este es 1,3rem y no 1,15rem por una razón medida: con
+     1,15rem el título de tarjeta se quedaba en 18,4px mientras `--t-4` es
+     19px fijo, así que por debajo de unos 950px de ancho —móvil y tablet,
+     donde está la mitad de la gente— el título salía MÁS PEQUEÑO que el
+     texto al que encabeza. Una escala tiene que ser monótona en todos los
+     anchos, no solo en el escritorio de quien la escribe. */
+  --t-f1:clamp(1.3rem,2vw,1.55rem);      /* título de tarjeta   21→25px */
+  --t-f2:clamp(1.45rem,2.6vw,2.05rem);   /* título de sección   23→33px */
+  --t-f3:clamp(1.7rem,3.1vw,2.55rem);    /* título de página    27→41px */
+  --t-f4:clamp(2rem,3.8vw,3.2rem);       /* héroe               32→51px */
+  --t-f5:clamp(2.2rem,4.8vw,4rem);       /* héroe mayor         35→64px */
+
+  /* Ritmo vertical. Todo múltiplo de 4 px, y de 8 a partir del tercero, que
+     es donde empieza a separar bloques en vez de piezas de un bloque. */
+  --e-0:.25rem;  /*  4px */
+  --e-1:.5rem;   /*  8px */
+  --e-2:.75rem;  /* 12px */
+  --e-3:1rem;    /* 16px */
+  --e-4:1.5rem;  /* 24px */
+  --e-5:2rem;    /* 32px */
+  --e-6:3rem;    /* 48px */
+  --e-7:4rem;    /* 64px */
+  /* Aire entre secciones: lo único que se mide contra la pantalla y no
+     contra la rejilla, porque un respiro fijo de 96px asfixia un móvil y se
+     pierde en un monitor ancho. */
+  --e-sec:clamp(3.5rem,7vw,6rem);
+
+  /* Un color, en un bloque que se llama escala. Está aquí y no arriba con el
+     resto de la paleta por una razón mecánica: este bloque es el único que
+     viaja a la home, que lleva su propia copia del :root por estar escrita a
+     mano. Un token de sistema que no llega a todas las páginas no es un token
+     de sistema, y esto se aprendió midiendo: definido arriba, los botones de
+     la home se quedaron sin color de texto y cayeron a 1,08:1.
+
+     Qué es: el texto que va ENCIMA del acento. Estaba escrito a mano las
+     veintidós veces que hacía falta, y un color suelto no puede seguir al
+     color que acompaña. Al invertir el tema para imprimir, el cian se volvió
+     azul oscuro y este se quedó claro: 1,12:1 sobre su propio fondo. */
+  --sobre-accent:#0B1220;
+}
+/* ⟦/ESCALA⟧ */
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink-2);
+  font-family:var(--sans);font-size:var(--t-3);line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+a{color:inherit}
+
+/* — Tipografía — */
+.eb{font-size:var(--t-0);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin:0 0 var(--e-3)}
+.eb-ai{color:var(--accent)}
+h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.018em;color:var(--ink);margin:0}
+.h-xl{font-size:var(--t-f4);line-height:1.14}
+.h-l{font-size:var(--t-f3);line-height:1.18}
+.h-m{font-size:var(--t-f1);line-height:1.25;font-weight:400}
+.soft{color:var(--ink-3)}
+.hi{color:var(--accent)}
+
+/* — Botones — */
+.btn{
+  display:inline-flex;align-items:center;gap:var(--e-1);padding:var(--e-2) var(--e-4);
+  border-radius:3px;text-decoration:none;font-size:var(--t-2);font-weight:500;
+  transition:background .2s,transform .2s,border-color .2s;
+}
+.btn-primary{background:var(--accent);color:var(--sobre-accent)}
+.btn-primary:hover{background:#5FCBFA;transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink-3)}
+.btn .arrow{transition:transform .2s}
+.btn:hover .arrow{transform:translateX(3px)}
+
+/* — Filetes y secciones — */
+.sec{padding:var(--e-sec) 0}
+.sec + .sec{border-top:1px solid var(--line)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* — Pastillas — */
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--e-1)}
+.chips li{font-size:var(--t-2);color:var(--ink-2);padding:var(--e-0) var(--e-2);border:1px solid var(--line);border-radius:2px}
+/* El cian marca únicamente lo que lleva un sistema detrás. */
+.chips li.is-ai{color:var(--accent);border-color:rgba(56,189,248,.26)}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   CT ADVISORY · CAPA DE ACABADO — Azul Medianoche
+   ───────────────────────────────────────────────────────────────────────
+   Se inyecta idéntica en la home, las landings y Wealth. No define ni un
+   color ni una tipografía nuevos: todo sale de los tokens que las tres
+   piezas ya comparten. Lo que añade es lo que separa una página montada
+   de una construida — materia en el fondo, un solo momento de movimiento,
+   y las superficies que pinta el navegador y que no pertenecen a ningún
+   sistema de diseño hasta que alguien las reclama.
+
+   El día que esto pase a producción, este bloque va a `style.css` entero.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* Curva única de la casa. Salida exponencial: arranca rápido y se posa,
+     que es como se mueve algo con peso. Una sola curva en toda la web. */
+  --ease:cubic-bezier(.16,1,.3,1);
+  --dur:.72s;
+  /* Sombra con desplazamiento y desenfoque reales. Un halo sin offset es
+     decoración; esto es una fuente de luz. */
+  /* Estas dos no se usan en este fichero, pero si en las tres piezas que
+     lo cargan (la pila del informe, el boton del heroe, las tarjetas de
+     Wealth). Una revision las dio por codigo muerto leyendo solo este
+     archivo: borrarlas dejaria sin profundidad a las tres. */
+  --sombra:0 18px 40px -24px rgba(2,8,20,.85), 0 2px 6px -2px rgba(2,8,20,.5);
+  --sombra-alta:0 40px 80px -40px rgba(2,8,20,.9), 0 4px 12px -4px rgba(2,8,20,.55);
+}
+
+/* ══════════ 1 · MATERIA DE FONDO ══════════
+   Tres capas fijas detrás de todo: dos luces que respiran, una trama de
+   grano, y una viñeta. El fondo plano era lo que más delataba el montaje:
+   un color sólido de extremo a extremo no existe en nada impreso ni en
+   ninguna pantalla que alguien haya diseñado. */
+.fondo{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  /* Una revision adversarial senalo que contain:strict recortaria la capa
+     de luz (que sobresale un 25% por lado) y anularia la mezcla del grano.
+     Medido con y sin la propiedad sobre pixeles reales: color medio
+     identico (diferencia 0,0 en los tres canales) y misma textura
+     (rango 218). El elemento es fixed a viewport completo, asi que lo que
+     contain recorta es exactamente lo que el viewport ya recortaba. Se
+     mantiene: aisla el repintado del fondo del resto de la pagina. */
+  contain:strict;
+}
+.fondo-luz{
+  position:absolute;inset:-25%;
+  background:
+    radial-gradient(42% 38% at 18% 12%, rgba(56,189,248,.10), transparent 70%),
+    radial-gradient(46% 42% at 88% 78%, rgba(56,189,248,.055), transparent 72%),
+    radial-gradient(60% 50% at 50% 110%, rgba(30, 41, 59,.85), transparent 70%);
+  animation:respira 24s var(--ease) infinite alternate;
+  /* Sin will-change a proposito: es una capa de 2,25 viewports y dejarla
+     promocionada a GPU de forma permanente cuesta memoria en movil de
+     gama baja. Un transform animado ya se compone solo. */
+}
+@keyframes respira{
+  from{transform:translate3d(0,0,0) scale(1)}
+  to{transform:translate3d(-1.5%,1.2%,0) scale(1.06)}
+}
+/* Grano: turbulencia SVG a resolución baja, escalada. A esta opacidad no
+   se ve como ruido, se nota como papel. */
+.fondo-grano{
+  position:absolute;inset:0;opacity:.038;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.fondo-vineta{
+  position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(2,8,20,.55) 100%);
+}
+/* Todo el contenido por encima de la materia. La regla general cubre
+   cualquier cosa que llegue al cuerpo mas adelante (un dialogo, un aviso
+   de cookies, un widget de un tercero); los cuatro selectores explicitos
+   se quedan porque ganan a cualquier position:static heredada. */
+body > *:not(.fondo):not(.site-header):not(.lp-bar):not(.w-bar){position:relative;z-index:1}
+/* Y el contenido, por encima de la trama y de la materia de fondo. Las tres
+   barras quedan FUERA de esta lista a proposito: entraban en ella y su
+   position:sticky se perdia, asi que la cabecera se iba con el scroll y
+   desaparecia durante los ocho mil pixeles siguientes de pagina (medido:
+   top -2.978 tras 3.000px). No necesitan relative para ganarle a la trama,
+   porque sticky ya crea contexto de apilamiento propio. */
+main,footer{position:relative;z-index:1}
+
+/* ══════════ 2 · SUPERFICIES DEL NAVEGADOR ══════════
+   Selección, cursor, barra de scroll, foco y subrayado vienen con los
+   valores de fábrica del navegador, que no pertenecen a ningún sistema.
+   Reclamarlas cuesta veinte líneas y es lo que más se nota sin saber
+   por qué. */
+::selection{background:rgba(56,189,248,.28);color:#fff;text-shadow:none}
+::-moz-selection{background:rgba(56,189,248,.28);color:#fff}
+html{scrollbar-width:thin;scrollbar-color:rgba(56,189,248,.32) transparent}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:rgba(2,8,20,.4)}
+::-webkit-scrollbar-thumb{
+  background:rgba(140, 161, 196,.28);border-radius:99px;
+  /* 12px menos 2px por lado dejan 8px agarrables. Con 3px de borde sobre
+     10px quedaban 4px, que es mas fino de lo que se puede pinchar con
+     comodidad. El minimo evita un pulgar diminuto en paginas muy largas. */
+  border:2px solid transparent;background-clip:content-box;
+  min-height:40px;
+}
+::-webkit-scrollbar-thumb:hover{background:rgba(56,189,248,.45)}
+input,textarea{caret-color:var(--accent)}
+/* Un solo anillo de foco para toda la web, con hueco. El del navegador es
+   un rectángulo pegado al borde que rompe cualquier composición. */
+a:focus-visible,button:focus-visible,summary:focus-visible,
+input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  /* Sin border-radius aqui: redondeaba el elemento enfocado, no el anillo,
+     asi que un boton cambiaba de forma al recibir el foco. El navegador ya
+     sigue el radio propio del elemento al dibujar el outline. */
+  outline:2px solid var(--accent);outline-offset:3px;
+}
+/* El subrayado por defecto corta las descendentes de la tipografía serif. */
+a{text-underline-offset:.22em;text-decoration-thickness:from-font}
+::marker{color:var(--ink-3)}
+/* Cualquier cifra que se lea en columna o se compare va con cifras de
+   ancho fijo. Sin esto los números bailan al cambiar. */
+.tabular,.cont-datos,.lp-tabla,.lp-cifra,.proc-n,.ficha-dato{
+  font-variant-numeric:tabular-nums;
+}
+body{text-rendering:optimizeLegibility;font-feature-settings:"kern" 1,"liga" 1}
+
+/* ══════════ 3 · UN SOLO MOMENTO DE MOVIMIENTO ══════════
+   No hay efectos repartidos por la página: hay un gesto, el mismo siempre,
+   que ocurre cuando algo entra por primera vez. Sube, enfoca y se posa.
+   El desenfoque es lo que lo hace parecer material en vez de un fundido. */
+/* Una revision advirtio de que esto deja la pagina invisible si el
+   JavaScript no corre. No ocurre: el atributo data-entra lo escribe el
+   propio script, nunca el HTML servido, asi que sin JavaScript la regla
+   no llega a aplicarse. Comprobado con el motor sin JS: 0 elementos
+   ocultos en landings y Wealth, y los 7 de la home son el submenu, que
+   esta oculto por diseno. */
+[data-entra]{
+  opacity:0;transform:translate3d(0,18px,0);filter:blur(6px);
+  transition:opacity var(--dur) var(--ease),
+             transform var(--dur) var(--ease),
+             filter var(--dur) var(--ease);
+  transition-delay:var(--retardo,0ms);
+  will-change:opacity,transform,filter;
+}
+[data-entra].dentro{opacity:1;transform:none;filter:blur(0)}
+/* Un titular no entra como un bloque: se descubre, como si la línea de
+   abajo lo destapara. Solo lo usan los titulares de sección. */
+[data-entra="titular"]{
+  clip-path:inset(0 0 105% 0);transform:none;filter:none;opacity:1;
+  transition:clip-path 1.05s var(--ease);transition-delay:var(--retardo,0ms);
+}
+[data-entra="titular"].dentro{clip-path:inset(0 0 -25% 0)}
+
+@media (prefers-reduced-motion:reduce){
+  [data-entra],[data-entra="titular"]{
+    opacity:1!important;transform:none!important;filter:none!important;
+    clip-path:none!important;transition:none!important;
+  }
+  .fondo-luz{animation:none}
+  /* iteration-count es lo que de verdad detiene una animacion infinita:
+     solo con duration a 0,001ms seguiria repitiendose a toda velocidad
+     y gastando bateria. La home tiene una, el punto que late en el menu. */
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+
+/* ══════════ 4 · EL MOTIVO ══════════
+   Un filete con un punto cian en el extremo. Aparece donde una sección
+   arranca. Es la única marca gráfica propia de la casa, y es la misma en
+   las tres piezas: eso es lo que hace que se lean como una sola web. */
+.marca-sec{
+  display:flex;align-items:center;gap:var(--e-2);
+  margin:0 0 var(--e-3);font-size:var(--t-0);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+.marca-sec::before{
+  content:"";width:1.75rem;height:1px;background:var(--accent);flex:0 0 auto;
+}
+
+/* ══════════ 5 · ENLACES CON SUBRAYADO QUE CRECE ══════════
+   Un enlace de texto no cambia de color al pasar por encima: se subraya
+   desde el origen. Transform, no width, para que no repinte. */
+.sub-link{
+  position:relative;text-decoration:none;color:var(--accent);
+  display:inline-flex;align-items:center;gap:var(--e-1);
+}
+/* El subrayado con ::after solo cubriria la primera linea si el enlace se
+   partiera en varias. No puede: .sub-link es inline-flex, que forma una
+   caja atomica y no reparte su contenido en lineas del flujo. */
+.sub-link::after{
+  content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;
+  background:currentColor;transform:scaleX(0);transform-origin:left;
+  transition:transform .42s var(--ease);
+}
+.sub-link:hover::after,.sub-link:focus-visible::after{transform:scaleX(1)}
+.sub-link .flecha{transition:transform .42s var(--ease)}
+.sub-link:hover .flecha{transform:translateX(4px)}
+/* Flecha dibujada, no el glifo → de la tipografía: mismo grosor que el
+   resto de trazos de la página y alineada con la línea base real. */
+.flecha{width:1em;height:1em;flex:0 0 auto;stroke:currentColor;fill:none;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+
+
+
+
+/* Ver la nota de exportar.js#construirCss: sin esto el lienzo de fondo
+   hereda position:relative de acabado.css y deja de cubrir la página.
+   Con !important a propósito (medido el 29-ago-2026 en /ia/ a 1440: el
+   lienzo salía en flujo, 1440×900, y empujaba la cabecera 908px hacia
+   abajo en las seis landings): la regla de acabado.css lleva cuatro
+   :not() y vale (0,4,1); "body > canvas.trama-global" vale (0,1,2), así
+   que pierde SIEMPRE, vaya en el orden que vaya. */
+body > canvas.trama-global{
+  position:fixed!important;inset:0;width:100%;height:100%;
+  z-index:0!important;pointer-events:none;
+}
+
+
+/* â•â•â•â•â•â•â•â•â•â• LA PRUEBA â•â•â•â•â•â•â•â•â•â•
+   Paginas reales del informe de muestra montadas como objetos. La que va
+   delante cambia por landing: al empresario le importa cuanto vale, al
+   inversor con que se compara, y a un despacho que papel recibe su
+   cliente. Mismo montaje, distinta prueba. */
+.lp-prueba{padding:clamp(3.5rem,8vw,6rem) 0;border-top:1px solid var(--line)}
+.lp-prueba-in{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+  gap:clamp(2.5rem,6vw,5rem);align-items:center}
+.lp-prueba-h{font-family:var(--serif);font-weight:300;
+  font-size:var(--t-f3);line-height:1.17;letter-spacing:-.02em;
+  color:var(--ink);margin:0 0 var(--e-3);text-wrap:balance}
+.lp-prueba-h em{font-style:normal;color:var(--ink-3)}
+.lp-prueba-p{margin:0 0 var(--e-5);color:var(--ink-3);font-size:var(--t-3);line-height:1.7;max-width:44ch}
+.lp-prueba-datos{display:flex;flex-wrap:wrap;gap:0;margin:0 0 var(--e-5);padding:0;
+  list-style:none;border-top:1px solid var(--line)}
+.lp-prueba-datos li{flex:1 1 auto;min-width:6.5rem;padding:var(--e-3) var(--e-4) var(--e-3) 0}
+.lp-prueba-datos b{display:block;font-family:var(--serif);font-weight:300;
+  font-size:var(--t-f2);line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;margin-bottom:var(--e-0)}
+.lp-prueba-datos span{font-size:var(--t-1);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+
+.pila{position:relative;perspective:1700px;aspect-ratio:1.34;min-height:0;--mx:0;--my:0}
+.pila-hoja{position:absolute;border-radius:2px;overflow:hidden;
+  box-shadow:var(--sombra-alta);transition:transform 1s var(--ease);
+  transform-style:preserve-3d;outline:1px solid rgba(241, 239, 233,.08);outline-offset:-1px}
+.pila-hoja{background-size:100% auto;background-position:top center;background-repeat:no-repeat}
+/* Cada pagina tiene su propia proporcion: se declara para que la caja no
+   recorte ni deje franja. */
+.hoja-portada{aspect-ratio:794/1123;background-image:var(--h-portada)}
+.hoja-multiplo{aspect-ratio:794/786;background-image:var(--h-multiplo)}
+.hoja-rango{aspect-ratio:794/718;background-image:var(--h-rango)}
+.pila-hoja::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(200deg,rgba(15, 23, 42,.10),rgba(15, 23, 42,.24));
+  transition:opacity .8s var(--ease)}
+.pila-3{left:1%;top:0;width:44%;
+  transform:rotateY(calc(12deg + var(--mx) * 9deg)) rotateZ(-2.6deg) rotateX(calc(var(--my) * -5deg)) translateZ(-100px);
+  filter:saturate(.8) brightness(.97)}
+.pila-2{left:19%;top:11%;width:47%;
+  transform:rotateY(calc(9deg + var(--mx) * 7deg)) rotateZ(-1.2deg) rotateX(calc(var(--my) * -4deg)) translateZ(-45px);
+  filter:saturate(.9) brightness(.99)}
+.pila-1{right:0;top:5%;width:60%;
+  transform:rotateY(calc(-4deg + var(--mx) * 5deg)) rotateZ(calc(1.2deg + var(--mx) * 1deg)) rotateX(calc(var(--my) * -3deg));
+  box-shadow:0 60px 90px -45px rgba(2,8,20,.95), 0 6px 16px -6px rgba(2,8,20,.6)}
+.pila-1::after{opacity:.28}
+.pila:hover .pila-1{transform:rotateY(-2deg) rotateZ(.6deg) translate3d(2%,-2%,40px)}
+.pila:hover .pila-2{transform:rotateY(6deg) rotateZ(-1.6deg) translate3d(-4%,3%,-20px)}
+.pila:hover .pila-3{transform:rotateY(9deg) rotateZ(-3.2deg) translate3d(-7%,6%,-70px)}
+.pila:hover .pila-1::after{opacity:.25}
+.pila.sigue .pila-hoja{transition:transform .45s cubic-bezier(.25,.8,.35,1)}
+@media (max-width:900px){
+  .lp-prueba-in{grid-template-columns:1fr;gap:var(--e-5)}
+  .pila{aspect-ratio:1.3}
+}
+@media (max-width:560px){
+  .lp-prueba-datos li{padding-right:var(--e-3)}
+  .lp-prueba-datos b{font-size:var(--t-f1)}
+}
+@media (prefers-reduced-motion:reduce){
+  .pila-hoja{transition:none}
+  .pila:hover .pila-1,.pila:hover .pila-2,.pila:hover .pila-3{transform:none}
+}
+
+/* â”€â”€ Landings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.lp-bar{position:sticky;top:0;z-index:40;background:rgba(15, 23, 42,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.lp-bar-in{display:flex;align-items:center;gap:var(--e-4);min-height:60px;overflow-x:auto}
+.lp-bar-eb{font-size:var(--t-0);letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);flex:0 0 auto}
+/* Mismo filete cian que abre cada seccion en la home. */
+.lp .eb{display:flex;align-items:center;gap:var(--e-2)}
+.lp .eb::before{content:"";width:1.75rem;height:1px;background:var(--accent);flex:0 0 auto}
+.lp-tab{background:none;border:0;cursor:pointer;white-space:nowrap;padding:var(--e-1) 0;
+  font-family:var(--sans);font-size:var(--t-2);color:var(--ink-3);
+  border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.lp-tab:hover{color:var(--ink-2)}
+.lp-tab.is-active{color:var(--ink);border-bottom-color:var(--accent)}
+
+.lp[hidden]{display:none}
+.lp-hero{padding:clamp(3.5rem,7vw,6rem) 0 clamp(2.5rem,5vw,4rem)}
+.lp-hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);gap:clamp(2rem,4vw,4rem);align-items:start}
+.lp-hero h1 span{display:block}
+.lp-hero h1 .soft{color:var(--ink-3)}
+.lp-sub{font-size:var(--t-4);color:var(--ink-3);margin:var(--e-4) 0 var(--e-5);max-width:52ch;text-wrap:pretty}
+.lp-nota{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-3) 0 0}
+
+.lp-card{border:1px solid var(--line);border-radius:4px;padding:var(--e-4);background:var(--surface)}
+.lp-card-h{font-size:var(--t-0);letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);margin:0 0 var(--e-3)}
+.lp-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--e-2)}
+.lp-card li{font-size:var(--t-2);line-height:1.55;color:var(--ink-2);padding-left:var(--e-3);position:relative}
+.lp-card li::before{content:"";position:absolute;left:0;top:.62em;width:4px;height:1px;background:var(--accent)}
+.lp-card-note{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-3) 0 0;padding-top:var(--e-3);border-top:1px solid var(--line)}
+
+.lp-dest{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1.5rem,3vw,3rem);
+  align-items:start;padding:clamp(1.8rem,3vw,2.4rem) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lp-dest p{margin:0;color:var(--ink-3);font-size:var(--t-3);line-height:1.65}
+
+.lp-tabla{width:100%;border-collapse:collapse;margin-top:var(--e-4)}
+.lp-tabla th{text-align:left;font-size:var(--t-0);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:400;padding:0 0 var(--e-2);border-bottom:1px solid var(--line-2)}
+.lp-tabla td{padding:var(--e-4) var(--e-4) var(--e-4) 0;border-bottom:1px solid var(--line);vertical-align:top}
+.lp-tabla tr:last-child td{border-bottom:0}
+.lp-t-n{font-family:var(--serif);font-size:var(--t-4);color:var(--ink);display:block;margin-bottom:var(--e-0)}
+.lp-t-d{font-size:var(--t-2);color:var(--ink-3);line-height:1.55;display:block;max-width:60ch}
+.lp-t-p{font-size:var(--t-3);color:var(--ink);white-space:nowrap}
+.lp-t-x{font-size:var(--t-1);color:var(--ink-3);display:block;margin-top:var(--e-0);white-space:nowrap}
+.lp-tabla tr.is-ai .lp-t-n{color:var(--accent)}
+.lp-nota-t{font-size:var(--t-1);color:var(--ink-3);line-height:1.6;margin:var(--e-4) 0 0;max-width:82ch}
+
+.lp-caso-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,4vw,3.5rem);align-items:start;margin-top:var(--e-4)}
+.lp-ficha{font-size:var(--t-1);letter-spacing:.03em;color:var(--ink-3);margin:0 0 var(--e-4);
+  padding-bottom:var(--e-3);border-bottom:1px solid var(--line)}
+.lp-caso p{color:var(--ink-3);font-size:var(--t-3);line-height:1.68;margin:0 0 var(--e-3)}
+.lp-cifras{display:flex;flex-direction:column;gap:0}
+.lp-cifra{position:relative;padding:var(--e-3) 0 var(--e-4);border-bottom:1px solid var(--line)}
+.lp-cifra:last-child{border-bottom:0}
+/* La barra mide el dato: su ancho es la cifra dividida por la mayor de
+   las tres, no una longitud decorativa. */
+.lp-barra{position:relative;height:3px;margin-top:var(--e-2);
+  background:rgba(241, 239, 233,.07);border-radius:99px;overflow:hidden}
+.lp-barra i{position:absolute;inset:0 auto 0 0;width:100%;border-radius:99px;
+  background:var(--ink-3);transform:scaleX(var(--p,1));transform-origin:left;
+  transition:transform 1.15s var(--ease)}
+/* Antes de entrar esta a cero: crece cuando la seccion aparece. */
+.lp-cifra[data-entra] .lp-barra i{transform:scaleX(0)}
+.lp-cifra[data-entra].dentro .lp-barra i{transform:scaleX(var(--p,1))}
+.lp-cifra.es-clave b{color:var(--accent)}
+.lp-cifra.es-clave .lp-barra i{background:var(--accent);box-shadow:0 0 18px -2px rgba(56,189,248,.55)}
+@media (prefers-reduced-motion:reduce){
+  .lp-cifra[data-entra] .lp-barra i{transform:scaleX(var(--p,1))}
+}
+.lp-cifra b{display:block;font-family:var(--serif);font-weight:400;font-size:var(--t-f2);
+  color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.lp-cifra span{display:block;font-size:var(--t-1);color:var(--ink-3);margin-top:var(--e-0)}
+.lp-golpe{display:flex;gap:var(--e-3);align-items:flex-start;margin-top:var(--e-5);padding-top:var(--e-4);border-top:1px solid var(--line)}
+.lp-golpe i{flex:0 0 40px;height:1px;background:var(--accent);opacity:.55;margin-top:var(--e-2)}
+.lp-golpe p{margin:0;font-family:var(--serif);font-weight:300;font-size:var(--t-f1);
+  line-height:1.5;color:var(--ink);max-width:58ch}
+
+.lp-ben{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(2rem,4vw,4rem);margin-top:var(--e-4)}
+.lp-ben > div{padding:var(--e-4) 0;border-top:1px solid var(--line)}
+.lp-ben h3{font-family:var(--serif);font-weight:400;font-size:var(--t-4);color:var(--ink);margin:0 0 var(--e-0)}
+.lp-ben p{margin:0;font-size:var(--t-2);color:var(--ink-3);line-height:1.6}
+
+
+/* â”€â”€ Banda de imagen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   La imagen ocupa la izquierda y se funde con el fondo por la derecha,
+   que es donde estas fotos tienen su zona oscura: el texto cae sobre
+   negro real, no sobre un velo puesto encima para poder leerlo. */
+.lp-banda{
+  margin-top:clamp(2.5rem,5vw,4rem);
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  align-items:center;gap:clamp(1.25rem,2vw,2rem);
+  border-top:1px solid var(--line);padding-top:clamp(2rem,3.5vw,3rem);
+}
+/* Encuadre mas panoramico que el de las fotos: con object-fit:cover eso
+   recorta arriba y abajo, que es donde alguna trae oscuridad plana (un
+   techo, un fondo sin detalle) y donde no hay nada que perder. */
+/* Sin border-radius: con la imagen fundida por los cuatro lados no hay
+   ningun borde que redondear, y el radio solo servia para disimularlo. */
+.lp-banda-img{position:relative;aspect-ratio:2/1;overflow:hidden}
+/* La imagen se pinta con un pseudoelemento y no con <img>: asi la fuente es
+   una variable CSS y el mismo base64 no se repite por cada pagina que lo
+   use. */
+.lp-banda-img::before{
+  content:"";position:absolute;inset:0;
+  background-image:var(--bnd);background-size:cover;background-position:center;
+  /* Se funde por los cuatro lados, no solo por la derecha. El motivo se
+     midio: estas fotos llevan mucho negro puro en los bordes por
+     composicion (dos tercios del encuadre sin detalle, que es lo que les
+     da el aire caro) y el fondo de la pagina es azul medianoche, no negro.
+     Esa diferencia de un solo tono es la que dibujaba un rectangulo y
+     delataba la foto como pegada encima. Recortar el negro no era la
+     solucion: se llevaba por delante justo el espacio que hace la
+     composicion. */
+  /* El fundido horizontal termina ANTES de donde empieza el texto, no
+     despues. Estaba en 72% y la caja de texto arranca en el 58%, asi que
+     los catorce puntos de en medio dejaban al texto encima de la foto a
+     plena luz. Medido sobre las seis: donde esa franja era oscura no se
+     notaba (empresas 15:1), y donde la foto tiene papel blanco el texto
+     secundario caia a 1,27:1 sobre un minimo de 4,5:1. Ahora la imagen ya
+     no llega: detras del texto solo hay fondo, y eso vale para cualquier
+     fotografia que entre despues sin volver a medir. */
+  -webkit-mask-image:linear-gradient(90deg,#000 34%,transparent var(--corte)),
+    linear-gradient(180deg,transparent 0,#000 9%,#000 91%,transparent 100%);
+  mask-image:linear-gradient(90deg,#000 34%,transparent var(--corte)),
+    linear-gradient(180deg,transparent 0,#000 9%,#000 91%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-composite:intersect;
+}
+.lp-banda-txt p{
+  font-family:var(--serif);font-weight:300;color:var(--ink);
+  font-size:var(--t-f1);line-height:1.35;letter-spacing:-.01em;
+  margin:0 0 var(--e-3);text-wrap:balance;
+}
+.lp-banda-txt .lp-micro{margin:0;color:var(--ink-3)}
+@media (max-width:860px){
+  .lp-banda{grid-template-columns:1fr;gap:var(--e-3)}
+  .lp-banda-img::before{
+    -webkit-mask-image:linear-gradient(180deg,#000 0,#000 68%,transparent 100%);
+    mask-image:linear-gradient(180deg,#000 0,#000 68%,transparent 100%);
+    -webkit-mask-composite:source-over;mask-composite:add}
+}
+.lp-cierre{margin-top:clamp(2.5rem,5vw,4rem);padding-top:clamp(2rem,3.5vw,2.8rem);border-top:1px solid var(--line)}
+.lp-cierre h2{margin-bottom:var(--e-1)}
+.lp-cierre p{color:var(--ink-3);margin:0 0 var(--e-4)}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   COMPRESIÓN Y ORDEN DE LECTURA
+   ───────────────────────────────────────────────────────────────────────
+   Las landings tenían todas las secciones que hacen falta, pero escritas
+   con el mismo aire: la sección genérica a 6rem, la prueba a 6rem, la
+   tabla a 1,3rem por celda. Con seis bloques seguidos así la página se
+   hace larga sin decir más, y lo que se pierde es el final, que es donde
+   está la llamada a la acción.
+
+   Aquí no se quita ninguna sección: se aprieta cada una entre un 25% y un
+   30%, y el aire que queda se reparte según lo que pesa cada bloque, con
+   los mismos tres pesos que la home. Dice lo mismo en menos pantalla.
+   ═══════════════════════════════════════════════════════════════════════ */
+.lp-hero{padding:clamp(2.2rem,4.4vw,3.6rem) 0 clamp(1.5rem,2.8vw,2.2rem)}
+.sec{padding:clamp(2.1rem,4.2vw,3.4rem) 0}
+.lp-prueba{padding:clamp(2.1rem,4.2vw,3.4rem) 0}
+.lp-dest{margin:clamp(1.2rem,2.2vw,1.8rem) 0 0;padding-top:clamp(1.2rem,2.2vw,1.8rem)}
+.lp-tabla{margin-top:var(--e-3)}
+.lp-tabla td{padding:var(--e-2) var(--e-4) var(--e-2) 0}
+.lp-tabla th{padding-bottom:var(--e-2)}
+.lp-caso-grid{margin-top:var(--e-3)}
+.lp-caso p{margin-bottom:var(--e-2);line-height:1.6}
+.lp-cifra{padding:var(--e-2) 0 var(--e-3)}
+.lp-golpe{margin-top:var(--e-3);padding-top:var(--e-3)}
+.lp-prueba-p{margin-bottom:var(--e-3)}
+.lp-prueba-datos{margin-bottom:var(--e-3)}
+.lp-prueba-datos li{padding:var(--e-2) var(--e-4) var(--e-2) 0}
+.lp-card{padding:var(--e-4)}
+.lp-card ul{gap:var(--e-2)}
+.lp-nota-t{margin-top:var(--e-3)}
+.lp-cierre{margin-top:clamp(1.6rem,3.2vw,2.4rem);padding-top:clamp(1.3rem,2.2vw,1.8rem)}
+
+/* El beneficio sube por delante del precio. Antes la tabla de tarifas
+   aparecía tercera y los beneficios sextos: se leía cuánto cuesta antes
+   de por qué conviene, y a esa altura de la página el lector todavía no
+   tiene con qué comparar la cifra. */
+.lp-ben{margin-top:var(--e-3);gap:0 clamp(2rem,4vw,4rem)}
+.lp-ben > div{padding:var(--e-3) 0}
+.lp-ben h3{font-size:var(--t-4);margin-bottom:var(--e-0)}
+.lp-ben p{font-size:var(--t-2)}
+
+/* ══════════ LA BANDA · la imagen deja de ir al lado ══════════
+   Estaba en una columna junto al texto, así que se leía como una tarjeta
+   con foto: la imagen ilustraba el párrafo en vez de sostenerlo. Ahora la
+   imagen ocupa la banda entera y el texto cae dentro de ella, sobre la
+   zona que el propio fundido deja en sombra. Es el mismo patrón que la
+   sección de servicios de la home, que es donde ya funciona.
+
+   Y encima va la trama, que aquí llega ya resuelta: este es el punto de
+   la página donde el servicio está explicado y lo único que queda es
+   decidir. */
+.lp-banda{
+  /* Un solo numero manda: donde termina la fotografia es donde empieza el
+     texto. Lo usan la mascara de la imagen y el margen de la caja. */
+  --corte:58%;
+  position:relative;overflow:hidden;
+  margin-top:clamp(2rem,4vw,3.2rem);
+  padding-top:0;border-top:0;
+  display:block;
+  min-height:clamp(15rem,30vw,22rem);
+}
+.lp-banda-img{position:absolute;inset:0;aspect-ratio:auto}
+/* El ancho y el alto explícitos NO sobran: un canvas es un elemento
+   reemplazado, así que con inset a cero y width automático se queda en
+   sus dimensiones intrínsecas de 300x150 en vez de llenar el hueco.
+   Medido: sin estas dos declaraciones la trama de la banda salía como un
+   sello de 300x150 en la esquina de arriba. */
+
+.lp-banda-txt{
+  /* Anclada al MISMO corte que la foto, no flotando a la derecha. Antes
+     era margin-left:auto con max-width:min(44ch,54%), y ahi esta la
+     trampa: cuando manda el 44ch la caja se estrecha, y una caja mas
+     estrecha alineada a la derecha EMPIEZA mas a la derecha... pero no lo
+     bastante. Entre 861 y ~1360px de ventana el borde izquierdo del texto
+     caia antes del final del fundido, asi que la foto seguia asomando
+     debajo de las primeras letras de cada linea. Solo se veia midiendo en
+     esos anchos, no en 1440. Con el corte compartido, el sitio donde
+     acaba la foto y el sitio donde empieza el texto son el mismo numero:
+     no pueden separarse por mucho que cambien la ventana o la fuente. */
+  position:relative;z-index:2;
+  /* El tamano de letra se declara AQUI, no solo en el parrafo: 44ch se
+     resuelve contra la letra del elemento que lo lleva, y sin esto se median
+     44 caracteres de 16px mientras el parrafo crecia hasta 25,6. Resultado
+     medido: 28 caracteres por linea a 1920px, cuando lo comodo son 45 a 75. */
+  font-size:var(--t-f1);
+  margin-left:var(--corte);width:calc(100% - var(--corte));max-width:44ch;
+  padding:clamp(2.2rem,4.5vw,3.6rem) 0 clamp(1.8rem,3.5vw,2.8rem);
+}
+@media (max-width:860px){
+  /* En estrecho el texto no cabe dentro de la imagen sin taparla: la
+     banda vuelve a ser imagen arriba y texto debajo. */
+  .lp-banda{min-height:0;display:grid;grid-template-columns:1fr;gap:var(--e-3)}
+  .lp-banda-img{position:relative;inset:auto;aspect-ratio:2/1}
+  .lp-banda-txt{max-width:none;margin-left:0;width:auto;padding:0}
+  .lp-banda .trama{height:58%}
+}
+
+/* CUADRO DE FOTOGRAFIA PENDIENTE. Mismas reglas que en la home, escritas
+   aqui a proposito: la home es un fichero a mano y estas paginas se
+   generan, asi que compartir el bloque obligaria a que una dependiera de
+   la otra por un cuadro de trabajo que desaparece cuando entren las
+   fotografias. Si algun dia esto pasa a produccion, el bloque no viaja. */
+.marca-foto{
+  position:absolute;inset:clamp(.8rem,1.6vw,1.4rem);
+  display:flex;flex-direction:column;justify-content:flex-end;gap:var(--e-1);
+  padding:clamp(1rem,2vw,1.6rem);
+  border:1px dashed var(--line);
+  background:linear-gradient(180deg,rgba(56,189,248,.03),rgba(56,189,248,.06));
+  opacity:var(--sin-fotos,1);pointer-events:none;
+}
+/* El hueco ocupa lo que ocupara la fotografia, hasta el corte, y no la
+   banda entera: si no, el recuadro de puntos envuelve tambien al texto y
+   parece que el texto sea parte de lo que falta. */
+/* Solo donde el texto cae DENTRO de la banda, es decir por encima del punto
+   en el que la banda se apila. Sin la media query esta regla ganaba a la de
+   abajo por orden y dejaba el cuadro en el 58% del ancho tambien en movil:
+   162 por 81 pixeles a 320, con el texto saliendose por arriba. */
+@media (min-width:861px){.lp-banda-img.es-hueco{width:var(--corte)}}
+.marca-et{font-size:var(--t-0);letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);font-weight:500}
+.marca-esc{font-family:var(--serif);font-weight:300;
+  font-size:var(--t-f1);line-height:1.35;color:var(--ink-2);max-width:30ch}
+.marca-med{font-size:var(--t-0);color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+.lp-micro{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-3) 0 0}
+
+@media (max-width:920px){
+  .lp-hero-grid,.lp-dest,.lp-caso-grid,.lp-ben{grid-template-columns:1fr}
+  .lp-ben > div:first-child{border-top:1px solid var(--line)}
+  .lp-tabla td{padding-right:var(--e-2)}
+}
+@media (max-width:560px){
+  .lp-tabla,.lp-tabla tbody,.lp-tabla tr,.lp-tabla td{display:block;width:100%}
+  .lp-tabla thead{display:none}
+  .lp-tabla tr{padding:var(--e-3) 0;border-bottom:1px solid var(--line)}
+  .lp-tabla td{padding:0;border:0}
+  .lp-t-p{margin-top:var(--e-1);display:inline-block}
+}
+
+
+
+.lg-bar{position:sticky;top:0;z-index:40;background:rgba(15, 23, 42,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.lg-bar-in{display:flex;align-items:center;gap:var(--e-4);min-height:60px;overflow-x:auto}
+.lg-bar-eb{font-size:var(--t-0);letter-spacing:.15em;text-transform:uppercase;
+  color:var(--ink-3);flex:0 0 auto}
+.lg-tab{background:none;border:0;cursor:pointer;white-space:nowrap;padding:var(--e-1) 0;
+  font-family:var(--sans);font-size:var(--t-2);color:var(--ink-3);
+  border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.lg-tab:hover{color:var(--ink-2)}
+.lg-tab.is-active{color:var(--ink);border-bottom-color:var(--accent)}
+.lg-pag[hidden]{display:none}
+
+/* El ancho de lectura manda: una linea legal larga no se lee, se abandona. */
+.wrap-narrow{max-width:74ch;margin:0 auto;padding:0 var(--gutter)}
+.legal-hero{padding:clamp(3rem,6vw,5rem) 0 clamp(1.5rem,3vw,2.5rem)}
+.legal-title{font-family:var(--serif);font-weight:300;letter-spacing:-.018em;
+  color:var(--ink);font-size:var(--t-f4);line-height:1.14;margin:0}
+.legal-meta{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-3) 0 0}
+.legal-body{padding:0 0 clamp(4rem,8vw,7rem);color:var(--ink-2);font-size:var(--t-3);line-height:1.75}
+.legal-body h2{font-family:var(--serif);font-weight:400;color:var(--ink);
+  font-size:var(--t-f1);line-height:1.25;margin:var(--e-6) 0 var(--e-3)}
+.legal-body h3{font-family:var(--serif);font-weight:400;color:var(--ink);
+  font-size:var(--t-4);margin:var(--e-5) 0 var(--e-1)}
+/* Justificado, que es como se compone un texto legal en la casa: el mismo
+   criterio que el genero legal de componer-pdf.js. Va con particion de
+   palabras obligatoria (hyphens:auto sobre el lang de cada pagina, que
+   por eso se declara en el div): justificar sin partir es lo que abre los
+   rios blancos en columnas estrechas, y aqui la columna es de 74 caracteres.
+   Los titulares NO se justifican: una linea suelta justificada se estira. */
+.legal-body p,.legal-body li{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.legal-body p{margin:0 0 var(--e-3)}
+.legal-body ul,.legal-body ol{margin:0 0 var(--e-3);padding-left:var(--e-3)}
+.legal-body li{margin:0 0 var(--e-1)}
+.legal-body a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(56,189,248,.3)}
+.legal-body a:hover{border-bottom-color:var(--accent)}
+.legal-body strong,.legal-body b{color:var(--ink);font-weight:500}
+/* La tabla envuelve el texto en vez de meter una barra de scroll: son dos
+   columnas y lo que hay dentro son frases, no cifras que haya que alinear.
+   Es el mismo arreglo que se hizo en la web viva el 17-ago. */
+.legal-table{width:100%;border-collapse:collapse;margin:var(--e-4) 0 var(--e-5);
+  table-layout:fixed;font-size:var(--t-3)}
+.legal-table th,.legal-table td{text-align:left;vertical-align:top;
+  padding:var(--e-2) var(--e-3) var(--e-2) 0;border-bottom:1px solid var(--line);
+  overflow-wrap:anywhere}
+.legal-table th{font-size:var(--t-0);letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:500}
+.legal-back{display:inline-flex;align-items:center;gap:var(--e-1);margin-top:var(--e-5);
+  font-size:var(--t-2);color:var(--accent);text-decoration:none}
+.legal-back:hover{color:var(--ink)}
+/* El separador del pie del 404 vive sobre fondo oscuro aqui, asi que no
+   necesita la excepcion que lleva en la web clara. */
+.footer-legal-links{display:flex;flex-wrap:wrap;gap:var(--e-1);align-items:center;
+  font-size:var(--t-2);color:var(--ink-3);margin-top:var(--e-4)}
+.footer-legal-links a{color:var(--ink-2);text-decoration:none}
+.footer-legal-links a:hover{color:var(--ink)}
+.footer-sep{color:var(--ink-3)}
+
+
+
+.lp-contacto{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  gap:clamp(2rem,4vw,4rem);align-items:start}
+.lp-contacto-btn{margin-top:var(--e-4);display:inline-flex}
+.lp-contacto-datos{list-style:none;margin:var(--e-4) 0 0;padding:0;
+  display:flex;flex-direction:column;gap:var(--e-1)}
+.lp-contacto-datos li{font-size:var(--t-2);color:var(--ink-2)}
+.lp-contacto-datos a{color:inherit;text-decoration:none}
+.lp-contacto-datos a:hover{color:var(--accent)}
+@media (max-width:920px){.lp-contacto{grid-template-columns:1fr}}
+
+
+
+  /* ══════════ CABECERA ══════════ */
+  .site-header{
+    position:sticky;top:0;z-index:20;
+    border-bottom:1px solid var(--line);
+    background:rgba(15, 23, 42,.72);
+    backdrop-filter:saturate(160%) blur(14px);
+    -webkit-backdrop-filter:saturate(160%) blur(14px);
+    transition:border-color .4s var(--ease),background .4s var(--ease);
+  }
+  .site-header.asentada{
+    background:rgba(15, 23, 42,.88);
+    border-bottom-color:var(--line-2);
+  }
+  /* En reposo la barra es el propio fondo (Carlos, 29-ago-2026: "cuadrar el
+     color del banner de arriba con el hero"); color y filete solo al
+     compactarse. Misma regla que en home-medianoche.html. */
+  .site-header:not(.asentada){
+    background:transparent;border-bottom-color:transparent;
+    backdrop-filter:none;-webkit-backdrop-filter:none;
+  }
+  .header-inner{transition:min-height .45s var(--ease);display:flex;align-items:center;gap:var(--e-5);min-height:var(--header-h)}
+  .site-header.asentada .header-inner{min-height:66px}
+  .site-header.asentada .brand-logo{height:42px}
+  .site-header::after{
+    content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;
+    background:var(--accent);transform:scaleX(var(--leido,0));transform-origin:left;
+    transition:transform .12s linear;
+  }
+  @media (prefers-reduced-motion:reduce){
+    .header-inner,.brand-logo,.site-header::after{transition:none}
+  }
+  .brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none}
+  .brand-logo{height:52px;width:auto;display:block;transition:height .45s var(--ease);
+    /* El fichero es el mismo azul marino sobre transparente que la home: se
+       lleva a claro por filtro, igual que allí. "/logo-ct.png" es el mismo PNG que ya usa la home (idéntico byte a byte al que llevaba en base64, comprobado en E1b); no se duplica. Antes aquí ponía "logo-ct-claro.png", que era el
+       nombre de destino que pide el encargo, no una versión pre-invertida
+       del PNG — invertir los píxeles de verdad exigiría un decodificador de
+       PNG a mano (no hay librería de imagen en este proyecto) y el filtro ya
+       da el resultado correcto sin ese riesgo. */
+    filter:brightness(0) invert(1);opacity:.94}
+  .nav{display:flex;align-items:center;gap:var(--e-5);margin-left:auto}
+  .nav-menu{display:flex;list-style:none;gap:var(--e-5);margin:0;padding:0}
+  .nav-menu a{
+    color:var(--ink-2);text-decoration:none;font-size:var(--t-2);
+    padding:var(--e-0) 0;border-bottom:1px solid transparent;
+    transition:color .2s,border-color .2s;
+  }
+  .nav-menu a:hover,.nav-menu a:focus-visible{color:var(--ink);border-bottom-color:var(--accent)}
+  .nav-menu li.has-panel{position:relative}
+  .np-caret{display:none}
+  .np-cab{background:none;border:0;padding:var(--e-0) 0;margin:0;cursor:pointer;
+    color:var(--ink-2);font-family:var(--sans);font-size:var(--t-2);
+    border-bottom:1px solid transparent;transition:color .2s,border-color .2s;}
+  .np-cab:hover,.np-cab:focus-visible{color:var(--ink);border-bottom-color:var(--accent)}
+  .np-inerte,.np-inerte:hover{cursor:default;color:var(--ink-2);border-bottom-color:transparent}
+  .live{
+    display:inline-block;width:5px;height:5px;border-radius:50%;
+    margin-left:var(--e-1);vertical-align:middle;background:var(--accent);
+    box-shadow:0 0 0 0 rgba(56,189,248,.55);animation:pulse 3.2s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%,70%,100%{box-shadow:0 0 0 0 rgba(56,189,248,.5)}
+    35%{box-shadow:0 0 0 5px rgba(56,189,248,0)}
+  }
+  .nav-panel{
+    position:absolute;top:calc(100% + 1.15rem);right:-1.25rem;
+    display:grid;grid-template-columns:15rem 15rem;gap:var(--e-4);align-items:start;
+    padding:var(--e-4);width:max-content;
+    background:var(--surface);border:1px solid var(--line-2);border-radius:4px;
+    box-shadow:0 22px 48px rgba(0,0,0,.5);
+    opacity:0;visibility:hidden;transform:translateY(-6px);
+    transition:opacity .2s,transform .2s,visibility .2s;
+  }
+  @media (hover:hover){
+    .nav-menu li.has-panel:hover .nav-panel{opacity:1;visibility:visible;transform:none}
+  }
+  .nav-menu li.has-panel > .np-cab:focus-visible + .nav-panel,
+  .nav-panel:focus-within,
+  .nav-menu li.has-panel.is-open .nav-panel{
+    opacity:1;visibility:visible;transform:none;
+  }
+  .np-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--e-0)}
+  .np-list a,.np-list .np-item{
+    display:block;padding:var(--e-1);border-radius:3px;border:0;
+    text-decoration:none;transition:background .18s;
+  }
+  .np-list a:hover,.np-list a:focus-visible{background:rgba(56,189,248,.09)}
+  .np-t{display:block;color:var(--ink);font-size:var(--t-2)}
+  .np-d{display:block;color:var(--ink-3);font-size:var(--t-1);margin-top:var(--e-0);line-height:1.4}
+  .np-feat{
+    display:flex;flex-direction:column;text-decoration:none;
+    padding:var(--e-3);border-radius:3px;background:rgba(15, 23, 42,.66);
+    border:1px solid var(--line);transition:border-color .18s;
+  }
+  .np-feat:hover,.np-feat:focus-visible{border-color:rgba(56,189,248,.4)}
+  .np-feat-art{
+    height:74px;border-radius:2px;margin-bottom:var(--e-2);
+    background:
+      radial-gradient(120% 90% at 78% 30%,rgba(56,189,248,.34),transparent 62%),
+      repeating-linear-gradient(103deg,rgba(56,189,248,.22) 0 1px,transparent 1px 7px),
+      linear-gradient(160deg,#132339,#0C1526);
+  }
+  .np-feat-eb{
+    font-size:var(--t-0);letter-spacing:.13em;text-transform:uppercase;color:var(--accent);
+    margin-bottom:var(--e-0);
+  }
+  .np-feat-t{color:var(--ink-2);font-size:var(--t-2);line-height:1.42}
+  .nav-actions{display:flex;align-items:center;gap:var(--e-4)}
+  .header-phone{
+    display:flex;align-items:center;gap:var(--e-1);
+    color:var(--ink-2);text-decoration:none;font-size:var(--t-2);
+    font-variant-numeric:tabular-nums;transition:color .2s;
+  }
+  .header-phone:hover{color:var(--ink)}
+  .phone-ico{width:15px;height:15px;fill:none;stroke:var(--accent);stroke-width:1.6}
+  .btn-primary{
+    display:inline-block;background:var(--accent);color:var(--sobre-accent);
+    font-size:var(--t-2);font-weight:500;letter-spacing:.01em;
+    padding:var(--e-1) var(--e-3);border-radius:3px;text-decoration:none;
+    transition:background .2s,transform .2s;
+  }
+  .btn-primary:hover{background:#5FCBFA;transform:translateY(-1px)}
+  .nav-toggle{
+    display:none;align-items:center;gap:var(--e-1);margin-left:auto;
+    background:none;border:0;cursor:pointer;padding:var(--e-1) 0;
+    font-family:var(--sans);font-size:var(--t-1);font-weight:500;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--ink);
+  }
+  .nav-toggle-bars{display:inline-grid;gap:var(--e-0)}
+  .nav-toggle-bars i{display:block;width:22px;height:1.5px;background:var(--ink);transition:transform .3s ease}
+
+  /* ══════════ Formulario y pie ══════════ */
+  .form-intro{font-size:var(--t-2);color:var(--ink-3);margin:0 0 var(--e-4)}
+  .campo{display:block;margin-bottom:var(--e-3);position:relative;padding-block:14px;margin-block:2px}
+  .campo span{display:block;font-size:var(--t-0);letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-3);margin-bottom:var(--e-1)}
+  .campo input,.campo textarea{
+    width:100%;padding:var(--e-2) var(--e-3);background:var(--surface);color:var(--ink);
+    border:1px solid var(--line);border-radius:3px;font-family:var(--sans);font-size:var(--t-3);
+    transition:border-color .2s;
+  }
+  .campo input:focus-visible,.campo textarea:focus-visible{
+    outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent);
+  }
+  .campo input:focus,.campo textarea:focus{border-color:var(--accent)}
+  .campo textarea{min-height:120px;resize:vertical}
+  .consent{display:flex;gap:var(--e-2);align-items:flex-start;font-size:var(--t-1);color:var(--ink-3);
+    margin:2px 0;padding-block:14px}
+  .consent input{margin-top:var(--e-0);accent-color:var(--accent)}
+  .consent a{color:var(--accent)}
+  .form-nota{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-3) 0 0}
+  .btn-sec{
+    display:inline-block;font-family:var(--sans);font-size:var(--t-3);font-weight:500;
+    padding:var(--e-2) var(--e-4);border-radius:3px;cursor:pointer;
+    background:none;color:var(--ink);border:1px solid var(--line-2);
+    transition:border-color .2s,color .2s;
+  }
+  .btn-sec:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-sec:disabled{opacity:.6;cursor:default}
+  .cont-form{padding-top:var(--e-0)}
+  /* Nuevas, 29-ago-2026: el formulario ya está cableado a FormSubmit y
+     necesita decir cuándo un campo falla y cómo va el envío. No existían
+     antes porque el formulario del taller nunca llegó a enviar nada. */
+  .field-error{display:block;color:#F87171;font-size:var(--t-1);margin:calc(-1 * var(--e-2)) 0 var(--e-2)}
+  .campo.has-error input,.campo.has-error textarea,.consent.has-error{border-color:#F87171}
+  .hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .form-status{font-size:var(--t-1);margin-top:var(--e-2);min-height:1.2em}
+  .form-status.is-ok{color:var(--accent)}
+  .form-status.is-error{color:#F87171}
+
+  .pie{padding:clamp(2.5rem,5vw,4rem) 0 clamp(2rem,4vw,3rem);border-top:1px solid var(--line);
+    background:transparent;position:relative;z-index:1} /* mismo fondo que la página, con filete: Carlos, 29-ago-2026 (el #0A101E era "muy brusco") */
+  .pie-in{display:flex;flex-wrap:wrap;gap:var(--e-4) var(--e-6);align-items:baseline;justify-content:space-between}
+  .pie-marca p{font-size:var(--t-2);color:var(--ink-3);margin:var(--e-3) 0 0}
+  .pie-logo{height:48px;width:auto;display:block;filter:brightness(0) invert(1);opacity:.8}
+  .pie-nav{display:flex;flex-wrap:wrap;gap:var(--e-4);list-style:none;margin:0;padding:0}
+  .pie-nav a{font-size:var(--t-2);color:var(--ink-3);text-decoration:none;transition:color .2s}
+  .pie-nav a:hover{color:var(--ink)}
+  .pie-legal{margin:var(--e-5) 0 0;padding-top:var(--e-4);border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--e-1) var(--e-5);
+    font-size:var(--t-1);color:var(--ink-3)}
+  .pie-legal a{color:var(--ink-3);text-decoration:none}
+  .pie-legal a:hover{color:var(--ink)}
+  .pie-sep{color:var(--ink-3)}
+  .pie-contacto{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-2) 0 0}
+  .pie-contacto a{color:var(--ink-3);text-decoration:none}
+  .pie-contacto a:hover{color:var(--ink)}
+
+  @media (max-width:1080px){
+    .nav-menu{gap:var(--e-3)}
+    .nav-menu a{font-size:var(--t-2)}
+    .header-phone span{display:none}
+  }
+  @media (max-width:1000px){
+    :root{--header-h:72px}
+    .nav-toggle{display:inline-flex}
+    .nav{
+      position:fixed;inset:var(--header-h) 0 auto 0;z-index:30;
+      flex-direction:column;align-items:stretch;gap:0;margin-left:0;
+      background:var(--surface);border-bottom:1px solid var(--line);
+      padding:var(--e-1) var(--gutter) var(--e-4);
+      box-shadow:0 24px 40px -24px rgba(0,0,0,.6);
+      max-height:calc(100dvh - var(--header-h));overflow-y:auto;
+      transform:translateY(-8px);opacity:0;pointer-events:none;
+      transition:opacity .25s ease,transform .25s ease;
+    }
+    .nav.is-open{transform:none;opacity:1;pointer-events:auto}
+    .nav-menu{flex-direction:column;align-items:stretch;gap:0}
+    .nav-menu li{border-bottom:1px solid var(--line)}
+    .nav-menu a{display:block;padding:var(--e-3) 0;font-size:var(--t-3);color:var(--ink);border-bottom:0}
+    .nav-menu li.has-panel{position:static}
+    .np-cab{display:block;width:100%;text-align:left;padding:var(--e-3) 0;font-size:var(--t-3);color:var(--ink)}
+    .nav-panel{
+      position:static;width:auto;min-width:0;
+      padding:0;background:none;border:0;box-shadow:none;
+      opacity:1;visibility:visible;transform:none;
+      display:grid;grid-template-columns:1fr;grid-template-rows:0fr;
+      transition:grid-template-rows .28s ease;
+    }
+    .np-list{overflow:hidden;min-height:0}
+    .nav-menu li.has-panel.is-open .nav-panel{grid-template-rows:1fr}
+    .nav-menu li.has-panel.is-open .np-list{padding-bottom:var(--e-3)}
+    .np-caret{
+      display:inline-block;width:8px;height:8px;margin-left:var(--e-1);
+      border-right:1.5px solid var(--ink-3);border-bottom:1.5px solid var(--ink-3);
+      transform:translateY(-2px) rotate(45deg);transition:transform .28s ease;
+    }
+    .nav-menu li.has-panel.is-open .np-caret{transform:translateY(1px) rotate(-135deg)}
+    .nav-panel .np-feat{display:none}
+    .np-list a,.np-list .np-item{padding:var(--e-1) 0 var(--e-1) var(--e-3);border-left:1px solid var(--line-2);border-radius:0}
+    .nav-actions{flex-direction:column;align-items:stretch;gap:var(--e-3);margin-top:var(--e-3)}
+    .header-phone{justify-content:center;font-size:var(--t-3)}
+    .header-phone span{display:inline}
+    .btn-primary{width:100%;text-align:center;padding-block:var(--e-3)}
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bars i:first-child{transform:translateY(3.25px) rotate(45deg)}
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bars i:last-child{transform:translateY(-3.25px) rotate(-45deg)}
+  }
+  @media (max-width:860px){
+    .header-inner{min-height:72px;gap:var(--e-3)}
+    .brand-logo{height:44px}
+  }
+
+
+:root{--h-portada:url(/img/informe-portada.jpg);--h-multiplo:url(/img/informe-multiplo.jpg);--h-rango:url(/img/informe-rango.jpg);}
+
+/* ⟦IMPRESO⟧ — este bloque lo copia `inyectar-tokens.js` a la home,
+   que lleva su propia copia de esta capa por estar escrita a mano.
+   Se edita AQUÍ. */
+/* ══════════ 8 · IMPRESO ══════════
+   No es "ocultar el fondo y ya". Es la regla de la casa aplicada donde
+   toca: **horizontal y en pantalla, oscuro; vertical y en papel, claro**.
+   Una hoja A4 es vertical, así que al imprimir esta web se comporta como
+   se comportan los documentos de la firma, no como una captura de sí
+   misma.
+
+   No es una hipótesis de que alguien imprima: el aviso legal y la política
+   de privacidad existen para guardarlos, y un cliente que quiera el PDF de
+   sus condiciones lo saca de aquí. Sin esto le salen sesenta páginas de
+   azul noche a 0,10 € de tinta cada una, o —peor y más probable— el
+   navegador le fuerza el ahorro de tinta y le entrega texto gris claro
+   sobre blanco, ilegible, que es un documento legal que no se puede leer.
+
+   Se hace invirtiendo los TOKENS y no regla por regla: todo lo que está
+   construido sobre ellos se da la vuelta solo, y lo que se escribió con un
+   color literal es justo lo que hay que encontrar y arreglar. */
+@media print{
+  :root{
+    --ground:#fff; --surface:#fff;
+    --ink:#0C1E38; --ink-2:#1F2937; --ink-3:#374151;
+    /* El cian de pantalla sobre blanco da 1,8:1: sobre papel deja de ser un
+       acento y pasa a ser un subrayado que no se lee. Se sustituye por el
+       azul de la casa, que es el mismo gesto con el contraste que el papel
+       exige. */
+    --accent:#0C1E38;
+    /* El texto sobre el acento se invierte con él, que es justo lo que no
+       podía hacer mientras era un literal repetido en ocho ficheros. */
+    --sobre-accent:#fff;
+    --line:rgba(12,30,56,.22); --line-2:rgba(12,30,56,.34);
+  }
+  /* La materia de fondo y el lienzo no se imprimen. El lienzo, además,
+     saldría como una imagen enorme del último fotograma pintado. */
+  .fondo, canvas.trama-global, .trama-global{display:none!important}
+
+  body{background:#fff;color:var(--ink-2)}
+
+  /* Los fondos escritos con un color literal no se enteran de que el tema
+     ha cambiado. El pie es el único que quedaba, y era el peor sitio: sobre
+     su azul casi negro el texto invertido daba 1,84:1. Se neutraliza aquí
+     en vez de cambiarlo en el origen porque en pantalla ese azul propio es
+     intencionado —separa el pie del cuerpo—, y lo que sobra es en papel. */
+  .pie, footer[class*="pie"]{background:#fff!important;color:var(--ink-2)}
+  .pie a{color:var(--ink)}
+
+  /* El andamiaje del prototipo no se imprime. Estas barras son el
+     conmutador entre variantes, no contenido: existen para trabajar aquí y
+     no llegan a producción. En papel serían una fila de pestañas muertas. */
+  .lg-bar, .lp-bar, .prev-bar{display:none!important}
+
+  /* Los navegadores no imprimen fondos salvo que el usuario lo pida, así
+     que un botón con fondo de color sale como texto suelto sin nada
+     alrededor. Se le devuelve el borde para que siga pareciendo un botón.
+     Se cubren también los CTA que no llevan la clase `.btn-primary` —el del
+     héroe y el del cierre de servicios— porque comparten el mismo fondo de
+     acento por otra regla y tenían el mismo problema. */
+  .btn-primary, [class*="-cta"]{
+    background:transparent;color:var(--ink);border:1px solid var(--ink)}
+
+  /* Cortes: un título no se queda solo al pie de una hoja, y una tabla no
+     se parte dejando su cabecera en la página anterior. */
+  h1,h2,h3{break-after:avoid-page;page-break-after:avoid}
+  tr,li,figure,blockquote{break-inside:avoid-page;page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  /* Un enlace impreso pierde su destino: en un documento legal eso importa,
+     porque la mitad de los enlaces son a la AEPD o a otra página de
+     condiciones. Se escribe al lado, y solo los que salen fuera: los
+     internos no llevan a ningún sitio en papel. */
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:var(--t-1);color:var(--ink-3);word-break:break-all}
+
+  /* EL REVELADO SE DA POR HECHO EN PAPEL. Esto no es una precaución: sin
+     esta regla, 28 grupos de texto de la home y las landings salían
+     invisibles —los pasos del proceso, la tabla de encargos, las dos cifras
+     del caso— y ninguna medición de contraste lo veía, porque un texto a
+     opacidad 0 tiene el color y el fondo perfectos.
+
+     El comentario de la regla `[data-entra]` cuenta que una revisión ya
+     avisó del riesgo de "página invisible" y que se descartó con razón: sin
+     JavaScript el atributo no llega a escribirse. Al imprimir entra por otra
+     puerta. El JavaScript sí corre y escribe el atributo, pero solo añade
+     `.dentro` a lo que llegó a verse en pantalla; el papel, en cambio,
+     imprime el documento entero, incluido todo lo que nunca se mostró. */
+  [data-entra],[data-entra="titular"]{
+    opacity:1!important;transform:none!important;filter:none!important;
+    clip-path:none!important;transition:none!important;
+  }
+
+  /* Nada de movimiento en papel, y nada pegajoso: una cabecera sticky se
+     imprime clavada en la primera hoja y tapa lo que hubiera debajo. */
+  *{animation:none!important;transition:none!important}
+  header,.site-header,[class*="sticky"]{position:static!important}
+}
+/* ⟦/IMPRESO⟧ */

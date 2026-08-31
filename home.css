@@ -1,0 +1,2381 @@
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:300 500;font-display:swap;src:url('/newsreader.woff2') format('woff2')}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;font-display:swap;src:url('/newsreader-italic.woff2') format('woff2')}
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:400;font-display:swap;src:url('/librefranklin-400.woff2') format('woff2')}
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:500;font-display:swap;src:url('/librefranklin-500.woff2') format('woff2')}
+html{font-synthesis-weight:none}
+
+html,body{background:var(--ground)}
+
+:root{
+    /* A 1 mientras no haya fotografia: se ven los cuadros que dicen que
+       va en cada hueco. montar-fotos.js lo pone a 0 al montar las de
+       verdad. Un solo sitio, para que no queden huecos a medias. */
+    --sin-fotos:1;
+    --ground:#0F172A;
+    --surface:#1E293B;
+    --ink:#F1EFE9;
+    --ink-2:#A7BAD2;
+    --ink-3:#8CA1C4;
+    --accent:#38BDF8;
+    /* Las seis clases de activo, identicas a las de Wealth. Compartir el
+       token es lo que hace que la franja de la home y la herramienta se
+       reconozcan como la misma familia. */
+    /* Fotografias de las tres fases de servicio, incrustadas para que la
+       pagina siga funcionando publicada como un solo fichero. */
+    --c-rv:#7DD3FC; --c-rf:#93B4D6; --c-inm:#4F8FC7;
+    --c-oro:#D6A85A; --c-mat:#B49B78; --c-mon:#CBD9EA;
+    --line:rgba(241, 239, 233,.12);
+    --line-2:rgba(241, 239, 233,.22);
+    --serif:"Newsreader",Georgia,"Times New Roman",serif;
+    --sans:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    --wrap:1520px; --header-h:88px;
+    --gutter:clamp(1.25rem,5vw,5rem);
+  }
+
+/* Copia de `medianoche.css`, puesta aquí por `inyectar-tokens.js`.
+     No la edites en este fichero: se pisa en la siguiente pasada. */
+/* ⟦ESCALA⟧ — bloque generado hacia la home y Wealth por `inyectar-tokens.js`.
+   Este es el original: se edita AQUÍ y se ejecuta el inyector. Lo que hay en
+   los otros dos ficheros es una copia y se pisa.
+
+   ── POR QUÉ EXISTE ──────────────────────────────────────────────────────
+   Medidos los ocho ficheros fuente el 26-ago: 63 tamaños de letra distintos
+   en 202 usos, 23 de ellos apretados entre 10 y 17 píxeles. Nadie distingue
+   .92rem de .94rem; lo que sí se ve es que la misma etiqueta cambia de
+   tamaño al cambiar de página, y eso es exactamente lo que hace que un
+   sitio parezca montado por partes en vez de construido.
+
+   Al mapear los 35 valores fijos contra la escala del HUD, 33 caían dentro
+   del 8% de un escalón. Es decir: la variación era ruido, no intención, y
+   la escala que ya funciona en el HUD describe la web entera. No se inventa
+   una nueva habiendo una probada en producción.
+
+   ── DÓNDE SE PARTE EN DOS, QUE ES LA ÚNICA DECISIÓN DE VERDAD ───────────
+   Lo fijo llega hasta el cuerpo destacado. De ahí para arriba todo es
+   fluido, porque todo lo que hay por encima es un título, y un título tiene
+   que encoger en un móvil. Los dos únicos valores que no encajaban en
+   ninguna parte (`.si-t` a 1,34rem y `.about-name` a 1,32rem) eran títulos
+   de tarjeta: no eran una excepción a la escala, estaban en el lado
+   equivocado del corte.
+
+   El `10rem` de `.ci-lead::after` se queda fuera a propósito: es un signo
+   decorativo, no texto, y meterlo en una escala de lectura no significa
+   nada. */
+:root{
+  /* Fijos. Los cinco primeros escalones del HUD: 11 / 12,5 / 14 / 16 / 19. */
+  --t-0:.6875rem;   /* 11px    · micro-etiqueta, eyebrow */
+  --t-1:.78rem;     /* 12,5px  · pie, nota, pastilla */
+  --t-2:.875rem;    /* 14px    · UI: botón, chip, dato de apoyo */
+  --t-3:1rem;       /* 16px    · cuerpo */
+  --t-4:1.1875rem;  /* 19px    · entradilla, cuerpo destacado */
+
+  /* Fluidos. Cinco papeles, no cinco tamaños: el nombre dice qué es, y por
+     eso se elige por función y no por cuánto mide en la pantalla de quien
+     lo escribe. */
+  /* El mínimo de este es 1,3rem y no 1,15rem por una razón medida: con
+     1,15rem el título de tarjeta se quedaba en 18,4px mientras `--t-4` es
+     19px fijo, así que por debajo de unos 950px de ancho —móvil y tablet,
+     donde está la mitad de la gente— el título salía MÁS PEQUEÑO que el
+     texto al que encabeza. Una escala tiene que ser monótona en todos los
+     anchos, no solo en el escritorio de quien la escribe. */
+  --t-f1:clamp(1.3rem,2vw,1.55rem);      /* título de tarjeta   21→25px */
+  --t-f2:clamp(1.45rem,2.6vw,2.05rem);   /* título de sección   23→33px */
+  --t-f3:clamp(1.7rem,3.1vw,2.55rem);    /* título de página    27→41px */
+  --t-f4:clamp(2rem,3.8vw,3.2rem);       /* héroe               32→51px */
+  --t-f5:clamp(2.2rem,4.8vw,4rem);       /* héroe mayor         35→64px */
+
+  /* Ritmo vertical. Todo múltiplo de 4 px, y de 8 a partir del tercero, que
+     es donde empieza a separar bloques en vez de piezas de un bloque. */
+  --e-0:.25rem;  /*  4px */
+  --e-1:.5rem;   /*  8px */
+  --e-2:.75rem;  /* 12px */
+  --e-3:1rem;    /* 16px */
+  --e-4:1.5rem;  /* 24px */
+  --e-5:2rem;    /* 32px */
+  --e-6:3rem;    /* 48px */
+  --e-7:4rem;    /* 64px */
+  /* Aire entre secciones: lo único que se mide contra la pantalla y no
+     contra la rejilla, porque un respiro fijo de 96px asfixia un móvil y se
+     pierde en un monitor ancho. */
+  --e-sec:clamp(3.5rem,7vw,6rem);
+
+  /* Un color, en un bloque que se llama escala. Está aquí y no arriba con el
+     resto de la paleta por una razón mecánica: este bloque es el único que
+     viaja a la home, que lleva su propia copia del :root por estar escrita a
+     mano. Un token de sistema que no llega a todas las páginas no es un token
+     de sistema, y esto se aprendió midiendo: definido arriba, los botones de
+     la home se quedaron sin color de texto y cayeron a 1,08:1.
+
+     Qué es: el texto que va ENCIMA del acento. Estaba escrito a mano las
+     veintidós veces que hacía falta, y un color suelto no puede seguir al
+     color que acompaña. Al invertir el tema para imprimir, el cian se volvió
+     azul oscuro y este se quedó claro: 1,12:1 sobre su propio fondo. */
+  --sobre-accent:#0B1220;
+}
+/* ⟦/ESCALA⟧ */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   CT ADVISORY · CAPA DE ACABADO — Azul Medianoche
+   ───────────────────────────────────────────────────────────────────────
+   Se inyecta idéntica en la home, las landings y Wealth. No define ni un
+   color ni una tipografía nuevos: todo sale de los tokens que las tres
+   piezas ya comparten. Lo que añade es lo que separa una página montada
+   de una construida — materia en el fondo, un solo momento de movimiento,
+   y las superficies que pinta el navegador y que no pertenecen a ningún
+   sistema de diseño hasta que alguien las reclama.
+
+   El día que esto pase a producción, este bloque va a `style.css` entero.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* Curva única de la casa. Salida exponencial: arranca rápido y se posa,
+     que es como se mueve algo con peso. Una sola curva en toda la web. */
+  --ease:cubic-bezier(.16,1,.3,1);
+  --dur:.72s;
+  /* Sombra con desplazamiento y desenfoque reales. Un halo sin offset es
+     decoración; esto es una fuente de luz. */
+  --sombra:0 18px 40px -24px rgba(2,8,20,.85), 0 2px 6px -2px rgba(2,8,20,.5);
+  --sombra-alta:0 40px 80px -40px rgba(2,8,20,.9), 0 4px 12px -4px rgba(2,8,20,.55);
+}
+
+/* ══════════ 1 · MATERIA DE FONDO ══════════
+   Tres capas fijas detrás de todo: dos luces que respiran, una trama de
+   grano, y una viñeta. El fondo plano era lo que más delataba el montaje:
+   un color sólido de extremo a extremo no existe en nada impreso ni en
+   ninguna pantalla que alguien haya diseñado. */
+.fondo{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  contain:strict;
+}
+.fondo-luz{
+  position:absolute;inset:-25%;
+  background:
+    radial-gradient(42% 38% at 18% 12%, rgba(56,189,248,.10), transparent 70%),
+    radial-gradient(46% 42% at 88% 78%, rgba(56,189,248,.055), transparent 72%),
+    radial-gradient(60% 50% at 50% 110%, rgba(30, 41, 59,.85), transparent 70%);
+  animation:respira 24s var(--ease) infinite alternate;
+  will-change:transform;
+}
+@keyframes respira{
+  from{transform:translate3d(0,0,0) scale(1)}
+  to{transform:translate3d(-1.5%,1.2%,0) scale(1.06)}
+}
+/* Grano: turbulencia SVG a resolución baja, escalada. A esta opacidad no
+   se ve como ruido, se nota como papel. */
+.fondo-grano{
+  position:absolute;inset:0;opacity:.038;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.fondo-vineta{
+  position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(2,8,20,.55) 100%);
+}
+/* Todo el contenido por encima de la materia. */
+main,footer{position:relative;z-index:1}
+
+/* ══════════ 2 · SUPERFICIES DEL NAVEGADOR ══════════
+   Selección, cursor, barra de scroll, foco y subrayado vienen con los
+   valores de fábrica del navegador, que no pertenecen a ningún sistema.
+   Reclamarlas cuesta veinte líneas y es lo que más se nota sin saber
+   por qué. */
+::selection{background:rgba(56,189,248,.28);color:#fff;text-shadow:none}
+::-moz-selection{background:rgba(56,189,248,.28);color:#fff}
+html{scrollbar-width:thin;scrollbar-color:rgba(56,189,248,.32) transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:rgba(2,8,20,.4)}
+::-webkit-scrollbar-thumb{
+  background:rgba(140, 161, 196,.28);border-radius:99px;
+  border:3px solid transparent;background-clip:content-box;
+}
+::-webkit-scrollbar-thumb:hover{background:rgba(56,189,248,.45);background-clip:content-box}
+input,textarea{caret-color:var(--accent)}
+/* Un solo anillo de foco para toda la web, con hueco. El del navegador es
+   un rectángulo pegado al borde que rompe cualquier composición. */
+a:focus-visible,button:focus-visible,summary:focus-visible,
+input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;
+}
+/* El subrayado por defecto corta las descendentes de la tipografía serif. */
+a{text-underline-offset:.22em;text-decoration-thickness:from-font}
+::marker{color:var(--ink-3)}
+/* Cualquier cifra que se lea en columna o se compare va con cifras de
+   ancho fijo. Sin esto los números bailan al cambiar. */
+.tabular,.cont-datos,.lp-tabla,.lp-cifra,.proc-n,.ficha-dato{
+  font-variant-numeric:tabular-nums;
+}
+body{text-rendering:optimizeLegibility;font-feature-settings:"kern" 1,"liga" 1}
+/* NINGUNA LINEA A MEDIAS. Regla de la casa, no una preferencia de esta
+   pagina: no queremos ver una ultima linea con una palabra suelta ni una
+   cifra sola. Se resuelve en el motor de composicion y no frase a frase,
+   porque el texto cambia y el ancho tambien.
+   `balance` reparte las lineas de un titular corto para que queden
+   parecidas; `pretty` mira la ultima linea de un parrafo y roba palabra de
+   la anterior para que no quede huerfana. Los navegadores que no lo
+   entienden componen como antes, asi que no hay nada que degradar. */
+h1,h2,h3,h4,h5,figcaption,blockquote,
+.svc-title,.ph-h,.pp-t,.hero-title,.idea-h,.marca-esc,
+.phase-name,.phase-say2,.si-t,.si-for,.np-t,.np-d{text-wrap:balance}
+p,li,summary,dd,label,.pp-x,.pp-pie,.puente-n{text-wrap:pretty}
+
+/* ══════════ 3 · UN SOLO MOMENTO DE MOVIMIENTO ══════════
+   No hay efectos repartidos por la página: hay un gesto, el mismo siempre,
+   que ocurre cuando algo entra por primera vez. Sube, enfoca y se posa.
+   El desenfoque es lo que lo hace parecer material en vez de un fundido. */
+[data-entra]{
+  opacity:0;transform:translate3d(0,18px,0);filter:blur(6px);
+  transition:opacity var(--dur) var(--ease),
+             transform var(--dur) var(--ease),
+             filter var(--dur) var(--ease);
+  transition-delay:var(--retardo,0ms);
+  will-change:opacity,transform,filter;
+}
+[data-entra].dentro{opacity:1;transform:none;filter:blur(0)}
+/* Un titular no entra como un bloque: se descubre, como si la línea de
+   abajo lo destapara. Solo lo usan los titulares de sección. */
+/* El recorte NO puede vivir en el elemento observado: reduce su area de
+   interseccion a cero y el IntersectionObserver deja de verlo entrar, con
+   lo que nunca recibe la clase que lo revelaria. Vive en un envoltorio
+   interior que el script coloca al arrancar. */
+[data-entra="titular"]{opacity:1;transform:none;filter:none}
+[data-entra="titular"] > .rev{
+  display:block;clip-path:inset(0 0 105% 0);
+  transition:clip-path 1.05s var(--ease);
+  transition-delay:var(--retardo,0ms);
+}
+[data-entra="titular"].dentro > .rev{clip-path:inset(0 0 -25% 0)}
+/* El titular del heroe conserva el recorte sobre si mismo: su contenido lo
+   reescribe el selector de audiencia con innerHTML, que se llevaria por
+   delante el envoltorio. No lo necesita, porque no depende del observador
+   sino de la secuencia de carga. */
+.hero-title[data-entra="titular"]{clip-path:inset(0 0 105% 0);transition:clip-path 1.05s var(--ease)}
+.hero-title[data-entra="titular"].dentro{clip-path:inset(0 0 -25% 0)}
+
+@media (prefers-reduced-motion:reduce){
+  [data-entra],[data-entra="titular"],[data-entra="titular"] > .rev{
+    opacity:1!important;transform:none!important;filter:none!important;
+    clip-path:none!important;transition:none!important;
+  }
+  .fondo-luz{animation:none}
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+
+/* ══════════ 4 · EL MOTIVO ══════════
+   Un filete con un punto cian en el extremo. Aparece donde una sección
+   arranca. Es la única marca gráfica propia de la casa, y es la misma en
+   las tres piezas: eso es lo que hace que se lean como una sola web. */
+.marca-sec{
+  display:flex;align-items:center;gap:var(--e-2);
+  margin:0 0 var(--e-3);font-size:var(--t-0);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+.marca-sec::before{
+  content:"";width:1.75rem;height:1px;background:var(--accent);flex:0 0 auto;
+  box-shadow:0 0 0 0 rgba(56,189,248,.6);
+}
+
+/* ══════════ 5 · ENLACES CON SUBRAYADO QUE CRECE ══════════
+   Un enlace de texto no cambia de color al pasar por encima: se subraya
+   desde el origen. Transform, no width, para que no repinte. */
+.sub-link{
+  position:relative;text-decoration:none;color:var(--accent);
+  display:inline-flex;align-items:center;gap:var(--e-1);
+}
+.sub-link::after{
+  content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;
+  background:currentColor;transform:scaleX(0);transform-origin:left;
+  transition:transform .42s var(--ease);
+}
+.sub-link:hover::after,.sub-link:focus-visible::after{transform:scaleX(1)}
+.sub-link .flecha{transition:transform .42s var(--ease)}
+.sub-link:hover .flecha{transform:translateX(4px)}
+/* Flecha dibujada, no el glifo → de la tipografía: mismo grosor que el
+   resto de trazos de la página y alineada con la línea base real. */
+.flecha{width:1em;height:1em;flex:0 0 auto;stroke:currentColor;fill:none;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--ground);
+    color:var(--ink-2);
+    font-family:var(--sans);
+    font-size:var(--t-3);line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+  /* La cabecera flota sobre el contenido, asi que un salto a un ancla
+     dejaba el titular de la seccion debajo de ella. El margen de scroll
+     reserva su altura mas un respiro. */
+  [id]{scroll-margin-top:calc(var(--header-h) + 1.5rem)}
+
+  /* ══════════ CABECERA ══════════ */
+  .site-header{
+    position:sticky;top:0;z-index:20;
+    border-bottom:1px solid var(--line);
+    background:rgba(15, 23, 42,.72);
+    backdrop-filter:saturate(160%) blur(14px);
+    -webkit-backdrop-filter:saturate(160%) blur(14px);
+    transition:border-color .4s var(--ease),background .4s var(--ease);
+  }
+  .site-header.asentada{
+    background:rgba(15, 23, 42,.88);
+    border-bottom-color:var(--line-2);
+  }
+  /* En reposo (arriba del todo) la barra no tiene color propio: es el hero.
+     Pedido por Carlos el 29-ago-2026 al ver la home en Chrome ("cuadrar el
+     color del banner de arriba con el hero"): con el .72 y el desenfoque
+     desde el primer píxel se leía como una banda distinta del fondo. El
+     fondo y el filete vuelven al pasar los 24px de scroll (.asentada). */
+  .site-header:not(.asentada){
+    background:transparent;border-bottom-color:transparent;
+    backdrop-filter:none;-webkit-backdrop-filter:none;
+  }
+  .header-inner{transition:min-height .45s var(--ease)}
+  .site-header.asentada .header-inner{min-height:66px}
+  .brand-logo{transition:height .45s var(--ease)}
+  .site-header.asentada .brand-logo{height:42px}
+  /* Progreso de lectura sobre el borde de la cabecera: usa el filete que
+     ya existe en vez de anadir una barra propia. */
+  .site-header::after{
+    content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;
+    background:var(--accent);transform:scaleX(var(--leido,0));transform-origin:left;
+    transition:transform .12s linear;
+  }
+  @media (prefers-reduced-motion:reduce){
+    .header-inner,.brand-logo,.site-header::after{transition:none}
+  }
+  .header-inner{display:flex;align-items:center;gap:var(--e-5);min-height:var(--header-h)}
+  .brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none}
+  .brand-logo{
+    height:52px;width:auto;display:block;
+    /* El logo original es azul marino sobre transparente: sobre fondo
+       medianoche resulta ilegible, así que se lleva a claro por filtro.
+       En producción hace falta el archivo en versión clara. */
+    filter:brightness(0) invert(1);
+    opacity:.94;
+  }
+  .nav{display:flex;align-items:center;gap:var(--e-5);margin-left:auto}
+  .nav-menu{display:flex;list-style:none;gap:var(--e-5);margin:0;padding:0}
+  .nav-menu a{
+    color:var(--ink-2);text-decoration:none;font-size:var(--t-2);
+    padding:var(--e-0) 0;border-bottom:1px solid transparent;
+    transition:color .2s,border-color .2s;
+  }
+  .nav-menu a:hover,.nav-menu a:focus-visible{color:var(--ink);border-bottom-color:var(--accent)}
+  /* CT Intelligence es la única entrada con contenido que cambia solo.
+     El punto lo señala; no es un adorno, distingue una sección viva de
+     cuatro páginas estáticas. */
+  .nav-menu li.has-panel{position:relative}
+  .np-caret{display:none}
+  /* El cabecero del panel era un <a href="#">: no puede quedar apuntando a
+     ningún sitio, así que pasa a <button> con el mismo aspecto. */
+  .np-cab{background:none;border:0;padding:var(--e-0) 0;margin:0;cursor:pointer;
+    color:var(--ink-2);font-family:var(--sans);font-size:var(--t-2);
+    border-bottom:1px solid transparent;transition:color .2s,border-color .2s;}
+  .np-cab:hover,.np-cab:focus-visible{color:var(--ink);border-bottom-color:var(--accent)}
+  /* Entrada inerte (sin panel): mismo aspecto que el resto del menú, sin
+     mano ni subrayado al pasar, porque no hay nada que abrir. */
+  .np-inerte,.np-inerte:hover{cursor:default;color:var(--ink-2);border-bottom-color:transparent}
+  /* El enlace se queda inline como sus hermanos: en inline-flex la caja
+     cambia de línea base y el texto se descolgaba del resto del menú. */
+  .live{
+    display:inline-block;width:5px;height:5px;border-radius:50%;
+    margin-left:var(--e-1);vertical-align:middle;background:var(--accent);
+    box-shadow:0 0 0 0 rgba(56,189,248,.55);animation:pulse 3.2s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%,70%,100%{box-shadow:0 0 0 0 rgba(56,189,248,.5)}
+    35%{box-shadow:0 0 0 5px rgba(56,189,248,0)}
+  }
+
+  .nav-panel{
+    position:absolute;top:calc(100% + 1.15rem);right:-1.25rem;
+    display:grid;grid-template-columns:15rem 15rem;gap:var(--e-4);align-items:start;
+    padding:var(--e-4);width:max-content;
+    background:var(--surface);border:1px solid var(--line-2);border-radius:4px;
+    box-shadow:0 22px 48px rgba(0,0,0,.5);
+    opacity:0;visibility:hidden;transform:translateY(-6px);
+    transition:opacity .2s,transform .2s,visibility .2s;
+  }
+  /* El hover va detrás de `(hover:hover)` y no sobra el envoltorio: en una
+     pantalla táctil un toque deja el elemento en estado :hover hasta que se
+     toca otra cosa, así que el desplegable se quedaba abierto por encima del
+     contenido sin que hubiera forma evidente de cerrarlo. Donde no hay ratón
+     de verdad, abre el clic —lo mismo que ya hacía el menú compacto— y para
+     eso está la clase `.is-open`, que ahora vale a cualquier ancho. */
+  @media (hover:hover){
+    .nav-menu li.has-panel:hover .nav-panel{opacity:1;visibility:visible;transform:none}
+  }
+  .nav-menu li.has-panel > .np-cab:focus-visible + .nav-panel,
+  .nav-panel:focus-within,
+  .nav-menu li.has-panel.is-open .nav-panel{
+    opacity:1;visibility:visible;transform:none;
+  }
+  .np-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--e-0)}
+  .np-list a,.np-list .np-item{
+    display:block;padding:var(--e-1);border-radius:3px;border:0;
+    text-decoration:none;transition:background .18s;
+  }
+  .np-list a:hover,.np-list a:focus-visible{background:rgba(56,189,248,.09)}
+  .np-t{display:block;color:var(--ink);font-size:var(--t-2)}
+  .np-d{display:block;color:var(--ink-3);font-size:var(--t-1);margin-top:var(--e-0);line-height:1.4}
+
+  .np-feat{
+    display:flex;flex-direction:column;text-decoration:none;
+    padding:var(--e-3);border-radius:3px;background:rgba(15, 23, 42,.66);
+    border:1px solid var(--line);transition:border-color .18s;
+  }
+  .np-feat:hover,.np-feat:focus-visible{border-color:rgba(56,189,248,.4)}
+  .np-feat-art{
+    height:74px;border-radius:2px;margin-bottom:var(--e-2);
+    background:
+      radial-gradient(120% 90% at 78% 30%,rgba(56,189,248,.34),transparent 62%),
+      repeating-linear-gradient(103deg,rgba(56,189,248,.22) 0 1px,transparent 1px 7px),
+      linear-gradient(160deg,#132339,#0C1526);
+  }
+  .np-feat-eb{
+    font-size:var(--t-0);letter-spacing:.13em;text-transform:uppercase;color:var(--accent);
+    margin-bottom:var(--e-0);
+  }
+  .np-feat-t{color:var(--ink-2);font-size:var(--t-2);line-height:1.42}
+
+  .nav-actions{display:flex;align-items:center;gap:var(--e-4)}
+  .header-phone{
+    display:flex;align-items:center;gap:var(--e-1);
+    color:var(--ink-2);text-decoration:none;font-size:var(--t-2);
+    font-variant-numeric:tabular-nums;transition:color .2s;
+  }
+  .header-phone:hover{color:var(--ink)}
+  .phone-ico{width:15px;height:15px;fill:none;stroke:var(--accent);stroke-width:1.6}
+  .btn-primary{
+    display:inline-block;background:var(--accent);color:var(--sobre-accent);
+    font-size:var(--t-2);font-weight:500;letter-spacing:.01em;
+    padding:var(--e-1) var(--e-3);border-radius:3px;text-decoration:none;
+    transition:background .2s,transform .2s;
+  }
+  .btn-primary:hover{background:#5FCBFA;transform:translateY(-1px)}
+  .nav-toggle{
+    display:none;align-items:center;gap:var(--e-1);margin-left:auto;
+    background:none;border:0;cursor:pointer;padding:var(--e-1) 0;
+    font-family:var(--sans);font-size:var(--t-1);font-weight:500;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--ink);
+  }
+  .nav-toggle-bars{display:inline-grid;gap:var(--e-0)}
+  .nav-toggle-bars i{display:block;width:22px;height:1.5px;background:var(--ink);transition:transform .3s ease}
+
+  /* ══════════ HERO ══════════ */
+  .hero{position:relative;overflow:hidden}
+  /* Desvanecido largo y con curva: una sola parada dejaba un corte visible
+     donde la trama se encontraba con el texto. */
+  .hero-canvas{
+    position:absolute;top:0;left:0;height:100%;width:100%;
+    z-index:0;pointer-events:none;
+    -webkit-mask-composite:source-in;mask-composite:intersect;
+    -webkit-mask-image:linear-gradient(to right,
+      transparent 0%,rgba(0,0,0,.03) 16%,rgba(0,0,0,.10) 29%,
+      rgba(0,0,0,.24) 41%,rgba(0,0,0,.46) 54%,rgba(0,0,0,.72) 68%,#000 84%);
+    mask-image:linear-gradient(to right,
+      transparent 0%,rgba(0,0,0,.03) 16%,rgba(0,0,0,.10) 29%,
+      rgba(0,0,0,.24) 41%,rgba(0,0,0,.46) 54%,rgba(0,0,0,.72) 68%,#000 84%);
+  }
+  .hero .wrap{position:relative;z-index:1}
+  .hero-inner{padding:clamp(1.6rem,3.2vw,2.5rem) 0 clamp(3.5rem,8vw,6rem)}
+
+  .mode-switch{display:flex;align-items:center;gap:var(--e-2);margin-bottom:var(--e-4)}
+  .mode-switch-label{font-size:var(--t-1);color:var(--ink-3)}
+  .mode-switch-opts{
+    display:inline-flex;gap:var(--e-0);padding:var(--e-0);
+    border:1px solid var(--line);border-radius:999px;background:rgba(30, 41, 59,.55);
+  }
+  .mode-opt{
+    font-family:var(--sans);font-size:var(--t-1);color:var(--ink-3);
+    background:transparent;border:0;border-radius:999px;
+    padding:var(--e-1) var(--e-3);cursor:pointer;transition:color .22s,background .22s;
+  }
+  .mode-opt:hover{color:var(--ink-2)}
+  .mode-opt.is-active{background:rgba(56,189,248,.16);color:var(--accent)}
+  .mode-opt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  .hero-eyebrow{
+    display:flex;align-items:center;gap:var(--e-2);
+    font-size:var(--t-1);letter-spacing:.15em;text-transform:uppercase;
+    /* UN PASO POR ENCIMA DEL RESTO DE EYEBROWS, y no es un capricho: este
+       es el único que cae sobre la trama en su punto más denso (el hero
+       pesa 0,2, el resto de la web entre 0,045 y 0,15). Medido componiendo
+       píxeles de verdad, con --ink-3 el peor píxel de un renglón que lo
+       cruza lo dejaba en 4,25:1, por debajo del 4,5 que exige la casa para
+       texto pequeño. Con --ink-2 se sale del borde y sigue siendo
+       secundario, que era la condición: no subir hasta --ink.
+       Los demás eyebrows (.eb, .svc-eb, .ph-eb) se quedan en --ink-3 a
+       propósito: no tienen ese problema y son la jerarquía normal. */
+    color:var(--ink-2);margin:0 0 var(--e-4);
+  }
+  .hero-eyebrow::before{content:"";width:1.75rem;height:1px;background:var(--accent);flex:0 0 auto}
+  /* Cada frase ocupa UNA línea en escritorio: sin max-width que la parta,
+     sin text-wrap:balance (reequilibra y provoca saltos), y un tope de
+     tamaño calculado para que la frase larga (46 caracteres) quepa entera. */
+  .hero-title{
+    font-family:var(--serif);font-weight:300;
+    font-size:var(--t-f5);line-height:1.08;letter-spacing:-.03em;
+    color:var(--ink);margin:0 0 var(--e-4);
+  }
+  .hero-title .soft{display:block;color:var(--ink-2);font-weight:300;text-wrap:balance}
+  /* La segunda mitad de los titulares es donde esta pagina promete algo:
+     "pensar en su tiempo", "con calma", "a su decision". Estaba pintada en
+     el gris mas apagado de la paleta, asi que la frase que conecta era la
+     que menos se leia. Ahora solo se separa; no se apaga.
+
+     Y en los tres sitios donde se habla de la vida de quien lee —su tiempo,
+     por que hago esto, hablemos con calma— las dos o tres palabras que lo
+     dicen van en el oro de la casa y en cursiva. Solo esas: el oro se
+     siente caro por lo poco que aparece, no por aparecer. */
+  .hero-sub{font-size:var(--t-4);color:var(--ink-3);margin:0 0 var(--e-5);max-width:62ch;text-wrap:pretty;line-height:1.62}
+  .hero-sub b{color:var(--ink);font-weight:400}
+
+  .hero-cta{
+    display:inline-flex;align-items:center;gap:var(--e-1);
+    background:var(--accent);color:var(--sobre-accent);
+    font-size:var(--t-3);font-weight:500;
+    padding:var(--e-2) var(--e-4);border-radius:3px;text-decoration:none;
+    transition:background .2s,transform .2s;
+  }
+  .hero-cta{position:relative;overflow:hidden;box-shadow:var(--sombra)}
+  .hero-cta::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.45) 50%,transparent 65%);
+    transform:translateX(-130%);transition:transform .85s var(--ease);
+  }
+  .hero-cta:hover::after{transform:translateX(130%)}
+  .hero-cta:hover{background:#5FCBFA;transform:translateY(-2px);box-shadow:var(--sombra-alta)}
+  .hero-cta .arrow{transition:transform .2s}
+  .hero-cta:hover .arrow{transform:translateX(3px)}
+  .hero-note{margin:var(--e-3) 0 0;font-size:var(--t-1);color:var(--ink-3)}
+  .hero-note .dot{color:var(--ink-3);margin:0 var(--e-1)}
+
+  .anim{transition:opacity .28s ease}
+  .anim.is-out{opacity:0}
+
+  /* ══════════ SERVICIOS ══════════ */
+  .svc{position:relative;padding:clamp(5.5rem,10vw,8.5rem) 0 clamp(2rem,4vw,3.5rem)}
+  /* La costura con el hero es la MISMA que separa el resto de secciones:
+     el filete que se desvanece hacia los lados. Aquí había un degradado
+     que subía de transparente a opaco y volvía a bajar dentro de los
+     primeros doce rem, y por eso se veía raro: era una franja de otro
+     tono flotando sin nada debajo que la sostuviera. Intentaba disimular
+     una unión, y disimular una unión siempre se nota más que darla.
+     La página ya tiene un modo de decir "aquí empieza otra cosa" —el de
+     El proceso, el de las preguntas—, así que lo dice igual aquí. */
+  /* Sin filete entre el hero y Servicios: Carlos, 29-ago-2026 (18:31). */
+  .svc::before{content:none}
+  .svc-eb{
+    display:flex;align-items:center;gap:var(--e-2);
+    font-size:var(--t-0);letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-3);margin:0 0 var(--e-3);
+  }
+  .svc-eb::before{content:"";width:1.75rem;height:1px;background:var(--accent);flex:0 0 auto}
+  .svc-title{
+    font-family:var(--serif);font-weight:300;
+    font-size:var(--t-f3);line-height:1.16;letter-spacing:-.015em;
+    color:var(--ink);margin:0 0 clamp(2.2rem,3.6vw,3rem);
+  }
+  .svc-title .soft{color:var(--ink-3)}
+
+  /* Índice de fases: un filete y un subrayado, sin cajas ni fondos. */
+  /* Los dos filetes de la barra de fases se desvanecen hacia los lados en
+     vez de cruzar la ventana enteros, igual que ya hacen los de seccion.
+     Una linea de borde a borde parte la pagina en dos; una que se apaga
+     por los extremos solo separa. */
+  .phase-bar{position:relative;border-top:0;border-bottom:0}
+  .phase-bar::before,.phase-bar::after{
+    content:"";position:absolute;left:0;right:0;height:1px;pointer-events:none;
+    background:linear-gradient(90deg,transparent,var(--line) 18%,var(--line) 82%,transparent);
+  }
+  .phase-bar::before{top:0}
+  .phase-bar::after{bottom:0}
+  /* TRES CONTROLES CON CUERPO PROPIO, TAMBIÉN EN ESCRITORIO.
+     Este tratamiento existía solo por debajo de 620px, y Carlos lo vio ahí:
+     "los clicables de buscar, analizar y confirmar me gusta mucho más cómo
+     está en teléfonos, se nota que son clicables; quiero el mismo diseño en
+     horizontal en escritorio". Tenía razón y el motivo es el mismo en las dos
+     anchuras: tres bloques de texto sueltos separados por un filete se leen
+     como contenido, y nadie prueba a pulsar un párrafo. Con caja, borde y un
+     chevron se reconocen como lo que son sin explicarlo.
+
+     Con la caja, el indicador deslizante de debajo sobra: decía cuál está
+     activa, y ahora eso lo dice la tarjeta entera. Dos señales para el mismo
+     estado compiten en vez de sumar. */
+  .phase-nav{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:clamp(.55rem,1.1vw,.95rem);padding-top:var(--e-1);padding-bottom:var(--e-1)}
+  .phase-ind{display:none}
+  .phase-tab{
+    display:flex;flex-direction:column;gap:var(--e-0);text-align:left;position:relative;
+    padding:var(--e-3) var(--e-6) var(--e-3) var(--e-3);cursor:pointer;
+    background:rgba(255,255,255,.028);
+    /* Sin marco alrededor de las tres pestañas (Carlos, 29-ago-2026, 18:31):
+       el borde se queda transparente para no mover la caja; la activa se
+       distingue por el filete de acento a la izquierda y el fondo. */
+    border:1px solid transparent;border-radius:5px;
+    font-family:var(--sans);color:var(--ink-3);
+    transition:color .25s var(--ease),background .25s var(--ease);
+  }
+  .phase-tab::before{
+    content:"";position:absolute;right:1.1rem;top:50%;
+    width:7px;height:7px;border-right:1.5px solid var(--ink-3);
+    border-bottom:1.5px solid var(--ink-3);
+    transform:translateY(-50%) rotate(-45deg);
+    transition:border-color .25s var(--ease),transform .3s var(--ease);
+  }
+  .phase-tab:hover{color:var(--ink);background:rgba(255,255,255,.055)}
+  .phase-tab:hover::before{border-color:var(--ink-2)}
+  .phase-tab:hover .phase-n{color:var(--accent)}
+  .phase-tab.is-active{
+    color:var(--ink);padding-left:var(--e-4);
+    box-shadow:inset 2px 0 0 var(--accent);
+    background:linear-gradient(90deg,rgba(56,189,248,.10),rgba(56,189,248,.03));
+  }
+  /* La flecha de la activa mira hacia abajo, que es donde está su contenido.
+     Apuntando a la derecha decía "vete a otro sitio" justo en la que ya
+     estás leyendo. */
+  .phase-tab.is-active::before{border-color:var(--accent);transform:translateY(-50%) rotate(45deg)}
+  .phase-n{font-size:var(--t-0);letter-spacing:.14em;color:var(--ink-3);transition:color .25s}
+  .phase-tab.is-active .phase-n{color:var(--accent)}
+  .phase-name{font-size:var(--t-3);font-weight:500}
+  .phase-say2{font-size:var(--t-1);color:var(--ink-3)}
+
+  /* La imagen sangra por la izquierda y el texto respeta la caja del sitio. */
+  .svc-stage{display:grid;grid-template-columns:minmax(0,.56fr) minmax(0,1fr);align-items:stretch}
+  .svc-media{position:relative;overflow:hidden;min-height:520px}
+  /* TRATAMIENTO DE FOTOGRAFIA — se aplica a toda imagen de la pagina.
+     Existe porque una fotografia suelta encima de esta pagina se lee como
+     una fotografia encima de esta pagina, y no como parte de ella. Tres
+     cosas la asientan, y ninguna es un filtro puesto a ojo:
+
+     El matiz. La paleta tiene el cian en 198 grados, y una foto con luz
+     turquesa cae en 176. Dos cianes distintos en la misma pantalla cantan
+     siempre, asi que cada imagen declara su correccion en --foto-giro. El
+     valor NO se deduce del matiz del fichero: se barre sobre la imagen ya
+     filtrada y se queda el que deja el resultado mas cerca de 198. Una que
+     ya venga en el matiz de la casa declara cero, el valor por defecto.
+
+     La saturacion. Bajada, para que la fotografia sea atmosfera y no
+     compita con el unico color que si tiene trabajo aqui, el cian que
+     marca lo que lleva sistema detras.
+
+     El grano. Es lo que mas separa una fotografia de un render: el render
+     sale liso. Una capa finisima de ruido encima le devuelve la textura
+     que la generacion no le pone, y con ella deja de leerse como imagen
+     de maquina. Va en `overlay` para que solo actue donde hay luz.
+
+     Meter una imagen nueva es, por tanto, medir su matiz y escribir una
+     linea. No hay que volver a resolver esto cada vez. */
+  /* CUADRO DE FOTOGRAFIA PENDIENTE. No es un relleno gris: dice que
+     escena va en ese hueco, para poder seguir construyendo el resto de la
+     pagina con la composicion real delante y sin haber gastado en generar
+     nada. Se apaga solo cuando entran las fotografias. */
+  .marca-foto{
+    position:absolute;inset:clamp(.8rem,1.6vw,1.4rem);
+    /* Centrado y no pegado abajo: en las cajas apaisadas grandes el texto
+       caia en el borde inferior y dejaba dos tercios del marco vacios, que
+       es lo que se leia como "mal encuadrada". */
+    display:flex;flex-direction:column;justify-content:center;gap:var(--e-1);
+    padding:clamp(1rem,2vw,1.6rem);
+    border:1px dashed var(--line);
+    background:linear-gradient(180deg,rgba(56,189,248,.03),rgba(56,189,248,.06));
+    opacity:var(--sin-fotos);pointer-events:none;
+  }
+  .marca-et{
+    font-size:var(--t-0);letter-spacing:.15em;text-transform:uppercase;
+    color:var(--accent);font-weight:500;
+  }
+  .marca-esc{
+    font-family:Newsreader,Georgia,serif;font-weight:300;
+    font-size:var(--t-f1);line-height:1.35;color:var(--ink-2);
+    max-width:30ch;
+  }
+  .marca-med{font-size:var(--t-0);color:var(--ink-3);font-variant-numeric:tabular-nums}
+  /* Pasada de edición común (Carlos, 30-ago-2026, 14:45: «bajar brillo y
+     cosas del estilo sin que sea muy dramático»): las fotos nuevas son
+     cálidas (madera, luz de ventana) y hay que acercarlas al azul de la
+     página sin que parezca un filtro. Brillo al 85 %, saturación al 80 %,
+     un punto de contraste, y un velo azul marino en multiplicar al 20 %
+     (`::before`, más abajo) que solo se enciende cuando hay foto. Los
+     cuadros de «pendiente» son hermanos, no hijos: no les llega nada. */
+  .svc-foto,.idea-foto{
+    --foto-giro:0deg; --foto-sat:.8; --foto-luz:.85; --foto-con:1.04; --foto-velo:.2; --foto-frio:0; --grano:.055;
+    filter:saturate(var(--foto-sat)) hue-rotate(var(--foto-giro)) brightness(var(--foto-luz)) contrast(var(--foto-con));
+  }
+  /* Y un cuarto eje, para el caso contrario al de arriba. Una fotografia
+     clara y calida no tiene un problema de matiz que corregir: girarle el
+     tono 154 grados para meterla en el cian de la casa le pondria la piel
+     azul, y la calidez es justo lo que la hace funcionar. Su problema es
+     otro, y es de luminancia: una imagen con luz de ventana puesta sobre
+     una pagina casi negra se recorta contra el fondo.
+
+     Se resuelve como en cine, no con un filtro: las sombras se enfrian
+     hasta el azul de la pagina y las luces se dejan calientes. La foto
+     sigue siendo calida donde importa, y por las zonas oscuras entra en la
+     familia del fondo, que es por donde toca la pagina. `soft-light` actua
+     mas donde hay menos luz, asi que hace eso solo. */
+  .idea-foto::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:var(--ground);mix-blend-mode:soft-light;opacity:var(--foto-frio);
+  }
+  /* El velo azul marino de los huecos de Servicios: debajo del grano
+     (`::after`) y dentro de la máscara del fundido, que recorta el elemento
+     entero. Apagado mientras el hueco no tenga foto (`--sin-fotos:1`). El
+     azul es el --navy de la marca (#12294A). Cuando llegue la foto del caso,
+     `.idea-foto` ya tiene su propio velo (`--foto-frio`, arriba). */
+  .svc-foto::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:#12294A;mix-blend-mode:multiply;
+    opacity:calc(var(--foto-velo) * (1 - var(--sin-fotos)));
+  }
+  .svc-foto::after,.idea-foto::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    mix-blend-mode:overlay;opacity:calc(var(--grano) * (1 - var(--sin-fotos)));
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23r)'/%3E%3C/svg%3E");
+    background-size:140px 140px;
+  }
+  .idea-foto{position:relative}
+  .svc-foto{
+    position:absolute;inset:0;
+    /* Sin fundido en escritorio, cantos rectos a proposito (Carlos,
+       31-ago-2026, 11:05: en la foto clara de Ejecutar la transicion al azul
+       se ensuciaba; «encuentra una forma de que se vea bien en todas por
+       igual o quitalo»). La unica mascara de foto que queda es la lateral de
+       la banda del acordeon movil, mas abajo. */
+    /* Las imágenes son cuadradas de 1024 y la caja es de 459x751. Con
+       `cover` la escala la manda el alto, así que se ve el alto ENTERO de
+       la imagen y no queda recorte vertical que mover: background-position
+       solo actuaba en horizontal, y por eso bajar el anclaje no cambiaba
+       nada. Estas composiciones dejan el sujeto en el tercio bajo y mucho
+       aire arriba — a propósito, porque están pensadas para llevar texto
+       encima — pero aquí el texto va al lado, así que ese aire son 400px
+       de negro liso.
+
+       Con un alto del 132% sí hay sobrante vertical que recortar, y el
+       anclaje al 78% se lo come por arriba. La imagen se amplía un 6%
+       sobre su tamaño nativo, que a esta escala no se nota. */
+    background-size:auto 132%;
+    background-position:center 78%;
+    /* Y cada composición tiene el sujeto a una altura distinta, así que un
+       valor único no vale para las tres: la de la mesa deja casi el doble
+       de aire que la de las cuentas. El encuadre se ajusta por foto, con
+       el mínimo aumento que hace falta en cada caso. */
+    background-image:linear-gradient(180deg,rgba(15, 23, 42,.06),rgba(15, 23, 42,.34)),var(--foto-0,none);
+    transition:opacity .4s ease;
+  }
+  /* La trama diagonal se retiro al entrar la fotografia: sumaba una
+     textura inventada encima de una que ya es real. */
+  /* Preparar, «opción 4» de Carlos (30-ago-2026, 14:00): empresario de tres
+     cuartos a la izquierda leyendo un informe con gráficos, monitor a la
+     derecha. Lo que tiene que verse: el rostro de perfil (25-40 % de la
+     altura, 20-45 % del ancho) y el informe en sus manos (55-70 %); el
+     monitor puede caer en el fundido de la derecha. Con el 118 % sobra un
+     18 % de alto: anclado al 55 % se corta el 8 % por arriba y el 7 % por
+     abajo, y el 40 % horizontal deja al hombre y al informe a la izquierda
+     del fundido. */
+  /* Corrección de Carlos (17:15): «el recorte de la imagen 1 es muy alto».
+     Anclado al 0 % se ve del 0 % al 85 % de la altura: pared por encima de
+     la cabeza y el informe entero; el 118 % se mantiene porque por debajo
+     del 111 % la imagen ya no cubre el ancho del hueco. */
+  .svc-foto[data-foto="0"]{background-size:auto 118%;background-position:40% 0%}
+  /* Fichero en imagenes/web/foto-sell-0.jpg, exportado a /img/. Acotado al
+     modo Empresario por lo mismo que la foto 1: el índice es el mismo en
+     los dos modos y el Inversor no tiene foto aquí todavía. */
+  .svc[data-modo="sell"] .svc-foto[data-foto="0"]{--foto-0:url(/img/foto-sell-0.jpg);--sin-fotos:0}
+  .svc[data-modo="sell"] .svc-foto[data-foto="0"]+.marca-foto{opacity:0}
+  /* Móvil (hasta 1000 px, hueco apaisado 375×240): `cover` enseña un 43 %
+     de la altura. Al 42 % la franja cortaba la cabeza a la altura de las
+     gafas (visto en captura); al 18 % va del 10 % al 53 %: la cabeza entera
+     con aire y el arranque del informe. */
+  @media (max-width:1000px){ .svc[data-modo="sell"] .svc-foto[data-foto="0"]{background-size:cover;background-position:center 25%} } /* banda 16:9 (D): cabeza entera y el monitor, sin cortar por la barbilla */
+  /* Ejecutar, «opción 3» de Carlos (30-ago-2026, 13:17): vista cenital de dos
+     personas a los lados de una mesa, el portapapeles con la mano que firma
+     en el centro (45-60 % de la altura) y una cara parcial en el primer 12 %
+     de arriba, que tiene que quedar fuera del recorte. Con el 126 % sobra un
+     26 % de alto; anclando al 70 % se corta el 14 % por arriba (la cara fuera)
+     y el 12 % por abajo. */
+  /* Ejecutar, «opción dos» de Carlos (30-ago-2026, 14:27), sustituye a la
+     cenital: dos personas sin rostro sobre la mesa, la mano con el bolígrafo
+     señalando una cifra del gráfico (32-48 % de la altura, izquierda), la
+     mano abierta del otro explicando (24-40 %, derecha) y el portátil
+     debajo. El torso sin cabeza ocupa el primer 22-25 % de la altura y no
+     debe verse: con el 118 % no sobra alto suficiente para cortarlo, así
+     que se sube al 134 % (sobra un 34 %) y se ancla al 88 %: se corta el
+     22 % por arriba y el 3 % por abajo. El 40 % horizontal deja la mano del
+     bolígrafo y el gráfico en la zona nítida. */
+  .svc-foto[data-foto="1"]{background-size:auto 134%;background-position:40% 88%}
+  /* La foto vive en imagenes/web/foto-sell-1.jpg y exportar.js la copia a
+     /img/. Solo este hueco enciende la foto y apaga su cuadro «pendiente»;
+     los demás siguen con --sin-fotos:1 hasta que lleguen las suyas. */
+  .svc[data-modo="sell"] .svc-foto[data-foto="1"]{--foto-1:url(/img/foto-sell-1.jpg);--sin-fotos:0}
+  /* Acotado al modo Empresario: data-foto="1" es el mismo índice en los dos
+     modos y, sin el acotado, la pestaña 02 del Inversor perdía su cuadro
+     «pendiente» sin tener foto. */
+  .svc[data-modo="sell"] .svc-foto[data-foto="1"]+.marca-foto{opacity:0}
+  /* En el hueco apaisado del móvil (hasta 1000 px, 375×240) `auto N%`
+     dejaría la imagen estrecha y repetida: `cover` la escala al ancho
+     (562 px de alto) y el anclaje al 38 % enseña del 22 % al 65 % de la
+     altura: las dos manos enteras, el torso fuera. */
+  @media (max-width:1000px){ .svc[data-modo="sell"] .svc-foto[data-foto="1"]{background-size:cover;background-position:center 25%} } /* banda 16:9 (D): las dos manos y el gesto completos sobre el informe */
+  /* Acompañar, «Acompañar 1» de Carlos (30-ago-2026, 14:00): el cliente de
+     frente a la derecha explicando con la mano, el asesor de espaldas a la
+     izquierda, portátil, cuaderno y cafés. Lo que tiene que verse: el hombre
+     de frente y su gesto (rostro al 20-40 % de la altura, mano al 50-60 %,
+     ambos en la mitad derecha). Con el 118 % sobra un 18 % de alto y 34 px
+     de ancho: anclado a la derecha (100 %) se recorta solo el borde del que
+     está de espaldas, y al 45 % vertical se ve del 7 % al 92 % de la altura.
+     El rostro cae hacia el 77 % del ancho del hueco: se enseña así y lo
+     decide Carlos. */
+  /* Corrección de Carlos (17:15): «el recorte de la imagen 3 es muy alto».
+     Anclado al 0 % se ve del 0 % al 85 %: aire sobre las dos cabezas, las
+     manos sobre la mesa dentro, los cafés hacia el fundido de abajo. */
+  .svc-foto[data-foto="2"]{background-size:auto 118%;background-position:100% 0%}
+  /* Fichero en imagenes/web/foto-sell-2.jpg, exportado a /img/. Acotado al
+     modo Empresario, como las otras dos. */
+  .svc[data-modo="sell"] .svc-foto[data-foto="2"]{--foto-2:url(/img/foto-sell-2.jpg);--sin-fotos:0}
+  .svc[data-modo="sell"] .svc-foto[data-foto="2"]+.marca-foto{opacity:0}
+  /* Móvil: `cover` anclado al 31 % enseña del 18 % al 61 % de la altura, el
+     rostro y el gesto de la mano. */
+  @media (max-width:1000px){ .svc[data-modo="sell"] .svc-foto[data-foto="2"]{background-size:cover;background-position:center 25%} } /* banda 16:9 (D): los dos rostros enteros, frente a frente */
+  .svc-foto[data-foto="1"]{
+    background-image:linear-gradient(180deg,rgba(15, 23, 42,.06),rgba(15, 23, 42,.34)),var(--foto-1,none);
+  }
+  .svc-foto[data-foto="2"]{
+    background-image:linear-gradient(180deg,rgba(15, 23, 42,.06),rgba(15, 23, 42,.34)),var(--foto-2,none);
+  }
+  /* En modo compra las tres fases cuentan otra historia, asi que llevan
+     otras tres fotografias. */
+  .svc[data-modo="buy"] .svc-foto{background-image:linear-gradient(180deg,rgba(15, 23, 42,.06),rgba(15, 23, 42,.34)),var(--foto-b0,none)}
+  .svc[data-modo="buy"] .svc-foto[data-foto="1"]{background-image:linear-gradient(180deg,rgba(15, 23, 42,.06),rgba(15, 23, 42,.34)),var(--foto-b1,none)}
+  .svc[data-modo="buy"] .svc-foto[data-foto="2"]{background-image:linear-gradient(180deg,rgba(15, 23, 42,.06),rgba(15, 23, 42,.34)),var(--foto-b2,none)}
+  /* El encuadre tambien es propio del modo. Hasta ahora las tres fotos de
+     compra usaban los valores calibrados para las tres de venta, que estan
+     compuestas a otra altura: el sujeto quedaba descentrado sin que nada lo
+     dijera, porque el selector de arriba solo cambia la imagen. */
+  .svc[data-modo="buy"] .svc-foto[data-foto="0"]{background-size:auto 120%;background-position:center 50%}
+  /* Decidir (Inversor), «inversorees 7» de Carlos (30-ago-2026, 16:50;
+     sustituye a «Inversores 2», que traía texto roto de IA): por encima del
+     hombro de una inversora, la mano con el bolígrafo sobre dos informes
+     con gráficos de barras (47-78 % de la altura, centro-izquierda),
+     portátil con la hoja de cálculo arriba a la derecha (25-52 %), y dos
+     personas desenfocadas al fondo (8-25 %) que no deben verse. Con el
+     140 % sobra un 40 % de alto: anclado al 84 % se corta el 24 % por
+     arriba (el fondo fuera) y el 5 % por abajo; el 70 % horizontal deja la
+     mano y los informes en la zona nítida y el portátil hacia el fundido.
+     Los informes son barras y filas grises, ilegibles por construcción: sin
+     desenfoque de documentos. */
+  .svc[data-modo="buy"] .svc-foto[data-foto="1"]{background-size:auto 140%;background-position:70% 84%}
+  .svc[data-modo="buy"] .svc-foto[data-foto="2"]{background-size:auto 148%;background-position:center 50%}
+  /* Y su correccion de matiz, barrida foto a foto contra el objetivo de 198
+     grados y no estimada. La primera version de estos valores estaba puesta
+     a ojo a partir del matiz de la imagen en bruto, y los seis salian
+     cortos: `hue-rotate` de CSS no es una rotacion de tono exacta, y ademas
+     el `saturate` que va delante cambia que pixeles cuentan, asi que el
+     numero no se puede deducir del matiz del fichero. Hay que medir el
+     resultado. Barrido en imagenes/, 0 a 40 grados. */
+  .svc-foto[data-foto="2"]{--foto-giro:15deg}
+  .svc[data-modo="buy"] .svc-foto[data-foto="0"]{--foto-giro:25deg}
+  .svc[data-modo="buy"] .svc-foto[data-foto="1"]{--foto-giro:25deg}
+  .svc[data-modo="buy"] .svc-foto[data-foto="2"]{--foto-giro:32deg}
+
+  /* ── Las tres fotos del Inversor (Carlos, 30-ago-2026, 14:46-15:04) ──
+     Ficheros en imagenes/web/foto-buy-N.jpg, exportados a /img/. Cada
+     regla enciende la foto, apaga su cuadro «pendiente» y anula el giro de
+     tono de arriba (medido para las imágenes antiguas; a una foto cálida
+     con piel le cambiaría el color). Los huecos donde el sujeto cae hacia
+     la derecha llevan el fundido corto del 86 %, como Ejecutar y Acompañar. */
+
+  /* Encontrar, «inversores 4»: inversor de perfil a la derecha ante dos
+     monitores (listado y gráficos, 29-52 % de la altura), ciudad por la
+     ventana; la mitad inferior (mesa, teclado) sobra. Con el 150 % sobra un
+     50 % de alto y un 36 % de ancho: anclado a 55 % 28 % se ve del 9 % al
+     76 % de la altura y del 14 % al 88 % del ancho: los dos monitores y el
+     perfil, con el teclado solo asomando por abajo. El rostro cae hacia el
+     75-85 % del ancho del hueco. */
+  .svc[data-modo="buy"] .svc-foto[data-foto="0"]{background-size:auto 150%;background-position:55% 28%}
+  .svc[data-modo="buy"] .svc-foto[data-foto="0"]{--foto-b0:url(/img/foto-buy-0.jpg);--sin-fotos:0;--foto-giro:0deg}
+  .svc[data-modo="buy"] .svc-foto[data-foto="0"]+.marca-foto{opacity:0}
+
+  /* Decidir, «Inversores 2» (encuadre arriba): texto de la taza y de los
+     informes desenfocado en el propio JPG con imagenes/desenfocar-region.js. */
+  .svc[data-modo="buy"] .svc-foto[data-foto="1"]{--foto-b1:url(/img/foto-buy-1.jpg);--sin-fotos:0;--foto-giro:0deg}
+  .svc[data-modo="buy"] .svc-foto[data-foto="1"]+.marca-foto{opacity:0}
+
+  /* Crear valor, «inversores 6»: cuatro personas de espaldas y perfil, en
+     traje, mirando la planta; el techo ocupa el primer 25 %. Con el 130 %
+     sobra un 30 % de alto: anclado abajo (100 %) se corta justo el techo y
+     se ven cabezas, torsos y piernas; centrado en horizontal, la mujer de
+     la izquierda asoma y la de la derecha cae en el fundido. */
+  /* Corrección de Carlos (17:15): «la imagen 6 es muy bajo» (anclada al
+     100 % enseñaba piernas y suelo con las cabezas arriba). Al 60 % se ve
+     del 18 % al 95 %: algo de estructura del techo, cabezas con aire,
+     torsos, y los pies hacia el fundido de abajo. */
+  .svc[data-modo="buy"] .svc-foto[data-foto="2"]{background-size:auto 130%;background-position:50% 60%}
+  .svc[data-modo="buy"] .svc-foto[data-foto="2"]{--foto-b2:url(/img/foto-buy-2.jpg);--sin-fotos:0;--foto-giro:0deg}
+  .svc[data-modo="buy"] .svc-foto[data-foto="2"]+.marca-foto{opacity:0}
+
+  /* Móvil (hueco apaisado 375×240): `cover` enseña un 43 % de la altura.
+     Encontrar al 33 % (del 19 % al 62 %: monitores y cabeza); Decidir al
+     61 % (del 35 % al 78 %: la mano y los informes); Crear valor al 44 %
+     (del 25 % al 68 %: cabezas y torsos). */
+  @media (max-width:1000px){
+    /* Caja 4:5 del acordeón (D): se ve el 83 % de la altura. */
+    /* Banda 16:9: los tres anclajes se eligieron comparando la misma franja
+       al 10, 18 y 25 % — por debajo del 25 la coronilla se corta. */
+    .svc[data-modo="buy"] .svc-foto[data-foto="0"]{background-size:cover;background-position:center 25%}
+    .svc[data-modo="buy"] .svc-foto[data-foto="1"]{background-size:cover;background-position:center 50%}
+    .svc[data-modo="buy"] .svc-foto[data-foto="2"]{background-size:cover;background-position:center 25%}
+  }
+
+  /* Solo se muestran los paneles del modo activo. El atributo vive en la
+     seccion, asi que un panel nunca depende de que el script recuerde
+     ocultarlo: si el modo cambia, cambia el conjunto entero. */
+  .svc[data-modo="sell"] .phase-panel[data-modo="buy"],
+  .svc[data-modo="buy"]  .phase-panel[data-modo="sell"]{display:none}
+  .svc-canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.62}
+  .svc-fade{
+    position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(90deg,transparent 62%,rgba(15, 23, 42,.5) 86%,var(--ground) 100%);
+  }
+
+  .svc-text{
+    padding:clamp(2.6rem,4.5vw,4rem) max(var(--gutter),calc((100vw - var(--wrap)) / 2 + var(--gutter))) clamp(2rem,3vw,3rem) clamp(2.2rem,4vw,4rem);
+  }
+  /* Encaje con las tarjetas en escritorio (Carlos, 30-ago-2026, 17:38:
+     «adelante, pero que no se descuadre el fondo con el resto de la
+     página»): el contenido del escenario entra en la misma retícula de tres
+     columnas que las pestañas, la foto en la columna 01 y el texto en
+     02-03, con 15 px bajo las pestañas (7 aquí más los 8 del padding
+     inferior de .phase-nav), los mismos que entre tarjetas. El fondo no
+     cambia: ni .svc ni .svc-stage pintan nada, el fondo es el de la página
+     a todo el ancho, y el fundido de la foto funde contra ese mismo fondo;
+     solo se mueven las cajas. Los cantos rectos arriba y a la izquierda ya
+     los daba la máscara (solo funde derecha y abajo). */
+  @media (min-width:1001px){
+    .svc-stage{max-width:var(--wrap);margin:0 auto;box-sizing:border-box;padding:7px var(--gutter) 0;
+      grid-template-columns:repeat(3,minmax(0,1fr));column-gap:clamp(.55rem,1.1vw,.95rem)}
+    .svc-media{grid-column:1}
+    /* Sin relleno inferior (Carlos, 30-ago-2026, 20:54: «las imágenes de
+       Servicios llegan más abajo que la línea»). Las dos columnas se estiran
+       a la misma altura, así que este relleno alargaba la fila 43 px por
+       debajo de donde acaba el texto y la foto llegaba sola hasta ahí. Medido
+       a 1440 (43) y a 1229 (37): es exactamente el clamp de arriba. El aire
+       hasta la sección siguiente lo pone el padding de la sección, no este. */
+    .svc-text{grid-column:2/4;padding-left:0;padding-right:0;padding-bottom:0}
+  }
+  .phase-panel[hidden]{display:none}
+  /* La foto que cada fase lleva dentro solo existe en el acordeón de móvil:
+     en escritorio la imagen la pone .svc-media, en su columna. */
+  .ph-foto{display:none}
+  .phase-panel{animation:fadein .32s ease}
+  @keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  .ph-eb{font-size:var(--t-0);letter-spacing:.16em;color:var(--accent);margin:0 0 var(--e-3)}
+  .ph-h{
+    font-family:var(--serif);font-weight:300;
+    font-size:var(--t-f2);line-height:1.2;letter-spacing:-.018em;
+    color:var(--ink);margin:0 0 var(--e-3);text-wrap:balance;
+  }
+  .ph-sub{font-size:var(--t-3);line-height:1.6;color:var(--ink-3);margin:0 0 clamp(2.2rem,3.6vw,3rem);max-width:none;text-wrap:pretty}
+  .ph-sub .hi{color:var(--accent)}
+
+  .svc-list{display:flex;flex-direction:column}
+  .si{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--e-3);padding:var(--e-4) 0;border-top:1px solid var(--line)}
+  .si:first-child{border-top:0;padding-top:0}
+  .si-ico{
+    display:grid;place-items:center;width:42px;height:42px;border-radius:50%;
+    border:1px solid var(--line-2);
+  }
+  .si-ico svg{width:19px;height:19px;fill:none;stroke:var(--ink-3);stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;
+    transition:stroke .25s var(--ease)}
+  .si-ico{transition:border-color .25s var(--ease),background .25s var(--ease)}
+  .si:hover .si-ico,.si:focus-within .si-ico{border-color:var(--line-2);background:rgba(56,189,248,.06)}
+  .si:hover .si-ico svg,.si:focus-within .si-ico svg{stroke:var(--ink)}
+  .si.is-ai:hover .si-ico svg{stroke:var(--accent)}
+  /* El cian solo donde hay un sistema detrás. */
+  .si.is-ai .si-ico{border-color:rgba(56,189,248,.42)}
+  .si.is-ai .si-ico svg{stroke:var(--accent)}
+  .si-t{font-family:var(--serif);font-weight:400;font-size:var(--t-f1);color:var(--ink);margin:0 0 var(--e-0);letter-spacing:-.01em}
+  .si-for{font-size:var(--t-2);color:var(--ink-3);margin:0 0 var(--e-3)}
+  .si-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--e-1)}
+  .si-list li{font-size:var(--t-2);color:var(--ink-2);padding:var(--e-0) var(--e-2);border:1px solid var(--line);border-radius:2px}
+  .si-list li.is-ai{color:var(--accent);border-color:rgba(56,189,248,.26)}
+
+  .si-more{
+    display:inline-flex;align-items:center;gap:var(--e-1);margin-top:var(--e-3);
+    padding:0;background:none;border:0;cursor:pointer;position:relative;
+    font-family:var(--sans);font-size:var(--t-1);color:var(--accent);transition:opacity .2s;
+  }
+  /* Diana táctil de 44px sin cambiar el aspecto: el pseudo no participa del
+     flujo (position:absolute), así que no desplaza nada alrededor — solo
+     amplía la zona donde el toque cuenta como clic en el botón. */
+  .si-more::before{
+    content:"";position:absolute;top:50%;left:-6px;right:-6px;
+    height:44px;min-height:44px;transform:translateY(-50%);
+  }
+  .si-more:hover{opacity:.75}
+  .si-arrow{transition:transform .25s}
+  .si-more[aria-expanded="true"] .si-arrow{transform:rotate(90deg)}
+  .si-detail{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+  .si-more[aria-expanded="true"] + .si-detail{grid-template-rows:1fr}
+  .si-inner{overflow:hidden;min-height:0}
+  .si-detail p{margin:0;padding-top:var(--e-2);font-size:var(--t-3);line-height:1.62;color:var(--ink-3);max-width:none} /* a todo el ancho de la columna: Carlos, 29-ago-2026 (20:09) */
+  .phase-cierre{display:flex;align-items:center;gap:.75rem;margin:var(--e-4) 0 0;font-size:var(--t-2);line-height:1.5;color:var(--ink-3)}
+  .phase-linea{flex:0 0 1.75rem;height:1px;background:var(--accent)}
+  .si-link a{color:var(--accent);text-decoration:none;font-size:var(--t-2);display:inline-flex;align-items:center;gap:var(--e-1)}
+  .si-link a:hover .si-arrow{transform:translateX(3px)}
+
+  .phase-foot{margin-top:var(--e-5);padding-top:var(--e-4);border-top:1px solid var(--line)}
+  .phase-fee{margin:0;font-size:var(--t-1);color:var(--ink-3)}
+  .phase-out{display:flex;align-items:center;gap:var(--e-3);margin:var(--e-3) 0 0}
+  .phase-out-rule{flex:0 0 40px;height:1px;background:var(--accent);opacity:.55}
+  .phase-out-t{font-family:var(--serif);font-weight:300;font-size:var(--t-f1);color:var(--ink);line-height:1.45}
+
+  .svc-close{margin-top:clamp(3rem,5vw,4.5rem);position:relative;padding-top:clamp(2rem,3.6vw,2.8rem)}
+  .svc-close-rule{position:absolute;top:0;left:0;width:100%;height:1px;background:var(--line)}
+  .svc-close-eb{font-size:var(--t-0);letter-spacing:.16em;color:var(--accent);margin:0 0 var(--e-2)}
+  .svc-close-t{font-family:var(--serif);font-weight:300;font-size:var(--t-f2);line-height:1.2;color:var(--ink);margin:0 0 var(--e-1);letter-spacing:-.015em}
+  .svc-close-t .soft{color:var(--ink-3)}
+  .svc-close-x{color:var(--ink-3);margin:0 0 var(--e-4);font-size:var(--t-3)}
+  .svc-close-cta{
+    display:inline-flex;align-items:center;gap:var(--e-1);padding:var(--e-2) var(--e-4);border-radius:3px;
+    background:var(--accent);color:var(--sobre-accent);text-decoration:none;font-size:var(--t-2);font-weight:500;
+    transition:background .2s,transform .2s;
+  }
+  .svc-close-cta:hover{background:#5FCBFA;transform:translateY(-1px)}
+  .svc-close-cta .arrow{transition:transform .2s}
+  .svc-close-cta:hover .arrow{transform:translateX(3px)}
+
+  /* ══════════ LA IDEA ══════════ */
+  /* La unica seccion sin filete arriba: el corte se hace con espacio, que
+     es mas caro de dar y se nota mas que una linea. */
+  .idea{padding:clamp(7rem,14vw,12rem) 0 clamp(2rem,4vw,3rem)} /* pie más corto: El proceso va más pegado al caso (Carlos, 29-ago-2026, 19:30; de ~80 a ~48 px el 30-ago, 17:12). OJO: sin efecto desde el «ritmo vertical único» del final de la hoja, que fija el relleno de todas las secciones con !important. */
+  /* Servicios ya cierra con su propio aire, así que los dos se sumaban:
+     hasta 296 píxeles de nada entre el final de una sección y el titular de
+     la siguiente. Aire con algo dentro es respiración; aire con nada dentro
+     es que se ha acabado la página. */
+  .svc + .idea{padding-top:clamp(2rem,4vw,3.5rem)}
+  /* Ver la nota del interruptor de audiencia: "Una visión clara" se queda
+     en los dos modos, solo cambia de lectura. Lo que se retira entero en
+     modo inversor es la pregunta de gestoría y banco, que solo tiene
+     sentido para quien ya dirige una empresa. */
+  [data-audiencia="buy"] .solo-empresario{display:none}
+  .idea-in{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(2rem,4vw,3.5rem)}
+  .idea-h{
+    font-family:var(--serif);font-weight:300;
+    font-size:var(--t-f5);line-height:1.1;letter-spacing:-.03em;
+    color:var(--ink);margin:0;max-width:17ch;text-wrap:balance;
+  }
+  .idea-h em{font-style:normal;color:var(--ink-3)}
+  /* La nota va en la columna del caso (subrejilla, mas abajo), sin filete:
+     Carlos lo quito el 30-ago-2026 porque desalineaba el texto. */
+  .idea-p{
+    margin:var(--e-4) 0 0;color:var(--ink-2);font-size:var(--t-3);line-height:1.7;
+    max-width:46ch;
+  }
+  @media (max-width:760px){ .idea-p{margin-left:0} }
+
+  /* ══════════ EL PROCESO ══════════ */
+  .proc{padding:clamp(2rem,4vw,3rem) 0 clamp(4rem,8vw,7rem);border-top:1px solid var(--line)} /* cabeza de ~64 a ~48 px (Carlos, 30-ago-2026, 17:12) */
+  .proc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(1.5rem,3vw,3rem);margin-top:var(--e-5)}
+  .proc-step{position:relative;padding-top:var(--e-4);border-top:1px solid var(--line-2)}
+  /* El punto de la parada, sobre el filete. Cual va encendido lo decide la
+     capa de acabado, que es la que sabe que paso esta activo: aqui no se
+     enciende ninguno.
+
+     Hubo una regla `.proc-step:first-child::before` que pintaba el primero
+     en cian, de cuando esto era una rejilla de cuatro columnas sin paso
+     activo. Al convertirse en carril con paso activo dejo de ser cierta, y
+     no se apagaba sola: (0,2,1) gana a `.proc-step::before` (0,1,1) de la
+     capa de acabado por especificidad, no por orden, asi que el paso 01
+     seguia encendido con el 03 activo y no se sabia cual era cual. */
+  .proc-step::before{
+    content:"";position:absolute;top:-3px;left:0;width:5px;height:5px;
+    border-radius:99px;background:var(--ink-3);
+    transition:background .3s var(--ease),box-shadow .3s var(--ease);
+  }
+  .proc-n{font-family:var(--serif);font-size:var(--t-f1);color:var(--ink-3);display:block;margin-bottom:var(--e-1);
+    font-variant-numeric:tabular-nums}
+  .proc-t{font-family:var(--serif);font-weight:400;font-size:var(--t-4);color:var(--ink);margin:0 0 var(--e-1)}
+  .proc-d{margin:0;font-size:var(--t-2);line-height:1.6;color:var(--ink-3)}
+  .proc-cta{display:inline-flex;align-items:center;gap:var(--e-1);margin-top:var(--e-6);
+    color:var(--accent);text-decoration:none;font-size:var(--t-2)}
+  .proc-cta .arrow{transition:transform .2s}
+  .proc-cta:hover .arrow{transform:translateX(3px)}
+
+  /* ══════════ SOBRE MÍ ══════════ */
+  /* Sobre mi va sobre su propia superficie, no sobre el fondo comun. Es la
+     unica seccion donde habla una persona y no la firma, y separarla del
+     resto es lo que la hace leerse como un aparte. Mismo recurso que ya
+     usa el acto de "Una vision clara": se funde por arriba y por abajo en
+     vez de encerrarse en una caja con bordes. */
+  .about{padding:clamp(4rem,8vw,7rem) 0;border-top:0;position:relative;isolation:isolate}
+  .about::before{
+    content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(180deg,
+      transparent 0,
+      rgba(30, 41, 59,.46) 13%,
+      rgba(30, 41, 59,.46) 87%,
+      transparent 100%);
+  }
+  /* Y el filete de cabecera sobra: con el fundido detras, la linea marcaba
+     un corte duro justo donde la superficie ya estaba abriendo sola. */
+  .about::after{opacity:0}
+  /* Los tres bloques de la columna derecha acaban en la misma vertical. La
+     ficha se quedaba 156px corta contra los parrafos y la seccion se veia
+     descuadrada por la derecha; ahora la medida de lectura la fija la
+     columna y no cada pieza por su cuenta. */
+  .about-txt{max-width:none}
+  .about-in{display:grid;grid-template-columns:minmax(0,313px) 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:stretch}
+  /* Encuadre (Carlos, 29-ago-2026, 19:58): en escritorio la columna de la foto
+     mide lo mismo que la del texto, arriba y abajo, a cualquier ancho: la foto
+     se estira (object-fit:cover) y el nombre cierra la columna. En móvil vuelve
+     a su 4:5. */
+  @media (min-width:1001px){
+    .about-in > div:first-child{display:flex;flex-direction:column}
+    .about-foto{flex:1 1 auto;aspect-ratio:auto;min-height:0}
+    .about-datos{flex:0 0 auto}
+  }
+  .about-foto{
+    position:relative;aspect-ratio:4/5;margin:0;overflow:hidden;border-radius:2px;
+    background:var(--surface);
+  }
+  .about-foto img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    /* En blanco y negro. El único color de la página es el cian, y el
+       cian marca lo que lleva un sistema detrás: una foto en color
+       competía con esa regla sin decir nada a cambio. El contraste sube
+       un punto porque al desaturar la piel pierde cuerpo. */
+    filter:grayscale(1) contrast(1.06);
+    /* Sin fundido hacia abajo: Carlos, 29-ago-2026, "quítale el degradado
+       que tiene mi imagen abajo, no queda bien; blanco y negro normal". */
+  }
+  .about-name{font-family:var(--serif);font-weight:400;font-size:var(--t-f1);letter-spacing:-.01em;display:inline-flex;align-items:center;gap:var(--e-1);
+    color:var(--ink);margin:0;letter-spacing:-.018em}
+  .about-role{margin:var(--e-0) 0 0;font-size:var(--t-2);color:var(--ink-3)}
+  /* El nombre entra bajo un filete grueso, como en la web viva. */
+  .about-datos{margin-top:var(--e-4);padding-top:var(--e-4);border-top:2px solid var(--ink)}
+  .about-ficha{list-style:none;margin:var(--e-5) 0 0;padding:0;border-top:1px solid var(--line)}
+  .about-ficha li{padding:var(--e-3) 0;border-bottom:1px solid var(--line);font-size:var(--t-3);
+    display:grid;grid-template-columns:150px 1fr;gap:var(--e-3);align-items:baseline}
+  .about-ficha b{font-size:var(--t-0);font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:400;margin-bottom:var(--e-0)}
+  .about-ficha span{font-size:var(--t-2);color:var(--ink-2)}
+  /* Justificado y a todo el ancho de su columna, que es lo que pidió Carlos:
+     "no ocupan el ancho completo y además no están de modo justified, margen
+     igual izquierda y derecha". El tope de 58 caracteres dejaba el texto
+     apretado contra la izquierda con un tercio de la columna vacío al lado.
+
+     La partición de palabras no es opcional aquí, es lo que hace viable el
+     justificado: sin ella el navegador estira los espacios para cuadrar cada
+     línea y aparecen los ríos blancos verticales que el auditor de documentos
+     lleva midiendo desde agosto. Con `hyphens:auto` y el idioma declarado en
+     el documento, parte donde el español permite partir. */
+  .about-txt p{color:var(--ink-2);font-size:var(--t-3);line-height:1.72;margin:0 0 var(--e-4);
+    max-width:none;text-align:justify;-webkit-hyphens:manual;hyphens:manual} /* sin partir palabras: Carlos, 29-ago-2026 (19:58), regla de toda la web */
+  .about-txt p:last-child{margin-bottom:0}
+  .about-li{color:var(--ink-3);display:inline-flex;transition:color .2s var(--ease)}
+  .about-li:hover{color:var(--accent)}
+  /* La identidad vive al pie del texto, no en la columna de la foto: asi el
+     alto de la seccion lo fija el texto y la foto se estira hasta el, en vez
+     de dejar media pantalla vacia al lado. */
+  .about-in > div:first-child{display:block}
+  .about-id{margin-top:0}
+  .about-id .about-name{margin-top:0}
+  .about-id .about-ficha{max-width:none}
+
+  /* ══════════ PREGUNTAS ══════════ */
+  .faq{padding:clamp(4rem,8vw,7rem) 0;border-top:1px solid var(--line)}
+  .faq-list{margin-top:var(--e-5);border-top:1px solid var(--line)}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-item summary{
+    display:flex;align-items:center;justify-content:space-between;gap:var(--e-4);
+    padding:var(--e-4) 0;cursor:pointer;list-style:none;
+    font-family:var(--serif);font-size:var(--t-4);color:var(--ink);transition:color .2s;
+  }
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary:hover{color:var(--accent)}
+  .faq-item{transition:background .3s var(--ease)}
+  .faq-item:hover{background:linear-gradient(90deg,rgba(56,189,248,.05),transparent 60%)}
+  .faq-item[open]{background:linear-gradient(90deg,rgba(56,189,248,.04),transparent 70%)}
+  .faq-sign{flex:0 0 11px;height:11px;position:relative}
+  .faq-sign::before,.faq-sign::after{content:"";position:absolute;background:var(--accent);transition:transform .25s}
+  .faq-sign::before{left:0;top:5px;width:11px;height:1px}
+  .faq-sign::after{left:5px;top:0;width:1px;height:11px}
+  .faq-item[open] .faq-sign::after{transform:scaleY(0)}
+  .faq-a{padding:0 0 var(--e-4);max-width:none}
+  .faq-a p{max-width:62ch}
+  .faq-lead{font-family:var(--serif);font-size:var(--t-3);color:var(--ink);margin:0 0 var(--e-1)}
+  .faq-a p:last-child{margin:0;font-size:var(--t-3);line-height:1.68;color:var(--ink-3)}
+
+  /* ══════════ CT INTELLIGENCE ══════════ */
+  /* Lo unico de la web que se actualiza solo. La seccion lo dice con la
+     estructura, no con un adjetivo: cada superficie lleva su cadencia
+     escrita, y el punto que late es el mismo del menu. */
+  .intel{padding:clamp(4rem,8vw,7rem) 0;border-top:1px solid var(--line)}
+  .intel-eb .live{margin-left:var(--e-0)}
+
+  /* ── CT INTELLIGENCE ES UN OBJETO, NO UNA SECCIÓN MÁS ──────────────────
+     Carlos, dos veces: "sigue sin diferenciarse del resto de la página" y
+     "quiero que ct intelligence sea como una tarjeta clicable distinto del
+     resto de la web". Antes era exactamente lo mismo que las otras siete:
+     antetítulo, titular, contenido, sobre el mismo fondo. Lo que la
+     distingue no puede ser el color ni un adorno, porque eso es lo que ya
+     comparte con todo; tiene que ser que se lea como UNA COSA que se puede
+     abrir. Así que la sección entera pasa a ser un panel: superficie propia
+     levantada del fondo, borde, esquinas más generosas que las de la casa
+     —el resto de la página va de 2 a 5 píxeles, esto va a 14, y esa
+     diferencia es justo lo que se pide—, y el lomo de seis colores de las
+     clases de activo pegado al canto de arriba, a sangre.
+
+     El clic vive en la cabecera y no en el panel entero: dentro hay tres
+     enlaces más, y una superficie pulsable que envuelve otros enlaces
+     acaba llevándose los clics de en medio a un sitio que nadie pidió. La
+     cabecera ocupa todo el ancho, tiene su propia acción a la derecha y se
+     enciende al pasar por encima: se ve pulsable sin tener que tragarse la
+     tarjeta entera. */
+  .intel-panel{
+    position:relative;overflow:hidden;border-radius:14px;
+    border:1px solid rgba(56,189,248,.22);
+    background:
+      radial-gradient(120% 60% at 50% 0%, rgba(56,189,248,.07), transparent 60%),
+      linear-gradient(180deg,#141E31,#0E1626);
+    box-shadow:0 26px 60px -30px rgba(0,0,0,.75), inset 0 1px 0 rgba(241,239,233,.05);
+    padding:0 clamp(1.1rem,2.4vw,2.1rem) clamp(1.4rem,2.6vw,2.2rem);
+    transition:border-color .5s var(--ease),box-shadow .5s var(--ease);
+  }
+  .intel-panel:has(.intel-cab:hover),
+  .intel-panel:has(.intel-cab:focus-visible){
+    border-color:rgba(56,189,248,.45);
+    box-shadow:0 30px 66px -28px rgba(0,0,0,.8), inset 0 1px 0 rgba(241,239,233,.08);
+  }
+  /* La cabecera pulsable. El titular sigue siendo el <h2> de la sección y
+     se mete dentro del enlace en vez de convertirse en un <span> con la
+     misma pinta: quien navega por encabezados tiene que seguir encontrando
+     esta sección, y un encabezado dentro de un enlace es válido y corriente.
+     El `aria-labelledby` de la sección apunta al mismo id de siempre. */
+  .intel-cab{
+    display:flex;align-items:end;justify-content:space-between;
+    gap:var(--e-4);flex-wrap:wrap;
+    padding:clamp(1.6rem,3vw,2.4rem) 0 clamp(1.3rem,2.4vw,1.9rem);
+    text-decoration:none;color:inherit;
+  }
+  .intel-cab-txt{display:block}
+  .intel-cab .svc-eb{display:flex}
+  .intel-cab .svc-title{display:block;margin:0}
+  .intel-ir{
+    display:inline-flex;align-items:center;gap:var(--e-1);flex:0 0 auto;
+    padding:var(--e-1) var(--e-3);border-radius:99px;
+    border:1px solid rgba(56,189,248,.35);color:var(--accent);
+    font-size:var(--t-2);white-space:nowrap;
+    transition:background .3s var(--ease),border-color .3s var(--ease);
+  }
+  .intel-cab:hover .intel-ir,.intel-cab:focus-visible .intel-ir{
+    background:rgba(56,189,248,.12);border-color:rgba(56,189,248,.6);
+  }
+  .intel-cab:hover .flecha,.intel-cab:focus-visible .flecha{transform:translateX(3px)}
+  /* Dentro del panel, la lectura de mercado deja de ir a sangre: su ancho y
+     sus márgenes los ponía ella misma para cruzar la ventana entera, y aquí
+     eso la sacaría del objeto que la contiene. */
+  .intel-panel .brf{
+    max-width:none;margin:0 0 clamp(1.25rem,2vw,1.9rem);
+    border-radius:8px;border:1px solid var(--line);
+    border-top-color:rgba(56,189,248,.3);
+  }
+
+  /* La franja de las seis clases de activo. Es la firma de Wealth, y
+     ponerla aqui es lo que ata la home con la herramienta sin explicarlo.
+     Ahora va al canto de arriba del panel, de borde a borde: es el lomo. */
+  .intel-firma{display:flex;height:3px;
+    position:absolute;top:0;left:0;right:0;
+    overflow:hidden}
+  .intel-firma i{flex:1 1 0;height:100%;transform:scaleX(0);transform-origin:left;
+    transition:transform .9s var(--ease);transition-delay:var(--retardo,0ms)}
+  /* El lomo se dibuja cuando entra el panel, que es quien lleva ahora el
+     revelado. Antes la franja se observaba por su cuenta; dentro de un
+     objeto que entra entero, quien manda es el objeto. */
+  .intel-firma.dentro i,.intel-panel.dentro .intel-firma i{transform:scaleX(1)}
+  .intel-firma i:nth-child(1){background:var(--c-rv)}
+  .intel-firma i:nth-child(2){background:var(--c-rf)}
+  .intel-firma i:nth-child(3){background:var(--c-inm)}
+  .intel-firma i:nth-child(4){background:var(--c-oro)}
+  .intel-firma i:nth-child(5){background:var(--c-mat)}
+  .intel-firma i:nth-child(6){background:var(--c-mon)}
+
+  /* Asimetrica a proposito: el analisis de esta semana es lo que prueba
+     que la maquina esta viva hoy, asi que ocupa mas. */
+  /* Tres tarjetas iguales. Antes una ocupaba el doble que las otras dos
+     juntas y era la de publicaciones, que hoy es el canal con menos
+     material: cuatro piezas y ninguna publicada. El sitio de honor lo
+     ocupa ahora la lectura de mercado, que va encima y a ancho completo. */
+  /* Una grande y dos pequenas apiladas. Tres columnas iguales dejaban las
+     dos de la derecha medio vacias, porque no tienen tanto que contar como
+     la publicacion. */
+  .intel-grid{display:grid;grid-template-columns:1.32fr 1fr;gap:clamp(1.25rem,2vw,1.9rem);align-items:stretch}
+  /* `display:contents` disuelve este envoltorio y sus dos tarjetas pasan a
+     ser hijas directas del grid, que es lo que hace que las tres queden en
+     fila. Antes era un grid propio que apilaba sus dos tarjetas dentro de
+     una sola columna: el grid de fuera veia dos hijos, no tres, asi que la
+     tercera columna quedaba vacia y las alturas no cuadraban (670px la
+     primera contra 317 y 322 las otras dos). */
+  .intel-col{display:grid;gap:clamp(1.25rem,2vw,1.9rem);align-content:stretch}
+
+  .ci{
+    position:relative;display:flex;flex-direction:column;
+    padding:clamp(1.5rem,2.4vw,2.1rem);
+    background:linear-gradient(180deg,#172133,#121A2D);
+    border:1px solid var(--line);border-radius:5px;
+    text-decoration:none;color:inherit;
+    transition:border-color .5s var(--ease),transform .5s var(--ease),background .5s var(--ease);
+  }
+  .ci:hover,.ci:focus-visible{
+    border-color:var(--line-2);transform:translateY(-3px);
+    background:linear-gradient(180deg,#1A2537,#131C30);
+  }
+  /* La cadencia va arriba del todo de cada pieza: es lo que distingue una
+     superficie de otra y lo primero que el lector necesita saber. */
+  /* Se envuelve como texto corrido y no como dos cajas flex: asi, si no
+     cabe, lo que baja de linea es la categoria entera y no la mitad de la
+     cadencia. La cadencia no se parte nunca. */
+  .ci-cad{
+    font-size:var(--t-0);letter-spacing:.15em;text-transform:uppercase;
+    color:var(--ink-3);margin:0 0 var(--e-3);line-height:1.5;
+  }
+  .ci-cad b{font-weight:400;color:var(--accent);white-space:nowrap}
+  /* balance solo actua hasta seis lineas (Chromium): equilibra los
+     titulares cortos, donde estaba la viuda («ruido»), y no toca los
+     largos de cinco y seis lineas. Medido el 30-ago-2026. */
+  .ci-t{
+    font-family:var(--serif);font-weight:300;color:var(--ink);
+    letter-spacing:-.01em;line-height:1.2;margin:0;text-wrap:balance;
+  }
+  .ci-d{color:var(--ink-3);font-size:var(--t-2);line-height:1.65;margin:var(--e-2) 0 0}
+  /* La altura minima no es decorativa: iguala el borde superior de los
+     tres pies aunque el texto de uno se parta en dos lineas, que es lo
+     que descuadraba las tarjetas. */
+  .ci-pie{margin-top:auto;padding-top:var(--e-4);min-height:calc(1.5rem + 1.5em);display:flex;align-items:center;
+    justify-content:space-between;gap:var(--e-3)}
+  .ci-fecha{font-size:var(--t-0);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+    font-variant-numeric:tabular-nums}
+  .ci .sub-link{font-size:var(--t-2)}
+  .ci:hover .sub-link::after{transform:scaleX(1)}
+  .ci:hover .sub-link .flecha{transform:translateX(4px)}
+
+  /* El analisis de la semana: el titular es la pieza, no una etiqueta
+     encima de una foto de archivo. */
+  .ci-lead .ci-t{font-size:var(--t-f2)}
+  /* La cifra ocupa el centro de la tarjeta, que es donde estaba el hueco.
+     Va con el mismo tratamiento que las del brief y las del puente: serif
+     ligera, cifras de ancho fijo y la etiqueta en versalitas debajo. */
+  .ci-cifra{margin:auto 0;padding:clamp(1.4rem,2.6vw,2.2rem) 0}
+  .ci-cifra b{display:block;font-family:var(--serif);font-weight:300;
+    font-size:var(--t-f4);line-height:1;color:var(--accent);
+    letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin-bottom:var(--e-1)}
+  .ci-cifra span{font-size:var(--t-1);letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-3)}
+  /* Sin tope de medida: la tarjeta ya es estrecha de por si, y con 46ch el
+     parrafo acababa 156px antes que el titular, dejando la tarjeta
+     descuadrada por la derecha. */
+  .ci-lead .ci-d{font-size:var(--t-3)}
+  /* Los cuatro ajustes son una lista numerada de verdad: el lector puede
+     contarlos contra los cuatro que anuncia el titular, asi que el numero
+     lleva informacion y no es un adorno de maquetacion. */
+  .ci-ajustes{
+    counter-reset:aj;list-style:none;margin:clamp(1.5rem,2.4vw,2.1rem) 0 0;padding:0;
+    display:grid;gap:var(--e-3);max-width:56ch;
+  }
+  .ci-ajustes li{
+    position:relative;padding-left:var(--e-5);
+    font-size:var(--t-2);line-height:1.6;color:var(--ink-3);
+  }
+  .ci-ajustes li b{font-weight:400;color:var(--ink-2)}
+  .ci-ajustes li::before{
+    counter-increment:aj;content:counter(aj,decimal-leading-zero);
+    position:absolute;left:0;top:.12rem;
+    font-size:var(--t-0);letter-spacing:.08em;color:var(--accent);opacity:.75;
+    font-variant-numeric:tabular-nums;
+  }
+  /* En una tarjeta de un tercio los cuatro ajustes se comen la pagina: se
+     dejan los dos primeros como entradilla y el resto vive en el analisis. */
+  .ci-ajustes-corta li:nth-child(n+3){display:none}
+  /* Aqui hubo una comilla gigante de marca de agua. Se quito al verla en
+     pantalla: con los cuatro ajustes dentro la tarjeta ya tiene peso, y la
+     comilla solo anadia una forma cortada contra el borde derecho. */
+
+  /* Educacion financiera: las seis clases con su color. Sin cifras de
+     rentabilidad a proposito (viven dentro de Wealth, con su contexto). */
+  /* En flujo, no en tres columnas iguales: con tres temas de distinto largo
+     («Mercados financieros», «Inteligencia artificial») la rejilla partia
+     cada etiqueta en dos lineas incluso a 1536. Cada pastilla mide lo que
+     mide su texto y la fila se parte donde toca. */
+  .ci-clases{display:flex;flex-wrap:wrap;gap:var(--e-1);margin:var(--e-3) 0 0;padding:0;list-style:none}
+  .ci-clases li{
+    display:inline-flex;align-items:center;gap:var(--e-1);white-space:nowrap;
+    font-size:var(--t-1);color:var(--ink-2);
+    padding:var(--e-0) var(--e-1) var(--e-0) var(--e-1);
+    border:1px solid var(--line);border-radius:99px;
+  }
+  .ci-clases li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--p);flex:0 0 auto}
+
+  /* Wealth: el reparto, no la rentabilidad. */
+  .ci-w{display:flex;align-items:center;gap:clamp(1rem,2vw,1.5rem);margin:var(--e-3) 0 0}
+  .ci-donut{width:118px;height:118px;flex:0 0 auto;transform:rotate(-90deg)}
+  .ci-arco{
+    fill:none;stroke-width:13;
+    opacity:0;transition:opacity .7s var(--ease);transition-delay:var(--retardo,0ms);
+  }
+  .dentro .ci-arco{opacity:1}
+  .ci-w-leyenda{font-size:var(--t-1);color:var(--ink-3);line-height:1.55;margin:0}
+  .ci-w-leyenda b{display:block;color:var(--ink-2);font-weight:400;margin-bottom:var(--e-0)}
+
+  /* Avisos legales de CT Intelligence (Carlos, 30-ago-2026: «airtight en lo
+     legal»): uno en la tarjeta de la herramienta y otro al pie del panel.
+     Mismo cuerpo y color que los eyebrows, sin mayusculas: se leen, no
+     gritan. */
+  .ci-aviso{margin:var(--e-2) 0 0;font-size:var(--t-0);line-height:1.5;color:var(--ink-3)}
+  .intel-aviso{margin:clamp(1.25rem,2vw,1.9rem) 0 0;font-size:var(--t-0);line-height:1.55;color:var(--ink-3);max-width:70ch}
+
+  /* El bloque del brief y el punto de directo se apagan desde el guion que
+     lee /intel/brief.json; el atributo hidden tiene que ganar a cualquier
+     display de sus reglas. */
+  .brf[hidden],.brf-radar[hidden],.live[hidden]{display:none!important}
+
+  @media (max-width:1000px){
+    .intel-grid{grid-template-columns:1fr}
+    .ci-lead::after{font-size:10rem;bottom:-1.8rem}
+  }
+  @media (max-width:520px){
+    .ci-w{flex-direction:column;align-items:flex-start}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .intel-firma i{transform:none}
+    .ci-arco{opacity:1}
+  }
+
+  /* ══════════ CONTACTO ══════════ */
+  .cont{padding:clamp(4rem,8vw,7rem) 0;border-top:1px solid var(--line)}
+  .cont-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+  .cont-sub{font-size:var(--t-3);color:var(--ink-3);margin:var(--e-3) 0 var(--e-5);max-width:none}
+  .cont-micro{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-3) 0 var(--e-5)}
+  /* Sin filetes entre teléfono, correo y WhatsApp (Carlos, 29-ago-2026:
+     "quítame las líneas esas, déjalo todo bien cuadrado"): una lista limpia
+     alineada a la izquierda con el resto de la columna. */
+  .cont-datos{list-style:none;margin:0;padding:0}
+  .cont-datos li{padding:var(--e-1) 0;font-size:var(--t-2)}
+  .cont-datos a{color:var(--ink-2);text-decoration:none;transition:color .2s}
+  .cont-datos a:hover{color:var(--accent)}
+  .form-intro{font-size:var(--t-2);color:var(--ink-3);margin:0 0 var(--e-4)}
+  /* Campo trampa antispam de FormSubmit: fuera de pantalla, como en la web
+     vieja (style.css). Sin esta regla se veía como una cajita encima de
+     "Nombre": la "caja naranja" que vio Carlos el 29-ago-2026 (naranja
+     porque Chrome la autocompletaba). */
+  .hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  /* Chrome pinta de amarillo anaranjado los campos que autocompleta (la
+     "caja naranja" que vio Carlos el 29-ago-2026 en el campo Nombre). Se
+     mantiene el fondo y el color de texto de la casa también en ese estado. */
+  .campo input:-webkit-autofill,.campo input:-webkit-autofill:hover,.campo input:-webkit-autofill:focus,
+  .campo textarea:-webkit-autofill{
+    -webkit-box-shadow:0 0 0 1000px var(--surface) inset;box-shadow:0 0 0 1000px var(--surface) inset;
+    -webkit-text-fill-color:var(--ink);caret-color:var(--ink);transition:background-color 9999s ease-out 0s;
+  }
+  .campo{display:block;margin-bottom:var(--e-3)}
+  .campo span{display:block;font-size:var(--t-0);letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-3);margin-bottom:var(--e-1)}
+  .campo input,.campo textarea{
+    width:100%;padding:var(--e-2) var(--e-3);background:var(--surface);color:var(--ink);
+    border:1px solid var(--line);border-radius:3px;font-family:var(--sans);font-size:var(--t-3);
+    transition:border-color .2s;
+  }
+  /* El borde de color no puede ser el unico indicador de foco: quien navega
+     con teclado necesita algo que no dependa de distinguir dos azules. Se
+     conserva el borde y se le suma el anillo de la casa. */
+  .campo input:focus-visible,.campo textarea:focus-visible{
+    outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent);
+  }
+  .campo input:focus,.campo textarea:focus{border-color:var(--accent)}
+  .campo textarea{min-height:120px;resize:vertical}
+  /* La casilla nativa mide 13x13, pero la etiqueta que la envuelve ya la
+     activa al pulsar en cualquier punto (es un <label>): agrandar la
+     etiqueta agranda la diana real. padding+margen negativo compensan
+     exactamente, así que el contenido no se mueve ni un píxel. */
+  .consent{display:flex;gap:var(--e-2);align-items:flex-start;font-size:var(--t-1);color:var(--ink-3);
+    margin:2px 0;padding-block:14px}
+  .consent input{margin-top:var(--e-0);accent-color:var(--accent)}
+  .consent a{color:var(--accent)}
+  .form-nota{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-3) 0 0}
+  /* El boton del header es pequeno a proposito; aqui pide mas presencia. */
+  .cont .btn-primary{
+    font-family:var(--sans);font-size:var(--t-3);padding:var(--e-2) var(--e-4);
+    border:0;cursor:pointer;
+  }
+  .btn-sec{
+    display:inline-block;font-family:var(--sans);font-size:var(--t-3);font-weight:500;
+    padding:var(--e-2) var(--e-4);border-radius:3px;cursor:pointer;
+    background:none;color:var(--ink);border:1px solid var(--line-2);
+    transition:border-color .2s,color .2s;
+  }
+  .btn-sec:hover{border-color:var(--accent);color:var(--accent)}
+  /* La columna del formulario arranca a la altura del titular, no del ojo. */
+  .cont-form{padding-top:var(--e-0)}
+
+  /* ══════════ PIE ══════════ */
+  /* El pie es sólido, como la cabecera. Es el único bloque de la página
+     que no participa de la materia del fondo: aquí ya no se está leyendo
+     nada, se está mirando quién firma. Un logo y una nota legal flotando
+     sobre partículas en movimiento dicen lo contrario de lo que dice su
+     contenido. El fondo propio y opaco tapa a la vez la trama y la
+     iluminación, que son los dos elementos fijos de detrás. */
+  /* El pie no tiene color propio: es el mismo fondo de la página con un
+     filete arriba. Carlos, 29-ago-2026: el #0A101E se veía "muy brusco
+     respecto al fondo de la web". */
+  .pie{padding:clamp(2.5rem,5vw,4rem) 0 clamp(2rem,4vw,3rem);border-top:1px solid var(--line);
+    background:transparent;position:relative;z-index:1}
+  .pie-in{display:flex;flex-wrap:wrap;gap:var(--e-4) var(--e-6);align-items:baseline;justify-content:space-between}
+  .pie-marca p{font-size:var(--t-2);color:var(--ink-3);margin:var(--e-3) 0 0}
+  .pie-logo{height:48px;width:auto;display:block;filter:brightness(0) invert(1);opacity:.8}
+  .pie-nav{display:flex;flex-wrap:wrap;gap:var(--e-4);list-style:none;margin:0;padding:0}
+  .pie-nav a{font-size:var(--t-2);color:var(--ink-3);text-decoration:none;transition:color .2s}
+  .pie-nav a:hover{color:var(--ink)}
+  .pie-legal{margin:var(--e-5) 0 0;padding-top:var(--e-4);border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--e-1) var(--e-5);
+    font-size:var(--t-1);color:var(--ink-3)}
+  .pie-legal a{color:var(--ink-3);text-decoration:none}
+  .pie-legal a:hover{color:var(--ink)}
+  .pie-sep{color:var(--ink-3)}
+  .pie-contacto{font-size:var(--t-1);color:var(--ink-3);margin:var(--e-2) 0 0}
+  .pie-contacto a{color:var(--ink-3);text-decoration:none}
+  .pie-contacto a:hover{color:var(--ink)}
+
+  @media (max-width:900px){
+    .idea-in,.about-in,.cont-in{grid-template-columns:1fr}
+    /* En móvil el texto de Sobre mí va a la izquierda: justificado sin partir palabras abre ríos en una columna estrecha (medido a 375). */
+    .about-txt p{text-align:left}
+    .proc-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--e-5)}
+  }
+  @media (max-width:560px){
+    .proc-grid{grid-template-columns:1fr}
+  }
+
+  /* ══════════ Responsive ══════════ */
+  @media (max-width:1080px){
+    .nav-menu{gap:var(--e-3)}
+    .nav-menu a{font-size:var(--t-2)}
+    .header-phone span{display:none}
+  }
+  @media (max-width:1000px){
+    :root{--header-h:72px}
+    /* Objetivo táctil de 44x44 mínimo (Carlos, 30-ago-2026): el icono no
+       cambia, solo el hueco alrededor. Medido con Playwright a 375px. */
+    .nav-toggle{display:inline-flex;padding-block:var(--e-3)}
+    .nav{
+      position:fixed;inset:var(--header-h) 0 auto 0;z-index:30;
+      flex-direction:column;align-items:stretch;gap:0;margin-left:0;
+      background:var(--surface);border-bottom:1px solid var(--line);
+      padding:var(--e-1) var(--gutter) var(--e-4);
+      box-shadow:0 24px 40px -24px rgba(0,0,0,.6);
+      max-height:calc(100dvh - var(--header-h));overflow-y:auto;
+      transform:translateY(-8px);opacity:0;pointer-events:none;
+      transition:opacity .25s ease,transform .25s ease;
+    }
+    .nav.is-open{transform:none;opacity:1;pointer-events:auto}
+    .nav-menu{flex-direction:column;align-items:stretch;gap:0}
+    .nav-menu li{border-bottom:1px solid var(--line)}
+    .nav-menu a{display:block;padding:var(--e-3) 0;font-size:var(--t-3);color:var(--ink);border-bottom:0}
+    /* En táctil no hay hover: el desplegable de CT Intelligence se abre en línea
+       y la tarjeta destacada se retira, que ahí solo alargaría la lista. */
+    .nav-menu li.has-panel{position:static}
+    .np-cab{display:block;width:100%;text-align:left;padding:var(--e-3) 0;font-size:var(--t-3);color:var(--ink)}
+    .nav-panel{
+      position:static;width:auto;min-width:0;
+      padding:0;background:none;border:0;box-shadow:none;
+      opacity:1;visibility:visible;transform:none;
+      display:grid;grid-template-columns:1fr;grid-template-rows:0fr;
+      transition:grid-template-rows .28s ease;
+    }
+    .np-list{overflow:hidden;min-height:0}
+    .nav-menu li.has-panel.is-open .nav-panel{grid-template-rows:1fr}
+    .nav-menu li.has-panel.is-open .np-list{padding-bottom:var(--e-3)}
+    .np-caret{
+      display:inline-block;width:8px;height:8px;margin-left:var(--e-1);
+      border-right:1.5px solid var(--ink-3);border-bottom:1.5px solid var(--ink-3);
+      transform:translateY(-2px) rotate(45deg);transition:transform .28s ease;
+    }
+    .nav-menu li.has-panel.is-open .np-caret{transform:translateY(1px) rotate(-135deg)}
+    /* Hace falta .nav-panel delante: .nav-menu a (0,1,1) gana a .np-feat (0,1,0). */
+    .nav-panel .np-feat{display:none}
+    .np-list a,.np-list .np-item{padding:var(--e-1) 0 var(--e-1) var(--e-3);border-left:1px solid var(--line-2);border-radius:0}
+    .nav-actions{flex-direction:column;align-items:stretch;gap:var(--e-3);margin-top:var(--e-3)}
+    .header-phone{justify-content:center;font-size:var(--t-3);min-height:44px}
+    .header-phone span{display:inline}
+    .btn-primary{width:100%;text-align:center;padding-block:var(--e-3)}
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bars i:first-child{transform:translateY(3.25px) rotate(45deg)}
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bars i:last-child{transform:translateY(-3.25px) rotate(-45deg)}
+    /* Los enlaces del pie son objetivo táctil (fuera de párrafo), mismo
+       criterio de 44px que el menú de arriba. */
+    .pie-nav a{display:block;padding-block:var(--e-3)}
+    /* Objetivos táctiles que quedaron fuera de la Task 3 (Carlos,
+       30-ago-2026): mismo criterio de 44px mínimo, sin cambiar el aspecto
+       en escritorio porque va scoped a esta media query. */
+    .mode-opt{display:inline-flex;align-items:center;justify-content:center;min-height:44px}
+    .si-more{min-height:44px}
+    .proc-cta{min-height:44px}
+    .cont-datos a{display:flex;align-items:center;min-height:44px}
+    /* La casilla nativa mide 13x13; se agranda a 24x24 y la etiqueta que la
+       envuelve pasa a 44px de alto con el contenido centrado, sin tocar el
+       aspecto en escritorio (la regla de arriba, .consent, sigue mandando
+       ahí con align-items:flex-start). flex-shrink:0 es necesario: .consent
+       es flex y sin él el eje principal (horizontal) encoge la casilla para
+       dejarle sitio al texto largo, y el ancho de 24px no se sostiene aunque
+       esté escrito (medido con Playwright: sin esto se quedaba en 13px de
+       ancho pese al 24px declarado). */
+    label.consent{min-height:44px;align-items:center}
+    .consent input{width:24px;height:24px;flex-shrink:0}
+  }
+  @media (max-width:860px){
+    .header-inner{min-height:72px;gap:var(--e-3)}
+        .brand-logo{height:44px}
+    .hero-canvas{width:100%;opacity:.5;
+      -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 55%);
+      mask-image:linear-gradient(to bottom,transparent 0%,#000 55%);}
+    .hero-inner{max-width:none}
+  }
+  @media (max-width:420px){
+    .mode-switch{flex-direction:column;align-items:flex-start;gap:var(--e-1)}
+    .hero-cta{width:100%;justify-content:center}
+  }
+
+  @media (max-width:1000px){
+    /* En vertical el orden cambia: titulo, fotografia y despues los tres
+       controles. En escritorio las pestanas van pegadas bajo el titulo
+       porque mandan sobre las dos columnas de abajo; en movil no hay dos
+       columnas, y colocarlas antes de la imagen dejaba a quien entra
+       eligiendo una fase sin haber visto todavia de que va la seccion.
+       `display:contents` sobre el escenario sube sus dos hijos al mismo
+       flex que las pestanas, que es lo unico que permite intercalarlos sin
+       mover nada en el HTML. */
+    .svc{display:flex;flex-direction:column}
+    .svc-head{order:1}
+    .svc-stage{display:contents}
+    /* En móvil la foto va DEBAJO de las pestañas y encima del texto de la fase (Carlos, 29-ago-2026, 20:02). */
+    /* Acordeón de fases independientes (Carlos, 30-ago-2026, 20:01: «que se
+       puedan abrir y cerrar todas a la vez»). Antes se movía UN bloque
+       foto+texto detrás de la tarjeta activa, así que solo cabía una fase
+       abierta; ahora cada panel viaja con su propia foto y se coloca detrás
+       de SU tarjeta, así que tres abiertas —o ninguna— son estados válidos.
+       .phase-bar y .phase-nav en display:contents para que tarjetas y paneles
+       sean hijos de la misma columna, todos con el mismo `order`: manda el
+       orden del DOM, y el de lectura coincide con el visual. */
+    .phase-bar,.phase-nav{display:contents}
+    .phase-tab,.phase-panel{order:2}
+    .phase-tab{margin:0 var(--gutter) var(--e-1)}
+    .phase-tab[data-phase="0"]{margin-top:var(--e-1)}
+    .svc > .wrap{order:5}
+    /* La columna de imagen de escritorio no pinta nada aquí: en móvil la foto
+       la lleva cada panel. .svc-text queda vacío (sus paneles se han movido). */
+    .svc-media,.svc-text{display:none}
+    .svc-stage{grid-template-columns:1fr}
+    /* 24 px entre el final del contenido y la tarjeta siguiente. */
+    .phase-panel{padding:0 var(--gutter) 1.5rem}
+    /* Banda 16:9 (Carlos, 30-ago-2026, 18:5x): la caja 4:5 medía 375x469 y
+       en el móvil se leía igual que el hueco de escritorio, empujando el
+       texto media pantalla abajo. La banda deja la foto como acompañamiento
+       de la fase abierta, no como protagonista. Va a sangre —de ahí el margen
+       negativo contra el relleno del panel— y cada hueco conserva el anclaje
+       que ya tenía: la clase .svc-foto le trae sus reglas tal cual. */
+    .ph-foto{
+      display:block;position:relative;inset:auto;aspect-ratio:16/9;
+      margin:0 calc(var(--gutter) * -1) clamp(1.6rem,3.4vw,2.2rem);
+      /* La banda va a sangre pero el resto de la columna lleva gutter: los
+         dos cantos se funden con el fondo para cuadrar el ancho a ojo
+         (Carlos, 31-ago-2026). Es el unico fundido de foto que queda: los de
+         escritorio se quitaron ese mismo dia a las 11:05 (en la foto clara
+         de Ejecutar la transicion se ensuciaba; «en todas por igual o
+         quitalo»). */
+      -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);
+      mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);
+    }
+    .ph-h{max-width:none}
+  }
+  @media (max-width:620px){
+    /* La tarjeta ya es la forma base en cualquier ancho: aquí solo se
+       apilan y se aprieta el relleno. */
+    .phase-nav{grid-template-columns:1fr;gap:var(--e-1);padding-top:var(--e-1);padding-bottom:var(--e-1)}
+    .phase-tab{padding:var(--e-2) var(--e-5) var(--e-2) var(--e-3)}
+    .phase-tab.is-active{padding-left:var(--e-3)}
+    .si{grid-template-columns:1fr;gap:var(--e-3)}
+    .si-ico{width:36px;height:36px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition-duration:.01ms!important}
+    .live{animation:none}
+  }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   JERARQUÍA DE SECCIÓN — tres pesos, no ocho secciones iguales
+   ───────────────────────────────────────────────────────────────────────
+   Hasta aquí toda sección se escribía igual: `padding:clamp(4rem,8vw,7rem)`
+   y un filete de 1px arriba. Ocho bloques con el mismo peso no son una
+   página, son una lista: el ojo no tiene dónde parar ni por dónde empezar,
+   y todo pesa lo mismo aunque no valga lo mismo.
+
+   ACTO      el visitante para. Aire máximo, superficie propia y ningún
+             filete: el corte lo hace el cambio de luz, que cuesta más de
+             dar que una línea y se nota sin que nadie lo señale.
+   CAPÍTULO  el contenido. Aire medio, filete arriba.
+   CONSULTA  se mira, no se lee de corrido. Aire corto y titular menor.
+
+   Ritmo resultante, de arriba abajo:
+   hero(A) · servicios(B) · la idea(A) · el proceso(B) · intelligence(B) ·
+   sobre mí(C) · preguntas(C) · contacto(A).
+   Dos respiraciones largas repartidas por el centro y un cierre alto.
+   ═══════════════════════════════════════════════════════════════════════ */
+:root{
+  --y-acto:clamp(6rem,12vw,10rem);
+  --y-cap:clamp(4.25rem,8.5vw,7rem);
+  --y-cons:clamp(2.9rem,5.5vw,4.5rem);
+}
+.s-acto{padding:var(--y-acto) 0;border-top:0;position:relative}
+/* La superficie del acto se funde por arriba y por abajo. Con bordes duros
+   sería una caja pegada al fondo; fundida es un tramo con más luz. */
+.s-acto::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,
+    transparent 0,
+    rgba(30, 41, 59,.55) 15%,
+    rgba(30, 41, 59,.55) 85%,
+    transparent 100%);
+}
+.s-cap{padding:var(--y-cap) 0;border-top:0;position:relative}
+.s-cons{position:relative}
+/* El filete se desvanece hacia los lados en vez de cruzar la ventana de
+   lado a lado: separa las secciones sin partirlas. */
+.s-cap::after,.s-cons::after{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,var(--line) 22%,var(--line) 78%,transparent);
+}
+.s-cons{padding:var(--y-cons) 0;border-top:0}
+/* Una sección de consulta no compite por el titular con un capítulo. */
+.s-cons .svc-title{font-size:var(--t-f2);margin-bottom:clamp(1.4rem,2.4vw,2rem)}
+.s-cons .svc-eb{margin-bottom:var(--e-2)}
+/* Dos aires seguidos se suman y dejan un vacío que no significa nada: el
+   acto ya cerró con su fundido, así que el capítulo que viene detrás no
+   necesita volver a abrir desde cero. El corte ya está dado. */
+.s-acto + .s-cap{padding-top:clamp(2.75rem,5.5vw,4.5rem)}
+.s-acto + .s-cap::after{opacity:0}
+/* Y al revés: un capítulo que desemboca en un acto tampoco necesita
+   despedirse dos veces. */
+.s-cap:has(+ .s-acto){padding-bottom:clamp(2.75rem,5.5vw,4.5rem)}
+
+/* ══════════ LA IDEA · el puente ══════════
+   La sección decía "una cifra que entiende" y no enseñaba ninguna: un
+   titular grande y un párrafo descolgado sobre el mismo azul que el resto,
+   con doce rem de aire por arriba. Aire sin nada dentro no es respiración,
+   es un hueco.
+
+   Ahora la frase viene con lo que la sostiene: las tres cifras del mismo
+   negocio real que ya usan las landings. Es la demostración de la promesa
+   en el mismo golpe de vista, y el enlace del pie la cose con el análisis
+   de CT Intelligence que explica de dónde sale cada tramo. */
+/* Tres filas de grid y no dos columnas centradas. Con `align-items:center` y
+   el titular metido en la columna izquierda pasaban dos cosas a la vez: el
+   titular se partia en tres lineas desiguales contra un limite de 15ch, y
+   como la columna de las cifras es mucho mas alta que la del texto, centrar
+   dejaba un tercio de la seccion vacio por debajo de la foto. Ahora la
+   cabecera cruza las dos columnas y foto y cifras arrancan a la misma
+   altura, que es lo que cierra el hueco. */
+/* Espacio de la sección (Carlos, 30-ago-2026, 17:12: «adelante con el espacio
+   de Una visión clara»): con la foto ya puesta, la cabecera y el bloque
+   foto/caso iban demasiado sueltos. Fila de la cabecera al bloque de ~67 a
+   ~40 px, canal entre columnas de ~86 a ~56, y la columna del caso alineada
+   arriba con la foto (antes, centrada, flotaba a media altura). */
+.idea-in{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  column-gap:clamp(2rem,4vw,3.5rem);row-gap:clamp(1.6rem,3vw,2.5rem);
+  align-items:start;
+}
+/* La cabecera cruza las dos columnas. Metida en la columna izquierda, el
+   titular no cabia en dos lineas a su cuerpo real y se partia en tres
+   desiguales; y el parrafo, alineado abajo contra un titular tan alto,
+   flotaba a media altura sin nada que lo sujetara. */
+.idea-cab{grid-column:1/-1}
+/* La frase de debajo se alinea con la columna de las cifras, no con el
+   titular. Carlos (30-ago-2026, 10:30): a su ancho de pantalla el titular
+   va de margen a margen y la frase se quedaba en una linea corta con el
+   filete, parando a dos tercios del ancho; "no se ajusta al ancho de
+   pagina". Con la cabecera como subrejilla de las mismas dos columnas, la
+   frase arranca donde arrancan las cifras y termina en el margen derecho,
+   igual que el bloque de debajo. Sin subrejilla (navegadores viejos), se
+   queda como estaba, a 62 caracteres. */
+/* Segunda corrección de Carlos (12:20): «sigue indentado, solo requiere una
+   línea que se adapte al ancho de la página». La frase va debajo del
+   titular, arrancando en su mismo margen y a todo el ancho: una línea en
+   portátil, y envuelve donde no cabe. Se conserva la subrejilla solo para
+   que titular y frase midan lo mismo que las dos columnas de debajo. */
+@supports (grid-template-columns:subgrid){
+  .idea-cab{display:grid;grid-template-columns:subgrid}
+  .idea-cab .idea-h{grid-column:1/-1}
+  .idea-cab .idea-p{grid-column:1/-1;max-width:none;text-wrap:pretty}
+}
+/* El titular ocupa la línea entera, no veintiséis caracteres. Con el tope
+   en `26ch` y el reparto equilibrado encima, el titular se partía en dos
+   líneas de 686 píxeles dentro de una caja de 1.040 y dejaba 349 vacíos a la
+   derecha: medido, no supuesto. Es exactamente el "condensado a la izquierda
+   con mucho espacio a la derecha" que hay que quitar de toda la página, y
+   aquí se notaba más porque debajo va un bloque que sí llega de lado a lado.
+   Un titular de despliegue puede permitirse una medida larga; lo que no
+   puede es dejar un hueco donde el ojo espera texto.
+
+   No se usa `nowrap`: forzar una línea en un titular de este tamaño es
+   invitar a un desbordamiento horizontal en cuanto la ventana no dé, y eso
+   es peor que dos líneas. Se le da el ancho y se le quita el equilibrado; si
+   cabe, cae en una línea sola, y si no cabe, se parte donde toca. */
+.idea-h{max-width:none;margin:0;text-wrap:wrap}
+/* Cuando ya no cabe entero, vuelve a repartirse equilibrado en vez de dejar
+   una segunda línea de tres palabras. */
+@media (max-width:1300px){ .idea-h{text-wrap:balance} }
+/* La fotografia del empresario va bajo el parrafo, en la columna del texto:
+   la columna de las cifras es mas alta que la del texto, y esto equilibra el
+   peso de las dos sin meter una tercera columna. Se funde por la derecha y
+   por abajo, que son los dos lados por donde da a contenido — mismo criterio
+   que .svc-foto, no un tratamiento nuevo. */
+.idea-foto{
+  /* Apaisada y no 4:3: la composicion tiene la puerta iluminada a la
+     izquierda y casi la mitad derecha en pared oscura. En vertical esa
+     pared entraba entera y quedaba un bloque negro ancho al lado de la
+     figura; en apaisado se recorta y manda la puerta, que es el sujeto. */
+  aspect-ratio:3/2;
+  background-image:var(--foto-idea,none);
+  /* La nave es amplia y la figura pequena: con `cover` a tamano nativo la
+     persona quedaba en unos pocos pixeles y la foto se leia como una mancha
+     oscura, no como alguien entrando en su taller. Se acerca hasta que la
+     figura se reconoce, anclando al centro-bajo, que es donde esta. */
+  background-size:cover;background-position:center;
+  /* Medido: 1536x1024, tres a dos exactos, asi que entra en la caja sin que
+     se recorte nada. Matiz 44 grados y luminancia media 0,31, contra el
+     casi negro de las demas. No lleva giro a proposito — ver arriba. */
+  /* «Empresario con tiempo 2» de Carlos (30-ago-2026, 14:48): el dueño de
+     espaldas, centrado, caminando por su nave luminosa con la carpeta bajo
+     el brazo; claraboya, máquinas y dos operarios a la derecha. Es 3:2
+     nativo (1264×848), como el hueco: `cover` centrado y entra entero de
+     pies a cabeza. Lleva la pasada común (brillo, saturación, contraste) y
+     su propio velo en luz suave al 62 %, que es justo para lo que se
+     diseñó: una nave blanca a contraluz sobre una página casi negra. Si
+     sigue clara junto al texto, se sube --foto-frio aquí, no en las demás. */
+  --foto-giro:0deg; --foto-frio:.62; --grano:.04;
+  --foto-idea:url(/img/foto-caso.jpg); --sin-fotos:0;
+  /* Funde por los CUATRO lados, no solo por los dos que dan a contenido.
+     .svc-foto puede permitirse cantos rectos arriba y a la izquierda porque
+     ahi la caja llega al borde de su propia banda; esta va suelta sobre el
+     azul de la pagina, y la nave iluminada contra ese azul dibujaba un
+     rectangulo. Es el mismo arreglo que ya anota optimizar.js: el borde no
+     se corrige en la imagen, se corrige donde se usa. */
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 89%,transparent 100%),linear-gradient(180deg,transparent 0,#000 8%,#000 90%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 89%,transparent 100%),linear-gradient(180deg,transparent 0,#000 8%,#000 90%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+}
+/* El subtítulo acompaña al titular y se le quita el tope de 44 caracteres por
+   el mismo motivo: con el titular en una línea, un subtítulo partido en dos
+   columnas estrechas debajo deja la cabecera descuadrada por la derecha, que
+   es de lo que se queja el encargo. Debajo del ancho donde cabe, se reparte
+   equilibrado. */
+/* Sin filete ni sangría (Carlos, 30-ago-2026, 12:07: «está desalineado y
+   quita la línea esa»): con la frase en la columna del caso, el filete se
+   quedaba en el borde de la columna y el texto arrancaba una sangría más a
+   la derecha que «UN CASO REAL» y las cifras; a una columna, más metido que
+   el titular. El texto arranca ahora donde arranca lo que tiene debajo. */
+.idea-p{
+  margin:clamp(1.4rem,2.6vw,2rem) 0 0;padding-left:0;border-left:0;max-width:none;
+}
+@media (max-width:1300px){ .idea-p{max-width:62ch;text-wrap:balance} }
+.puente{margin:0;padding:0}
+.puente-eb{
+  display:flex;align-items:center;gap:var(--e-2);
+  font-size:var(--t-0);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 var(--e-4);
+}
+.puente-eb::before{content:"";width:1.5rem;height:1px;background:var(--accent);flex:0 0 auto}
+.puente-l{list-style:none;margin:0;padding:0}
+.puente-l li{padding:0 0 var(--e-4)}
+.puente-l li:last-child{padding-bottom:0}
+.puente-c{display:flex;align-items:baseline;justify-content:space-between;gap:var(--e-3);margin-bottom:var(--e-1)}
+.puente-v{
+  font-family:var(--serif);font-weight:300;font-size:var(--t-f2);
+  color:var(--ink-2);letter-spacing:-.02em;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.puente-l .es-fin .puente-v{color:var(--ink)}
+/* `balance` y no el ajuste por defecto: estas etiquetas son de dos lineas y
+   el reparto normal dejaba la segunda con una palabra suelta ("de un ano"),
+   que es justo lo que no queremos ver. */
+.puente-e{font-size:var(--t-1);color:var(--ink-3);text-align:right;max-width:22ch;line-height:1.4;text-wrap:balance}
+/* El carril siempre está entero; lo que crece es el tramo lleno. Así la
+   comparación se lee sin necesidad de un eje ni de una cifra de escala. */
+.puente-r{height:2px;background:var(--line);position:relative;overflow:hidden}
+.puente-b{
+  position:absolute;inset:0;transform-origin:left;
+  background:linear-gradient(90deg,rgba(56,189,248,.45),var(--accent));
+  transform:scaleX(var(--k));
+}
+.puente-l .es-fin .puente-r{height:3px}
+/* El redondel de las 41 horas: un anillo cian sobre la esquina del cuadro
+   de la foto (o de la foto, cuando exista). Dentro del cuadro a todos los
+   anchos para que nunca desborde la página. */
+.idea-insignia{
+  --d:clamp(118px,10.5vw,152px);
+  position:absolute;top:clamp(.75rem,1.6vw,1.25rem);right:clamp(.75rem,1.6vw,1.25rem);z-index:2;
+  width:var(--d);aspect-ratio:1;border-radius:50%;box-sizing:border-box;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1em;
+  padding:calc(var(--d) * .1);text-align:center;overflow:hidden;
+  border:1.5px solid var(--accent);background:rgba(15,23,42,.78);
+  box-shadow:0 0 0 6px rgba(56,189,248,.08);
+}
+/* Cifra y etiqueta escalan con el diámetro (Carlos, 29-ago-2026, 20:02: "el
+   texto se sale"): a 152px la etiqueta va a 11px, a 118px a 8,5px, y la
+   palabra más larga, "automatizables", cabe en todos los casos. */
+.idea-insignia b{font-family:var(--serif);font-weight:400;font-size:calc(var(--d) * .2);line-height:1;color:var(--ink);letter-spacing:-.02em}
+.idea-insignia span{font-family:var(--sans);font-size:calc(var(--d) * .072);line-height:1.2;color:var(--ink-2);max-width:88%;overflow-wrap:normal}
+/* Antes centraba las dos columnas en escritorio; con la foto puesta, las
+   cifras del caso arrancan a la misma altura que la foto (Carlos, 17:12). */
+@media (min-width:1001px){ .idea-in{align-items:start} }
+@media (max-width:1000px){
+  .idea-insignia{--d:100px}
+  .idea-foto .marca-esc{max-width:16ch}
+}
+}
+/* El crecimiento solo existe cuando el observador está vivo: si no hay
+   IntersectionObserver, o el visitante pidió no ver movimiento, el script
+   nunca escribe data-entra y las barras se quedan a su tamaño real en vez
+   de a cero. Mismo patrón que el resto de la capa de acabado. */
+/* Las cifras primero, las barras después. Medido el 29-ago-2026 tras la
+   queja de Carlos ("las métricas al principio no cargan bien"): a los 300ms
+   de entrar en pantalla la primera barra iba por el 34% y las tres cifras
+   seguían a opacidad 0 (retardo de 180ms más 720ms de fundido). El bloque
+   entra ahora en 360ms sin retardo y cada barra espera 260ms más. */
+/* transition-delay directo, no vía --retardo: el observador escribe
+   --retardo en línea (índice × 90ms dentro de .idea-in, y el hueco de la
+   foto cuenta aunque no se vea), y una variable en línea gana a la hoja. */
+.puente[data-entra]{transition-delay:0s;transition-duration:.36s}
+[data-entra] .puente-b{
+  transform:scaleX(0);
+  transition:transform 1.05s var(--ease) calc(var(--barra,0ms) + 260ms);
+}
+[data-entra].dentro .puente-b{transform:scaleX(var(--k))}
+.puente-n{
+  margin:var(--e-4) 0 var(--e-3);padding-top:var(--e-4);border-top:1px solid var(--line);
+  font-size:var(--t-2);line-height:1.6;color:var(--ink-3);
+}
+@media (max-width:900px){
+  .idea-in{grid-template-columns:minmax(0,1fr);gap:clamp(2.5rem,6vw,3.5rem)}
+  .idea-h{max-width:18ch}
+  /* A una columna, la frase ocupa la unica que hay, a todo el ancho. */
+  .idea-cab .idea-p{grid-column:1;max-width:none;text-wrap:pretty}
+}
+
+/* ══════════ EL PROCESO · vertical, con el detalle al lado ══════════
+   En cuatro columnas los pasos se leían como cuatro cosas sueltas puestas
+   en fila: nada indicaba que uno lleva al siguiente, y las cuatro cajas
+   competían entre sí en el mismo golpe de vista. En vertical el orden es
+   el propio recorrido, y queda sitio al lado para decir qué se lleva el
+   cliente en cada parada, que es lo único que le importa de un proceso.
+
+   El panel de la derecha va pegado mientras se recorren los pasos y cambia
+   con el que esté en pantalla. Los cuatro comparten celda de rejilla, así
+   que la altura la fija el más alto y el bloque no salta al cambiar. */
+.proc-lay{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);
+  gap:clamp(2rem,5vw,4.5rem);margin-top:clamp(2rem,4vw,3rem);align-items:stretch;
+}
+/* Los cuatro pasos se reparten por toda la altura de la tarjeta en vez de
+   apilarse arriba. Al quitarles la descripcion la lista se quedo mucho mas
+   corta que el panel, y el hueco muerto se habria mudado de lado; asi el
+   carril recorre la seccion entera y el recorrido se lee de arriba abajo. */
+.proc-lista{
+  list-style:none;margin:0;padding:0;position:relative;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+/* Un solo filete atraviesa las cuatro paradas. Antes cada paso tenía el
+   suyo por arriba, que es justo lo que los separaba en vez de unirlos. */
+.proc-lista::before{
+  content:"";position:absolute;left:0;top:.6rem;bottom:.6rem;width:1px;
+  background:var(--line-2);
+}
+/* Las cuatro paradas son botones de verdad, no texto que cambia solo con el
+   scroll. Antes el panel se movia por IntersectionObserver y nada en la
+   pantalla decia que se pudiera pulsar; y como cada paso arrastraba su
+   propia descripcion, la lista era mucho mas alta que la tarjeta y dejaba
+   un hueco muerto a la derecha. Ahora la lista es de titulos pelados —lo
+   que obliga a pulsar para ver el detalle— y toda la sustancia vive dentro
+   de la tarjeta, que crece hasta llenar su lado. */
+.proc-step{
+  position:relative;border-top:0;
+  padding:0 0 clamp(.5rem,1.2vw,.9rem) clamp(1.5rem,2.6vw,2.2rem);
+}
+.proc-step:last-child{padding-bottom:0}
+.proc-step::before{
+  content:"";position:absolute;left:-3.5px;top:1.15rem;
+  width:8px;height:8px;border-radius:99px;z-index:1;
+  background:var(--ground);border:1px solid var(--line-2);box-shadow:none;
+  transition:background .35s var(--ease),border-color .35s var(--ease),box-shadow .35s var(--ease);
+}
+.proc-step.es-act::before{
+  background:var(--accent);border-color:var(--accent);
+  box-shadow:0 0 0 5px rgba(56,189,248,.14);
+}
+.proc-t{margin:0}
+.proc-b{
+  display:flex;align-items:baseline;gap:clamp(.7rem,1.4vw,1.05rem);
+  width:100%;margin:0;padding:var(--e-2) var(--e-3) var(--e-2) var(--e-3);
+  background:transparent;border:0;border-radius:3px;
+  font:inherit;color:inherit;text-align:left;cursor:pointer;
+  transition:background .3s var(--ease);
+}
+/* El fondo del activo entra por la izquierda y se desvanece: da la pista de
+   que hay una fila seleccionada sin dibujarle una caja alrededor, que
+   competiria con la tarjeta que tiene justo al lado. */
+.proc-step.es-act .proc-b{
+  background:linear-gradient(90deg,rgba(56,189,248,.09),rgba(56,189,248,0) 78%);
+}
+.proc-b:hover{background:rgba(255,255,255,.035)}
+.proc-step.es-act .proc-b:hover{
+  background:linear-gradient(90deg,rgba(56,189,248,.13),rgba(56,189,248,0) 78%);
+}
+.proc-b:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.proc-n{
+  display:inline;flex:0 0 auto;margin:0;
+  font-family:var(--serif);font-size:var(--t-3);color:var(--ink-3);
+  letter-spacing:.04em;transition:color .35s var(--ease);
+}
+.proc-step.es-act .proc-n{color:var(--accent)}
+.proc-r{
+  font-family:var(--serif);font-weight:400;font-size:var(--t-f1);
+  color:var(--ink-3);letter-spacing:-.012em;
+  transition:color .35s var(--ease);
+}
+.proc-step.es-act .proc-r,
+.proc-b:hover .proc-r{color:var(--ink)}
+/* Una línea bajo cada paso para que la lista se lea sola (Carlos, 29-ago-2026). */
+.proc-s{display:block;font-family:var(--sans);font-size:var(--t-1);line-height:1.4;color:var(--ink-3);letter-spacing:0;margin-top:.2rem}
+.proc-step.es-act .proc-s{color:var(--ink-2)}
+
+.proc-panel{position:sticky;top:calc(var(--header-h) + 2.5rem);display:grid}
+.pp{
+  grid-area:1/1;
+  background:linear-gradient(180deg,#1C2638,#172133);
+  border:1px solid var(--line-2);border-radius:4px;
+  padding:clamp(1.5rem,3vw,2.1rem);
+  box-shadow:var(--sombra);
+  opacity:0;transform:translate3d(0,10px,0);pointer-events:none;
+  /* `visibility` y no `hidden`: los cuatro paneles viven apilados en la
+     misma celda de grid, asi que el que no se ve seguia siendo texto
+     buscable con Ctrl+F y lo leia el lector de pantalla. `hidden` lo
+     arreglaria pero mata la transicion de entrada; visibility la conserva,
+     retrasada para que se apague al final y se encienda al principio. */
+  visibility:hidden;
+  transition:opacity .45s var(--ease),transform .45s var(--ease),visibility 0s linear .45s;
+}
+.pp.es-act{
+  opacity:1;transform:none;pointer-events:auto;visibility:visible;
+  transition:opacity .45s var(--ease),transform .45s var(--ease),visibility 0s;
+}
+.pp-eb{
+  font-size:var(--t-0);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 var(--e-2);
+}
+.pp-t{
+  font-family:var(--serif);font-weight:300;font-size:var(--t-f1);
+  line-height:1.25;color:var(--ink);margin:0 0 var(--e-3);letter-spacing:-.015em;text-wrap:balance;
+}
+/* La frase que antes colgaba de cada paso en la lista. Se mudo aqui para
+   que la lista quedara en titulos y la tarjeta se llevara la sustancia. */
+.pp-x{
+  margin:0 0 var(--e-4);padding-bottom:var(--e-3);
+  border-bottom:1px solid var(--line);
+  font-size:var(--t-3);line-height:1.6;color:var(--ink-2);
+}
+.pp-l{list-style:none;margin:0;padding:0}
+.pp-l li{
+  position:relative;padding:0 0 var(--e-2) var(--e-4);
+  font-size:var(--t-2);line-height:1.6;color:var(--ink-2);
+}
+.pp-l li:last-child{padding-bottom:0}
+.pp-l li::before{
+  content:"";position:absolute;left:0;top:.62em;
+  width:5px;height:1px;background:var(--accent);
+}
+.pp-pie{
+  margin:var(--e-4) 0 0;padding-top:var(--e-3);border-top:1px solid var(--line);
+  font-size:var(--t-1);color:var(--ink-3);
+}
+@media (max-width:900px){
+  /* En vertical estrecho el panel deja de ir pegado y se coloca debajo de
+     la lista, siguiendo igualmente al paso que esté en pantalla. */
+  .proc-lay{grid-template-columns:minmax(0,1fr);gap:clamp(2rem,5vw,2.5rem)}
+  .proc-panel{position:static;top:auto}
+}
+
+/* ══════════ LA TRAMA · una sola, sobre toda la ventana ══════════
+   Un unico lienzo fijo detras del documento entero. No se corta por
+   secciones ni tiene bordes: lo que cambia al bajar es lo que las
+   particulas HACEN, no si estan o no estan. La vineta del fondo ya
+   apaga los extremos, asi que el texto de encima nunca cae sobre la
+   zona mas cargada. */
+.trama-global{
+  position:fixed;inset:0;width:100%;height:100%;
+  z-index:0;pointer-events:none;
+}
+/* El contenido va por encima de la trama y de la materia de fondo. */
+main,footer{position:relative;z-index:1}
+
+/* ══════════ LA BANDA DEL BRIEF ══════════
+   Va aparte de las tres tarjetas porque su cadencia es otra: las
+   publicaciones son de cuando hay algo que contar y esto es de cada
+   mañana, y esa diferencia es justo lo que prueba que hay un sistema
+   debajo.
+
+   Y va a sangre, de borde a borde, no dentro del contenedor: como
+   tarjeta competía con las tres de abajo y parecía una más. Una franja
+   que cruza la página entera no se confunde con nada. */
+.brf{
+  position:relative;display:block;text-decoration:none;
+  /* El cuadro se alinea con la retícula de la página. Antes su fondo y sus
+     dos filetes cruzaban la ventana de lado a lado mientras el resto del
+     contenido empieza en el gutter, así que era el único bloque que no
+     cuadraba con nada de lo que tenía encima o debajo. */
+  max-width:calc(var(--wrap) - var(--gutter) * 2);
+  margin:clamp(1.4rem,2.6vw,2rem) var(--gutter) clamp(1.8rem,3.2vw,2.6rem);
+  padding:clamp(1.6rem,3vw,2.4rem) clamp(1.2rem,2vw,1.8rem);
+  border-top:1px solid rgba(56,189,248,.3);
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,#172133,#11192C);
+  transition:background .3s var(--ease),border-color .3s var(--ease);
+}
+.brf:hover{background:linear-gradient(180deg,#1A2436,#121B2D);
+  border-top-color:rgba(56,189,248,.55)}
+/* El margen lo pone ya `.brf`, que es quien pinta el fondo: si lo pusieran
+   los dos, el contenido quedaría con el gutter aplicado dos veces. */
+.brf-in{position:relative;z-index:1}
+.brf-cab{display:flex;align-items:center;justify-content:space-between;gap:var(--e-3);
+  flex-wrap:wrap;margin-bottom:clamp(1.1rem,2vw,1.5rem)}
+.brf-eb{display:flex;align-items:center;gap:var(--e-1);font-size:var(--t-0);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin:0}
+.brf-fecha{font-size:var(--t-1);color:var(--ink-3)}
+
+/* Las cifras a la izquierda y el recuento por horizonte a la derecha. Los
+   dos son dato del propio brief: no hay ni una forma inventada. */
+/* Centrado vertical: la columna de horizontes es más alta que la fila de
+   cifras y con align-items:start el vacío quedaba entero bajo las cifras
+   (Carlos, 30-ago-2026, 22:45). */
+.brf-cuerpo{display:grid;grid-template-columns:minmax(0,1fr) auto;
+  gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+/* El minimo baja de 9rem a 7rem para que las cuatro cifras sigan en dos
+   columnas en los moviles estrechos. Con 9rem, por debajo de unos 360px de
+   ventana la rejilla caia a una sola columna y las cuatro se apilaban, que
+   es lo que rompia la tarjeta. Y las celdas se estiran a la misma altura
+   para que las etiquetas de dos lineas no descuadren la fila. */
+.brf-cifras{list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(7rem,1fr));gap:clamp(.9rem,2vw,1.6rem);
+  align-items:start}
+.brf-cifras li{display:flex;flex-direction:column}
+.brf-cifras b{display:block;font-family:var(--serif);font-weight:300;
+  font-size:var(--t-f2);
+  line-height:1.05;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.025em;
+  margin-bottom:var(--e-1);text-wrap:balance}
+.brf-cifras span{font-size:var(--t-0);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);
+  display:block;line-height:1.35;text-wrap:balance;margin-top:auto}
+
+/* El reparto por horizonte. La barra mide el numero de titulares sobre el
+   total del dia, asi que su largo es un dato y no una decoracion. */
+.brf-hz{list-style:none;margin:0;padding:0;min-width:clamp(9rem,14vw,12rem)}
+.brf-hz li{display:grid;grid-template-columns:1fr auto;gap:var(--e-1) var(--e-2);
+  align-items:baseline;padding:var(--e-1) 0}
+.brf-hz-n{font-size:var(--t-1);color:var(--ink-2)}
+.brf-hz-c{font-family:var(--serif);font-size:var(--t-3);color:var(--ink);
+  font-variant-numeric:tabular-nums}
+.brf-hz-b{grid-column:1/-1;height:2px;background:var(--line);position:relative;overflow:hidden}
+.brf-hz-b i{position:absolute;inset:0 auto 0 0;width:100%;transform-origin:left;
+  transform:scaleX(var(--p,0));background:linear-gradient(90deg,rgba(56,189,248,.5),var(--accent))}
+
+/* La lectura del día va debajo de las cifras y a todo el ancho del panel
+   (Carlos, 30-ago-2026, 22:45: encima y a 64ch dejaba una caja medio vacía).
+   Sigue un punto por encima del radar en cuerpo y color. */
+.brf-lectura{margin:clamp(1.2rem,2.2vw,1.7rem) 0 0;font-size:var(--t-2);line-height:1.62;
+  color:var(--ink-2);text-wrap:pretty}
+.brf-radar{margin:clamp(1.1rem,2vw,1.5rem) 0 0;font-size:var(--t-3);line-height:1.6;
+  color:var(--ink-2);max-width:64ch}
+.brf-pie{display:flex;align-items:center;justify-content:space-between;gap:var(--e-3);
+  margin-top:clamp(1.1rem,2vw,1.5rem);padding-top:var(--e-3);
+  border-top:1px solid var(--line);flex-wrap:wrap}
+.brf-n{font-size:var(--t-1);color:var(--ink-3)}
+/* Sin esto el enlace se parte en tres líneas dentro del pie de la banda,
+   porque el flex le da un ancho mínimo y el texto cabe justo. */
+.brf-leer{display:inline-flex;align-items:center;gap:var(--e-1);white-space:nowrap;flex:0 0 auto}
+@media (max-width:860px){
+  .brf-cuerpo{grid-template-columns:1fr;gap:var(--e-4)}
+  .brf-hz{min-width:0}
+}
+
+/* ══════════ RITMO VERTICAL ÚNICO ══════════
+   Carlos, 29-ago-2026 (20:04): "el espacio entre secciones consistente y
+   cómodo". Medido texto a texto a 1440 antes de esto: de 53 a 305 px según
+   la sección. Un solo valor de aire arriba y abajo para todas, declarado al
+   final de la hoja para que gane a los ajustes sueltos de cada sección
+   (misma especificidad, va el último). El hero no lleva relleno propio: su
+   aire hacia Servicios es el de Servicios. */
+:root{--y-sec:clamp(3.5rem,6.5vw,6rem)}
+/* !important a propósito: es la capa final del ritmo y tiene que ganar a
+   cualquier regla más específica de cada sección (p. ej. .proc con su
+   cabeza corta), medido: sin él El proceso se quedaba en 72px arriba. */
+.svc,.idea,.proc,.intel,.about,.faq,.cont{padding-top:var(--y-sec)!important;padding-bottom:var(--y-sec)!important}
+/* El caso respira menos que el resto (Carlos, 30-ago-2026, 20:54: «mucho
+   espacio hasta Una visión clara», «demasiado espacio hasta El proceso»).
+   Son los dos huecos que rodean esta sección, y con el ritmo único medían
+   exactamente el doble de --y-sec: 187 px a 1440, 160 a 1229, 112 a 375. El
+   ritmo de la página no se toca —lo fijó él mismo el 29-ago— y solo se acorta
+   el lado del caso, con lo que los dos huecos bajan a 145, 124 y 88.
+
+   AVISO para quien venga detrás: este bloque final gana con !important a
+   cualquier ajuste de `.idea`, `.proc` o `.svc` de más arriba. Los retoques
+   por sección del 30-ago (17:12) llevan desde entonces sin efecto ninguno, y
+   volver a tocarlos allí no cambia un píxel: se cambia aquí. */
+:root{--y-caso:clamp(2rem,3.6vw,3.2rem)}
+.idea{padding-top:var(--y-caso)!important;padding-bottom:var(--y-caso)!important}
+/* Sin filetes entre secciones (Carlos, 29-ago-2026, 20:11 y 20:25): ni el
+   borde de sección ni el pseudoelemento de 1px con degradado que el taller
+   pintaba al arrancar cada bloque (medido: era section::after). */
+.intel,.faq,.proc,.about,.cont{border-top:0!important}
+.proc::after,.intel::after,.about::after,.faq::after,.cont::after{content:none!important}
+
+
+
+/* El estilo viaja con el motor a propósito. Cuando vivía suelto en la
+   hoja de cada página, bastaba con olvidarlo en una para que el lienzo
+   se pintara a su tamaño intrínseco — ancho por densidad de pantalla —
+   y el documento entero desbordase exactamente ese factor. Pasó en la
+   página del brief: 1800px de scroll sobre 1440 de ventana, en los seis
+   anchos y siempre por 1,25, que era justo el devicePixelRatio. */
+/* El selector lleva `body >` y el nombre de la etiqueta a propósito, y no
+   sobra ninguno de los dos: la capa de acabado trae una regla
+   `body > *:not(.fondo):not(.site-header):not(.lp-bar):not(.w-bar){position:relative;z-index:1}` con especificidad
+   (0,1,1), que gana a un `.trama-global` a secas (0,1,0). Medido: en las
+   landings, en Wealth y en el brief el lienzo salía `relative`, así que se
+   iba con el scroll y solo cubría la primera pantalla — el mismo efecto de
+   aparecer y desaparecer que esta capa existe para evitar. La home no lo
+   sufría porque su copia del acabado es anterior a esa regla, y por eso la
+   comprobación de tamaño no lo delataba: en el primer viewport un lienzo
+   fijo y uno relativo miden exactamente lo mismo. */
+body > canvas.trama-global{
+  position:fixed;inset:0;width:100%;height:100%;
+  z-index:0;pointer-events:none;
+}
+/* Y el contenido, por encima de la trama y de la materia de fondo. */
+/* Y el contenido, por encima de la trama y de la materia de fondo. Las tres
+   barras quedan FUERA de esta lista a proposito: entraban en ella y su
+   position:sticky se perdia, asi que la cabecera se iba con el scroll y
+   desaparecia durante los ocho mil pixeles siguientes de pagina (medido:
+   top -2.978 tras 3.000px). No necesitan relative para ganarle a la trama,
+   porque sticky ya crea contexto de apilamiento propio. */
+main,footer{position:relative;z-index:1}
+
+
+/* Copia de `acabado.css`, puesta aquí por `inyectar-tokens.js`.
+     No la edites en este fichero: se pisa en la siguiente pasada. */
+/* ⟦IMPRESO⟧ — este bloque lo copia `inyectar-tokens.js` a la home,
+   que lleva su propia copia de esta capa por estar escrita a mano.
+   Se edita AQUÍ. */
+/* ══════════ 8 · IMPRESO ══════════
+   No es "ocultar el fondo y ya". Es la regla de la casa aplicada donde
+   toca: **horizontal y en pantalla, oscuro; vertical y en papel, claro**.
+   Una hoja A4 es vertical, así que al imprimir esta web se comporta como
+   se comportan los documentos de la firma, no como una captura de sí
+   misma.
+
+   No es una hipótesis de que alguien imprima: el aviso legal y la política
+   de privacidad existen para guardarlos, y un cliente que quiera el PDF de
+   sus condiciones lo saca de aquí. Sin esto le salen sesenta páginas de
+   azul noche a 0,10 € de tinta cada una, o —peor y más probable— el
+   navegador le fuerza el ahorro de tinta y le entrega texto gris claro
+   sobre blanco, ilegible, que es un documento legal que no se puede leer.
+
+   Se hace invirtiendo los TOKENS y no regla por regla: todo lo que está
+   construido sobre ellos se da la vuelta solo, y lo que se escribió con un
+   color literal es justo lo que hay que encontrar y arreglar. */
+@media print{
+  :root{
+    --ground:#fff; --surface:#fff;
+    --ink:#0C1E38; --ink-2:#1F2937; --ink-3:#374151;
+    /* El cian de pantalla sobre blanco da 1,8:1: sobre papel deja de ser un
+       acento y pasa a ser un subrayado que no se lee. Se sustituye por el
+       azul de la casa, que es el mismo gesto con el contraste que el papel
+       exige. */
+    --accent:#0C1E38;
+    /* El texto sobre el acento se invierte con él, que es justo lo que no
+       podía hacer mientras era un literal repetido en ocho ficheros. */
+    --sobre-accent:#fff;
+    --line:rgba(12,30,56,.22); --line-2:rgba(12,30,56,.34);
+  }
+  /* La materia de fondo y el lienzo no se imprimen. El lienzo, además,
+     saldría como una imagen enorme del último fotograma pintado. */
+  .fondo, canvas.trama-global, .trama-global{display:none!important}
+
+  body{background:#fff;color:var(--ink-2)}
+
+  /* Los fondos escritos con un color literal no se enteran de que el tema
+     ha cambiado. El pie es el único que quedaba, y era el peor sitio: sobre
+     su azul casi negro el texto invertido daba 1,84:1. Se neutraliza aquí
+     en vez de cambiarlo en el origen porque en pantalla ese azul propio es
+     intencionado —separa el pie del cuerpo—, y lo que sobra es en papel. */
+  .pie, footer[class*="pie"]{background:#fff!important;color:var(--ink-2)}
+  .pie a{color:var(--ink)}
+
+  /* El andamiaje del prototipo no se imprime. Estas barras son el
+     conmutador entre variantes, no contenido: existen para trabajar aquí y
+     no llegan a producción. En papel serían una fila de pestañas muertas. */
+  .lg-bar, .lp-bar, .prev-bar{display:none!important}
+
+  /* Los navegadores no imprimen fondos salvo que el usuario lo pida, así
+     que un botón con fondo de color sale como texto suelto sin nada
+     alrededor. Se le devuelve el borde para que siga pareciendo un botón.
+     Se cubren también los CTA que no llevan la clase `.btn-primary` —el del
+     héroe y el del cierre de servicios— porque comparten el mismo fondo de
+     acento por otra regla y tenían el mismo problema. */
+  .btn-primary, [class*="-cta"]{
+    background:transparent;color:var(--ink);border:1px solid var(--ink)}
+
+  /* Cortes: un título no se queda solo al pie de una hoja, y una tabla no
+     se parte dejando su cabecera en la página anterior. */
+  h1,h2,h3{break-after:avoid-page;page-break-after:avoid}
+  tr,li,figure,blockquote{break-inside:avoid-page;page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  /* Un enlace impreso pierde su destino: en un documento legal eso importa,
+     porque la mitad de los enlaces son a la AEPD o a otra página de
+     condiciones. Se escribe al lado, y solo los que salen fuera: los
+     internos no llevan a ningún sitio en papel. */
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:var(--t-1);color:var(--ink-3);word-break:break-all}
+
+  /* EL REVELADO SE DA POR HECHO EN PAPEL. Esto no es una precaución: sin
+     esta regla, 28 grupos de texto de la home y las landings salían
+     invisibles —los pasos del proceso, la tabla de encargos, las dos cifras
+     del caso— y ninguna medición de contraste lo veía, porque un texto a
+     opacidad 0 tiene el color y el fondo perfectos.
+
+     El comentario de la regla `[data-entra]` cuenta que una revisión ya
+     avisó del riesgo de "página invisible" y que se descartó con razón: sin
+     JavaScript el atributo no llega a escribirse. Al imprimir entra por otra
+     puerta. El JavaScript sí corre y escribe el atributo, pero solo añade
+     `.dentro` a lo que llegó a verse en pantalla; el papel, en cambio,
+     imprime el documento entero, incluido todo lo que nunca se mostró. */
+  [data-entra],[data-entra="titular"]{
+    opacity:1!important;transform:none!important;filter:none!important;
+    clip-path:none!important;transition:none!important;
+  }
+
+  /* Nada de movimiento en papel, y nada pegajoso: una cabecera sticky se
+     imprime clavada en la primera hoja y tapa lo que hubiera debajo. */
+  *{animation:none!important;transition:none!important}
+  header,.site-header,[class*="sticky"]{position:static!important}
+}
+/* ⟦/IMPRESO⟧ */
