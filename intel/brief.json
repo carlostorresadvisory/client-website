@@ -1,0 +1,37 @@
+{
+ "fecha": "2026-08-31",
+ "lectura": "Las pymes españolas cambian de manos a 5,4 veces EBITDA de media, con software y salud en 7,7 veces y la industria entre 3,5 y 4,8. El BCE prepara una subida de tipos para el 10 de septiembre, y el primer semestre cierra en España con 50.474 millones en 1.485 operaciones, un 15 % menos. Con 540.000 empresarios ante el relevo antes de 2030 y compradores más selectivos, llegar al mercado con las cifras ordenadas vale más que nunca.",
+ "cifras": [
+  {
+   "etiqueta": "EV/EBITDA medio pymes España",
+   "valor": "5,4x"
+  },
+  {
+   "etiqueta": "M&A España 1S26",
+   "valor": "50.474M"
+  },
+  {
+   "etiqueta": "IPC España agosto",
+   "valor": "4,3%"
+  },
+  {
+   "etiqueta": "Relevos empresariales a 2030",
+   "valor": "540.000"
+  }
+ ],
+ "horizontes": [
+  {
+   "horizonte": "Hoy",
+   "n": 3
+  },
+  {
+   "horizonte": "Esta semana",
+   "n": 6
+  },
+  {
+   "horizonte": "Este mes",
+   "n": 5
+  }
+ ],
+ "radar": null
+}
