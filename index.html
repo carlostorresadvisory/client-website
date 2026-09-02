@@ -25,7 +25,7 @@
   <meta name="twitter:image" content="https://www.ctadvisory.es/og-card.png" />
   <link rel="preload" href="/newsreader.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/librefranklin-400.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/home.css?v=2" />
+  <link rel="stylesheet" href="/home.css?v=3" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#proceso">El proceso</a></li>
         <li><a href="#sobre-mi">Cómo trabajo</a></li>
-        <li><span class="np-cab np-inerte" aria-disabled="true">CT Intelligence<span class="live" aria-hidden="true"></span></span></li>
+        <li><a class="np-cab" href="/intelligence/">CT Intelligence<span class="live" aria-hidden="true"></span></a></li>
       </ul>
       <div class="nav-actions">
         <a class="header-phone" href="tel:+34664022201" aria-label="Llamar al +34 664 022 201">
@@ -524,16 +524,16 @@
    <div class="intel-panel">
     <div class="intel-firma">
       <i style="--retardo:0ms"></i><i style="--retardo:80ms"></i><i style="--retardo:160ms"></i>
-      <i style="--retardo:240ms"></i><i style="--retardo:320ms"></i><i style="--retardo:400ms"></i>
+      <i style="--retardo:240ms"></i><i style="--retardo:320ms"></i>
     </div>
-    <div class="intel-cab" aria-disabled="true">
+    <a class="intel-cab" href="/intelligence/">
       <span class="intel-cab-txt">
         <span class="svc-eb intel-eb">CT Intelligence<span class="live" aria-hidden="true"></span></span>
       </span>
-      <span class="intel-ir">Próximamente<svg class="flecha" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
-    </div>
+      <span class="intel-ir">Entrar<svg class="flecha" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
+    </a>
 
-    <div class="brf" aria-disabled="true" hidden>
+    <div class="brf" hidden>
     <div class="brf-in">
       <div class="brf-cab">
         <p class="brf-eb">Lectura de mercado<span class="live" aria-hidden="true"></span></p>
@@ -544,10 +544,14 @@
         <ul class="brf-hz"></ul>
       </div>
       <p class="brf-lectura" hidden></p>
-      <p class="brf-radar" hidden></p>
+      <div class="brf-radar" hidden>
+        <p class="brf-radar-eb">Operaciones y mercado de empresas</p>
+        <p class="brf-radar-txt" hidden></p>
+        <ul class="brf-radar-l" hidden></ul>
+      </div>
       <div class="brf-pie">
         <span class="brf-n"></span>
-        <span class="sub-link brf-leer">Próximamente</span>
+        <a class="sub-link brf-leer" href="/intelligence/#lectura">Leer en CT Intelligence<svg class="flecha" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
       </div>
     </div>
     </div>
@@ -568,39 +572,39 @@
       </a>
 
       <div class="intel-col">
-        <div class="ci" aria-disabled="true">
-          <p class="ci-cad"><b>Permanente</b> · Formación</p>
-          <h3 class="ci-t" style="font-size:var(--t-4)">Entender antes de decidir</h3>
+        <a class="ci" href="/intelligence/#guias">
+          <p class="ci-cad"><b>Guías</b> · Invertir por cuenta propia</p>
+          <h3 class="ci-t" style="font-size:var(--t-4)">Seis guías, de las clases de activo al reparto de la cartera</h3>
           <ul class="ci-clases">
-            <li style="--p:var(--c-rv)">Mercados financieros</li>
-            <li style="--p:var(--c-oro)">Corporate finance</li>
-            <li style="--p:var(--accent)">Inteligencia artificial</li>
+            <li style="--p:var(--c-rv)">Cinco clases de activo</li>
+            <li style="--p:var(--c-rf)">Riesgo y cobertura</li>
+            <li style="--p:var(--accent)">Comprar y repartir</li>
           </ul>
           <div class="ci-pie">
-            <span class="ci-fecha">Tres temas</span>
-            <span class="sub-link">Próximamente</span>
+            <span class="ci-fecha">Guía 2 disponible</span>
+            <span class="sub-link">Ver las guías<svg class="flecha" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
           </div>
-        </div>
+        </a>
 
-        <div class="ci" aria-disabled="true">
+        <a class="ci" href="/intelligence/herramienta/">
           <p class="ci-cad"><b>Herramienta</b> · Reparto de cartera</p>
           <h3 class="ci-t" style="font-size:var(--t-4)">Para invertir por su cuenta</h3>
           <div class="ci-w">
-            <svg class="ci-donut" viewBox="0 0 160 160" role="img" aria-label="Reparto de ejemplo entre cinco clases de activo: renta variable global 46%, renta fija 28%, monetario 12%, inmobiliario cotizado 9% y oro 5%">
+            <svg class="ci-donut" viewBox="0 0 160 160" role="img" aria-label="Reparto de ejemplo entre cinco clases de activo: renta variable global 46 %, renta fija 28 %, monetario 12 %, inmobiliario 9 % y materias primas 5 %">
       <circle class="ci-arco" r="62" cx="80" cy="80" stroke="var(--c-rv)" stroke-dasharray="173.68 215.88" stroke-dashoffset="-0.00" style="--retardo:90ms"></circle>
       <circle class="ci-arco" r="62" cx="80" cy="80" stroke="var(--c-inm)" stroke-dasharray="33.98 355.58" stroke-dashoffset="-176.08" style="--retardo:160ms"></circle>
-      <circle class="ci-arco" r="62" cx="80" cy="80" stroke="var(--c-oro)" stroke-dasharray="18.88 370.68" stroke-dashoffset="-212.46" style="--retardo:230ms"></circle>
+      <circle class="ci-arco" r="62" cx="80" cy="80" stroke="var(--c-mat)" stroke-dasharray="18.88 370.68" stroke-dashoffset="-212.46" style="--retardo:230ms"></circle>
       <circle class="ci-arco" r="62" cx="80" cy="80" stroke="var(--c-rf)" stroke-dasharray="105.72 283.84" stroke-dashoffset="-233.73" style="--retardo:300ms"></circle>
       <circle class="ci-arco" r="62" cx="80" cy="80" stroke="var(--c-mon)" stroke-dasharray="45.31 344.25" stroke-dashoffset="-341.85" style="--retardo:370ms"></circle>
             </svg>
-            <p class="ci-w-leyenda"><b>Qué reparto sale de sus respuestas</b>Un reparto entre las cinco clases de activo que reparte la herramienta, con el porqué de cada tramo. Sin nombrar ningún producto.</p>
+            <p class="ci-w-leyenda"><b>Un reparto de ejemplo</b>Diez preguntas sobre plazo, situación y tolerancia al riesgo, y un reparto en cinco clases de activo con el porqué de cada tramo. Sin nombrar ningún producto.</p>
           </div>
           <p class="ci-aviso">Uso educativo. No es asesoramiento ni una recomendación de inversión.</p>
           <div class="ci-pie">
-            <span class="ci-fecha">Sin coste</span>
-            <span class="sub-link">Próximamente</span>
+            <span class="ci-fecha">Sin coste · Dos minutos</span>
+            <span class="sub-link">Empezar<svg class="flecha" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <p class="intel-aviso">Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de inversión.</p>
@@ -733,7 +737,7 @@
     <div class="pie-in">
       <div class="pie-marca">
         <img class="pie-logo" src="/logo-ct.png" alt="CT Advisory">
-        <p>Criterio independiente.</p>
+        <p>Ingeniería financiera e inteligencia artificial.</p>
       </div>
       <ul class="pie-nav">
         <li><a href="#servicios">Servicios</a></li>
@@ -752,8 +756,8 @@
 </main>
 
 <canvas class="trama-global" aria-hidden="true"></canvas>
-<script src="/trama.js?v=1" defer></script>
-<script src="/home.js?v=2" defer></script>
-<script src="/contacto.js?v=1" defer></script>
+<script src="/trama.js?v=3" defer></script>
+<script src="/home.js?v=3" defer></script>
+<script src="/contacto.js?v=3" defer></script>
 </body>
 </html>
