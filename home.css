@@ -1319,9 +1319,8 @@ p,li,summary,dd,label,.pp-x,.pp-pie,.puente-n{text-wrap:pretty}
   .intel-firma i:nth-child(1){background:var(--c-rv)}
   .intel-firma i:nth-child(2){background:var(--c-rf)}
   .intel-firma i:nth-child(3){background:var(--c-inm)}
-  .intel-firma i:nth-child(4){background:var(--c-oro)}
-  .intel-firma i:nth-child(5){background:var(--c-mat)}
-  .intel-firma i:nth-child(6){background:var(--c-mon)}
+  .intel-firma i:nth-child(4){background:var(--c-mat)}
+  .intel-firma i:nth-child(5){background:var(--c-mon)}
 
   /* Asimetrica a proposito: el analisis de esta semana es lo que prueba
      que la maquina esta viva hoy, asi que ocupa mas. */
@@ -2221,8 +2220,14 @@ main,footer{position:relative;z-index:1}
    Sigue un punto por encima del radar en cuerpo y color. */
 .brf-lectura{margin:clamp(1.2rem,2.2vw,1.7rem) 0 0;font-size:var(--t-2);line-height:1.62;
   color:var(--ink-2);text-wrap:pretty}
-.brf-radar{margin:clamp(1.1rem,2vw,1.5rem) 0 0;font-size:var(--t-3);line-height:1.6;
-  color:var(--ink-2);max-width:64ch}
+.brf-radar{margin:clamp(1.1rem,2vw,1.5rem) 0 0;padding-top:var(--e-3);border-top:1px solid var(--line);
+  font-size:var(--t-3);line-height:1.6;color:var(--ink-2)}
+.brf-radar-eb{font-size:var(--t-0);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0 0 var(--e-2)}
+.brf-radar-txt{margin:0;max-width:64ch}
+.brf-radar-l{list-style:none;margin:0;padding:0;display:grid;gap:var(--e-2)}
+.brf-radar-l li{display:flex;flex-direction:column;gap:2px;max-width:64ch}
+.brf-op-f{font-size:var(--t-0);color:var(--ink-3)}
+.brf-radar-txt[hidden],.brf-radar-l[hidden]{display:none!important}
 .brf-pie{display:flex;align-items:center;justify-content:space-between;gap:var(--e-3);
   margin-top:clamp(1.1rem,2vw,1.5rem);padding-top:var(--e-3);
   border-top:1px solid var(--line);flex-wrap:wrap}

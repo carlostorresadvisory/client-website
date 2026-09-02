@@ -844,13 +844,28 @@ var COPY = {
     if (!Array.isArray(b.cifras) || !b.cifras.length || b.cifras.length > 8) return false;
     for (var i = 0; i < b.cifras.length; i++) {
       if (!b.cifras[i] || !texto(b.cifras[i].etiqueta, 60) || !texto(b.cifras[i].valor, 30)) return false;
+      /* Fuente opcional por cifra (productor nuevo, 2-sep-2026): nombre del medio, nunca URL. */
+      if (b.cifras[i].fuente !== null && b.cifras[i].fuente !== undefined && !texto(b.cifras[i].fuente, 60)) return false;
     }
     if (!Array.isArray(b.horizontes) || !b.horizontes.length || b.horizontes.length > 3) return false;
     for (var j = 0; j < b.horizontes.length; j++) {
       var h = b.horizontes[j];
       if (!h || !texto(h.horizonte, 20) || typeof h.n !== 'number' || h.n < 0 || h.n !== Math.floor(h.n)) return false;
     }
-    if (b.radar !== null && b.radar !== undefined && !texto(b.radar, 600)) return false;
+    /* Radar: hasta el 2-sep-2026 era un texto; el productor nuevo manda null
+       o una lista de hasta 6 operaciones {titular, fuente|null}. Se aceptan
+       las dos formas mientras convivan; null es el estado normal de un día
+       sin operaciones. */
+    if (b.radar !== null && b.radar !== undefined) {
+      if (Array.isArray(b.radar)) {
+        if (b.radar.length > 6) return false;
+        for (var r = 0; r < b.radar.length; r++) {
+          var op = b.radar[r];
+          if (!op || !texto(op.titular, 200)) return false;
+          if (op.fuente !== null && op.fuente !== undefined && !texto(op.fuente, 60)) return false;
+        }
+      } else if (!texto(b.radar, 600)) return false;
+    }
     /* La lectura del dia (Carlos, 30-ago-2026, 20:55: la queria escrita, no
        solo cifras). Opcional: si falta o llega vacia el panel sale como
        siempre; si llega con etiquetas o con un enlace, el brief entero se
@@ -886,14 +901,36 @@ var COPY = {
     var lectura = brf.querySelector('.brf-lectura');
     if (b.lectura) { lectura.textContent = b.lectura; lectura.hidden = false; }
     else { lectura.textContent = ''; lectura.hidden = true; }
+    /* Operaciones y mercado de empresas, separadas de la lectura general
+       (Carlos, 2-sep-2026): lista con titular y fuente; el texto suelto solo
+       para briefs del formato viejo. */
     var radar = brf.querySelector('.brf-radar');
-    if (b.radar) {
-      radar.textContent = b.radar.length > 230 ? b.radar.slice(0, 227).replace(/[\s,;.]+$/, '') + '…' : b.radar;
-      radar.hidden = false;
+    var radarTxt = radar.querySelector('.brf-radar-txt'), radarL = radar.querySelector('.brf-radar-l');
+    radarTxt.textContent = ''; radarL.textContent = '';
+    if (Array.isArray(b.radar) && b.radar.length) {
+      b.radar.forEach(function(op){
+        var li = el('li'); li.appendChild(el('span', 'brf-op', op.titular));
+        if (op.fuente) li.appendChild(el('small', 'brf-op-f', op.fuente));
+        radarL.appendChild(li);
+      });
+      radarTxt.hidden = true; radarL.hidden = false; radar.hidden = false;
+    } else if (typeof b.radar === 'string' && b.radar.replace(/\s+/g, '')) {
+      radarTxt.textContent = b.radar.length > 230 ? b.radar.slice(0, 227).replace(/[\s,;.]+$/, '') + '…' : b.radar;
+      radarTxt.hidden = false; radarL.hidden = true; radar.hidden = false;
     } else {
       radar.hidden = true;
     }
-    brf.querySelector('.brf-n').textContent = total + ' titulares de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.';
+    /* Las fuentes del día, si el productor las manda (cifras y operaciones):
+       así «contrastados uno a uno» lleva nombres detrás, no una promesa. */
+    var fuentes = [];
+    function anotar(f){
+      if (typeof f !== 'string') return;
+      f = f.replace(/^\s+|[\s.]+$/g, '');
+      if (f && fuentes.indexOf(f) === -1) fuentes.push(f);
+    }
+    b.cifras.forEach(function(c){ anotar(c.fuente); });
+    if (Array.isArray(b.radar)) b.radar.forEach(function(op){ anotar(op.fuente); });
+    brf.querySelector('.brf-n').textContent = total + ' titulares de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.' + (fuentes.length ? ' Fuentes de hoy: ' + fuentes.join(', ') + '.' : '');
     /* Los tres puntos de directo de la página (menú, cabecera del panel y
        eyebrow del brief) siguen la misma regla: un fin de semana, el menú
        no puede seguir latiendo sobre la lectura del viernes (hallazgo de la
@@ -940,16 +977,12 @@ var COPY = {
   var mq = window.matchMedia('(max-width:1000px)');
   var TRAMAS = ['orbita', 'embudo', 'onda'];
 
-  /* Que fases estan abiertas. En movil, SOLO LA PRIMERA: Carlos, 31-ago-2026
-     a las 20:44 («3. Si» a "primera tarjeta abierta, resto cerradas"), que
-     sustituye a su «no quiero nada abierto por defecto en movil» de esa misma
-     manana (y aquella a la del 29-ago de arrancar en "Ejecutar"). El porque:
-     la primera abierta ensena con el ejemplo que las tarjetas se despliegan
-     (con todo cerrado, parte del publico 55-65 ni intuye que se puede) y da
-     sustancia al primer golpe de vista sin el muro de texto de todo abierto.
-     En escritorio se copia el marcado (ir(1) ya ha dejado la fase 1 activa):
-     un tablist sin seleccion no es un estado valido. */
-  var abierta = tabs.map(function(t, i){ return mq.matches ? i === 0 : t.classList.contains('is-active'); });
+  /* Que fases estan abiertas. En movil, ninguna: Carlos, 31-ago-2026, «no
+     quiero nada abierto por defecto en movil», que sustituye a su decision
+     del 29-ago de arrancar en "Ejecutar". En escritorio se copia el marcado
+     (ir(1) ya ha dejado la fase 1 activa): un tablist sin seleccion no es
+     un estado valido. */
+  var abierta = tabs.map(function(t){ return mq.matches ? false : t.classList.contains('is-active'); });
   /* Los roles de pestana solo valen en escritorio: en el acordeon varias
      fases pueden estar abiertas a la vez y un tablist con dos seleccionadas
      es marcado invalido. Se guardan para poder devolverlos al cruzar. */
