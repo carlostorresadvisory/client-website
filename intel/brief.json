@@ -1,37 +1,60 @@
 {
- "fecha": "2026-08-31",
- "lectura": "Las pymes españolas cambian de manos a 5,4 veces EBITDA de media, con software y salud en 7,7 veces y la industria entre 3,5 y 4,8. El BCE prepara una subida de tipos para el 10 de septiembre, y el primer semestre cierra en España con 50.474 millones en 1.485 operaciones, un 15 % menos. Con 540.000 empresarios ante el relevo antes de 2030 y compradores más selectivos, llegar al mercado con las cifras ordenadas vale más que nunca.",
- "cifras": [
-  {
-   "etiqueta": "EV/EBITDA medio pymes España",
-   "valor": "5,4x"
-  },
-  {
-   "etiqueta": "M&A España 1S26",
-   "valor": "50.474M"
-  },
-  {
-   "etiqueta": "IPC España agosto",
-   "valor": "4,3%"
-  },
-  {
-   "etiqueta": "Relevos empresariales a 2030",
-   "valor": "540.000"
+  "fecha": "2026-09-03",
+  "lectura": "",
+  "cifras": [
+    {
+      "etiqueta": "Inflación eurozona",
+      "valor": "3,3%",
+      "fuente": "Eurostat"
+    },
+    {
+      "etiqueta": "Inflación España",
+      "valor": "4,5%",
+      "fuente": "Eurostat"
+    },
+    {
+      "etiqueta": "Facilidad depósito BCE (proyectada sep)",
+      "valor": "2,5%",
+      "fuente": "Informes de mercado"
+    },
+    {
+      "etiqueta": "Tipos BCE 2027 (proyección Danske)",
+      "valor": "2,5%",
+      "fuente": "Danske Bank"
+    },
+    {
+      "etiqueta": "M&A España 1S2026",
+      "valor": "50.474 M€",
+      "fuente": "TTR Data"
+    },
+    {
+      "etiqueta": "PE mid-market España 1S2026",
+      "valor": "1.446 M€",
+      "fuente": "Datos agregados"
+    }
+  ],
+  "horizontes": [
+    {
+      "horizonte": "Hoy",
+      "n": 3
+    },
+    {
+      "horizonte": "Esta semana",
+      "n": 3
+    },
+    {
+      "horizonte": "Este mes",
+      "n": 5
+    }
+  ],
+  "radar": null,
+  "elaboracion": {
+    "investigacion": "Gemini",
+    "redaccion": [
+      "Nemotron",
+      "MiniMax"
+    ],
+    "revision": "Nemotron",
+    "texto": "Investigación: Gemini · Redacción: Nemotron y MiniMax · Revisión: Nemotron"
   }
- ],
- "horizontes": [
-  {
-   "horizonte": "Hoy",
-   "n": 3
-  },
-  {
-   "horizonte": "Esta semana",
-   "n": 6
-  },
-  {
-   "horizonte": "Este mes",
-   "n": 5
-  }
- ],
- "radar": null
 }
