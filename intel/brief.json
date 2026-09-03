@@ -1,6 +1,6 @@
 {
   "fecha": "2026-09-03",
-  "lectura": "",
+  "lectura": "La inflación en la eurozona se sitúa en el 3,3% y en España en el 4,5%, lo que presiona al BCE a considerar un aumento de tipos, con el mercado descuentando una subida de 25 puntos básicos para septiembre. Paralelamente, el mercado de fusiones y adquisiciones en España cierra el primer semestre de 2026 con un volumen de 50.474 millones de euros, mostrando resistencia en valor a pesar de una ligera caída en el número de operaciones.",
   "cifras": [
     {
       "etiqueta": "Inflación eurozona",
@@ -54,7 +54,7 @@
       "Nemotron",
       "MiniMax"
     ],
-    "revision": "Nemotron",
-    "texto": "Investigación: Gemini · Redacción: Nemotron y MiniMax · Revisión: Nemotron"
+    "revision": "MiniMax",
+    "texto": "Investigación: Gemini · Redacción: Nemotron y MiniMax · Revisión: MiniMax"
   }
 }
