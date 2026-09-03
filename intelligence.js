@@ -238,7 +238,12 @@ window.CT_ICONOS = {"rv":"<svg class=\"ico\" viewBox=\"0 0 20 20\" aria-hidden=\
     }
     b.cifras.forEach(function(c){ anotar(c.fuente); });
     if (Array.isArray(b.radar)) b.radar.forEach(function(op){ anotar(op.fuente); });
-    brf.querySelector('.brf-n').textContent = total + ' titulares de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.' + (fuentes.length ? ' Fuentes de hoy: ' + fuentes.join(', ') + '.' : '');
+    brf.querySelector('.brf-n').textContent = total + ' titulares de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.' + (fuentes.length ? ' Fuentes de hoy: ' + fuentes.join(', ') + '.' : '')
+      /* Quién lo ha escrito, si el brief lo dice (Carlos, 3-sep-2026: «que indique el modelo»).
+         Va aquí y no en un bloque aparte porque es de la misma naturaleza que las fuentes: de
+         dónde sale lo que se lee. El texto lo compone el motor (brief-publico.js#elaboracionDesde),
+         así que la web no decide cómo se nombra ningún modelo, solo lo pinta si viene. */
+      + (b.elaboracion && b.elaboracion.texto ? ' ' + b.elaboracion.texto + '.' : '');
     /* Los tres puntos de directo de la página (menú, cabecera del panel y
        eyebrow del brief) siguen la misma regla: un fin de semana, el menú
        no puede seguir latiendo sobre la lectura del viernes (hallazgo de la
