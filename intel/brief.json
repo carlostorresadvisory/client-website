@@ -1,6 +1,6 @@
 {
   "fecha": "2026-09-03",
-  "lectura": "La inflación se mantiene elevada, con un 3,3% en la eurozona y un 4,5% en España, mientras el mercado descuenta una subida de 25pb del BCE el 10-sept y Danske Bank proyecta una facilidad de depósito del 2,5% durante 2027, lo que apunta a tipos altos prolongados. En España, el valor de las operaciones corporativas resistió en el 1S2026, con 50.474 M€ movilizados pese a una caída del número de operaciones, y el private equity mid-market alcanzó 1.446 M€, mientras los costes energéticos y la mayor carga regulatoria añaden presión a las empresas.",
+  "lectura": "",
   "cifras": [
     {
       "etiqueta": "Inflación eurozona",
@@ -54,7 +54,7 @@
       "Nemotron",
       "MiniMax"
     ],
-    "revision": "Nemotron",
-    "texto": "Investigación: Gemini · Redacción: Nemotron y MiniMax · Revisión: Nemotron"
+    "revision": "MiniMax",
+    "texto": "Investigación: Gemini · Redacción: Nemotron y MiniMax · Revisión: MiniMax"
   }
 }
