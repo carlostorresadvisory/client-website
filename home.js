@@ -71,13 +71,25 @@ var COPY = {
   var padre  = nav.querySelector('li.has-panel');
   var cabeza = padre ? padre.querySelector('.np-cab') : null;
   var movil  = window.matchMedia('(max-width:1000px)');
-  /* Donde no hay ratón de verdad, el hover no sirve para abrir ni —lo que
-     importa— para cerrar. Ahí el clic manda a cualquier ancho. */
-  var conRaton = window.matchMedia('(hover:hover)');
+  /* En escritorio, con la cabecera ya convertida en `<a href>` real (CT
+     Intelligence, desde que tiene página propia: 2-sep-2026), el clic navega
+     sin más — nada que interceptar. El panel es solo un adelanto de lo que
+     hay dentro, y ya se ve al pasar el ratón o al enfocar con teclado por CSS
+     (`:hover`, `:focus-within`), sin necesitar este interruptor.
+
+     En el menú compacto (móvil) SÍ hace falta seguir interceptando: ahí el
+     panel no se abre por `:hover` — no hay ratón — sino por la clase
+     `.is-open`, y «CT Intelligence» tiene que desplegar primero sus tres
+     enlaces (Lectura de mercado, Guías, Herramienta), igual que hacía cuando
+     la cabecera era un `<button>` sin destino propio. Condicionar todo el
+     bloque a que la cabecera NO tuviera `href` (como antes) apagaba también
+     esto: con el `<a href>` real puesto, el acordeón de móvil dejó de
+     abrirse y sus tres enlaces quedaron inalcanzables desde la portada
+     (hallazgo de la revisión adversarial del commit 7501c93, 3-sep-2026). */
   if (cabeza){
     cabeza.addEventListener('click', function(e){
+      if (!movil.matches) return;               // escritorio: el enlace navega sin más
       e.preventDefault();
-      if (!movil.matches && conRaton.matches) { cabeza.blur(); return; }
       var abierto = padre.classList.toggle('is-open');
       cabeza.setAttribute('aria-expanded', String(abierto));
     });
@@ -885,19 +897,45 @@ var COPY = {
     b.cifras.slice(0, 4).forEach(function(c){
       var li = el('li'); li.appendChild(el('b', null, c.valor)); li.appendChild(el('span', null, c.etiqueta)); ulC.appendChild(li);
     });
-    /* El largo de cada barra es el número de titulares de ese horizonte
-       sobre el mayor de los tres: mide el dato, no rellena un hueco. */
-    var ulH = brf.querySelector('.brf-hz'); ulH.textContent = '';
-    var mayor = 1, total = 0;
-    b.horizontes.forEach(function(h){ if (h.n > mayor) mayor = h.n; total += h.n; });
-    b.horizontes.forEach(function(h){
-      var li = el('li');
-      li.appendChild(el('span', 'brf-hz-n', h.horizonte));
-      li.appendChild(el('span', 'brf-hz-c', String(h.n)));
-      var barra = el('span', 'brf-hz-b'); var i = document.createElement('i');
-      i.style.setProperty('--p', (h.n / mayor).toFixed(3)); barra.appendChild(i); li.appendChild(barra);
-      ulH.appendChild(li);
-    });
+    /* El radar de lugares reemplaza las barras Hoy/Esta semana/Este mes
+       (Carlos, 4-sep-2026: "sustituir la visual de hoy esta semana y este
+       mes por el radar que ideamos ayer" -- el reparto por horizonte no
+       decía DÓNDE pasa nada). intel-geo.js resuelve los lugares del propio
+       texto del brief, sin IA ni red; el color de cada punto es el frente
+       dominante, nunca la única forma de saberlo (cada punto lleva su
+       aria-label/title en texto, ver intel-radar.js). `total` se sigue
+       necesitando para el pie ("N titulares..."), aunque ya no se pinte
+       ninguna barra. */
+    var total = 0;
+    b.horizontes.forEach(function(h){ total += h.n; });
+    /* Un campo roto (p. ej. `secciones` o `markdown` con un tipo raro que
+       intel-geo.js no esperara) no puede tirar la tarjeta entera -- regla
+       de la casa, reforzada tras la ronda 2 de revisión (F1: un
+       `.forEach is not a function` a mitad de `pintar()` dejaba la tarjeta
+       oculta para siempre, porque abortaba antes de `brf.hidden = false`
+       al final). intel-geo.js ya se defiende con `Array.isArray` en cada
+       recorrido; este try/catch es la segunda red, por si algo asoma que
+       ninguna de las dos previó. Sin radar (o sin lista, en la home la
+       lista es solo para lector de pantalla) el resto de la tarjeta sigue
+       exactamente igual que hoy. */
+    var radarSvg = brf.querySelector('.brf-radar-svg');
+    var ulLugares = brf.querySelector('.brf-lugares');
+    try {
+      var lugares = (window.CT_GEO && window.CT_RADAR) ? window.CT_GEO.detectarLugares(b) : [];
+      if (radarSvg && window.CT_RADAR) {
+        if (!radarSvg._ctRadar) radarSvg._ctRadar = window.CT_RADAR.crear(radarSvg);
+        radarSvg._ctRadar.actualizar(lugares);
+      }
+      /* La home no tiene panel ampliado (es un teaser con enlace a
+         /intelligence/, ver el informe de integración) -- pero SÍ necesita
+         una vía sin ratón a la misma información que da el radar, no solo
+         "pase el ratón por los puntos" (F6, revisión externa, ronda 2):
+         `.brf-lugares` existe aquí oculta a la vista (clase `sr-only` en
+         home.css) y sigue en el DOM real para lector de pantalla y
+         búsqueda en página, con el mismo lugar + frente que ya pinta
+         intelligence.js en su lista visible. */
+      if (ulLugares && window.CT_RADAR) window.CT_RADAR.pintarLista(ulLugares, lugares);
+    } catch (e) { /* ver comentario de arriba: el radar es opcional, la tarjeta no */ }
     var lectura = brf.querySelector('.brf-lectura');
     if (b.lectura) { lectura.textContent = b.lectura; lectura.hidden = false; }
     else { lectura.textContent = ''; lectura.hidden = true; }
@@ -930,7 +968,7 @@ var COPY = {
     }
     b.cifras.forEach(function(c){ anotar(c.fuente); });
     if (Array.isArray(b.radar)) b.radar.forEach(function(op){ anotar(op.fuente); });
-    brf.querySelector('.brf-n').textContent = total + ' titulares de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.' + (fuentes.length ? ' Fuentes de hoy: ' + fuentes.join(', ') + '.' : '');
+    brf.querySelector('.brf-n').textContent = total + ' hallazgos de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.' + (fuentes.length ? ' Fuentes de hoy: ' + fuentes.join(', ') + '.' : '');
     /* Los tres puntos de directo de la página (menú, cabecera del panel y
        eyebrow del brief) siguen la misma regla: un fin de semana, el menú
        no puede seguir latiendo sobre la lectura del viernes (hallazgo de la

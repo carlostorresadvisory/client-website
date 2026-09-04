@@ -1,5 +1,5 @@
 /* intel-clases.js: la gráfica de 100.000 € desde 2000, la tabla del periodo y las cifras de las fichas de la
-   lección «Seis clases de activo». Solo carga en esa página. Fuente: medianoche/intel/clases-de-activo.js.
+   guía «Cinco clases de activo». Solo carga en esa página. Fuente: medianoche/intel/clases-de-activo.js.
 
    Datos reales: Damodaran (rv, inm, oro, rf), BCE (Euribor 3M mensual, capitalizado por año; tipos de cambio),
    Bloomberg (BCOMTR anual), Eurostat (HICP). Series en dólares: capital en USD al tipo de cierre de 1999, retorno

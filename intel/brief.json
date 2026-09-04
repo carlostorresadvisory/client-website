@@ -1,36 +1,21 @@
 {
-  "fecha": "2026-09-03",
-  "lectura": "Eurostat confirma que la inflación de la eurozona se sitúa en el 3,3% y la de España en el 4,5%, un diferencial de 1,2 puntos que presiona al BCE; los mercados descuentan una subida de 25 puntos básicos en septiembre hasta el 2,5% y Danske Bank proyecta que el tipo de depósito se mantendrá en ese nivel durante todo 2027. En el mercado español, el M&A del primer semestre de 2026 movilizó 50.474 millones de euros, con el private equity mid-market como motor al alcanzar 1.446 millones, mientras la nueva normativa europea de inversión extranjera y los requisitos de factura electrónica añaden fricción regulatoria a los procesos.",
+  "fecha": "2026-09-04",
+  "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Inflación eurozona",
-      "valor": "3,3%",
-      "fuente": "Eurostat"
+      "etiqueta": "Inflación eurozona agosto 2026",
+      "valor": "3,3% (frente al 2,9% de julio)",
+      "fuente": "Deutsche Bundesbank"
     },
     {
-      "etiqueta": "Inflación España",
-      "valor": "4,5%",
-      "fuente": "Eurostat"
+      "etiqueta": "Ronda de iPronics",
+      "valor": "107,6 M€ con Nvidia",
+      "fuente": "EU-Startups"
     },
     {
-      "etiqueta": "Facilidad depósito BCE (proyectada sep)",
-      "valor": "2,5%",
-      "fuente": "Informes de mercado"
-    },
-    {
-      "etiqueta": "Tipos BCE 2027 (proyección Danske)",
-      "valor": "2,5%",
-      "fuente": "Danske Bank"
-    },
-    {
-      "etiqueta": "M&A España 1S2026",
-      "valor": "50.474 M€",
-      "fuente": "TTR Data"
-    },
-    {
-      "etiqueta": "PE mid-market España 1S2026",
-      "valor": "1.446 M€",
-      "fuente": "Datos agregados"
+      "etiqueta": "Cierres de aeropuertos rusos en agosto",
+      "valor": "993 (un tercio más que julio)",
+      "fuente": "The Wall Street Journal"
     }
   ],
   "horizontes": [
@@ -44,17 +29,118 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Nemotron",
-      "MiniMax"
+      "Dots"
     ],
-    "revision": "Nemotron",
-    "texto": "Investigación: Gemini · Redacción: Nemotron y MiniMax · Revisión: Nemotron"
-  }
+    "revision": null,
+    "texto": "Investigación: Gemini · Redacción: Dots"
+  },
+  "secciones": [
+    {
+      "titulo": "Cifras clave",
+      "lineas": [
+        {
+          "texto": "Bajas rusas en Ucrania: 1.492.350 totales (+1.320 en el día)",
+          "fuente": "Ukrinform"
+        },
+        {
+          "texto": "Inflación eurozona agosto 2026: 3,3% (frente al 2,9% de julio)",
+          "fuente": "Deutsche Bundesbank"
+        },
+        {
+          "texto": "Ronda de iPronics: 107,6 M€ con Nvidia",
+          "fuente": "EU-Startups"
+        },
+        {
+          "texto": "Cierres de aeropuertos rusos en agosto: 993 (un tercio más que julio)",
+          "fuente": "The Wall Street Journal"
+        },
+        {
+          "texto": "M&A España H1 2026: 50.474 M€ agregados en 1.485 operaciones",
+          "fuente": "AGM Abogados"
+        },
+        {
+          "texto": "Tipos BCE previstos 10-sept: 2,50% (probabilidad 95-99% según futuros €STR)",
+          "fuente": "Deutsche Bundesbank"
+        }
+      ]
+    },
+    {
+      "titulo": "Hoy",
+      "lineas": [
+        {
+          "texto": "Irán ataca bases estadounidenses en Kuwait, Emiratos Árabes Unidos, Jordania, Bahréin y el Kurdistán iraquí con misiles y drones, en respuesta a los bombardeos estadounidenses del fin de semana, mientras las tensiones en el Estrecho de Ormuz elevan los costes energéticos globales. En el frente ruso-ucraniano, el Estado Mayor de Ucrania eleva las bajas rusas a 1.492.350 (+1.320 en el día) y la artillería a 49.085 (+69). Los emisarios estadounidenses Steve Witkoff y Jared Kushner viajarán a Moscú (5-6 de septiembre) y luego a Kiev para explorar la reactivación de un proceso de mediación en la guerra de Ucrania",
+          "fuente": "10 Things Global News, Ukrinform, Al Jazeera"
+        }
+      ]
+    },
+    {
+      "titulo": "Esta semana",
+      "lineas": [
+        {
+          "texto": "La inflación de la eurozona repuntó al 3,3% en agosto (desde el 2,9% de julio), y Joachim Nagel (Bundesbank) advirtió que la probabilidad de que el BCE suba los tipos al 2,50% en la reunión del 10 de septiembre supera el 95-99% según futuros del €STR",
+          "fuente": "Deutsche Bundesbank"
+        },
+        {
+          "texto": "En EE. UU., el nuevo presidente de la Fed, Kevin Warsh, debutó en Jackson Hole priorizando el control de la inflación, elevando las expectativas de subida de tipos al 60% para la reunión del 16 de septiembre",
+          "fuente": "Morningstar UK"
+        },
+        {
+          "texto": "En aviación, la red aérea rusa sufrió un récord de 993 cierres temporales de aeropuertos en agosto (un tercio más que en julio), impulsados por el cruce de unos 16.000 drones ucranianos hacia espacio aéreo ruso",
+          "fuente": "The Wall Street Journal"
+        }
+      ]
+    },
+    {
+      "titulo": "Este mes",
+      "lineas": [
+        {
+          "texto": "El mercado transaccional español cerró el primer semestre de 2026 con 1.485 operaciones y 50.474 millones de euros agregados, con una contracción del 15% en volumen pero estabilidad casi total (-0,29%) en capital movilizado, reflejando transacciones de mayor envergadura estratégica",
+          "fuente": "AGM Abogados"
+        },
+        {
+          "texto": "El Private Equity registró 177 operaciones por 8.749 millones, el Venture Capital 279 por 3.452 millones, y las adquisiciones de activos 451 por 6.727 millones",
+          "fuente": "AGM Abogados"
+        },
+        {
+          "texto": "En sector inmobiliario lideró con 343 transacciones, seguido por Internet/Software/IT (144) y Business Support (121)",
+          "fuente": "Confilegal"
+        },
+        {
+          "texto": "En asesoramiento legal, Cuatrecasas lideró en número de operaciones (65) y Uria Menéndez en valor total asesorado (19.212 millones)",
+          "fuente": "Confilegal"
+        }
+      ]
+    },
+    {
+      "titulo": "Radar estratégico",
+      "lineas": [],
+      "subsecciones": [
+        {
+          "titulo": "Edges para CT Advisory",
+          "lineas": [
+            {
+              "texto": "La startup valenciana de fotónica iPronics cerró una ronda de 107,6 millones de euros respaldada por Nvidia para escalar su tecnología de circuitos ópticos en fotónica de silicio aplicada a infraestructura de IA",
+              "fuente": "EU-Startups"
+            },
+            {
+              "texto": "En el mid-market español, los múltiplos EBITDA se polarizan fuertemente por sector: tecnológico/SaaS con ARR recurrente cotiza entre 12x y 20x; Healthcare y Life Sciences entre 8x y 14x; renovables entre 7x y 10x; y servicios B2B/consultoría tradicional entre 5x y 8x, con mediana de 5,5x",
+              "fuente": "Fundenza"
+            },
+            {
+              "texto": "El cierre medio de transacciones corporativas se situó en 253 días (-4% interanual), exigiendo Virtual Data Rooms una media de 237 horas de trabajo operativo por proceso (+8% de intensidad analítica)",
+              "fuente": "Ideals"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "markdown": "## Hoy\nIrán ataca bases estadounidenses en Kuwait, Emiratos Árabes Unidos, Jordania, Bahréin y el Kurdistán iraquí con misiles y drones, en respuesta a los bombardeos estadounidenses del fin de semana, mientras las tensiones en el Estrecho de Ormuz elevan los costes energéticos globales. En el frente ruso-ucraniano, el Estado Mayor de Ucrania eleva las bajas rusas a 1.492.350 (+1.320 en el día) y la artillería a 49.085 (+69). Los emisarios estadounidenses Steve Witkoff y Jared Kushner viajarán a Moscú (5-6 de septiembre) y luego a Kiev para explorar la reactivación de un proceso de mediación en la guerra de Ucrania.\n\nFuentes: 10 Things Global News, Ukrinform, Al Jazeera\n\n## Esta semana\nLa inflación de la eurozona repuntó al 3,3% en agosto (desde el 2,9% de julio), y Joachim Nagel (Bundesbank) advirtió que la probabilidad de que el BCE suba los tipos al 2,50% en la reunión del 10 de septiembre supera el 95-99% según futuros del €STR.\n\nEn EE. UU., el nuevo presidente de la Fed, Kevin Warsh, debutó en Jackson Hole priorizando el control de la inflación, elevando las expectativas de subida de tipos al 60% para la reunión del 16 de septiembre.\n\nEn aviación, la red aérea rusa sufrió un récord de 993 cierres temporales de aeropuertos en agosto (un tercio más que en julio), impulsados por el cruce de unos 16.000 drones ucranianos hacia espacio aéreo ruso.\n\nFuentes: Deutsche Bundesbank, Morningstar UK, The Wall Street Journal\n\n## Este mes\nEl mercado transaccional español cerró el primer semestre de 2026 con 1.485 operaciones y 50.474 millones de euros agregados, con una contracción del 15% en volumen pero estabilidad casi total (-0,29%) en capital movilizado, reflejando transacciones de mayor envergadura estratégica.\n\nEl Private Equity registró 177 operaciones por 8.749 millones, el Venture Capital 279 por 3.452 millones, y las adquisiciones de activos 451 por 6.727 millones.\n\nEn sector inmobiliario lideró con 343 transacciones, seguido por Internet/Software/IT (144) y Business Support (121).\n\nEn asesoramiento legal, Cuatrecasas lideró en número de operaciones (65) y Uria Menéndez en valor total asesorado (19.212 millones).\n\nFuentes: AGM Abogados, Confilegal\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa startup valenciana de fotónica iPronics cerró una ronda de 107,6 millones de euros respaldada por Nvidia para escalar su tecnología de circuitos ópticos en fotónica de silicio aplicada a infraestructura de IA.\n\nEn el mid-market español, los múltiplos EBITDA se polarizan fuertemente por sector: tecnológico/SaaS con ARR recurrente cotiza entre 12x y 20x; Healthcare y Life Sciences entre 8x y 14x; renovables entre 7x y 10x; y servicios B2B/consultoría tradicional entre 5x y 8x, con mediana de 5,5x.\n\nEl cierre medio de transacciones corporativas se situó en 253 días (-4% interanual), exigiendo Virtual Data Rooms una media de 237 horas de trabajo operativo por proceso (+8% de intensidad analítica).\n\nFuentes: EU-Startups, Fundenza, Ideals"
 }

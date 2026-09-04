@@ -1,4 +1,4 @@
-/* intel-series.js: las series anuales que comparten la lección «Seis clases de activo» y la herramienta de reparto.
+/* intel-series.js: las series anuales que comparten la guía «Cinco clases de activo» y la herramienta de reparto.
    Fuente: medianoche/intel/series.js. Un solo sitio para los datos: si cambia una cifra, cambia en las dos páginas.
 
    Datos reales: Damodaran (rv, inm, rf: S&P 500 con dividendos, REITs de EE.UU., bono del Tesoro a 10 años),

@@ -29,6 +29,10 @@
   /* Donde no hay ratón de verdad, el hover no sirve para abrir ni —lo que
      importa— para cerrar. Ahí el clic manda a cualquier ancho. */
   var conRaton = window.matchMedia('(hover:hover)');
+  /* Código muerto hoy: ninguna página de CT Intelligence lleva `li.has-panel` en su menú, así que
+     `cabeza` siempre es null aquí y este `preventDefault()` nunca llega a engancharse -- si algún
+     día una subpágina añade su propio submenú, revisa este bloque contra el de `home.js` (ahí SÍ
+     hace falta distinguir escritorio de menú compacto, ver su comentario). */
   if (cabeza){
     cabeza.addEventListener('click', function(e){
       e.preventDefault();
@@ -56,6 +60,61 @@
     clearTimeout(reloj);
     reloj = setTimeout(cerrar, 120);
   });
+})();
+
+/* ── Cabecera que se oscurece al bajar ───────────────────────────────────
+   El mismo mecanismo de home.js, tal cual (Carlos, 3-sep-2026: que sea el
+   que ya existe, no uno nuevo): al pasar los primeros píxeles de scroll la
+   cabecera pasa de transparente sobre el héroe a su fondo oscuro con
+   desenfoque, y el filete inferior marca cuánto se ha leído de la página.
+   La parte de «la pila» no hace nada aquí: en CT Intelligence no hay
+   ningún `.pila`, así que ese bloque queda guardián y nunca se dispara. */
+(function(){
+  var cab = document.querySelector('.site-header');
+  var raiz = document.documentElement;
+  var pend = false;
+
+  function alScroll(){
+    if (pend) return;
+    pend = true;
+    requestAnimationFrame(function(){
+      pend = false;
+      var y = window.scrollY || raiz.scrollTop;
+      var alto = raiz.scrollHeight - window.innerHeight;
+      raiz.style.setProperty('--leido', alto > 0 ? Math.min(1, y / alto).toFixed(4) : '0');
+      if (cab) cab.classList.toggle('asentada', y > 2);
+    });
+  }
+  window.addEventListener('scroll', alScroll, { passive: true });
+  alScroll();
+
+  var pila = document.querySelector('.pila');
+  if (pila && window.matchMedia('(pointer: fine)').matches
+          && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var caja = null, tick = false;
+    pila.addEventListener('pointerenter', function(){
+      caja = pila.getBoundingClientRect();
+      pila.classList.add('sigue');
+    });
+    pila.addEventListener('pointermove', function(e){
+      if (!caja || tick) return;
+      tick = true;
+      requestAnimationFrame(function(){
+        tick = false;
+        var mx = Math.max(-1, Math.min(1, (e.clientX - caja.left) / caja.width  * 2 - 1));
+        var my = Math.max(-1, Math.min(1, (e.clientY - caja.top)  / caja.height * 2 - 1));
+        pila.style.setProperty('--mx', mx.toFixed(3));
+        pila.style.setProperty('--my', my.toFixed(3));
+      });
+    }, { passive: true });
+    pila.addEventListener('pointerleave', function(){
+      pila.classList.remove('sigue');
+      pila.style.setProperty('--mx', '0');
+      pila.style.setProperty('--my', '0');
+      caja = null;
+    });
+    window.addEventListener('resize', function(){ caja = null; });
+  }
 })();
 
 /* Iconos por clase de activo, los mismos que dibuja intel-gen.js, para los guiones que pintan chips, tabla y repartos */
@@ -181,31 +240,220 @@ window.CT_ICONOS = {"rv":"<svg class=\"ico\" viewBox=\"0 0 20 20\" aria-hidden=\
     if (b.lectura !== null && b.lectura !== undefined && b.lectura !== '' && !texto(b.lectura, 700)) return false;
     return true;
   }
+  /* Campo nuevo `secciones` (3-sep-2026): el brief entero, para el
+     desplegable. A propósito NO entra en `valido()` de arriba: si el
+     productor manda algo roto aquí, el resto del panel (fecha, cifras,
+     horizontes, lectura, radar) tiene que seguir viéndose exactamente
+     igual que hoy — solo se resiente el desplegable, nunca el brief
+     entero.
+
+     Degradado parcial, no todo-o-nada (corregido por Carlos, 3-sep-2026,
+     tras la primera versión: «el reparto de daño» — este JSON lo escribe
+     un proceso automático sin nadie mirando, así que un fallo puntual en
+     UNA línea es lo más probable que pase, y no se puede llevar por
+     delante las otras veinte que llegaron bien). Cada nivel se sanea por
+     separado y solo se descarta LO ROTO, nunca el contenedor entero:
+       - una línea sin `texto` válido, fuera; con `texto` pero `fuente`
+         inválida, se queda la línea y se cae solo la fuente.
+       - una sección o subsección sin `titulo` válido, fuera entera (no
+         hay título que ponerle).
+       - una sección que se quede sin ninguna línea buena, ni en ella ni
+         en sus subsecciones, no pinta nada: nunca un título huérfano.
+     El único fallo que sí se trata como si `secciones` no hubiera
+     llegado es que el campo no sea ni siquiera una lista — eso no es
+     «una línea rota», es que no hay nada que salvar. */
+  function lineaSaneada(l){
+    if (!l || typeof l !== 'object' || !texto(l.texto, 600)) return null;
+    var out = { texto: l.texto };
+    if (l.fuente !== null && l.fuente !== undefined && texto(l.fuente, 60)) out.fuente = l.fuente;
+    return out;
+  }
+  function lineasSaneadas(lineas){
+    if (!Array.isArray(lineas)) return [];
+    var out = [];
+    for (var i = 0; i < lineas.length && out.length < 30; i++) {
+      var l = lineaSaneada(lineas[i]);
+      if (l) out.push(l);
+    }
+    return out;
+  }
+  function subseccionSaneada(s){
+    if (!s || typeof s !== 'object' || !texto(s.titulo, 80)) return null;
+    var lineas = lineasSaneadas(s.lineas);
+    if (!lineas.length) return null; // sin una línea buena, no hay subsección que pintar
+    return { titulo: s.titulo, lineas: lineas };
+  }
+  function seccionSaneada(s){
+    if (!s || typeof s !== 'object' || !texto(s.titulo, 80)) return null;
+    var lineas = lineasSaneadas(s.lineas), subsecciones = [];
+    if (Array.isArray(s.subsecciones)) {
+      for (var i = 0; i < s.subsecciones.length && subsecciones.length < 10; i++) {
+        var sub = subseccionSaneada(s.subsecciones[i]);
+        if (sub) subsecciones.push(sub);
+      }
+    }
+    if (!lineas.length && !subsecciones.length) return null; // vacía tras sanear: sin título huérfano
+    return { titulo: s.titulo, lineas: lineas, subsecciones: subsecciones };
+  }
+  function seccionesSaneadas(sec){
+    if (!Array.isArray(sec)) return [];
+    var out = [];
+    for (var i = 0; i < sec.length && out.length < 20; i++) {
+      var s = seccionSaneada(sec[i]);
+      if (s) out.push(s);
+    }
+    return out;
+  }
   function el(tag, cls, txt){
     var e = document.createElement(tag);
     if (cls) e.className = cls;
     if (txt != null) e.textContent = txt;
     return e;
   }
+  /* Una línea de una sección o subsección: el texto y, si viene, su fuente. */
+  function pintarLineas(ul, lineas){
+    lineas.forEach(function(l){
+      var li = el('li'); li.appendChild(el('span', 'brf-sec-tx', l.texto));
+      if (l.fuente) li.appendChild(el('small', 'brf-sec-f', l.fuente));
+      ul.appendChild(li);
+    });
+  }
+  /* El brief entero, dentro del desplegable. `secciones` ya llega saneada
+     (seccionesSaneadas): cada sección y subsección que sobrevive tiene, como
+     mínimo, una línea buena, así que aquí ya no hace falta comprobar nada,
+     solo colgar las subsecciones bajo la suya con su propio título más
+     pequeño (hoy solo «Radar estratégico» trae una). */
+  function pintarSecciones(cont, secciones){
+    cont.textContent = '';
+    secciones.forEach(function(s){
+      var bloque = el('div', 'brf-sec');
+      bloque.appendChild(el('p', 'brf-sec-t', s.titulo));
+      if (s.lineas.length) {
+        var ul = el('ul', 'brf-sec-l');
+        pintarLineas(ul, s.lineas);
+        bloque.appendChild(ul);
+      }
+      s.subsecciones.forEach(function(sub){
+        var subBloque = el('div', 'brf-sub');
+        subBloque.appendChild(el('p', 'brf-sub-t', sub.titulo));
+        var ulSub = el('ul', 'brf-sec-l');
+        pintarLineas(ulSub, sub.lineas);
+        subBloque.appendChild(ulSub);
+        bloque.appendChild(subBloque);
+      });
+      cont.appendChild(bloque);
+    });
+  }
+  // Tope de forma, no de contenido (mismo motivo y mismo valor que
+  // brief-publico.js#LIMITE_MARKDOWN_TOTAL): un brief real ronda unos pocos
+  // miles de caracteres, esto es solo un límite defensivo por si el JSON
+  // llega corrupto.
+  var LIMITE_MARKDOWN = 20000;
+
+  /* Convierte una línea de markdown-lite en su elemento (párrafo, cabecera o bullet), con la
+     única sintaxis inline que sobrevive al filtrado del motor: negrita `**texto**`. Nunca se
+     construye una cadena de HTML -- se reparte el texto en fragmentos y cada uno se cuelga como
+     nodo de texto real o como un <b> con su propio textContent, así que no hay forma de que algo
+     que venga en el texto (aunque lo haya escrito un modelo) se convierta en una etiqueta. Mismo
+     criterio que hud-server.js#lineaBrief() (comentario "Markdown-lite del brief del Vigía", ~línea
+     126), sin la parte de enlaces: `markdown` nunca trae ninguno -- brief-publico.js#proyectarMarkdown
+     le quita la URL a cada `[Medio](url)` antes de publicar, y validarBriefPublico rechaza el campo
+     entero si queda un "<" o un "http" (ver `texto()`, arriba, que hace la misma comprobación aquí
+     antes de intentar pintar nada). */
+  function lineaMD(tag, cls, texto){
+    var p = el(tag, cls);
+    var partes = texto.split(/(\*\*[^*]+\*\*)/);
+    for (var i = 0; i < partes.length; i++){
+      var frag = partes[i];
+      if (!frag) continue;
+      if (frag.length > 4 && frag.slice(0, 2) === '**' && frag.slice(-2) === '**') {
+        p.appendChild(el('b', null, frag.slice(2, -2)));
+      } else {
+        p.appendChild(document.createTextNode(frag));
+      }
+    }
+    return p;
+  }
+  /* El brief entero, redactado -- Carlos, 4-sep-2026: "en mi HUD está redactado [...] quiero ver
+     exactamente lo mismo en noticias y bien redactado". A diferencia de pintarSecciones() (que
+     trocea el brief en hechos sueltos con su fuente aparte), aquí cada línea del markdown se
+     cuelga tal cual, en el mismo orden: cabeceras `##`/`###` aparte, líneas con guion como lista
+     (hoy solo las trae "Cifras clave") y el resto como párrafo corrido -- así se lee como el
+     documento que es, no como una lista de notas. Devuelve si pintó algo de verdad: un markdown
+     que sobrevive a `texto()` pero que tras trocear en líneas se queda en blanco no debe dejar el
+     desplegable con un panel vacío -- quien llama cae entonces a `secciones`. */
+  function pintarMarkdown(cont, md){
+    var doc = el('div', 'brf-md');
+    var lineas = md.split('\n');
+    for (var i = 0; i < lineas.length; i++){
+      var t = lineas[i].trim();
+      if (!t) continue;
+      if (t.slice(0, 4) === '### ') { doc.appendChild(lineaMD('p', 'brf-md-h3', t.slice(4))); continue; }
+      if (t.slice(0, 3) === '## ')  { doc.appendChild(lineaMD('p', 'brf-md-h2', t.slice(3))); continue; }
+      if (t.slice(0, 2) === '# ')   { doc.appendChild(lineaMD('p', 'brf-md-h2', t.slice(2))); continue; }
+      if (t.slice(0, 2) === '- ' || t.slice(0, 2) === '* ') {
+        doc.appendChild(lineaMD('p', 'brf-md-p brf-md-li', t.slice(2))); continue;
+      }
+      doc.appendChild(lineaMD('p', 'brf-md-p', t));
+    }
+    if (!doc.children.length) { cont.textContent = ''; return false; }
+    cont.textContent = '';
+    cont.appendChild(doc);
+    return true;
+  }
   function pintar(b){
     brf.querySelector('.brf-fecha').textContent = fechaLarga(b.fecha);
     var ulC = brf.querySelector('.brf-cifras'); ulC.textContent = '';
-    b.cifras.slice(0, 4).forEach(function(c){
-      var li = el('li'); li.appendChild(el('b', null, c.valor)); li.appendChild(el('span', null, c.etiqueta)); ulC.appendChild(li);
+    /* Las 4 primeras se ven siempre, como hoy; de la 5ª en adelante quedan
+       en el propio DOM pero ocultas (.brf-cx) hasta que se despliegue el
+       panel — así el desplegable enseña TODAS las cifras, no una lista
+       aparte. */
+    b.cifras.forEach(function(c, i){
+      var li = el('li'); li.appendChild(el('b', null, c.valor)); li.appendChild(el('span', null, c.etiqueta));
+      if (i >= 4) { li.className = 'brf-cx'; li.hidden = true; }
+      ulC.appendChild(li);
     });
-    /* El largo de cada barra es el número de titulares de ese horizonte
-       sobre el mayor de los tres: mide el dato, no rellena un hueco. */
-    var ulH = brf.querySelector('.brf-hz'); ulH.textContent = '';
-    var mayor = 1, total = 0;
-    b.horizontes.forEach(function(h){ if (h.n > mayor) mayor = h.n; total += h.n; });
-    b.horizontes.forEach(function(h){
-      var li = el('li');
-      li.appendChild(el('span', 'brf-hz-n', h.horizonte));
-      li.appendChild(el('span', 'brf-hz-c', String(h.n)));
-      var barra = el('span', 'brf-hz-b'); var i = document.createElement('i');
-      i.style.setProperty('--p', (h.n / mayor).toFixed(3)); barra.appendChild(i); li.appendChild(barra);
-      ulH.appendChild(li);
-    });
+    /* El radar de lugares reemplaza las barras Hoy/Esta semana/Este mes
+       (Carlos, 4-sep-2026: "sustituir la visual de hoy esta semana y este
+       mes por el radar que ideamos ayer" -- el reparto por horizonte no
+       decía DÓNDE pasa nada). intel-geo.js resuelve los lugares del propio
+       texto del brief (markdown y/o secciones), sin IA ni red; el color de
+       cada punto es el frente dominante, nunca la única forma de saberlo
+       (cada punto lleva su aria-label/title en texto, ver intel-radar.js).
+       La lista "Lugares de hoy" de más abajo es la misma resolución en
+       texto, siempre visible dentro del desplegable -- la vía accesible
+       para quien no pasa el ratón sobre el radar. `total` se sigue
+       necesitando para el pie ("N titulares..."), aunque ya no se pinte
+       ninguna barra. */
+    var total = 0;
+    b.horizontes.forEach(function(h){ total += h.n; });
+    /* Un campo roto (p. ej. `secciones` o `markdown` con un tipo raro que
+       intel-geo.js no esperara) no puede tirar la tarjeta entera -- regla
+       de la casa, reforzada tras la ronda 2 de revisión (F1: un
+       `.forEach is not a function` a mitad de `pintar()` dejaba la tarjeta
+       oculta para siempre, porque abortaba antes de `brf.hidden = false`
+       al final). intel-geo.js ya se defiende con `Array.isArray` en cada
+       recorrido; este try/catch es la segunda red, por si algo asoma que
+       ninguna de las dos previó -- sin radar ni lista, el resto de la
+       tarjeta (cifras, lectura, desplegable) sigue exactamente igual. */
+    var lugares = [];
+    var radarSvg = brf.querySelector('.brf-radar-svg');
+    var lugaresWrap = brf.querySelector('.brf-lugares-wrap'), ulLugares = brf.querySelector('.brf-lugares');
+    try {
+      lugares = (window.CT_GEO && window.CT_GEO.detectarLugares(b)) || [];
+      if (radarSvg && window.CT_RADAR) {
+        if (!radarSvg._ctRadar) radarSvg._ctRadar = window.CT_RADAR.crear(radarSvg);
+        radarSvg._ctRadar.actualizar(lugares);
+      }
+    } catch (e) { lugares = []; }
+    var hayLugares = lugares.length > 0;
+    if (lugaresWrap && ulLugares) {
+      try {
+        if (hayLugares && window.CT_RADAR) window.CT_RADAR.pintarLista(ulLugares, lugares);
+        else ulLugares.textContent = '';
+      } catch (e) { ulLugares.textContent = ''; }
+      lugaresWrap.dataset.tiene = hayLugares ? '1' : '';
+    }
     var lectura = brf.querySelector('.brf-lectura');
     if (b.lectura) { lectura.textContent = b.lectura; lectura.hidden = false; }
     else { lectura.textContent = ''; lectura.hidden = true; }
@@ -238,7 +486,7 @@ window.CT_ICONOS = {"rv":"<svg class=\"ico\" viewBox=\"0 0 20 20\" aria-hidden=\
     }
     b.cifras.forEach(function(c){ anotar(c.fuente); });
     if (Array.isArray(b.radar)) b.radar.forEach(function(op){ anotar(op.fuente); });
-    brf.querySelector('.brf-n').textContent = total + ' titulares de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.' + (fuentes.length ? ' Fuentes de hoy: ' + fuentes.join(', ') + '.' : '')
+    brf.querySelector('.brf-n').textContent = total + ' hallazgos de prensa económica, contrastados uno a uno. La lectura la prepara y la publica el agente, cada mañana.' + (fuentes.length ? ' Fuentes de hoy: ' + fuentes.join(', ') + '.' : '')
       /* Quién lo ha escrito, si el brief lo dice (Carlos, 3-sep-2026: «que indique el modelo»).
          Va aquí y no en un bloque aparte porque es de la misma naturaleza que las fuentes: de
          dónde sale lo que se lee. El texto lo compone el motor (brief-publico.js#elaboracionDesde),
@@ -251,9 +499,67 @@ window.CT_ICONOS = {"rv":"<svg class=\"ico\" viewBox=\"0 0 20 20\" aria-hidden=\
     var enDirecto = b.fecha === hoy();
     var puntos = document.querySelectorAll('.live');
     for (var k = 0; k < puntos.length; k++) puntos[k].hidden = !enDirecto;
+    /* El desplegable: solo aparece si hay algo real que enseñar de más
+       (secciones con contenido tras sanear, o una 5ª/6ª cifra). Si
+       `secciones` falta o no es ni siquiera una lista, sale vacío del
+       saneado y el panel se queda exactamente como hoy — ver la nota junto
+       a `seccionesSaneadas`. Siempre arranca plegado: el panel cerrado no
+       puede notar el cambio (Carlos, 3-sep-2026).
+
+       Corrección tras la pasada adversarial del 3-sep-2026: el control
+       tiene que existir SOLO si desplegarlo enseña contenido de verdad, y
+       lo que se despliega tiene que incluir SIEMPRE lo que haya de sobra —
+       nunca "todo o nada" a nivel de control. Con 6 cifras y `secciones`
+       roto ese día, el botón sigue existiendo (las cifras 5ª/6ª son
+       contenido real) pero `.brf-secciones` se queda oculto para siempre:
+       antes se enseñaba igual, vacío, y el usuario se encontraba un hueco
+       en blanco con su propio filete bajo las cifras. `cont.dataset.tiene`
+       guarda si hay algo que enseñar ahí, y el click de abajo lo respeta. */
+    var mas = brf.querySelector('.brf-mas'), toggle = brf.querySelector('.brf-toggle'),
+        cont = brf.querySelector('.brf-secciones');
+    if (mas && toggle && cont) {
+      /* `markdown` manda sobre `secciones` (4-sep-2026, Carlos: "en mi HUD está redactado,
+         quiero ver lo mismo en la web"). Es el MISMO brief que `secciones`, sin desmontar en
+         hechos sueltos -- se lee como un documento porque lo es. `secciones` sigue viva solo
+         para el día en que `markdown` falte, venga vacío (cadena vacía es el "nada sobrevivió
+         al filtro" de brief-publico.js) o no sea una cadena: entonces el panel se comporta
+         exactamente como hasta ayer. */
+      var pintoMarkdown = texto(b.markdown, LIMITE_MARKDOWN) && pintarMarkdown(cont, b.markdown);
+      if (!pintoMarkdown) {
+        var secciones = seccionesSaneadas(b.secciones);
+        if (secciones.length) pintarSecciones(cont, secciones); else cont.textContent = '';
+      }
+      var haySecciones = cont.children.length > 0, hayCifrasExtra = b.cifras.length > 4;
+      cont.dataset.tiene = haySecciones ? '1' : '';
+      mas.hidden = !(haySecciones || hayCifrasExtra || hayLugares);
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.querySelector('span').textContent = 'Ver el brief completo';
+      cont.hidden = true;
+      if (lugaresWrap) lugaresWrap.hidden = true;
+    }
     brf.hidden = false;
   }
   function apagar(){ brf.hidden = true; }
+  /* Un único interruptor para todo lo que el desplegable revela: las
+     secciones y las cifras 5ª/6ª que hoy se cortan por `.slice`-equivalente
+     arriba. Delegado sobre `.brf` (no sobre `document`) porque este botón
+     es propio de este panel, no un patrón compartido como `.it-saber`. */
+  brf.addEventListener('click', function(e){
+    var t = e.target.closest('.brf-toggle');
+    if (!t) return;
+    var abrir = t.getAttribute('aria-expanded') !== 'true';
+    t.setAttribute('aria-expanded', String(abrir));
+    var cont = document.getElementById(t.getAttribute('aria-controls'));
+    /* `cont` solo se enseña si de verdad tiene contenido (`dataset.tiene`,
+       fijado en `pintar`): el botón puede existir solo por las cifras
+       5ª/6ª aunque `secciones` no trajera nada aprovechable ese día. */
+    if (cont) cont.hidden = !(abrir && cont.dataset.tiene === '1');
+    var lug = brf.querySelector('.brf-lugares-wrap');
+    if (lug) lug.hidden = !(abrir && lug.dataset.tiene === '1');
+    var extra = brf.querySelectorAll('.brf-cx');
+    for (var i = 0; i < extra.length; i++) extra[i].hidden = !abrir;
+    t.querySelector('span').textContent = abrir ? 'Mostrar menos' : 'Ver el brief completo';
+  });
   fetch('/intel/brief.json', { cache: 'no-store' })
     .then(function(r){ if (!r.ok) throw new Error(String(r.status)); return r.json(); })
     .then(function(b){ if (valido(b)) pintar(b); else apagar(); })

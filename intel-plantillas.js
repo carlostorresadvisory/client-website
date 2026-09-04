@@ -147,7 +147,7 @@
     // preparatorio del específico). Tres reglas los gobiernan:
     //
     //   · Cada título es el NOMBRE del documento al otro lado, no una promesa
-    //     sobre quien lee. "Seis clases de activo", nunca "las clases para tu
+    //     sobre quien lee. "Cinco clases de activo", nunca "las clases para tu
     //     perfil".
     //   · Cada llamada nombra una cifra o una operación concreta. Es lo que las
     //     hace fuertes sin prometer un resultado personal, que además sería
@@ -155,7 +155,7 @@
     //   · El pie dice que la página es la misma para todo el mundo y que se
     //     abre sin pasar por aquí. Esa frase es la que convierte el enlace en
     //     navegación en vez de en el paso siguiente de un embudo.
-    tituloClases: 'Seis clases de activo',
+    tituloClases: 'Cinco clases de activo',
     pieClases: 'La misma página para todo el mundo, con las mismas clases en el mismo orden. Se abre sin pasar por este cuestionario y no cambia según lo que se haya respondido.',
     ctaClases: 'Comparar las seis de un vistazo',
     tituloCoste: 'Quién lo gestiona y cómo lo compras',
