@@ -36,6 +36,19 @@
 .it-hero-cab{display:flex;align-items:center;justify-content:space-between;gap:var(--e-3);flex-wrap:wrap;margin-bottom:var(--e-3)}
 .it-hero-cab .svc-eb{margin:0}
 .it-volver{flex:none;margin-left:auto}
+/* En móvil el botón iba a una segunda línea bajo el rótulo y se veía enorme
+   (Carlos, 4-sep-2026: "se ve demasiado grande y se queda una línea abajo").
+   Compacto, en la MISMA línea que "CT Intelligence" y con el texto corto. */
+.it-volver-corto{display:none}
+@media (max-width:600px){
+  .it-hero-cab{flex-wrap:nowrap}
+  /* `.it-hero-cab .it-volver` y no `.it-volver` a secas: la regla base de
+     `.it-btn` está más abajo en este fichero y, a igual especificidad, gana. */
+  .it-hero-cab .it-volver{padding:.38rem .7rem;font-size:var(--t-1);gap:.3rem;line-height:1.2}
+  .it-volver-largo{display:none}
+  .it-volver-corto{display:inline}
+}
+@media (max-width:340px){.it-hero-cab .it-volver{padding:.34rem .5rem}}
 .it-h2{font-family:var(--serif);font-weight:300;font-size:var(--t-f2);line-height:1.16;letter-spacing:-.015em;color:var(--ink);margin:var(--e-1) 0 0;text-wrap:balance}
 .it-lectura{font-family:var(--serif);font-weight:300;font-size:clamp(1.1rem,1.5vw,1.25rem);line-height:1.5;color:var(--ink);margin:0 0 var(--e-3);text-wrap:pretty}
 .it-lectura-suelta{margin-top:clamp(1.5rem,2.6vw,2.2rem);color:var(--ink-2)}
