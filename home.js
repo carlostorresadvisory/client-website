@@ -894,6 +894,11 @@ var COPY = {
   function pintar(b){
     brf.querySelector('.brf-fecha').textContent = fechaLarga(b.fecha);
     var ulC = brf.querySelector('.brf-cifras'); ulC.textContent = '';
+    /* Cuatro cifras a la vista, ni una más: decisión de Carlos del
+       4-sep-2026 ("déjalo en 4 cifras clave, tanto en mi HUD como en el de
+       la web, de forma permanente"). El brief ya no escribe más de 4; el
+       corte de aquí es la red por si llega un JSON antiguo con más. Si un
+       día trae menos, se ven las que haya. */
     b.cifras.slice(0, 4).forEach(function(c){
       var li = el('li'); li.appendChild(el('b', null, c.valor)); li.appendChild(el('span', null, c.etiqueta)); ulC.appendChild(li);
     });

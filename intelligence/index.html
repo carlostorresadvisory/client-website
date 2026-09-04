@@ -104,7 +104,10 @@
           <span>Ver el brief completo</span>
           <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
         </button>
-        <div class="brf-lugares-wrap" hidden>
+        <!-- Lista de lugares del radar solo para lector de pantalla y búsqueda en
+             página (misma vía sin ratón que la home). Las "pastillas" visibles
+             con menciones las quitó Carlos el 4-sep-2026. -->
+        <div class="brf-lugares-wrap sr-only">
           <p class="brf-radar-eb">Lugares de hoy</p>
           <ul class="brf-lugares"></ul>
         </div>

@@ -2374,7 +2374,11 @@ main,footer{position:relative;z-index:1}
 .brf-md-h2:first-child{margin-top:0}
 .brf-md-h3{margin:var(--e-3) 0 var(--e-1);font-size:var(--t-0);letter-spacing:.06em;
   text-transform:uppercase;color:var(--ink-3);font-weight:500}
-.brf-md-p{margin:0 0 var(--e-2);font-size:var(--t-3);line-height:1.55;color:var(--ink-2)}
+/* Texto del brief justificado (Carlos, 4-sep-2026: "pon alineación de texto
+   justify también"). `hyphens:auto` va con él a propósito: en la columna de
+   móvil, justificar sin partir palabras abre ríos de espacio entre ellas;
+   el `lang="es"` del documento es lo que le dice al navegador cómo partir. */
+.brf-md-p{margin:0 0 var(--e-2);font-size:var(--t-3);line-height:1.55;color:var(--ink-2);text-align:justify;hyphens:auto}
 .brf-md-p:last-child{margin-bottom:0}
 /* La lista de «Cifras clave» -- la única sección que trae guion en el markdown crudo. Un
    guion real como marcador (no un bullet redondo genérico), mismo carácter que ya usa el

@@ -404,10 +404,11 @@ window.CT_ICONOS = {"rv":"<svg class=\"ico\" viewBox=\"0 0 20 20\" aria-hidden=\
   function pintar(b){
     brf.querySelector('.brf-fecha').textContent = fechaLarga(b.fecha);
     var ulC = brf.querySelector('.brf-cifras'); ulC.textContent = '';
-    /* Las 4 primeras se ven siempre, como hoy; de la 5ª en adelante quedan
-       en el propio DOM pero ocultas (.brf-cx) hasta que se despliegue el
-       panel — así el desplegable enseña TODAS las cifras, no una lista
-       aparte. */
+    /* Cuatro cifras a la vista, ni una más: decisión de Carlos del
+       4-sep-2026 ("déjalo en 4 cifras clave, tanto en mi HUD como en el de
+       la web, de forma permanente"). El brief ya no escribe más de 4; si
+       llegara un JSON antiguo con más, las de más quedan en el DOM ocultas
+       (.brf-cx) hasta que se despliegue el panel. */
     b.cifras.forEach(function(c, i){
       var li = el('li'); li.appendChild(el('b', null, c.valor)); li.appendChild(el('span', null, c.etiqueta));
       if (i >= 4) { li.className = 'brf-cx'; li.hidden = true; }
@@ -554,8 +555,10 @@ window.CT_ICONOS = {"rv":"<svg class=\"ico\" viewBox=\"0 0 20 20\" aria-hidden=\
        fijado en `pintar`): el botón puede existir solo por las cifras
        5ª/6ª aunque `secciones` no trajera nada aprovechable ese día. */
     if (cont) cont.hidden = !(abrir && cont.dataset.tiene === '1');
-    var lug = brf.querySelector('.brf-lugares-wrap');
-    if (lug) lug.hidden = !(abrir && lug.dataset.tiene === '1');
+    /* La lista de lugares ("pastillas" con menciones) ya no se enseña al
+       desplegar: Carlos la quitó el 4-sep-2026 ("quita las pastillas de
+       menciones a los sitios"). Sigue en el DOM solo para lector de
+       pantalla (`sr-only`, igual que en la home), así que aquí no se toca. */
     var extra = brf.querySelectorAll('.brf-cx');
     for (var i = 0; i < extra.length; i++) extra[i].hidden = !abrir;
     t.querySelector('span').textContent = abrir ? 'Mostrar menos' : 'Ver el brief completo';

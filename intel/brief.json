@@ -3,19 +3,24 @@
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Inflación eurozona agosto 2026",
-      "valor": "3,3% (frente al 2,9% de julio)",
-      "fuente": "Deutsche Bundesbank"
+      "etiqueta": "Bajas rusas totales",
+      "valor": "1.492.350",
+      "fuente": "Ukrinform"
     },
     {
-      "etiqueta": "Ronda de iPronics",
-      "valor": "107,6 M€ con Nvidia",
-      "fuente": "EU-Startups"
+      "etiqueta": "Precio Brent",
+      "valor": "95 $/barril",
+      "fuente": "La Nación"
     },
     {
-      "etiqueta": "Cierres de aeropuertos rusos en agosto",
-      "valor": "993 (un tercio más que julio)",
-      "fuente": "The Wall Street Journal"
+      "etiqueta": "Inflación eurozona agosto",
+      "valor": "3,3 %",
+      "fuente": "Merca2.es"
+    },
+    {
+      "etiqueta": "Inflación España agosto",
+      "valor": "4,5 %",
+      "fuente": "Merca2.es"
     }
   ],
   "horizontes": [
@@ -25,58 +30,29 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 3
+      "n": 9
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 5
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Dots"
+      "Nemotron"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Dots"
+    "texto": "Investigación: Gemini · Redacción: Nemotron"
   },
   "secciones": [
-    {
-      "titulo": "Cifras clave",
-      "lineas": [
-        {
-          "texto": "Bajas rusas en Ucrania: 1.492.350 totales (+1.320 en el día)",
-          "fuente": "Ukrinform"
-        },
-        {
-          "texto": "Inflación eurozona agosto 2026: 3,3% (frente al 2,9% de julio)",
-          "fuente": "Deutsche Bundesbank"
-        },
-        {
-          "texto": "Ronda de iPronics: 107,6 M€ con Nvidia",
-          "fuente": "EU-Startups"
-        },
-        {
-          "texto": "Cierres de aeropuertos rusos en agosto: 993 (un tercio más que julio)",
-          "fuente": "The Wall Street Journal"
-        },
-        {
-          "texto": "M&A España H1 2026: 50.474 M€ agregados en 1.485 operaciones",
-          "fuente": "AGM Abogados"
-        },
-        {
-          "texto": "Tipos BCE previstos 10-sept: 2,50% (probabilidad 95-99% según futuros €STR)",
-          "fuente": "Deutsche Bundesbank"
-        }
-      ]
-    },
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Irán ataca bases estadounidenses en Kuwait, Emiratos Árabes Unidos, Jordania, Bahréin y el Kurdistán iraquí con misiles y drones, en respuesta a los bombardeos estadounidenses del fin de semana, mientras las tensiones en el Estrecho de Ormuz elevan los costes energéticos globales. En el frente ruso-ucraniano, el Estado Mayor de Ucrania eleva las bajas rusas a 1.492.350 (+1.320 en el día) y la artillería a 49.085 (+69). Los emisarios estadounidenses Steve Witkoff y Jared Kushner viajarán a Moscú (5-6 de septiembre) y luego a Kiev para explorar la reactivación de un proceso de mediación en la guerra de Ucrania",
-          "fuente": "10 Things Global News, Ukrinform, Al Jazeera"
+          "texto": "Moscú rechaza cualquier diálogo directo con Kiev antes de la llegada de los enviados estadounidenses Witkoff y Kushner, declarando que toda planta de misiles de largo alcance en territorio ucraniano será objetivo legítimo. El consenso de analistas sitúa al BCE subiendo 25 p.b. el 10 de septiembre hasta el 2,50 %, cerrando el ciclo de endurecimiento más corto en 15 años pese a la presión energética. Los futuros de la Fed asignan un 65-68 % de probabilidad a una subida de 25 p.b. el 15-16 de septiembre tras el dato de empleo de agosto muy superior a lo previsto",
+          "fuente": "Facebook, Ámbito Financiero, El Norte"
         }
       ]
     },
@@ -84,16 +60,40 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La inflación de la eurozona repuntó al 3,3% en agosto (desde el 2,9% de julio), y Joachim Nagel (Bundesbank) advirtió que la probabilidad de que el BCE suba los tipos al 2,50% en la reunión del 10 de septiembre supera el 95-99% según futuros del €STR",
-          "fuente": "Deutsche Bundesbank"
+          "texto": "Alemania acusa formalmente a Rusia de guerra híbrida y sabotaje tras el intento de atentado con dron explosivo contra aviones Antonov en Leipzig el 3 de septiembre, lo que ha provocado el respaldo explícito de la OTAN y la UE",
+          "fuente": "Trece (YouTube)"
         },
         {
-          "texto": "En EE. UU., el nuevo presidente de la Fed, Kevin Warsh, debutó en Jackson Hole priorizando el control de la inflación, elevando las expectativas de subida de tipos al 60% para la reunión del 16 de septiembre",
-          "fuente": "Morningstar UK"
+          "texto": "Irán responde a los bombardeos estadounidenses en el sur de Irán con una ofensiva de misiles y drones contra bases de EE. UU. en Kuwait, Bahréin, Jordania y EAU, manteniendo el Brent en 95 $",
+          "fuente": "La Nación"
         },
         {
-          "texto": "En aviación, la red aérea rusa sufrió un récord de 993 cierres temporales de aeropuertos en agosto (un tercio más que en julio), impulsados por el cruce de unos 16.000 drones ucranianos hacia espacio aéreo ruso",
-          "fuente": "The Wall Street Journal"
+          "texto": "Amnistía Internacional denuncia la intensificación de órdenes de apropiación de tierras en Cisjordania, incluida la Zona A, y la construcción de carreteras que fragmentan Yenín",
+          "fuente": "Amnistía Internacional"
+        },
+        {
+          "texto": "Eurostat confirma la inflación de la eurozona en el 3,3 % interanual en agosto, impulsada por el salto del 14,3 % en costes energéticos, con España al 4,5 %",
+          "fuente": "Merca2.es"
+        },
+        {
+          "texto": "Kevin Warsh, en su debut en Jackson Hole, centra el mensaje en la estabilidad de precios y eleva las apuestas de subida de tipos de la Fed",
+          "fuente": "Morningstar España"
+        },
+        {
+          "texto": "Nvidia anuncia su mayor compra histórica al acordar la adquisición de Hugging Face por 13.000 M$ para controlar nodos clave de la cadena de valor de código abierto",
+          "fuente": "La Tercera"
+        },
+        {
+          "texto": "La misma semana, Nvidia destina 3.500 M$ a MediaTek para chips de IA personalizados y supera los 5,47 billones $ de capitalización",
+          "fuente": "Ámbito Financiero"
+        },
+        {
+          "texto": "OpenAI, Google DeepMind y Anthropic lanzan nuevos modelos; OpenAI presenta Astra con nivel crítico de ciberseguridad y Google la familia Gemini 3.8 Flash",
+          "fuente": "Rediff"
+        },
+        {
+          "texto": "El índice FTI Consulting muestra que el 24 % de directivos de Private Equity sitúan el M&A como prioridad estratégica principal en 2026, frente al 7 % anterior, impulsados por la necesidad de escala",
+          "fuente": "Forbes España"
         }
       ]
     },
@@ -101,20 +101,8 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado transaccional español cerró el primer semestre de 2026 con 1.485 operaciones y 50.474 millones de euros agregados, con una contracción del 15% en volumen pero estabilidad casi total (-0,29%) en capital movilizado, reflejando transacciones de mayor envergadura estratégica",
-          "fuente": "AGM Abogados"
-        },
-        {
-          "texto": "El Private Equity registró 177 operaciones por 8.749 millones, el Venture Capital 279 por 3.452 millones, y las adquisiciones de activos 451 por 6.727 millones",
-          "fuente": "AGM Abogados"
-        },
-        {
-          "texto": "En sector inmobiliario lideró con 343 transacciones, seguido por Internet/Software/IT (144) y Business Support (121)",
-          "fuente": "Confilegal"
-        },
-        {
-          "texto": "En asesoramiento legal, Cuatrecasas lideró en número de operaciones (65) y Uria Menéndez en valor total asesorado (19.212 millones)",
-          "fuente": "Confilegal"
+          "texto": "Putin declara tras la cumbre de la OCS en Bishkek que el conflicto entra en fase de desgaste definitivo, priorizando el control total de Donetsk y advirtiendo contra la infraestructura energética de Kiev",
+          "fuente": "Putin aseguró que Rusia \"está ganando\" la guerra en Ucrania"
         }
       ]
     },
@@ -126,21 +114,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La startup valenciana de fotónica iPronics cerró una ronda de 107,6 millones de euros respaldada por Nvidia para escalar su tecnología de circuitos ópticos en fotónica de silicio aplicada a infraestructura de IA",
-              "fuente": "EU-Startups"
-            },
-            {
-              "texto": "En el mid-market español, los múltiplos EBITDA se polarizan fuertemente por sector: tecnológico/SaaS con ARR recurrente cotiza entre 12x y 20x; Healthcare y Life Sciences entre 8x y 14x; renovables entre 7x y 10x; y servicios B2B/consultoría tradicional entre 5x y 8x, con mediana de 5,5x",
-              "fuente": "Fundenza"
-            },
-            {
-              "texto": "El cierre medio de transacciones corporativas se situó en 253 días (-4% interanual), exigiendo Virtual Data Rooms una media de 237 horas de trabajo operativo por proceso (+8% de intensidad analítica)",
-              "fuente": "Ideals"
+              "texto": "El mercado español de pymes opera en \"forma de K\" con múltiplos EBITDA normalizado de 4x-18x según sector (Software/SaaS 6x-10x con picos de 18x, servicios profesionales 5x-8x) y un tiempo medio de cierre de 253 días, mientras el 24 % de directivos de PE prioriza M&A para acelerar escala, creando una ventana concreta para originar mandatos de venta en sucesión familiar y buy-and-build en nichos tecnológicos",
+              "fuente": "Estella Digital, Forbes España"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nIrán ataca bases estadounidenses en Kuwait, Emiratos Árabes Unidos, Jordania, Bahréin y el Kurdistán iraquí con misiles y drones, en respuesta a los bombardeos estadounidenses del fin de semana, mientras las tensiones en el Estrecho de Ormuz elevan los costes energéticos globales. En el frente ruso-ucraniano, el Estado Mayor de Ucrania eleva las bajas rusas a 1.492.350 (+1.320 en el día) y la artillería a 49.085 (+69). Los emisarios estadounidenses Steve Witkoff y Jared Kushner viajarán a Moscú (5-6 de septiembre) y luego a Kiev para explorar la reactivación de un proceso de mediación en la guerra de Ucrania.\n\nFuentes: 10 Things Global News, Ukrinform, Al Jazeera\n\n## Esta semana\nLa inflación de la eurozona repuntó al 3,3% en agosto (desde el 2,9% de julio), y Joachim Nagel (Bundesbank) advirtió que la probabilidad de que el BCE suba los tipos al 2,50% en la reunión del 10 de septiembre supera el 95-99% según futuros del €STR.\n\nEn EE. UU., el nuevo presidente de la Fed, Kevin Warsh, debutó en Jackson Hole priorizando el control de la inflación, elevando las expectativas de subida de tipos al 60% para la reunión del 16 de septiembre.\n\nEn aviación, la red aérea rusa sufrió un récord de 993 cierres temporales de aeropuertos en agosto (un tercio más que en julio), impulsados por el cruce de unos 16.000 drones ucranianos hacia espacio aéreo ruso.\n\nFuentes: Deutsche Bundesbank, Morningstar UK, The Wall Street Journal\n\n## Este mes\nEl mercado transaccional español cerró el primer semestre de 2026 con 1.485 operaciones y 50.474 millones de euros agregados, con una contracción del 15% en volumen pero estabilidad casi total (-0,29%) en capital movilizado, reflejando transacciones de mayor envergadura estratégica.\n\nEl Private Equity registró 177 operaciones por 8.749 millones, el Venture Capital 279 por 3.452 millones, y las adquisiciones de activos 451 por 6.727 millones.\n\nEn sector inmobiliario lideró con 343 transacciones, seguido por Internet/Software/IT (144) y Business Support (121).\n\nEn asesoramiento legal, Cuatrecasas lideró en número de operaciones (65) y Uria Menéndez en valor total asesorado (19.212 millones).\n\nFuentes: AGM Abogados, Confilegal\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa startup valenciana de fotónica iPronics cerró una ronda de 107,6 millones de euros respaldada por Nvidia para escalar su tecnología de circuitos ópticos en fotónica de silicio aplicada a infraestructura de IA.\n\nEn el mid-market español, los múltiplos EBITDA se polarizan fuertemente por sector: tecnológico/SaaS con ARR recurrente cotiza entre 12x y 20x; Healthcare y Life Sciences entre 8x y 14x; renovables entre 7x y 10x; y servicios B2B/consultoría tradicional entre 5x y 8x, con mediana de 5,5x.\n\nEl cierre medio de transacciones corporativas se situó en 253 días (-4% interanual), exigiendo Virtual Data Rooms una media de 237 horas de trabajo operativo por proceso (+8% de intensidad analítica).\n\nFuentes: EU-Startups, Fundenza, Ideals"
+  "markdown": "## Hoy\nMoscú rechaza cualquier diálogo directo con Kiev antes de la llegada de los enviados estadounidenses Witkoff y Kushner, declarando que toda planta de misiles de largo alcance en territorio ucraniano será objetivo legítimo. El consenso de analistas sitúa al BCE subiendo 25 p.b. el 10 de septiembre hasta el 2,50 %, cerrando el ciclo de endurecimiento más corto en 15 años pese a la presión energética. Los futuros de la Fed asignan un 65-68 % de probabilidad a una subida de 25 p.b. el 15-16 de septiembre tras el dato de empleo de agosto muy superior a lo previsto.\n\nFuentes: Facebook, Ámbito Financiero, El Norte\n\n## Esta semana\nAlemania acusa formalmente a Rusia de guerra híbrida y sabotaje tras el intento de atentado con dron explosivo contra aviones Antonov en Leipzig el 3 de septiembre, lo que ha provocado el respaldo explícito de la OTAN y la UE.\n\nIrán responde a los bombardeos estadounidenses en el sur de Irán con una ofensiva de misiles y drones contra bases de EE. UU. en Kuwait, Bahréin, Jordania y EAU, manteniendo el Brent en 95 $.\n\nAmnistía Internacional denuncia la intensificación de órdenes de apropiación de tierras en Cisjordania, incluida la Zona A, y la construcción de carreteras que fragmentan Yenín.\n\nEurostat confirma la inflación de la eurozona en el 3,3 % interanual en agosto, impulsada por el salto del 14,3 % en costes energéticos, con España al 4,5 %.\n\nKevin Warsh, en su debut en Jackson Hole, centra el mensaje en la estabilidad de precios y eleva las apuestas de subida de tipos de la Fed.\n\nNvidia anuncia su mayor compra histórica al acordar la adquisición de Hugging Face por 13.000 M$ para controlar nodos clave de la cadena de valor de código abierto.\n\nLa misma semana, Nvidia destina 3.500 M$ a MediaTek para chips de IA personalizados y supera los 5,47 billones $ de capitalización.\n\nOpenAI, Google DeepMind y Anthropic lanzan nuevos modelos; OpenAI presenta *Astra* con nivel crítico de ciberseguridad y Google la familia *Gemini 3.8 Flash*.\n\nEl índice FTI Consulting muestra que el 24 % de directivos de Private Equity sitúan el M&A como prioridad estratégica principal en 2026, frente al 7 % anterior, impulsados por la necesidad de escala.\n\nFuentes: Trece (YouTube), La Nación, Amnistía Internacional, Merca2.es, Morningstar España, La Tercera, Ámbito Financiero, Rediff, Forbes España\n\n## Este mes\nPutin declara tras la cumbre de la OCS en Bishkek que el conflicto entra en fase de desgaste definitivo, priorizando el control total de Donetsk y advirtiendo contra la infraestructura energética de Kiev.\n\nDanske Bank y CaixaBank Research descartan recortes agresivos del BCE para 2027 por la resiliencia del crecimiento europeo impulsada por inversión indirecta en IA y gasto fiscal en defensa y energía.\n\nLos rendimientos del Tesoro a 10 años se consolidan por encima del 4,80 %, reflejando la revaloración estructural de la prima por plazo y la persistencia inflacionaria energética.\n\nLa actividad transaccional en el lower mid-market español se concentra por sucesión generacional en empresas familiares y acumulación de liquidez en fondos de capital privado y *search funds*.\n\nFuentes: Putin aseguró que Rusia \"está ganando\" la guerra en Ucrania, El BCE subirá los tipos en septiembre, pero ¿los mantendrá en ese nivel durante todo 2027? - Bolsamania, Decisión de la Fed: ¿Subirán las Tasas en Septiembre? - DailyForex, Tendencias M&A España 2026: sectores más activos, tamaño de las operaciones y principales actores | Deale\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mercado español de pymes opera en \"forma de K\" con múltiplos EBITDA normalizado de 4x-18x según sector (Software/SaaS 6x-10x con picos de 18x, servicios profesionales 5x-8x) y un tiempo medio de cierre de 253 días, mientras el 24 % de directivos de PE prioriza M&A para acelerar escala, creando una ventana concreta para originar mandatos de venta en sucesión familiar y *buy-and-build* en nichos tecnológicos.\n\nFuentes: Estella Digital, Forbes España"
 }
