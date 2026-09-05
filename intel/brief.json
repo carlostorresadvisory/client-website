@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-09-04",
+  "fecha": "2026-09-05",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bajas rusas totales",
-      "valor": "1.492.350",
-      "fuente": "Ukrinform"
+      "etiqueta": "Tipos BCE esperados (depósito)",
+      "valor": "2,50%",
+      "fuente": "Forbes España"
     },
     {
-      "etiqueta": "Precio Brent",
-      "valor": "95 $/barril",
-      "fuente": "La Nación"
+      "etiqueta": "Capital privado movilizado M&A España",
+      "valor": "42.100 M€",
+      "fuente": "TTR Data"
     },
     {
-      "etiqueta": "Inflación eurozona agosto",
-      "valor": "3,3 %",
-      "fuente": "Merca2.es"
+      "etiqueta": "Aranceles Canadá a EE. UU. (volumen afectado)",
+      "valor": "20.000 M$",
+      "fuente": "Expansión"
     },
     {
-      "etiqueta": "Inflación España agosto",
-      "valor": "4,5 %",
-      "fuente": "Merca2.es"
+      "etiqueta": "Brent (semana del 1/9)",
+      "valor": "96 $/barril",
+      "fuente": "Forbes España"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 6
     },
     {
       "horizonte": "Esta semana",
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,8 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Moscú rechaza cualquier diálogo directo con Kiev antes de la llegada de los enviados estadounidenses Witkoff y Kushner, declarando que toda planta de misiles de largo alcance en territorio ucraniano será objetivo legítimo. El consenso de analistas sitúa al BCE subiendo 25 p.b. el 10 de septiembre hasta el 2,50 %, cerrando el ciclo de endurecimiento más corto en 15 años pese a la presión energética. Los futuros de la Fed asignan un 65-68 % de probabilidad a una subida de 25 p.b. el 15-16 de septiembre tras el dato de empleo de agosto muy superior a lo previsto",
-          "fuente": "Facebook, Ámbito Financiero, El Norte"
+          "texto": "El viernes se cerró con dos movimientos diplomáticos que abarcan los dos frentes abiertos. En Moscú, los enviados estadounidenses Steve Witkoff y Jared Kushner aterrizaron el 5 de septiembre para presentar una propuesta de paz, mientras Zelenskiy anunció una tregua aérea temporal y los espera en Kiev el domingo 6. En paralelo, la inteligencia estadounidense publicó el mismo día informes que apuntan a que los dirigentes iraníes planean prolongar el conflicto durante meses para tensionar a la administración de cara a las midterms",
+          "fuente": "Forbes España"
+        },
+        {
+          "texto": "La escalada marítima en el Golfo tuvo su propio capítulo: un petrolero iraní fue alcanzado por cuatro misiles estadounidenses a unas seis millas náuticas de la isla de Kharg, sin víctimas reportadas. En tierra, los combates entre fuerzas gubernamentales y hutíes dejaron más de 60 muertos en Yemen y un centro de mando hutí en la provincia de al-Jawf fue destruido, con cuatro expertos iraníes y libaneses fallecidos. Washington, por su parte, dibuja ya la salida: altos funcionarios revelaron a Axios una estrategia post-guerra centrada en ampliar los Acuerdos de Abraham y contener regionalmente a Irán",
+          "fuente": "Forbes España"
+        },
+        {
+          "texto": "En el plano corporativo español, CEOE CEPYME Cuenca publicó el 2 de septiembre una actualización del M&A local que anticipa fuerte dinamismo y revalorización hasta final de 2026 gracias al volumen de capital privado disponible, aunque advierte de la brecha persistente entre las expectativas de precio de compradores y vendedores",
+          "fuente": "Forbes España"
         }
       ]
     },
@@ -60,39 +68,23 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Alemania acusa formalmente a Rusia de guerra híbrida y sabotaje tras el intento de atentado con dron explosivo contra aviones Antonov en Leipzig el 3 de septiembre, lo que ha provocado el respaldo explícito de la OTAN y la UE",
-          "fuente": "Trece (YouTube)"
+          "texto": "El ciclo de lanzamientos de IA marca la semana con dos movimientos de fondo. OpenAI presentó el 3 de septiembre GPT-6 Astra, que la propia compañía califica como la entrada formal en la era de la AGI tras alcanzar el 96% en el benchmark GPQA Diamond de razonamiento científico, aunque restringió temporalmente el acceso general por sus protocolos Daybreak de ciberseguridad. Google respondió el 2 de septiembre con Gemini 3.8 Flash Cyber, un modelo orientado a la detección autónoma de vulnerabilidades en infraestructuras críticas y accesible para más de 650 socios globales, incluidos Palo Alto Networks y CrowdStrike, a través del programa Fairwind",
+          "fuente": "Forbes España"
         },
         {
-          "texto": "Irán responde a los bombardeos estadounidenses en el sur de Irán con una ofensiva de misiles y drones contra bases de EE. UU. en Kuwait, Bahréin, Jordania y EAU, manteniendo el Brent en 95 $",
-          "fuente": "La Nación"
+          "texto": "En política comercial, Canadá anunció formalmente el 25 de agosto aranceles de represalia \"dólar por dólar\", del 15% al 50% sobre unos 700 productos y 20.000 millones de dólares en importaciones estadounidenses, que entran en vigor el 8 de septiembre como respuesta a los gravámenes de Washington. En el G20 de Asheville, el secretario del Tesoro Scott Bessent pidió el 1 de septiembre a los socios internacionales que adopten aranceles similares contra el excedente comercial e industrial chino, buscando una coordinación proteccionista más amplia",
+          "fuente": "Expansión"
         },
         {
-          "texto": "Amnistía Internacional denuncia la intensificación de órdenes de apropiación de tierras en Cisjordania, incluida la Zona A, y la construcción de carreteras que fragmentan Yenín",
-          "fuente": "Amnistía Internacional"
+          "texto": "El BCE llega a su reunión del 9-10 de septiembre con el mercado prácticamente hecho: el presidente del Bundesbank, Joachim Nagel, declaró el 2 de septiembre que los mercados descuentan con una probabilidad superior al 95% una subida de tipos que situaría la tasa de depósito cerca del 2,50%, en un contexto de inflación energética subyacente en el 3,3% en agosto. En ese mismo cuadro, el petróleo Brent escaló por encima de los 96 dólares por barril en la semana del 1 de septiembre, arrastrado por la escalada militar en torno al estrecho de Ormuz y los ataques a instalaciones energéticas regionales",
+          "fuente": "Forbes España"
         },
         {
-          "texto": "Eurostat confirma la inflación de la eurozona en el 3,3 % interanual en agosto, impulsada por el salto del 14,3 % en costes energéticos, con España al 4,5 %",
-          "fuente": "Merca2.es"
+          "texto": "En regulación de IA, el 2 de agosto de 2026 entraron plenamente en aplicación las obligaciones de transparencia del Artículo 50 del EU AI Act sobre marcado y etiquetado de contenidos generados por IA y deepfakes, junto con los plazos para que los Estados miembros creen los sandboxes regulatorios nacionales obligatorios",
+          "fuente": "Forbes España"
         },
         {
-          "texto": "Kevin Warsh, en su debut en Jackson Hole, centra el mensaje en la estabilidad de precios y eleva las apuestas de subida de tipos de la Fed",
-          "fuente": "Morningstar España"
-        },
-        {
-          "texto": "Nvidia anuncia su mayor compra histórica al acordar la adquisición de Hugging Face por 13.000 M$ para controlar nodos clave de la cadena de valor de código abierto",
-          "fuente": "La Tercera"
-        },
-        {
-          "texto": "La misma semana, Nvidia destina 3.500 M$ a MediaTek para chips de IA personalizados y supera los 5,47 billones $ de capitalización",
-          "fuente": "Ámbito Financiero"
-        },
-        {
-          "texto": "OpenAI, Google DeepMind y Anthropic lanzan nuevos modelos; OpenAI presenta Astra con nivel crítico de ciberseguridad y Google la familia Gemini 3.8 Flash",
-          "fuente": "Rediff"
-        },
-        {
-          "texto": "El índice FTI Consulting muestra que el 24 % de directivos de Private Equity sitúan el M&A como prioridad estratégica principal en 2026, frente al 7 % anterior, impulsados por la necesidad de escala",
+          "texto": "En el segmento pyme español, el informe semestral de TTR Data muestra una fuerte concentración: el volumen de operaciones cayó un 13%-18% interanual en número, pero el capital movilizado creció un 69% hasta los 42.100 millones de euros en los primeros compases del año, tirando de operaciones de mayor dimensión y del private equity. Los múltiplos medianos de EBITDA en pyme se sitúan de media en 5,5x, con oscilaciones entre 4x-5x en industrial tradicional y 12x-15x en SaaS/tecnología con ARR y crecimiento superior al 30%",
           "fuente": "Forbes España"
         }
       ]
@@ -101,8 +93,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Putin declara tras la cumbre de la OCS en Bishkek que el conflicto entra en fase de desgaste definitivo, priorizando el control total de Donetsk y advirtiendo contra la infraestructura energética de Kiev",
-          "fuente": "Putin aseguró que Rusia \"está ganando\" la guerra en Ucrania"
+          "texto": "La OMC vivió su propio punto de inflexión: la USTR implementó formalmente el 24 de julio de 2026 el paquete arancelario bajo la Sección 301 por trabajo forzoso, con recargos del 10% al 12,5% sobre más de 60 economías, incluyendo un 10% generalizado para la Unión Europea. El acuerdo temporal Kuala Lumpur Joint Arrangement entre Washington y Pekín mantiene suspendidos los aranceles recíprocos generalizados hasta el 10 de noviembre de 2026, fecha que condiciona la cumbre Trump-Xi prevista para finales de septiembre",
+          "fuente": "Expansión"
+        },
+        {
+          "texto": "En el frente europeo, el análisis estructural del BCE publicado el 1 de septiembre de 2026 atribuye el repunte inflacionario del verano casi por entero a un shock de oferta energética importada por el conflicto en Oriente Medio, alejándolo de los estímulos pandémicos de demanda y justificando un endurecimiento monetario \"selectivo y prudente\". En España, las estadísticas agregadas de inversión confirman que los fondos de private equity y venture capital priorizan consolidaciones industriales (build-ups) y empresas con tracción tecnológica, con uso ya generalizado de mecanismos locked-box y seguros W&I en los procesos competitivos de compraventa de pymes",
+          "fuente": "Forbes España"
         }
       ]
     },
@@ -114,13 +110,14 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El mercado español de pymes opera en \"forma de K\" con múltiplos EBITDA normalizado de 4x-18x según sector (Software/SaaS 6x-10x con picos de 18x, servicios profesionales 5x-8x) y un tiempo medio de cierre de 253 días, mientras el 24 % de directivos de PE prioriza M&A para acelerar escala, creando una ventana concreta para originar mandatos de venta en sucesión familiar y buy-and-build en nichos tecnológicos",
-              "fuente": "Estella Digital, Forbes España"
+              "texto": "El M&A español muestra una forma clara: menos operaciones (-13% a -18% interanual) y mucho más capital por operación (+69% hasta 42.100 millones de euros), con múltiplos medianos de 5,5x EBITDA en pyme y picos de 12x-15x en SaaS con ARR y crecimiento superior al 30%. CEOE Cuenca anticipa dinamismo y revalorización hasta final de 2026 por el alto volumen de capital privado disponible, aunque advierte de la brecha recurrente entre expectativas de compradores y vendedores: la ventana concreta para originar mandatos de venta y build-ups en nichos SaaS/tecnológicos sigue abierta, con locked-box y W&I ya como estándar competitivo",
+              "fuente": "Forbes España"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nMoscú rechaza cualquier diálogo directo con Kiev antes de la llegada de los enviados estadounidenses Witkoff y Kushner, declarando que toda planta de misiles de largo alcance en territorio ucraniano será objetivo legítimo. El consenso de analistas sitúa al BCE subiendo 25 p.b. el 10 de septiembre hasta el 2,50 %, cerrando el ciclo de endurecimiento más corto en 15 años pese a la presión energética. Los futuros de la Fed asignan un 65-68 % de probabilidad a una subida de 25 p.b. el 15-16 de septiembre tras el dato de empleo de agosto muy superior a lo previsto.\n\nFuentes: Facebook, Ámbito Financiero, El Norte\n\n## Esta semana\nAlemania acusa formalmente a Rusia de guerra híbrida y sabotaje tras el intento de atentado con dron explosivo contra aviones Antonov en Leipzig el 3 de septiembre, lo que ha provocado el respaldo explícito de la OTAN y la UE.\n\nIrán responde a los bombardeos estadounidenses en el sur de Irán con una ofensiva de misiles y drones contra bases de EE. UU. en Kuwait, Bahréin, Jordania y EAU, manteniendo el Brent en 95 $.\n\nAmnistía Internacional denuncia la intensificación de órdenes de apropiación de tierras en Cisjordania, incluida la Zona A, y la construcción de carreteras que fragmentan Yenín.\n\nEurostat confirma la inflación de la eurozona en el 3,3 % interanual en agosto, impulsada por el salto del 14,3 % en costes energéticos, con España al 4,5 %.\n\nKevin Warsh, en su debut en Jackson Hole, centra el mensaje en la estabilidad de precios y eleva las apuestas de subida de tipos de la Fed.\n\nNvidia anuncia su mayor compra histórica al acordar la adquisición de Hugging Face por 13.000 M$ para controlar nodos clave de la cadena de valor de código abierto.\n\nLa misma semana, Nvidia destina 3.500 M$ a MediaTek para chips de IA personalizados y supera los 5,47 billones $ de capitalización.\n\nOpenAI, Google DeepMind y Anthropic lanzan nuevos modelos; OpenAI presenta *Astra* con nivel crítico de ciberseguridad y Google la familia *Gemini 3.8 Flash*.\n\nEl índice FTI Consulting muestra que el 24 % de directivos de Private Equity sitúan el M&A como prioridad estratégica principal en 2026, frente al 7 % anterior, impulsados por la necesidad de escala.\n\nFuentes: Trece (YouTube), La Nación, Amnistía Internacional, Merca2.es, Morningstar España, La Tercera, Ámbito Financiero, Rediff, Forbes España\n\n## Este mes\nPutin declara tras la cumbre de la OCS en Bishkek que el conflicto entra en fase de desgaste definitivo, priorizando el control total de Donetsk y advirtiendo contra la infraestructura energética de Kiev.\n\nDanske Bank y CaixaBank Research descartan recortes agresivos del BCE para 2027 por la resiliencia del crecimiento europeo impulsada por inversión indirecta en IA y gasto fiscal en defensa y energía.\n\nLos rendimientos del Tesoro a 10 años se consolidan por encima del 4,80 %, reflejando la revaloración estructural de la prima por plazo y la persistencia inflacionaria energética.\n\nLa actividad transaccional en el lower mid-market español se concentra por sucesión generacional en empresas familiares y acumulación de liquidez en fondos de capital privado y *search funds*.\n\nFuentes: Putin aseguró que Rusia \"está ganando\" la guerra en Ucrania, El BCE subirá los tipos en septiembre, pero ¿los mantendrá en ese nivel durante todo 2027? - Bolsamania, Decisión de la Fed: ¿Subirán las Tasas en Septiembre? - DailyForex, Tendencias M&A España 2026: sectores más activos, tamaño de las operaciones y principales actores | Deale\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mercado español de pymes opera en \"forma de K\" con múltiplos EBITDA normalizado de 4x-18x según sector (Software/SaaS 6x-10x con picos de 18x, servicios profesionales 5x-8x) y un tiempo medio de cierre de 253 días, mientras el 24 % de directivos de PE prioriza M&A para acelerar escala, creando una ventana concreta para originar mandatos de venta en sucesión familiar y *buy-and-build* en nichos tecnológicos.\n\nFuentes: Estella Digital, Forbes España"
+  "markdown": "## Hoy\nEl viernes se cerró con dos movimientos diplomáticos que abarcan los dos frentes abiertos. En Moscú, los enviados estadounidenses Steve Witkoff y Jared Kushner aterrizaron el 5 de septiembre para presentar una propuesta de paz, mientras Zelenskiy anunció una tregua aérea temporal y los espera en Kiev el domingo 6. En paralelo, la inteligencia estadounidense publicó el mismo día informes que apuntan a que los dirigentes iraníes planean prolongar el conflicto durante meses para tensionar a la administración de cara a las midterms.\n\nLa escalada marítima en el Golfo tuvo su propio capítulo: un petrolero iraní fue alcanzado por cuatro misiles estadounidenses a unas seis millas náuticas de la isla de Kharg, sin víctimas reportadas. En tierra, los combates entre fuerzas gubernamentales y hutíes dejaron más de 60 muertos en Yemen y un centro de mando hutí en la provincia de al-Jawf fue destruido, con cuatro expertos iraníes y libaneses fallecidos. Washington, por su parte, dibuja ya la salida: altos funcionarios revelaron a Axios una estrategia post-guerra centrada en ampliar los Acuerdos de Abraham y contener regionalmente a Irán.\n\nEn el plano corporativo español, CEOE CEPYME Cuenca publicó el 2 de septiembre una actualización del M&A local que anticipa fuerte dinamismo y revalorización hasta final de 2026 gracias al volumen de capital privado disponible, aunque advierte de la brecha persistente entre las expectativas de precio de compradores y vendedores.\n\nFuentes: Forbes España\n\n## Esta semana\nEl ciclo de lanzamientos de IA marca la semana con dos movimientos de fondo. OpenAI presentó el 3 de septiembre GPT-6 Astra, que la propia compañía califica como la entrada formal en la era de la AGI tras alcanzar el 96% en el benchmark GPQA Diamond de razonamiento científico, aunque restringió temporalmente el acceso general por sus protocolos Daybreak de ciberseguridad. Google respondió el 2 de septiembre con Gemini 3.8 Flash Cyber, un modelo orientado a la detección autónoma de vulnerabilidades en infraestructuras críticas y accesible para más de 650 socios globales, incluidos Palo Alto Networks y CrowdStrike, a través del programa Fairwind.\n\nEn política comercial, Canadá anunció formalmente el 25 de agosto aranceles de represalia \"dólar por dólar\", del 15% al 50% sobre unos 700 productos y 20.000 millones de dólares en importaciones estadounidenses, que entran en vigor el 8 de septiembre como respuesta a los gravámenes de Washington. En el G20 de Asheville, el secretario del Tesoro Scott Bessent pidió el 1 de septiembre a los socios internacionales que adopten aranceles similares contra el excedente comercial e industrial chino, buscando una coordinación proteccionista más amplia.\n\nEl BCE llega a su reunión del 9-10 de septiembre con el mercado prácticamente hecho: el presidente del Bundesbank, Joachim Nagel, declaró el 2 de septiembre que los mercados descuentan con una probabilidad superior al 95% una subida de tipos que situaría la tasa de depósito cerca del 2,50%, en un contexto de inflación energética subyacente en el 3,3% en agosto. En ese mismo cuadro, el petróleo Brent escaló por encima de los 96 dólares por barril en la semana del 1 de septiembre, arrastrado por la escalada militar en torno al estrecho de Ormuz y los ataques a instalaciones energéticas regionales.\n\nEn regulación de IA, el 2 de agosto de 2026 entraron plenamente en aplicación las obligaciones de transparencia del Artículo 50 del EU AI Act sobre marcado y etiquetado de contenidos generados por IA y deepfakes, junto con los plazos para que los Estados miembros creen los sandboxes regulatorios nacionales obligatorios.\n\nEn el segmento pyme español, el informe semestral de TTR Data muestra una fuerte concentración: el volumen de operaciones cayó un 13%-18% interanual en número, pero el capital movilizado creció un 69% hasta los 42.100 millones de euros en los primeros compases del año, tirando de operaciones de mayor dimensión y del private equity. Los múltiplos medianos de EBITDA en pyme se sitúan de media en 5,5x, con oscilaciones entre 4x-5x en industrial tradicional y 12x-15x en SaaS/tecnología con ARR y crecimiento superior al 30%.\n\nFuentes: Forbes España, Expansión\n\n## Este mes\nLa OMC vivió su propio punto de inflexión: la USTR implementó formalmente el 24 de julio de 2026 el paquete arancelario bajo la Sección 301 por trabajo forzoso, con recargos del 10% al 12,5% sobre más de 60 economías, incluyendo un 10% generalizado para la Unión Europea. El acuerdo temporal Kuala Lumpur Joint Arrangement entre Washington y Pekín mantiene suspendidos los aranceles recíprocos generalizados hasta el 10 de noviembre de 2026, fecha que condiciona la cumbre Trump-Xi prevista para finales de septiembre.\n\nEn el frente europeo, el análisis estructural del BCE publicado el 1 de septiembre de 2026 atribuye el repunte inflacionario del verano casi por entero a un shock de oferta energética importada por el conflicto en Oriente Medio, alejándolo de los estímulos pandémicos de demanda y justificando un endurecimiento monetario \"selectivo y prudente\". En España, las estadísticas agregadas de inversión confirman que los fondos de private equity y venture capital priorizan consolidaciones industriales (build-ups) y empresas con tracción tecnológica, con uso ya generalizado de mecanismos locked-box y seguros W&I en los procesos competitivos de compraventa de pymes.\n\nFuentes: Expansión, Forbes España\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra una forma clara: menos operaciones (-13% a -18% interanual) y mucho más capital por operación (+69% hasta 42.100 millones de euros), con múltiplos medianos de 5,5x EBITDA en pyme y picos de 12x-15x en SaaS con ARR y crecimiento superior al 30%. CEOE Cuenca anticipa dinamismo y revalorización hasta final de 2026 por el alto volumen de capital privado disponible, aunque advierte de la brecha recurrente entre expectativas de compradores y vendedores: la ventana concreta para originar mandatos de venta y build-ups en nichos SaaS/tecnológicos sigue abierta, con locked-box y W&I ya como estándar competitivo.\n\nFuentes: Forbes España",
+  "aviso_interno": "longitud"
 }
