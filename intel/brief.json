@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-05",
+  "fecha": "2026-09-06",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipos BCE esperados (depósito)",
-      "valor": "2,50%",
-      "fuente": "Forbes España"
+      "etiqueta": "Petroleros iraníes hundidos",
+      "valor": "3",
+      "fuente": "KuCoin / The Guardian"
     },
     {
-      "etiqueta": "Capital privado movilizado M&A España",
-      "valor": "42.100 M€",
-      "fuente": "TTR Data"
+      "etiqueta": "Tipos BCE probabilidad subida",
+      "valor": ">95 %",
+      "fuente": "Deutsche Bundesbank"
     },
     {
-      "etiqueta": "Aranceles Canadá a EE. UU. (volumen afectado)",
-      "valor": "20.000 M$",
-      "fuente": "Expansión"
+      "etiqueta": "Adquisición Nvidia-Hugging Face",
+      "valor": "12.930 M$",
+      "fuente": "Egypt Independent"
     },
     {
-      "etiqueta": "Brent (semana del 1/9)",
-      "valor": "96 $/barril",
-      "fuente": "Forbes España"
+      "etiqueta": "Deuda pública EE. UU.",
+      "valor": "40 billones $",
+      "fuente": "The Guardian"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 6
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 9
+      "n": 5
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,16 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El viernes se cerró con dos movimientos diplomáticos que abarcan los dos frentes abiertos. En Moscú, los enviados estadounidenses Steve Witkoff y Jared Kushner aterrizaron el 5 de septiembre para presentar una propuesta de paz, mientras Zelenskiy anunció una tregua aérea temporal y los espera en Kiev el domingo 6. En paralelo, la inteligencia estadounidense publicó el mismo día informes que apuntan a que los dirigentes iraníes planean prolongar el conflicto durante meses para tensionar a la administración de cara a las midterms",
-          "fuente": "Forbes España"
+          "texto": "La escalada militar en el golfo de Omán se materializó el 6 de septiembre con el hundimiento por parte de EE. UU. de tres petroleros de la Guardia Revolucionaria iraní, mientras autoridades británicas confirmaron barcos comerciales inhabilitados en el estrecho de Ormuz por fuego hostil, confirmando que ambas partes atacan activos vinculados al bando contrario",
+          "fuente": "KuCoin / The Guardian"
         },
         {
-          "texto": "La escalada marítima en el Golfo tuvo su propio capítulo: un petrolero iraní fue alcanzado por cuatro misiles estadounidenses a unas seis millas náuticas de la isla de Kharg, sin víctimas reportadas. En tierra, los combates entre fuerzas gubernamentales y hutíes dejaron más de 60 muertos en Yemen y un centro de mando hutí en la provincia de al-Jawf fue destruido, con cuatro expertos iraníes y libaneses fallecidos. Washington, por su parte, dibuja ya la salida: altos funcionarios revelaron a Axios una estrategia post-guerra centrada en ampliar los Acuerdos de Abraham y contener regionalmente a Irán",
-          "fuente": "Forbes España"
+          "texto": "En el frente diplomático, los enviados estadounidenses Steve Witkoff y Jared Kushner pactaron en Moscú el 5 y 6 de septiembre un alto el fuego temporal de 72 horas en ataques de largo alcance contra Kyiv y Moscú, vigente hasta el 7 de septiembre, antes de trasladarse a la capital ucraniana para impulsar negociaciones que el Kremlin mantiene bajo sus estrictas condiciones",
+          "fuente": "ISW"
         },
         {
-          "texto": "En el plano corporativo español, CEOE CEPYME Cuenca publicó el 2 de septiembre una actualización del M&A local que anticipa fuerte dinamismo y revalorización hasta final de 2026 gracias al volumen de capital privado disponible, aunque advierte de la brecha persistente entre las expectativas de precio de compradores y vendedores",
-          "fuente": "Forbes España"
+          "texto": "Nvidia cerró la adquisición de Hugging Face por 12.930 millones de dólares, informada el 5 de septiembre, consolidando la mayor plataforma open-source de modelos bajo su paraguas de semiconductores y desarrollo colaborativo de IA",
+          "fuente": "Egypt Independent"
         }
       ]
     },
@@ -68,24 +68,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El ciclo de lanzamientos de IA marca la semana con dos movimientos de fondo. OpenAI presentó el 3 de septiembre GPT-6 Astra, que la propia compañía califica como la entrada formal en la era de la AGI tras alcanzar el 96% en el benchmark GPQA Diamond de razonamiento científico, aunque restringió temporalmente el acceso general por sus protocolos Daybreak de ciberseguridad. Google respondió el 2 de septiembre con Gemini 3.8 Flash Cyber, un modelo orientado a la detección autónoma de vulnerabilidades en infraestructuras críticas y accesible para más de 650 socios globales, incluidos Palo Alto Networks y CrowdStrike, a través del programa Fairwind",
-          "fuente": "Forbes España"
+          "texto": "Joachim Nagel, presidente del Bundesbank, declaró el 2 de septiembre que con la inflación de la eurozona en el 3,3 % en agosto los mercados descuentan una probabilidad superior al 95 % de una subida de 25 puntos básicos en la reunión del BCE del 10 de septiembre",
+          "fuente": "Deutsche Bundesbank"
         },
         {
-          "texto": "En política comercial, Canadá anunció formalmente el 25 de agosto aranceles de represalia \"dólar por dólar\", del 15% al 50% sobre unos 700 productos y 20.000 millones de dólares en importaciones estadounidenses, que entran en vigor el 8 de septiembre como respuesta a los gravámenes de Washington. En el G20 de Asheville, el secretario del Tesoro Scott Bessent pidió el 1 de septiembre a los socios internacionales que adopten aranceles similares contra el excedente comercial e industrial chino, buscando una coordinación proteccionista más amplia",
-          "fuente": "Expansión"
+          "texto": "OpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado por Greg Brockman como el umbral de entrada a la AGI tras superar la pausa de seguridad del 8 de agosto por capacidades cibernéticas avanzadas que permanecen restringidas en programas de acceso controlado",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "El BCE llega a su reunión del 9-10 de septiembre con el mercado prácticamente hecho: el presidente del Bundesbank, Joachim Nagel, declaró el 2 de septiembre que los mercados descuentan con una probabilidad superior al 95% una subida de tipos que situaría la tasa de depósito cerca del 2,50%, en un contexto de inflación energética subyacente en el 3,3% en agosto. En ese mismo cuadro, el petróleo Brent escaló por encima de los 96 dólares por barril en la semana del 1 de septiembre, arrastrado por la escalada militar en torno al estrecho de Ormuz y los ataques a instalaciones energéticas regionales",
-          "fuente": "Forbes España"
+          "texto": "En el G20 de Asheville, EE. UU. endureció sanciones secundarias a socios comerciales de Irán mientras China bloqueó el comunicado conjunto por disputas sobre su superávit comercial y minerales críticos",
+          "fuente": "Bloomberg / Control Risks"
         },
         {
-          "texto": "En regulación de IA, el 2 de agosto de 2026 entraron plenamente en aplicación las obligaciones de transparencia del Artículo 50 del EU AI Act sobre marcado y etiquetado de contenidos generados por IA y deepfakes, junto con los plazos para que los Estados miembros creen los sandboxes regulatorios nacionales obligatorios",
-          "fuente": "Forbes España"
+          "texto": "PwC estimó el 2 de septiembre una inversión mundial acumulada en infraestructura de IA de 31,6 billones de dólares hasta 2050, con gasto anual en centros de datos saltando de 800.000 millones en 2026 a 1,8 billones en 2050",
+          "fuente": "PwC"
         },
         {
-          "texto": "En el segmento pyme español, el informe semestral de TTR Data muestra una fuerte concentración: el volumen de operaciones cayó un 13%-18% interanual en número, pero el capital movilizado creció un 69% hasta los 42.100 millones de euros en los primeros compases del año, tirando de operaciones de mayor dimensión y del private equity. Los múltiplos medianos de EBITDA en pyme se sitúan de media en 5,5x, con oscilaciones entre 4x-5x en industrial tradicional y 12x-15x en SaaS/tecnología con ARR y crecimiento superior al 30%",
-          "fuente": "Forbes España"
+          "texto": "Nvidia formalizó el 31 de agosto una inversión de 3.500 millones de dólares en bonos convertibles de MediaTek para impulsar chips de IA personalizados y la interconexión NVLink Fusion",
+          "fuente": "Techzine Global"
         }
       ]
     },
@@ -93,12 +93,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La OMC vivió su propio punto de inflexión: la USTR implementó formalmente el 24 de julio de 2026 el paquete arancelario bajo la Sección 301 por trabajo forzoso, con recargos del 10% al 12,5% sobre más de 60 economías, incluyendo un 10% generalizado para la Unión Europea. El acuerdo temporal Kuala Lumpur Joint Arrangement entre Washington y Pekín mantiene suspendidos los aranceles recíprocos generalizados hasta el 10 de noviembre de 2026, fecha que condiciona la cumbre Trump-Xi prevista para finales de septiembre",
-          "fuente": "Expansión"
+          "texto": "El informe TTR Data de agosto (datos hasta julio) muestra 1.804 transacciones en España por 61.137 millones de euros, un 17 % menos en número pero solo un 4 % menos en capital, confirmando la tendencia estructural hacia operaciones de mayor importe medio y selectividad",
+          "fuente": "TTR Data Blog"
         },
         {
-          "texto": "En el frente europeo, el análisis estructural del BCE publicado el 1 de septiembre de 2026 atribuye el repunte inflacionario del verano casi por entero a un shock de oferta energética importada por el conflicto en Oriente Medio, alejándolo de los estímulos pandémicos de demanda y justificando un endurecimiento monetario \"selectivo y prudente\". En España, las estadísticas agregadas de inversión confirman que los fondos de private equity y venture capital priorizan consolidaciones industriales (build-ups) y empresas con tracción tecnológica, con uso ya generalizado de mecanismos locked-box y seguros W&I en los procesos competitivos de compraventa de pymes",
-          "fuente": "Forbes España"
+          "texto": "La deuda pública estadounidense superó oficialmente los 40 billones de dólares a comienzos de septiembre, con déficit anual proyectado en el 6 % del PIB, presionando al alza los rendimientos globales y el coste de la deuda corporativa a largo plazo",
+          "fuente": "The Guardian"
+        },
+        {
+          "texto": "Private Equity en España acumuló hasta mediados del tercer trimestre 231 transacciones por 17.263 millones de euros, con predominio del inmobiliario (410 deals) e Internet/Software (168 deals), operando los fondos con enfoque selectivo y priorizando reestructuración de carteras sobre volumen",
+          "fuente": "TTR Data Blog"
         }
       ]
     },
@@ -110,14 +114,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El M&A español muestra una forma clara: menos operaciones (-13% a -18% interanual) y mucho más capital por operación (+69% hasta 42.100 millones de euros), con múltiplos medianos de 5,5x EBITDA en pyme y picos de 12x-15x en SaaS con ARR y crecimiento superior al 30%. CEOE Cuenca anticipa dinamismo y revalorización hasta final de 2026 por el alto volumen de capital privado disponible, aunque advierte de la brecha recurrente entre expectativas de compradores y vendedores: la ventana concreta para originar mandatos de venta y build-ups en nichos SaaS/tecnológicos sigue abierta, con locked-box y W&I ya como estándar competitivo",
-              "fuente": "Forbes España"
+              "texto": "El régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003, exención de 5 M€ para no comunitarios y umbrales de control del 10 %) sigue siendo factor crítico de due diligence legal en transmisiones de pymes con componente tecnológico o estratégico, según guías FDI actualizadas a finales de agosto",
+              "fuente": "Capittal"
+            },
+            {
+              "texto": "El congreso EuroFinance International Treasury Management (16-18 septiembre, CCIB Barcelona) reunirá a 2.600 profesionales para abordar estructuras de liquidez y gestión de riesgos en entorno de disrupción geoeconómica, punto de encuentro directo para originar mandatos de corporate finance",
+              "fuente": "EuroFinance"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl viernes se cerró con dos movimientos diplomáticos que abarcan los dos frentes abiertos. En Moscú, los enviados estadounidenses Steve Witkoff y Jared Kushner aterrizaron el 5 de septiembre para presentar una propuesta de paz, mientras Zelenskiy anunció una tregua aérea temporal y los espera en Kiev el domingo 6. En paralelo, la inteligencia estadounidense publicó el mismo día informes que apuntan a que los dirigentes iraníes planean prolongar el conflicto durante meses para tensionar a la administración de cara a las midterms.\n\nLa escalada marítima en el Golfo tuvo su propio capítulo: un petrolero iraní fue alcanzado por cuatro misiles estadounidenses a unas seis millas náuticas de la isla de Kharg, sin víctimas reportadas. En tierra, los combates entre fuerzas gubernamentales y hutíes dejaron más de 60 muertos en Yemen y un centro de mando hutí en la provincia de al-Jawf fue destruido, con cuatro expertos iraníes y libaneses fallecidos. Washington, por su parte, dibuja ya la salida: altos funcionarios revelaron a Axios una estrategia post-guerra centrada en ampliar los Acuerdos de Abraham y contener regionalmente a Irán.\n\nEn el plano corporativo español, CEOE CEPYME Cuenca publicó el 2 de septiembre una actualización del M&A local que anticipa fuerte dinamismo y revalorización hasta final de 2026 gracias al volumen de capital privado disponible, aunque advierte de la brecha persistente entre las expectativas de precio de compradores y vendedores.\n\nFuentes: Forbes España\n\n## Esta semana\nEl ciclo de lanzamientos de IA marca la semana con dos movimientos de fondo. OpenAI presentó el 3 de septiembre GPT-6 Astra, que la propia compañía califica como la entrada formal en la era de la AGI tras alcanzar el 96% en el benchmark GPQA Diamond de razonamiento científico, aunque restringió temporalmente el acceso general por sus protocolos Daybreak de ciberseguridad. Google respondió el 2 de septiembre con Gemini 3.8 Flash Cyber, un modelo orientado a la detección autónoma de vulnerabilidades en infraestructuras críticas y accesible para más de 650 socios globales, incluidos Palo Alto Networks y CrowdStrike, a través del programa Fairwind.\n\nEn política comercial, Canadá anunció formalmente el 25 de agosto aranceles de represalia \"dólar por dólar\", del 15% al 50% sobre unos 700 productos y 20.000 millones de dólares en importaciones estadounidenses, que entran en vigor el 8 de septiembre como respuesta a los gravámenes de Washington. En el G20 de Asheville, el secretario del Tesoro Scott Bessent pidió el 1 de septiembre a los socios internacionales que adopten aranceles similares contra el excedente comercial e industrial chino, buscando una coordinación proteccionista más amplia.\n\nEl BCE llega a su reunión del 9-10 de septiembre con el mercado prácticamente hecho: el presidente del Bundesbank, Joachim Nagel, declaró el 2 de septiembre que los mercados descuentan con una probabilidad superior al 95% una subida de tipos que situaría la tasa de depósito cerca del 2,50%, en un contexto de inflación energética subyacente en el 3,3% en agosto. En ese mismo cuadro, el petróleo Brent escaló por encima de los 96 dólares por barril en la semana del 1 de septiembre, arrastrado por la escalada militar en torno al estrecho de Ormuz y los ataques a instalaciones energéticas regionales.\n\nEn regulación de IA, el 2 de agosto de 2026 entraron plenamente en aplicación las obligaciones de transparencia del Artículo 50 del EU AI Act sobre marcado y etiquetado de contenidos generados por IA y deepfakes, junto con los plazos para que los Estados miembros creen los sandboxes regulatorios nacionales obligatorios.\n\nEn el segmento pyme español, el informe semestral de TTR Data muestra una fuerte concentración: el volumen de operaciones cayó un 13%-18% interanual en número, pero el capital movilizado creció un 69% hasta los 42.100 millones de euros en los primeros compases del año, tirando de operaciones de mayor dimensión y del private equity. Los múltiplos medianos de EBITDA en pyme se sitúan de media en 5,5x, con oscilaciones entre 4x-5x en industrial tradicional y 12x-15x en SaaS/tecnología con ARR y crecimiento superior al 30%.\n\nFuentes: Forbes España, Expansión\n\n## Este mes\nLa OMC vivió su propio punto de inflexión: la USTR implementó formalmente el 24 de julio de 2026 el paquete arancelario bajo la Sección 301 por trabajo forzoso, con recargos del 10% al 12,5% sobre más de 60 economías, incluyendo un 10% generalizado para la Unión Europea. El acuerdo temporal Kuala Lumpur Joint Arrangement entre Washington y Pekín mantiene suspendidos los aranceles recíprocos generalizados hasta el 10 de noviembre de 2026, fecha que condiciona la cumbre Trump-Xi prevista para finales de septiembre.\n\nEn el frente europeo, el análisis estructural del BCE publicado el 1 de septiembre de 2026 atribuye el repunte inflacionario del verano casi por entero a un shock de oferta energética importada por el conflicto en Oriente Medio, alejándolo de los estímulos pandémicos de demanda y justificando un endurecimiento monetario \"selectivo y prudente\". En España, las estadísticas agregadas de inversión confirman que los fondos de private equity y venture capital priorizan consolidaciones industriales (build-ups) y empresas con tracción tecnológica, con uso ya generalizado de mecanismos locked-box y seguros W&I en los procesos competitivos de compraventa de pymes.\n\nFuentes: Expansión, Forbes España\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra una forma clara: menos operaciones (-13% a -18% interanual) y mucho más capital por operación (+69% hasta 42.100 millones de euros), con múltiplos medianos de 5,5x EBITDA en pyme y picos de 12x-15x en SaaS con ARR y crecimiento superior al 30%. CEOE Cuenca anticipa dinamismo y revalorización hasta final de 2026 por el alto volumen de capital privado disponible, aunque advierte de la brecha recurrente entre expectativas de compradores y vendedores: la ventana concreta para originar mandatos de venta y build-ups en nichos SaaS/tecnológicos sigue abierta, con locked-box y W&I ya como estándar competitivo.\n\nFuentes: Forbes España",
-  "aviso_interno": "longitud"
+  "markdown": "## Hoy\nLa escalada militar en el golfo de Omán se materializó el 6 de septiembre con el hundimiento por parte de EE. UU. de tres petroleros de la Guardia Revolucionaria iraní, mientras autoridades británicas confirmaron barcos comerciales inhabilitados en el estrecho de Ormuz por fuego hostil, confirmando que ambas partes atacan activos vinculados al bando contrario.\n\nEn el frente diplomático, los enviados estadounidenses Steve Witkoff y Jared Kushner pactaron en Moscú el 5 y 6 de septiembre un alto el fuego temporal de 72 horas en ataques de largo alcance contra Kyiv y Moscú, vigente hasta el 7 de septiembre, antes de trasladarse a la capital ucraniana para impulsar negociaciones que el Kremlin mantiene bajo sus estrictas condiciones.\n\nNvidia cerró la adquisición de Hugging Face por 12.930 millones de dólares, informada el 5 de septiembre, consolidando la mayor plataforma open-source de modelos bajo su paraguas de semiconductores y desarrollo colaborativo de IA.\n\nFuentes: KuCoin / The Guardian, ISW, Egypt Independent\n\n## Esta semana\nOpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado por Greg Brockman como el umbral de entrada a la AGI tras superar la pausa de seguridad del 8 de agosto por capacidades cibernéticas avanzadas que permanecen restringidas en programas de acceso controlado.\n\nEn el G20 de Asheville, EE. UU. endureció sanciones secundarias a socios comerciales de Irán mientras China bloqueó el comunicado conjunto por disputas sobre su superávit comercial y minerales críticos.\n\nPwC estimó el 2 de septiembre una inversión mundial acumulada en infraestructura de IA de 31,6 billones de dólares hasta 2050, con gasto anual en centros de datos saltando de 800.000 millones en 2026 a 1,8 billones en 2050.\n\nNvidia formalizó el 31 de agosto una inversión de 3.500 millones de dólares en bonos convertibles de MediaTek para impulsar chips de IA personalizados y la interconexión NVLink Fusion.\n\nFuentes: The Guardian, Bloomberg / Control Risks, PwC, Techzine Global\n\n## Este mes\nEl informe TTR Data de agosto (datos hasta julio) muestra 1.804 transacciones en España por 61.137 millones de euros, un 17 % menos en número pero solo un 4 % menos en capital, confirmando la tendencia estructural hacia operaciones de mayor importe medio y selectividad.\n\nLa deuda pública estadounidense superó oficialmente los 40 billones de dólares a comienzos de septiembre, con déficit anual proyectado en el 6 % del PIB, presionando al alza los rendimientos globales y el coste de la deuda corporativa a largo plazo.\n\nPrivate Equity en España acumuló hasta mediados del tercer trimestre 231 transacciones por 17.263 millones de euros, con predominio del inmobiliario (410 deals) e Internet/Software (168 deals), operando los fondos con enfoque selectivo y priorizando reestructuración de carteras sobre volumen.\n\nFuentes: TTR Data Blog, The Guardian\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003, exención de 5 M€ para no comunitarios y umbrales de control del 10 %) sigue siendo factor crítico de due diligence legal en transmisiones de pymes con componente tecnológico o estratégico, según guías FDI actualizadas a finales de agosto.\n\nEl congreso EuroFinance International Treasury Management (16-18 septiembre, CCIB Barcelona) reunirá a 2.600 profesionales para abordar estructuras de liquidez y gestión de riesgos en entorno de disrupción geoeconómica, punto de encuentro directo para originar mandatos de corporate finance.\n\nFuentes: Capittal, EuroFinance"
 }
