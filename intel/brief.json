@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-06",
+  "fecha": "2026-09-07",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Petroleros iraníes hundidos",
-      "valor": "3",
-      "fuente": "KuCoin / The Guardian"
+      "etiqueta": "AfD Sajonia-Anhalt",
+      "valor": "44,3%",
+      "fuente": "RTVE"
     },
     {
-      "etiqueta": "Tipos BCE probabilidad subida",
-      "valor": ">95 %",
-      "fuente": "Deutsche Bundesbank"
+      "etiqueta": "Subida BCE",
+      "valor": "25 p.b",
+      "fuente": "CaixaBank Research"
     },
     {
-      "etiqueta": "Adquisición Nvidia-Hugging Face",
+      "etiqueta": "Adquisición Nvidia",
       "valor": "12.930 M$",
-      "fuente": "Egypt Independent"
+      "fuente": "Nvidia Blog"
     },
     {
-      "etiqueta": "Deuda pública EE. UU.",
-      "valor": "40 billones $",
-      "fuente": "The Guardian"
+      "etiqueta": "Inversión IA 2050",
+      "valor": "31,6 billones $",
+      "fuente": "PwC Global"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 6
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,16 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La escalada militar en el golfo de Omán se materializó el 6 de septiembre con el hundimiento por parte de EE. UU. de tres petroleros de la Guardia Revolucionaria iraní, mientras autoridades británicas confirmaron barcos comerciales inhabilitados en el estrecho de Ormuz por fuego hostil, confirmando que ambas partes atacan activos vinculados al bando contrario",
-          "fuente": "KuCoin / The Guardian"
+          "texto": "Zelenski advirtió el 6 de septiembre que la guerra se prolongará al menos otro invierno pese a la mediación de los enviados estadounidenses Kushner y Witkoff en Kiev, visita que cerró sin acuerdos de paz ni acercamientos territoriales mientras Ucrania lanzaba 258 drones contra 14 regiones rusas y Crimea tras la tregua de 72 horas en capitales",
+          "fuente": "El Español"
         },
         {
-          "texto": "En el frente diplomático, los enviados estadounidenses Steve Witkoff y Jared Kushner pactaron en Moscú el 5 y 6 de septiembre un alto el fuego temporal de 72 horas en ataques de largo alcance contra Kyiv y Moscú, vigente hasta el 7 de septiembre, antes de trasladarse a la capital ucraniana para impulsar negociaciones que el Kremlin mantiene bajo sus estrictas condiciones",
-          "fuente": "ISW"
+          "texto": "En el golfo de Omán, el CENTCOM confirmó la destrucción de tres petroleros iraníes de la Guardia Revolucionaria e Irán replicó reivindicando ataques a buques y un dron naval estadounidenses en el estrecho de Ormuz, manteniendo bloqueada la ruta petrolera desde el 2 de septiembre",
+          "fuente": "La Nación PY"
         },
         {
-          "texto": "Nvidia cerró la adquisición de Hugging Face por 12.930 millones de dólares, informada el 5 de septiembre, consolidando la mayor plataforma open-source de modelos bajo su paraguas de semiconductores y desarrollo colaborativo de IA",
-          "fuente": "Egypt Independent"
+          "texto": "La AfD de Ulrich Siegmund obtuvo el 44,3 % en las elecciones de Sajonia-Anhalt, quedándose a tres escaños de la mayoría absoluta (39 de 42) y rozando el primer gobierno regional de extrema derecha en Alemania desde 1945",
+          "fuente": "RTVE"
+        },
+        {
+          "texto": "Google presentó en Semicon Taiwan (7 septiembre) una ofensiva total en chips propios de IA: Amin Vahdat detalló la expansión acelerada de TPUs y alianzas con MediaTek para reducir la dependencia de Nvidia",
+          "fuente": "CommonWealth Magazine"
         }
       ]
     },
@@ -68,24 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Joachim Nagel, presidente del Bundesbank, declaró el 2 de septiembre que con la inflación de la eurozona en el 3,3 % en agosto los mercados descuentan una probabilidad superior al 95 % de una subida de 25 puntos básicos en la reunión del BCE del 10 de septiembre",
-          "fuente": "Deutsche Bundesbank"
+          "texto": "Los mercados descuentan con probabilidad cercana al 100 % una subida de 25 p.b. del BCE el 10 de septiembre hasta el 2,50 %, impulsada por la inflación de la eurozona al 3,3 % en agosto (España 4,5 % IPC armonizado) tras el shock energético de Oriente Medio",
+          "fuente": "CaixaBank Research"
         },
         {
-          "texto": "OpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado por Greg Brockman como el umbral de entrada a la AGI tras superar la pausa de seguridad del 8 de agosto por capacidades cibernéticas avanzadas que permanecen restringidas en programas de acceso controlado",
-          "fuente": "The Guardian"
+          "texto": "Nvidia cerró el 3 de septiembre la compra de Hugging Face por 12.930 millones de dólares, su mayor operación histórica para controlar el ecosistema global de modelos y desarrolladores open source. OpenAI lanzó el mismo día GPT-6 Astra, presentado por Greg Brockman como el modelo más inteligente y alineado, desatando el debate sobre el umbral de la AGI tras superar pruebas complejas de matemáticas y ciencia",
+          "fuente": "Nvidia Blog, The Guardian"
         },
         {
-          "texto": "En el G20 de Asheville, EE. UU. endureció sanciones secundarias a socios comerciales de Irán mientras China bloqueó el comunicado conjunto por disputas sobre su superávit comercial y minerales críticos",
-          "fuente": "Bloomberg / Control Risks"
+          "texto": "El informe Dealsuite European M&A Monitor (3 septiembre, 815 firmas) cuantifica la brecha de valoración: en el 50 % de procesos europeos los vendedores piden excesivamente alto, con divergencia media del 25 % que rompe el 29 % de operaciones y sube al 38 % en el sur de Europa",
+          "fuente": "Dealsuite"
         },
         {
-          "texto": "PwC estimó el 2 de septiembre una inversión mundial acumulada en infraestructura de IA de 31,6 billones de dólares hasta 2050, con gasto anual en centros de datos saltando de 800.000 millones en 2026 a 1,8 billones en 2050",
-          "fuente": "PwC"
-        },
-        {
-          "texto": "Nvidia formalizó el 31 de agosto una inversión de 3.500 millones de dólares en bonos convertibles de MediaTek para impulsar chips de IA personalizados y la interconexión NVLink Fusion",
-          "fuente": "Techzine Global"
+          "texto": "En Datacloud USA (2 septiembre) se desvelaron alianzas de Nvidia con Blackstone, KKR, Brookfield y Goldman Sachs para movilizar más de 500.000 millones en financiación de computación, cubriendo el desfase entre infraestructura a 20 años y obsolescencia de GPU a 5-7. XTB cifra en 12 $/barril la prima geopolítica persistente por el bloqueo de Ormuz, con backwardation extremo y diésel subiendo más del 13 % mensual en EAU",
+          "fuente": "Capacity Media, XTB"
         }
       ]
     },
@@ -93,16 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El informe TTR Data de agosto (datos hasta julio) muestra 1.804 transacciones en España por 61.137 millones de euros, un 17 % menos en número pero solo un 4 % menos en capital, confirmando la tendencia estructural hacia operaciones de mayor importe medio y selectividad",
-          "fuente": "TTR Data Blog"
+          "texto": "El régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003 y RD 571/2023, ampliado por DL 1/2025 hasta 31-dic-2026) obliga a inversores UE/EFTA a autorización previa del Consejo de Ministros en sectores estratégicos sensibles",
+          "fuente": "Global Law Experts"
         },
         {
-          "texto": "La deuda pública estadounidense superó oficialmente los 40 billones de dólares a comienzos de septiembre, con déficit anual proyectado en el 6 % del PIB, presionando al alza los rendimientos globales y el coste de la deuda corporativa a largo plazo",
-          "fuente": "The Guardian"
+          "texto": "Informes sectoriales de septiembre confirman el patrón estructural: crecimiento macro español superior a la UE y transición generacional en industriales familiares de los 80-90 impulsan M&A cross-border donde compradores foráneos priorizan pymes con exportación >50 % y autoabastecimiento solar",
+          "fuente": "San Martín Leather / Albia IMAP"
         },
         {
-          "texto": "Private Equity en España acumuló hasta mediados del tercer trimestre 231 transacciones por 17.263 millones de euros, con predominio del inmobiliario (410 deals) e Internet/Software (168 deals), operando los fondos con enfoque selectivo y priorizando reestructuración de carteras sobre volumen",
-          "fuente": "TTR Data Blog"
+          "texto": "OpenAI desplegó en agosto-septiembre la plataforma Daybreak y el modelo GPT-5.6-Cyber, nuevo estándar defensivo institucional frente al uso ofensivo de IA por actores estatales",
+          "fuente": "OpenAI News"
+        },
+        {
+          "texto": "PwC proyecta 31,6 billones de dólares de inversión global en infraestructura de IA hasta 2050, con gasto anual en CPD saltando de 800.000 M$ (2026) a 1,8 billones (2050), condicionado por acceso a electricidad descarbonizada",
+          "fuente": "PwC Global"
         }
       ]
     },
@@ -114,17 +118,14 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003, exención de 5 M€ para no comunitarios y umbrales de control del 10 %) sigue siendo factor crítico de due diligence legal en transmisiones de pymes con componente tecnológico o estratégico, según guías FDI actualizadas a finales de agosto",
-              "fuente": "Capittal"
-            },
-            {
-              "texto": "El congreso EuroFinance International Treasury Management (16-18 septiembre, CCIB Barcelona) reunirá a 2.600 profesionales para abordar estructuras de liquidez y gestión de riesgos en entorno de disrupción geoeconómica, punto de encuentro directo para originar mandatos de corporate finance",
-              "fuente": "EuroFinance"
+              "texto": "La brecha de valoración del 25 % media (38 % en sur de Europa) que rompe el 29 % de deals exige ajustar mandatos de venta con precios de reserva realistas y earn-outs vinculados a hitos operativos, no a múltiplos de entrada. El filtro de inversiones exteriores vigente hasta diciembre 2026 obliga a estructurar adquisiciones cross-border con autorización previa del Consejo de Ministros cuando el target toca sectores estratégicos, añadiendo 2-3 meses al closing. El perfil de pyme industrial exportadora (>50 %) con autoconsumo solar es el sweet spot actual para compradores internacionales: permite originar mandatos buy-side con thesis de valor defendible y sinergias ESG cuantificables",
+              "fuente": "San Martín Leather / Albia IMAP"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa escalada militar en el golfo de Omán se materializó el 6 de septiembre con el hundimiento por parte de EE. UU. de tres petroleros de la Guardia Revolucionaria iraní, mientras autoridades británicas confirmaron barcos comerciales inhabilitados en el estrecho de Ormuz por fuego hostil, confirmando que ambas partes atacan activos vinculados al bando contrario.\n\nEn el frente diplomático, los enviados estadounidenses Steve Witkoff y Jared Kushner pactaron en Moscú el 5 y 6 de septiembre un alto el fuego temporal de 72 horas en ataques de largo alcance contra Kyiv y Moscú, vigente hasta el 7 de septiembre, antes de trasladarse a la capital ucraniana para impulsar negociaciones que el Kremlin mantiene bajo sus estrictas condiciones.\n\nNvidia cerró la adquisición de Hugging Face por 12.930 millones de dólares, informada el 5 de septiembre, consolidando la mayor plataforma open-source de modelos bajo su paraguas de semiconductores y desarrollo colaborativo de IA.\n\nFuentes: KuCoin / The Guardian, ISW, Egypt Independent\n\n## Esta semana\nOpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado por Greg Brockman como el umbral de entrada a la AGI tras superar la pausa de seguridad del 8 de agosto por capacidades cibernéticas avanzadas que permanecen restringidas en programas de acceso controlado.\n\nEn el G20 de Asheville, EE. UU. endureció sanciones secundarias a socios comerciales de Irán mientras China bloqueó el comunicado conjunto por disputas sobre su superávit comercial y minerales críticos.\n\nPwC estimó el 2 de septiembre una inversión mundial acumulada en infraestructura de IA de 31,6 billones de dólares hasta 2050, con gasto anual en centros de datos saltando de 800.000 millones en 2026 a 1,8 billones en 2050.\n\nNvidia formalizó el 31 de agosto una inversión de 3.500 millones de dólares en bonos convertibles de MediaTek para impulsar chips de IA personalizados y la interconexión NVLink Fusion.\n\nFuentes: The Guardian, Bloomberg / Control Risks, PwC, Techzine Global\n\n## Este mes\nEl informe TTR Data de agosto (datos hasta julio) muestra 1.804 transacciones en España por 61.137 millones de euros, un 17 % menos en número pero solo un 4 % menos en capital, confirmando la tendencia estructural hacia operaciones de mayor importe medio y selectividad.\n\nLa deuda pública estadounidense superó oficialmente los 40 billones de dólares a comienzos de septiembre, con déficit anual proyectado en el 6 % del PIB, presionando al alza los rendimientos globales y el coste de la deuda corporativa a largo plazo.\n\nPrivate Equity en España acumuló hasta mediados del tercer trimestre 231 transacciones por 17.263 millones de euros, con predominio del inmobiliario (410 deals) e Internet/Software (168 deals), operando los fondos con enfoque selectivo y priorizando reestructuración de carteras sobre volumen.\n\nFuentes: TTR Data Blog, The Guardian\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003, exención de 5 M€ para no comunitarios y umbrales de control del 10 %) sigue siendo factor crítico de due diligence legal en transmisiones de pymes con componente tecnológico o estratégico, según guías FDI actualizadas a finales de agosto.\n\nEl congreso EuroFinance International Treasury Management (16-18 septiembre, CCIB Barcelona) reunirá a 2.600 profesionales para abordar estructuras de liquidez y gestión de riesgos en entorno de disrupción geoeconómica, punto de encuentro directo para originar mandatos de corporate finance.\n\nFuentes: Capittal, EuroFinance"
+  "markdown": "## Hoy\nZelenski advirtió el 6 de septiembre que la guerra se prolongará al menos otro invierno pese a la mediación de los enviados estadounidenses Kushner y Witkoff en Kiev, visita que cerró sin acuerdos de paz ni acercamientos territoriales mientras Ucrania lanzaba 258 drones contra 14 regiones rusas y Crimea tras la tregua de 72 horas en capitales.\n\nEn el golfo de Omán, el CENTCOM confirmó la destrucción de tres petroleros iraníes de la Guardia Revolucionaria e Irán replicó reivindicando ataques a buques y un dron naval estadounidenses en el estrecho de Ormuz, manteniendo bloqueada la ruta petrolera desde el 2 de septiembre.\n\nLa AfD de Ulrich Siegmund obtuvo el 44,3 % en las elecciones de Sajonia-Anhalt, quedándose a tres escaños de la mayoría absoluta (39 de 42) y rozando el primer gobierno regional de extrema derecha en Alemania desde 1945.\n\nGoogle presentó en Semicon Taiwan (7 septiembre) una ofensiva total en chips propios de IA: Amin Vahdat detalló la expansión acelerada de TPUs y alianzas con MediaTek para reducir la dependencia de Nvidia.\n\nFuentes: El Español, La Nación PY, RTVE, CommonWealth Magazine\n\n## Esta semana\nLos mercados descuentan con probabilidad cercana al 100 % una subida de 25 p.b. del BCE el 10 de septiembre hasta el 2,50 %, impulsada por la inflación de la eurozona al 3,3 % en agosto (España 4,5 % IPC armonizado) tras el shock energético de Oriente Medio.\n\nNvidia cerró el 3 de septiembre la compra de Hugging Face por 12.930 millones de dólares, su mayor operación histórica para controlar el ecosistema global de modelos y desarrolladores open source. OpenAI lanzó el mismo día GPT-6 Astra, presentado por Greg Brockman como el modelo más inteligente y alineado, desatando el debate sobre el umbral de la AGI tras superar pruebas complejas de matemáticas y ciencia.\n\nEl informe Dealsuite European M&A Monitor (3 septiembre, 815 firmas) cuantifica la brecha de valoración: en el 50 % de procesos europeos los vendedores piden excesivamente alto, con divergencia media del 25 % que rompe el 29 % de operaciones y sube al 38 % en el sur de Europa.\n\nEn Datacloud USA (2 septiembre) se desvelaron alianzas de Nvidia con Blackstone, KKR, Brookfield y Goldman Sachs para movilizar más de 500.000 millones en financiación de computación, cubriendo el desfase entre infraestructura a 20 años y obsolescencia de GPU a 5-7. XTB cifra en 12 $/barril la prima geopolítica persistente por el bloqueo de Ormuz, con backwardation extremo y diésel subiendo más del 13 % mensual en EAU.\n\nFuentes: CaixaBank Research, Nvidia Blog, The Guardian, Dealsuite, Capacity Media, XTB\n\n## Este mes\nEl régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003 y RD 571/2023, ampliado por DL 1/2025 hasta 31-dic-2026) obliga a inversores UE/EFTA a autorización previa del Consejo de Ministros en sectores estratégicos sensibles.\n\nInformes sectoriales de septiembre confirman el patrón estructural: crecimiento macro español superior a la UE y transición generacional en industriales familiares de los 80-90 impulsan M&A cross-border donde compradores foráneos priorizan pymes con exportación >50 % y autoabastecimiento solar.\n\nOpenAI desplegó en agosto-septiembre la plataforma Daybreak y el modelo GPT-5.6-Cyber, nuevo estándar defensivo institucional frente al uso ofensivo de IA por actores estatales.\n\nPwC proyecta 31,6 billones de dólares de inversión global en infraestructura de IA hasta 2050, con gasto anual en CPD saltando de 800.000 M$ (2026) a 1,8 billones (2050), condicionado por acceso a electricidad descarbonizada.\n\nFuentes: Global Law Experts, San Martín Leather / Albia IMAP, OpenAI News, PwC Global\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa brecha de valoración del 25 % media (38 % en sur de Europa) que rompe el 29 % de deals exige ajustar mandatos de venta con precios de reserva realistas y earn-outs vinculados a hitos operativos, no a múltiplos de entrada. El filtro de inversiones exteriores vigente hasta diciembre 2026 obliga a estructurar adquisiciones cross-border con autorización previa del Consejo de Ministros cuando el target toca sectores estratégicos, añadiendo 2-3 meses al closing. El perfil de pyme industrial exportadora (>50 %) con autoconsumo solar es el sweet spot actual para compradores internacionales: permite originar mandatos buy-side con thesis de valor defendible y sinergias ESG cuantificables.\n\nFuentes: Dealsuite, Global Law Experts, San Martín Leather / Albia IMAP",
+  "aviso_interno": "longitud"
 }
