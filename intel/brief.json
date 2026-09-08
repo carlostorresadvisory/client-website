@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-09-07",
+  "fecha": "2026-09-08",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "AfD Sajonia-Anhalt",
-      "valor": "44,3%",
-      "fuente": "RTVE"
+      "etiqueta": "Bajas rusas acumuladas",
+      "valor": "1.499.390",
+      "fuente": "Europa Press"
     },
     {
-      "etiqueta": "Subida BCE",
-      "valor": "25 p.b",
+      "etiqueta": "Tipo depósito BCE esperado",
+      "valor": "2,50%",
       "fuente": "CaixaBank Research"
     },
     {
-      "etiqueta": "Adquisición Nvidia",
-      "valor": "12.930 M$",
-      "fuente": "Nvidia Blog"
+      "etiqueta": "Brent",
+      "valor": "97,16 $/barril",
+      "fuente": "Kapital"
     },
     {
-      "etiqueta": "Inversión IA 2050",
-      "valor": "31,6 billones $",
-      "fuente": "PwC Global"
+      "etiqueta": "Ronda iPronics",
+      "valor": "125 M$",
+      "fuente": "Forbes España"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 6
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 7
     },
     {
       "horizonte": "Este mes",
@@ -51,20 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Zelenski advirtió el 6 de septiembre que la guerra se prolongará al menos otro invierno pese a la mediación de los enviados estadounidenses Kushner y Witkoff en Kiev, visita que cerró sin acuerdos de paz ni acercamientos territoriales mientras Ucrania lanzaba 258 drones contra 14 regiones rusas y Crimea tras la tregua de 72 horas en capitales",
-          "fuente": "El Español"
+          "texto": "Las Fuerzas Armadas de Ucrania elevaron este martes a 1.499.390 las bajas rusas acumuladas desde febrero de 2022, con 1.410 adicionales en las últimas 24 horas, mientras un ataque con misiles y drones contra Kiev rompía la tregua posterior a la visita de emisarios estadounidenses dejando al menos dos muertos y ocho heridos. En el frente mediterráneo, Turquía denunció el 7 de septiembre el sabotaje israelí de los acuerdos regionales de paz, señalando que las acciones de Tel Aviv dejaron ineficaz el acuerdo de Islamabad",
+          "fuente": "Europa Press, LaSexta, teleSUR"
         },
         {
-          "texto": "En el golfo de Omán, el CENTCOM confirmó la destrucción de tres petroleros iraníes de la Guardia Revolucionaria e Irán replicó reivindicando ataques a buques y un dron naval estadounidenses en el estrecho de Ormuz, manteniendo bloqueada la ruta petrolera desde el 2 de septiembre",
-          "fuente": "La Nación PY"
-        },
-        {
-          "texto": "La AfD de Ulrich Siegmund obtuvo el 44,3 % en las elecciones de Sajonia-Anhalt, quedándose a tres escaños de la mayoría absoluta (39 de 42) y rozando el primer gobierno regional de extrema derecha en Alemania desde 1945",
-          "fuente": "RTVE"
-        },
-        {
-          "texto": "Google presentó en Semicon Taiwan (7 septiembre) una ofensiva total en chips propios de IA: Amin Vahdat detalló la expansión acelerada de TPUs y alianzas con MediaTek para reducir la dependencia de Nvidia",
-          "fuente": "CommonWealth Magazine"
+          "texto": "El BCE celebra este jueves su reunión decisiva con expectativa unánime de subir 25 puntos básicos el tipo de depósito hasta el 2,50%, forzado por el estrés energético que mantiene el Brent en 97,16 dólares el barril. En España, la startup valenciana iPronics (spin-off UPV) cerró el 2 de septiembre una Serie B de 125 millones de dólares, 177 millones totales, incorporando a Nvidia como accionista para escalar su fotónica de silicio en centros de datos de IA",
+          "fuente": "CaixaBank Research, Kapital, Forbes España"
         }
       ]
     },
@@ -72,20 +64,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Los mercados descuentan con probabilidad cercana al 100 % una subida de 25 p.b. del BCE el 10 de septiembre hasta el 2,50 %, impulsada por la inflación de la eurozona al 3,3 % en agosto (España 4,5 % IPC armonizado) tras el shock energético de Oriente Medio",
-          "fuente": "CaixaBank Research"
+          "texto": "Zelenski confirmó el 7 de septiembre que los enviados de la Casa Blanca Witkoff y Kushner visitaron Moscú y Kiev proponiendo una \"desescalada\" invernal, y señaló que el Kremlin muestra disposición a dialogar ante las legislativas estadounidenses de noviembre. Netanyahu advirtió el 6 de septiembre, en el brindis por el Año Nuevo judío, que \"el fin del régimen iraní está cerca\" y que Israel está preparado para un golpe definitivo si Teherán vuelve a atacar",
+          "fuente": "El Periódico, Enlace Judío"
         },
         {
-          "texto": "Nvidia cerró el 3 de septiembre la compra de Hugging Face por 12.930 millones de dólares, su mayor operación histórica para controlar el ecosistema global de modelos y desarrolladores open source. OpenAI lanzó el mismo día GPT-6 Astra, presentado por Greg Brockman como el modelo más inteligente y alineado, desatando el debate sobre el umbral de la AGI tras superar pruebas complejas de matemáticas y ciencia",
-          "fuente": "Nvidia Blog, The Guardian"
+          "texto": "El IPC español repuntó al 4,3% interanual en agosto, más del doble del objetivo del BCE, impulsado por las tensiones energéticas ligadas a Oriente Medio. Citi destacó el 3 de septiembre que CaixaBank ganó 90 puntos básicos de cuota en crédito durante el primer semestre de 2026, liderando el atractivo del sector bancario español ante el nuevo ciclo de subidas",
+          "fuente": "Finanzas.com, Investing.com"
         },
         {
-          "texto": "El informe Dealsuite European M&A Monitor (3 septiembre, 815 firmas) cuantifica la brecha de valoración: en el 50 % de procesos europeos los vendedores piden excesivamente alto, con divergencia media del 25 % que rompe el 29 % de operaciones y sube al 38 % en el sur de Europa",
-          "fuente": "Dealsuite"
-        },
-        {
-          "texto": "En Datacloud USA (2 septiembre) se desvelaron alianzas de Nvidia con Blackstone, KKR, Brookfield y Goldman Sachs para movilizar más de 500.000 millones en financiación de computación, cubriendo el desfase entre infraestructura a 20 años y obsolescencia de GPU a 5-7. XTB cifra en 12 $/barril la prima geopolítica persistente por el bloqueo de Ormuz, con backwardation extremo y diésel subiendo más del 13 % mensual en EAU",
-          "fuente": "Capacity Media, XTB"
+          "texto": "Nvidia formalizó el 3 de septiembre la adquisición de Hugging Face por 12.930 millones de dólares, 11.900 millones para accionistas y 1.000 millones en retención de empleados, su mayor operación en software de IA. Ese mismo día, ChatGPT, Claude, Gemini y Grok sufrieron un apagón global simultáneo en más de 70 países según DownDetector. En el plano regulatorio, el senador Bernie Sanders presentó el 3 de septiembre la Ban Artificial Superintelligence Act, que prohibiría modelos superinteligentes bajo penas de hasta 20 años de cárcel y disolución de empresas",
+          "fuente": "Forbes Centroamérica, El Financiero, Pasquale Pillitteri"
         }
       ]
     },
@@ -93,20 +81,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003 y RD 571/2023, ampliado por DL 1/2025 hasta 31-dic-2026) obliga a inversores UE/EFTA a autorización previa del Consejo de Ministros en sectores estratégicos sensibles",
-          "fuente": "Global Law Experts"
+          "texto": "El AI Act de la UE (Reglamento 2024/1689) entró en su fase operativa y de exigibilidad principal el 2 de agosto, iniciando el régimen sancionador para sistemas de IA de alto riesgo. Más de 100 líderes tecnológicos globales, incluyendo altos cargos de OpenAI, Anthropic, Google, AWS y Microsoft, firmaron el 28 de agosto una carta abierta alertando de una ventana de \"meses\" para blindar infraestructuras críticas ante ciberataques automatizados por IA",
+          "fuente": "Europa.eu, Xataka"
         },
         {
-          "texto": "Informes sectoriales de septiembre confirman el patrón estructural: crecimiento macro español superior a la UE y transición generacional en industriales familiares de los 80-90 impulsan M&A cross-border donde compradores foráneos priorizan pymes con exportación >50 % y autoabastecimiento solar",
-          "fuente": "San Martín Leather / Albia IMAP"
-        },
-        {
-          "texto": "OpenAI desplegó en agosto-septiembre la plataforma Daybreak y el modelo GPT-5.6-Cyber, nuevo estándar defensivo institucional frente al uso ofensivo de IA por actores estatales",
-          "fuente": "OpenAI News"
-        },
-        {
-          "texto": "PwC proyecta 31,6 billones de dólares de inversión global en infraestructura de IA hasta 2050, con gasto anual en CPD saltando de 800.000 M$ (2026) a 1,8 billones (2050), condicionado por acceso a electricidad descarbonizada",
-          "fuente": "PwC Global"
+          "texto": "Datos de Ramp a finales de agosto revelan que la cuota empresarial de Anthropic (Claude) escaló al 34,4% en abril de 2026 frente al 4% de enero de 2025, superando por primera vez a OpenAI (32,3%) en gasto corporativo sobre 50.000 clientes. El balance de M&A de julio en España registró 72 operaciones, con el 44% ejecutadas por compradores extranjeros que estructuran adquisiciones a través de filiales europeas existentes, liderados por private equity y vehículos de coinversión pública en pymes industriales (Stellum Capital, Transition Capital)",
+          "fuente": "Europa Press, Implica CF"
         }
       ]
     },
@@ -118,14 +98,22 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La brecha de valoración del 25 % media (38 % en sur de Europa) que rompe el 29 % de deals exige ajustar mandatos de venta con precios de reserva realistas y earn-outs vinculados a hitos operativos, no a múltiplos de entrada. El filtro de inversiones exteriores vigente hasta diciembre 2026 obliga a estructurar adquisiciones cross-border con autorización previa del Consejo de Ministros cuando el target toca sectores estratégicos, añadiendo 2-3 meses al closing. El perfil de pyme industrial exportadora (>50 %) con autoconsumo solar es el sweet spot actual para compradores internacionales: permite originar mandatos buy-side con thesis de valor defendible y sinergias ESG cuantificables",
-              "fuente": "San Martín Leather / Albia IMAP"
+              "texto": "La ronda de iPronics con Nvidia valida el sweet spot de deep-tech industrial español: spin-off universitaria, fotónica para CPD de IA, capital extranjero estratégico y 177 millones totales, perfil replicable en mandatos buy-side para fondos que buscan exposición a la capa física de la IA",
+              "fuente": "Forbes España"
+            },
+            {
+              "texto": "El 44% de compradores extranjeros en el M&A español de julio, operando vía filiales europeas y vehículos de coinversión pública (Stellum, Transition Capital), confirma que el acceso a dealflow en pymes industriales exportadoras requiere mapear estructuras de holding paneuropeas, no solo fondos locales",
+              "fuente": "Implica CF"
+            },
+            {
+              "texto": "La subida de CaixaBank (+90 pb cuota crédito 1S 2026) señalada por Citi anticipa que la próxima oleada de refinanciación corporativa en España se concentrará en entidades con balance saneado y red de pyme industrial, abriendo ventanas para asesorar reestructuraciones de deuda previas a venta",
+              "fuente": "Investing.com"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nZelenski advirtió el 6 de septiembre que la guerra se prolongará al menos otro invierno pese a la mediación de los enviados estadounidenses Kushner y Witkoff en Kiev, visita que cerró sin acuerdos de paz ni acercamientos territoriales mientras Ucrania lanzaba 258 drones contra 14 regiones rusas y Crimea tras la tregua de 72 horas en capitales.\n\nEn el golfo de Omán, el CENTCOM confirmó la destrucción de tres petroleros iraníes de la Guardia Revolucionaria e Irán replicó reivindicando ataques a buques y un dron naval estadounidenses en el estrecho de Ormuz, manteniendo bloqueada la ruta petrolera desde el 2 de septiembre.\n\nLa AfD de Ulrich Siegmund obtuvo el 44,3 % en las elecciones de Sajonia-Anhalt, quedándose a tres escaños de la mayoría absoluta (39 de 42) y rozando el primer gobierno regional de extrema derecha en Alemania desde 1945.\n\nGoogle presentó en Semicon Taiwan (7 septiembre) una ofensiva total en chips propios de IA: Amin Vahdat detalló la expansión acelerada de TPUs y alianzas con MediaTek para reducir la dependencia de Nvidia.\n\nFuentes: El Español, La Nación PY, RTVE, CommonWealth Magazine\n\n## Esta semana\nLos mercados descuentan con probabilidad cercana al 100 % una subida de 25 p.b. del BCE el 10 de septiembre hasta el 2,50 %, impulsada por la inflación de la eurozona al 3,3 % en agosto (España 4,5 % IPC armonizado) tras el shock energético de Oriente Medio.\n\nNvidia cerró el 3 de septiembre la compra de Hugging Face por 12.930 millones de dólares, su mayor operación histórica para controlar el ecosistema global de modelos y desarrolladores open source. OpenAI lanzó el mismo día GPT-6 Astra, presentado por Greg Brockman como el modelo más inteligente y alineado, desatando el debate sobre el umbral de la AGI tras superar pruebas complejas de matemáticas y ciencia.\n\nEl informe Dealsuite European M&A Monitor (3 septiembre, 815 firmas) cuantifica la brecha de valoración: en el 50 % de procesos europeos los vendedores piden excesivamente alto, con divergencia media del 25 % que rompe el 29 % de operaciones y sube al 38 % en el sur de Europa.\n\nEn Datacloud USA (2 septiembre) se desvelaron alianzas de Nvidia con Blackstone, KKR, Brookfield y Goldman Sachs para movilizar más de 500.000 millones en financiación de computación, cubriendo el desfase entre infraestructura a 20 años y obsolescencia de GPU a 5-7. XTB cifra en 12 $/barril la prima geopolítica persistente por el bloqueo de Ormuz, con backwardation extremo y diésel subiendo más del 13 % mensual en EAU.\n\nFuentes: CaixaBank Research, Nvidia Blog, The Guardian, Dealsuite, Capacity Media, XTB\n\n## Este mes\nEl régimen transitorio de control de inversiones exteriores en España (art. 7 bis Ley 19/2003 y RD 571/2023, ampliado por DL 1/2025 hasta 31-dic-2026) obliga a inversores UE/EFTA a autorización previa del Consejo de Ministros en sectores estratégicos sensibles.\n\nInformes sectoriales de septiembre confirman el patrón estructural: crecimiento macro español superior a la UE y transición generacional en industriales familiares de los 80-90 impulsan M&A cross-border donde compradores foráneos priorizan pymes con exportación >50 % y autoabastecimiento solar.\n\nOpenAI desplegó en agosto-septiembre la plataforma Daybreak y el modelo GPT-5.6-Cyber, nuevo estándar defensivo institucional frente al uso ofensivo de IA por actores estatales.\n\nPwC proyecta 31,6 billones de dólares de inversión global en infraestructura de IA hasta 2050, con gasto anual en CPD saltando de 800.000 M$ (2026) a 1,8 billones (2050), condicionado por acceso a electricidad descarbonizada.\n\nFuentes: Global Law Experts, San Martín Leather / Albia IMAP, OpenAI News, PwC Global\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa brecha de valoración del 25 % media (38 % en sur de Europa) que rompe el 29 % de deals exige ajustar mandatos de venta con precios de reserva realistas y earn-outs vinculados a hitos operativos, no a múltiplos de entrada. El filtro de inversiones exteriores vigente hasta diciembre 2026 obliga a estructurar adquisiciones cross-border con autorización previa del Consejo de Ministros cuando el target toca sectores estratégicos, añadiendo 2-3 meses al closing. El perfil de pyme industrial exportadora (>50 %) con autoconsumo solar es el sweet spot actual para compradores internacionales: permite originar mandatos buy-side con thesis de valor defendible y sinergias ESG cuantificables.\n\nFuentes: Dealsuite, Global Law Experts, San Martín Leather / Albia IMAP",
+  "markdown": "## Hoy\nLas Fuerzas Armadas de Ucrania elevaron este martes a 1.499.390 las bajas rusas acumuladas desde febrero de 2022, con 1.410 adicionales en las últimas 24 horas, mientras un ataque con misiles y drones contra Kiev rompía la tregua posterior a la visita de emisarios estadounidenses dejando al menos dos muertos y ocho heridos. En el frente mediterráneo, Turquía denunció el 7 de septiembre el sabotaje israelí de los acuerdos regionales de paz, señalando que las acciones de Tel Aviv dejaron ineficaz el acuerdo de Islamabad.\n\nEl BCE celebra este jueves su reunión decisiva con expectativa unánime de subir 25 puntos básicos el tipo de depósito hasta el 2,50%, forzado por el estrés energético que mantiene el Brent en 97,16 dólares el barril. En España, la startup valenciana iPronics (spin-off UPV) cerró el 2 de septiembre una Serie B de 125 millones de dólares, 177 millones totales, incorporando a Nvidia como accionista para escalar su fotónica de silicio en centros de datos de IA.\n\nFuentes: Europa Press, LaSexta, teleSUR, CaixaBank Research, Kapital, Forbes España\n\n## Esta semana\nZelenski confirmó el 7 de septiembre que los enviados de la Casa Blanca Witkoff y Kushner visitaron Moscú y Kiev proponiendo una \"desescalada\" invernal, y señaló que el Kremlin muestra disposición a dialogar ante las legislativas estadounidenses de noviembre. Netanyahu advirtió el 6 de septiembre, en el brindis por el Año Nuevo judío, que \"el fin del régimen iraní está cerca\" y que Israel está preparado para un golpe definitivo si Teherán vuelve a atacar.\n\nEl IPC español repuntó al 4,3% interanual en agosto, más del doble del objetivo del BCE, impulsado por las tensiones energéticas ligadas a Oriente Medio. Citi destacó el 3 de septiembre que CaixaBank ganó 90 puntos básicos de cuota en crédito durante el primer semestre de 2026, liderando el atractivo del sector bancario español ante el nuevo ciclo de subidas.\n\nNvidia formalizó el 3 de septiembre la adquisición de Hugging Face por 12.930 millones de dólares, 11.900 millones para accionistas y 1.000 millones en retención de empleados, su mayor operación en software de IA. Ese mismo día, ChatGPT, Claude, Gemini y Grok sufrieron un apagón global simultáneo en más de 70 países según DownDetector. En el plano regulatorio, el senador Bernie Sanders presentó el 3 de septiembre la Ban Artificial Superintelligence Act, que prohibiría modelos superinteligentes bajo penas de hasta 20 años de cárcel y disolución de empresas.\n\nFuentes: El Periódico, Enlace Judío, Finanzas.com, Investing.com, Forbes Centroamérica, El Financiero, Pasquale Pillitteri\n\n## Este mes\nEl AI Act de la UE (Reglamento 2024/1689) entró en su fase operativa y de exigibilidad principal el 2 de agosto, iniciando el régimen sancionador para sistemas de IA de alto riesgo. Más de 100 líderes tecnológicos globales, incluyendo altos cargos de OpenAI, Anthropic, Google, AWS y Microsoft, firmaron el 28 de agosto una carta abierta alertando de una ventana de \"meses\" para blindar infraestructuras críticas ante ciberataques automatizados por IA.\n\nDatos de Ramp a finales de agosto revelan que la cuota empresarial de Anthropic (Claude) escaló al 34,4% en abril de 2026 frente al 4% de enero de 2025, superando por primera vez a OpenAI (32,3%) en gasto corporativo sobre 50.000 clientes. El balance de M&A de julio en España registró 72 operaciones, con el 44% ejecutadas por compradores extranjeros que estructuran adquisiciones a través de filiales europeas existentes, liderados por private equity y vehículos de coinversión pública en pymes industriales (Stellum Capital, Transition Capital).\n\nFuentes: Europa.eu, Xataka, Europa Press, Implica CF\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa ronda de iPronics con Nvidia valida el sweet spot de deep-tech industrial español: spin-off universitaria, fotónica para CPD de IA, capital extranjero estratégico y 177 millones totales, perfil replicable en mandatos buy-side para fondos que buscan exposición a la capa física de la IA.\n\nEl 44% de compradores extranjeros en el M&A español de julio, operando vía filiales europeas y vehículos de coinversión pública (Stellum, Transition Capital), confirma que el acceso a dealflow en pymes industriales exportadoras requiere mapear estructuras de holding paneuropeas, no solo fondos locales.\n\nLa subida de CaixaBank (+90 pb cuota crédito 1S 2026) señalada por Citi anticipa que la próxima oleada de refinanciación corporativa en España se concentrará en entidades con balance saneado y red de pyme industrial, abriendo ventanas para asesorar reestructuraciones de deuda previas a venta.\n\nFuentes: Forbes España, Implica CF, Investing.com",
   "aviso_interno": "longitud"
 }
