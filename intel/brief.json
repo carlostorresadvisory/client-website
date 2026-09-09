@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-09-08",
+  "fecha": "2026-09-09",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bajas rusas acumuladas",
-      "valor": "1.499.390",
-      "fuente": "Europa Press"
+      "etiqueta": "Precio Brent",
+      "valor": "100 $/barril",
+      "fuente": "CBS News"
     },
     {
-      "etiqueta": "Tipo depósito BCE esperado",
-      "valor": "2,50%",
-      "fuente": "CaixaBank Research"
+      "etiqueta": "Inflación eurozona",
+      "valor": "3,3%",
+      "fuente": "Morningstar UK"
     },
     {
-      "etiqueta": "Brent",
-      "valor": "97,16 $/barril",
-      "fuente": "Kapital"
+      "etiqueta": "Operaciones M&A España",
+      "valor": "1.804",
+      "fuente": "Líder Legal"
     },
     {
-      "etiqueta": "Ronda iPronics",
-      "valor": "125 M$",
-      "fuente": "Forbes España"
+      "etiqueta": "Valor M&A España",
+      "valor": "61.137 M€",
+      "fuente": "Líder Legal"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 6
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 7
+      "n": 4
     },
     {
       "horizonte": "Este mes",
@@ -51,12 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Las Fuerzas Armadas de Ucrania elevaron este martes a 1.499.390 las bajas rusas acumuladas desde febrero de 2022, con 1.410 adicionales en las últimas 24 horas, mientras un ataque con misiles y drones contra Kiev rompía la tregua posterior a la visita de emisarios estadounidenses dejando al menos dos muertos y ocho heridos. En el frente mediterráneo, Turquía denunció el 7 de septiembre el sabotaje israelí de los acuerdos regionales de paz, señalando que las acciones de Tel Aviv dejaron ineficaz el acuerdo de Islamabad",
-          "fuente": "Europa Press, LaSexta, teleSUR"
+          "texto": "El precio del Brent superó los 100 $/barril tras la destrucción de cinco petroleros iraníes por parte del Comando Central de EE. UU. y los posteriores ataques hutíes y de la Guardia Revolucionaria en Jordania y Ormuz",
+          "fuente": "CBS News"
         },
         {
-          "texto": "El BCE celebra este jueves su reunión decisiva con expectativa unánime de subir 25 puntos básicos el tipo de depósito hasta el 2,50%, forzado por el estrés energético que mantiene el Brent en 97,16 dólares el barril. En España, la startup valenciana iPronics (spin-off UPV) cerró el 2 de septiembre una Serie B de 125 millones de dólares, 177 millones totales, incorporando a Nvidia como accionista para escalar su fotónica de silicio en centros de datos de IA",
-          "fuente": "CaixaBank Research, Kapital, Forbes España"
+          "texto": "En la guerra Rusia-Ucrania, Vladimir Putin sostuvo una llamada con Donald Trump para presentar una visión \"objetiva\" del frente mientras los ataques rusos nocturnos dejaron al menos cinco muertos en Kyiv y el sur",
+          "fuente": "ISW, Anadolu Agency"
+        },
+        {
+          "texto": "El Representante Comercial de EE. UU. respaldó los decretos de Trump bajo la Sección 338 que impondrán prohibiciones totales a productos lácteos y alcohol canadiense desde el 29 de septiembre, en respuesta a los contraaranceles de Ottawa sobre 27.600 M$ de bienes estadounidenses",
+          "fuente": "USTR"
+        },
+        {
+          "texto": "En IA, la startup Magic afirmó que su receta de preentrenamiento replicas el rendimiento de DeepSeek V4 Pro usando 50 veces menos cómputo, con un coste de 0,5 M$ en chips GB200",
+          "fuente": "Trending Topics"
         }
       ]
     },
@@ -64,16 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Zelenski confirmó el 7 de septiembre que los enviados de la Casa Blanca Witkoff y Kushner visitaron Moscú y Kiev proponiendo una \"desescalada\" invernal, y señaló que el Kremlin muestra disposición a dialogar ante las legislativas estadounidenses de noviembre. Netanyahu advirtió el 6 de septiembre, en el brindis por el Año Nuevo judío, que \"el fin del régimen iraní está cerca\" y que Israel está preparado para un golpe definitivo si Teherán vuelve a atacar",
-          "fuente": "El Periódico, Enlace Judío"
+          "texto": "Analistas anticipan que el BCE subirá tipos en 25 pb el 10 de septiembre, llevando la facilidad de depósito al 2,50%, tras el repunte de la inflación de la eurozona al 3,3% en agosto por el shock energético",
+          "fuente": "Morningstar UK"
         },
         {
-          "texto": "El IPC español repuntó al 4,3% interanual en agosto, más del doble del objetivo del BCE, impulsado por las tensiones energéticas ligadas a Oriente Medio. Citi destacó el 3 de septiembre que CaixaBank ganó 90 puntos básicos de cuota en crédito durante el primer semestre de 2026, liderando el atractivo del sector bancario español ante el nuevo ciclo de subidas",
-          "fuente": "Finanzas.com, Investing.com"
+          "texto": "Los hutíes respaldados por Irán atacaron instalaciones petroleras y ciudades en el sur de Arabia Saudita, hiriendo a más de 70 personas y provocando una promesa de respuesta militar de Riad",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Nvidia formalizó el 3 de septiembre la adquisición de Hugging Face por 12.930 millones de dólares, 11.900 millones para accionistas y 1.000 millones en retención de empleados, su mayor operación en software de IA. Ese mismo día, ChatGPT, Claude, Gemini y Grok sufrieron un apagón global simultáneo en más de 70 países según DownDetector. En el plano regulatorio, el senador Bernie Sanders presentó el 3 de septiembre la Ban Artificial Superintelligence Act, que prohibiría modelos superinteligentes bajo penas de hasta 20 años de cárcel y disolución de empresas",
-          "fuente": "Forbes Centroamérica, El Financiero, Pasquale Pillitteri"
+          "texto": "El presidente chino Xi Jinping tiene previsto visitar EE. UU. el 24 de septiembre para una cumbre con Donald Trump enfocada en sanciones comerciales, restricciones a tecnología avanzada y la crisis de suministro derivada del conflicto en Irán",
+          "fuente": "DTN Ag Policy Editor"
+        },
+        {
+          "texto": "Nvidia acordó la adquisición de Hugging Face por 12.930 M$, integrando una plataforma utilizada por más de 200.000 empresas sin alterar su carácter multi-modelo",
+          "fuente": "NVIDIA"
         }
       ]
     },
@@ -81,39 +93,27 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El AI Act de la UE (Reglamento 2024/1689) entró en su fase operativa y de exigibilidad principal el 2 de agosto, iniciando el régimen sancionador para sistemas de IA de alto riesgo. Más de 100 líderes tecnológicos globales, incluyendo altos cargos de OpenAI, Anthropic, Google, AWS y Microsoft, firmaron el 28 de agosto una carta abierta alertando de una ventana de \"meses\" para blindar infraestructuras críticas ante ciberataques automatizados por IA",
-          "fuente": "Europa.eu, Xataka"
+          "texto": "La tasa arancelaria efectiva media en EE. UU. se situó en el 6,7% en julio, frente al 2,3% de enero de 2025, con China bajo un arancel efectivo del 22,8% tras la sustitución de medidas de emergencia por marcos normativos permanentes",
+          "fuente": "Effective Tariff Rates and Revenues"
         },
         {
-          "texto": "Datos de Ramp a finales de agosto revelan que la cuota empresarial de Anthropic (Claude) escaló al 34,4% en abril de 2026 frente al 4% de enero de 2025, superando por primera vez a OpenAI (32,3%) en gasto corporativo sobre 50.000 clientes. El balance de M&A de julio en España registró 72 operaciones, con el 44% ejecutadas por compradores extranjeros que estructuran adquisiciones a través de filiales europeas existentes, liderados por private equity y vehículos de coinversión pública en pymes industriales (Stellum Capital, Transition Capital)",
-          "fuente": "Europa Press, Implica CF"
+          "texto": "Durante su intervención en Jackson Hole, el nuevo presidente de la Fed, Kevin Warsh, advirtió que la inflación no es autoejecutable y endureció las expectativas de subidas de tipos en otoño",
+          "fuente": "Morningstar Europe"
+        },
+        {
+          "texto": "Los hiperescaladores proyectan un gasto mundial en centros de datos e IA de 900.000 M$ en 2026, aproximándose a 1,2 billones en 2027, impulsando la competencia en semiconductores personalizados y suministro eléctrico",
+          "fuente": "UBS Global"
+        },
+        {
+          "texto": "El proceso de M&A en 2026 opera bajo dinámicas en \"forma de K\", donde las operaciones medianas exigen más de 230 horas en promedio en Virtual Data Rooms por la cautela en la financiación y la brecha de valoración",
+          "fuente": "Ideals M&A Mid-Year Review"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": [],
-      "subsecciones": [
-        {
-          "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "La ronda de iPronics con Nvidia valida el sweet spot de deep-tech industrial español: spin-off universitaria, fotónica para CPD de IA, capital extranjero estratégico y 177 millones totales, perfil replicable en mandatos buy-side para fondos que buscan exposición a la capa física de la IA",
-              "fuente": "Forbes España"
-            },
-            {
-              "texto": "El 44% de compradores extranjeros en el M&A español de julio, operando vía filiales europeas y vehículos de coinversión pública (Stellum, Transition Capital), confirma que el acceso a dealflow en pymes industriales exportadoras requiere mapear estructuras de holding paneuropeas, no solo fondos locales",
-              "fuente": "Implica CF"
-            },
-            {
-              "texto": "La subida de CaixaBank (+90 pb cuota crédito 1S 2026) señalada por Citi anticipa que la próxima oleada de refinanciación corporativa en España se concentrará en entidades con balance saneado y red de pyme industrial, abriendo ventanas para asesorar reestructuraciones de deuda previas a venta",
-              "fuente": "Investing.com"
-            }
-          ]
-        }
-      ]
+      "lineas": []
     }
   ],
-  "markdown": "## Hoy\nLas Fuerzas Armadas de Ucrania elevaron este martes a 1.499.390 las bajas rusas acumuladas desde febrero de 2022, con 1.410 adicionales en las últimas 24 horas, mientras un ataque con misiles y drones contra Kiev rompía la tregua posterior a la visita de emisarios estadounidenses dejando al menos dos muertos y ocho heridos. En el frente mediterráneo, Turquía denunció el 7 de septiembre el sabotaje israelí de los acuerdos regionales de paz, señalando que las acciones de Tel Aviv dejaron ineficaz el acuerdo de Islamabad.\n\nEl BCE celebra este jueves su reunión decisiva con expectativa unánime de subir 25 puntos básicos el tipo de depósito hasta el 2,50%, forzado por el estrés energético que mantiene el Brent en 97,16 dólares el barril. En España, la startup valenciana iPronics (spin-off UPV) cerró el 2 de septiembre una Serie B de 125 millones de dólares, 177 millones totales, incorporando a Nvidia como accionista para escalar su fotónica de silicio en centros de datos de IA.\n\nFuentes: Europa Press, LaSexta, teleSUR, CaixaBank Research, Kapital, Forbes España\n\n## Esta semana\nZelenski confirmó el 7 de septiembre que los enviados de la Casa Blanca Witkoff y Kushner visitaron Moscú y Kiev proponiendo una \"desescalada\" invernal, y señaló que el Kremlin muestra disposición a dialogar ante las legislativas estadounidenses de noviembre. Netanyahu advirtió el 6 de septiembre, en el brindis por el Año Nuevo judío, que \"el fin del régimen iraní está cerca\" y que Israel está preparado para un golpe definitivo si Teherán vuelve a atacar.\n\nEl IPC español repuntó al 4,3% interanual en agosto, más del doble del objetivo del BCE, impulsado por las tensiones energéticas ligadas a Oriente Medio. Citi destacó el 3 de septiembre que CaixaBank ganó 90 puntos básicos de cuota en crédito durante el primer semestre de 2026, liderando el atractivo del sector bancario español ante el nuevo ciclo de subidas.\n\nNvidia formalizó el 3 de septiembre la adquisición de Hugging Face por 12.930 millones de dólares, 11.900 millones para accionistas y 1.000 millones en retención de empleados, su mayor operación en software de IA. Ese mismo día, ChatGPT, Claude, Gemini y Grok sufrieron un apagón global simultáneo en más de 70 países según DownDetector. En el plano regulatorio, el senador Bernie Sanders presentó el 3 de septiembre la Ban Artificial Superintelligence Act, que prohibiría modelos superinteligentes bajo penas de hasta 20 años de cárcel y disolución de empresas.\n\nFuentes: El Periódico, Enlace Judío, Finanzas.com, Investing.com, Forbes Centroamérica, El Financiero, Pasquale Pillitteri\n\n## Este mes\nEl AI Act de la UE (Reglamento 2024/1689) entró en su fase operativa y de exigibilidad principal el 2 de agosto, iniciando el régimen sancionador para sistemas de IA de alto riesgo. Más de 100 líderes tecnológicos globales, incluyendo altos cargos de OpenAI, Anthropic, Google, AWS y Microsoft, firmaron el 28 de agosto una carta abierta alertando de una ventana de \"meses\" para blindar infraestructuras críticas ante ciberataques automatizados por IA.\n\nDatos de Ramp a finales de agosto revelan que la cuota empresarial de Anthropic (Claude) escaló al 34,4% en abril de 2026 frente al 4% de enero de 2025, superando por primera vez a OpenAI (32,3%) en gasto corporativo sobre 50.000 clientes. El balance de M&A de julio en España registró 72 operaciones, con el 44% ejecutadas por compradores extranjeros que estructuran adquisiciones a través de filiales europeas existentes, liderados por private equity y vehículos de coinversión pública en pymes industriales (Stellum Capital, Transition Capital).\n\nFuentes: Europa.eu, Xataka, Europa Press, Implica CF\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa ronda de iPronics con Nvidia valida el sweet spot de deep-tech industrial español: spin-off universitaria, fotónica para CPD de IA, capital extranjero estratégico y 177 millones totales, perfil replicable en mandatos buy-side para fondos que buscan exposición a la capa física de la IA.\n\nEl 44% de compradores extranjeros en el M&A español de julio, operando vía filiales europeas y vehículos de coinversión pública (Stellum, Transition Capital), confirma que el acceso a dealflow en pymes industriales exportadoras requiere mapear estructuras de holding paneuropeas, no solo fondos locales.\n\nLa subida de CaixaBank (+90 pb cuota crédito 1S 2026) señalada por Citi anticipa que la próxima oleada de refinanciación corporativa en España se concentrará en entidades con balance saneado y red de pyme industrial, abriendo ventanas para asesorar reestructuraciones de deuda previas a venta.\n\nFuentes: Forbes España, Implica CF, Investing.com",
-  "aviso_interno": "longitud"
+  "markdown": "## Hoy\nEl precio del Brent superó los 100 $/barril tras la destrucción de cinco petroleros iraníes por parte del Comando Central de EE. UU. y los posteriores ataques hutíes y de la Guardia Revolucionaria en Jordania y Ormuz.\n\nEn la guerra Rusia-Ucrania, Vladimir Putin sostuvo una llamada con Donald Trump para presentar una visión \"objetiva\" del frente mientras los ataques rusos nocturnos dejaron al menos cinco muertos en Kyiv y el sur.\n\nEl Representante Comercial de EE. UU. respaldó los decretos de Trump bajo la Sección 338 que impondrán prohibiciones totales a productos lácteos y alcohol canadiense desde el 29 de septiembre, en respuesta a los contraaranceles de Ottawa sobre 27.600 M$ de bienes estadounidenses.\n\nEn IA, la startup Magic afirmó que su receta de preentrenamiento replicas el rendimiento de DeepSeek V4 Pro usando 50 veces menos cómputo, con un coste de 0,5 M$ en chips GB200.\n\nFuentes: CBS News, ISW, Anadolu Agency, USTR, Trending Topics\n\n## Esta semana\nAnalistas anticipan que el BCE subirá tipos en 25 pb el 10 de septiembre, llevando la facilidad de depósito al 2,50%, tras el repunte de la inflación de la eurozona al 3,3% en agosto por el shock energético.\n\nLos hutíes respaldados por Irán atacaron instalaciones petroleras y ciudades en el sur de Arabia Saudita, hiriendo a más de 70 personas y provocando una promesa de respuesta militar de Riad.\n\nEl presidente chino Xi Jinping tiene previsto visitar EE. UU. el 24 de septiembre para una cumbre con Donald Trump enfocada en sanciones comerciales, restricciones a tecnología avanzada y la crisis de suministro derivada del conflicto en Irán.\n\nNvidia acordó la adquisición de Hugging Face por 12.930 M$, integrando una plataforma utilizada por más de 200.000 empresas sin alterar su carácter multi-modelo.\n\nFuentes: Morningstar UK, The Guardian, DTN Ag Policy Editor, NVIDIA\n\n## Este mes\nLa tasa arancelaria efectiva media en EE. UU. se situó en el 6,7% en julio, frente al 2,3% de enero de 2025, con China bajo un arancel efectivo del 22,8% tras la sustitución de medidas de emergencia por marcos normativos permanentes.\n\nDurante su intervención en Jackson Hole, el nuevo presidente de la Fed, Kevin Warsh, advirtió que la inflación no es autoejecutable y endureció las expectativas de subidas de tipos en otoño.\n\nLos hiperescaladores proyectan un gasto mundial en centros de datos e IA de 900.000 M$ en 2026, aproximándose a 1,2 billones en 2027, impulsando la competencia en semiconductores personalizados y suministro eléctrico.\n\nEl proceso de M&A en 2026 opera bajo dinámicas en \"forma de K\", donde las operaciones medianas exigen más de 230 horas en promedio en Virtual Data Rooms por la cautela en la financiación y la brecha de valoración.\n\nFuentes: Effective Tariff Rates and Revenues, Morningstar Europe, UBS Global, Ideals M&A Mid-Year Review"
 }
