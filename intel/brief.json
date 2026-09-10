@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-09-09",
+  "fecha": "2026-09-10",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Precio Brent",
-      "valor": "100 $/barril",
-      "fuente": "CBS News"
+      "etiqueta": "Tipos BCE",
+      "valor": "2,50%",
+      "fuente": "El Español"
     },
     {
-      "etiqueta": "Inflación eurozona",
-      "valor": "3,3%",
-      "fuente": "Morningstar UK"
+      "etiqueta": "Compra Nvidia",
+      "valor": "12.930 M$",
+      "fuente": "La Tercera"
     },
     {
-      "etiqueta": "Operaciones M&A España",
-      "valor": "1.804",
-      "fuente": "Líder Legal"
+      "etiqueta": "Duración media M&A",
+      "valor": "253 días",
+      "fuente": "PwC"
     },
     {
-      "etiqueta": "Valor M&A España",
-      "valor": "61.137 M€",
-      "fuente": "Líder Legal"
+      "etiqueta": "SFO activos España",
+      "valor": "166",
+      "fuente": "VUMI"
     }
   ],
   "horizontes": [
@@ -30,11 +30,11 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 6
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,20 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El precio del Brent superó los 100 $/barril tras la destrucción de cinco petroleros iraníes por parte del Comando Central de EE. UU. y los posteriores ataques hutíes y de la Guardia Revolucionaria en Jordania y Ormuz",
-          "fuente": "CBS News"
+          "texto": "El BCE reúne su consejo de gobierno este jueves 10 de septiembre con los mercados descontando al 100% una subida de 25 puntos básicos que elevará la facilidad de depósito al 2,50%, respuesta al repunte del IPC de la eurozona hasta el 3,3% en agosto por las tensiones energéticas",
+          "fuente": "El Español"
         },
         {
-          "texto": "En la guerra Rusia-Ucrania, Vladimir Putin sostuvo una llamada con Donald Trump para presentar una visión \"objetiva\" del frente mientras los ataques rusos nocturnos dejaron al menos cinco muertos en Kyiv y el sur",
-          "fuente": "ISW, Anadolu Agency"
+          "texto": "Haaretz revela que Mohamed bin Zayed advirtió personalmente a Netanyahu sobre los preparativos del ataque de Hamás diez días antes del 7 de octubre de 2023, una alerta que según la investigación no fue atendida",
+          "fuente": "Punta News"
         },
         {
-          "texto": "El Representante Comercial de EE. UU. respaldó los decretos de Trump bajo la Sección 338 que impondrán prohibiciones totales a productos lácteos y alcohol canadiense desde el 29 de septiembre, en respuesta a los contraaranceles de Ottawa sobre 27.600 M$ de bienes estadounidenses",
-          "fuente": "USTR"
+          "texto": "Jacob Coxon, ex investigador de OpenAI y Anthropic, declara que los desarrolladores de IA de vanguardia operan bajo la convicción privada de que estos sistemas podrían plantear riesgos existenciales a finales de esta década al avanzar hacia superinteligencias auto-mejorantes",
+          "fuente": "Cadena SER"
         },
         {
-          "texto": "En IA, la startup Magic afirmó que su receta de preentrenamiento replicas el rendimiento de DeepSeek V4 Pro usando 50 veces menos cómputo, con un coste de 0,5 M$ en chips GB200",
-          "fuente": "Trending Topics"
+          "texto": "En el lower mid-market español, la transmisión de empresas familiares recurre cada vez más a estructuras combinadas de earn-out y deuda subordinada para cerrar brechas de valoración, con múltiplos estables en 7x-8x EBITDA en sectores tradicionales",
+          "fuente": "Kpitalex"
         }
       ]
     },
@@ -72,20 +72,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Analistas anticipan que el BCE subirá tipos en 25 pb el 10 de septiembre, llevando la facilidad de depósito al 2,50%, tras el repunte de la inflación de la eurozona al 3,3% en agosto por el shock energético",
-          "fuente": "Morningstar UK"
+          "texto": "OpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado como su sistema \"más inteligente del mundo\" con capacidades agénticas avanzadas para ingeniería de software, ciberseguridad y ejecución autónoma de tareas complejas de múltiples pasos. Nvidia cerró en la IFA de Berlín su mayor compra corporativa: 12.930 millones de dólares por Hugging Face, integrando la mayor plataforma de modelos de pesos abiertos en su pila de inferencia",
+          "fuente": "Infobae, La Tercera"
         },
         {
-          "texto": "Los hutíes respaldados por Irán atacaron instalaciones petroleras y ciudades en el sur de Arabia Saudita, hiriendo a más de 70 personas y provocando una promesa de respuesta militar de Riad",
-          "fuente": "The Guardian"
+          "texto": "Los mercados otorgan un 58%-60% de probabilidad a una subida de 25 pb de la Fed en su reunión del 15-16 de septiembre, hasta el rango 3,75%-4%, tras el tono restrictivo de Kevin Warsh en Jackson Hole. Ocho potencias de mayoría musulmana emitieron un comunicado conjunto a comienzos de septiembre rechazando y bloqueando los planes israelíes de vaciado demográfico y desplazamiento en Gaza bajo tutela de la ONU",
+          "fuente": "El Tiempo Latino, Atalayar"
         },
         {
-          "texto": "El presidente chino Xi Jinping tiene previsto visitar EE. UU. el 24 de septiembre para una cumbre con Donald Trump enfocada en sanciones comerciales, restricciones a tecnología avanzada y la crisis de suministro derivada del conflicto en Irán",
-          "fuente": "DTN Ag Policy Editor"
-        },
-        {
-          "texto": "Nvidia acordó la adquisición de Hugging Face por 12.930 M$, integrando una plataforma utilizada por más de 200.000 empresas sin alterar su carácter multi-modelo",
-          "fuente": "NVIDIA"
+          "texto": "El 64% de los gestores de private equity en España perciben un fundraising menos complejo que en 2025, con tecnología y servicios financieros como destinos prioritarios del dry powder disponible. El 62% de las operaciones de capital privado cerradas en pymes españolas involucraron compañías con menos de 50 empleados, confirmando la penetración de los fondos en el lower mid-market",
+          "fuente": "RRHHDigital, Fundenza"
         }
       ]
     },
@@ -93,27 +89,34 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La tasa arancelaria efectiva media en EE. UU. se situó en el 6,7% en julio, frente al 2,3% de enero de 2025, con China bajo un arancel efectivo del 22,8% tras la sustitución de medidas de emergencia por marcos normativos permanentes",
-          "fuente": "Effective Tariff Rates and Revenues"
-        },
-        {
-          "texto": "Durante su intervención en Jackson Hole, el nuevo presidente de la Fed, Kevin Warsh, advirtió que la inflación no es autoejecutable y endureció las expectativas de subidas de tipos en otoño",
-          "fuente": "Morningstar Europe"
-        },
-        {
-          "texto": "Los hiperescaladores proyectan un gasto mundial en centros de datos e IA de 900.000 M$ en 2026, aproximándose a 1,2 billones en 2027, impulsando la competencia en semiconductores personalizados y suministro eléctrico",
-          "fuente": "UBS Global"
-        },
-        {
-          "texto": "El proceso de M&A en 2026 opera bajo dinámicas en \"forma de K\", donde las operaciones medianas exigen más de 230 horas en promedio en Virtual Data Rooms por la cautela en la financiación y la brecha de valoración",
-          "fuente": "Ideals M&A Mid-Year Review"
+          "texto": "El M&A Mid-Year Review 2026 de Ideals describe un mercado en \"forma de K\": el valor global repunta por megatransacciones mientras el middle market sufre restricciones de financiación, con una duración media de 253 días por operación completada. Los ingresos industriales y empresariales (ACIE) de Nvidia crecieron un 138% interanual, señal de que la demanda de infraestructura de IA se extiende más allá de los hiperescaladores hacia la industria tradicional. El ecosistema de Single Family Offices en España cuenta con 166 estructuras activas, el 35% de las cuales afrontará relevo generacional en la próxima década, destinando de media el 44% de su asignación a inmobiliario e inversiones alternativas",
+          "fuente": "PwC, Bloomberg, VUMI"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": []
+      "lineas": [],
+      "subsecciones": [
+        {
+          "titulo": "Edges para CT Advisory",
+          "lineas": [
+            {
+              "texto": "La estructuración con earn-out y deuda subordinada a 7x-8x EBITDA en el lower mid-market familiar español responde directamente a la brecha de valoración que alarga los procesos a 253 días",
+              "fuente": "Kpitalex, PwC"
+            },
+            {
+              "texto": "El 62% de deals de private equity en pymes por debajo de 50 empleados y el optimismo en fundraising (64% lo ven más fácil) indican que el capital sigue bajando de ticket, ampliando el universo de objetivos para boutiques de corporate finance",
+              "fuente": "Fundenza, RRHHDigital"
+            },
+            {
+              "texto": "Los 166 SFO activos con 35% en relevo generacional y 44% en alternativos/inmobiliario representan una base de propietarios vendedores o coinversores con horizonte de década",
+              "fuente": "VUMI"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "markdown": "## Hoy\nEl precio del Brent superó los 100 $/barril tras la destrucción de cinco petroleros iraníes por parte del Comando Central de EE. UU. y los posteriores ataques hutíes y de la Guardia Revolucionaria en Jordania y Ormuz.\n\nEn la guerra Rusia-Ucrania, Vladimir Putin sostuvo una llamada con Donald Trump para presentar una visión \"objetiva\" del frente mientras los ataques rusos nocturnos dejaron al menos cinco muertos en Kyiv y el sur.\n\nEl Representante Comercial de EE. UU. respaldó los decretos de Trump bajo la Sección 338 que impondrán prohibiciones totales a productos lácteos y alcohol canadiense desde el 29 de septiembre, en respuesta a los contraaranceles de Ottawa sobre 27.600 M$ de bienes estadounidenses.\n\nEn IA, la startup Magic afirmó que su receta de preentrenamiento replicas el rendimiento de DeepSeek V4 Pro usando 50 veces menos cómputo, con un coste de 0,5 M$ en chips GB200.\n\nFuentes: CBS News, ISW, Anadolu Agency, USTR, Trending Topics\n\n## Esta semana\nAnalistas anticipan que el BCE subirá tipos en 25 pb el 10 de septiembre, llevando la facilidad de depósito al 2,50%, tras el repunte de la inflación de la eurozona al 3,3% en agosto por el shock energético.\n\nLos hutíes respaldados por Irán atacaron instalaciones petroleras y ciudades en el sur de Arabia Saudita, hiriendo a más de 70 personas y provocando una promesa de respuesta militar de Riad.\n\nEl presidente chino Xi Jinping tiene previsto visitar EE. UU. el 24 de septiembre para una cumbre con Donald Trump enfocada en sanciones comerciales, restricciones a tecnología avanzada y la crisis de suministro derivada del conflicto en Irán.\n\nNvidia acordó la adquisición de Hugging Face por 12.930 M$, integrando una plataforma utilizada por más de 200.000 empresas sin alterar su carácter multi-modelo.\n\nFuentes: Morningstar UK, The Guardian, DTN Ag Policy Editor, NVIDIA\n\n## Este mes\nLa tasa arancelaria efectiva media en EE. UU. se situó en el 6,7% en julio, frente al 2,3% de enero de 2025, con China bajo un arancel efectivo del 22,8% tras la sustitución de medidas de emergencia por marcos normativos permanentes.\n\nDurante su intervención en Jackson Hole, el nuevo presidente de la Fed, Kevin Warsh, advirtió que la inflación no es autoejecutable y endureció las expectativas de subidas de tipos en otoño.\n\nLos hiperescaladores proyectan un gasto mundial en centros de datos e IA de 900.000 M$ en 2026, aproximándose a 1,2 billones en 2027, impulsando la competencia en semiconductores personalizados y suministro eléctrico.\n\nEl proceso de M&A en 2026 opera bajo dinámicas en \"forma de K\", donde las operaciones medianas exigen más de 230 horas en promedio en Virtual Data Rooms por la cautela en la financiación y la brecha de valoración.\n\nFuentes: Effective Tariff Rates and Revenues, Morningstar Europe, UBS Global, Ideals M&A Mid-Year Review"
+  "markdown": "## Hoy\nEl BCE reúne su consejo de gobierno este jueves 10 de septiembre con los mercados descontando al 100% una subida de 25 puntos básicos que elevará la facilidad de depósito al 2,50%, respuesta al repunte del IPC de la eurozona hasta el 3,3% en agosto por las tensiones energéticas.\n\nHaaretz revela que Mohamed bin Zayed advirtió personalmente a Netanyahu sobre los preparativos del ataque de Hamás diez días antes del 7 de octubre de 2023, una alerta que según la investigación no fue atendida.\n\nJacob Coxon, ex investigador de OpenAI y Anthropic, declara que los desarrolladores de IA de vanguardia operan bajo la convicción privada de que estos sistemas podrían plantear riesgos existenciales a finales de esta década al avanzar hacia superinteligencias auto-mejorantes.\n\nEn el lower mid-market español, la transmisión de empresas familiares recurre cada vez más a estructuras combinadas de earn-out y deuda subordinada para cerrar brechas de valoración, con múltiplos estables en 7x-8x EBITDA en sectores tradicionales.\n\nFuentes: El Español, Punta News, Cadena SER, Kpitalex\n\n## Esta semana\nOpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado como su sistema \"más inteligente del mundo\" con capacidades agénticas avanzadas para ingeniería de software, ciberseguridad y ejecución autónoma de tareas complejas de múltiples pasos. Nvidia cerró en la IFA de Berlín su mayor compra corporativa: 12.930 millones de dólares por Hugging Face, integrando la mayor plataforma de modelos de pesos abiertos en su pila de inferencia.\n\nLos mercados otorgan un 58%-60% de probabilidad a una subida de 25 pb de la Fed en su reunión del 15-16 de septiembre, hasta el rango 3,75%-4%, tras el tono restrictivo de Kevin Warsh en Jackson Hole. Ocho potencias de mayoría musulmana emitieron un comunicado conjunto a comienzos de septiembre rechazando y bloqueando los planes israelíes de vaciado demográfico y desplazamiento en Gaza bajo tutela de la ONU.\n\nEl 64% de los gestores de private equity en España perciben un fundraising menos complejo que en 2025, con tecnología y servicios financieros como destinos prioritarios del dry powder disponible. El 62% de las operaciones de capital privado cerradas en pymes españolas involucraron compañías con menos de 50 empleados, confirmando la penetración de los fondos en el lower mid-market.\n\nFuentes: Infobae, La Tercera, El Tiempo Latino, Atalayar, RRHHDigital, Fundenza\n\n## Este mes\nEl M&A Mid-Year Review 2026 de Ideals describe un mercado en \"forma de K\": el valor global repunta por megatransacciones mientras el middle market sufre restricciones de financiación, con una duración media de 253 días por operación completada. Los ingresos industriales y empresariales (ACIE) de Nvidia crecieron un 138% interanual, señal de que la demanda de infraestructura de IA se extiende más allá de los hiperescaladores hacia la industria tradicional. El ecosistema de Single Family Offices en España cuenta con 166 estructuras activas, el 35% de las cuales afrontará relevo generacional en la próxima década, destinando de media el 44% de su asignación a inmobiliario e inversiones alternativas.\n\nFuentes: PwC, Bloomberg, VUMI\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa estructuración con earn-out y deuda subordinada a 7x-8x EBITDA en el lower mid-market familiar español responde directamente a la brecha de valoración que alarga los procesos a 253 días.\n\nEl 62% de deals de private equity en pymes por debajo de 50 empleados y el optimismo en fundraising (64% lo ven más fácil) indican que el capital sigue bajando de ticket, ampliando el universo de objetivos para boutiques de corporate finance.\n\nLos 166 SFO activos con 35% en relevo generacional y 44% en alternativos/inmobiliario representan una base de propietarios vendedores o coinversores con horizonte de década.\n\nFuentes: Kpitalex, PwC, Fundenza, RRHHDigital, VUMI"
 }
