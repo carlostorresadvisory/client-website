@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-09-10",
+  "fecha": "2026-09-11",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipos BCE",
+      "etiqueta": "Tipos BCE depósito",
       "valor": "2,50%",
-      "fuente": "El Español"
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Compra Nvidia",
-      "valor": "12.930 M$",
-      "fuente": "La Tercera"
+      "etiqueta": "Consumo carbón récord",
+      "valor": "8.940 Mt",
+      "fuente": "Emirates News Agency"
     },
     {
-      "etiqueta": "Duración media M&A",
-      "valor": "253 días",
-      "fuente": "PwC"
+      "etiqueta": "Aranceles Canadá",
+      "valor": "27.600 M$",
+      "fuente": "Dimerco"
     },
     {
-      "etiqueta": "SFO activos España",
-      "valor": "166",
-      "fuente": "VUMI"
+      "etiqueta": "Petróleo Brent/WTI",
+      "valor": ">107 $/barril",
+      "fuente": "The Guardian"
     }
   ],
   "horizontes": [
@@ -30,7 +30,7 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 4
     },
     {
       "horizonte": "Este mes",
@@ -51,20 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El BCE reúne su consejo de gobierno este jueves 10 de septiembre con los mercados descontando al 100% una subida de 25 puntos básicos que elevará la facilidad de depósito al 2,50%, respuesta al repunte del IPC de la eurozona hasta el 3,3% en agosto por las tensiones energéticas",
-          "fuente": "El Español"
+          "texto": "La escalada en Oriente Medio marca el día: un ataque con misiles balísticos iraníes con municiones de racimo impactó la base aérea de Muwaffaq Salti en Azraq, Jordania, donde opera personal estadounidense, aunque la defensa antiaérea jordana interceptó 18 proyectiles sin víctimas mortales de EE. UU",
+          "fuente": "Institute for the Study of War"
         },
         {
-          "texto": "Haaretz revela que Mohamed bin Zayed advirtió personalmente a Netanyahu sobre los preparativos del ataque de Hamás diez días antes del 7 de octubre de 2023, una alerta que según la investigación no fue atendida",
-          "fuente": "Punta News"
+          "texto": "La OTAN frustró una operación secreta de sabotaje rusa contra cables submarinos cerca de Svalbard, utilizando submarinos con armas de sabotaje, lo que refuerza el caso europeo para elevar el gasto en defensa según el secretario general Mark Rutte",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Jacob Coxon, ex investigador de OpenAI y Anthropic, declara que los desarrolladores de IA de vanguardia operan bajo la convicción privada de que estos sistemas podrían plantear riesgos existenciales a finales de esta década al avanzar hacia superinteligencias auto-mejorantes",
-          "fuente": "Cadena SER"
+          "texto": "En el frente comercial, China y Estados Unidos anunciaron negociaciones avanzadas sobre un marco de reducción recíproca de aranceles que cubriría 30.000 millones de dólares en productos, de cara al encuentro previsto entre Xi Jinping y Donald Trump el 24 de septiembre",
+          "fuente": "The Independent"
         },
         {
-          "texto": "En el lower mid-market español, la transmisión de empresas familiares recurre cada vez más a estructuras combinadas de earn-out y deuda subordinada para cerrar brechas de valoración, con múltiplos estables en 7x-8x EBITDA en sectores tradicionales",
-          "fuente": "Kpitalex"
+          "texto": "Canadá, en respuesta a los aranceles previos de la administración Trump, implementó el 8 de septiembre aranceles de represalia dólar por dólar sobre aproximadamente 27.600 millones de dólares en importaciones estadounidenses, doblando al 50% los aranceles al acero y aluminio",
+          "fuente": "Dimerco"
         }
       ]
     },
@@ -72,16 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "OpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado como su sistema \"más inteligente del mundo\" con capacidades agénticas avanzadas para ingeniería de software, ciberseguridad y ejecución autónoma de tareas complejas de múltiples pasos. Nvidia cerró en la IFA de Berlín su mayor compra corporativa: 12.930 millones de dólares por Hugging Face, integrando la mayor plataforma de modelos de pesos abiertos en su pila de inferencia",
-          "fuente": "Infobae, La Tercera"
+          "texto": "El BCE subió el 10 de septiembre sus tres tipos de referencia en 25 puntos básicos, situando la facilidad de depósito en el 2,50% y la de refinanciación principal en el 2,65%, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio",
+          "fuente": "European Central Bank"
         },
         {
-          "texto": "Los mercados otorgan un 58%-60% de probabilidad a una subida de 25 pb de la Fed en su reunión del 15-16 de septiembre, hasta el rango 3,75%-4%, tras el tono restrictivo de Kevin Warsh en Jackson Hole. Ocho potencias de mayoría musulmana emitieron un comunicado conjunto a comienzos de septiembre rechazando y bloqueando los planes israelíes de vaciado demográfico y desplazamiento en Gaza bajo tutela de la ONU",
-          "fuente": "El Tiempo Latino, Atalayar"
+          "texto": "Los precios del petróleo Brent y WTI superaron los 107 dólares por barril el mismo día, impulsados por la escalada regional y el temor a restricciones severas en las rutas de exportación saudí, desatando una venta masiva global de bonos soberanos",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "El 64% de los gestores de private equity en España perciben un fundraising menos complejo que en 2025, con tecnología y servicios financieros como destinos prioritarios del dry powder disponible. El 62% de las operaciones de capital privado cerradas en pymes españolas involucraron compañías con menos de 50 empleados, confirmando la penetración de los fondos en el lower mid-market",
-          "fuente": "RRHHDigital, Fundenza"
+          "texto": "Un tribunal de Londres imputó el 10 de septiembre a Joshua Cammidge bajo la Ley de Seguridad Nacional británica por presuntamente formar parte de un complot de inteligencia rusa para sabotear una fábrica de drones en Swindon",
+          "fuente": "The Guardian"
+        },
+        {
+          "texto": "El secretario general de la OTAN, Mark Rutte, advirtió que Rusia sufre más de 40.000 bajas mensuales en Ucrania manteniendo una campaña incesante de ataques y actividades híbridas de sabotaje en suelo europeo",
+          "fuente": "The Guardian"
         }
       ]
     },
@@ -89,8 +93,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El M&A Mid-Year Review 2026 de Ideals describe un mercado en \"forma de K\": el valor global repunta por megatransacciones mientras el middle market sufre restricciones de financiación, con una duración media de 253 días por operación completada. Los ingresos industriales y empresariales (ACIE) de Nvidia crecieron un 138% interanual, señal de que la demanda de infraestructura de IA se extiende más allá de los hiperescaladores hacia la industria tradicional. El ecosistema de Single Family Offices en España cuenta con 166 estructuras activas, el 35% de las cuales afrontará relevo generacional en la próxima década, destinando de media el 44% de su asignación a inmobiliario e inversiones alternativas",
-          "fuente": "PwC, Bloomberg, VUMI"
+          "texto": "La USTR implementó el 24 de julio un nuevo paquete de aranceles de la Sección 301 (entre el 10% y el 12,5% adicional) aplicados a decenas de economías por inacción frente al trabajo forzoso, afectando a la UE, el Reino Unido y socios asiáticos",
+          "fuente": "Reed Smith - Trade Compliance Resource Hub"
+        },
+        {
+          "texto": "Putin firmó a finales de agosto un decreto de emergencia que otorga al Estado ruso facultades para asumir el control temporal de infraestructuras críticas industriales y energéticas si sus propietarios no garantizan defensas efectivas frente a ataques de drones ucranianos",
+          "fuente": "Council on Foreign Relations"
+        },
+        {
+          "texto": "La Corte Suprema de EE. UU. declaró inconstitucionales el 20 de febrero los aranceles amparados bajo la IEEPA, situando la tasa arancelaria efectiva media en el 6,7% hacia julio de 2026 antes de las nuevas escaladas sectoriales",
+          "fuente": "Effective Tariff Rates and Revenues"
         }
       ]
     },
@@ -102,21 +114,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La estructuración con earn-out y deuda subordinada a 7x-8x EBITDA en el lower mid-market familiar español responde directamente a la brecha de valoración que alarga los procesos a 253 días",
-              "fuente": "Kpitalex, PwC"
-            },
-            {
-              "texto": "El 62% de deals de private equity en pymes por debajo de 50 empleados y el optimismo en fundraising (64% lo ven más fácil) indican que el capital sigue bajando de ticket, ampliando el universo de objetivos para boutiques de corporate finance",
-              "fuente": "Fundenza, RRHHDigital"
-            },
-            {
-              "texto": "Los 166 SFO activos con 35% en relevo generacional y 44% en alternativos/inmobiliario representan una base de propietarios vendedores o coinversores con horizonte de década",
-              "fuente": "VUMI"
+              "texto": "Sin edges nuevos hoy",
+              "fuente": null
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl BCE reúne su consejo de gobierno este jueves 10 de septiembre con los mercados descontando al 100% una subida de 25 puntos básicos que elevará la facilidad de depósito al 2,50%, respuesta al repunte del IPC de la eurozona hasta el 3,3% en agosto por las tensiones energéticas.\n\nHaaretz revela que Mohamed bin Zayed advirtió personalmente a Netanyahu sobre los preparativos del ataque de Hamás diez días antes del 7 de octubre de 2023, una alerta que según la investigación no fue atendida.\n\nJacob Coxon, ex investigador de OpenAI y Anthropic, declara que los desarrolladores de IA de vanguardia operan bajo la convicción privada de que estos sistemas podrían plantear riesgos existenciales a finales de esta década al avanzar hacia superinteligencias auto-mejorantes.\n\nEn el lower mid-market español, la transmisión de empresas familiares recurre cada vez más a estructuras combinadas de earn-out y deuda subordinada para cerrar brechas de valoración, con múltiplos estables en 7x-8x EBITDA en sectores tradicionales.\n\nFuentes: El Español, Punta News, Cadena SER, Kpitalex\n\n## Esta semana\nOpenAI lanzó el 3 de septiembre GPT-6 Astra, presentado como su sistema \"más inteligente del mundo\" con capacidades agénticas avanzadas para ingeniería de software, ciberseguridad y ejecución autónoma de tareas complejas de múltiples pasos. Nvidia cerró en la IFA de Berlín su mayor compra corporativa: 12.930 millones de dólares por Hugging Face, integrando la mayor plataforma de modelos de pesos abiertos en su pila de inferencia.\n\nLos mercados otorgan un 58%-60% de probabilidad a una subida de 25 pb de la Fed en su reunión del 15-16 de septiembre, hasta el rango 3,75%-4%, tras el tono restrictivo de Kevin Warsh en Jackson Hole. Ocho potencias de mayoría musulmana emitieron un comunicado conjunto a comienzos de septiembre rechazando y bloqueando los planes israelíes de vaciado demográfico y desplazamiento en Gaza bajo tutela de la ONU.\n\nEl 64% de los gestores de private equity en España perciben un fundraising menos complejo que en 2025, con tecnología y servicios financieros como destinos prioritarios del dry powder disponible. El 62% de las operaciones de capital privado cerradas en pymes españolas involucraron compañías con menos de 50 empleados, confirmando la penetración de los fondos en el lower mid-market.\n\nFuentes: Infobae, La Tercera, El Tiempo Latino, Atalayar, RRHHDigital, Fundenza\n\n## Este mes\nEl M&A Mid-Year Review 2026 de Ideals describe un mercado en \"forma de K\": el valor global repunta por megatransacciones mientras el middle market sufre restricciones de financiación, con una duración media de 253 días por operación completada. Los ingresos industriales y empresariales (ACIE) de Nvidia crecieron un 138% interanual, señal de que la demanda de infraestructura de IA se extiende más allá de los hiperescaladores hacia la industria tradicional. El ecosistema de Single Family Offices en España cuenta con 166 estructuras activas, el 35% de las cuales afrontará relevo generacional en la próxima década, destinando de media el 44% de su asignación a inmobiliario e inversiones alternativas.\n\nFuentes: PwC, Bloomberg, VUMI\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa estructuración con earn-out y deuda subordinada a 7x-8x EBITDA en el lower mid-market familiar español responde directamente a la brecha de valoración que alarga los procesos a 253 días.\n\nEl 62% de deals de private equity en pymes por debajo de 50 empleados y el optimismo en fundraising (64% lo ven más fácil) indican que el capital sigue bajando de ticket, ampliando el universo de objetivos para boutiques de corporate finance.\n\nLos 166 SFO activos con 35% en relevo generacional y 44% en alternativos/inmobiliario representan una base de propietarios vendedores o coinversores con horizonte de década.\n\nFuentes: Kpitalex, PwC, Fundenza, RRHHDigital, VUMI"
+  "markdown": "## Hoy\nLa escalada en Oriente Medio marca el día: un ataque con misiles balísticos iraníes con municiones de racimo impactó la base aérea de Muwaffaq Salti en Azraq, Jordania, donde opera personal estadounidense, aunque la defensa antiaérea jordana interceptó 18 proyectiles sin víctimas mortales de EE. UU..\n\nLa OTAN frustró una operación secreta de sabotaje rusa contra cables submarinos cerca de Svalbard, utilizando submarinos con armas de sabotaje, lo que refuerza el caso europeo para elevar el gasto en defensa según el secretario general Mark Rutte.\n\nEn el frente comercial, China y Estados Unidos anunciaron negociaciones avanzadas sobre un marco de reducción recíproca de aranceles que cubriría 30.000 millones de dólares en productos, de cara al encuentro previsto entre Xi Jinping y Donald Trump el 24 de septiembre.\n\nCanadá, en respuesta a los aranceles previos de la administración Trump, implementó el 8 de septiembre aranceles de represalia dólar por dólar sobre aproximadamente 27.600 millones de dólares en importaciones estadounidenses, doblando al 50% los aranceles al acero y aluminio.\n\nFuentes: Institute for the Study of War, The Guardian, The Independent, Dimerco\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos de referencia en 25 puntos básicos, situando la facilidad de depósito en el 2,50% y la de refinanciación principal en el 2,65%, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio.\n\nLos precios del petróleo Brent y WTI superaron los 107 dólares por barril el mismo día, impulsados por la escalada regional y el temor a restricciones severas en las rutas de exportación saudí, desatando una venta masiva global de bonos soberanos.\n\nUn tribunal de Londres imputó el 10 de septiembre a Joshua Cammidge bajo la Ley de Seguridad Nacional británica por presuntamente formar parte de un complot de inteligencia rusa para sabotear una fábrica de drones en Swindon.\n\nEl secretario general de la OTAN, Mark Rutte, advirtió que Rusia sufre más de 40.000 bajas mensuales en Ucrania manteniendo una campaña incesante de ataques y actividades híbridas de sabotaje en suelo europeo.\n\nFuentes: European Central Bank, The Guardian\n\n## Este mes\nLa USTR implementó el 24 de julio un nuevo paquete de aranceles de la Sección 301 (entre el 10% y el 12,5% adicional) aplicados a decenas de economías por inacción frente al trabajo forzoso, afectando a la UE, el Reino Unido y socios asiáticos.\n\nPutin firmó a finales de agosto un decreto de emergencia que otorga al Estado ruso facultades para asumir el control temporal de infraestructuras críticas industriales y energéticas si sus propietarios no garantizan defensas efectivas frente a ataques de drones ucranianos.\n\nLa Corte Suprema de EE. UU. declaró inconstitucionales el 20 de febrero los aranceles amparados bajo la IEEPA, situando la tasa arancelaria efectiva media en el 6,7% hacia julio de 2026 antes de las nuevas escaladas sectoriales.\n\nFuentes: Reed Smith - Trade Compliance Resource Hub, Council on Foreign Relations, Effective Tariff Rates and Revenues\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nSin edges nuevos hoy."
 }
