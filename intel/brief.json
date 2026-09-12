@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-11",
+  "fecha": "2026-09-12",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipos BCE depósito",
-      "valor": "2,50%",
+      "etiqueta": "Brent",
+      "valor": "107 $/barril",
+      "fuente": "Gulf News"
+    },
+    {
+      "etiqueta": "Depósito BCE",
+      "valor": "2,50 %",
       "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Consumo carbón récord",
-      "valor": "8.940 Mt",
-      "fuente": "Emirates News Agency"
+      "etiqueta": "M&A España H1",
+      "valor": "50.474 M€",
+      "fuente": "El País"
     },
     {
-      "etiqueta": "Aranceles Canadá",
-      "valor": "27.600 M$",
-      "fuente": "Dimerco"
-    },
-    {
-      "etiqueta": "Petróleo Brent/WTI",
-      "valor": ">107 $/barril",
-      "fuente": "The Guardian"
+      "etiqueta": "Cierre mid-market",
+      "valor": "253 días",
+      "fuente": "Ideals M&A Review"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 8
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,20 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La escalada en Oriente Medio marca el día: un ataque con misiles balísticos iraníes con municiones de racimo impactó la base aérea de Muwaffaq Salti en Azraq, Jordania, donde opera personal estadounidense, aunque la defensa antiaérea jordana interceptó 18 proyectiles sin víctimas mortales de EE. UU",
-          "fuente": "Institute for the Study of War"
+          "texto": "La escalada en el mar Rojo marca la jornada: los hutíes completaron el control estratégico del estrecho de Bab al-Mandab tras tomar la isla de Perim y la ciudad de Dhubab el 12 de septiembre, mientras el crudo Brent supera los 107 dólares por barril impulsado por el cierre de infraestructuras críticas y la expansión rebelde en la costa yemení",
+          "fuente": "Anadolu Ajansı, Gulf News"
         },
         {
-          "texto": "La OTAN frustró una operación secreta de sabotaje rusa contra cables submarinos cerca de Svalbard, utilizando submarinos con armas de sabotaje, lo que refuerza el caso europeo para elevar el gasto en defensa según el secretario general Mark Rutte",
-          "fuente": "The Guardian"
+          "texto": "En el plano diplomático-militar, Putin advirtió en la Cumbre de los BRICS en Nueva Delhi que cualquier despliegue de tropas europeas en Ucrania equivaldrá a una \"guerra con Rusia\"",
+          "fuente": "The New Indian Express"
         },
         {
-          "texto": "En el frente comercial, China y Estados Unidos anunciaron negociaciones avanzadas sobre un marco de reducción recíproca de aranceles que cubriría 30.000 millones de dólares en productos, de cara al encuentro previsto entre Xi Jinping y Donald Trump el 24 de septiembre",
-          "fuente": "The Independent"
+          "texto": "En mercados, la Fed sitúa los fondos federales efectivos en el 3,63 % y el rendimiento del Tesoro a un año en el 4,08 % según su balance H.15 del 11 de septiembre",
+          "fuente": "Federal Reserve Board"
         },
         {
-          "texto": "Canadá, en respuesta a los aranceles previos de la administración Trump, implementó el 8 de septiembre aranceles de represalia dólar por dólar sobre aproximadamente 27.600 millones de dólares en importaciones estadounidenses, doblando al 50% los aranceles al acero y aluminio",
-          "fuente": "Dimerco"
+          "texto": "En tecnología, la comunidad técnica denuncia el reenvío silencioso de peticiones de usuarios entre proveedores asiáticos de LLMs como DeepSeek y Moonshot AI hacia la infraestructura de Claude de Anthropic para entrenamiento de modelos, detectado entre el 10 y el 12 de septiembre",
+          "fuente": "Hacker News"
         }
       ]
     },
@@ -72,20 +72,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El BCE subió el 10 de septiembre sus tres tipos de referencia en 25 puntos básicos, situando la facilidad de depósito en el 2,50% y la de refinanciación principal en el 2,65%, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio",
-          "fuente": "European Central Bank"
+          "texto": "El BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 manteniendo la inflación general en el 3,0 %",
+          "fuente": "European Central Bank, Morningstar UK"
         },
         {
-          "texto": "Los precios del petróleo Brent y WTI superaron los 107 dólares por barril el mismo día, impulsados por la escalada regional y el temor a restricciones severas en las rutas de exportación saudí, desatando una venta masiva global de bonos soberanos",
-          "fuente": "The Guardian"
+          "texto": "En el frente ucraniano, Rusia ganó 14 millas cuadradas netas en las últimas cuatro semanas según OSINT DeepState e ISW, mientras Kiev formalizó el suministro de unos 1.000 misiles Patriot mediante ayuda aliada y un préstamo específico de la UE",
+          "fuente": "The Russia-Ukraine War Report Card, The Guardian"
         },
         {
-          "texto": "Un tribunal de Londres imputó el 10 de septiembre a Joshua Cammidge bajo la Ley de Seguridad Nacional británica por presuntamente formar parte de un complot de inteligencia rusa para sabotear una fábrica de drones en Swindon",
-          "fuente": "The Guardian"
+          "texto": "Arabia Saudí cerró preventivamente su Oleoducto Este-Oeste el 11 de septiembre tras ataques con drones en Riad y Medina",
+          "fuente": "Gulf News"
         },
         {
-          "texto": "El secretario general de la OTAN, Mark Rutte, advirtió que Rusia sufre más de 40.000 bajas mensuales en Ucrania manteniendo una campaña incesante de ataques y actividades híbridas de sabotaje en suelo europeo",
-          "fuente": "The Guardian"
+          "texto": "En IA, se concentraron en 72 horas los lanzamientos de Claude Fable 5.1 y Mythos 5.1 (Anthropic, 1 sep), GPT-6 Astra (OpenAI, 3 sep) y Muse Spark 1.3 (Meta, 2 sep)",
+          "fuente": "September 2026 AI Model Updates"
+        },
+        {
+          "texto": "En M&A español, el 62 % de las operaciones de private equity en pymes involucra compañías con menos de 50 empleados, y los múltiplos en sectores tradicionales se mantienen estables en 7x-8x EBITDA, impulsando earn-outs y deuda subordinada para cerrar brechas de precio",
+          "fuente": "Fundenza, Kpitalex"
         }
       ]
     },
@@ -93,16 +97,24 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La USTR implementó el 24 de julio un nuevo paquete de aranceles de la Sección 301 (entre el 10% y el 12,5% adicional) aplicados a decenas de economías por inacción frente al trabajo forzoso, afectando a la UE, el Reino Unido y socios asiáticos",
-          "fuente": "Reed Smith - Trade Compliance Resource Hub"
+          "texto": "El mercado de M&A en España acumuló 1.485 transacciones en el primer semestre (-15 % interanual) con capital movilizado estable en 50.474 M€ (-0,29 %), reflejando una polarización \"en forma de K\" dominada por megadeals",
+          "fuente": "El País"
         },
         {
-          "texto": "Putin firmó a finales de agosto un decreto de emergencia que otorga al Estado ruso facultades para asumir el control temporal de infraestructuras críticas industriales y energéticas si sus propietarios no garantizan defensas efectivas frente a ataques de drones ucranianos",
-          "fuente": "Council on Foreign Relations"
+          "texto": "A nivel global, PwC proyecta que el valor de M&A alcance 4 billones de dólares al cierre de 2026 (+13 % interanual) pese a una caída del 13 % en el número de operaciones hasta unas 42.000",
+          "fuente": "Bolsamania"
         },
         {
-          "texto": "La Corte Suprema de EE. UU. declaró inconstitucionales el 20 de febrero los aranceles amparados bajo la IEEPA, situando la tasa arancelaria efectiva media en el 6,7% hacia julio de 2026 antes de las nuevas escaladas sectoriales",
-          "fuente": "Effective Tariff Rates and Revenues"
+          "texto": "En el mid-market español, el cierre medio dura 253 días (-4 % interanual) y exige 237 horas de trabajo técnico en Virtual Data Rooms por operación",
+          "fuente": "Ideals M&A Review"
+        },
+        {
+          "texto": "Como caso ilustrativo, en julio se cerró la venta del 100 % de la tasadora GLOVAL al grupo italiano RINA Group, asesorada por Socios Financieros",
+          "fuente": "Socios Financieros"
+        },
+        {
+          "texto": "En infraestructura IA, la arquitectura Mercury 2 sobre chips NVIDIA Blackwell alcanza 1.009 tokens/segundo con coste de API de 0,25 $/M tokens de entrada",
+          "fuente": "September 2026 AI Model Updates"
         }
       ]
     },
@@ -114,13 +126,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Sin edges nuevos hoy",
-              "fuente": null
+              "texto": "Los múltiplos estables en 7x-8x EBITDA en sectores tradicionales validan el uso de earn-outs y deuda subordinada para cerrar gaps de valoración en mandatos de venta",
+              "fuente": "Kpitalex"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa escalada en Oriente Medio marca el día: un ataque con misiles balísticos iraníes con municiones de racimo impactó la base aérea de Muwaffaq Salti en Azraq, Jordania, donde opera personal estadounidense, aunque la defensa antiaérea jordana interceptó 18 proyectiles sin víctimas mortales de EE. UU..\n\nLa OTAN frustró una operación secreta de sabotaje rusa contra cables submarinos cerca de Svalbard, utilizando submarinos con armas de sabotaje, lo que refuerza el caso europeo para elevar el gasto en defensa según el secretario general Mark Rutte.\n\nEn el frente comercial, China y Estados Unidos anunciaron negociaciones avanzadas sobre un marco de reducción recíproca de aranceles que cubriría 30.000 millones de dólares en productos, de cara al encuentro previsto entre Xi Jinping y Donald Trump el 24 de septiembre.\n\nCanadá, en respuesta a los aranceles previos de la administración Trump, implementó el 8 de septiembre aranceles de represalia dólar por dólar sobre aproximadamente 27.600 millones de dólares en importaciones estadounidenses, doblando al 50% los aranceles al acero y aluminio.\n\nFuentes: Institute for the Study of War, The Guardian, The Independent, Dimerco\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos de referencia en 25 puntos básicos, situando la facilidad de depósito en el 2,50% y la de refinanciación principal en el 2,65%, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio.\n\nLos precios del petróleo Brent y WTI superaron los 107 dólares por barril el mismo día, impulsados por la escalada regional y el temor a restricciones severas en las rutas de exportación saudí, desatando una venta masiva global de bonos soberanos.\n\nUn tribunal de Londres imputó el 10 de septiembre a Joshua Cammidge bajo la Ley de Seguridad Nacional británica por presuntamente formar parte de un complot de inteligencia rusa para sabotear una fábrica de drones en Swindon.\n\nEl secretario general de la OTAN, Mark Rutte, advirtió que Rusia sufre más de 40.000 bajas mensuales en Ucrania manteniendo una campaña incesante de ataques y actividades híbridas de sabotaje en suelo europeo.\n\nFuentes: European Central Bank, The Guardian\n\n## Este mes\nLa USTR implementó el 24 de julio un nuevo paquete de aranceles de la Sección 301 (entre el 10% y el 12,5% adicional) aplicados a decenas de economías por inacción frente al trabajo forzoso, afectando a la UE, el Reino Unido y socios asiáticos.\n\nPutin firmó a finales de agosto un decreto de emergencia que otorga al Estado ruso facultades para asumir el control temporal de infraestructuras críticas industriales y energéticas si sus propietarios no garantizan defensas efectivas frente a ataques de drones ucranianos.\n\nLa Corte Suprema de EE. UU. declaró inconstitucionales el 20 de febrero los aranceles amparados bajo la IEEPA, situando la tasa arancelaria efectiva media en el 6,7% hacia julio de 2026 antes de las nuevas escaladas sectoriales.\n\nFuentes: Reed Smith - Trade Compliance Resource Hub, Council on Foreign Relations, Effective Tariff Rates and Revenues\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nSin edges nuevos hoy."
+  "markdown": "## Hoy\nLa escalada en el mar Rojo marca la jornada: los hutíes completaron el control estratégico del estrecho de Bab al-Mandab tras tomar la isla de Perim y la ciudad de Dhubab el 12 de septiembre, mientras el crudo Brent supera los 107 dólares por barril impulsado por el cierre de infraestructuras críticas y la expansión rebelde en la costa yemení.\n\nEn el plano diplomático-militar, Putin advirtió en la Cumbre de los BRICS en Nueva Delhi que cualquier despliegue de tropas europeas en Ucrania equivaldrá a una \"guerra con Rusia\".\n\nEn mercados, la Fed sitúa los fondos federales efectivos en el 3,63 % y el rendimiento del Tesoro a un año en el 4,08 % según su balance H.15 del 11 de septiembre.\n\nEn tecnología, la comunidad técnica denuncia el reenvío silencioso de peticiones de usuarios entre proveedores asiáticos de LLMs como DeepSeek y Moonshot AI hacia la infraestructura de Claude de Anthropic para entrenamiento de modelos, detectado entre el 10 y el 12 de septiembre.\n\nFuentes: Anadolu Ajansı, Gulf News, The New Indian Express, Federal Reserve Board, Hacker News\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 manteniendo la inflación general en el 3,0 %.\n\nEn el frente ucraniano, Rusia ganó 14 millas cuadradas netas en las últimas cuatro semanas según OSINT DeepState e ISW, mientras Kiev formalizó el suministro de unos 1.000 misiles Patriot mediante ayuda aliada y un préstamo específico de la UE.\n\nArabia Saudí cerró preventivamente su Oleoducto Este-Oeste el 11 de septiembre tras ataques con drones en Riad y Medina.\n\nEn IA, se concentraron en 72 horas los lanzamientos de Claude Fable 5.1 y Mythos 5.1 (Anthropic, 1 sep), GPT-6 Astra (OpenAI, 3 sep) y Muse Spark 1.3 (Meta, 2 sep).\n\nEn M&A español, el 62 % de las operaciones de private equity en pymes involucra compañías con menos de 50 empleados, y los múltiplos en sectores tradicionales se mantienen estables en 7x-8x EBITDA, impulsando earn-outs y deuda subordinada para cerrar brechas de precio.\n\nFuentes: European Central Bank, Morningstar UK, The Russia-Ukraine War Report Card, The Guardian, Gulf News, September 2026 AI Model Updates, Fundenza, Kpitalex\n\n## Este mes\nEl mercado de M&A en España acumuló 1.485 transacciones en el primer semestre (-15 % interanual) con capital movilizado estable en 50.474 M€ (-0,29 %), reflejando una polarización \"en forma de K\" dominada por megadeals.\n\nA nivel global, PwC proyecta que el valor de M&A alcance 4 billones de dólares al cierre de 2026 (+13 % interanual) pese a una caída del 13 % en el número de operaciones hasta unas 42.000.\n\nEn el mid-market español, el cierre medio dura 253 días (-4 % interanual) y exige 237 horas de trabajo técnico en Virtual Data Rooms por operación.\n\nComo caso ilustrativo, en julio se cerró la venta del 100 % de la tasadora GLOVAL al grupo italiano RINA Group, asesorada por Socios Financieros.\n\nEn infraestructura IA, la arquitectura Mercury 2 sobre chips NVIDIA Blackwell alcanza 1.009 tokens/segundo con coste de API de 0,25 $/M tokens de entrada.\n\nFuentes: El País, Bolsamania, Ideals M&A Review, Socios Financieros, September 2026 AI Model Updates\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLos múltiplos estables en 7x-8x EBITDA en sectores tradicionales validan el uso de earn-outs y deuda subordinada para cerrar gaps de valoración en mandatos de venta.\n\nFuentes: Kpitalex"
 }
