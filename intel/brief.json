@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-12",
+  "fecha": "2026-09-13",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Brent",
-      "valor": "107 $/barril",
-      "fuente": "Gulf News"
+      "etiqueta": "Inflación EE. UU.",
+      "valor": "3,4 %",
+      "fuente": "La Tribuna"
     },
     {
-      "etiqueta": "Depósito BCE",
+      "etiqueta": "Facilidad depósito BCE",
       "valor": "2,50 %",
       "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "M&A España H1",
-      "valor": "50.474 M€",
-      "fuente": "El País"
+      "etiqueta": "Ronda Mistral AI",
+      "valor": "3.000 M€",
+      "fuente": "DataPath"
     },
     {
-      "etiqueta": "Cierre mid-market",
-      "valor": "253 días",
-      "fuente": "Ideals M&A Review"
+      "etiqueta": "Valoración Mistral AI",
+      "valor": "21.000 M€",
+      "fuente": "DataPath"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 8
+      "n": 6
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,20 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La escalada en el mar Rojo marca la jornada: los hutíes completaron el control estratégico del estrecho de Bab al-Mandab tras tomar la isla de Perim y la ciudad de Dhubab el 12 de septiembre, mientras el crudo Brent supera los 107 dólares por barril impulsado por el cierre de infraestructuras críticas y la expansión rebelde en la costa yemení",
-          "fuente": "Anadolu Ajansı, Gulf News"
+          "texto": "La Alta Representante de la UE, Kaja Kallas, advierte que la ruptura del alto el fuego en el estrecho de Ormuz mantiene buques y marinos atrapados en fuego cruzado, prolongando la tensión logística y energética para Europa. La Declaración de Nueva Delhi firmada el 12 de septiembre por los líderes de los BRICS, China, Rusia e Irán incluidos, pide máxima contención en Oriente Medio, rechaza sanciones unilaterales y aboga por preservar el flujo de energía",
+          "fuente": "Parlamento Europeo, Pagina 12"
         },
         {
-          "texto": "En el plano diplomático-militar, Putin advirtió en la Cumbre de los BRICS en Nueva Delhi que cualquier despliegue de tropas europeas en Ucrania equivaldrá a una \"guerra con Rusia\"",
-          "fuente": "The New Indian Express"
-        },
-        {
-          "texto": "En mercados, la Fed sitúa los fondos federales efectivos en el 3,63 % y el rendimiento del Tesoro a un año en el 4,08 % según su balance H.15 del 11 de septiembre",
-          "fuente": "Federal Reserve Board"
-        },
-        {
-          "texto": "En tecnología, la comunidad técnica denuncia el reenvío silencioso de peticiones de usuarios entre proveedores asiáticos de LLMs como DeepSeek y Moonshot AI hacia la infraestructura de Claude de Anthropic para entrenamiento de modelos, detectado entre el 10 y el 12 de septiembre",
-          "fuente": "Hacker News"
+          "texto": "La economía estadounidense afronta la próxima decisión de la Fed con una inflación de agosto situada en el 3,4 % interanual, manteniendo la presión sobre el tipo de referencia en el rango 3,50 %, 3,75 %. Elon Musk se sumó el 12 de septiembre a las peticiones de Sam Altman y Dario Amodei para regular y frenar temporalmente la escalada descontrolada de capacidades autónomas en IA ante riesgos sistémicos",
+          "fuente": "La Tribuna, El Nacional"
         }
       ]
     },
@@ -72,24 +64,12 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 manteniendo la inflación general en el 3,0 %",
-          "fuente": "European Central Bank, Morningstar UK"
+          "texto": "El Consejo de Gobierno del BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % efectiva el 16 de septiembre, impulsado por una inflación de la eurozona en agosto del 3,3 % y el Brent rozando los 100 dólares. Como consecuencia directa, el Euríbor supera el 3,1 % en septiembre de 2026, encareciendo un 10,7 % el tramo fijo de las hipotecas mixtas interanual",
+          "fuente": "European Central Bank, Merca2.es"
         },
         {
-          "texto": "En el frente ucraniano, Rusia ganó 14 millas cuadradas netas en las últimas cuatro semanas según OSINT DeepState e ISW, mientras Kiev formalizó el suministro de unos 1.000 misiles Patriot mediante ayuda aliada y un préstamo específico de la UE",
-          "fuente": "The Russia-Ukraine War Report Card, The Guardian"
-        },
-        {
-          "texto": "Arabia Saudí cerró preventivamente su Oleoducto Este-Oeste el 11 de septiembre tras ataques con drones en Riad y Medina",
-          "fuente": "Gulf News"
-        },
-        {
-          "texto": "En IA, se concentraron en 72 horas los lanzamientos de Claude Fable 5.1 y Mythos 5.1 (Anthropic, 1 sep), GPT-6 Astra (OpenAI, 3 sep) y Muse Spark 1.3 (Meta, 2 sep)",
-          "fuente": "September 2026 AI Model Updates"
-        },
-        {
-          "texto": "En M&A español, el 62 % de las operaciones de private equity en pymes involucra compañías con menos de 50 empleados, y los múltiplos en sectores tradicionales se mantienen estables en 7x-8x EBITDA, impulsando earn-outs y deuda subordinada para cerrar brechas de precio",
-          "fuente": "Fundenza, Kpitalex"
+          "texto": "En IA, Mistral AI cerró el 8 de septiembre una ronda histórica de 3.000 millones de euros liderada por Samsung Electronics, alcanzando una valoración de 21.000 millones orientada a infraestructura y modelos open-weight. OpenAI presentó el 3 de septiembre su modelo GPT-6 Astra, enfocado en agentes autónomos de varios pasos con un coste 2,5 veces superior a su predecesor y un contexto de un millón de tokens",
+          "fuente": "DataPath, Arkaia Corp"
         }
       ]
     },
@@ -97,24 +77,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado de M&A en España acumuló 1.485 transacciones en el primer semestre (-15 % interanual) con capital movilizado estable en 50.474 M€ (-0,29 %), reflejando una polarización \"en forma de K\" dominada por megadeals",
-          "fuente": "El País"
+          "texto": "Tras la entrada en vigor el 2 de agosto de las obligaciones de transparencia estricta del AI Act europeo, el ecosistema corporativo español afronta en septiembre el desarrollo parlamentario del Proyecto de Ley Orgánica de gobernanza de la IA coordinado por la AESIA",
+          "fuente": "Grupo Atico34"
         },
         {
-          "texto": "A nivel global, PwC proyecta que el valor de M&A alcance 4 billones de dólares al cierre de 2026 (+13 % interanual) pese a una caída del 13 % en el número de operaciones hasta unas 42.000",
-          "fuente": "Bolsamania"
-        },
-        {
-          "texto": "En el mid-market español, el cierre medio dura 253 días (-4 % interanual) y exige 237 horas de trabajo técnico en Virtual Data Rooms por operación",
-          "fuente": "Ideals M&A Review"
-        },
-        {
-          "texto": "Como caso ilustrativo, en julio se cerró la venta del 100 % de la tasadora GLOVAL al grupo italiano RINA Group, asesorada por Socios Financieros",
-          "fuente": "Socios Financieros"
-        },
-        {
-          "texto": "En infraestructura IA, la arquitectura Mercury 2 sobre chips NVIDIA Blackwell alcanza 1.009 tokens/segundo con coste de API de 0,25 $/M tokens de entrada",
-          "fuente": "September 2026 AI Model Updates"
+          "texto": "Los datos acumulados del mercado transaccional español reflejan un volumen de capital movilizado muy robusto, apoyado en un crecimiento interanual del capital en operaciones de private equity y venture capital, con inmobiliario y tecnología como principales tractores, junto a dinámicas de consolidación en mid-market asesoradas por firmas como Norgeştion y Anquor. Persiste la fragmentación estructural de rutas comerciales globales, donde el mar Rojo y el estrecho de Ormuz actúan como puntos críticos de tensión energética que condicionan los costes logísticos de la industria europea",
+          "fuente": "Iberian Lawyer, Norgesition, UN News"
         }
       ]
     },
@@ -124,15 +92,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "Los múltiplos estables en 7x-8x EBITDA en sectores tradicionales validan el uso de earn-outs y deuda subordinada para cerrar gaps de valoración en mandatos de venta",
-              "fuente": "Kpitalex"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa escalada en el mar Rojo marca la jornada: los hutíes completaron el control estratégico del estrecho de Bab al-Mandab tras tomar la isla de Perim y la ciudad de Dhubab el 12 de septiembre, mientras el crudo Brent supera los 107 dólares por barril impulsado por el cierre de infraestructuras críticas y la expansión rebelde en la costa yemení.\n\nEn el plano diplomático-militar, Putin advirtió en la Cumbre de los BRICS en Nueva Delhi que cualquier despliegue de tropas europeas en Ucrania equivaldrá a una \"guerra con Rusia\".\n\nEn mercados, la Fed sitúa los fondos federales efectivos en el 3,63 % y el rendimiento del Tesoro a un año en el 4,08 % según su balance H.15 del 11 de septiembre.\n\nEn tecnología, la comunidad técnica denuncia el reenvío silencioso de peticiones de usuarios entre proveedores asiáticos de LLMs como DeepSeek y Moonshot AI hacia la infraestructura de Claude de Anthropic para entrenamiento de modelos, detectado entre el 10 y el 12 de septiembre.\n\nFuentes: Anadolu Ajansı, Gulf News, The New Indian Express, Federal Reserve Board, Hacker News\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 manteniendo la inflación general en el 3,0 %.\n\nEn el frente ucraniano, Rusia ganó 14 millas cuadradas netas en las últimas cuatro semanas según OSINT DeepState e ISW, mientras Kiev formalizó el suministro de unos 1.000 misiles Patriot mediante ayuda aliada y un préstamo específico de la UE.\n\nArabia Saudí cerró preventivamente su Oleoducto Este-Oeste el 11 de septiembre tras ataques con drones en Riad y Medina.\n\nEn IA, se concentraron en 72 horas los lanzamientos de Claude Fable 5.1 y Mythos 5.1 (Anthropic, 1 sep), GPT-6 Astra (OpenAI, 3 sep) y Muse Spark 1.3 (Meta, 2 sep).\n\nEn M&A español, el 62 % de las operaciones de private equity en pymes involucra compañías con menos de 50 empleados, y los múltiplos en sectores tradicionales se mantienen estables en 7x-8x EBITDA, impulsando earn-outs y deuda subordinada para cerrar brechas de precio.\n\nFuentes: European Central Bank, Morningstar UK, The Russia-Ukraine War Report Card, The Guardian, Gulf News, September 2026 AI Model Updates, Fundenza, Kpitalex\n\n## Este mes\nEl mercado de M&A en España acumuló 1.485 transacciones en el primer semestre (-15 % interanual) con capital movilizado estable en 50.474 M€ (-0,29 %), reflejando una polarización \"en forma de K\" dominada por megadeals.\n\nA nivel global, PwC proyecta que el valor de M&A alcance 4 billones de dólares al cierre de 2026 (+13 % interanual) pese a una caída del 13 % en el número de operaciones hasta unas 42.000.\n\nEn el mid-market español, el cierre medio dura 253 días (-4 % interanual) y exige 237 horas de trabajo técnico en Virtual Data Rooms por operación.\n\nComo caso ilustrativo, en julio se cerró la venta del 100 % de la tasadora GLOVAL al grupo italiano RINA Group, asesorada por Socios Financieros.\n\nEn infraestructura IA, la arquitectura Mercury 2 sobre chips NVIDIA Blackwell alcanza 1.009 tokens/segundo con coste de API de 0,25 $/M tokens de entrada.\n\nFuentes: El País, Bolsamania, Ideals M&A Review, Socios Financieros, September 2026 AI Model Updates\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLos múltiplos estables en 7x-8x EBITDA en sectores tradicionales validan el uso de earn-outs y deuda subordinada para cerrar gaps de valoración en mandatos de venta.\n\nFuentes: Kpitalex"
+  "markdown": "## Hoy\nLa Alta Representante de la UE, Kaja Kallas, advierte que la ruptura del alto el fuego en el estrecho de Ormuz mantiene buques y marinos atrapados en fuego cruzado, prolongando la tensión logística y energética para Europa. La Declaración de Nueva Delhi firmada el 12 de septiembre por los líderes de los BRICS, China, Rusia e Irán incluidos, pide máxima contención en Oriente Medio, rechaza sanciones unilaterales y aboga por preservar el flujo de energía.\n\nLa economía estadounidense afronta la próxima decisión de la Fed con una inflación de agosto situada en el 3,4 % interanual, manteniendo la presión sobre el tipo de referencia en el rango 3,50 %, 3,75 %. Elon Musk se sumó el 12 de septiembre a las peticiones de Sam Altman y Dario Amodei para regular y frenar temporalmente la escalada descontrolada de capacidades autónomas en IA ante riesgos sistémicos.\n\nFuentes: Parlamento Europeo, Pagina 12, La Tribuna, El Nacional\n\n## Esta semana\nEl Consejo de Gobierno del BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % efectiva el 16 de septiembre, impulsado por una inflación de la eurozona en agosto del 3,3 % y el Brent rozando los 100 dólares. Como consecuencia directa, el Euríbor supera el 3,1 % en septiembre de 2026, encareciendo un 10,7 % el tramo fijo de las hipotecas mixtas interanual.\n\nEn IA, Mistral AI cerró el 8 de septiembre una ronda histórica de 3.000 millones de euros liderada por Samsung Electronics, alcanzando una valoración de 21.000 millones orientada a infraestructura y modelos open-weight. OpenAI presentó el 3 de septiembre su modelo GPT-6 Astra, enfocado en agentes autónomos de varios pasos con un coste 2,5 veces superior a su predecesor y un contexto de un millón de tokens.\n\nFuentes: European Central Bank, Merca2.es, DataPath, Arkaia Corp\n\n## Este mes\nTras la entrada en vigor el 2 de agosto de las obligaciones de transparencia estricta del AI Act europeo, el ecosistema corporativo español afronta en septiembre el desarrollo parlamentario del Proyecto de Ley Orgánica de gobernanza de la IA coordinado por la AESIA.\n\nLos datos acumulados del mercado transaccional español reflejan un volumen de capital movilizado muy robusto, apoyado en un crecimiento interanual del capital en operaciones de private equity y venture capital, con inmobiliario y tecnología como principales tractores, junto a dinámicas de consolidación en mid-market asesoradas por firmas como Norgeştion y Anquor. Persiste la fragmentación estructural de rutas comerciales globales, donde el mar Rojo y el estrecho de Ormuz actúan como puntos críticos de tensión energética que condicionan los costes logísticos de la industria europea.\n\nFuentes: Grupo Atico34, Iberian Lawyer, Norgesition, UN News"
 }
