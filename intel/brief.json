@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-13",
+  "fecha": "2026-09-14",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Inflación EE. UU.",
-      "valor": "3,4 %",
-      "fuente": "La Tribuna"
-    },
-    {
-      "etiqueta": "Facilidad depósito BCE",
+      "etiqueta": "Tipos BCE",
       "valor": "2,50 %",
       "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Ronda Mistral AI",
-      "valor": "3.000 M€",
-      "fuente": "DataPath"
+      "etiqueta": "Inversión IA",
+      "valor": "3-4 billones $",
+      "fuente": "BigGo Finance"
     },
     {
-      "etiqueta": "Valoración Mistral AI",
-      "valor": "21.000 M€",
-      "fuente": "DataPath"
+      "etiqueta": "Reducción aranceles",
+      "valor": "30.000 M$",
+      "fuente": "PBS News"
+    },
+    {
+      "etiqueta": "M&A España",
+      "valor": "56.900 M€",
+      "fuente": "Chambers and Partners"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 2
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 3
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -49,27 +49,14 @@
   "secciones": [
     {
       "titulo": "Hoy",
-      "lineas": [
-        {
-          "texto": "La Alta Representante de la UE, Kaja Kallas, advierte que la ruptura del alto el fuego en el estrecho de Ormuz mantiene buques y marinos atrapados en fuego cruzado, prolongando la tensión logística y energética para Europa. La Declaración de Nueva Delhi firmada el 12 de septiembre por los líderes de los BRICS, China, Rusia e Irán incluidos, pide máxima contención en Oriente Medio, rechaza sanciones unilaterales y aboga por preservar el flujo de energía",
-          "fuente": "Parlamento Europeo, Pagina 12"
-        },
-        {
-          "texto": "La economía estadounidense afronta la próxima decisión de la Fed con una inflación de agosto situada en el 3,4 % interanual, manteniendo la presión sobre el tipo de referencia en el rango 3,50 %, 3,75 %. Elon Musk se sumó el 12 de septiembre a las peticiones de Sam Altman y Dario Amodei para regular y frenar temporalmente la escalada descontrolada de capacidades autónomas en IA ante riesgos sistémicos",
-          "fuente": "La Tribuna, El Nacional"
-        }
-      ]
+      "lineas": []
     },
     {
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El Consejo de Gobierno del BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % efectiva el 16 de septiembre, impulsado por una inflación de la eurozona en agosto del 3,3 % y el Brent rozando los 100 dólares. Como consecuencia directa, el Euríbor supera el 3,1 % en septiembre de 2026, encareciendo un 10,7 % el tramo fijo de las hipotecas mixtas interanual",
-          "fuente": "European Central Bank, Merca2.es"
-        },
-        {
-          "texto": "En IA, Mistral AI cerró el 8 de septiembre una ronda histórica de 3.000 millones de euros liderada por Samsung Electronics, alcanzando una valoración de 21.000 millones orientada a infraestructura y modelos open-weight. OpenAI presentó el 3 de septiembre su modelo GPT-6 Astra, enfocado en agentes autónomos de varios pasos con un coste 2,5 veces superior a su predecesor y un contexto de un millón de tokens",
-          "fuente": "DataPath, Arkaia Corp"
+          "texto": "El BCE subió el 10 de septiembre sus tres tipos rectores en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio y proyectando una inflación media del 3,0 % para 2026 y del 2,5 % para 2027",
+          "fuente": "European Central Bank"
         }
       ]
     },
@@ -77,12 +64,8 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Tras la entrada en vigor el 2 de agosto de las obligaciones de transparencia estricta del AI Act europeo, el ecosistema corporativo español afronta en septiembre el desarrollo parlamentario del Proyecto de Ley Orgánica de gobernanza de la IA coordinado por la AESIA",
-          "fuente": "Grupo Atico34"
-        },
-        {
-          "texto": "Los datos acumulados del mercado transaccional español reflejan un volumen de capital movilizado muy robusto, apoyado en un crecimiento interanual del capital en operaciones de private equity y venture capital, con inmobiliario y tecnología como principales tractores, junto a dinámicas de consolidación en mid-market asesoradas por firmas como Norgeştion y Anquor. Persiste la fragmentación estructural de rutas comerciales globales, donde el mar Rojo y el estrecho de Ormuz actúan como puntos críticos de tensión energética que condicionan los costes logísticos de la industria europea",
-          "fuente": "Iberian Lawyer, Norgesition, UN News"
+          "texto": "Informes de inteligencia acumulados en agosto y septiembre (ZeroFox / CSIS) constatan que las rutas energéticas del Golfo y el corredor de Ormuz operan bajo un régimen permanente de riesgo geopolítico elevado, afectando a los flujos de exportación de crudo asiáticos y europeos",
+          "fuente": "Monthly Geopolitical Report: September 2026 - ZeroFox"
         }
       ]
     },
@@ -97,5 +80,5 @@
       ]
     }
   ],
-  "markdown": "## Hoy\nLa Alta Representante de la UE, Kaja Kallas, advierte que la ruptura del alto el fuego en el estrecho de Ormuz mantiene buques y marinos atrapados en fuego cruzado, prolongando la tensión logística y energética para Europa. La Declaración de Nueva Delhi firmada el 12 de septiembre por los líderes de los BRICS, China, Rusia e Irán incluidos, pide máxima contención en Oriente Medio, rechaza sanciones unilaterales y aboga por preservar el flujo de energía.\n\nLa economía estadounidense afronta la próxima decisión de la Fed con una inflación de agosto situada en el 3,4 % interanual, manteniendo la presión sobre el tipo de referencia en el rango 3,50 %, 3,75 %. Elon Musk se sumó el 12 de septiembre a las peticiones de Sam Altman y Dario Amodei para regular y frenar temporalmente la escalada descontrolada de capacidades autónomas en IA ante riesgos sistémicos.\n\nFuentes: Parlamento Europeo, Pagina 12, La Tribuna, El Nacional\n\n## Esta semana\nEl Consejo de Gobierno del BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % efectiva el 16 de septiembre, impulsado por una inflación de la eurozona en agosto del 3,3 % y el Brent rozando los 100 dólares. Como consecuencia directa, el Euríbor supera el 3,1 % en septiembre de 2026, encareciendo un 10,7 % el tramo fijo de las hipotecas mixtas interanual.\n\nEn IA, Mistral AI cerró el 8 de septiembre una ronda histórica de 3.000 millones de euros liderada por Samsung Electronics, alcanzando una valoración de 21.000 millones orientada a infraestructura y modelos open-weight. OpenAI presentó el 3 de septiembre su modelo GPT-6 Astra, enfocado en agentes autónomos de varios pasos con un coste 2,5 veces superior a su predecesor y un contexto de un millón de tokens.\n\nFuentes: European Central Bank, Merca2.es, DataPath, Arkaia Corp\n\n## Este mes\nTras la entrada en vigor el 2 de agosto de las obligaciones de transparencia estricta del AI Act europeo, el ecosistema corporativo español afronta en septiembre el desarrollo parlamentario del Proyecto de Ley Orgánica de gobernanza de la IA coordinado por la AESIA.\n\nLos datos acumulados del mercado transaccional español reflejan un volumen de capital movilizado muy robusto, apoyado en un crecimiento interanual del capital en operaciones de private equity y venture capital, con inmobiliario y tecnología como principales tractores, junto a dinámicas de consolidación en mid-market asesoradas por firmas como Norgeştion y Anquor. Persiste la fragmentación estructural de rutas comerciales globales, donde el mar Rojo y el estrecho de Ormuz actúan como puntos críticos de tensión energética que condicionan los costes logísticos de la industria europea.\n\nFuentes: Grupo Atico34, Iberian Lawyer, Norgesition, UN News"
+  "markdown": "## Hoy\nLa diplomacia energética sufre un revés este lunes al posponerse una reunión clave entre Irán y potencias del Golfo sobre el Estrecho de Ormuz, mientras el crudo reabre al alza por el mantenimiento del cierre de un oleoducto este-oeste de 1.200 km en Arabia Saudí tras un ataque con drones durante el fin de semana.\n\nPolonia y Ucrania denuncian una grave escalada tras un ataque ruso con misiles y drones registrado este fin de semana a escasos 2 km de la frontera polaca que alcanzó un tren de pasajeros en la ruta Kyiv-Varsovia sin víctimas, lo que llevó al primer ministro Donald Tusk a convocar una reunión de emergencia en Varsovia.\n\nFuentes: Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal, Ukraine war briefing: Poland calls for 'double' support to Kyiv after Russian train attack\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos rectores en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio y proyectando una inflación media del 3,0 % para 2026 y del 2,5 % para 2027.\n\nLa cumbre de los BRICS en Nueva Delhi concluyó el 12 de septiembre con una declaración que expresa profunda preocupación por las tensiones en Oriente Medio y condena explícitamente el uso de sanciones unilaterales no autorizadas por el Consejo de Seguridad de la ONU. Paralelamente, China confirmó el 10 de septiembre que mantiene consultas activas con Estados Unidos para implementar reducciones arancelarias recíprocas por valor de 30.000 millones de dólares a una fecha temprana, de cara al encuentro Trump-Xi previsto para el 24 de septiembre en Washington.\n\nFuentes: European Central Bank, BRICS leaders voice concern over Middle East, condemn unilateral sanctions at India summit | PBS News, China says it hopes to agree with the US on tariff reductions 'at an early date'\n\n## Este mes\nInformes de inteligencia acumulados en agosto y septiembre (ZeroFox / CSIS) constatan que las rutas energéticas del Golfo y el corredor de Ormuz operan bajo un régimen permanente de riesgo geopolítico elevado, afectando a los flujos de exportación de crudo asiáticos y europeos.\n\nEvaluaciones del ISW indican que las operaciones de contraofensiva ucranianas en sectores como Kupiansk han neutralizado casi por completo los avances territoriales netos rusos registrados desde marzo de 2026, estabilizando temporalmente la línea de contacto pese a la intensidad de los ataques con drones.\n\nEl ecosistema de modelos de lenguaje registra una transición hacia la eficiencia de tokens y la ejecución de agentes autónomos complejos, con lanzamientos recientes de Anthropic (Claude Fable/Mythos 5.1) y OpenAI (arquitectura de llamadas programáticas de herramientas) que reducen drásticamente las llamadas redundantes en flujos empresariales.\n\nFuentes: Monthly Geopolitical Report: September 2026 - ZeroFox, Ukraine Wipes Out Nearly All of Russia's 2026 Territorial Gains, ISW Says, Introducing Claude Fable 5.1 and Claude Mythos 5.1 - Anthropic"
 }
