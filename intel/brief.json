@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-14",
+  "fecha": "2026-09-15",
   "lectura": "",
   "cifras": [
     {
@@ -8,19 +8,19 @@
       "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Inversión IA",
+      "etiqueta": "Compra Hugging Face",
+      "valor": "12.930 M$",
+      "fuente": "NVIDIA Newsroom"
+    },
+    {
+      "etiqueta": "M&A España H1",
+      "valor": "50.474 M€",
+      "fuente": "AGM Abogados"
+    },
+    {
+      "etiqueta": "Gasto infra IA 2030",
       "valor": "3-4 billones $",
-      "fuente": "BigGo Finance"
-    },
-    {
-      "etiqueta": "Reducción aranceles",
-      "valor": "30.000 M$",
-      "fuente": "PBS News"
-    },
-    {
-      "etiqueta": "M&A España",
-      "valor": "56.900 M€",
-      "fuente": "Chambers and Partners"
+      "fuente": "Investing.com"
     }
   ],
   "horizontes": [
@@ -30,11 +30,11 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 3
+      "n": 4
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 4
     }
   ],
   "radar": null,
@@ -49,14 +49,23 @@
   "secciones": [
     {
       "titulo": "Hoy",
-      "lineas": []
+      "lineas": [
+        {
+          "texto": "Zelenskyy condiciona la tregua energética a la verificación del cese de ataques rusos sobre la red eléctrica y a una garantía formal de EE. UU., descartando el acuerdo bilateral que Trump había adelantado. En Oriente Medio, el ataque con drones al gasoducto Este-Oeste saudí retrasa su reparación entre tres y cinco semanas, mientras los hutíes consolidan el control de la isla de Perim en Bab el-Mandeb, paralizando la vía diplomática del Golfo con Irán",
+          "fuente": "The Guardian, SBS News"
+        }
+      ]
     },
     {
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El BCE subió el 10 de septiembre sus tres tipos rectores en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio y proyectando una inflación media del 3,0 % para 2026 y del 2,5 % para 2027",
-          "fuente": "European Central Bank"
+          "texto": "El BCE subió 25 puntos básicos sus tres tipos oficiales el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 citando la inflación importada del conflicto en Oriente Medio. EE. UU. y China ultiman un marco de reducción arancelaria recíproca de 30.000 millones de dólares antes de la cumbre Trump-Xi del 24 de septiembre en Washington, mientras Canadá activó el 8 de septiembre represalias \"dólar por dólar\" sobre 20.000 millones de importaciones estadounidenses con gravámenes de hasta el 50 % en acero, aluminio y muebles",
+          "fuente": "European Central Bank, Table.Briefings, Dimerco"
+        },
+        {
+          "texto": "NVIDIA cerró la adquisición definitiva de Hugging Face por 12.930 millones de dólares, integrando 18 millones de desarrolladores y 200.000 empresas sin alterar su neutralidad multi-modelo y multi-cloud. La primera semana de septiembre saturó el mercado con lanzamientos simultáneos: Claude Fable 5.1 y Mythos 5.1 (Anthropic), Muse Spark 1.3 (Meta), Gemini 3.8 Flash y su variante Cyber (Google) y GPT-6 Astra (OpenAI), generando \"model fatigue\" en compradores empresariales",
+          "fuente": "NVIDIA Newsroom, Startup Fortune"
         }
       ]
     },
@@ -64,8 +73,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Informes de inteligencia acumulados en agosto y septiembre (ZeroFox / CSIS) constatan que las rutas energéticas del Golfo y el corredor de Ormuz operan bajo un régimen permanente de riesgo geopolítico elevado, afectando a los flujos de exportación de crudo asiáticos y europeos",
-          "fuente": "Monthly Geopolitical Report: September 2026 - ZeroFox"
+          "texto": "La USTR activó el 24 de julio aranceles adicionales bajo Sección 301 por trabajo forzoso: 10 % ad valorem para UE y Reino Unido, 12,5 % para China, Japón, Brasil y otros 60 países, reconfigurando el cumplimiento aduanero global. El primer semestre de 2026 en España cerró con 1.485 transacciones por 50.474 millones de euros, cayendo un 15 % en número pero estable en importe (-0,29 %) gracias a operaciones de gran escala; inmobiliario lideró con 343 deals, seguido de Internet/Software (144) y Apoyo Empresarial (+15 % interanual)",
+          "fuente": "Trade Compliance Resource Hub, AGM Abogados"
+        },
+        {
+          "texto": "Santander acordó la compra de Webster Financial por unos 12.200 millones de dólares, asesorado por Uría Menéndez, Davis Polk, Deloitte Legal y Wachtell Lipton, la operación cross-border destacada del verano según TTR Data. Jensen Huang proyectó en Goldman Sachs un gasto acumulado en infraestructura de IA de 3-4 billones de dólares para 2030, con crecimiento intermensual del 27 % en sistemas Grace, Blackwell y NVLink y precios por plataforma de 18.000 dólares (Hopper) a 40.000 dólares (Vera Rubin)",
+          "fuente": "Iberian Lawyer, Investing.com"
         }
       ]
     },
@@ -75,10 +88,27 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "Alantra PE (fondo IV) adquiere el 75 % de DeudaFix, confirmando apetito por fintechs de deuda distressed en España; Unigrains Iberia entra en Haricaman (agroalimentación), y Pollen Street Capital compra Servihabitat a Lone Star, moviendo el ladillo inmobiliario de servicing",
+              "fuente": "Albia IMAP"
+            },
+            {
+              "texto": "La Ley Orgánica 1/2025 ya impacta la redacción de SPA: cláusulas de emisiones y \"due diligence\" ESG son exigencia estándar de fondos, y la jurisprudencia resultante endurece la prueba de actividad real en holdings",
+              "fuente": "Chambers and Partners"
+            },
+            {
+              "texto": "H1 2026 muestra concentración de valor en menos deals (-15 % operaciones, -0,29 % importe), con Apoyo Empresarial creciendo +15 % interanual, señal de que el middle-market español rota hacia servicios especializados y recurrente",
+              "fuente": "AGM Abogados"
+            },
+            {
+              "texto": "Santander/Webster (12.200 M$) marca la mayor salida cross-border bancaria del año, con asesoramiento cuádruple (Uría, Davis Polk, Deloitte Legal, Wachtell), referencia de estructura para deals financieros regulados",
+              "fuente": "Iberian Lawyer"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa diplomacia energética sufre un revés este lunes al posponerse una reunión clave entre Irán y potencias del Golfo sobre el Estrecho de Ormuz, mientras el crudo reabre al alza por el mantenimiento del cierre de un oleoducto este-oeste de 1.200 km en Arabia Saudí tras un ataque con drones durante el fin de semana.\n\nPolonia y Ucrania denuncian una grave escalada tras un ataque ruso con misiles y drones registrado este fin de semana a escasos 2 km de la frontera polaca que alcanzó un tren de pasajeros en la ruta Kyiv-Varsovia sin víctimas, lo que llevó al primer ministro Donald Tusk a convocar una reunión de emergencia en Varsovia.\n\nFuentes: Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal, Ukraine war briefing: Poland calls for 'double' support to Kyiv after Russian train attack\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos rectores en 25 puntos básicos, situando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, citando presiones inflacionistas persistentes derivadas del conflicto en Oriente Medio y proyectando una inflación media del 3,0 % para 2026 y del 2,5 % para 2027.\n\nLa cumbre de los BRICS en Nueva Delhi concluyó el 12 de septiembre con una declaración que expresa profunda preocupación por las tensiones en Oriente Medio y condena explícitamente el uso de sanciones unilaterales no autorizadas por el Consejo de Seguridad de la ONU. Paralelamente, China confirmó el 10 de septiembre que mantiene consultas activas con Estados Unidos para implementar reducciones arancelarias recíprocas por valor de 30.000 millones de dólares a una fecha temprana, de cara al encuentro Trump-Xi previsto para el 24 de septiembre en Washington.\n\nFuentes: European Central Bank, BRICS leaders voice concern over Middle East, condemn unilateral sanctions at India summit | PBS News, China says it hopes to agree with the US on tariff reductions 'at an early date'\n\n## Este mes\nInformes de inteligencia acumulados en agosto y septiembre (ZeroFox / CSIS) constatan que las rutas energéticas del Golfo y el corredor de Ormuz operan bajo un régimen permanente de riesgo geopolítico elevado, afectando a los flujos de exportación de crudo asiáticos y europeos.\n\nEvaluaciones del ISW indican que las operaciones de contraofensiva ucranianas en sectores como Kupiansk han neutralizado casi por completo los avances territoriales netos rusos registrados desde marzo de 2026, estabilizando temporalmente la línea de contacto pese a la intensidad de los ataques con drones.\n\nEl ecosistema de modelos de lenguaje registra una transición hacia la eficiencia de tokens y la ejecución de agentes autónomos complejos, con lanzamientos recientes de Anthropic (Claude Fable/Mythos 5.1) y OpenAI (arquitectura de llamadas programáticas de herramientas) que reducen drásticamente las llamadas redundantes en flujos empresariales.\n\nFuentes: Monthly Geopolitical Report: September 2026 - ZeroFox, Ukraine Wipes Out Nearly All of Russia's 2026 Territorial Gains, ISW Says, Introducing Claude Fable 5.1 and Claude Mythos 5.1 - Anthropic"
+  "markdown": "## Hoy\nZelenskyy condiciona la tregua energética a la verificación del cese de ataques rusos sobre la red eléctrica y a una garantía formal de EE. UU., descartando el acuerdo bilateral que Trump había adelantado. En Oriente Medio, el ataque con drones al gasoducto Este-Oeste saudí retrasa su reparación entre tres y cinco semanas, mientras los hutíes consolidan el control de la isla de Perim en Bab el-Mandeb, paralizando la vía diplomática del Golfo con Irán.\n\nFuentes: The Guardian, SBS News\n\n## Esta semana\nEl BCE subió 25 puntos básicos sus tres tipos oficiales el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 citando la inflación importada del conflicto en Oriente Medio. EE. UU. y China ultiman un marco de reducción arancelaria recíproca de 30.000 millones de dólares antes de la cumbre Trump-Xi del 24 de septiembre en Washington, mientras Canadá activó el 8 de septiembre represalias \"dólar por dólar\" sobre 20.000 millones de importaciones estadounidenses con gravámenes de hasta el 50 % en acero, aluminio y muebles.\n\nNVIDIA cerró la adquisición definitiva de Hugging Face por 12.930 millones de dólares, integrando 18 millones de desarrolladores y 200.000 empresas sin alterar su neutralidad multi-modelo y multi-cloud. La primera semana de septiembre saturó el mercado con lanzamientos simultáneos: Claude Fable 5.1 y Mythos 5.1 (Anthropic), Muse Spark 1.3 (Meta), Gemini 3.8 Flash y su variante Cyber (Google) y GPT-6 Astra (OpenAI), generando \"model fatigue\" en compradores empresariales.\n\nFuentes: European Central Bank, Table.Briefings, Dimerco, NVIDIA Newsroom, Startup Fortune\n\n## Este mes\nSantander acordó la compra de Webster Financial por unos 12.200 millones de dólares, asesorado por Uría Menéndez, Davis Polk, Deloitte Legal y Wachtell Lipton, la operación cross-border destacada del verano según TTR Data. Jensen Huang proyectó en Goldman Sachs un gasto acumulado en infraestructura de IA de 3-4 billones de dólares para 2030, con crecimiento intermensual del 27 % en sistemas Grace, Blackwell y NVLink y precios por plataforma de 18.000 dólares (Hopper) a 40.000 dólares (Vera Rubin).\n\nFuentes: Iberian Lawyer, Investing.com\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nAlantra PE (fondo IV) adquiere el 75 % de DeudaFix, confirmando apetito por fintechs de deuda distressed en España; Unigrains Iberia entra en Haricaman (agroalimentación), y Pollen Street Capital compra Servihabitat a Lone Star, moviendo el ladillo inmobiliario de servicing.\n\nLa Ley Orgánica 1/2025 ya impacta la redacción de SPA: cláusulas de emisiones y \"due diligence\" ESG son exigencia estándar de fondos, y la jurisprudencia resultante endurece la prueba de actividad real en holdings.\n\nH1 2026 muestra concentración de valor en menos deals (-15 % operaciones, -0,29 % importe), con Apoyo Empresarial creciendo +15 % interanual, señal de que el middle-market español rota hacia servicios especializados y recurrente.\n\nSantander/Webster (12.200 M$) marca la mayor salida cross-border bancaria del año, con asesoramiento cuádruple (Uría, Davis Polk, Deloitte Legal, Wachtell), referencia de estructura para deals financieros regulados.\n\nFuentes: Albia IMAP, Chambers and Partners, AGM Abogados, Iberian Lawyer"
 }
