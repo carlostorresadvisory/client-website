@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-09-15",
+  "fecha": "2026-09-16",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipos BCE",
+      "etiqueta": "Brecha militar Ucrania",
+      "valor": "26.500 M$",
+      "fuente": "El Periódico"
+    },
+    {
+      "etiqueta": "Tipos BCE depósito",
       "valor": "2,50 %",
-      "fuente": "European Central Bank"
+      "fuente": "Banco Central Europeo"
     },
     {
-      "etiqueta": "Compra Hugging Face",
-      "valor": "12.930 M$",
-      "fuente": "NVIDIA Newsroom"
+      "etiqueta": "Brent",
+      "valor": "105,68 $/barril",
+      "fuente": "Contrapunto"
     },
     {
-      "etiqueta": "M&A España H1",
-      "valor": "50.474 M€",
-      "fuente": "AGM Abogados"
-    },
-    {
-      "etiqueta": "Gasto infra IA 2030",
-      "valor": "3-4 billones $",
-      "fuente": "Investing.com"
+      "etiqueta": "M&A España YTD",
+      "valor": "1.938 ops / 63.787 M€",
+      "fuente": "Confilegal"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 2
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 3
     },
     {
       "horizonte": "Este mes",
@@ -51,8 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Zelenskyy condiciona la tregua energética a la verificación del cese de ataques rusos sobre la red eléctrica y a una garantía formal de EE. UU., descartando el acuerdo bilateral que Trump había adelantado. En Oriente Medio, el ataque con drones al gasoducto Este-Oeste saudí retrasa su reparación entre tres y cinco semanas, mientras los hutíes consolidan el control de la isla de Perim en Bab el-Mandeb, paralizando la vía diplomática del Golfo con Irán",
-          "fuente": "The Guardian, SBS News"
+          "texto": "Ucrania afronta una brecha presupuestaria de 26.500 millones de dólares en gasto militar que obligará a medidas fiscales duras e impopulares, según ha anunciado el presidente Zelenski, mientras en el terreno ambas partes ignoran la tregua energética propuesta por Trump con drones rusos golpeando gasolineras en Kiev y ucranianos atacando la refinería de Samara",
+          "fuente": "El Periódico, La Vanguardia"
+        },
+        {
+          "texto": "En el eje asiático, la viceministra de Defensa rusa Anna Tsivileva ha calificado en el Foro Xiangshan de Pekín la cooperación militar con China de \"sin precedentes\" y ha criticado la formación de bloques cerrados en Asia-Pacífico, señalando una profundización estructural de la alianza estratégica",
+          "fuente": "El Periódico"
+        },
+        {
+          "texto": "En el frente tecnológico, la startup neerlandesa Euclyd ha cerrado una ronda de 230 millones de dólares co-liderada por Samsung, Somerset Capital Partners e Innovation Industries para desarrollar chips de inferencia que compitan con la hegemonía de Nvidia, confirmando el apetito inversor por alternativas de hardware",
+          "fuente": "CNBC Africa"
         }
       ]
     },
@@ -60,12 +68,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El BCE subió 25 puntos básicos sus tres tipos oficiales el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 citando la inflación importada del conflicto en Oriente Medio. EE. UU. y China ultiman un marco de reducción arancelaria recíproca de 30.000 millones de dólares antes de la cumbre Trump-Xi del 24 de septiembre en Washington, mientras Canadá activó el 8 de septiembre represalias \"dólar por dólar\" sobre 20.000 millones de importaciones estadounidenses con gravámenes de hasta el 50 % en acero, aluminio y muebles",
-          "fuente": "European Central Bank, Table.Briefings, Dimerco"
+          "texto": "El BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 %, la de refinanciación en el 2,65 % y la marginal en el 2,90 % con efectos desde hoy, endureciendo la política monetaria tras confirmarse una inflación de la eurozona del 3,3 % en agosto, impulsada por un componente energético al 14,3 %, que supera ampliamente el objetivo del 2 %",
+          "fuente": "Banco Central Europeo, Nexo Económico"
         },
         {
-          "texto": "NVIDIA cerró la adquisición definitiva de Hugging Face por 12.930 millones de dólares, integrando 18 millones de desarrolladores y 200.000 empresas sin alterar su neutralidad multi-modelo y multi-cloud. La primera semana de septiembre saturó el mercado con lanzamientos simultáneos: Claude Fable 5.1 y Mythos 5.1 (Anthropic), Muse Spark 1.3 (Meta), Gemini 3.8 Flash y su variante Cyber (Google) y GPT-6 Astra (OpenAI), generando \"model fatigue\" en compradores empresariales",
-          "fuente": "NVIDIA Newsroom, Startup Fortune"
+          "texto": "Ese mismo shock energético dispara el crudo: el Brent alcanza 105,68 dólares y el WTI supera los 101 dólares tras el cierre preventivo del oleoducto Este-Oeste saudí por ataques con drones y la tensión en el estrecho de Ormuz, transmitiendo presión inflacionista adicional a la decisión del BCE",
+          "fuente": "Contrapunto"
+        },
+        {
+          "texto": "En el mercado español, TTR Data registra 1.938 operaciones M&A hasta agosto (-17 % interanual) por 63.787 millones de euros (-9 %), con Private Equity retrocediendo en volumen e importe mientras Venture Capital crece un 43 % en capital movilizado y las adquisiciones de activos aumentan su importe un 40 % pese a menos transacciones",
+          "fuente": "Confilegal"
         }
       ]
     },
@@ -73,12 +85,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La USTR activó el 24 de julio aranceles adicionales bajo Sección 301 por trabajo forzoso: 10 % ad valorem para UE y Reino Unido, 12,5 % para China, Japón, Brasil y otros 60 países, reconfigurando el cumplimiento aduanero global. El primer semestre de 2026 en España cerró con 1.485 transacciones por 50.474 millones de euros, cayendo un 15 % en número pero estable en importe (-0,29 %) gracias a operaciones de gran escala; inmobiliario lideró con 343 deals, seguido de Internet/Software (144) y Apoyo Empresarial (+15 % interanual)",
-          "fuente": "Trade Compliance Resource Hub, AGM Abogados"
+          "texto": "El Informe Mundial sobre Riesgos 2026 de Naciones Unidas sitúa la probabilidad de una guerra a gran escala como la principal preocupación para el 36 % de los encuestados institucionales, escalando 16 puestos desde 2024 y reflejando un deterioro estructural del entorno de seguridad global",
+          "fuente": "UN News"
         },
         {
-          "texto": "Santander acordó la compra de Webster Financial por unos 12.200 millones de dólares, asesorado por Uría Menéndez, Davis Polk, Deloitte Legal y Wachtell Lipton, la operación cross-border destacada del verano según TTR Data. Jensen Huang proyectó en Goldman Sachs un gasto acumulado en infraestructura de IA de 3-4 billones de dólares para 2030, con crecimiento intermensual del 27 % en sistemas Grace, Blackwell y NVLink y precios por plataforma de 18.000 dólares (Hopper) a 40.000 dólares (Vera Rubin)",
-          "fuente": "Iberian Lawyer, Investing.com"
+          "texto": "Los resultados del segundo trimestre fiscal de Nvidia confirman ingresos récord de 96.220 millones de dólares (+106 % interanual) y una devolución de 26.000 millones a accionistas, certificando que el ciclo de gasto en infraestructura de IA sigue en fase de expansión agresiva",
+          "fuente": "NVIDIA Investor Relations"
+        },
+        {
+          "texto": "Desde el 1 de septiembre entra en vigor efectiva la obligación de transparencia (Art. 50) y alfabetización en IA (Art. 4) del Reglamento Europeo, con AESIA y AEPD coordinando la supervisión del despliegue algorítmico en el entorno corporativo español, elevando el estándar de cumplimiento para cualquier proyecto que integre IA",
+          "fuente": "Secuone.ai"
+        },
+        {
+          "texto": "El lower mid-market español opera bajo extrema selectividad: compradores, tanto industriales como fondos, priorizan recurrencia de ingresos, márgenes sólidos y estructuras profesionalizadas frente al volumen bruto, según análisis sectoriales de la reanudación estival",
+          "fuente": "Albia IMAP"
         }
       ]
     },
@@ -90,25 +110,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Alantra PE (fondo IV) adquiere el 75 % de DeudaFix, confirmando apetito por fintechs de deuda distressed en España; Unigrains Iberia entra en Haricaman (agroalimentación), y Pollen Street Capital compra Servihabitat a Lone Star, moviendo el ladillo inmobiliario de servicing",
+              "texto": "El M&A español muestra divergencia clara: caída agregada (-17 % ops, -9 % importe) pero Venture Capital +43 % en capital y asset deals +40 % en importe, señalando rotación del mercado hacia crecimiento tecnológico y reestructuración de balances frente a buyouts tradicionales",
+              "fuente": "Confilegal"
+            },
+            {
+              "texto": "La selectividad extrema en lower mid-market (recurrencia, márgenes, profesionalización) eleva el listón de preparacion pre-deal: vendedores que no acrediten métricas de calidad recurrentes y gobernanza formal verán reducido su universo de compradores y múltiplos",
               "fuente": "Albia IMAP"
-            },
-            {
-              "texto": "La Ley Orgánica 1/2025 ya impacta la redacción de SPA: cláusulas de emisiones y \"due diligence\" ESG son exigencia estándar de fondos, y la jurisprudencia resultante endurece la prueba de actividad real en holdings",
-              "fuente": "Chambers and Partners"
-            },
-            {
-              "texto": "H1 2026 muestra concentración de valor en menos deals (-15 % operaciones, -0,29 % importe), con Apoyo Empresarial creciendo +15 % interanual, señal de que el middle-market español rota hacia servicios especializados y recurrente",
-              "fuente": "AGM Abogados"
-            },
-            {
-              "texto": "Santander/Webster (12.200 M$) marca la mayor salida cross-border bancaria del año, con asesoramiento cuádruple (Uría, Davis Polk, Deloitte Legal, Wachtell), referencia de estructura para deals financieros regulados",
-              "fuente": "Iberian Lawyer"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nZelenskyy condiciona la tregua energética a la verificación del cese de ataques rusos sobre la red eléctrica y a una garantía formal de EE. UU., descartando el acuerdo bilateral que Trump había adelantado. En Oriente Medio, el ataque con drones al gasoducto Este-Oeste saudí retrasa su reparación entre tres y cinco semanas, mientras los hutíes consolidan el control de la isla de Perim en Bab el-Mandeb, paralizando la vía diplomática del Golfo con Irán.\n\nFuentes: The Guardian, SBS News\n\n## Esta semana\nEl BCE subió 25 puntos básicos sus tres tipos oficiales el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el de refinanciación en el 2,65 %, y revisó al alza el crecimiento de la eurozona al 0,9 % para 2026 y al 1,4 % para 2027 citando la inflación importada del conflicto en Oriente Medio. EE. UU. y China ultiman un marco de reducción arancelaria recíproca de 30.000 millones de dólares antes de la cumbre Trump-Xi del 24 de septiembre en Washington, mientras Canadá activó el 8 de septiembre represalias \"dólar por dólar\" sobre 20.000 millones de importaciones estadounidenses con gravámenes de hasta el 50 % en acero, aluminio y muebles.\n\nNVIDIA cerró la adquisición definitiva de Hugging Face por 12.930 millones de dólares, integrando 18 millones de desarrolladores y 200.000 empresas sin alterar su neutralidad multi-modelo y multi-cloud. La primera semana de septiembre saturó el mercado con lanzamientos simultáneos: Claude Fable 5.1 y Mythos 5.1 (Anthropic), Muse Spark 1.3 (Meta), Gemini 3.8 Flash y su variante Cyber (Google) y GPT-6 Astra (OpenAI), generando \"model fatigue\" en compradores empresariales.\n\nFuentes: European Central Bank, Table.Briefings, Dimerco, NVIDIA Newsroom, Startup Fortune\n\n## Este mes\nSantander acordó la compra de Webster Financial por unos 12.200 millones de dólares, asesorado por Uría Menéndez, Davis Polk, Deloitte Legal y Wachtell Lipton, la operación cross-border destacada del verano según TTR Data. Jensen Huang proyectó en Goldman Sachs un gasto acumulado en infraestructura de IA de 3-4 billones de dólares para 2030, con crecimiento intermensual del 27 % en sistemas Grace, Blackwell y NVLink y precios por plataforma de 18.000 dólares (Hopper) a 40.000 dólares (Vera Rubin).\n\nFuentes: Iberian Lawyer, Investing.com\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nAlantra PE (fondo IV) adquiere el 75 % de DeudaFix, confirmando apetito por fintechs de deuda distressed en España; Unigrains Iberia entra en Haricaman (agroalimentación), y Pollen Street Capital compra Servihabitat a Lone Star, moviendo el ladillo inmobiliario de servicing.\n\nLa Ley Orgánica 1/2025 ya impacta la redacción de SPA: cláusulas de emisiones y \"due diligence\" ESG son exigencia estándar de fondos, y la jurisprudencia resultante endurece la prueba de actividad real en holdings.\n\nH1 2026 muestra concentración de valor en menos deals (-15 % operaciones, -0,29 % importe), con Apoyo Empresarial creciendo +15 % interanual, señal de que el middle-market español rota hacia servicios especializados y recurrente.\n\nSantander/Webster (12.200 M$) marca la mayor salida cross-border bancaria del año, con asesoramiento cuádruple (Uría, Davis Polk, Deloitte Legal, Wachtell), referencia de estructura para deals financieros regulados.\n\nFuentes: Albia IMAP, Chambers and Partners, AGM Abogados, Iberian Lawyer"
+  "markdown": "## Hoy\nUcrania afronta una brecha presupuestaria de 26.500 millones de dólares en gasto militar que obligará a medidas fiscales duras e impopulares, según ha anunciado el presidente Zelenski, mientras en el terreno ambas partes ignoran la tregua energética propuesta por Trump con drones rusos golpeando gasolineras en Kiev y ucranianos atacando la refinería de Samara.\n\nEn el eje asiático, la viceministra de Defensa rusa Anna Tsivileva ha calificado en el Foro Xiangshan de Pekín la cooperación militar con China de \"sin precedentes\" y ha criticado la formación de bloques cerrados en Asia-Pacífico, señalando una profundización estructural de la alianza estratégica.\n\nEn el frente tecnológico, la startup neerlandesa Euclyd ha cerrado una ronda de 230 millones de dólares co-liderada por Samsung, Somerset Capital Partners e Innovation Industries para desarrollar chips de inferencia que compitan con la hegemonía de Nvidia, confirmando el apetito inversor por alternativas de hardware.\n\nFuentes: El Periódico, La Vanguardia, CNBC Africa\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 %, la de refinanciación en el 2,65 % y la marginal en el 2,90 % con efectos desde hoy, endureciendo la política monetaria tras confirmarse una inflación de la eurozona del 3,3 % en agosto, impulsada por un componente energético al 14,3 %, que supera ampliamente el objetivo del 2 %.\n\nEse mismo shock energético dispara el crudo: el Brent alcanza 105,68 dólares y el WTI supera los 101 dólares tras el cierre preventivo del oleoducto Este-Oeste saudí por ataques con drones y la tensión en el estrecho de Ormuz, transmitiendo presión inflacionista adicional a la decisión del BCE.\n\nEn el mercado español, TTR Data registra 1.938 operaciones M&A hasta agosto (-17 % interanual) por 63.787 millones de euros (-9 %), con Private Equity retrocediendo en volumen e importe mientras Venture Capital crece un 43 % en capital movilizado y las adquisiciones de activos aumentan su importe un 40 % pese a menos transacciones.\n\nFuentes: Banco Central Europeo, Nexo Económico, Contrapunto, Confilegal\n\n## Este mes\nEl Informe Mundial sobre Riesgos 2026 de Naciones Unidas sitúa la probabilidad de una guerra a gran escala como la principal preocupación para el 36 % de los encuestados institucionales, escalando 16 puestos desde 2024 y reflejando un deterioro estructural del entorno de seguridad global.\n\nLos resultados del segundo trimestre fiscal de Nvidia confirman ingresos récord de 96.220 millones de dólares (+106 % interanual) y una devolución de 26.000 millones a accionistas, certificando que el ciclo de gasto en infraestructura de IA sigue en fase de expansión agresiva.\n\nDesde el 1 de septiembre entra en vigor efectiva la obligación de transparencia (Art. 50) y alfabetización en IA (Art. 4) del Reglamento Europeo, con AESIA y AEPD coordinando la supervisión del despliegue algorítmico en el entorno corporativo español, elevando el estándar de cumplimiento para cualquier proyecto que integre IA.\n\nEl lower mid-market español opera bajo extrema selectividad: compradores, tanto industriales como fondos, priorizan recurrencia de ingresos, márgenes sólidos y estructuras profesionalizadas frente al volumen bruto, según análisis sectoriales de la reanudación estival.\n\nFuentes: UN News, NVIDIA Investor Relations, Secuone.ai, Albia IMAP\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra divergencia clara: caída agregada (-17 % ops, -9 % importe) pero Venture Capital +43 % en capital y asset deals +40 % en importe, señalando rotación del mercado hacia crecimiento tecnológico y reestructuración de balances frente a buyouts tradicionales.\n\nLa selectividad extrema en lower mid-market (recurrencia, márgenes, profesionalización) eleva el listón de preparacion pre-deal: vendedores que no acrediten métricas de calidad recurrentes y gobernanza formal verán reducido su universo de compradores y múltiplos.\n\nFuentes: Confilegal, Albia IMAP"
 }
