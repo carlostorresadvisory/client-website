@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-09-16",
+  "fecha": "2026-09-17",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Brecha militar Ucrania",
-      "valor": "26.500 M$",
-      "fuente": "El Periódico"
+      "etiqueta": "Riesgo OTAN-Rusia",
+      "valor": "10 %",
+      "fuente": "Agenda Pública"
     },
     {
-      "etiqueta": "Tipos BCE depósito",
-      "valor": "2,50 %",
-      "fuente": "Banco Central Europeo"
+      "etiqueta": "Tipos Fed",
+      "valor": "3,75-4,00 %",
+      "fuente": "El Financiero"
     },
     {
-      "etiqueta": "Brent",
-      "valor": "105,68 $/barril",
-      "fuente": "Contrapunto"
+      "etiqueta": "Bajas rusas acumuladas",
+      "valor": "1.511.530",
+      "fuente": "Ukrinform"
     },
     {
-      "etiqueta": "M&A España YTD",
-      "valor": "1.938 ops / 63.787 M€",
-      "fuente": "Confilegal"
+      "etiqueta": "Emisiones Scope 3 Nvidia",
+      "valor": "9,4 Mt CO2e",
+      "fuente": "Intereconomía"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 3
+      "n": 5
     },
     {
       "horizonte": "Este mes",
@@ -51,16 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Ucrania afronta una brecha presupuestaria de 26.500 millones de dólares en gasto militar que obligará a medidas fiscales duras e impopulares, según ha anunciado el presidente Zelenski, mientras en el terreno ambas partes ignoran la tregua energética propuesta por Trump con drones rusos golpeando gasolineras en Kiev y ucranianos atacando la refinería de Samara",
-          "fuente": "El Periódico, La Vanguardia"
+          "texto": "La probabilidad de un enfrentamiento militar directo entre Rusia y la OTAN sube al 10 % según The Forecasting Machine, impulsada por el derribo de un dron con explosivos sobre Lituania procedente de Bielorrusia y el lanzamiento de bengalas por una fragata rusa a un helicóptero danés. En el terreno ucraniano, las bajas acumuladas del ejército ruso desde febrero de 2022 alcanzan 1.511.530 efectivos, con 1.530 bajas registradas solo en el último día",
+          "fuente": "Agenda Pública, Ukrinform"
         },
         {
-          "texto": "En el eje asiático, la viceministra de Defensa rusa Anna Tsivileva ha calificado en el Foro Xiangshan de Pekín la cooperación militar con China de \"sin precedentes\" y ha criticado la formación de bloques cerrados en Asia-Pacífico, señalando una profundización estructural de la alianza estratégica",
-          "fuente": "El Periódico"
+          "texto": "La Reserva Federal subió por unanimidad los tipos en 25 puntos básicos hasta el rango 3,75-4,00 %, primera alza desde julio de 2023, desafiando las críticas de Trump y anticipando otro incremento antes de fin de año ante un PCE estimado en 3,7 %",
+          "fuente": "El Financiero"
         },
         {
-          "texto": "En el frente tecnológico, la startup neerlandesa Euclyd ha cerrado una ronda de 230 millones de dólares co-liderada por Samsung, Somerset Capital Partners e Innovation Industries para desarrollar chips de inferencia que compitan con la hegemonía de Nvidia, confirmando el apetito inversor por alternativas de hardware",
-          "fuente": "CNBC Africa"
+          "texto": "OpenAI, Anthropic y Google DeepMind negocian la creación de un organismo de supervisión autorregulatorio independiente, inspirado en el modelo FINRA, para auditar modelos de frontera antes de su lanzamiento; Chris Lehane confirmó que no se requiere exención antimonopolio para esta cooperación",
+          "fuente": "Quartz"
+        },
+        {
+          "texto": "Un análisis de Ketan Joshi respaldado por Greenpeace cifra en un 725 % el aumento de emisiones de Alcance 3 de la cadena de suministro de Nvidia desde 2020, alcanzando 9,4 millones de toneladas de CO2 equivalente, nivel comparable al sector eléctrico de Bélgica",
+          "fuente": "Intereconomía"
         }
       ]
     },
@@ -68,16 +72,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 %, la de refinanciación en el 2,65 % y la marginal en el 2,90 % con efectos desde hoy, endureciendo la política monetaria tras confirmarse una inflación de la eurozona del 3,3 % en agosto, impulsada por un componente energético al 14,3 %, que supera ampliamente el objetivo del 2 %",
-          "fuente": "Banco Central Europeo, Nexo Económico"
+          "texto": "El BCE elevó sus tipos oficiales en 25 puntos básicos con efectos desde el 16 de septiembre, situando la facilidad de depósito en el 2,50 %, la de refinanciación en el 2,65 % y la marginal en el 2,90 %, impulsado por presiones inflacionarias derivadas de la crisis energética y el conflicto en Oriente Medio. Irán y China coordinaron en Pekín la reapertura del estrecho de Ormuz tras la escalada con buques y bases estadounidenses, mientras Guterres advirtió en la ONU de una \"era de profunda incertidumbre\" con IA descontrolada, crisis climática y bloqueo de Ormuz como amenazas existenciales",
+          "fuente": "European Central Bank, teleSUR, UN News"
         },
         {
-          "texto": "Ese mismo shock energético dispara el crudo: el Brent alcanza 105,68 dólares y el WTI supera los 101 dólares tras el cierre preventivo del oleoducto Este-Oeste saudí por ataques con drones y la tensión en el estrecho de Ormuz, transmitiendo presión inflacionista adicional a la decisión del BCE",
-          "fuente": "Contrapunto"
+          "texto": "Las acciones de semiconductores sufrieron fuertes caídas en Wall Street (Nvidia -3,25 %, AMD >-6 %, Intel -5,59 %, Micron -5,25 %) arrastradas por el debate abierto tras la petición de Anthropic y OpenAI de frenar temporalmente el desarrollo de modelos frontera por motivos de seguridad",
+          "fuente": "El Español"
         },
         {
-          "texto": "En el mercado español, TTR Data registra 1.938 operaciones M&A hasta agosto (-17 % interanual) por 63.787 millones de euros (-9 %), con Private Equity retrocediendo en volumen e importe mientras Venture Capital crece un 43 % en capital movilizado y las adquisiciones de activos aumentan su importe un 40 % pese a menos transacciones",
-          "fuente": "Confilegal"
+          "texto": "Deale cerró el primer semestre de 2026 con récord de 18 operaciones facilitadas por 52 millones de euros y lanzó Deale Credit para financiar hasta el 30 % en compras apalancadas. ONEtoONE Corporate Finance entró en el Top 10 de Mergermarket por número de transacciones en España (7 operaciones cerradas entre enero y junio)",
+          "fuente": "Cinco Días, Capital Riesgo"
         }
       ]
     },
@@ -85,20 +89,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Informe Mundial sobre Riesgos 2026 de Naciones Unidas sitúa la probabilidad de una guerra a gran escala como la principal preocupación para el 36 % de los encuestados institucionales, escalando 16 puestos desde 2024 y reflejando un deterioro estructural del entorno de seguridad global",
-          "fuente": "UN News"
+          "texto": "El M&A español en el primer semestre registró 1.485 operaciones (-15 % interanual) con capital movilizado estable en 50.474 millones (-0,29 %), dibujando un modelo \"en K\" donde los megadeals concentran volumen y la prudencia impera en mid-market ante la brecha de valoración. La OIM alerta de crisis humanitaria acelerada en Yemen: al menos 76.000 personas han huido desde julio por la intensificación del conflicto asociado a rutas marítimas",
+          "fuente": "EL PAÍS, IOM"
         },
         {
-          "texto": "Los resultados del segundo trimestre fiscal de Nvidia confirman ingresos récord de 96.220 millones de dólares (+106 % interanual) y una devolución de 26.000 millones a accionistas, certificando que el ciclo de gasto en infraestructura de IA sigue en fase de expansión agresiva",
-          "fuente": "NVIDIA Investor Relations"
-        },
-        {
-          "texto": "Desde el 1 de septiembre entra en vigor efectiva la obligación de transparencia (Art. 50) y alfabetización en IA (Art. 4) del Reglamento Europeo, con AESIA y AEPD coordinando la supervisión del despliegue algorítmico en el entorno corporativo español, elevando el estándar de cumplimiento para cualquier proyecto que integre IA",
-          "fuente": "Secuone.ai"
-        },
-        {
-          "texto": "El lower mid-market español opera bajo extrema selectividad: compradores, tanto industriales como fondos, priorizan recurrencia de ingresos, márgenes sólidos y estructuras profesionalizadas frente al volumen bruto, según análisis sectoriales de la reanudación estival",
-          "fuente": "Albia IMAP"
+          "texto": "Nvidia presentó en IFA Berlín tecnologías de equilibrio de carga local (NVIDIA PAIR) para evitar cuellos de botella en agentes de IA locales y actualizó el despliegue de superchips RTX Spark. KREAB lideró el ranking de asesoramiento en comunicación de M&A en España en el primer semestre con 48 transacciones asesoradas (18 oficiales en Mergermarket) en inmobiliario, energía e infraestructura",
+          "fuente": "Hipertextual, Marketing Insider Review"
         }
       ]
     },
@@ -110,17 +106,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El M&A español muestra divergencia clara: caída agregada (-17 % ops, -9 % importe) pero Venture Capital +43 % en capital y asset deals +40 % en importe, señalando rotación del mercado hacia crecimiento tecnológico y reestructuración de balances frente a buyouts tradicionales",
-              "fuente": "Confilegal"
-            },
-            {
-              "texto": "La selectividad extrema en lower mid-market (recurrencia, márgenes, profesionalización) eleva el listón de preparacion pre-deal: vendedores que no acrediten métricas de calidad recurrentes y gobernanza formal verán reducido su universo de compradores y múltiplos",
-              "fuente": "Albia IMAP"
+              "texto": "Deale valida la tracción del lower mid-market tech con 18 deals y 52 M€ en H1 y lanza financiación LBO al 30 %, señal de apetito por estructuras apalancadas en ticket pequeño. ONEtoONE en Top 10 Mergermarket (7 deals) y KREAB líder en comunicación M&A (48 transacciones) confirman la concentración de asesoramiento en manos de boutiques especializadas frente a grandes bancos. El mercado \"en K\" (1.485 ops, 50.474 M€ estables) obliga a preparar vendedores con métricas de recurrencia y gobernanza formal para acceder al universo de compradores selectivos",
+              "fuente": "EL PAÍS"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nUcrania afronta una brecha presupuestaria de 26.500 millones de dólares en gasto militar que obligará a medidas fiscales duras e impopulares, según ha anunciado el presidente Zelenski, mientras en el terreno ambas partes ignoran la tregua energética propuesta por Trump con drones rusos golpeando gasolineras en Kiev y ucranianos atacando la refinería de Samara.\n\nEn el eje asiático, la viceministra de Defensa rusa Anna Tsivileva ha calificado en el Foro Xiangshan de Pekín la cooperación militar con China de \"sin precedentes\" y ha criticado la formación de bloques cerrados en Asia-Pacífico, señalando una profundización estructural de la alianza estratégica.\n\nEn el frente tecnológico, la startup neerlandesa Euclyd ha cerrado una ronda de 230 millones de dólares co-liderada por Samsung, Somerset Capital Partners e Innovation Industries para desarrollar chips de inferencia que compitan con la hegemonía de Nvidia, confirmando el apetito inversor por alternativas de hardware.\n\nFuentes: El Periódico, La Vanguardia, CNBC Africa\n\n## Esta semana\nEl BCE subió el 10 de septiembre sus tres tipos oficiales en 25 puntos básicos, situando la facilidad de depósito en el 2,50 %, la de refinanciación en el 2,65 % y la marginal en el 2,90 % con efectos desde hoy, endureciendo la política monetaria tras confirmarse una inflación de la eurozona del 3,3 % en agosto, impulsada por un componente energético al 14,3 %, que supera ampliamente el objetivo del 2 %.\n\nEse mismo shock energético dispara el crudo: el Brent alcanza 105,68 dólares y el WTI supera los 101 dólares tras el cierre preventivo del oleoducto Este-Oeste saudí por ataques con drones y la tensión en el estrecho de Ormuz, transmitiendo presión inflacionista adicional a la decisión del BCE.\n\nEn el mercado español, TTR Data registra 1.938 operaciones M&A hasta agosto (-17 % interanual) por 63.787 millones de euros (-9 %), con Private Equity retrocediendo en volumen e importe mientras Venture Capital crece un 43 % en capital movilizado y las adquisiciones de activos aumentan su importe un 40 % pese a menos transacciones.\n\nFuentes: Banco Central Europeo, Nexo Económico, Contrapunto, Confilegal\n\n## Este mes\nEl Informe Mundial sobre Riesgos 2026 de Naciones Unidas sitúa la probabilidad de una guerra a gran escala como la principal preocupación para el 36 % de los encuestados institucionales, escalando 16 puestos desde 2024 y reflejando un deterioro estructural del entorno de seguridad global.\n\nLos resultados del segundo trimestre fiscal de Nvidia confirman ingresos récord de 96.220 millones de dólares (+106 % interanual) y una devolución de 26.000 millones a accionistas, certificando que el ciclo de gasto en infraestructura de IA sigue en fase de expansión agresiva.\n\nDesde el 1 de septiembre entra en vigor efectiva la obligación de transparencia (Art. 50) y alfabetización en IA (Art. 4) del Reglamento Europeo, con AESIA y AEPD coordinando la supervisión del despliegue algorítmico en el entorno corporativo español, elevando el estándar de cumplimiento para cualquier proyecto que integre IA.\n\nEl lower mid-market español opera bajo extrema selectividad: compradores, tanto industriales como fondos, priorizan recurrencia de ingresos, márgenes sólidos y estructuras profesionalizadas frente al volumen bruto, según análisis sectoriales de la reanudación estival.\n\nFuentes: UN News, NVIDIA Investor Relations, Secuone.ai, Albia IMAP\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra divergencia clara: caída agregada (-17 % ops, -9 % importe) pero Venture Capital +43 % en capital y asset deals +40 % en importe, señalando rotación del mercado hacia crecimiento tecnológico y reestructuración de balances frente a buyouts tradicionales.\n\nLa selectividad extrema en lower mid-market (recurrencia, márgenes, profesionalización) eleva el listón de preparacion pre-deal: vendedores que no acrediten métricas de calidad recurrentes y gobernanza formal verán reducido su universo de compradores y múltiplos.\n\nFuentes: Confilegal, Albia IMAP"
+  "markdown": "## Hoy\nLa probabilidad de un enfrentamiento militar directo entre Rusia y la OTAN sube al 10 % según The Forecasting Machine, impulsada por el derribo de un dron con explosivos sobre Lituania procedente de Bielorrusia y el lanzamiento de bengalas por una fragata rusa a un helicóptero danés. En el terreno ucraniano, las bajas acumuladas del ejército ruso desde febrero de 2022 alcanzan 1.511.530 efectivos, con 1.530 bajas registradas solo en el último día.\n\nLa Reserva Federal subió por unanimidad los tipos en 25 puntos básicos hasta el rango 3,75-4,00 %, primera alza desde julio de 2023, desafiando las críticas de Trump y anticipando otro incremento antes de fin de año ante un PCE estimado en 3,7 %.\n\nOpenAI, Anthropic y Google DeepMind negocian la creación de un organismo de supervisión autorregulatorio independiente, inspirado en el modelo FINRA, para auditar modelos de frontera antes de su lanzamiento; Chris Lehane confirmó que no se requiere exención antimonopolio para esta cooperación.\n\nUn análisis de Ketan Joshi respaldado por Greenpeace cifra en un 725 % el aumento de emisiones de Alcance 3 de la cadena de suministro de Nvidia desde 2020, alcanzando 9,4 millones de toneladas de CO2 equivalente, nivel comparable al sector eléctrico de Bélgica.\n\nFuentes: Agenda Pública, Ukrinform, El Financiero, Quartz, Intereconomía\n\n## Esta semana\nEl BCE elevó sus tipos oficiales en 25 puntos básicos con efectos desde el 16 de septiembre, situando la facilidad de depósito en el 2,50 %, la de refinanciación en el 2,65 % y la marginal en el 2,90 %, impulsado por presiones inflacionarias derivadas de la crisis energética y el conflicto en Oriente Medio. Irán y China coordinaron en Pekín la reapertura del estrecho de Ormuz tras la escalada con buques y bases estadounidenses, mientras Guterres advirtió en la ONU de una \"era de profunda incertidumbre\" con IA descontrolada, crisis climática y bloqueo de Ormuz como amenazas existenciales.\n\nLas acciones de semiconductores sufrieron fuertes caídas en Wall Street (Nvidia -3,25 %, AMD >-6 %, Intel -5,59 %, Micron -5,25 %) arrastradas por el debate abierto tras la petición de Anthropic y OpenAI de frenar temporalmente el desarrollo de modelos frontera por motivos de seguridad.\n\nDeale cerró el primer semestre de 2026 con récord de 18 operaciones facilitadas por 52 millones de euros y lanzó Deale Credit para financiar hasta el 30 % en compras apalancadas. ONEtoONE Corporate Finance entró en el Top 10 de Mergermarket por número de transacciones en España (7 operaciones cerradas entre enero y junio).\n\nFuentes: European Central Bank, teleSUR, UN News, El Español, Cinco Días, Capital Riesgo\n\n## Este mes\nEl M&A español en el primer semestre registró 1.485 operaciones (-15 % interanual) con capital movilizado estable en 50.474 millones (-0,29 %), dibujando un modelo \"en K\" donde los megadeals concentran volumen y la prudencia impera en mid-market ante la brecha de valoración. La OIM alerta de crisis humanitaria acelerada en Yemen: al menos 76.000 personas han huido desde julio por la intensificación del conflicto asociado a rutas marítimas.\n\nNvidia presentó en IFA Berlín tecnologías de equilibrio de carga local (NVIDIA PAIR) para evitar cuellos de botella en agentes de IA locales y actualizó el despliegue de superchips RTX Spark. KREAB lideró el ranking de asesoramiento en comunicación de M&A en España en el primer semestre con 48 transacciones asesoradas (18 oficiales en Mergermarket) en inmobiliario, energía e infraestructura.\n\nFuentes: EL PAÍS, IOM, Hipertextual, Marketing Insider Review\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nDeale valida la tracción del lower mid-market tech con 18 deals y 52 M€ en H1 y lanza financiación LBO al 30 %, señal de apetito por estructuras apalancadas en ticket pequeño. ONEtoONE en Top 10 Mergermarket (7 deals) y KREAB líder en comunicación M&A (48 transacciones) confirman la concentración de asesoramiento en manos de boutiques especializadas frente a grandes bancos. El mercado \"en K\" (1.485 ops, 50.474 M€ estables) obliga a preparar vendedores con métricas de recurrencia y gobernanza formal para acceder al universo de compradores selectivos.\n\nFuentes: Cinco Días, Capital Riesgo, Marketing Insider Review, EL PAÍS"
 }
