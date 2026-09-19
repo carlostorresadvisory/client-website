@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-18",
+  "fecha": "2026-09-19",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipos Fed",
-      "valor": "3,75-4 %)",
-      "fuente": null
+      "etiqueta": "Violencia sexual Ucrania",
+      "valor": "1.000+ casos",
+      "fuente": "El Periódico"
     },
     {
       "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %)",
-      "fuente": null
+      "valor": "2,50 %",
+      "fuente": "BCE"
     },
     {
-      "etiqueta": "Transacciones España H1",
-      "valor": "1.485",
-      "fuente": "TTR Data / Capittal"
+      "etiqueta": "Aranceles Trump a compradores petróleo ruso",
+      "valor": "100 %",
+      "fuente": "The Guardian"
     },
     {
-      "etiqueta": "Coste Claude vs Meta",
-      "valor": "3,76 $ vs 0,55 $",
-      "fuente": "Cuatro laboratorios lanzaron en la misma semana"
+      "etiqueta": "Ventas chips Nvidia 2027",
+      "valor": "duplicar",
+      "fuente": "Anadolu Ajansı"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 2
+      "n": 6
     },
     {
       "horizonte": "Esta semana",
-      "n": 3
+      "n": 6
     },
     {
       "horizonte": "Este mes",
-      "n": 2
+      "n": 4
     }
   ],
   "radar": null,
@@ -48,44 +48,27 @@
   },
   "secciones": [
     {
-      "titulo": "Cifras clave",
-      "lineas": [
-        {
-          "texto": "Tipos Fed: 3,75-4 % pCvgEn0PKF9YMiKDdfjOhGh-OZhncWJqlIH7hxkDH1hFZKNKijhS-vBpM1m7xWWB53VQwiIBV3F2xIg4BtRgLq6YZh)",
-          "fuente": null
-        },
-        {
-          "texto": "Facilidad depósito BCE: 2,50 % vwAHE3OdMm28qfdKpG9Q5k8pQnA1exAQbI8Z2nCcZIetuYdUQg4xRKPt57wlUOtew4yLNsp-MGVrOdUkPCkUOrkaj07cfPg3vMe6AV3XPtsMJuL0CpGP73-mVFHw2LLiYODkRlZ3tUo-jBkTvoxMk1lR7A__)",
-          "fuente": null
-        },
-        {
-          "texto": "Transacciones España H1: 1.485",
-          "fuente": "TTR Data / Capittal"
-        },
-        {
-          "texto": "Coste Claude vs Meta: 3,76 $ vs 0,55 $",
-          "fuente": "Cuatro laboratorios lanzaron en la misma semana"
-        }
-      ]
-    },
-    {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Donald Trump amenaza con imponer aranceles severos a la Unión Europea si avanza la membresía asociada de Canadá en acuerdos bilaterales o de bloque, escalando la tensión comercial transatlántica zy5mtMwGXHnBygf1INm0Xj2jFWoOO17cllOOdHIEREc8mWuyp30Nn4lR-bBmUeLNfHWyxeMYaA5jdb-rP0UB0nEibSgnPhRgfWJyVMp6baDogCuIjpKU7elDbZ4vMe7XHoO48Fd71PFS5o9GQISTtEb1VFzh0xsNeN5YtljKQSZH9Gme2v6RVNXa1y7Hf0t)",
-          "fuente": null
+          "texto": "La ONU ha documentado más de 1.000 casos de violencia sexual desde la invasión rusa de Ucrania, atribuyendo el 89 % a fuerzas rusas, mientras el ejército ucraniano avanza en el sector de Lyman bajo la \"Operación Vivaldi\" destruyendo posiciones y un depósito de municiones ruso los días 17 y 18 de septiembre",
+          "fuente": "El Periódico, UNITED24 Media"
         },
         {
-          "texto": "La Reserva Federal subió ayer los tipos 25 puntos básicos hasta el rango 3,75-4 %, primera alza desde julio de 2023, desafiando la presión pública de la Casa Blanca para abaratar el coste del dinero pCvgEn0PKF9YMiKDdfjOhGh-OZhncWJqlIH7hxkDH1hFZKNKijhS-vBpM1m7xWWB53VQwiIBV3F2xIg4BtRgLq6YZh)",
-          "fuente": null
+          "texto": "En el frente energético, el Brent se relaja en torno a 104 dólares tras la reapertura parcial del oleoducto Este-Oeste saudí y la reorganización de exportaciones pese al bloqueo de Ormuz",
+          "fuente": "Rigzone"
         },
         {
-          "texto": "OpenAI, Anthropic y Google DeepMind intensifican contactos en Washington y Silicon Valley para crear un organismo conjunto de seguridad inspirado en FINRA que audite modelos de frontera antes de su lanzamiento",
-          "fuente": "ITSitio, El País"
+          "texto": "Donald Trump ha promulgado la ley Lindsey O. Graham Sanctioning Russia and Iran Act, que le faculta para imponer aranceles de hasta el 100 % a grandes compradores de hidrocarburos rusos y endurecer el cerco a la flota fantasma de Moscú",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "En el segmento tecnológico español, Aiuken Cybersecurity (grupo Allurity) adquiere 4Elitech, especialista en ciberseguridad industrial OT, con asesoramiento legal y financiero de Baker Tilly Tech M&A liderado por Diego Gutiérrez",
-          "fuente": "Capital-Riesgo.es"
+          "texto": "Christine Lagarde, desde Dublín, ha descartado un mecanismo automático que ligue tipos de interés y precio de la energía, restando relevancia a la tensión reciente en la rentabilidad de los bonos soberanos europeos",
+          "fuente": "Swissinfo"
+        },
+        {
+          "texto": "Anthropic evalúa lanzar un nuevo modelo de forma inminente para contrarrestar el empuje comercial de GPT-6 Astra, en plena cuenta atrás hacia su salida a bolsa",
+          "fuente": "Reuters, The Straits Times"
         }
       ]
     },
@@ -93,20 +76,12 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El Kremlin no descarta una nueva ronda de negociaciones tripartitas con Ucrania y EE. UU. para octubre, pero rechaza un encuentro directo Putin-Zelenski en territorio estadounidense",
-          "fuente": "El Litoral"
+          "texto": "El BCE subió 25 puntos básicos el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 %, citando la persistencia inflacionaria del choque energético de Oriente Medio. La AIE advierte en su informe mensual del 11 de septiembre que la demanda mundial de petróleo caerá 2,5 millones de barriles diarios en 2026 por la crisis del golfo Pérsico y los cortes en Ormuz. Nvidia prevé duplicar sus ventas de chips en 2027 ante una adopción de infraestructura IA que Jensen Huang describe como exponencial",
+          "fuente": "BCE, IEA, Anadolu Ajansı"
         },
         {
-          "texto": "El BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos que lleva la facilidad de depósito al 2,50 %, la de crédito al 2,90 % y las operaciones principales al 2,65 %, argumentando presiones inflacionistas importadas por el sector energético vwAHE3OdMm28qfdKpG9Q5k8pQnA1exAQbI8Z2nCcZIetuYdUQg4xRKPt57wlUOtew4yLNsp-MGVrOdUkPCkUOrkaj07cfPg3vMe6AV3XPtsMJuL0CpGP73-mVFHw2LLiYODkRlZ3tUo-jBkTvoxMk1lR7A__)",
-          "fuente": null
-        },
-        {
-          "texto": "TTR Data confirma 1.938 transacciones en España hasta agosto (-17 % interanual) con capital movilizado de 63.787 M€ (-9 %), dibujando contracción de actividad pero concentración de valor en menos operaciones",
-          "fuente": "Confilegal"
-        },
-        {
-          "texto": "El benchmarking de Artificial Analysis sitúa a Claude Fable 5.1, GPT-6 Astra, Muse Spark 1.3 y Gemini 3.8 Flash en una horquilla estrecha de rendimiento (59-65,7 puntos) pero con dispersión de costes masiva: ejecutar tareas en Claude cuesta 3,76 $ frente a 0,55 $ de la alternativa de Meta, multiplicando el coste operativo casi por siete",
-          "fuente": "Cuatro laboratorios lanzaron en la misma semana"
+          "texto": "Washington estudia posponer la publicación de los hallazgos de su investigación de la Sección 301 por sobrecapacidad china hasta después de la cumbre Trump-Xi del 24 de septiembre. Rusia celebra desde el 18 de septiembre tres días de elecciones parlamentarias para renovar la Duma Estatal, con participación telemática superior al 50 % en las primeras horas y fuertes medidas antidrones. Grant Thornton refleja en su Spain Private Equity Pulse 2026 que el 80 % de las gestoras españolas prevé aumentar inversiones este año y el 64 % ve el fundraising menos complejo que en 2025, con foco en tecnología, servicios financieros y energía",
+          "fuente": "Vantage Markets, Página/12, RRHHDigital"
         }
       ]
     },
@@ -114,16 +89,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Los conflictos en Oriente Medio y los ataques a infraestructuras energéticas mantienen el gasóleo en EE. UU. en torno a 6,23 $/galón a mediados de septiembre, sosteniendo la presión inflacionista importada que citan los bancos centrales zy5mtMwGXHnBygf1INm0Xj2jFWoOO17cllOOdHIEREc8mWuyp30Nn4lR-bBmUeLNfHWyxeMYaA5jdb-rP0UB0nEibSgnPhRgfWJyVMp6baDogCuIjpKU7elDbZ4vMe7XHoO48Fd71PFS5o9GQISTtEb1VFzh0xsNeN5YtljKQSZH9Gme2v6RVNXa1y7Hf0t)",
-          "fuente": null
+          "texto": "TTR Data sitúa el primer semestre de 2026 en 1.485 operaciones por 50.474 millones de euros, un 15 % menos de deals pero valor casi plano (-0,29 %) por el peso de transacciones corporativas de mayor escala",
+          "fuente": "AGM Abogados"
         },
         {
-          "texto": "Alphabet, Amazon, Meta y Microsoft superarán 700.000 M$ de inversión conjunta en infraestructura y computación durante 2026, impulsando un M&A global polarizado en \"K\" con megadeals al alza y contracción en segmentos tradicionales",
-          "fuente": "PwC España"
+          "texto": "Dealsuite confirma en su M&A Monitor August 2026 que el 47 % de asesores en España cerró más operaciones en el primer semestre y que los deals >10 M€ ya representan el 28 % del total, tres puntos más que el semestre anterior",
+          "fuente": "Dealsuite"
         },
         {
-          "texto": "El balance oficial del primer semestre de TTR Data confirma 1.485 transacciones en España por 50.474 M€, con Private Equity en 177 operaciones (8.749 M€) y Venture Capital en 279 (3.452 M€), ratificando menor volumen pero mayor concentración de capital en grandes transacciones",
-          "fuente": "TTR Data / Capittal"
+          "texto": "Ursula von der Leyen, en su discurso sobre el Estado de la Unión, ha fijado como prioridad del paquete 22 de sanciones la persecución de la evasión de las 21 rondas vigentes contra Rusia, no nuevos gravámenes al estilo estadounidense",
+          "fuente": "Brussels Signal"
+        },
+        {
+          "texto": "Google DeepMind lanzó Gemini 3.8 Flash Cyber y el programa Fairwind el 2 de septiembre, concediendo acceso prioritario a gobiernos y defensores de infraestructuras críticas frente a vulnerabilidades autónomas",
+          "fuente": "Google DeepMind"
         }
       ]
     },
@@ -135,14 +114,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Aiuken Cybersecurity (Allurity) compra 4Elitech en ciberseguridad industrial OT con asesoramiento de Baker Tilly Tech M&A (Diego Gutiérrez), validando tracción en lower mid-market tech especializado. TTR Data dibuja mercado ibérico \"en K\": 1.938 deals YTD (-17 %) y 63.787 M€ (-9 %) con concentración en grandes tickets, obligando a preparar vendedores con métricas de recurrencia y gobernanza formal para acceder a compradores selectivos. La brecha de coste 7x entre modelos de frontera equivalentes (Claude 3,76 $ vs Meta 0,55 $) crea ventana para asesorar a clientes en sustitución de proveedores o renegociación de contratos SaaS con cláusulas de escalado",
-              "fuente": "Cuatro laboratorios lanzaron en la misma semana"
+              "texto": "Grant Thornton detecta que el 80 % de gestoras PE españolas aumentará inversión y el 64 % ve fundraising más fácil, concentrando apetito en tecnología, servicios financieros y energía; Dealsuite añade que el 47 % de asesores del sur de Europa cerró más deals en el primer semestre y el deal mix se desplaza a tickets >10 M€ (28 % del total); TTR Data confirma la polarización en K del mercado ibérico: menos operaciones (-15 %) pero valor estable (50.474 M€) por mayor peso de grandes tickets corporativos",
+              "fuente": "RRHHDigital, Dealsuite, AGM Abogados"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nOpenAI, Anthropic y Google DeepMind intensifican contactos en Washington y Silicon Valley para crear un organismo conjunto de seguridad inspirado en FINRA que audite modelos de frontera antes de su lanzamiento.\n\nEn el segmento tecnológico español, Aiuken Cybersecurity (grupo Allurity) adquiere 4Elitech, especialista en ciberseguridad industrial OT, con asesoramiento legal y financiero de Baker Tilly Tech M&A liderado por Diego Gutiérrez.\n\nFuentes: ITSitio, El País, Capital-Riesgo.es\n\n## Esta semana\nEl Kremlin no descarta una nueva ronda de negociaciones tripartitas con Ucrania y EE. UU. para octubre, pero rechaza un encuentro directo Putin-Zelenski en territorio estadounidense.\n\nTTR Data confirma 1.938 transacciones en España hasta agosto (-17 % interanual) con capital movilizado de 63.787 M€ (-9 %), dibujando contracción de actividad pero concentración de valor en menos operaciones.\n\nEl benchmarking de Artificial Analysis sitúa a Claude Fable 5.1, GPT-6 Astra, Muse Spark 1.3 y Gemini 3.8 Flash en una horquilla estrecha de rendimiento (59-65,7 puntos) pero con dispersión de costes masiva: ejecutar tareas en Claude cuesta 3,76 $ frente a 0,55 $ de la alternativa de Meta, multiplicando el coste operativo casi por siete.\n\nFuentes: El Litoral, Confilegal, Cuatro laboratorios lanzaron en la misma semana\n\n## Este mes\nAlphabet, Amazon, Meta y Microsoft superarán 700.000 M$ de inversión conjunta en infraestructura y computación durante 2026, impulsando un M&A global polarizado en \"K\" con megadeals al alza y contracción en segmentos tradicionales.\n\nEl balance oficial del primer semestre de TTR Data confirma 1.485 transacciones en España por 50.474 M€, con Private Equity en 177 operaciones (8.749 M€) y Venture Capital en 279 (3.452 M€), ratificando menor volumen pero mayor concentración de capital en grandes transacciones.\n\nFuentes: PwC España, TTR Data / Capittal\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nAiuken Cybersecurity (Allurity) compra 4Elitech en ciberseguridad industrial OT con asesoramiento de Baker Tilly Tech M&A (Diego Gutiérrez), validando tracción en lower mid-market tech especializado. TTR Data dibuja mercado ibérico \"en K\": 1.938 deals YTD (-17 %) y 63.787 M€ (-9 %) con concentración en grandes tickets, obligando a preparar vendedores con métricas de recurrencia y gobernanza formal para acceder a compradores selectivos. La brecha de coste 7x entre modelos de frontera equivalentes (Claude 3,76 $ vs Meta 0,55 $) crea ventana para asesorar a clientes en sustitución de proveedores o renegociación de contratos SaaS con cláusulas de escalado.\n\nFuentes: Capital-Riesgo.es, Confilegal, TTR Data / Capittal, Cuatro laboratorios lanzaron en la misma semana",
-  "aviso_interno": "cita mal formada recortada"
+  "markdown": "## Hoy\nLa ONU ha documentado más de 1.000 casos de violencia sexual desde la invasión rusa de Ucrania, atribuyendo el 89 % a fuerzas rusas, mientras el ejército ucraniano avanza en el sector de Lyman bajo la \"Operación Vivaldi\" destruyendo posiciones y un depósito de municiones ruso los días 17 y 18 de septiembre.\n\nEn el frente energético, el Brent se relaja en torno a 104 dólares tras la reapertura parcial del oleoducto Este-Oeste saudí y la reorganización de exportaciones pese al bloqueo de Ormuz.\n\nDonald Trump ha promulgado la ley Lindsey O. Graham Sanctioning Russia and Iran Act, que le faculta para imponer aranceles de hasta el 100 % a grandes compradores de hidrocarburos rusos y endurecer el cerco a la flota fantasma de Moscú.\n\nChristine Lagarde, desde Dublín, ha descartado un mecanismo automático que ligue tipos de interés y precio de la energía, restando relevancia a la tensión reciente en la rentabilidad de los bonos soberanos europeos.\n\nAnthropic evalúa lanzar un nuevo modelo de forma inminente para contrarrestar el empuje comercial de GPT-6 Astra, en plena cuenta atrás hacia su salida a bolsa.\n\nFuentes: El Periódico, UNITED24 Media, Rigzone, The Guardian, Swissinfo, Reuters, The Straits Times\n\n## Esta semana\nEl BCE subió 25 puntos básicos el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 %, citando la persistencia inflacionaria del choque energético de Oriente Medio. La AIE advierte en su informe mensual del 11 de septiembre que la demanda mundial de petróleo caerá 2,5 millones de barriles diarios en 2026 por la crisis del golfo Pérsico y los cortes en Ormuz. Nvidia prevé duplicar sus ventas de chips en 2027 ante una adopción de infraestructura IA que Jensen Huang describe como exponencial.\n\nWashington estudia posponer la publicación de los hallazgos de su investigación de la Sección 301 por sobrecapacidad china hasta después de la cumbre Trump-Xi del 24 de septiembre. Rusia celebra desde el 18 de septiembre tres días de elecciones parlamentarias para renovar la Duma Estatal, con participación telemática superior al 50 % en las primeras horas y fuertes medidas antidrones. Grant Thornton refleja en su Spain Private Equity Pulse 2026 que el 80 % de las gestoras españolas prevé aumentar inversiones este año y el 64 % ve el fundraising menos complejo que en 2025, con foco en tecnología, servicios financieros y energía.\n\nFuentes: BCE, IEA, Anadolu Ajansı, Vantage Markets, Página/12, RRHHDigital\n\n## Este mes\nTTR Data sitúa el primer semestre de 2026 en 1.485 operaciones por 50.474 millones de euros, un 15 % menos de deals pero valor casi plano (-0,29 %) por el peso de transacciones corporativas de mayor escala.\n\nDealsuite confirma en su M&A Monitor August 2026 que el 47 % de asesores en España cerró más operaciones en el primer semestre y que los deals >10 M€ ya representan el 28 % del total, tres puntos más que el semestre anterior.\n\nUrsula von der Leyen, en su discurso sobre el Estado de la Unión, ha fijado como prioridad del paquete 22 de sanciones la persecución de la evasión de las 21 rondas vigentes contra Rusia, no nuevos gravámenes al estilo estadounidense.\n\nGoogle DeepMind lanzó Gemini 3.8 Flash Cyber y el programa Fairwind el 2 de septiembre, concediendo acceso prioritario a gobiernos y defensores de infraestructuras críticas frente a vulnerabilidades autónomas.\n\nFuentes: AGM Abogados, Dealsuite, Brussels Signal, Google DeepMind\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nGrant Thornton detecta que el 80 % de gestoras PE españolas aumentará inversión y el 64 % ve fundraising más fácil, concentrando apetito en tecnología, servicios financieros y energía; Dealsuite añade que el 47 % de asesores del sur de Europa cerró más deals en el primer semestre y el deal mix se desplaza a tickets >10 M€ (28 % del total); TTR Data confirma la polarización en K del mercado ibérico: menos operaciones (-15 %) pero valor estable (50.474 M€) por mayor peso de grandes tickets corporativos.\n\nFuentes: RRHHDigital, Dealsuite, AGM Abogados"
 }
