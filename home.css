@@ -698,7 +698,7 @@ p,li,summary,dd,label,.pp-x,.pp-pie,.puente-n{text-wrap:pretty}
     /* Centrado y no pegado abajo: en las cajas apaisadas grandes el texto
        caia en el borde inferior y dejaba dos tercios del marco vacios, que
        es lo que se leia como "mal encuadrada". */
-    display:flex;flex-direction:column;justify-content:center;gap:var(--e-1);
+    display:none;flex-direction:column;justify-content:center;gap:var(--e-1); /* retirado de produccion el 19-sep-2026 a peticion de Carlos: sin cuadro "Fotografia pendiente" a la vista */
     padding:clamp(1rem,2vw,1.6rem);
     border:1px dashed var(--line);
     background:linear-gradient(180deg,rgba(56,189,248,.03),rgba(56,189,248,.06));
