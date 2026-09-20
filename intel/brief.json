@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-09-19",
+  "fecha": "2026-09-20",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Violencia sexual Ucrania",
-      "valor": "1.000+ casos",
-      "fuente": "El Periódico"
+      "etiqueta": "Tránsito Ormuz",
+      "valor": "3-4 buques/día",
+      "fuente": "MundoMaritimo"
     },
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "BCE"
+      "etiqueta": "IPC España",
+      "valor": "4,5%",
+      "fuente": "Everything Edinburgh"
     },
     {
-      "etiqueta": "Aranceles Trump a compradores petróleo ruso",
-      "valor": "100 %",
-      "fuente": "The Guardian"
+      "etiqueta": "Depósito BCE",
+      "valor": "2,50%",
+      "fuente": "RTVE Canaria"
     },
     {
-      "etiqueta": "Ventas chips Nvidia 2027",
-      "valor": "duplicar",
-      "fuente": "Anadolu Ajansı"
+      "etiqueta": "Ventas Nvidia 2027",
+      "valor": "duplicarán 2026",
+      "fuente": "ITSitio"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 6
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 5
     },
     {
       "horizonte": "Este mes",
@@ -51,24 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La ONU ha documentado más de 1.000 casos de violencia sexual desde la invasión rusa de Ucrania, atribuyendo el 89 % a fuerzas rusas, mientras el ejército ucraniano avanza en el sector de Lyman bajo la \"Operación Vivaldi\" destruyendo posiciones y un depósito de municiones ruso los días 17 y 18 de septiembre",
-          "fuente": "El Periódico, UNITED24 Media"
+          "texto": "Estados Unidos y Arabia Saudí emitieron el 20 de septiembre alertas urgentes a sus ciudadanos en Oriente Medio ante el riesgo de una escalada imprevista y posibles ataques de milicias hutíes respaldadas por Irán, mientras nuevos bombardeos en Gaza dejaron 3 muertos",
+          "fuente": "Ámbito, La Jornada"
         },
         {
-          "texto": "En el frente energético, el Brent se relaja en torno a 104 dólares tras la reapertura parcial del oleoducto Este-Oeste saudí y la reorganización de exportaciones pese al bloqueo de Ormuz",
-          "fuente": "Rigzone"
+          "texto": "Friedrich Merz se juega su capital político en las elecciones regionales de Berlín y Mecklemburgo-Pomerania Occidental tras el desplome de la CDU del 37% al 17% en Sajonia-Anhalt frente al avance de AfD",
+          "fuente": "El País, El Diario"
         },
         {
-          "texto": "Donald Trump ha promulgado la ley Lindsey O. Graham Sanctioning Russia and Iran Act, que le faculta para imponer aranceles de hasta el 100 % a grandes compradores de hidrocarburos rusos y endurecer el cerco a la flota fantasma de Moscú",
-          "fuente": "The Guardian"
+          "texto": "El CENTCOM confirmó que sus fuerzas escoltaron más de 2.000 buques y facilitaron el tránsito de 1.000 millones de barriles fuera de Ormuz en dos meses manteniendo las exportaciones iraníes en cero, aunque el tráfico comercial se ha colapsado a solo 3-4 buques diarios frente a los 16-17 habituales",
+          "fuente": "LatinUS, MundoMaritimo"
         },
         {
-          "texto": "Christine Lagarde, desde Dublín, ha descartado un mecanismo automático que ligue tipos de interés y precio de la energía, restando relevancia a la tensión reciente en la rentabilidad de los bonos soberanos europeos",
-          "fuente": "Swissinfo"
-        },
-        {
-          "texto": "Anthropic evalúa lanzar un nuevo modelo de forma inminente para contrarrestar el empuje comercial de GPT-6 Astra, en plena cuenta atrás hacia su salida a bolsa",
-          "fuente": "Reuters, The Straits Times"
+          "texto": "Inteligencia occidental detecta que el Kremlin prepara una movilización encubierta coercitiva hacia endeudados y estudiantes con bajo rendimiento para escalar la ofensiva tras las elecciones rusas, donde Moscú reivindica 5.300 km² capturados en 2026",
+          "fuente": "CiberCuba, El Periódico"
         }
       ]
     },
@@ -76,12 +72,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El BCE subió 25 puntos básicos el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 %, citando la persistencia inflacionaria del choque energético de Oriente Medio. La AIE advierte en su informe mensual del 11 de septiembre que la demanda mundial de petróleo caerá 2,5 millones de barriles diarios en 2026 por la crisis del golfo Pérsico y los cortes en Ormuz. Nvidia prevé duplicar sus ventas de chips en 2027 ante una adopción de infraestructura IA que Jensen Huang describe como exponencial",
-          "fuente": "BCE, IEA, Anadolu Ajansı"
+          "texto": "Trump anunció el 18 de septiembre un acuerdo estratégico con Dinamarca y Groenlandia, que se firmará en la AGNU, para asumir el control permanente de la seguridad ártica vetando bases e inversiones sensibles de China y Rusia",
+          "fuente": "EL PAÍS, EFE"
         },
         {
-          "texto": "Washington estudia posponer la publicación de los hallazgos de su investigación de la Sección 301 por sobrecapacidad china hasta después de la cumbre Trump-Xi del 24 de septiembre. Rusia celebra desde el 18 de septiembre tres días de elecciones parlamentarias para renovar la Duma Estatal, con participación telemática superior al 50 % en las primeras horas y fuertes medidas antidrones. Grant Thornton refleja en su Spain Private Equity Pulse 2026 que el 80 % de las gestoras españolas prevé aumentar inversiones este año y el 64 % ve el fundraising menos complejo que en 2025, con foco en tecnología, servicios financieros y energía",
-          "fuente": "Vantage Markets, Página/12, RRHHDigital"
+          "texto": "Los CEO de Anthropic, OpenAI y xAI pidieron públicamente el 15 de septiembre ralentizar el desarrollo de modelos de frontera por riesgos existenciales, \"código rojo\", y Altman confirmó que OpenAI pospone su salida a bolsa prevista para 2026",
+          "fuente": "EL PAÍS, Expansión"
+        },
+        {
+          "texto": "Jensen Huang proyectó en Escocia el 17 de septiembre que las ventas de chips de Nvidia se duplicarán en 2027 impulsadas por la arquitectura Vera Rubin, ya en producción a gran escala con 3,7× el rendimiento en inferencia de la generación previa",
+          "fuente": "ITSitio, TradingKey"
+        },
+        {
+          "texto": "Portobello Capital adquirió participación mayoritaria en Martínez Otero (interiorismo a medida) con asesoramiento al vendedor de Norgestion",
+          "fuente": "Norgestion"
+        },
+        {
+          "texto": "AddLife compró Unicam Sistemas Analíticos (Portugal) con asesoramiento exclusivo de Livingstone el 16 de septiembre",
+          "fuente": "Financecommunity ES"
         }
       ]
     },
@@ -89,20 +97,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "TTR Data sitúa el primer semestre de 2026 en 1.485 operaciones por 50.474 millones de euros, un 15 % menos de deals pero valor casi plano (-0,29 %) por el peso de transacciones corporativas de mayor escala",
-          "fuente": "AGM Abogados"
+          "texto": "El BCE subió 25 pb el 10 de septiembre en Berlín dejando la facilidad de depósito en 2,50% tras escalar la inflación de la eurozona al 3,3% en agosto por el encarecimiento energético del conflicto en Oriente Medio",
+          "fuente": "RTVE Canaria, El País"
         },
         {
-          "texto": "Dealsuite confirma en su M&A Monitor August 2026 que el 47 % de asesores en España cerró más operaciones en el primer semestre y que los deals >10 M€ ya representan el 28 % del total, tres puntos más que el semestre anterior",
-          "fuente": "Dealsuite"
+          "texto": "El Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor el 27 de julio aplazando obligaciones de alto riesgo a diciembre 2027 y agosto 2028, mientras el Proyecto de Ley Orgánica de gobernanza de la IA avanza en el Congreso tras el plazo de enmiendas",
+          "fuente": "Grupo Atico34, Congreso de los Diputados"
         },
         {
-          "texto": "Ursula von der Leyen, en su discurso sobre el Estado de la Unión, ha fijado como prioridad del paquete 22 de sanciones la persecución de la evasión de las 21 rondas vigentes contra Rusia, no nuevos gravámenes al estilo estadounidense",
-          "fuente": "Brussels Signal"
+          "texto": "TTR Data y SpainCap sitúan el primer semestre 2026 en 1.485 operaciones por 50.474 M€ (-15% deals, valor plano por megadeals) con cerca del 90% de receptoras de private equity siendo pymes",
+          "fuente": "Capittal, Líder Legal"
         },
         {
-          "texto": "Google DeepMind lanzó Gemini 3.8 Flash Cyber y el programa Fairwind el 2 de septiembre, concediendo acceso prioritario a gobiernos y defensores de infraestructuras críticas frente a vulnerabilidades autónomas",
-          "fuente": "Google DeepMind"
+          "texto": "El INE fijó el IPC armonizado de España en 4,5% en agosto 2026, 12 décimas sobre la media del euro y la mayor presión de precios entre las grandes economías del euro",
+          "fuente": "Everything Edinburgh"
         }
       ]
     },
@@ -114,13 +122,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Grant Thornton detecta que el 80 % de gestoras PE españolas aumentará inversión y el 64 % ve fundraising más fácil, concentrando apetito en tecnología, servicios financieros y energía; Dealsuite añade que el 47 % de asesores del sur de Europa cerró más deals en el primer semestre y el deal mix se desplaza a tickets >10 M€ (28 % del total); TTR Data confirma la polarización en K del mercado ibérico: menos operaciones (-15 %) pero valor estable (50.474 M€) por mayor peso de grandes tickets corporativos",
-              "fuente": "RRHHDigital, Dealsuite, AGM Abogados"
+              "texto": "Tres operaciones cross-border con asesoramiento español en una semana: Norgestion (venta Martínez Otero a Portobello), Livingstone (venta Unicam a AddLife), You Are Capital+KPMG (venta GTD a Latour), señal de apetito extranjero por mid-market español y mandato para boutiques locales",
+              "fuente": "Norgestion, Financecommunity ES"
+            },
+            {
+              "texto": "Standard Investment (NL) entra en España comprando mayoría en Plásticos Ferrando (industrial, Valencia) y abre oficina en Madrid, nuevo GP extranjero estableciendo plataforma",
+              "fuente": "Financecommunity ES"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa ONU ha documentado más de 1.000 casos de violencia sexual desde la invasión rusa de Ucrania, atribuyendo el 89 % a fuerzas rusas, mientras el ejército ucraniano avanza en el sector de Lyman bajo la \"Operación Vivaldi\" destruyendo posiciones y un depósito de municiones ruso los días 17 y 18 de septiembre.\n\nEn el frente energético, el Brent se relaja en torno a 104 dólares tras la reapertura parcial del oleoducto Este-Oeste saudí y la reorganización de exportaciones pese al bloqueo de Ormuz.\n\nDonald Trump ha promulgado la ley Lindsey O. Graham Sanctioning Russia and Iran Act, que le faculta para imponer aranceles de hasta el 100 % a grandes compradores de hidrocarburos rusos y endurecer el cerco a la flota fantasma de Moscú.\n\nChristine Lagarde, desde Dublín, ha descartado un mecanismo automático que ligue tipos de interés y precio de la energía, restando relevancia a la tensión reciente en la rentabilidad de los bonos soberanos europeos.\n\nAnthropic evalúa lanzar un nuevo modelo de forma inminente para contrarrestar el empuje comercial de GPT-6 Astra, en plena cuenta atrás hacia su salida a bolsa.\n\nFuentes: El Periódico, UNITED24 Media, Rigzone, The Guardian, Swissinfo, Reuters, The Straits Times\n\n## Esta semana\nEl BCE subió 25 puntos básicos el 10 de septiembre, dejando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 %, citando la persistencia inflacionaria del choque energético de Oriente Medio. La AIE advierte en su informe mensual del 11 de septiembre que la demanda mundial de petróleo caerá 2,5 millones de barriles diarios en 2026 por la crisis del golfo Pérsico y los cortes en Ormuz. Nvidia prevé duplicar sus ventas de chips en 2027 ante una adopción de infraestructura IA que Jensen Huang describe como exponencial.\n\nWashington estudia posponer la publicación de los hallazgos de su investigación de la Sección 301 por sobrecapacidad china hasta después de la cumbre Trump-Xi del 24 de septiembre. Rusia celebra desde el 18 de septiembre tres días de elecciones parlamentarias para renovar la Duma Estatal, con participación telemática superior al 50 % en las primeras horas y fuertes medidas antidrones. Grant Thornton refleja en su Spain Private Equity Pulse 2026 que el 80 % de las gestoras españolas prevé aumentar inversiones este año y el 64 % ve el fundraising menos complejo que en 2025, con foco en tecnología, servicios financieros y energía.\n\nFuentes: BCE, IEA, Anadolu Ajansı, Vantage Markets, Página/12, RRHHDigital\n\n## Este mes\nTTR Data sitúa el primer semestre de 2026 en 1.485 operaciones por 50.474 millones de euros, un 15 % menos de deals pero valor casi plano (-0,29 %) por el peso de transacciones corporativas de mayor escala.\n\nDealsuite confirma en su M&A Monitor August 2026 que el 47 % de asesores en España cerró más operaciones en el primer semestre y que los deals >10 M€ ya representan el 28 % del total, tres puntos más que el semestre anterior.\n\nUrsula von der Leyen, en su discurso sobre el Estado de la Unión, ha fijado como prioridad del paquete 22 de sanciones la persecución de la evasión de las 21 rondas vigentes contra Rusia, no nuevos gravámenes al estilo estadounidense.\n\nGoogle DeepMind lanzó Gemini 3.8 Flash Cyber y el programa Fairwind el 2 de septiembre, concediendo acceso prioritario a gobiernos y defensores de infraestructuras críticas frente a vulnerabilidades autónomas.\n\nFuentes: AGM Abogados, Dealsuite, Brussels Signal, Google DeepMind\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nGrant Thornton detecta que el 80 % de gestoras PE españolas aumentará inversión y el 64 % ve fundraising más fácil, concentrando apetito en tecnología, servicios financieros y energía; Dealsuite añade que el 47 % de asesores del sur de Europa cerró más deals en el primer semestre y el deal mix se desplaza a tickets >10 M€ (28 % del total); TTR Data confirma la polarización en K del mercado ibérico: menos operaciones (-15 %) pero valor estable (50.474 M€) por mayor peso de grandes tickets corporativos.\n\nFuentes: RRHHDigital, Dealsuite, AGM Abogados"
+  "markdown": "## Hoy\nEstados Unidos y Arabia Saudí emitieron el 20 de septiembre alertas urgentes a sus ciudadanos en Oriente Medio ante el riesgo de una escalada imprevista y posibles ataques de milicias hutíes respaldadas por Irán, mientras nuevos bombardeos en Gaza dejaron 3 muertos.\n\nFriedrich Merz se juega su capital político en las elecciones regionales de Berlín y Mecklemburgo-Pomerania Occidental tras el desplome de la CDU del 37% al 17% en Sajonia-Anhalt frente al avance de AfD.\n\nEl CENTCOM confirmó que sus fuerzas escoltaron más de 2.000 buques y facilitaron el tránsito de 1.000 millones de barriles fuera de Ormuz en dos meses manteniendo las exportaciones iraníes en cero, aunque el tráfico comercial se ha colapsado a solo 3-4 buques diarios frente a los 16-17 habituales.\n\nInteligencia occidental detecta que el Kremlin prepara una movilización encubierta coercitiva hacia endeudados y estudiantes con bajo rendimiento para escalar la ofensiva tras las elecciones rusas, donde Moscú reivindica 5.300 km² capturados en 2026.\n\nFuentes: Ámbito, La Jornada, El País, El Diario, LatinUS, MundoMaritimo, CiberCuba, El Periódico\n\n## Esta semana\nTrump anunció el 18 de septiembre un acuerdo estratégico con Dinamarca y Groenlandia, que se firmará en la AGNU, para asumir el control permanente de la seguridad ártica vetando bases e inversiones sensibles de China y Rusia.\n\nLos CEO de Anthropic, OpenAI y xAI pidieron públicamente el 15 de septiembre ralentizar el desarrollo de modelos de frontera por riesgos existenciales, \"código rojo\", y Altman confirmó que OpenAI pospone su salida a bolsa prevista para 2026.\n\nJensen Huang proyectó en Escocia el 17 de septiembre que las ventas de chips de Nvidia se duplicarán en 2027 impulsadas por la arquitectura Vera Rubin, ya en producción a gran escala con 3,7× el rendimiento en inferencia de la generación previa.\n\nPortobello Capital adquirió participación mayoritaria en Martínez Otero (interiorismo a medida) con asesoramiento al vendedor de Norgestion.\n\nAddLife compró Unicam Sistemas Analíticos (Portugal) con asesoramiento exclusivo de Livingstone el 16 de septiembre.\n\nFuentes: EL PAÍS, EFE, Expansión, ITSitio, TradingKey, Norgestion, Financecommunity ES\n\n## Este mes\nEl BCE subió 25 pb el 10 de septiembre en Berlín dejando la facilidad de depósito en 2,50% tras escalar la inflación de la eurozona al 3,3% en agosto por el encarecimiento energético del conflicto en Oriente Medio.\n\nEl Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor el 27 de julio aplazando obligaciones de alto riesgo a diciembre 2027 y agosto 2028, mientras el Proyecto de Ley Orgánica de gobernanza de la IA avanza en el Congreso tras el plazo de enmiendas.\n\nTTR Data y SpainCap sitúan el primer semestre 2026 en 1.485 operaciones por 50.474 M€ (-15% deals, valor plano por megadeals) con cerca del 90% de receptoras de private equity siendo pymes.\n\nEl INE fijó el IPC armonizado de España en 4,5% en agosto 2026, 12 décimas sobre la media del euro y la mayor presión de precios entre las grandes economías del euro.\n\nFuentes: RTVE Canaria, El País, Grupo Atico34, Congreso de los Diputados, Capittal, Líder Legal, Everything Edinburgh\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nTres operaciones cross-border con asesoramiento español en una semana: Norgestion (venta Martínez Otero a Portobello), Livingstone (venta Unicam a AddLife), You Are Capital+KPMG (venta GTD a Latour), señal de apetito extranjero por mid-market español y mandato para boutiques locales,.\n\nStandard Investment (NL) entra en España comprando mayoría en Plásticos Ferrando (industrial, Valencia) y abre oficina en Madrid, nuevo GP extranjero estableciendo plataforma,.\n\nFuentes: Norgestion, Financecommunity ES"
 }
