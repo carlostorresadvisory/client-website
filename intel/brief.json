@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-20",
+  "fecha": "2026-09-21",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tránsito Ormuz",
-      "valor": "3-4 buques/día",
-      "fuente": "MundoMaritimo"
+      "etiqueta": "Drones interceptados en Moscú",
+      "valor": "550",
+      "fuente": "El Economista"
     },
     {
-      "etiqueta": "IPC España",
-      "valor": "4,5%",
-      "fuente": "Everything Edinburgh"
+      "etiqueta": "Tipo facilidad depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "elEconomista"
     },
     {
-      "etiqueta": "Depósito BCE",
-      "valor": "2,50%",
-      "fuente": "RTVE Canaria"
+      "etiqueta": "Fondos monetarios entradas netas",
+      "valor": "140.000 M€",
+      "fuente": "elEconomista"
     },
     {
-      "etiqueta": "Ventas Nvidia 2027",
-      "valor": "duplicarán 2026",
-      "fuente": "ITSitio"
+      "etiqueta": "Conflictos estatales activos",
+      "valor": "65",
+      "fuente": "El País"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,20 +51,8 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Estados Unidos y Arabia Saudí emitieron el 20 de septiembre alertas urgentes a sus ciudadanos en Oriente Medio ante el riesgo de una escalada imprevista y posibles ataques de milicias hutíes respaldadas por Irán, mientras nuevos bombardeos en Gaza dejaron 3 muertos",
-          "fuente": "Ámbito, La Jornada"
-        },
-        {
-          "texto": "Friedrich Merz se juega su capital político en las elecciones regionales de Berlín y Mecklemburgo-Pomerania Occidental tras el desplome de la CDU del 37% al 17% en Sajonia-Anhalt frente al avance de AfD",
-          "fuente": "El País, El Diario"
-        },
-        {
-          "texto": "El CENTCOM confirmó que sus fuerzas escoltaron más de 2.000 buques y facilitaron el tránsito de 1.000 millones de barriles fuera de Ormuz en dos meses manteniendo las exportaciones iraníes en cero, aunque el tráfico comercial se ha colapsado a solo 3-4 buques diarios frente a los 16-17 habituales",
-          "fuente": "LatinUS, MundoMaritimo"
-        },
-        {
-          "texto": "Inteligencia occidental detecta que el Kremlin prepara una movilización encubierta coercitiva hacia endeudados y estudiantes con bajo rendimiento para escalar la ofensiva tras las elecciones rusas, donde Moscú reivindica 5.300 km² capturados en 2026",
-          "fuente": "CiberCuba, El Periódico"
+          "texto": "Ucrania ejecutó el mayor ataque con drones de la guerra contra Moscú el 20 de septiembre, con más de 550 aparatos interceptados en 16 provincias y cierre temporal del aeropuerto de Sheremétievo, mientras el Brent escala al 105,68 $ por la tensión añadida en Oriente Medio y Ormuz. En paralelo, el partido de Putin se impuso en las parlamentarias rusas con el 49,4 % de los votos, legitimando su mandato pese a la vulnerabilidad aérea expuesta. En el frente monetario, la segunda subida del BCE que lleva la facilidad de depósito al 2,50 % ha disparado las entradas netas a fondos monetarios de la eurozona hasta 140.000 M€ en 2026, con la curva descontando un tipo terminal cercano al 2,80 % para 2027",
+          "fuente": "elEconomista"
         }
       ]
     },
@@ -72,24 +60,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Trump anunció el 18 de septiembre un acuerdo estratégico con Dinamarca y Groenlandia, que se firmará en la AGNU, para asumir el control permanente de la seguridad ártica vetando bases e inversiones sensibles de China y Rusia",
-          "fuente": "EL PAÍS, EFE"
+          "texto": "EE. UU. activó el 19 de septiembre alertas de seguridad y restricciones de viaje para sus ciudadanos en nueve países de Oriente Medio ante el riesgo de escalada militar con consecuencias logísticas y energéticas imprevisibles; Trump afirmó que Ucrania y Rusia acordaron en principio no atacar infraestructuras energéticas para contener el diésel global, aunque la realidad de los ataques masivos con drones contradice la efectividad del pacto",
+          "fuente": "Negocios.com, El Universal / Agencias"
         },
         {
-          "texto": "Los CEO de Anthropic, OpenAI y xAI pidieron públicamente el 15 de septiembre ralentizar el desarrollo de modelos de frontera por riesgos existenciales, \"código rojo\", y Altman confirmó que OpenAI pospone su salida a bolsa prevista para 2026",
-          "fuente": "EL PAÍS, Expansión"
+          "texto": "Un tribunal sirio condenó a muerte in absentia a Bashar al-Ásad, asilado en Rusia, confirmando el giro del gobierno de transición hacia EE. UU. e Israel para fracturar antiguas alianzas",
+          "fuente": "Chiapasparalelo"
         },
         {
-          "texto": "Jensen Huang proyectó en Escocia el 17 de septiembre que las ventas de chips de Nvidia se duplicarán en 2027 impulsadas por la arquitectura Vera Rubin, ya en producción a gran escala con 3,7× el rendimiento en inferencia de la generación previa",
-          "fuente": "ITSitio, TradingKey"
+          "texto": "El BCE subió 25 p.b. el 10 de septiembre situando la facilidad de depósito en el 2,50 % y revisó al alza el PIB de la eurozona 2026 al 0,9 %",
+          "fuente": "Euractiv ES"
         },
         {
-          "texto": "Portobello Capital adquirió participación mayoritaria en Martínez Otero (interiorismo a medida) con asesoramiento al vendedor de Norgestion",
-          "fuente": "Norgestion"
-        },
-        {
-          "texto": "AddLife compró Unicam Sistemas Analíticos (Portugal) con asesoramiento exclusivo de Livingstone el 16 de septiembre",
-          "fuente": "Financecommunity ES"
+          "texto": "En España, el M&A se contrae un 17 % en número de operaciones hasta agosto (1.938 deals) con capital movilizado en 63.787 M€, polarizado por un venture capital que crece un 43 % mientras las pymes tradicionales pierden interés corporativo; las guías técnicas de septiembre constatan que earn-outs y due diligence se endurecen, con un 8 % más de horas de revisión en Data Rooms europeas, exigiendo rigor financiero milimétrico",
+          "fuente": "Datali / Confilegal, Fundenza"
         }
       ]
     },
@@ -97,20 +81,8 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE subió 25 pb el 10 de septiembre en Berlín dejando la facilidad de depósito en 2,50% tras escalar la inflación de la eurozona al 3,3% en agosto por el encarecimiento energético del conflicto en Oriente Medio",
-          "fuente": "RTVE Canaria, El País"
-        },
-        {
-          "texto": "El Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor el 27 de julio aplazando obligaciones de alto riesgo a diciembre 2027 y agosto 2028, mientras el Proyecto de Ley Orgánica de gobernanza de la IA avanza en el Congreso tras el plazo de enmiendas",
-          "fuente": "Grupo Atico34, Congreso de los Diputados"
-        },
-        {
-          "texto": "TTR Data y SpainCap sitúan el primer semestre 2026 en 1.485 operaciones por 50.474 M€ (-15% deals, valor plano por megadeals) con cerca del 90% de receptoras de private equity siendo pymes",
-          "fuente": "Capittal, Líder Legal"
-        },
-        {
-          "texto": "El INE fijó el IPC armonizado de España en 4,5% en agosto 2026, 12 décimas sobre la media del euro y la mayor presión de precios entre las grandes economías del euro",
-          "fuente": "Everything Edinburgh"
+          "texto": "El M&A Mid-Year Review 2026 de Ideals sitúa el cierre firme en 253 días de media (4 % menos que 2025) pero con 237 horas intensivas en Data Rooms, consolidando un mercado en \"K\" donde megadeals concentran valor y el mid-market pyme exige estructuras depuradas. PwC confirma que la IA es el vector estructural que polariza el M&A global en \"K\", desviando capital masivo hacia tecnológicas y redefiniendo valoraciones por capacidades de datos y automatización. El Uppsala Conflict Data Program registra 65 conflictos estatales (máximo desde 1946) en 35 países con 245.000 fallecidos, señalando el desmoronamiento de la arquitectura de seguridad global que condiciona las decisiones macroeconómicas del otoño",
+          "fuente": "Ideals / Informes de Mercado M&A, PwC España, El País"
         }
       ]
     },
@@ -120,19 +92,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "Tres operaciones cross-border con asesoramiento español en una semana: Norgestion (venta Martínez Otero a Portobello), Livingstone (venta Unicam a AddLife), You Are Capital+KPMG (venta GTD a Latour), señal de apetito extranjero por mid-market español y mandato para boutiques locales",
-              "fuente": "Norgestion, Financecommunity ES"
-            },
-            {
-              "texto": "Standard Investment (NL) entra en España comprando mayoría en Plásticos Ferrando (industrial, Valencia) y abre oficina en Madrid, nuevo GP extranjero estableciendo plataforma",
-              "fuente": "Financecommunity ES"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEstados Unidos y Arabia Saudí emitieron el 20 de septiembre alertas urgentes a sus ciudadanos en Oriente Medio ante el riesgo de una escalada imprevista y posibles ataques de milicias hutíes respaldadas por Irán, mientras nuevos bombardeos en Gaza dejaron 3 muertos.\n\nFriedrich Merz se juega su capital político en las elecciones regionales de Berlín y Mecklemburgo-Pomerania Occidental tras el desplome de la CDU del 37% al 17% en Sajonia-Anhalt frente al avance de AfD.\n\nEl CENTCOM confirmó que sus fuerzas escoltaron más de 2.000 buques y facilitaron el tránsito de 1.000 millones de barriles fuera de Ormuz en dos meses manteniendo las exportaciones iraníes en cero, aunque el tráfico comercial se ha colapsado a solo 3-4 buques diarios frente a los 16-17 habituales.\n\nInteligencia occidental detecta que el Kremlin prepara una movilización encubierta coercitiva hacia endeudados y estudiantes con bajo rendimiento para escalar la ofensiva tras las elecciones rusas, donde Moscú reivindica 5.300 km² capturados en 2026.\n\nFuentes: Ámbito, La Jornada, El País, El Diario, LatinUS, MundoMaritimo, CiberCuba, El Periódico\n\n## Esta semana\nTrump anunció el 18 de septiembre un acuerdo estratégico con Dinamarca y Groenlandia, que se firmará en la AGNU, para asumir el control permanente de la seguridad ártica vetando bases e inversiones sensibles de China y Rusia.\n\nLos CEO de Anthropic, OpenAI y xAI pidieron públicamente el 15 de septiembre ralentizar el desarrollo de modelos de frontera por riesgos existenciales, \"código rojo\", y Altman confirmó que OpenAI pospone su salida a bolsa prevista para 2026.\n\nJensen Huang proyectó en Escocia el 17 de septiembre que las ventas de chips de Nvidia se duplicarán en 2027 impulsadas por la arquitectura Vera Rubin, ya en producción a gran escala con 3,7× el rendimiento en inferencia de la generación previa.\n\nPortobello Capital adquirió participación mayoritaria en Martínez Otero (interiorismo a medida) con asesoramiento al vendedor de Norgestion.\n\nAddLife compró Unicam Sistemas Analíticos (Portugal) con asesoramiento exclusivo de Livingstone el 16 de septiembre.\n\nFuentes: EL PAÍS, EFE, Expansión, ITSitio, TradingKey, Norgestion, Financecommunity ES\n\n## Este mes\nEl BCE subió 25 pb el 10 de septiembre en Berlín dejando la facilidad de depósito en 2,50% tras escalar la inflación de la eurozona al 3,3% en agosto por el encarecimiento energético del conflicto en Oriente Medio.\n\nEl Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor el 27 de julio aplazando obligaciones de alto riesgo a diciembre 2027 y agosto 2028, mientras el Proyecto de Ley Orgánica de gobernanza de la IA avanza en el Congreso tras el plazo de enmiendas.\n\nTTR Data y SpainCap sitúan el primer semestre 2026 en 1.485 operaciones por 50.474 M€ (-15% deals, valor plano por megadeals) con cerca del 90% de receptoras de private equity siendo pymes.\n\nEl INE fijó el IPC armonizado de España en 4,5% en agosto 2026, 12 décimas sobre la media del euro y la mayor presión de precios entre las grandes economías del euro.\n\nFuentes: RTVE Canaria, El País, Grupo Atico34, Congreso de los Diputados, Capittal, Líder Legal, Everything Edinburgh\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nTres operaciones cross-border con asesoramiento español en una semana: Norgestion (venta Martínez Otero a Portobello), Livingstone (venta Unicam a AddLife), You Are Capital+KPMG (venta GTD a Latour), señal de apetito extranjero por mid-market español y mandato para boutiques locales,.\n\nStandard Investment (NL) entra en España comprando mayoría en Plásticos Ferrando (industrial, Valencia) y abre oficina en Madrid, nuevo GP extranjero estableciendo plataforma,.\n\nFuentes: Norgestion, Financecommunity ES"
+  "markdown": "## Hoy\nUcrania ejecutó el mayor ataque con drones de la guerra contra Moscú el 20 de septiembre, con más de 550 aparatos interceptados en 16 provincias y cierre temporal del aeropuerto de Sheremétievo, mientras el Brent escala al 105,68 $ por la tensión añadida en Oriente Medio y Ormuz. En paralelo, el partido de Putin se impuso en las parlamentarias rusas con el 49,4 % de los votos, legitimando su mandato pese a la vulnerabilidad aérea expuesta. En el frente monetario, la segunda subida del BCE que lleva la facilidad de depósito al 2,50 % ha disparado las entradas netas a fondos monetarios de la eurozona hasta 140.000 M€ en 2026, con la curva descontando un tipo terminal cercano al 2,80 % para 2027.\n\nFuentes: El Economista, El Economista (Mercados), Negocios.com / AFP, elEconomista\n\n## Esta semana\nEE. UU. activó el 19 de septiembre alertas de seguridad y restricciones de viaje para sus ciudadanos en nueve países de Oriente Medio ante el riesgo de escalada militar con consecuencias logísticas y energéticas imprevisibles; Trump afirmó que Ucrania y Rusia acordaron en principio no atacar infraestructuras energéticas para contener el diésel global, aunque la realidad de los ataques masivos con drones contradice la efectividad del pacto.\n\nUn tribunal sirio condenó a muerte in absentia a Bashar al-Ásad, asilado en Rusia, confirmando el giro del gobierno de transición hacia EE. UU. e Israel para fracturar antiguas alianzas.\n\nEl BCE subió 25 p.b. el 10 de septiembre situando la facilidad de depósito en el 2,50 % y revisó al alza el PIB de la eurozona 2026 al 0,9 %.\n\nEn España, el M&A se contrae un 17 % en número de operaciones hasta agosto (1.938 deals) con capital movilizado en 63.787 M€, polarizado por un venture capital que crece un 43 % mientras las pymes tradicionales pierden interés corporativo; las guías técnicas de septiembre constatan que earn-outs y due diligence se endurecen, con un 8 % más de horas de revisión en Data Rooms europeas, exigiendo rigor financiero milimétrico.\n\nFuentes: Negocios.com, El Universal / Agencias, Chiapasparalelo, Euractiv ES, Datali / Confilegal, Fundenza\n\n## Este mes\nEl M&A Mid-Year Review 2026 de Ideals sitúa el cierre firme en 253 días de media (4 % menos que 2025) pero con 237 horas intensivas en Data Rooms, consolidando un mercado en \"K\" donde megadeals concentran valor y el mid-market pyme exige estructuras depuradas. PwC confirma que la IA es el vector estructural que polariza el M&A global en \"K\", desviando capital masivo hacia tecnológicas y redefiniendo valoraciones por capacidades de datos y automatización. El Uppsala Conflict Data Program registra 65 conflictos estatales (máximo desde 1946) en 35 países con 245.000 fallecidos, señalando el desmoronamiento de la arquitectura de seguridad global que condiciona las decisiones macroeconómicas del otoño.\n\nFuentes: Ideals / Informes de Mercado M&A, PwC España, El País"
 }
