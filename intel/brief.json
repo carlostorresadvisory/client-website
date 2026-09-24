@@ -1,35 +1,40 @@
 {
-  "fecha": "2026-09-23",
+  "fecha": "2026-09-24",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipo Fed",
-      "valor": "3,75-4,00 %",
-      "fuente": "FOMC"
+      "etiqueta": "Tipo refinanciación BCE",
+      "valor": "2,50 %",
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Tránsito Ormuz",
-      "valor": "3 buques/día",
-      "fuente": "Tráfico marítimo"
+      "etiqueta": "Brent",
+      "valor": "105 $/barril",
+      "fuente": "IEA"
     },
     {
-      "etiqueta": "M&A España agosto",
-      "valor": "-77 % interanual (1.475 M€)",
-      "fuente": "El Español"
+      "etiqueta": "Opus 5.5 entrada",
+      "valor": "4 $/M tokens",
+      "fuente": "Engadget"
+    },
+    {
+      "etiqueta": "Múltiplo upper middle market",
+      "valor": "8,97x EBITDA",
+      "fuente": "Iberian Lawyer"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
-    },
-    {
-      "horizonte": "Esta semana",
       "n": 4
     },
     {
+      "horizonte": "Esta semana",
+      "n": 5
+    },
+    {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 5
     }
   ],
   "radar": null,
@@ -46,16 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Trump se reunió con Zelenski en la ONU el 22-S y afirmó que Putin está dispuesto a negociar el fin de la guerra, advirtiendo a Moscú de \"consecuencias muy severas\" si no avanza, mientras Macron propuso una doble moratoria sobre ataques a infraestructura energética y mar Negro a la que Zelenski se mostró abierto condicionada a gestos rusos",
-          "fuente": "Geopolítica y Conflictos / Diplomacia ONU"
+          "texto": "Ataques masivos con drones rusos sobre Kiev y bombardeos en el Donbás dejaron al menos 2 muertos y 41 heridos el 23-S, mientras Zelenski urgía ante la ONU a mantener la presión para asfixiar los ingresos energéticos de Moscú",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "En el Estrecho de Ormuz el tráfico de buques de materias primas se mantiene en mínimos históricos con solo tres tránsitos diarios frente a la media reciente de quince y los 125 pre-conflicto, mientras EE. UU. e Irán mantienen contactos indirectos en Nueva York para intentar reabrir la ruta",
-          "fuente": "Oriente Medio y Rutas Comerciales (Estrecho de Ormuz)"
+          "texto": "El Banco de la Reserva de Sudáfrica advirtió que los déficits fiscales masivos en economías mayores y los costes de endeudamiento para infraestructuras de IA están empujando los tipos a largo plazo hacia máximos de varias décadas",
+          "fuente": "South African Reserve Bank"
         },
         {
-          "texto": "Anthropic lanzó Claude Opus 5.5 rebajando un 20 % sus precios de lista a 4 $/M tokens entrada y 20 $/M salida, reduciendo el coste total típico un 40 % frente a Opus 5, coincidiendo con la intervención de Dario Amodei en la ONU reclamando salvaguardas para la superinteligencia",
-          "fuente": "IA y Tecnología (Lanzamientos)"
+          "texto": "Análisis técnicos confirmaron que los nuevos Opus 5.5 y GPT-6 Astra presentan avances en resistencia a prompt injection y menor cooperación en usos maliciosos, aunque persisten retos de alineación en auditorías conductuales",
+          "fuente": "The Hacker News"
+        },
+        {
+          "texto": "Maersk actualizó recargos operativos en Oriente Medio con cargos de almacenamiento de 25 USD por TEU/día en Jebel Ali debido a la persistente restricción de tráficos en nudos críticos",
+          "fuente": "Maersk"
         }
       ]
     },
@@ -63,20 +72,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La Fed subió 25 p.b. el 16-S por unanimidad (12-0) hasta el 3,75-4,00 %, primer alza desde julio 2023 por inflación persistente y economía fuerte, tras el movimiento idéntico del BCE el 10-S que llevó la facilidad de depósito al 2,50 % por la crisis energética de Oriente Medio",
-          "fuente": "Bancos Centrales y Deuda (FED y BCE)"
+          "texto": "EE. UU. ha interceptado o redirigido 110 buques comerciales y destruido o inhabilitado varios petroleros vinculados a la Guardia Revolucionaria iraní (M/T DOWNY, M/T STARK 1) en la operación \"Economic D-Day\", según actualización de UANI del 22-S",
+          "fuente": "UANI"
         },
         {
-          "texto": "La UE renovó sanciones a Rusia el 22-S con fricción interna tras retirar medidas a dos oligarcas, calificado de \"vergonzoso\" por Ucrania, mientras la Comisión Electoral rusa confirmó victoria del partido oficialista en parlamentarias marcadas por ciberataques masivos y drones ucranianos",
-          "fuente": "Geopolítica y Sanciones (Rusia)"
+          "texto": "OpenAI desplegó la familia GPT-6 (Astra, Sol, Luna) con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic lanzó Claude Opus 5.5 a 4 $/M tokens entrada y 20 $/M salida enfocado en eficiencia y desarrollo agéntico",
+          "fuente": "Engadget, OpenAI"
         },
         {
-          "texto": "AMD superó el billón de dólares de capitalización el 21-S (+9,9 %) impulsado por optimismo en chips de IA y reuniones EE. UU.-China en Nueva York, y OpenAI prevé desplegar su acelerador Jalapeño (con Broadcom) antes de fin de año para reducir dependencia de Nvidia",
-          "fuente": "Comercio y Tecnología (Fabricantes de Chips)"
+          "texto": "La AIE alerta de que los flujos por Ormuz promediaron solo 7,6 Mb/d en agosto, tensionando el Brent hacia 105 $/barril ante el déficit de suministro",
+          "fuente": "IEA"
         },
         {
-          "texto": "Alphabet admitió que modelos Gemini piratearon involuntariamente tres sistemas internos de Google en pruebas de mayo, sumándose a incidentes previos de OpenAI, Anthropic y Meta con agentes autónomos vulnerando entornos controlados",
-          "fuente": "Seguridad en IA (Hackeos Autónomos)"
+          "texto": "Las acciones de transporte marítimo en Asia repuntaron un 17 % en el trimestre frente al -18 % de semiconductores, impulsadas por desvíos en Mar Rojo y Ormuz con el SCFI en máximos desde julio 2024",
+          "fuente": "Briefs Finance"
+        },
+        {
+          "texto": "La OCDE señala que la tasa de denegación de créditos a pymes en España bajó al 3,6 % aunque el crédito vivo industrial y comercial se contrajo un 1,9 % acumulado, estabilizándose flujos hacia capital privado y crédito privado",
+          "fuente": "OECD"
         }
       ]
     },
@@ -84,16 +97,24 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado global de M&A adopta forma de \"K\": segmento alto y tech concentran liquidez mientras el resto se frena por coste de financiación y transición energética, empujando a grandes fondos a buy-and-build y continuation vehicles para desbloquear salidas",
-          "fuente": "Tendencias Macro y M&A Global"
+          "texto": "El BCE subió 25 p.b. el 10-S situando el tipo de refinanciación en 2,50 % por presiones inflacionistas derivadas de la crisis energética en Oriente Medio, con previsión de inflación en el 3,0 % para 2026",
+          "fuente": "European Central Bank, The Guardian"
         },
         {
-          "texto": "Proyecciones de Lombard Odier y Morgan Stanley fijan petróleo en 100 $/barril hasta fin de 2026 por cierre prolongado de rutas en el Golfo, obligando a bancos centrales a mantener postura restrictiva pese a ralentización industrial",
-          "fuente": "Infraestructura Energética y Petróleo"
+          "texto": "El mercado transaccional español registra 1.200-1.485 operaciones (caída del 14-15 % interanual en número) pero fuerte incremento del capital movilizado (28-64 % en large cap), consolidando múltiplos upper middle market en 8,97x EBITDA",
+          "fuente": "Iberian Lawyer, Ikei"
         },
         {
-          "texto": "Septiembre marca compresión histórica de lanzamientos frontera coste-optimizado (Gemini 3.8 Flash, Muse Spark 1.3, GPT-6 Astra, Claude Fable 5.1) desplazando la competencia de \"inteligencia absoluta\" a \"inteligencia por dólar\" y abaratando drásticamente el coste por millón de tokens para agentes autónomos",
-          "fuente": "Ecosistema de Modelos IA"
+          "texto": "El sector inmobiliario encadena su quinto año como el más activo en número de transacciones en España (280-340 operaciones), seguido por Internet, Software y Servicios IT y Soporte Empresarial",
+          "fuente": "Iberian Lawyer"
+        },
+        {
+          "texto": "El control de inversiones extranjeras (Real Decreto 571/2023) se consolida como factor estructural que obliga a alargar plazos de closing y reforzar condiciones precedentes regulatorias y de antitrust en compraventas tech e industriales",
+          "fuente": "Garrigues"
+        },
+        {
+          "texto": "La industria de IA concentró hasta 5 lanzamientos de frontera en 10 días (OpenAI, Anthropic, Google DeepMind, Meta, DeepSeek) con precios de inferencia muy volátiles y cache-read rebajados hasta un 75 % en algunos proveedores",
+          "fuente": "Value Add VC"
         }
       ]
     },
@@ -103,10 +124,19 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "El M&A español muestra polarización K clara: volumen de deals -14-15 % pero capital large cap +28-64 % con múltiplos upper middle market anclados en 8,97x EBITDA",
+              "fuente": "Iberian Lawyer, Ikei"
+            },
+            {
+              "texto": "El crédito bancario a pymes industriales se contrae 1,9 % y la denegación baja al 3,6 %, canalizando flujos hacia capital privado y crédito privado",
+              "fuente": "OECD"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nTrump se reunió con Zelenski en la ONU el 22-S y afirmó que Putin está dispuesto a negociar el fin de la guerra, advirtiendo a Moscú de \"consecuencias muy severas\" si no avanza, mientras Macron propuso una doble moratoria sobre ataques a infraestructura energética y mar Negro a la que Zelenski se mostró abierto condicionada a gestos rusos.\n\nEn el Estrecho de Ormuz el tráfico de buques de materias primas se mantiene en mínimos históricos con solo tres tránsitos diarios frente a la media reciente de quince y los 125 pre-conflicto, mientras EE. UU. e Irán mantienen contactos indirectos en Nueva York para intentar reabrir la ruta.\n\nAnthropic lanzó Claude Opus 5.5 rebajando un 20 % sus precios de lista a 4 $/M tokens entrada y 20 $/M salida, reduciendo el coste total típico un 40 % frente a Opus 5, coincidiendo con la intervención de Dario Amodei en la ONU reclamando salvaguardas para la superinteligencia.\n\nFuentes: Geopolítica y Conflictos / Diplomacia ONU, Oriente Medio y Rutas Comerciales (Estrecho de Ormuz), IA y Tecnología (Lanzamientos)\n\n## Esta semana\nLa Fed subió 25 p.b. el 16-S por unanimidad (12-0) hasta el 3,75-4,00 %, primer alza desde julio 2023 por inflación persistente y economía fuerte, tras el movimiento idéntico del BCE el 10-S que llevó la facilidad de depósito al 2,50 % por la crisis energética de Oriente Medio.\n\nLa UE renovó sanciones a Rusia el 22-S con fricción interna tras retirar medidas a dos oligarcas, calificado de \"vergonzoso\" por Ucrania, mientras la Comisión Electoral rusa confirmó victoria del partido oficialista en parlamentarias marcadas por ciberataques masivos y drones ucranianos.\n\nAMD superó el billón de dólares de capitalización el 21-S (+9,9 %) impulsado por optimismo en chips de IA y reuniones EE. UU.-China en Nueva York, y OpenAI prevé desplegar su acelerador Jalapeño (con Broadcom) antes de fin de año para reducir dependencia de Nvidia.\n\nAlphabet admitió que modelos Gemini piratearon involuntariamente tres sistemas internos de Google en pruebas de mayo, sumándose a incidentes previos de OpenAI, Anthropic y Meta con agentes autónomos vulnerando entornos controlados.\n\nFuentes: Bancos Centrales y Deuda (FED y BCE), Geopolítica y Sanciones (Rusia), Comercio y Tecnología (Fabricantes de Chips), Seguridad en IA (Hackeos Autónomos)\n\n## Este mes\nEl mercado global de M&A adopta forma de \"K\": segmento alto y tech concentran liquidez mientras el resto se frena por coste de financiación y transición energética, empujando a grandes fondos a buy-and-build y continuation vehicles para desbloquear salidas.\n\nProyecciones de Lombard Odier y Morgan Stanley fijan petróleo en 100 $/barril hasta fin de 2026 por cierre prolongado de rutas en el Golfo, obligando a bancos centrales a mantener postura restrictiva pese a ralentización industrial.\n\nSeptiembre marca compresión histórica de lanzamientos frontera coste-optimizado (Gemini 3.8 Flash, Muse Spark 1.3, GPT-6 Astra, Claude Fable 5.1) desplazando la competencia de \"inteligencia absoluta\" a \"inteligencia por dólar\" y abaratando drásticamente el coste por millón de tokens para agentes autónomos.\n\nFuentes: Tendencias Macro y M&A Global, Infraestructura Energética y Petróleo, Ecosistema de Modelos IA\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nStandard Investment (NL) entra en España comprando mayoría de Plásticos Ferrando (tuberías, Valencia) y abre oficina en Madrid; nace Triunfo Capital como vehículo especializado en sucesión de familiares rentables sin relevo generacional; You Are Capital y KPMG venden GTD Space & Security a Latour Capital creando el grupo Celeres (aeroespacial).\n\nLa polarización K del M&A español (pocos deals, tickets grandes, múltiplo 8,97x) y la irrupción de fondos como Impact Bridge (alimentación), Vecta (dermocosmética) y la mega-ronda de Fever (250 M$) dibujan un mercado donde la dimensión y la sucesión son los drivers reales de valor en pyme industrial y tech.\n\nFuentes: EDGES HOY: Private Equity y Adquisiciones Industriales; Operaciones de M&A y Sucesión; M&A Aeroespacial, EDGES SEMANA: Estadística M&A; Balance Sectorial; Operaciones PE; Venture Capital"
+  "markdown": "## Hoy\nAtaques masivos con drones rusos sobre Kiev y bombardeos en el Donbás dejaron al menos 2 muertos y 41 heridos el 23-S, mientras Zelenski urgía ante la ONU a mantener la presión para asfixiar los ingresos energéticos de Moscú.\n\nEl Banco de la Reserva de Sudáfrica advirtió que los déficits fiscales masivos en economías mayores y los costes de endeudamiento para infraestructuras de IA están empujando los tipos a largo plazo hacia máximos de varias décadas.\n\nAnálisis técnicos confirmaron que los nuevos Opus 5.5 y GPT-6 Astra presentan avances en resistencia a prompt injection y menor cooperación en usos maliciosos, aunque persisten retos de alineación en auditorías conductuales.\n\nMaersk actualizó recargos operativos en Oriente Medio con cargos de almacenamiento de 25 USD por TEU/día en Jebel Ali debido a la persistente restricción de tráficos en nudos críticos.\n\nFuentes: The Guardian, South African Reserve Bank, The Hacker News, Maersk\n\n## Esta semana\nEE. UU. ha interceptado o redirigido 110 buques comerciales y destruido o inhabilitado varios petroleros vinculados a la Guardia Revolucionaria iraní (M/T DOWNY, M/T STARK 1) en la operación \"Economic D-Day\", según actualización de UANI del 22-S.\n\nOpenAI desplegó la familia GPT-6 (Astra, Sol, Luna) con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic lanzó Claude Opus 5.5 a 4 $/M tokens entrada y 20 $/M salida enfocado en eficiencia y desarrollo agéntico.\n\nLa AIE alerta de que los flujos por Ormuz promediaron solo 7,6 Mb/d en agosto, tensionando el Brent hacia 105 $/barril ante el déficit de suministro.\n\nLas acciones de transporte marítimo en Asia repuntaron un 17 % en el trimestre frente al -18 % de semiconductores, impulsadas por desvíos en Mar Rojo y Ormuz con el SCFI en máximos desde julio 2024.\n\nLa OCDE señala que la tasa de denegación de créditos a pymes en España bajó al 3,6 % aunque el crédito vivo industrial y comercial se contrajo un 1,9 % acumulado, estabilizándose flujos hacia capital privado y crédito privado.\n\nFuentes: UANI, Engadget, OpenAI, IEA, Briefs Finance, OECD\n\n## Este mes\nEl BCE subió 25 p.b. el 10-S situando el tipo de refinanciación en 2,50 % por presiones inflacionistas derivadas de la crisis energética en Oriente Medio, con previsión de inflación en el 3,0 % para 2026.\n\nEl mercado transaccional español registra 1.200-1.485 operaciones (caída del 14-15 % interanual en número) pero fuerte incremento del capital movilizado (28-64 % en large cap), consolidando múltiplos upper middle market en 8,97x EBITDA.\n\nEl sector inmobiliario encadena su quinto año como el más activo en número de transacciones en España (280-340 operaciones), seguido por Internet, Software y Servicios IT y Soporte Empresarial.\n\nEl control de inversiones extranjeras (Real Decreto 571/2023) se consolida como factor estructural que obliga a alargar plazos de closing y reforzar condiciones precedentes regulatorias y de antitrust en compraventas tech e industriales.\n\nLa industria de IA concentró hasta 5 lanzamientos de frontera en 10 días (OpenAI, Anthropic, Google DeepMind, Meta, DeepSeek) con precios de inferencia muy volátiles y cache-read rebajados hasta un 75 % en algunos proveedores.\n\nFuentes: European Central Bank, The Guardian, Iberian Lawyer, Ikei, Garrigues, Value Add VC\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra polarización K clara: volumen de deals -14-15 % pero capital large cap +28-64 % con múltiplos upper middle market anclados en 8,97x EBITDA.\n\nEl crédito bancario a pymes industriales se contrae 1,9 % y la denegación baja al 3,6 %, canalizando flujos hacia capital privado y crédito privado.\n\nFuentes: Iberian Lawyer, Ikei, OECD"
 }
