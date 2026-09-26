@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-24",
+  "fecha": "2026-09-26",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipo refinanciación BCE",
-      "valor": "2,50 %",
-      "fuente": "European Central Bank"
+      "etiqueta": "Chips Colossus 2",
+      "valor": "550.000",
+      "fuente": "Invezz"
     },
     {
-      "etiqueta": "Brent",
-      "valor": "105 $/barril",
-      "fuente": "IEA"
+      "etiqueta": "Euríbor septiembre",
+      "valor": "3,2 %",
+      "fuente": "Euríbor"
     },
     {
-      "etiqueta": "Opus 5.5 entrada",
-      "valor": "4 $/M tokens",
-      "fuente": "Engadget"
+      "etiqueta": "Empresas españolas lista ONU",
+      "valor": "5",
+      "fuente": "La Opinión de Murcia"
     },
     {
-      "etiqueta": "Múltiplo upper middle market",
-      "valor": "8,97x EBITDA",
-      "fuente": "Iberian Lawyer"
+      "etiqueta": "Sanción IA grave España",
+      "valor": "35 M€",
+      "fuente": "Europa Press"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 7
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,20 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Ataques masivos con drones rusos sobre Kiev y bombardeos en el Donbás dejaron al menos 2 muertos y 41 heridos el 23-S, mientras Zelenski urgía ante la ONU a mantener la presión para asfixiar los ingresos energéticos de Moscú",
-          "fuente": "The Guardian"
+          "texto": "Irán eleva la apuesta en el tablero aéreo regional: un asesor del líder supremo, Mojtaba Jameneí, avisó el 25-S de que si Teherán no puede operar sus vuelos por las sanciones estadounidenses, impedirá que lo hagan el resto de países de la zona",
+          "fuente": "La Opinión de Murcia"
         },
         {
-          "texto": "El Banco de la Reserva de Sudáfrica advirtió que los déficits fiscales masivos en economías mayores y los costes de endeudamiento para infraestructuras de IA están empujando los tipos a largo plazo hacia máximos de varias décadas",
-          "fuente": "South African Reserve Bank"
+          "texto": "La ONU amplió a 214 su lista negra de empresas vinculadas a asentamientos israelíes, incorporando a cinco firmas españolas",
+          "fuente": "La Opinión de Murcia"
         },
         {
-          "texto": "Análisis técnicos confirmaron que los nuevos Opus 5.5 y GPT-6 Astra presentan avances en resistencia a prompt injection y menor cooperación en usos maliciosos, aunque persisten retos de alineación en auditorías conductuales",
-          "fuente": "The Hacker News"
+          "texto": "En el frente ruso-ucraniano, Putin se mostró dispuesto a reanudar el diálogo directo con Kiev, pero condicionó la respuesta a las acciones ucranianas y recordó el ataque masivo con más de 1.600 drones contra Moscú la noche del 19 al 20 de septiembre",
+          "fuente": "Escambray"
         },
         {
-          "texto": "Maersk actualizó recargos operativos en Oriente Medio con cargos de almacenamiento de 25 USD por TEU/día en Jebel Ali debido a la persistente restricción de tráficos en nudos críticos",
-          "fuente": "Maersk"
+          "texto": "Musk confirmó que Colossus 2 opera ya con 110.000 chips GB200 y 440.000 GB300, y prevé añadir 220.000 GB300 la próxima semana y otros 220.000 en noviembre. Los tres grandes laboratorios, Google, OpenAI y Anthropic, negocian formalmente la creación de SAFA, un organismo independiente de estándares de seguridad inspirado en FINRA, para finales de 2026 o inicios de 2027",
+          "fuente": "Invezz, The Information / Roic News"
         }
       ]
     },
@@ -72,24 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "EE. UU. ha interceptado o redirigido 110 buques comerciales y destruido o inhabilitado varios petroleros vinculados a la Guardia Revolucionaria iraní (M/T DOWNY, M/T STARK 1) en la operación \"Economic D-Day\", según actualización de UANI del 22-S",
-          "fuente": "UANI"
+          "texto": "El euro perforó la cota de 1,14 dólares hasta 1,1375 el 24-S, presionado por la creciente apuesta del mercado a una nueva subida de la Fed en octubre tras declaraciones de John Williams y unas solicitudes de subsidio en EE. UU. que cayeron a 197.000",
+          "fuente": "Swissinfo"
         },
         {
-          "texto": "OpenAI desplegó la familia GPT-6 (Astra, Sol, Luna) con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic lanzó Claude Opus 5.5 a 4 $/M tokens entrada y 20 $/M salida enfocado en eficiencia y desarrollo agéntico",
-          "fuente": "Engadget, OpenAI"
+          "texto": "Anthropic y OpenAI lanzaron casi a la vez versiones orientadas a eficiencia: Claude Opus 5.5, un 40 % más barato de operar que su predecesor, y variantes de GPT-6 con precios un 50 % inferiores a la familia anterior",
+          "fuente": "BeInCrypto"
         },
         {
-          "texto": "La AIE alerta de que los flujos por Ormuz promediaron solo 7,6 Mb/d en agosto, tensionando el Brent hacia 105 $/barril ante el déficit de suministro",
-          "fuente": "IEA"
+          "texto": "El fondo neerlandés Standard Investment desembarcó en España adquiriendo la mayoría de Plásticos Ferrando y abriendo oficina en Madrid. You Capital y KPMG España asesoraron a GTD en la venta de su división Space & Security a Latour Capital, operada bajo la nueva marca Celeres. Se lanzó Triunfo Capital, vehículo enfocado en comprar y liderar pymes industriales y de servicios españolas sin relevo generacional",
+          "fuente": "Financecommunity ES"
         },
         {
-          "texto": "Las acciones de transporte marítimo en Asia repuntaron un 17 % en el trimestre frente al -18 % de semiconductores, impulsadas por desvíos en Mar Rojo y Ormuz con el SCFI en máximos desde julio 2024",
-          "fuente": "Briefs Finance"
-        },
-        {
-          "texto": "La OCDE señala que la tasa de denegación de créditos a pymes en España bajó al 3,6 % aunque el crédito vivo industrial y comercial se contrajo un 1,9 % acumulado, estabilizándose flujos hacia capital privado y crédito privado",
-          "fuente": "OECD"
+          "texto": "Huawei adelantó al 1T 2027 el lanzamiento del chip Ascend 960DT para duplicar rendimiento en inferencia y capturar cuota tras las restricciones a Nvidia en China. El Anteproyecto de Ley Orgánica de gobernanza de IA en España avanza en el Congreso con sanciones de hasta 35 M€ o el 7 % del volumen de negocio global para infracciones graves, mientras el Art. 50 del AI Act europeo (transparencia) rige ya desde el 2 de agosto",
+          "fuente": "Expansión, Europa Press"
         }
       ]
     },
@@ -97,24 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE subió 25 p.b. el 10-S situando el tipo de refinanciación en 2,50 % por presiones inflacionistas derivadas de la crisis energética en Oriente Medio, con previsión de inflación en el 3,0 % para 2026",
-          "fuente": "European Central Bank, The Guardian"
+          "texto": "Septiembre cerró un endurecimiento dual inusual: el BCE subió la facilidad de depósito al 2,50 % el 16-S y la Fed situó los tipos en 3,75-4,00 %, ambas presionadas por el repunte energético de la crisis de Oriente Medio",
+          "fuente": "Comparador Financiero, FIFNEWS 17 Sept"
         },
         {
-          "texto": "El mercado transaccional español registra 1.200-1.485 operaciones (caída del 14-15 % interanual en número) pero fuerte incremento del capital movilizado (28-64 % en large cap), consolidando múltiplos upper middle market en 8,97x EBITDA",
-          "fuente": "Iberian Lawyer, Ikei"
+          "texto": "Nvidia facturó 96.200 M$ en el 2T fiscal 2027 (+106 % interanual), 89.000 M$ de ellos en centros de datos (+117 %), y Huang proyecta duplicar la comercialización de infraestructura en 2027",
+          "fuente": "ITSitio"
         },
         {
-          "texto": "El sector inmobiliario encadena su quinto año como el más activo en número de transacciones en España (280-340 operaciones), seguido por Internet, Software y Servicios IT y Soporte Empresarial",
-          "fuente": "Iberian Lawyer"
+          "texto": "El Reglamento (UE) 2026/1744 (Digital Omnibus on AI) reestructuró el calendario: obligaciones de alto riesgo al 2-dic-2027, pero transparencia (Art. 50) vigente desde el 2-ago-2026",
+          "fuente": "Grupo Atico34"
         },
         {
-          "texto": "El control de inversiones extranjeras (Real Decreto 571/2023) se consolida como factor estructural que obliga a alargar plazos de closing y reforzar condiciones precedentes regulatorias y de antitrust en compraventas tech e industriales",
-          "fuente": "Garrigues"
-        },
-        {
-          "texto": "La industria de IA concentró hasta 5 lanzamientos de frontera en 10 días (OpenAI, Anthropic, Google DeepMind, Meta, DeepSeek) con precios de inferencia muy volátiles y cache-read rebajados hasta un 75 % en algunos proveedores",
-          "fuente": "Value Add VC"
+          "texto": "El M&A de pymes en España consolida el patrón \"comprar bien antes que rápido\", con compradores exigiendo márgenes robustos y estructuras con earn-out ante la selectividad de fondos e industriales",
+          "fuente": "Economía 3"
         }
       ]
     },
@@ -126,17 +118,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El M&A español muestra polarización K clara: volumen de deals -14-15 % pero capital large cap +28-64 % con múltiplos upper middle market anclados en 8,97x EBITDA",
-              "fuente": "Iberian Lawyer, Ikei"
+              "texto": "Standard Investment entra en España vía Plásticos Ferrando (valenciano, tuberías plásticas) con oficina en Madrid. GTD vende Space & Security a Latour Capital (Celeres) asesorada por You Capital y KPMG",
+              "fuente": "Financecommunity ES"
             },
             {
-              "texto": "El crédito bancario a pymes industriales se contrae 1,9 % y la denegación baja al 3,6 %, canalizando flujos hacia capital privado y crédito privado",
-              "fuente": "OECD"
+              "texto": "Triunfo Capital nace como vehículo dedicado a sucesión en pymes industriales y de servicios. El M&A pyme español exige \"comprar bien antes que rápido\", márgenes robustos y earn-outs",
+              "fuente": "Financecommunity ES, Economía 3"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nAtaques masivos con drones rusos sobre Kiev y bombardeos en el Donbás dejaron al menos 2 muertos y 41 heridos el 23-S, mientras Zelenski urgía ante la ONU a mantener la presión para asfixiar los ingresos energéticos de Moscú.\n\nEl Banco de la Reserva de Sudáfrica advirtió que los déficits fiscales masivos en economías mayores y los costes de endeudamiento para infraestructuras de IA están empujando los tipos a largo plazo hacia máximos de varias décadas.\n\nAnálisis técnicos confirmaron que los nuevos Opus 5.5 y GPT-6 Astra presentan avances en resistencia a prompt injection y menor cooperación en usos maliciosos, aunque persisten retos de alineación en auditorías conductuales.\n\nMaersk actualizó recargos operativos en Oriente Medio con cargos de almacenamiento de 25 USD por TEU/día en Jebel Ali debido a la persistente restricción de tráficos en nudos críticos.\n\nFuentes: The Guardian, South African Reserve Bank, The Hacker News, Maersk\n\n## Esta semana\nEE. UU. ha interceptado o redirigido 110 buques comerciales y destruido o inhabilitado varios petroleros vinculados a la Guardia Revolucionaria iraní (M/T DOWNY, M/T STARK 1) en la operación \"Economic D-Day\", según actualización de UANI del 22-S.\n\nOpenAI desplegó la familia GPT-6 (Astra, Sol, Luna) con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic lanzó Claude Opus 5.5 a 4 $/M tokens entrada y 20 $/M salida enfocado en eficiencia y desarrollo agéntico.\n\nLa AIE alerta de que los flujos por Ormuz promediaron solo 7,6 Mb/d en agosto, tensionando el Brent hacia 105 $/barril ante el déficit de suministro.\n\nLas acciones de transporte marítimo en Asia repuntaron un 17 % en el trimestre frente al -18 % de semiconductores, impulsadas por desvíos en Mar Rojo y Ormuz con el SCFI en máximos desde julio 2024.\n\nLa OCDE señala que la tasa de denegación de créditos a pymes en España bajó al 3,6 % aunque el crédito vivo industrial y comercial se contrajo un 1,9 % acumulado, estabilizándose flujos hacia capital privado y crédito privado.\n\nFuentes: UANI, Engadget, OpenAI, IEA, Briefs Finance, OECD\n\n## Este mes\nEl BCE subió 25 p.b. el 10-S situando el tipo de refinanciación en 2,50 % por presiones inflacionistas derivadas de la crisis energética en Oriente Medio, con previsión de inflación en el 3,0 % para 2026.\n\nEl mercado transaccional español registra 1.200-1.485 operaciones (caída del 14-15 % interanual en número) pero fuerte incremento del capital movilizado (28-64 % en large cap), consolidando múltiplos upper middle market en 8,97x EBITDA.\n\nEl sector inmobiliario encadena su quinto año como el más activo en número de transacciones en España (280-340 operaciones), seguido por Internet, Software y Servicios IT y Soporte Empresarial.\n\nEl control de inversiones extranjeras (Real Decreto 571/2023) se consolida como factor estructural que obliga a alargar plazos de closing y reforzar condiciones precedentes regulatorias y de antitrust en compraventas tech e industriales.\n\nLa industria de IA concentró hasta 5 lanzamientos de frontera en 10 días (OpenAI, Anthropic, Google DeepMind, Meta, DeepSeek) con precios de inferencia muy volátiles y cache-read rebajados hasta un 75 % en algunos proveedores.\n\nFuentes: European Central Bank, The Guardian, Iberian Lawyer, Ikei, Garrigues, Value Add VC\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra polarización K clara: volumen de deals -14-15 % pero capital large cap +28-64 % con múltiplos upper middle market anclados en 8,97x EBITDA.\n\nEl crédito bancario a pymes industriales se contrae 1,9 % y la denegación baja al 3,6 %, canalizando flujos hacia capital privado y crédito privado.\n\nFuentes: Iberian Lawyer, Ikei, OECD"
+  "markdown": "## Hoy\nIrán eleva la apuesta en el tablero aéreo regional: un asesor del líder supremo, Mojtaba Jameneí, avisó el 25-S de que si Teherán no puede operar sus vuelos por las sanciones estadounidenses, impedirá que lo hagan el resto de países de la zona.\n\nLa ONU amplió a 214 su lista negra de empresas vinculadas a asentamientos israelíes, incorporando a cinco firmas españolas.\n\nEn el frente ruso-ucraniano, Putin se mostró dispuesto a reanudar el diálogo directo con Kiev, pero condicionó la respuesta a las acciones ucranianas y recordó el ataque masivo con más de 1.600 drones contra Moscú la noche del 19 al 20 de septiembre.\n\nMusk confirmó que Colossus 2 opera ya con 110.000 chips GB200 y 440.000 GB300, y prevé añadir 220.000 GB300 la próxima semana y otros 220.000 en noviembre. Los tres grandes laboratorios, Google, OpenAI y Anthropic, negocian formalmente la creación de SAFA, un organismo independiente de estándares de seguridad inspirado en FINRA, para finales de 2026 o inicios de 2027.\n\nFuentes: La Opinión de Murcia, Escambray, Invezz, The Information / Roic News\n\n## Esta semana\nEl euro perforó la cota de 1,14 dólares hasta 1,1375 el 24-S, presionado por la creciente apuesta del mercado a una nueva subida de la Fed en octubre tras declaraciones de John Williams y unas solicitudes de subsidio en EE. UU. que cayeron a 197.000.\n\nAnthropic y OpenAI lanzaron casi a la vez versiones orientadas a eficiencia: Claude Opus 5.5, un 40 % más barato de operar que su predecesor, y variantes de GPT-6 con precios un 50 % inferiores a la familia anterior.\n\nEl fondo neerlandés Standard Investment desembarcó en España adquiriendo la mayoría de Plásticos Ferrando y abriendo oficina en Madrid. You Capital y KPMG España asesoraron a GTD en la venta de su división Space & Security a Latour Capital, operada bajo la nueva marca Celeres. Se lanzó Triunfo Capital, vehículo enfocado en comprar y liderar pymes industriales y de servicios españolas sin relevo generacional.\n\nHuawei adelantó al 1T 2027 el lanzamiento del chip Ascend 960DT para duplicar rendimiento en inferencia y capturar cuota tras las restricciones a Nvidia en China. El Anteproyecto de Ley Orgánica de gobernanza de IA en España avanza en el Congreso con sanciones de hasta 35 M€ o el 7 % del volumen de negocio global para infracciones graves, mientras el Art. 50 del AI Act europeo (transparencia) rige ya desde el 2 de agosto.\n\nFuentes: Swissinfo, BeInCrypto, Financecommunity ES, Expansión, Europa Press\n\n## Este mes\nSeptiembre cerró un endurecimiento dual inusual: el BCE subió la facilidad de depósito al 2,50 % el 16-S y la Fed situó los tipos en 3,75-4,00 %, ambas presionadas por el repunte energético de la crisis de Oriente Medio.\n\nNvidia facturó 96.200 M$ en el 2T fiscal 2027 (+106 % interanual), 89.000 M$ de ellos en centros de datos (+117 %), y Huang proyecta duplicar la comercialización de infraestructura en 2027.\n\nEl Reglamento (UE) 2026/1744 (Digital Omnibus on AI) reestructuró el calendario: obligaciones de alto riesgo al 2-dic-2027, pero transparencia (Art. 50) vigente desde el 2-ago-2026.\n\nEl M&A de pymes en España consolida el patrón \"comprar bien antes que rápido\", con compradores exigiendo márgenes robustos y estructuras con earn-out ante la selectividad de fondos e industriales.\n\nFuentes: Comparador Financiero, FIFNEWS 17 Sept, ITSitio, Grupo Atico34, Economía 3\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nStandard Investment entra en España vía Plásticos Ferrando (valenciano, tuberías plásticas) con oficina en Madrid. GTD vende Space & Security a Latour Capital (Celeres) asesorada por You Capital y KPMG.\n\nTriunfo Capital nace como vehículo dedicado a sucesión en pymes industriales y de servicios. El M&A pyme español exige \"comprar bien antes que rápido\", márgenes robustos y earn-outs.\n\nFuentes: Financecommunity ES, Economía 3"
 }
