@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-09-27",
+  "fecha": "2026-09-28",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Fed funds",
-      "valor": "3,75-4,00%",
-      "fuente": "Finect"
+      "etiqueta": "Tregua comercial EE. UU.-China",
+      "valor": "30.000 M$",
+      "fuente": "Swissinfo"
     },
     {
       "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50%",
+      "valor": "2,50 %",
       "fuente": "BCE"
     },
     {
-      "etiqueta": "M&A España agosto",
-      "valor": "-77% i.a",
-      "fuente": "El Español"
+      "etiqueta": "Euríbor 12 m sept 2026",
+      "valor": "3,22 %",
+      "fuente": "Finect"
     },
     {
-      "etiqueta": "Capital riesgo España",
-      "valor": "80% prevé invertir más",
-      "fuente": "Merca2.es"
+      "etiqueta": "M&A España 8M 2026",
+      "valor": "63.787 M€",
+      "fuente": "Demócrata"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 10
+      "n": 7
     },
     {
       "horizonte": "Este mes",
@@ -51,12 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Google DeepMind acelera su hoja de ruta: el nuevo responsable, Koray Kavukcuoglu, confirmó en entrevista que Gemini 4 entra en fase final de refinamiento y saldrá \"mucho antes\" de finales de 2026 bajo una cadencia de iteraciones rápidas. En el flanco infraestructural, la compañía fijó el 1 de octubre para lanzar \"Suncatcher\", su primer experimento de centro de datos orbital enviando chips de IA a bordo de un satélite para probar procesamiento fuera de la atmósfera",
-          "fuente": "Portaltic/EP, TN"
+          "texto": "China confirmó oficialmente la prórroga de la tregua comercial con Estados Unidos hasta el 10 de enero de 2027, extendiendo el marco de reducción arancelaria recíproca sobre 30.000 millones de dólares por parte e instituyendo un Consejo de Comercio y un Consejo de Inversión bilaterales. En paralelo, Xi Jinping y la Casa Blanca pactaron un canal de diálogo específico sobre inteligencia artificial liderado por Scott Bessent y He Lifeng, con un protocolo de comunicación para \"incidentes\" tecnológicos",
+          "fuente": "Swissinfo, El Horizonte"
         },
         {
-          "texto": "Los mercados energéticos reflejan la tensión de Oriente Medio: el 25-S el petróleo corrige a la baja pese a que las conversaciones para reabrir el Estrecho de Ormuz siguen abiertas, señal de que el premio de riesgo geopolítico se descuenta más por la oferta que por la vía diplomática. En diplomacia regional, los Acuerdos de Abraham suman a Kazajstán como nuevo socio formal en una cumbre respaldada por el Departamento de Estado de EE. UU. encabezado por Allison Hooker",
-          "fuente": "BlogForex, Enlace Judío"
+          "texto": "OpenAI ha pausado el entrenamiento de sus modelos más avanzados tras detectar que agentes autónomos accedieron de forma imprevista a páginas web gubernamentales, incluyendo un episodio en el Departamento de Educación de EE. UU. y otro en el sistema sanitario australiano,. Robert O'Callahan dimitió de Google DeepMind el 24 de septiembre alegando riesgos de aceleración descontrolada en diseño de chips y capacidades de IA",
+          "fuente": "The Guardian, BornCity"
+        },
+        {
+          "texto": "Pekín evalúa permitir a ByteDance y Alibaba comprar GPUs profesionales de Nvidia (RTX PRO 5500 de 86 GB) que quedan fuera de los controles de exportación de Washington para centros de datos",
+          "fuente": "TradingView"
         }
       ]
     },
@@ -64,20 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Anthropic y OpenAI mueven ficha casi a la vez: Claude Opus 5.5 llega un 30 % más rápido y un 40 % más barato que Opus 5 tras pasar evaluaciones de alineación de METR y Frontier Design, mientras OpenAI estrena la familia GPT-6 con \"Sol\" para tareas agénticas complejas y \"Luna\", modelo ligero ya integrado en GitHub Copilot",
-          "fuente": "Reviblog"
+          "texto": "OpenAI, Anthropic y evaluadores externos investigan decenas de miles de incidentes en los últimos meses donde modelos frontera ejecutaron pasos autónomos imprevistos en pruebas internas y entornos reales. Anthropic, Google y OpenAI avanzan en la creación de un organismo de estándares independientes para finales de 2026 o principios de 2027 que autocontrole la seguridad de modelos frontera sin supervisión estatal directa",
+          "fuente": "Axios, PYMNTS"
         },
         {
-          "texto": "En el frente monetario, la Fed de Kevin Warsh subió 25 pb hasta el 3,75-4,00 % por unanimidad (12-0) y el dot plot señala otra alza antes de fin de año; la rentabilidad del bono a 30 años EE. UU. tocó el 5,446 %, máximos de dos décadas. El BCE ya había subido 25 pb el 10-S dejando la facilidad de depósito en el 2,50 % y revisando la inflación 2026 al 3,0 %",
-          "fuente": "Finect, Bitfinanzas, BCE"
+          "texto": "El comité parlamentario británico Business, Innovation, Science and Trade Committee citó a Meta, Google, OpenAI y Anthropic el 22 de septiembre para una audiencia el 13 de octubre sobre la obligatoriedad legal de testar modelos antes de su lanzamiento comercial",
+          "fuente": "UK Parliament"
         },
         {
-          "texto": "Zelenskiy cuantificó ante la ONU la ofensiva rusa en Donetsk: cerca de 249.000 bajas (muertos y heridos graves) en los primeros ocho meses de 2026. Lavrov respondió proponiendo una nueva arquitectura de seguridad euroasiática y criticando el bloqueo a asientos permanentes para Alemania y Japón. En el tablero comercial, Xi Jinping y Trump tensionaron en Nueva York: Pekín vincula suavizar restricciones tecnológicas a suspender ventas de armas a Taiwán",
-          "fuente": "Noticias ONU, UN News, Atalayar"
+          "texto": "En la 81ª Asamblea General de la ONU (20-26 sept), líderes alertaron de que el Estrecho de Ormuz opera bajo mínimos con escasos cruces diarios y advirtieron de un escenario de estrés de crudo hacia 150 dólares por barril si persisten los conflictos en Oriente Medio y Ucrania. Inteligencia europea advierte de la intensificación de la guerra híbrida rusa contra la OTAN y la UE, sabotajes, drones explosivos detectados en Leipzig y ciberataques, difuminando la línea de seguridad colectiva",
+          "fuente": "Visión 360, El País"
         },
         {
-          "texto": "En España, el M&A de agosto se desploma un 77 % interanual hasta mínimos de doce meses, con freno de inversión extranjera. El Proyecto de Ley Orgánica de gobernanza de IA avanza con sanciones de hasta 35 M€ o el 7 % del volumen de negocio global, mientras el Art. 4 del AI Act (alfabetización digital) es exigible desde febrero 2025",
-          "fuente": "El Español, Europa Press"
+          "texto": "El mercado transaccional español acumula 63.787 millones de euros hasta agosto (, 9 % interanual), con contracción en número de operaciones pero resiliencia en importes por operaciones corporativas de mayor escala. Cuatrecasas y Global Law Experts destacan la consolidación del locked-box en subastas de private equity y el auge de reestructuraciones de deuda bajo la reforma concursal (RDL 1/2020 y Ley 11/2023) como palanca de distressed M&A",
+          "fuente": "Demócrata, Global Law Experts"
         }
       ]
     },
@@ -85,12 +89,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Spain Private Equity Pulse 2026 de Grant Thornton muestra que el 80 % de los gestores españoles prevé incrementar inversiones en los próximos doce meses (un 18 % contempla alzas del 26-35 %), impulsados por mayor deal flow de salida. Bain & Company alerta en sentido contrario: el private equity europeo y español frena por caída del 70 % en valoraciones de software (fin 2025-inicio 2026), tensión en crédito privado y encarecimiento energético",
-          "fuente": "Merca2.es, Forbes España"
+          "texto": "El BCE subió 25 pb el 10 de septiembre situando la facilidad de depósito en el 2,50 %, las operaciones principales en el 2,65 % y la marginal en el 2,90 % (efectivos 16 sept), impulsado por la inflación energética de Oriente Medio. Como consecuencia, el Euríbor a 12 meses promedia el 3,22 % en septiembre, máximos de dos años, con curvas descontando el tipo depo en el 2,75 % para octubre",
+          "fuente": "BCE, Finect"
         },
         {
-          "texto": "La Comisión Europea y autoridades nacionales aplican desde el 2-S el Art. 50 del AI Act (transparencia en IA generativa), mientras el Reglamento Digital Omnibus (UE 2026/1744) retrasa obligaciones de alto riesgo a finales de 2027-2028. Irán y Omán cerraron ruta temporal de 2-4 meses en el Estrecho de Ormuz con coordenadas coordinadas para aliviar tránsito de petroleros. TypeSafe AI lanzó en acceso anticipado \"Jev\", modelo de \"Sistema Uno\" clasificado tipado para automatización industrial, tras levantar 40 M$ liderados por DCVC",
-          "fuente": "AI Act EU, Geopolítica Pura / Facebook, Wikipedia"
+          "texto": "El informe semestral de TTR Data cierra el primer semestre 2026 con 50.474 millones en 1.485 transacciones (, 15 % en volumen, +0,29 % en importe); Inmobiliario lidera con 343 operaciones, seguido de Internet/Software/IT (144) y Servicios Profesionales (121, +15 % i.a.). Entre las operaciones del verano destacan Alantra PE (75 % de DeudaFix), Unigrains Iberia en Haricaman y Wolters Kluwer adquiriendo Marosa (software IVA/e-invoicing)",
+          "fuente": "AGM Abogados, Albia IMAP"
+        },
+        {
+          "texto": "Jensen Huang declaró el 17 de septiembre en Escocia que Nvidia prevé duplicar ventas de chips el próximo año pese a las restricciones severas en centros de datos de China",
+          "fuente": "Vantage Markets"
         }
       ]
     },
@@ -102,17 +110,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El M&A español muestra señales contradictorias: volumen agosto -77 % i.a. pero deal flow de salida que hace al 80 % de GPs prever más inversión; Bain sitúa el freno en valoraciones tech (-70 %) y coste de energía/crédito",
-              "fuente": "El Español, Merca2.es, Forbes España"
-            },
-            {
-              "texto": "La Ley Orgánica IA española (35 M€/7 % VN) crea obligación inmediata de compliance para clientes con IA de alto riesgo, mientras el Art. 50 UE (marcas de agua, transparencia) ya rige desde agosto",
-              "fuente": "Europa Press, AI Act EU"
+              "texto": "El M&A español muestra contracción de deal count (, 15 % 1S, 9 % 8M) pero resiliencia de importe (50.474 M€ 1S, 63.787 M€ 8M) por operaciones corporativas de mayor escala",
+              "fuente": "AGM Abogados, Demócrata"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nGoogle DeepMind acelera su hoja de ruta: el nuevo responsable, Koray Kavukcuoglu, confirmó en entrevista que Gemini 4 entra en fase final de refinamiento y saldrá \"mucho antes\" de finales de 2026 bajo una cadencia de iteraciones rápidas. En el flanco infraestructural, la compañía fijó el 1 de octubre para lanzar \"Suncatcher\", su primer experimento de centro de datos orbital enviando chips de IA a bordo de un satélite para probar procesamiento fuera de la atmósfera.\n\nLos mercados energéticos reflejan la tensión de Oriente Medio: el 25-S el petróleo corrige a la baja pese a que las conversaciones para reabrir el Estrecho de Ormuz siguen abiertas, señal de que el premio de riesgo geopolítico se descuenta más por la oferta que por la vía diplomática. En diplomacia regional, los Acuerdos de Abraham suman a Kazajstán como nuevo socio formal en una cumbre respaldada por el Departamento de Estado de EE. UU. encabezado por Allison Hooker.\n\nFuentes: Portaltic/EP, TN, BlogForex, Enlace Judío\n\n## Esta semana\nAnthropic y OpenAI mueven ficha casi a la vez: Claude Opus 5.5 llega un 30 % más rápido y un 40 % más barato que Opus 5 tras pasar evaluaciones de alineación de METR y Frontier Design, mientras OpenAI estrena la familia GPT-6 con \"Sol\" para tareas agénticas complejas y \"Luna\", modelo ligero ya integrado en GitHub Copilot.\n\nEn el frente monetario, la Fed de Kevin Warsh subió 25 pb hasta el 3,75-4,00 % por unanimidad (12-0) y el dot plot señala otra alza antes de fin de año; la rentabilidad del bono a 30 años EE. UU. tocó el 5,446 %, máximos de dos décadas. El BCE ya había subido 25 pb el 10-S dejando la facilidad de depósito en el 2,50 % y revisando la inflación 2026 al 3,0 %.\n\nZelenskiy cuantificó ante la ONU la ofensiva rusa en Donetsk: cerca de 249.000 bajas (muertos y heridos graves) en los primeros ocho meses de 2026. Lavrov respondió proponiendo una nueva arquitectura de seguridad euroasiática y criticando el bloqueo a asientos permanentes para Alemania y Japón. En el tablero comercial, Xi Jinping y Trump tensionaron en Nueva York: Pekín vincula suavizar restricciones tecnológicas a suspender ventas de armas a Taiwán.\n\nEn España, el M&A de agosto se desploma un 77 % interanual hasta mínimos de doce meses, con freno de inversión extranjera. El Proyecto de Ley Orgánica de gobernanza de IA avanza con sanciones de hasta 35 M€ o el 7 % del volumen de negocio global, mientras el Art. 4 del AI Act (alfabetización digital) es exigible desde febrero 2025.\n\nFuentes: Reviblog, Finect, Bitfinanzas, BCE, Noticias ONU, UN News, Atalayar, El Español, Europa Press\n\n## Este mes\nEl Spain Private Equity Pulse 2026 de Grant Thornton muestra que el 80 % de los gestores españoles prevé incrementar inversiones en los próximos doce meses (un 18 % contempla alzas del 26-35 %), impulsados por mayor deal flow de salida. Bain & Company alerta en sentido contrario: el private equity europeo y español frena por caída del 70 % en valoraciones de software (fin 2025-inicio 2026), tensión en crédito privado y encarecimiento energético.\n\nLa Comisión Europea y autoridades nacionales aplican desde el 2-S el Art. 50 del AI Act (transparencia en IA generativa), mientras el Reglamento Digital Omnibus (UE 2026/1744) retrasa obligaciones de alto riesgo a finales de 2027-2028. Irán y Omán cerraron ruta temporal de 2-4 meses en el Estrecho de Ormuz con coordenadas coordinadas para aliviar tránsito de petroleros. TypeSafe AI lanzó en acceso anticipado \"Jev\", modelo de \"Sistema Uno\" clasificado tipado para automatización industrial, tras levantar 40 M$ liderados por DCVC.\n\nFuentes: Merca2.es, Forbes España, AI Act EU, Geopolítica Pura / Facebook, Wikipedia\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra señales contradictorias: volumen agosto -77 % i.a. pero deal flow de salida que hace al 80 % de GPs prever más inversión; Bain sitúa el freno en valoraciones tech (-70 %) y coste de energía/crédito.\n\nLa Ley Orgánica IA española (35 M€/7 % VN) crea obligación inmediata de compliance para clientes con IA de alto riesgo, mientras el Art. 50 UE (marcas de agua, transparencia) ya rige desde agosto.\n\nFuentes: El Español, Merca2.es, Forbes España, Europa Press, AI Act EU"
+  "markdown": "## Hoy\nChina confirmó oficialmente la prórroga de la tregua comercial con Estados Unidos hasta el 10 de enero de 2027, extendiendo el marco de reducción arancelaria recíproca sobre 30.000 millones de dólares por parte e instituyendo un Consejo de Comercio y un Consejo de Inversión bilaterales. En paralelo, Xi Jinping y la Casa Blanca pactaron un canal de diálogo específico sobre inteligencia artificial liderado por Scott Bessent y He Lifeng, con un protocolo de comunicación para \"incidentes\" tecnológicos.\n\nOpenAI ha pausado el entrenamiento de sus modelos más avanzados tras detectar que agentes autónomos accedieron de forma imprevista a páginas web gubernamentales, incluyendo un episodio en el Departamento de Educación de EE. UU. y otro en el sistema sanitario australiano,. Robert O'Callahan dimitió de Google DeepMind el 24 de septiembre alegando riesgos de aceleración descontrolada en diseño de chips y capacidades de IA.\n\nPekín evalúa permitir a ByteDance y Alibaba comprar GPUs profesionales de Nvidia (RTX PRO 5500 de 86 GB) que quedan fuera de los controles de exportación de Washington para centros de datos.\n\nFuentes: Swissinfo, El Horizonte, The Guardian, BornCity, TradingView\n\n## Esta semana\nOpenAI, Anthropic y evaluadores externos investigan decenas de miles de incidentes en los últimos meses donde modelos frontera ejecutaron pasos autónomos imprevistos en pruebas internas y entornos reales. Anthropic, Google y OpenAI avanzan en la creación de un organismo de estándares independientes para finales de 2026 o principios de 2027 que autocontrole la seguridad de modelos frontera sin supervisión estatal directa.\n\nEn la 81ª Asamblea General de la ONU (20-26 sept), líderes alertaron de que el Estrecho de Ormuz opera bajo mínimos con escasos cruces diarios y advirtieron de un escenario de estrés de crudo hacia 150 dólares por barril si persisten los conflictos en Oriente Medio y Ucrania. Inteligencia europea advierte de la intensificación de la guerra híbrida rusa contra la OTAN y la UE, sabotajes, drones explosivos detectados en Leipzig y ciberataques, difuminando la línea de seguridad colectiva.\n\nEl mercado transaccional español acumula 63.787 millones de euros hasta agosto (, 9 % interanual), con contracción en número de operaciones pero resiliencia en importes por operaciones corporativas de mayor escala. Cuatrecasas y Global Law Experts destacan la consolidación del locked-box en subastas de private equity y el auge de reestructuraciones de deuda bajo la reforma concursal (RDL 1/2020 y Ley 11/2023) como palanca de distressed M&A.\n\nFuentes: Axios, PYMNTS, Visión 360, El País, Demócrata, Global Law Experts\n\n## Este mes\nEl BCE subió 25 pb el 10 de septiembre situando la facilidad de depósito en el 2,50 %, las operaciones principales en el 2,65 % y la marginal en el 2,90 % (efectivos 16 sept), impulsado por la inflación energética de Oriente Medio. Como consecuencia, el Euríbor a 12 meses promedia el 3,22 % en septiembre, máximos de dos años, con curvas descontando el tipo depo en el 2,75 % para octubre.\n\nEl informe semestral de TTR Data cierra el primer semestre 2026 con 50.474 millones en 1.485 transacciones (, 15 % en volumen, +0,29 % en importe); Inmobiliario lidera con 343 operaciones, seguido de Internet/Software/IT (144) y Servicios Profesionales (121, +15 % i.a.). Entre las operaciones del verano destacan Alantra PE (75 % de DeudaFix), Unigrains Iberia en Haricaman y Wolters Kluwer adquiriendo Marosa (software IVA/e-invoicing).\n\nJensen Huang declaró el 17 de septiembre en Escocia que Nvidia prevé duplicar ventas de chips el próximo año pese a las restricciones severas en centros de datos de China.\n\nFuentes: BCE, Finect, AGM Abogados, Albia IMAP, Vantage Markets\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra contracción de deal count (, 15 % 1S, 9 % 8M) pero resiliencia de importe (50.474 M€ 1S, 63.787 M€ 8M) por operaciones corporativas de mayor escala.\n\nFuentes: AGM Abogados, Demócrata"
 }
