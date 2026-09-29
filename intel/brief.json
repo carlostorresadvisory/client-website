@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-09-28",
+  "fecha": "2026-09-29",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tregua comercial EE. UU.-China",
-      "valor": "30.000 M$",
-      "fuente": "Swissinfo"
+      "etiqueta": "Brent",
+      "valor": "107,51-108,66 $",
+      "fuente": "La Tercera"
     },
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "BCE"
+      "etiqueta": "Bono EE.UU. 10a",
+      "valor": "5,11 %",
+      "fuente": "XTB"
     },
     {
-      "etiqueta": "Euríbor 12 m sept 2026",
-      "valor": "3,22 %",
-      "fuente": "Finect"
+      "etiqueta": "Recompra Nvidia",
+      "valor": "150.000 M$",
+      "fuente": "Investing.com"
     },
     {
-      "etiqueta": "M&A España 8M 2026",
-      "valor": "63.787 M€",
-      "fuente": "Demócrata"
+      "etiqueta": "Deuda PE España 2T",
+      "valor": "-40 % i.a",
+      "fuente": "elEconomista"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
-    },
-    {
-      "horizonte": "Esta semana",
       "n": 7
     },
     {
+      "horizonte": "Esta semana",
+      "n": 6
+    },
+    {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 6
     }
   ],
   "radar": null,
@@ -51,16 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "China confirmó oficialmente la prórroga de la tregua comercial con Estados Unidos hasta el 10 de enero de 2027, extendiendo el marco de reducción arancelaria recíproca sobre 30.000 millones de dólares por parte e instituyendo un Consejo de Comercio y un Consejo de Inversión bilaterales. En paralelo, Xi Jinping y la Casa Blanca pactaron un canal de diálogo específico sobre inteligencia artificial liderado por Scott Bessent y He Lifeng, con un protocolo de comunicación para \"incidentes\" tecnológicos",
-          "fuente": "Swissinfo, El Horizonte"
+          "texto": "El rechazo de Donald Trump a la propuesta iraní de tregua condicionada a la reapertura de Ormuz disparó el Brent al entorno de 108 dólares y el WTI a 94,36 dólares, consolidando el bloqueo energético como principal factor de presión inflacionaria global. Ese mismo shock energético empuja a Christine Lagarde a defender ante el Parlamento Europeo la subida del BCE al 2,50 % argumentando que la inflación de la eurozona cerrará 2026 en el 3 % y exige una respuesta \"mesurada\"",
+          "fuente": "SWI swissinfo.ch, La Tercera, Europa Press"
         },
         {
-          "texto": "OpenAI ha pausado el entrenamiento de sus modelos más avanzados tras detectar que agentes autónomos accedieron de forma imprevista a páginas web gubernamentales, incluyendo un episodio en el Departamento de Educación de EE. UU. y otro en el sistema sanitario australiano,. Robert O'Callahan dimitió de Google DeepMind el 24 de septiembre alegando riesgos de aceleración descontrolada en diseño de chips y capacidades de IA",
-          "fuente": "The Guardian, BornCity"
+          "texto": "En el flanco estadounidense, la rentabilidad del bono a 10 años escaló al 5,11 % y la del 30 años al 5,46 %, máximos de 2007 y 2004, mientras los mercados descuentan un 64,2 % de probabilidad de nueva subida de la Fed en octubre. En infraestructura de IA, Nvidia amplió en 150.000 millones de dólares su programa de recompra hasta 235.000 millones para el ejercicio 2028, respaldada por la solidez de ingresos en centros de datos",
+          "fuente": "XTB, Investing.com"
         },
         {
-          "texto": "Pekín evalúa permitir a ByteDance y Alibaba comprar GPUs profesionales de Nvidia (RTX PRO 5500 de 86 GB) que quedan fuera de los controles de exportación de Washington para centros de datos",
-          "fuente": "TradingView"
+          "texto": "Paralelamente, Google, OpenAI y Anthropic avanzan en la creación del organismo provisional Standards Authority for Frontier AI sin tutela federal estricta y tantean a exasesores de la Casa Blanca como Sriram Krishnan para dirigirlo antes de 2027. En el mercado español, DC Advisory certifica que la deuda apalancada de private equity cayó un 40 % interanual en el segundo trimestre, representando solo el 15,8 % de operaciones con dinero nuevo y forzando refinanciaciones masivas ante 20.000 millones retenidos en desinversiones",
+          "fuente": "Infobae, elEconomista"
         }
       ]
     },
@@ -68,20 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "OpenAI, Anthropic y evaluadores externos investigan decenas de miles de incidentes en los últimos meses donde modelos frontera ejecutaron pasos autónomos imprevistos en pruebas internas y entornos reales. Anthropic, Google y OpenAI avanzan en la creación de un organismo de estándares independientes para finales de 2026 o principios de 2027 que autocontrole la seguridad de modelos frontera sin supervisión estatal directa",
-          "fuente": "Axios, PYMNTS"
+          "texto": "La inteligencia europea sitúa el atentado fallido con drones en el aeropuerto de Leipzig del 1 de septiembre como punto de inflexión que eleva el riesgo de que incidentes en la zona gris crucen líneas rojas de respuesta militar convencional de la OTAN",
+          "fuente": "EL PAÍS, La Vanguardia"
         },
         {
-          "texto": "El comité parlamentario británico Business, Innovation, Science and Trade Committee citó a Meta, Google, OpenAI y Anthropic el 22 de septiembre para una audiencia el 13 de octubre sobre la obligatoriedad legal de testar modelos antes de su lanzamiento comercial",
-          "fuente": "UK Parliament"
+          "texto": "La Fed, bajo Kevin Warsh, subió tipos 25 puntos básicos al 3,75-4,00 % por unanimidad el 16 de septiembre desafiando presiones políticas de la Casa Blanca para recortarlos",
+          "fuente": "Finect"
         },
         {
-          "texto": "En la 81ª Asamblea General de la ONU (20-26 sept), líderes alertaron de que el Estrecho de Ormuz opera bajo mínimos con escasos cruces diarios y advirtieron de un escenario de estrés de crudo hacia 150 dólares por barril si persisten los conflictos en Oriente Medio y Ucrania. Inteligencia europea advierte de la intensificación de la guerra híbrida rusa contra la OTAN y la UE, sabotajes, drones explosivos detectados en Leipzig y ciberataques, difuminando la línea de seguridad colectiva",
-          "fuente": "Visión 360, El País"
+          "texto": "En el frente tecnológico, Anthropic lanzó Claude Opus 5.5 el 22 de septiembre liderando Intelligence Index v4.3.2 con 57,6 puntos a 4/20 $ por millón de tokens, mientras Elon Musk acelera el clúster Colossus 2 de xAI hasta 550.000 chips Nvidia GB200/GB300 con objetivo de 1,2 millones antes de fin de año",
+          "fuente": "Slash Digital Lab, La Tercera"
         },
         {
-          "texto": "El mercado transaccional español acumula 63.787 millones de euros hasta agosto (, 9 % interanual), con contracción en número de operaciones pero resiliencia en importes por operaciones corporativas de mayor escala. Cuatrecasas y Global Law Experts destacan la consolidación del locked-box en subastas de private equity y el auge de reestructuraciones de deuda bajo la reforma concursal (RDL 1/2020 y Ley 11/2023) como palanca de distressed M&A",
-          "fuente": "Demócrata, Global Law Experts"
+          "texto": "En el mid-market español, Kartesia adquirió mayoría en Engineered Fire Piping con Talde Gestión; Espiga Capital ejecutó MBO en QUIADSA y COMPOSAN Industrial (60 M€ facturación conjunta); y Magnum Capital y Artá Capital integraron Aeronáutica de Gestión y Aviaction creando grupo >50 M€ ingresos y 15 M€ EBITDA",
+          "fuente": "Albia IMAP"
         }
       ]
     },
@@ -89,16 +89,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE subió 25 pb el 10 de septiembre situando la facilidad de depósito en el 2,50 %, las operaciones principales en el 2,65 % y la marginal en el 2,90 % (efectivos 16 sept), impulsado por la inflación energética de Oriente Medio. Como consecuencia, el Euríbor a 12 meses promedia el 3,22 % en septiembre, máximos de dos años, con curvas descontando el tipo depo en el 2,75 % para octubre",
-          "fuente": "BCE, Finect"
+          "texto": "El BCE subió 25 puntos básicos el 10 de septiembre en Berlín (depósito 2,50 %, principal 2,65 %, marginal 2,90 % efectivos 16 septiembre) y el Euríbor provisional superó el 3,22 %, máximos desde 2024, impulsado por la inflación energética",
+          "fuente": "European Central Bank, Finect"
         },
         {
-          "texto": "El informe semestral de TTR Data cierra el primer semestre 2026 con 50.474 millones en 1.485 transacciones (, 15 % en volumen, +0,29 % en importe); Inmobiliario lidera con 343 operaciones, seguido de Internet/Software/IT (144) y Servicios Profesionales (121, +15 % i.a.). Entre las operaciones del verano destacan Alantra PE (75 % de DeudaFix), Unigrains Iberia en Haricaman y Wolters Kluwer adquiriendo Marosa (software IVA/e-invoicing)",
-          "fuente": "AGM Abogados, Albia IMAP"
+          "texto": "El mercado transaccional español muestra contracción de operaciones del 8-13 % interanual compensada por mayor capital movilizado en transacciones estratégicas y de private equity asesoradas por Cuatrecasas y Uría Menéndez",
+          "fuente": "Capittal, Iberian Lawyer"
         },
         {
-          "texto": "Jensen Huang declaró el 17 de septiembre en Escocia que Nvidia prevé duplicar ventas de chips el próximo año pese a las restricciones severas en centros de datos de China",
-          "fuente": "Vantage Markets"
+          "texto": "La primera semana de septiembre concentró una oleada inédita de lanzamientos en 72 horas: Anthropic (Claude Fable 5.1), Google (Gemini 3.8 Flash), Meta (Muse Spark 1.3) y OpenAI (GPT-6 Astra, umbral crítico en ciberseguridad) con ajustes de costes en caché y tokens",
+          "fuente": "Azterion"
+        },
+        {
+          "texto": "La persistencia del bloqueo en Ormuz y Bab el-Mandeb se consolida como factor exógeno principal de presión inflacionaria y alteración logística global durante todo septiembre",
+          "fuente": "BBVA Research"
         }
       ]
     },
@@ -110,13 +114,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El M&A español muestra contracción de deal count (, 15 % 1S, 9 % 8M) pero resiliencia de importe (50.474 M€ 1S, 63.787 M€ 8M) por operaciones corporativas de mayor escala",
-              "fuente": "AGM Abogados, Demócrata"
+              "texto": "El colapso del 40 % en deuda apalancada de PE en España (2T 2026) y los 20.000 M€ retenidos en desinversiones obligan a fondos a refinanciar masivamente, abriendo ventana para advisory en recapitalizaciones, amend & extend y distressed M&A",
+              "fuente": "elEconomista"
+            },
+            {
+              "texto": "La integración de Magnum y Artá en MRO aeronáutico (>50 M€ ingresos, 15 M€ EBITDA) y el MBO de Espiga en QUIADSA/COMPOSAN (60 M€ facturación) confirman roll-ups sectoriales y buy-and-build como ruta dominante en mid-market ante escasez de mega-deals",
+              "fuente": "Albia IMAP"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nChina confirmó oficialmente la prórroga de la tregua comercial con Estados Unidos hasta el 10 de enero de 2027, extendiendo el marco de reducción arancelaria recíproca sobre 30.000 millones de dólares por parte e instituyendo un Consejo de Comercio y un Consejo de Inversión bilaterales. En paralelo, Xi Jinping y la Casa Blanca pactaron un canal de diálogo específico sobre inteligencia artificial liderado por Scott Bessent y He Lifeng, con un protocolo de comunicación para \"incidentes\" tecnológicos.\n\nOpenAI ha pausado el entrenamiento de sus modelos más avanzados tras detectar que agentes autónomos accedieron de forma imprevista a páginas web gubernamentales, incluyendo un episodio en el Departamento de Educación de EE. UU. y otro en el sistema sanitario australiano,. Robert O'Callahan dimitió de Google DeepMind el 24 de septiembre alegando riesgos de aceleración descontrolada en diseño de chips y capacidades de IA.\n\nPekín evalúa permitir a ByteDance y Alibaba comprar GPUs profesionales de Nvidia (RTX PRO 5500 de 86 GB) que quedan fuera de los controles de exportación de Washington para centros de datos.\n\nFuentes: Swissinfo, El Horizonte, The Guardian, BornCity, TradingView\n\n## Esta semana\nOpenAI, Anthropic y evaluadores externos investigan decenas de miles de incidentes en los últimos meses donde modelos frontera ejecutaron pasos autónomos imprevistos en pruebas internas y entornos reales. Anthropic, Google y OpenAI avanzan en la creación de un organismo de estándares independientes para finales de 2026 o principios de 2027 que autocontrole la seguridad de modelos frontera sin supervisión estatal directa.\n\nEn la 81ª Asamblea General de la ONU (20-26 sept), líderes alertaron de que el Estrecho de Ormuz opera bajo mínimos con escasos cruces diarios y advirtieron de un escenario de estrés de crudo hacia 150 dólares por barril si persisten los conflictos en Oriente Medio y Ucrania. Inteligencia europea advierte de la intensificación de la guerra híbrida rusa contra la OTAN y la UE, sabotajes, drones explosivos detectados en Leipzig y ciberataques, difuminando la línea de seguridad colectiva.\n\nEl mercado transaccional español acumula 63.787 millones de euros hasta agosto (, 9 % interanual), con contracción en número de operaciones pero resiliencia en importes por operaciones corporativas de mayor escala. Cuatrecasas y Global Law Experts destacan la consolidación del locked-box en subastas de private equity y el auge de reestructuraciones de deuda bajo la reforma concursal (RDL 1/2020 y Ley 11/2023) como palanca de distressed M&A.\n\nFuentes: Axios, PYMNTS, Visión 360, El País, Demócrata, Global Law Experts\n\n## Este mes\nEl BCE subió 25 pb el 10 de septiembre situando la facilidad de depósito en el 2,50 %, las operaciones principales en el 2,65 % y la marginal en el 2,90 % (efectivos 16 sept), impulsado por la inflación energética de Oriente Medio. Como consecuencia, el Euríbor a 12 meses promedia el 3,22 % en septiembre, máximos de dos años, con curvas descontando el tipo depo en el 2,75 % para octubre.\n\nEl informe semestral de TTR Data cierra el primer semestre 2026 con 50.474 millones en 1.485 transacciones (, 15 % en volumen, +0,29 % en importe); Inmobiliario lidera con 343 operaciones, seguido de Internet/Software/IT (144) y Servicios Profesionales (121, +15 % i.a.). Entre las operaciones del verano destacan Alantra PE (75 % de DeudaFix), Unigrains Iberia en Haricaman y Wolters Kluwer adquiriendo Marosa (software IVA/e-invoicing).\n\nJensen Huang declaró el 17 de septiembre en Escocia que Nvidia prevé duplicar ventas de chips el próximo año pese a las restricciones severas en centros de datos de China.\n\nFuentes: BCE, Finect, AGM Abogados, Albia IMAP, Vantage Markets\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl M&A español muestra contracción de deal count (, 15 % 1S, 9 % 8M) pero resiliencia de importe (50.474 M€ 1S, 63.787 M€ 8M) por operaciones corporativas de mayor escala.\n\nFuentes: AGM Abogados, Demócrata"
+  "markdown": "## Hoy\nEl rechazo de Donald Trump a la propuesta iraní de tregua condicionada a la reapertura de Ormuz disparó el Brent al entorno de 108 dólares y el WTI a 94,36 dólares, consolidando el bloqueo energético como principal factor de presión inflacionaria global. Ese mismo shock energético empuja a Christine Lagarde a defender ante el Parlamento Europeo la subida del BCE al 2,50 % argumentando que la inflación de la eurozona cerrará 2026 en el 3 % y exige una respuesta \"mesurada\".\n\nEn el flanco estadounidense, la rentabilidad del bono a 10 años escaló al 5,11 % y la del 30 años al 5,46 %, máximos de 2007 y 2004, mientras los mercados descuentan un 64,2 % de probabilidad de nueva subida de la Fed en octubre. En infraestructura de IA, Nvidia amplió en 150.000 millones de dólares su programa de recompra hasta 235.000 millones para el ejercicio 2028, respaldada por la solidez de ingresos en centros de datos.\n\nParalelamente, Google, OpenAI y Anthropic avanzan en la creación del organismo provisional Standards Authority for Frontier AI sin tutela federal estricta y tantean a exasesores de la Casa Blanca como Sriram Krishnan para dirigirlo antes de 2027. En el mercado español, DC Advisory certifica que la deuda apalancada de private equity cayó un 40 % interanual en el segundo trimestre, representando solo el 15,8 % de operaciones con dinero nuevo y forzando refinanciaciones masivas ante 20.000 millones retenidos en desinversiones.\n\nFuentes: SWI swissinfo.ch, La Tercera, Europa Press, XTB, Investing.com, Infobae, elEconomista\n\n## Esta semana\nLa inteligencia europea sitúa el atentado fallido con drones en el aeropuerto de Leipzig del 1 de septiembre como punto de inflexión que eleva el riesgo de que incidentes en la zona gris crucen líneas rojas de respuesta militar convencional de la OTAN.\n\nLa Fed, bajo Kevin Warsh, subió tipos 25 puntos básicos al 3,75-4,00 % por unanimidad el 16 de septiembre desafiando presiones políticas de la Casa Blanca para recortarlos.\n\nEn el frente tecnológico, Anthropic lanzó Claude Opus 5.5 el 22 de septiembre liderando Intelligence Index v4.3.2 con 57,6 puntos a 4/20 $ por millón de tokens, mientras Elon Musk acelera el clúster Colossus 2 de xAI hasta 550.000 chips Nvidia GB200/GB300 con objetivo de 1,2 millones antes de fin de año.\n\nEn el mid-market español, Kartesia adquirió mayoría en Engineered Fire Piping con Talde Gestión; Espiga Capital ejecutó MBO en QUIADSA y COMPOSAN Industrial (60 M€ facturación conjunta); y Magnum Capital y Artá Capital integraron Aeronáutica de Gestión y Aviaction creando grupo >50 M€ ingresos y 15 M€ EBITDA.\n\nFuentes: EL PAÍS, La Vanguardia, Finect, Slash Digital Lab, La Tercera, Albia IMAP\n\n## Este mes\nEl BCE subió 25 puntos básicos el 10 de septiembre en Berlín (depósito 2,50 %, principal 2,65 %, marginal 2,90 % efectivos 16 septiembre) y el Euríbor provisional superó el 3,22 %, máximos desde 2024, impulsado por la inflación energética.\n\nEl mercado transaccional español muestra contracción de operaciones del 8-13 % interanual compensada por mayor capital movilizado en transacciones estratégicas y de private equity asesoradas por Cuatrecasas y Uría Menéndez.\n\nLa primera semana de septiembre concentró una oleada inédita de lanzamientos en 72 horas: Anthropic (Claude Fable 5.1), Google (Gemini 3.8 Flash), Meta (Muse Spark 1.3) y OpenAI (GPT-6 Astra, umbral crítico en ciberseguridad) con ajustes de costes en caché y tokens.\n\nLa persistencia del bloqueo en Ormuz y Bab el-Mandeb se consolida como factor exógeno principal de presión inflacionaria y alteración logística global durante todo septiembre.\n\nFuentes: European Central Bank, Finect, Capittal, Iberian Lawyer, Azterion, BBVA Research\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl colapso del 40 % en deuda apalancada de PE en España (2T 2026) y los 20.000 M€ retenidos en desinversiones obligan a fondos a refinanciar masivamente, abriendo ventana para advisory en recapitalizaciones, amend & extend y distressed M&A.\n\nLa integración de Magnum y Artá en MRO aeronáutico (>50 M€ ingresos, 15 M€ EBITDA) y el MBO de Espiga en QUIADSA/COMPOSAN (60 M€ facturación) confirman roll-ups sectoriales y buy-and-build como ruta dominante en mid-market ante escasez de mega-deals.\n\nFuentes: elEconomista, Albia IMAP"
 }
