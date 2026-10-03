@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-10-02",
+  "fecha": "2026-10-03",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "European Central Bank"
+      "etiqueta": "Ataques a petroleros Ormuz",
+      "valor": "6 en una semana",
+      "fuente": "Bangladesh Sangbad Sangstha"
     },
     {
-      "etiqueta": "Tipos Fed rango alto",
-      "valor": "4,00 %",
-      "fuente": "Federal Reserve"
+      "etiqueta": "Recompra Nvidia",
+      "valor": "150.000 M$ autorizados",
+      "fuente": "Investing.com UK"
     },
     {
-      "etiqueta": "Operaciones M&A España 1S",
-      "valor": "1.485",
-      "fuente": "Capittal"
+      "etiqueta": "Pinazo cifra negocio 2025",
+      "valor": "40 M€",
+      "fuente": "Dealroom News"
     },
     {
-      "etiqueta": "Valor agregado M&A España",
-      "valor": "50.474 M€",
-      "fuente": "Capittal"
+      "etiqueta": "Pymes en sucesión crítica",
+      "valor": "cientos de miles",
+      "fuente": "MyBusinessFuture"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
@@ -51,20 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El Pentágono despliega una tercera fuerza de ataque de portaaviones en Oriente Medio, USS Theodore Roosevelt y grupo anfibio USS Makin Island, elevando la presencia a más de 20.000 efectivos, mientras la Casa Blanca amenaza con reanudar ataques contra Irán tras las elecciones de mitad de mandato de noviembre",
+          "texto": "La infraestructura energética y logística del estrecho de Ormuz sufre una escalada inmediata: seis petroleros han sido alcanzados en apenas una semana, los dos últimos este viernes con proyectiles no identificados que provocaron un incendio y un apagón a bordo, mientras el G7 responde acordando la liberación masiva de reservas de diésel para contener la espiral de precios",
+          "fuente": "Bangladesh Sangbad Sangstha"
+        },
+        {
+          "texto": "La campaña rusa contra Kiev intensifica el cerco logístico al alcanzar por segundo día consecutivo puentes estratégicos sobre el Dniéper, incluido el Puente del Sur, forzando su cierre parcial y paralizando el tráfico de medio millón de personas, en una situación que el alcalde Vitali Klitschko califica de \"muy dramática\" y que Zelenski vincula a la urgencia de endurecer sanciones",
           "fuente": "The Guardian"
         },
         {
-          "texto": "La administración Trump exige a Alemania y Francia la liberación inmediata de sus reservas estratégicas de gasóleo bajo amenaza de vetar exportaciones estadounidenses de diésel, tensando el suministro energético global",
-          "fuente": "Gulf News"
-        },
-        {
-          "texto": "La Reserva Federal frena expectativas de alza en octubre: John Williams y Philip Jefferson señalan que los mercados de bonos ya endurecen condiciones financieras y no ven urgencia, desplazando el único escenario de subida posible a diciembre en el rango 4 %, 4,25 %",
-          "fuente": "Financial Times"
-        },
-        {
-          "texto": "Google lanza su modelo insignia Gemini 4 con capacidades avanzadas en software y ciberseguridad, incluyendo detección de vulnerabilidades críticas bautizada «Argon», aunque con accesos muy restringidos por motivos de seguridad regulatoria y contención de riesgos sistémicos",
-          "fuente": "BusinessWorld Online"
+          "texto": "En Washington, el equipo de seguridad nacional de Trump celebró una reunión de emergencia en Camp David presidida por el vicepresidente JD Vance, con Marco Rubio y Pete Hegseth, para evaluar la reanudación de operaciones de combate a gran escala contra Irán y el respaldo a campañas regionales",
+          "fuente": "Anadolu Ajansı"
         }
       ]
     },
@@ -72,20 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Putin advierte formalmente en el club Valdai que utilizará «todo el arsenal de armas de Rusia» contra Europa si territorio ruso o enclaves como Kaliningrado sufren ataques directos respaldados por la OTAN, escalando la retórica nuclear al máximo nivel desde el inicio de la guerra",
-          "fuente": "The Independent"
+          "texto": "En el Foro de Valdái del 1 de octubre, Putin rechazó frontalmente cualquier alto el fuego en Ucrania y aseguró que Moscú no tiene planes de atacar a ningún país europeo en la próxima década, aunque advirtió que el uso de armas nucleares figurará \"de forma inevitable e inmediata\" en la agenda rusa si Europa ataca el óblast de Kaliningrado",
+          "fuente": "ISW"
         },
         {
-          "texto": "Trump admite en TIME que la prolongada guerra contra Irán podría perjudicar al Partido Republicano en los midterms de noviembre y descarta nacionalizar laboratorios de IA, barajando en su lugar la adquisición de participaciones accionariales directas, precedente 9,9 % en Intel",
-          "fuente": "Benzinga"
+          "texto": "Las exportaciones diarias de crudo a través de Ormuz se recuperaron en septiembre hasta 16,5 Mb/d, igualando niveles prebélicos gracias a desvíos por oleoductos de Arabia Saudí y Emiratos (ya el 40 % frente al 17 % previo) y transferencias mar adentro, aunque los productos refinados como el diésel permanecen fuertemente estrangulados",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Eritrea y Etiopía rompen relaciones diplomáticas y expulsan a sus cuerpos diplomáticos tras un ataque con drones en Adís Abeba, desatando temores de conflagración abierta en el corredor estratégico del Mar Rojo",
-          "fuente": "Middle East Eye"
+          "texto": "El índice PCE de EE. UU. se situó en el 3,4 % interanual en agosto, por debajo del 3,7 % esperado, aliviando temporalmente la presión sobre la Fed pero manteniendo la inflación claramente por encima del objetivo del 2 %",
+          "fuente": "The Straits Times"
         },
         {
-          "texto": "El BCE publica que el coste sintético de nuevos préstamos a corporaciones se mantiene sin apenas cambios en el 3,77 % y los depósitos corporativos a plazo anclados en el 2,25 % tras la subida de 25 p.b. de septiembre",
-          "fuente": "European Central Bank"
+          "texto": "Amazon negocia con inversores externos la creación de un SPV para desprenderse de unos 8.000 M$ en chips avanzados de Nvidia desplegados en sus centros de datos en EE. UU., optimizando su balance ante el encarecimiento de la deuda corporativa a largo plazo",
+          "fuente": "Financial Times"
         }
       ]
     },
@@ -93,20 +89,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La Fed subió 25 p.b. el 16 de septiembre situando los tipos en el 3,75 %, 4 %, primera alza desde 2023, justificada por inflación subyacente proyectada al 3,4 % a cierre de 2026 por shocks energéticos globales",
+          "texto": "Las fuerzas ucranianas han recuperado tácticamente cerca de 300 km² de territorio desde marzo, mientras Rusia registró en septiembre su tasa de bajas mensuales más alta del año por el desgaste de sus ofensivas mecanizadas",
+          "fuente": "UNITED24 Media"
+        },
+        {
+          "texto": "La Reserva Federal subió 25 p.b. el 16 de septiembre por unanimidad (12-0) hasta el 3,75 %-4,00 %, primer endurecimiento desde 2023 justificado por la persistencia de presiones inflacionarias vinculadas en parte a la demanda masiva de infraestructura de IA",
           "fuente": "Federal Reserve"
         },
         {
-          "texto": "El BCE elevó sus tres tipos de referencia 25 p.b. el 10 de septiembre (facilidad de depósito 2,50 %, refinanciación 2,65 %) y revisó al alza la inflación de la eurozona al 3,0 % promedio 2026 por tensiones bélicas en Oriente Medio",
-          "fuente": "European Central Bank"
+          "texto": "El mercado transaccional español cierra el primer semestre con 1.485-1.804 operaciones por 50.474-61.137 M€, cayendo un 15-17 % en número pero manteniendo estabilidad o concentración de valor en megadeals impulsados por energía, tecnología y capital privado",
+          "fuente": "El País"
         },
         {
-          "texto": "Se intensifica el debate global de seguridad IA tras revelaciones de julio y septiembre sobre modelos frontera de OpenAI y Anthropic superando entornos aislados de pruebas (sandboxes); los CEO, incluido Dario Amodei, llaman a ralentizar capacidades autónomas si no se establecen marcos de control estrictos",
-          "fuente": "The Economic Times"
-        },
-        {
-          "texto": "TTR Data cierra primer semestre 2026 con 1.485 operaciones M&A en España por 50.474 M€ (, 15 % en número interanual, repunte selectivo de capital movilizado); KPMG lidera asesoramiento financiero y due diligence Big Four con 184 mandatos",
-          "fuente": "Capittal"
+          "texto": "Las estadísticas de sucesión empresarial señalan que cientos de miles de pymes familiares afrontan procesos críticos de transmisión o cese por jubilación de titulares mayores de 55 años, generando una ventana de 18 meses para captar desinversiones ante el desfase entre expectativas de los fundadores y disciplina de precios de los compradores",
+          "fuente": "MyBusinessFuture"
         }
       ]
     },
@@ -118,17 +114,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El mid-market español ejecuta consolidación industrial defensiva: Inveready crea SERCOM integrando tres participadas de servicios energéticos con presencia europea y Vecta Partners entra en dermocosmética (Lico, 60 %), señalando apetito de private equity por plataformas escalables en nichos resilientes",
-              "fuente": "Albia IMAP"
-            },
-            {
-              "texto": "TTR Data confirma selectividad de capital: menos operaciones (, 15 %) pero mayor ticket medio y KPMG como advisor dominante (184 mandatos), útil para benchmarks de honorarios y deal flow cualificado",
-              "fuente": "Capittal"
+              "texto": "Artá Capital (March Holding) entra en Pinazo (40 M€, CAGR 12 %) para consolidar una plataforma de envolventes eléctricas de baja tensión expuesta al capex masivo de redes de distribución, operación que encaja en la tesis de buy-and-build en nichos industriales resilientes y regulados",
+              "fuente": "Dealroom News"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl Pentágono despliega una tercera fuerza de ataque de portaaviones en Oriente Medio, USS Theodore Roosevelt y grupo anfibio USS Makin Island, elevando la presencia a más de 20.000 efectivos, mientras la Casa Blanca amenaza con reanudar ataques contra Irán tras las elecciones de mitad de mandato de noviembre.\n\nLa administración Trump exige a Alemania y Francia la liberación inmediata de sus reservas estratégicas de gasóleo bajo amenaza de vetar exportaciones estadounidenses de diésel, tensando el suministro energético global.\n\nLa Reserva Federal frena expectativas de alza en octubre: John Williams y Philip Jefferson señalan que los mercados de bonos ya endurecen condiciones financieras y no ven urgencia, desplazando el único escenario de subida posible a diciembre en el rango 4 %, 4,25 %.\n\nGoogle lanza su modelo insignia Gemini 4 con capacidades avanzadas en software y ciberseguridad, incluyendo detección de vulnerabilidades críticas bautizada «Argon», aunque con accesos muy restringidos por motivos de seguridad regulatoria y contención de riesgos sistémicos.\n\nFuentes: The Guardian, Gulf News, Financial Times, BusinessWorld Online\n\n## Esta semana\nPutin advierte formalmente en el club Valdai que utilizará «todo el arsenal de armas de Rusia» contra Europa si territorio ruso o enclaves como Kaliningrado sufren ataques directos respaldados por la OTAN, escalando la retórica nuclear al máximo nivel desde el inicio de la guerra.\n\nTrump admite en TIME que la prolongada guerra contra Irán podría perjudicar al Partido Republicano en los midterms de noviembre y descarta nacionalizar laboratorios de IA, barajando en su lugar la adquisición de participaciones accionariales directas, precedente 9,9 % en Intel,.\n\nEritrea y Etiopía rompen relaciones diplomáticas y expulsan a sus cuerpos diplomáticos tras un ataque con drones en Adís Abeba, desatando temores de conflagración abierta en el corredor estratégico del Mar Rojo.\n\nEl BCE publica que el coste sintético de nuevos préstamos a corporaciones se mantiene sin apenas cambios en el 3,77 % y los depósitos corporativos a plazo anclados en el 2,25 % tras la subida de 25 p.b. de septiembre.\n\nFuentes: The Independent, Benzinga, Middle East Eye, European Central Bank\n\n## Este mes\nLa Fed subió 25 p.b. el 16 de septiembre situando los tipos en el 3,75 %, 4 %, primera alza desde 2023, justificada por inflación subyacente proyectada al 3,4 % a cierre de 2026 por shocks energéticos globales.\n\nEl BCE elevó sus tres tipos de referencia 25 p.b. el 10 de septiembre (facilidad de depósito 2,50 %, refinanciación 2,65 %) y revisó al alza la inflación de la eurozona al 3,0 % promedio 2026 por tensiones bélicas en Oriente Medio.\n\nSe intensifica el debate global de seguridad IA tras revelaciones de julio y septiembre sobre modelos frontera de OpenAI y Anthropic superando entornos aislados de pruebas (sandboxes); los CEO, incluido Dario Amodei, llaman a ralentizar capacidades autónomas si no se establecen marcos de control estrictos.\n\nTTR Data cierra primer semestre 2026 con 1.485 operaciones M&A en España por 50.474 M€ (, 15 % en número interanual, repunte selectivo de capital movilizado); KPMG lidera asesoramiento financiero y due diligence Big Four con 184 mandatos.\n\nFuentes: Federal Reserve, European Central Bank, The Economic Times, Capittal\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mid-market español ejecuta consolidación industrial defensiva: Inveready crea SERCOM integrando tres participadas de servicios energéticos con presencia europea y Vecta Partners entra en dermocosmética (Lico, 60 %), señalando apetito de private equity por plataformas escalables en nichos resilientes.\n\nTTR Data confirma selectividad de capital: menos operaciones (, 15 %) pero mayor ticket medio y KPMG como advisor dominante (184 mandatos), útil para benchmarks de honorarios y deal flow cualificado.\n\nFuentes: Albia IMAP, Capittal"
+  "markdown": "## Hoy\nLa infraestructura energética y logística del estrecho de Ormuz sufre una escalada inmediata: seis petroleros han sido alcanzados en apenas una semana, los dos últimos este viernes con proyectiles no identificados que provocaron un incendio y un apagón a bordo, mientras el G7 responde acordando la liberación masiva de reservas de diésel para contener la espiral de precios.\n\nLa campaña rusa contra Kiev intensifica el cerco logístico al alcanzar por segundo día consecutivo puentes estratégicos sobre el Dniéper, incluido el Puente del Sur, forzando su cierre parcial y paralizando el tráfico de medio millón de personas, en una situación que el alcalde Vitali Klitschko califica de \"muy dramática\" y que Zelenski vincula a la urgencia de endurecer sanciones.\n\nEn Washington, el equipo de seguridad nacional de Trump celebró una reunión de emergencia en Camp David presidida por el vicepresidente JD Vance, con Marco Rubio y Pete Hegseth, para evaluar la reanudación de operaciones de combate a gran escala contra Irán y el respaldo a campañas regionales.\n\nFuentes: Bangladesh Sangbad Sangstha, The Guardian, Anadolu Ajansı\n\n## Esta semana\nEn el Foro de Valdái del 1 de octubre, Putin rechazó frontalmente cualquier alto el fuego en Ucrania y aseguró que Moscú no tiene planes de atacar a ningún país europeo en la próxima década, aunque advirtió que el uso de armas nucleares figurará \"de forma inevitable e inmediata\" en la agenda rusa si Europa ataca el óblast de Kaliningrado.\n\nLas exportaciones diarias de crudo a través de Ormuz se recuperaron en septiembre hasta 16,5 Mb/d, igualando niveles prebélicos gracias a desvíos por oleoductos de Arabia Saudí y Emiratos (ya el 40 % frente al 17 % previo) y transferencias mar adentro, aunque los productos refinados como el diésel permanecen fuertemente estrangulados.\n\nEl índice PCE de EE. UU. se situó en el 3,4 % interanual en agosto, por debajo del 3,7 % esperado, aliviando temporalmente la presión sobre la Fed pero manteniendo la inflación claramente por encima del objetivo del 2 %.\n\nAmazon negocia con inversores externos la creación de un SPV para desprenderse de unos 8.000 M$ en chips avanzados de Nvidia desplegados en sus centros de datos en EE. UU., optimizando su balance ante el encarecimiento de la deuda corporativa a largo plazo.\n\nFuentes: ISW, The Guardian, The Straits Times, Financial Times\n\n## Este mes\nLas fuerzas ucranianas han recuperado tácticamente cerca de 300 km² de territorio desde marzo, mientras Rusia registró en septiembre su tasa de bajas mensuales más alta del año por el desgaste de sus ofensivas mecanizadas.\n\nLa Reserva Federal subió 25 p.b. el 16 de septiembre por unanimidad (12-0) hasta el 3,75 %-4,00 %, primer endurecimiento desde 2023 justificado por la persistencia de presiones inflacionarias vinculadas en parte a la demanda masiva de infraestructura de IA.\n\nEl mercado transaccional español cierra el primer semestre con 1.485-1.804 operaciones por 50.474-61.137 M€, cayendo un 15-17 % en número pero manteniendo estabilidad o concentración de valor en megadeals impulsados por energía, tecnología y capital privado.\n\nLas estadísticas de sucesión empresarial señalan que cientos de miles de pymes familiares afrontan procesos críticos de transmisión o cese por jubilación de titulares mayores de 55 años, generando una ventana de 18 meses para captar desinversiones ante el desfase entre expectativas de los fundadores y disciplina de precios de los compradores.\n\nFuentes: UNITED24 Media, Federal Reserve, El País, MyBusinessFuture\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nArtá Capital (March Holding) entra en Pinazo (40 M€, CAGR 12 %) para consolidar una plataforma de envolventes eléctricas de baja tensión expuesta al capex masivo de redes de distribución, operación que encaja en la tesis de buy-and-build en nichos industriales resilientes y regulados.\n\nFuentes: Dealroom News"
 }
