@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-10-03",
+  "fecha": "2026-10-04",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Ataques a petroleros Ormuz",
-      "valor": "6 en una semana",
-      "fuente": "Bangladesh Sangbad Sangstha"
+      "etiqueta": "Inflación eurozona sep",
+      "valor": "3,8%",
+      "fuente": "El Español"
     },
     {
-      "etiqueta": "Recompra Nvidia",
-      "valor": "150.000 M$ autorizados",
-      "fuente": "Investing.com UK"
+      "etiqueta": "Inflación España sep",
+      "valor": "5%",
+      "fuente": "El Español"
     },
     {
-      "etiqueta": "Pinazo cifra negocio 2025",
-      "valor": "40 M€",
-      "fuente": "Dealroom News"
+      "etiqueta": "Tipos Fed rango sup",
+      "valor": "4,00%",
+      "fuente": "Rankia"
     },
     {
-      "etiqueta": "Pymes en sucesión crítica",
-      "valor": "cientos de miles",
-      "fuente": "MyBusinessFuture"
+      "etiqueta": "Recompra Nvidia ampliación",
+      "valor": "150.000 M$",
+      "fuente": "Cinco Días"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 2
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 7
     },
     {
       "horizonte": "Este mes",
@@ -51,16 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La infraestructura energética y logística del estrecho de Ormuz sufre una escalada inmediata: seis petroleros han sido alcanzados en apenas una semana, los dos últimos este viernes con proyectiles no identificados que provocaron un incendio y un apagón a bordo, mientras el G7 responde acordando la liberación masiva de reservas de diésel para contener la espiral de precios",
-          "fuente": "Bangladesh Sangbad Sangstha"
+          "texto": "La ofensiva rusa se recrudeció el 3 de octubre con el bombardeo del Puente Norte de Kiev y el ataque a un buque mercante con bandera liberiana en Odesa, que dejó un marinero muerto y tres heridos, mientras Moscú emitió una advertencia de \"riesgo mortal\" instando a diplomáticos extranjeros a abandonar la capital",
+          "fuente": "El Periódico"
         },
         {
-          "texto": "La campaña rusa contra Kiev intensifica el cerco logístico al alcanzar por segundo día consecutivo puentes estratégicos sobre el Dniéper, incluido el Puente del Sur, forzando su cierre parcial y paralizando el tráfico de medio millón de personas, en una situación que el alcalde Vitali Klitschko califica de \"muy dramática\" y que Zelenski vincula a la urgencia de endurecer sanciones",
-          "fuente": "The Guardian"
-        },
-        {
-          "texto": "En Washington, el equipo de seguridad nacional de Trump celebró una reunión de emergencia en Camp David presidida por el vicepresidente JD Vance, con Marco Rubio y Pete Hegseth, para evaluar la reanudación de operaciones de combate a gran escala contra Irán y el respaldo a campañas regionales",
-          "fuente": "Anadolu Ajansı"
+          "texto": "La NASA e IBM presentaron un modelo de IA capaz de procesar décadas de datos satelitales para anticipar tormentas extremas y crisis climáticas, demostrando la aplicación de grandes modelos fundacionales a la observación terrestre operativa",
+          "fuente": "TN"
         }
       ]
     },
@@ -68,20 +64,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "En el Foro de Valdái del 1 de octubre, Putin rechazó frontalmente cualquier alto el fuego en Ucrania y aseguró que Moscú no tiene planes de atacar a ningún país europeo en la próxima década, aunque advirtió que el uso de armas nucleares figurará \"de forma inevitable e inmediata\" en la agenda rusa si Europa ataca el óblast de Kaliningrado",
-          "fuente": "ISW"
+          "texto": "La inflación de la eurozona repuntó al 3,8% interanual en septiembre (frente al 3,2% de agosto), impulsada por el salto energético del 18,8%, con España marcando el 5%, la tasa más alta entre las grandes economías, y presionando al BCE para volver a subir tipos tras el movimiento de 25 p.b. del 10 de septiembre. En Washington, Lorie Logan (Fed Dallas) avisó de que hacen falta al menos 50 puntos básicos adicionales para dominar la inflación, enfriando la lectura de \"sin urgencia\" de John Williams y abriendo la puerta a endurecimiento en diciembre tras la pausa de octubre",
+          "fuente": "El Español, Investing.com"
         },
         {
-          "texto": "Las exportaciones diarias de crudo a través de Ormuz se recuperaron en septiembre hasta 16,5 Mb/d, igualando niveles prebélicos gracias a desvíos por oleoductos de Arabia Saudí y Emiratos (ya el 40 % frente al 17 % previo) y transferencias mar adentro, aunque los productos refinados como el diésel permanecen fuertemente estrangulados",
-          "fuente": "The Guardian"
+          "texto": "Nvidia anunció una recompra histórica de 150.000 M$ que eleva la autorización total a 235.000 M$ hasta el ejercicio fiscal 2028, respaldando una capitalización próxima a 5,7 billones y señalando confianza en la caja generada por la demanda de IA. El DOJ detuvo al fundador de Earthmade Computer por contrabandear a China servidores con aceleradores Nvidia valorados en 300 M$ eludiendo controles de exportación vía Malasia y Singapur, en el mayor caso penal conocido de evasión de restricciones de chips de IA",
+          "fuente": "Cinco Días, Moncloa"
         },
         {
-          "texto": "El índice PCE de EE. UU. se situó en el 3,4 % interanual en agosto, por debajo del 3,7 % esperado, aliviando temporalmente la presión sobre la Fed pero manteniendo la inflación claramente por encima del objetivo del 2 %",
-          "fuente": "The Straits Times"
-        },
-        {
-          "texto": "Amazon negocia con inversores externos la creación de un SPV para desprenderse de unos 8.000 M$ en chips avanzados de Nvidia desplegados en sus centros de datos en EE. UU., optimizando su balance ante el encarecimiento de la deuda corporativa a largo plazo",
-          "fuente": "Financial Times"
+          "texto": "Google DeepMind lanzó Gemini 4 Argón, modelo orientado a ingeniería de software y ciberseguridad con ventana de salida de 1 millón de tokens y 68% en CWE-bench v1, elevando el estándar de contexto largo para código seguro. Un estudio de Epoch AI cuantificó que el coste computacional por rendimiento equivalente cae un 47% por trimestre (13× al año), rompiendo la ley de Moore y reescribiendo la economía de entrenamiento e inferencia a gran escala. Expertos de MTP alertaron el 2 de octubre del impacto operativo del AI Act europeo, que obliga a desplegar plataformas internas de gobernanza, inventario de modelos y mitigación de riesgo algorítmico con plazos de cumplimiento ya en marcha",
+          "fuente": "Reviblog, Xataka, Europa Press"
         }
       ]
     },
@@ -89,20 +81,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Las fuerzas ucranianas han recuperado tácticamente cerca de 300 km² de territorio desde marzo, mientras Rusia registró en septiembre su tasa de bajas mensuales más alta del año por el desgaste de sus ofensivas mecanizadas",
-          "fuente": "UNITED24 Media"
+          "texto": "El BCE subió 25 puntos básicos el 10 de septiembre (depósito al 2,50%, principal al 2,65%, marginal al 2,90%) por segunda vez en el año, citando explícitamente la tensión energética en Oriente Medio como riesgo de inflación prolongada. La Reserva Federal endureció por unanimidad 25 p.b. el 16 de septiembre hasta el rango 3,75%-4,00%, primer alza desde 2023, justificada en la persistencia de presiones inflacionarias ligadas en parte a la demanda masiva de infraestructura de IA",
+          "fuente": "El País, Rankia"
         },
         {
-          "texto": "La Reserva Federal subió 25 p.b. el 16 de septiembre por unanimidad (12-0) hasta el 3,75 %-4,00 %, primer endurecimiento desde 2023 justificado por la persistencia de presiones inflacionarias vinculadas en parte a la demanda masiva de infraestructura de IA",
-          "fuente": "Federal Reserve"
+          "texto": "OpenAI, Anthropic y Google DeepMind anunciaron a mediados de septiembre la creación conjunta de un organismo privado de supervisión de riesgos de IA inspirado en la FINRA financiera, generando recelos en competidores europeos como Mistral por su carácter de autorregulación de los líderes de mercado",
+          "fuente": "El País Uruguay"
         },
         {
-          "texto": "El mercado transaccional español cierra el primer semestre con 1.485-1.804 operaciones por 50.474-61.137 M€, cayendo un 15-17 % en número pero manteniendo estabilidad o concentración de valor en megadeals impulsados por energía, tecnología y capital privado",
-          "fuente": "El País"
-        },
-        {
-          "texto": "Las estadísticas de sucesión empresarial señalan que cientos de miles de pymes familiares afrontan procesos críticos de transmisión o cese por jubilación de titulares mayores de 55 años, generando una ventana de 18 meses para captar desinversiones ante el desfase entre expectativas de los fundadores y disciplina de precios de los compradores",
-          "fuente": "MyBusinessFuture"
+          "texto": "Nvidia avaló financieramente a OpenAI ante SB Energy para un megaproyecto de centros de datos de 4,25 GW en Ohio con un límite de responsabilidad de 105.000 M$ condicionado al uso exclusivo de hardware Nvidia, entrelazando capacidad energética, financiación y bloqueo de ecosistema",
+          "fuente": "XTB"
         }
       ]
     },
@@ -112,15 +100,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "Artá Capital (March Holding) entra en Pinazo (40 M€, CAGR 12 %) para consolidar una plataforma de envolventes eléctricas de baja tensión expuesta al capex masivo de redes de distribución, operación que encaja en la tesis de buy-and-build en nichos industriales resilientes y regulados",
-              "fuente": "Dealroom News"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa infraestructura energética y logística del estrecho de Ormuz sufre una escalada inmediata: seis petroleros han sido alcanzados en apenas una semana, los dos últimos este viernes con proyectiles no identificados que provocaron un incendio y un apagón a bordo, mientras el G7 responde acordando la liberación masiva de reservas de diésel para contener la espiral de precios.\n\nLa campaña rusa contra Kiev intensifica el cerco logístico al alcanzar por segundo día consecutivo puentes estratégicos sobre el Dniéper, incluido el Puente del Sur, forzando su cierre parcial y paralizando el tráfico de medio millón de personas, en una situación que el alcalde Vitali Klitschko califica de \"muy dramática\" y que Zelenski vincula a la urgencia de endurecer sanciones.\n\nEn Washington, el equipo de seguridad nacional de Trump celebró una reunión de emergencia en Camp David presidida por el vicepresidente JD Vance, con Marco Rubio y Pete Hegseth, para evaluar la reanudación de operaciones de combate a gran escala contra Irán y el respaldo a campañas regionales.\n\nFuentes: Bangladesh Sangbad Sangstha, The Guardian, Anadolu Ajansı\n\n## Esta semana\nEn el Foro de Valdái del 1 de octubre, Putin rechazó frontalmente cualquier alto el fuego en Ucrania y aseguró que Moscú no tiene planes de atacar a ningún país europeo en la próxima década, aunque advirtió que el uso de armas nucleares figurará \"de forma inevitable e inmediata\" en la agenda rusa si Europa ataca el óblast de Kaliningrado.\n\nLas exportaciones diarias de crudo a través de Ormuz se recuperaron en septiembre hasta 16,5 Mb/d, igualando niveles prebélicos gracias a desvíos por oleoductos de Arabia Saudí y Emiratos (ya el 40 % frente al 17 % previo) y transferencias mar adentro, aunque los productos refinados como el diésel permanecen fuertemente estrangulados.\n\nEl índice PCE de EE. UU. se situó en el 3,4 % interanual en agosto, por debajo del 3,7 % esperado, aliviando temporalmente la presión sobre la Fed pero manteniendo la inflación claramente por encima del objetivo del 2 %.\n\nAmazon negocia con inversores externos la creación de un SPV para desprenderse de unos 8.000 M$ en chips avanzados de Nvidia desplegados en sus centros de datos en EE. UU., optimizando su balance ante el encarecimiento de la deuda corporativa a largo plazo.\n\nFuentes: ISW, The Guardian, The Straits Times, Financial Times\n\n## Este mes\nLas fuerzas ucranianas han recuperado tácticamente cerca de 300 km² de territorio desde marzo, mientras Rusia registró en septiembre su tasa de bajas mensuales más alta del año por el desgaste de sus ofensivas mecanizadas.\n\nLa Reserva Federal subió 25 p.b. el 16 de septiembre por unanimidad (12-0) hasta el 3,75 %-4,00 %, primer endurecimiento desde 2023 justificado por la persistencia de presiones inflacionarias vinculadas en parte a la demanda masiva de infraestructura de IA.\n\nEl mercado transaccional español cierra el primer semestre con 1.485-1.804 operaciones por 50.474-61.137 M€, cayendo un 15-17 % en número pero manteniendo estabilidad o concentración de valor en megadeals impulsados por energía, tecnología y capital privado.\n\nLas estadísticas de sucesión empresarial señalan que cientos de miles de pymes familiares afrontan procesos críticos de transmisión o cese por jubilación de titulares mayores de 55 años, generando una ventana de 18 meses para captar desinversiones ante el desfase entre expectativas de los fundadores y disciplina de precios de los compradores.\n\nFuentes: UNITED24 Media, Federal Reserve, El País, MyBusinessFuture\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nArtá Capital (March Holding) entra en Pinazo (40 M€, CAGR 12 %) para consolidar una plataforma de envolventes eléctricas de baja tensión expuesta al capex masivo de redes de distribución, operación que encaja en la tesis de buy-and-build en nichos industriales resilientes y regulados.\n\nFuentes: Dealroom News"
+  "markdown": "## Hoy\nLa ofensiva rusa se recrudeció el 3 de octubre con el bombardeo del Puente Norte de Kiev y el ataque a un buque mercante con bandera liberiana en Odesa, que dejó un marinero muerto y tres heridos, mientras Moscú emitió una advertencia de \"riesgo mortal\" instando a diplomáticos extranjeros a abandonar la capital.\n\nLa NASA e IBM presentaron un modelo de IA capaz de procesar décadas de datos satelitales para anticipar tormentas extremas y crisis climáticas, demostrando la aplicación de grandes modelos fundacionales a la observación terrestre operativa.\n\nFuentes: El Periódico, TN\n\n## Esta semana\nLa inflación de la eurozona repuntó al 3,8% interanual en septiembre (frente al 3,2% de agosto), impulsada por el salto energético del 18,8%, con España marcando el 5%, la tasa más alta entre las grandes economías, y presionando al BCE para volver a subir tipos tras el movimiento de 25 p.b. del 10 de septiembre. En Washington, Lorie Logan (Fed Dallas) avisó de que hacen falta al menos 50 puntos básicos adicionales para dominar la inflación, enfriando la lectura de \"sin urgencia\" de John Williams y abriendo la puerta a endurecimiento en diciembre tras la pausa de octubre.\n\nNvidia anunció una recompra histórica de 150.000 M$ que eleva la autorización total a 235.000 M$ hasta el ejercicio fiscal 2028, respaldando una capitalización próxima a 5,7 billones y señalando confianza en la caja generada por la demanda de IA. El DOJ detuvo al fundador de Earthmade Computer por contrabandear a China servidores con aceleradores Nvidia valorados en 300 M$ eludiendo controles de exportación vía Malasia y Singapur, en el mayor caso penal conocido de evasión de restricciones de chips de IA.\n\nGoogle DeepMind lanzó Gemini 4 Argón, modelo orientado a ingeniería de software y ciberseguridad con ventana de salida de 1 millón de tokens y 68% en CWE-bench v1, elevando el estándar de contexto largo para código seguro. Un estudio de Epoch AI cuantificó que el coste computacional por rendimiento equivalente cae un 47% por trimestre (13× al año), rompiendo la ley de Moore y reescribiendo la economía de entrenamiento e inferencia a gran escala. Expertos de MTP alertaron el 2 de octubre del impacto operativo del AI Act europeo, que obliga a desplegar plataformas internas de gobernanza, inventario de modelos y mitigación de riesgo algorítmico con plazos de cumplimiento ya en marcha.\n\nFuentes: El Español, Investing.com, Cinco Días, Moncloa, Reviblog, Xataka, Europa Press\n\n## Este mes\nEl BCE subió 25 puntos básicos el 10 de septiembre (depósito al 2,50%, principal al 2,65%, marginal al 2,90%) por segunda vez en el año, citando explícitamente la tensión energética en Oriente Medio como riesgo de inflación prolongada. La Reserva Federal endureció por unanimidad 25 p.b. el 16 de septiembre hasta el rango 3,75%-4,00%, primer alza desde 2023, justificada en la persistencia de presiones inflacionarias ligadas en parte a la demanda masiva de infraestructura de IA.\n\nOpenAI, Anthropic y Google DeepMind anunciaron a mediados de septiembre la creación conjunta de un organismo privado de supervisión de riesgos de IA inspirado en la FINRA financiera, generando recelos en competidores europeos como Mistral por su carácter de autorregulación de los líderes de mercado.\n\nNvidia avaló financieramente a OpenAI ante SB Energy para un megaproyecto de centros de datos de 4,25 GW en Ohio con un límite de responsabilidad de 105.000 M$ condicionado al uso exclusivo de hardware Nvidia, entrelazando capacidad energética, financiación y bloqueo de ecosistema.\n\nFuentes: El País, Rankia, El País Uruguay, XTB"
 }
