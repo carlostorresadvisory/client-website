@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-10-04",
+  "fecha": "2026-10-05",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Inflación eurozona sep",
+      "etiqueta": "Inflación eurozona",
       "valor": "3,8%",
-      "fuente": "El Español"
+      "fuente": "Morningstar / Eurostat"
     },
     {
-      "etiqueta": "Inflación España sep",
-      "valor": "5%",
-      "fuente": "El Español"
+      "etiqueta": "Tregua comercial EE. UU.-China",
+      "valor": "60.000 M$",
+      "fuente": "Embajada de China en EE. UU."
     },
     {
-      "etiqueta": "Tipos Fed rango sup",
-      "valor": "4,00%",
-      "fuente": "Rankia"
+      "etiqueta": "Inversión EQT en Fever",
+      "valor": "250 M$",
+      "fuente": "Albia IMAP"
     },
     {
-      "etiqueta": "Recompra Nvidia ampliación",
-      "valor": "150.000 M$",
-      "fuente": "Cinco Días"
+      "etiqueta": "Puente Digital Omnibus IA",
+      "valor": "2-dic-2026",
+      "fuente": "Alice Labs / EUR-Lex"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 2
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 7
+      "n": 4
     },
     {
       "horizonte": "Este mes",
@@ -51,12 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La ofensiva rusa se recrudeció el 3 de octubre con el bombardeo del Puente Norte de Kiev y el ataque a un buque mercante con bandera liberiana en Odesa, que dejó un marinero muerto y tres heridos, mientras Moscú emitió una advertencia de \"riesgo mortal\" instando a diplomáticos extranjeros a abandonar la capital",
-          "fuente": "El Periódico"
+          "texto": "Los rebeldes huzíes capturaron el 4 de octubre la ciudad estratégica de Al Turbah, cortando las dos carreteras principales que unen los frentes de Taiz con Adén y paralizando las líneas de suministro del gobierno yemení",
+          "fuente": "ISW"
         },
         {
-          "texto": "La NASA e IBM presentaron un modelo de IA capaz de procesar décadas de datos satelitales para anticipar tormentas extremas y crisis climáticas, demostrando la aplicación de grandes modelos fundacionales a la observación terrestre operativa",
-          "fuente": "TN"
+          "texto": "Irán descartó cualquier solución militar o basada en nuevas sanciones y advirtió de una respuesta más firme ante nueva confrontación, mientras el ministro de Petróleo, Mohsen Paknejad, dimitía el 4 de octubre en medio de los graves daños a la infraestructura energética y marítima del Golfo",
+          "fuente": "The Times of Israel, The Jerusalem Post"
+        },
+        {
+          "texto": "Ucrania denunció una campaña sistemática rusa 24/7 contra los puentes principales de Kiev, mientras EE. UU. busca propiciar una nueva ronda de negociaciones antes de finales de octubre, abierta a celebrarlas en Emiratos Árabes Unidos u otra sede de Washington",
+          "fuente": "RBC-Ukraine, Deccan Chronicle"
+        },
+        {
+          "texto": "Egipto recibió en El Cairo al jefe del ejército sudanés Abdel Fattah al-Burhan para coordinar esfuerzos que frenen la guerra civil en Sudán",
+          "fuente": "Sudan Tribune"
         }
       ]
     },
@@ -64,16 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La inflación de la eurozona repuntó al 3,8% interanual en septiembre (frente al 3,2% de agosto), impulsada por el salto energético del 18,8%, con España marcando el 5%, la tasa más alta entre las grandes economías, y presionando al BCE para volver a subir tipos tras el movimiento de 25 p.b. del 10 de septiembre. En Washington, Lorie Logan (Fed Dallas) avisó de que hacen falta al menos 50 puntos básicos adicionales para dominar la inflación, enfriando la lectura de \"sin urgencia\" de John Williams y abriendo la puerta a endurecimiento en diciembre tras la pausa de octubre",
-          "fuente": "El Español, Investing.com"
+          "texto": "EE. UU. desplegó un tercer grupo de ataque de portaaviones, USS Theodore Roosevelt y grupo anfibio USS Makin Island con más de 9.000 efectivos, a Oriente Medio ante la escalada regional y de cara a las elecciones de mitad de mandato",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Nvidia anunció una recompra histórica de 150.000 M$ que eleva la autorización total a 235.000 M$ hasta el ejercicio fiscal 2028, respaldando una capitalización próxima a 5,7 billones y señalando confianza en la caja generada por la demanda de IA. El DOJ detuvo al fundador de Earthmade Computer por contrabandear a China servidores con aceleradores Nvidia valorados en 300 M$ eludiendo controles de exportación vía Malasia y Singapur, en el mayor caso penal conocido de evasión de restricciones de chips de IA",
-          "fuente": "Cinco Días, Moncloa"
+          "texto": "EE. UU. y China formalizaron listas recíprocas de reducciones arancelarias por 30.000 millones de dólares cada bando (60.000 millones en total) y prorrogaron la tregua comercial hasta el 10 de enero de 2027",
+          "fuente": "Embajada de China en EE. UU., AP News"
         },
         {
-          "texto": "Google DeepMind lanzó Gemini 4 Argón, modelo orientado a ingeniería de software y ciberseguridad con ventana de salida de 1 millón de tokens y 68% en CWE-bench v1, elevando el estándar de contexto largo para código seguro. Un estudio de Epoch AI cuantificó que el coste computacional por rendimiento equivalente cae un 47% por trimestre (13× al año), rompiendo la ley de Moore y reescribiendo la economía de entrenamiento e inferencia a gran escala. Expertos de MTP alertaron el 2 de octubre del impacto operativo del AI Act europeo, que obliga a desplegar plataformas internas de gobernanza, inventario de modelos y mitigación de riesgo algorítmico con plazos de cumplimiento ya en marcha",
-          "fuente": "Reviblog, Xataka, Europa Press"
+          "texto": "Eurostat confirmó que la inflación de la eurozona repuntó al 3,8% interanual en septiembre, impulsada por un 18,8% en energía, alejándose del objetivo del 2% y presionando al BCE tras situar el tipo de depósito en el 2,50%",
+          "fuente": "Morningstar / Eurostat"
+        },
+        {
+          "texto": "Google lanzó Gemini 4 Argon, optimizado para ingeniería de software, finanzas y defensa cibernética con despliegue inicial limitado al programa Fairwind; OpenAI presentó GPT-6.1 Sol con rendimiento cercano a Astra a una quinta parte del coste de tokens y agentes persistentes dots con computadoras en la nube propias",
+          "fuente": "The Futurum Group, Medium / OpenAI"
         }
       ]
     },
@@ -81,16 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE subió 25 puntos básicos el 10 de septiembre (depósito al 2,50%, principal al 2,65%, marginal al 2,90%) por segunda vez en el año, citando explícitamente la tensión energética en Oriente Medio como riesgo de inflación prolongada. La Reserva Federal endureció por unanimidad 25 p.b. el 16 de septiembre hasta el rango 3,75%-4,00%, primer alza desde 2023, justificada en la persistencia de presiones inflacionarias ligadas en parte a la demanda masiva de infraestructura de IA",
-          "fuente": "El País, Rankia"
+          "texto": "El Digital Omnibus on AI (Reglamento UE 2026/1744), en vigor desde el 27 de julio, reestructuró el calendario del EU AI Act posponiendo las obligaciones estrictas de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y fijando un plazo de tres meses, hasta el 2 de diciembre de 2026, para cumplir la transparencia en contenidos generados por IA (Artículo 50)",
+          "fuente": "Alice Labs / EUR-Lex"
         },
         {
-          "texto": "OpenAI, Anthropic y Google DeepMind anunciaron a mediados de septiembre la creación conjunta de un organismo privado de supervisión de riesgos de IA inspirado en la FINRA financiera, generando recelos en competidores europeos como Mistral por su carácter de autorregulación de los líderes de mercado",
-          "fuente": "El País Uruguay"
+          "texto": "El mercado medio de M&A en España mantiene un enfoque selectivo con procesos guiados por asesores que se alargan: 72% por debajo de 12 meses y 28% por encima de un año por escrutinio exhaustivo de due diligence y expectativas de valoración de los fundadores",
+          "fuente": "Dealsuite / You are Capital"
         },
         {
-          "texto": "Nvidia avaló financieramente a OpenAI ante SB Energy para un megaproyecto de centros de datos de 4,25 GW en Ohio con un límite de responsabilidad de 105.000 M$ condicionado al uso exclusivo de hardware Nvidia, entrelazando capacidad energética, financiación y bloqueo de ecosistema",
-          "fuente": "XTB"
+          "texto": "Los family offices españoles concentran sus estructuras de inversión directa en Madrid y Barcelona, liderados por Pontegadea con más de 135.000 millones de dólares bajo gestión y vehículos medianos volcados en co-inversión y diversificación industrial directa en pymes",
+          "fuente": "Dakota Marketplace"
+        },
+        {
+          "texto": "El crédito bancario a empresas en España consolidó su salida del desapalancamiento con crecimiento interanual del 3,6%, tirado por servicios al 5,4%, mientras industria y construcción moderan o contraen demanda",
+          "fuente": "BBVA Research"
         }
       ]
     },
@@ -100,10 +116,31 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "La ronda de 250 M$ en Fever liderada por EQT, Point72 y Baillie Gifford valida la tesis de que private equity global sigue pagando primas por plataformas digitales escalables con origen español, abriendo mandato de búsqueda de follow-on o secondaries en el segmento consumer tech",
+              "fuente": "Albia IMAP"
+            },
+            {
+              "texto": "La compra por Puig del 50% de ISDIN cierra una alianza familiar de 50 años y crea un campeón de dermocosmética con control total, precedente relevante para operaciones de unlock de joint ventures familiares en consumo",
+              "fuente": "Albia IMAP"
+            },
+            {
+              "texto": "El mercado medio español muestra divergencia precio-volumen: operaciones -13% pero capital +69% (TTR), con procesos más largos (28% >12 meses) por due diligence exhaustiva y expectativas de vendedor, deal structure y earn-outs serán decisivos para cerrar brecha de valoración",
+              "fuente": "Iberian Lawyer / TTR Data, Dealsuite / You are Capital"
+            },
+            {
+              "texto": "La concentración de family offices en Madrid/Barcelona (Pontegadea >135.000 M$) y su giro a co-inversión directa en pymes industriales genera deal flow cualificado para mandatos sell-side de medianas empresas que buscan socio financiero-industrial",
+              "fuente": "Dakota Marketplace"
+            },
+            {
+              "texto": "El crédito bancario a servicios crece al 5,4% interanual mientras industria/construcción frenan, señalando reasignación de capacidad prestamista hacia sectores de mayor recurrencia, oportunidad de refinancing y acquisition finance en services",
+              "fuente": "BBVA Research"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa ofensiva rusa se recrudeció el 3 de octubre con el bombardeo del Puente Norte de Kiev y el ataque a un buque mercante con bandera liberiana en Odesa, que dejó un marinero muerto y tres heridos, mientras Moscú emitió una advertencia de \"riesgo mortal\" instando a diplomáticos extranjeros a abandonar la capital.\n\nLa NASA e IBM presentaron un modelo de IA capaz de procesar décadas de datos satelitales para anticipar tormentas extremas y crisis climáticas, demostrando la aplicación de grandes modelos fundacionales a la observación terrestre operativa.\n\nFuentes: El Periódico, TN\n\n## Esta semana\nLa inflación de la eurozona repuntó al 3,8% interanual en septiembre (frente al 3,2% de agosto), impulsada por el salto energético del 18,8%, con España marcando el 5%, la tasa más alta entre las grandes economías, y presionando al BCE para volver a subir tipos tras el movimiento de 25 p.b. del 10 de septiembre. En Washington, Lorie Logan (Fed Dallas) avisó de que hacen falta al menos 50 puntos básicos adicionales para dominar la inflación, enfriando la lectura de \"sin urgencia\" de John Williams y abriendo la puerta a endurecimiento en diciembre tras la pausa de octubre.\n\nNvidia anunció una recompra histórica de 150.000 M$ que eleva la autorización total a 235.000 M$ hasta el ejercicio fiscal 2028, respaldando una capitalización próxima a 5,7 billones y señalando confianza en la caja generada por la demanda de IA. El DOJ detuvo al fundador de Earthmade Computer por contrabandear a China servidores con aceleradores Nvidia valorados en 300 M$ eludiendo controles de exportación vía Malasia y Singapur, en el mayor caso penal conocido de evasión de restricciones de chips de IA.\n\nGoogle DeepMind lanzó Gemini 4 Argón, modelo orientado a ingeniería de software y ciberseguridad con ventana de salida de 1 millón de tokens y 68% en CWE-bench v1, elevando el estándar de contexto largo para código seguro. Un estudio de Epoch AI cuantificó que el coste computacional por rendimiento equivalente cae un 47% por trimestre (13× al año), rompiendo la ley de Moore y reescribiendo la economía de entrenamiento e inferencia a gran escala. Expertos de MTP alertaron el 2 de octubre del impacto operativo del AI Act europeo, que obliga a desplegar plataformas internas de gobernanza, inventario de modelos y mitigación de riesgo algorítmico con plazos de cumplimiento ya en marcha.\n\nFuentes: El Español, Investing.com, Cinco Días, Moncloa, Reviblog, Xataka, Europa Press\n\n## Este mes\nEl BCE subió 25 puntos básicos el 10 de septiembre (depósito al 2,50%, principal al 2,65%, marginal al 2,90%) por segunda vez en el año, citando explícitamente la tensión energética en Oriente Medio como riesgo de inflación prolongada. La Reserva Federal endureció por unanimidad 25 p.b. el 16 de septiembre hasta el rango 3,75%-4,00%, primer alza desde 2023, justificada en la persistencia de presiones inflacionarias ligadas en parte a la demanda masiva de infraestructura de IA.\n\nOpenAI, Anthropic y Google DeepMind anunciaron a mediados de septiembre la creación conjunta de un organismo privado de supervisión de riesgos de IA inspirado en la FINRA financiera, generando recelos en competidores europeos como Mistral por su carácter de autorregulación de los líderes de mercado.\n\nNvidia avaló financieramente a OpenAI ante SB Energy para un megaproyecto de centros de datos de 4,25 GW en Ohio con un límite de responsabilidad de 105.000 M$ condicionado al uso exclusivo de hardware Nvidia, entrelazando capacidad energética, financiación y bloqueo de ecosistema.\n\nFuentes: El País, Rankia, El País Uruguay, XTB"
+  "markdown": "## Hoy\nLos rebeldes huzíes capturaron el 4 de octubre la ciudad estratégica de Al Turbah, cortando las dos carreteras principales que unen los frentes de Taiz con Adén y paralizando las líneas de suministro del gobierno yemení.\n\nIrán descartó cualquier solución militar o basada en nuevas sanciones y advirtió de una respuesta más firme ante nueva confrontación, mientras el ministro de Petróleo, Mohsen Paknejad, dimitía el 4 de octubre en medio de los graves daños a la infraestructura energética y marítima del Golfo.\n\nUcrania denunció una campaña sistemática rusa 24/7 contra los puentes principales de Kiev, mientras EE. UU. busca propiciar una nueva ronda de negociaciones antes de finales de octubre, abierta a celebrarlas en Emiratos Árabes Unidos u otra sede de Washington.\n\nEgipto recibió en El Cairo al jefe del ejército sudanés Abdel Fattah al-Burhan para coordinar esfuerzos que frenen la guerra civil en Sudán.\n\nFuentes: ISW, The Times of Israel, The Jerusalem Post, RBC-Ukraine, Deccan Chronicle, Sudan Tribune\n\n## Esta semana\nEE. UU. desplegó un tercer grupo de ataque de portaaviones, USS Theodore Roosevelt y grupo anfibio USS Makin Island con más de 9.000 efectivos, a Oriente Medio ante la escalada regional y de cara a las elecciones de mitad de mandato.\n\nEE. UU. y China formalizaron listas recíprocas de reducciones arancelarias por 30.000 millones de dólares cada bando (60.000 millones en total) y prorrogaron la tregua comercial hasta el 10 de enero de 2027.\n\nEurostat confirmó que la inflación de la eurozona repuntó al 3,8% interanual en septiembre, impulsada por un 18,8% en energía, alejándose del objetivo del 2% y presionando al BCE tras situar el tipo de depósito en el 2,50%.\n\nGoogle lanzó Gemini 4 Argon, optimizado para ingeniería de software, finanzas y defensa cibernética con despliegue inicial limitado al programa Fairwind; OpenAI presentó GPT-6.1 Sol con rendimiento cercano a Astra a una quinta parte del coste de tokens y agentes persistentes dots con computadoras en la nube propias.\n\nFuentes: The Guardian, Embajada de China en EE. UU., AP News, Morningstar / Eurostat, The Futurum Group, Medium / OpenAI\n\n## Este mes\nEl Digital Omnibus on AI (Reglamento UE 2026/1744), en vigor desde el 27 de julio, reestructuró el calendario del EU AI Act posponiendo las obligaciones estrictas de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y fijando un plazo de tres meses, hasta el 2 de diciembre de 2026, para cumplir la transparencia en contenidos generados por IA (Artículo 50).\n\nEl mercado medio de M&A en España mantiene un enfoque selectivo con procesos guiados por asesores que se alargan: 72% por debajo de 12 meses y 28% por encima de un año por escrutinio exhaustivo de due diligence y expectativas de valoración de los fundadores.\n\nLos family offices españoles concentran sus estructuras de inversión directa en Madrid y Barcelona, liderados por Pontegadea con más de 135.000 millones de dólares bajo gestión y vehículos medianos volcados en co-inversión y diversificación industrial directa en pymes.\n\nEl crédito bancario a empresas en España consolidó su salida del desapalancamiento con crecimiento interanual del 3,6%, tirado por servicios al 5,4%, mientras industria y construcción moderan o contraen demanda.\n\nFuentes: Alice Labs / EUR-Lex, Dealsuite / You are Capital, Dakota Marketplace, BBVA Research\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa ronda de 250 M$ en Fever liderada por EQT, Point72 y Baillie Gifford valida la tesis de que private equity global sigue pagando primas por plataformas digitales escalables con origen español, abriendo mandato de búsqueda de follow-on o secondaries en el segmento consumer tech.\n\nLa compra por Puig del 50% de ISDIN cierra una alianza familiar de 50 años y crea un campeón de dermocosmética con control total, precedente relevante para operaciones de unlock de joint ventures familiares en consumo.\n\nEl mercado medio español muestra divergencia precio-volumen: operaciones -13% pero capital +69% (TTR), con procesos más largos (28% >12 meses) por due diligence exhaustiva y expectativas de vendedor, deal structure y earn-outs serán decisivos para cerrar brecha de valoración.\n\nLa concentración de family offices en Madrid/Barcelona (Pontegadea >135.000 M$) y su giro a co-inversión directa en pymes industriales genera deal flow cualificado para mandatos sell-side de medianas empresas que buscan socio financiero-industrial.\n\nEl crédito bancario a servicios crece al 5,4% interanual mientras industria/construcción frenan, señalando reasignación de capacidad prestamista hacia sectores de mayor recurrencia, oportunidad de refinancing y acquisition finance en services.\n\nFuentes: Albia IMAP, Iberian Lawyer / TTR Data, Dealsuite / You are Capital, Dakota Marketplace, BBVA Research"
 }
