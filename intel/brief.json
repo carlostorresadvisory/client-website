@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-10-05",
+  "fecha": "2026-10-06",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Inflación eurozona",
-      "valor": "3,8%",
-      "fuente": "Morningstar / Eurostat"
+      "etiqueta": "Inflación España",
+      "valor": "5,0%",
+      "fuente": "El Español"
     },
     {
-      "etiqueta": "Tregua comercial EE. UU.-China",
-      "valor": "60.000 M$",
-      "fuente": "Embajada de China en EE. UU."
+      "etiqueta": "Tipo depósito BCE",
+      "valor": "2,50%",
+      "fuente": "BCE"
     },
     {
-      "etiqueta": "Inversión EQT en Fever",
-      "valor": "250 M$",
-      "fuente": "Albia IMAP"
+      "etiqueta": "Brent suelo",
+      "valor": "100 $/bbl",
+      "fuente": "The Daily Star"
     },
     {
-      "etiqueta": "Puente Digital Omnibus IA",
-      "valor": "2-dic-2026",
-      "fuente": "Alice Labs / EUR-Lex"
+      "etiqueta": "Reducciones arancelarias EE. UU./China",
+      "valor": "30.000 M$",
+      "fuente": "Deloitte"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 2
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,20 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Los rebeldes huzíes capturaron el 4 de octubre la ciudad estratégica de Al Turbah, cortando las dos carreteras principales que unen los frentes de Taiz con Adén y paralizando las líneas de suministro del gobierno yemení",
-          "fuente": "ISW"
+          "texto": "Eurostat confirmó el 2 de octubre que la inflación de la eurozona repuntó al 3,8% en septiembre, con España destacando al 5,0%, más de un punto sobre la media, lo que tensiona el Euríbor al 3,303% y complica la revisión de hipotecas",
+          "fuente": "El Español"
         },
         {
-          "texto": "Irán descartó cualquier solución militar o basada en nuevas sanciones y advirtió de una respuesta más firme ante nueva confrontación, mientras el ministro de Petróleo, Mohsen Paknejad, dimitía el 4 de octubre en medio de los graves daños a la infraestructura energética y marítima del Golfo",
-          "fuente": "The Times of Israel, The Jerusalem Post"
+          "texto": "En el segmento medio español, Queka Real Partners anunció el 5 de octubre la adquisición de una participación mayoritaria en Expertia Formación, centro especializado en oficios técnicos de alta demanda, como cuarta inversión de su segundo fondo QRP PEF 2",
+          "fuente": "Webcapitalriesgo"
         },
         {
-          "texto": "Ucrania denunció una campaña sistemática rusa 24/7 contra los puentes principales de Kiev, mientras EE. UU. busca propiciar una nueva ronda de negociaciones antes de finales de octubre, abierta a celebrarlas en Emiratos Árabes Unidos u otra sede de Washington",
-          "fuente": "RBC-Ukraine, Deccan Chronicle"
-        },
-        {
-          "texto": "Egipto recibió en El Cairo al jefe del ejército sudanés Abdel Fattah al-Burhan para coordinar esfuerzos que frenen la guerra civil en Sudán",
-          "fuente": "Sudan Tribune"
+          "texto": "DWS (Deutsche Bank) firmó el mismo día un acuerdo vinculante para adquirir la totalidad de Peakside Capital Advisors, reforzando su plataforma inmobiliaria europea de cara al cierre de transacciones a finales de 2026",
+          "fuente": "Merca2.es"
         }
       ]
     },
@@ -72,20 +68,12 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "EE. UU. desplegó un tercer grupo de ataque de portaaviones, USS Theodore Roosevelt y grupo anfibio USS Makin Island con más de 9.000 efectivos, a Oriente Medio ante la escalada regional y de cara a las elecciones de mitad de mandato",
+          "texto": "Google DeepMind lanzó entre el 30 de septiembre y el 1 de octubre su modelo insignia Gemini 4 Argon, con rendimiento puntero en ciberdefensa, ingeniería de software y finanzas, restringiendo inicialmente su acceso a expertos de ciberseguridad gubernamentales y corporativos evaluados para evitar riesgos de uso malicioso",
           "fuente": "The Guardian"
         },
         {
-          "texto": "EE. UU. y China formalizaron listas recíprocas de reducciones arancelarias por 30.000 millones de dólares cada bando (60.000 millones en total) y prorrogaron la tregua comercial hasta el 10 de enero de 2027",
-          "fuente": "Embajada de China en EE. UU., AP News"
-        },
-        {
-          "texto": "Eurostat confirmó que la inflación de la eurozona repuntó al 3,8% interanual en septiembre, impulsada por un 18,8% en energía, alejándose del objetivo del 2% y presionando al BCE tras situar el tipo de depósito en el 2,50%",
-          "fuente": "Morningstar / Eurostat"
-        },
-        {
-          "texto": "Google lanzó Gemini 4 Argon, optimizado para ingeniería de software, finanzas y defensa cibernética con despliegue inicial limitado al programa Fairwind; OpenAI presentó GPT-6.1 Sol con rendimiento cercano a Astra a una quinta parte del coste de tokens y agentes persistentes dots con computadoras en la nube propias",
-          "fuente": "The Futurum Group, Medium / OpenAI"
+          "texto": "Anthropic consolidó su posición en septiembre con el despliegue de Claude Opus 5.5 (líder en el Intelligence Index de Artificial Analysis con 57,6 puntos) y Claude Sonnet 5.5, optimizados para razonamiento agéntico y flujos de trabajo empresariales complejos",
+          "fuente": "Fello AI / AIFOD"
         }
       ]
     },
@@ -93,20 +81,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Digital Omnibus on AI (Reglamento UE 2026/1744), en vigor desde el 27 de julio, reestructuró el calendario del EU AI Act posponiendo las obligaciones estrictas de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y fijando un plazo de tres meses, hasta el 2 de diciembre de 2026, para cumplir la transparencia en contenidos generados por IA (Artículo 50)",
-          "fuente": "Alice Labs / EUR-Lex"
+          "texto": "El BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos llevando el tipo de depósito al 2,50% ante la persistencia de presiones inflacionistas importadas de Oriente Medio, revisando al alza las previsiones de inflación general de la eurozona al 3,0% para 2026",
+          "fuente": "BCE"
         },
         {
-          "texto": "El mercado medio de M&A en España mantiene un enfoque selectivo con procesos guiados por asesores que se alargan: 72% por debajo de 12 meses y 28% por encima de un año por escrutinio exhaustivo de due diligence y expectativas de valoración de los fundadores",
-          "fuente": "Dealsuite / You are Capital"
-        },
-        {
-          "texto": "Los family offices españoles concentran sus estructuras de inversión directa en Madrid y Barcelona, liderados por Pontegadea con más de 135.000 millones de dólares bajo gestión y vehículos medianos volcados en co-inversión y diversificación industrial directa en pymes",
-          "fuente": "Dakota Marketplace"
-        },
-        {
-          "texto": "El crédito bancario a empresas en España consolidó su salida del desapalancamiento con crecimiento interanual del 3,6%, tirado por servicios al 5,4%, mientras industria y construcción moderan o contraen demanda",
-          "fuente": "BBVA Research"
+          "texto": "Informes sectoriales de Knight Frank sitúan a España en el \"top 3\" europeo de inversión directa extranjera, impulsada por un ecosistema de family offices internacionales y un volumen de capital extranjero que representa ya el 73,8% del valor de las carteras de private equity en el país",
+          "fuente": "Estrategias de Inversión"
         }
       ]
     },
@@ -118,29 +98,25 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La ronda de 250 M$ en Fever liderada por EQT, Point72 y Baillie Gifford valida la tesis de que private equity global sigue pagando primas por plataformas digitales escalables con origen español, abriendo mandato de búsqueda de follow-on o secondaries en el segmento consumer tech",
-              "fuente": "Albia IMAP"
+              "texto": "La compra de Expertia Formación por Queka Real Partners (fondo QRP PEF 2) y de Talleres Electromecánicos L. Pinazo por Artá Capital señalan apetito de private equity medio por activos industriales y de formación técnica con demanda estructural y caja recurrente, perfiles encajables en mandatos sell-side de pymes andaluzas",
+              "fuente": "Webcapitalriesgo"
             },
             {
-              "texto": "La compra por Puig del 50% de ISDIN cierra una alianza familiar de 50 años y crea un campeón de dermocosmética con control total, precedente relevante para operaciones de unlock de joint ventures familiares en consumo",
-              "fuente": "Albia IMAP"
+              "texto": "La venta de Farmol por Portobello a dalli group (holding 2021-2026) ilustra la ventana de salida en contract manufacturing farma/cosmética con múltiplos de salida validados por industriales alemanes",
+              "fuente": "Webcapitalriesgo"
             },
             {
-              "texto": "El mercado medio español muestra divergencia precio-volumen: operaciones -13% pero capital +69% (TTR), con procesos más largos (28% >12 meses) por due diligence exhaustiva y expectativas de vendedor, deal structure y earn-outs serán decisivos para cerrar brecha de valoración",
-              "fuente": "Iberian Lawyer / TTR Data, Dealsuite / You are Capital"
+              "texto": "La adquisición de Peakside Capital Advisors por DWS refuerza la tesis de consolidación de plataformas inmobiliarias paneuropeas gestionadas por grandes asset managers bancarios, relevante para asesorar a family offices locales en coinvest o secondary",
+              "fuente": "Merca2.es"
             },
             {
-              "texto": "La concentración de family offices en Madrid/Barcelona (Pontegadea >135.000 M$) y su giro a co-inversión directa en pymes industriales genera deal flow cualificado para mandatos sell-side de medianas empresas que buscan socio financiero-industrial",
-              "fuente": "Dakota Marketplace"
-            },
-            {
-              "texto": "El crédito bancario a servicios crece al 5,4% interanual mientras industria/construcción frenan, señalando reasignación de capacidad prestamista hacia sectores de mayor recurrencia, oportunidad de refinancing y acquisition finance en services",
-              "fuente": "BBVA Research"
+              "texto": "España en \"top 3\" europeo de IDE y 73,8% de capital extranjero en carteras de private equity confirma el deal flow entrante de compradores institucionales no españoles, abriendo mandato de buy-side assistance para vehículos locales que buscan coinvertir junto a anchors internacionales",
+              "fuente": "Estrategias de Inversión"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLos rebeldes huzíes capturaron el 4 de octubre la ciudad estratégica de Al Turbah, cortando las dos carreteras principales que unen los frentes de Taiz con Adén y paralizando las líneas de suministro del gobierno yemení.\n\nIrán descartó cualquier solución militar o basada en nuevas sanciones y advirtió de una respuesta más firme ante nueva confrontación, mientras el ministro de Petróleo, Mohsen Paknejad, dimitía el 4 de octubre en medio de los graves daños a la infraestructura energética y marítima del Golfo.\n\nUcrania denunció una campaña sistemática rusa 24/7 contra los puentes principales de Kiev, mientras EE. UU. busca propiciar una nueva ronda de negociaciones antes de finales de octubre, abierta a celebrarlas en Emiratos Árabes Unidos u otra sede de Washington.\n\nEgipto recibió en El Cairo al jefe del ejército sudanés Abdel Fattah al-Burhan para coordinar esfuerzos que frenen la guerra civil en Sudán.\n\nFuentes: ISW, The Times of Israel, The Jerusalem Post, RBC-Ukraine, Deccan Chronicle, Sudan Tribune\n\n## Esta semana\nEE. UU. desplegó un tercer grupo de ataque de portaaviones, USS Theodore Roosevelt y grupo anfibio USS Makin Island con más de 9.000 efectivos, a Oriente Medio ante la escalada regional y de cara a las elecciones de mitad de mandato.\n\nEE. UU. y China formalizaron listas recíprocas de reducciones arancelarias por 30.000 millones de dólares cada bando (60.000 millones en total) y prorrogaron la tregua comercial hasta el 10 de enero de 2027.\n\nEurostat confirmó que la inflación de la eurozona repuntó al 3,8% interanual en septiembre, impulsada por un 18,8% en energía, alejándose del objetivo del 2% y presionando al BCE tras situar el tipo de depósito en el 2,50%.\n\nGoogle lanzó Gemini 4 Argon, optimizado para ingeniería de software, finanzas y defensa cibernética con despliegue inicial limitado al programa Fairwind; OpenAI presentó GPT-6.1 Sol con rendimiento cercano a Astra a una quinta parte del coste de tokens y agentes persistentes dots con computadoras en la nube propias.\n\nFuentes: The Guardian, Embajada de China en EE. UU., AP News, Morningstar / Eurostat, The Futurum Group, Medium / OpenAI\n\n## Este mes\nEl Digital Omnibus on AI (Reglamento UE 2026/1744), en vigor desde el 27 de julio, reestructuró el calendario del EU AI Act posponiendo las obligaciones estrictas de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y fijando un plazo de tres meses, hasta el 2 de diciembre de 2026, para cumplir la transparencia en contenidos generados por IA (Artículo 50).\n\nEl mercado medio de M&A en España mantiene un enfoque selectivo con procesos guiados por asesores que se alargan: 72% por debajo de 12 meses y 28% por encima de un año por escrutinio exhaustivo de due diligence y expectativas de valoración de los fundadores.\n\nLos family offices españoles concentran sus estructuras de inversión directa en Madrid y Barcelona, liderados por Pontegadea con más de 135.000 millones de dólares bajo gestión y vehículos medianos volcados en co-inversión y diversificación industrial directa en pymes.\n\nEl crédito bancario a empresas en España consolidó su salida del desapalancamiento con crecimiento interanual del 3,6%, tirado por servicios al 5,4%, mientras industria y construcción moderan o contraen demanda.\n\nFuentes: Alice Labs / EUR-Lex, Dealsuite / You are Capital, Dakota Marketplace, BBVA Research\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa ronda de 250 M$ en Fever liderada por EQT, Point72 y Baillie Gifford valida la tesis de que private equity global sigue pagando primas por plataformas digitales escalables con origen español, abriendo mandato de búsqueda de follow-on o secondaries en el segmento consumer tech.\n\nLa compra por Puig del 50% de ISDIN cierra una alianza familiar de 50 años y crea un campeón de dermocosmética con control total, precedente relevante para operaciones de unlock de joint ventures familiares en consumo.\n\nEl mercado medio español muestra divergencia precio-volumen: operaciones -13% pero capital +69% (TTR), con procesos más largos (28% >12 meses) por due diligence exhaustiva y expectativas de vendedor, deal structure y earn-outs serán decisivos para cerrar brecha de valoración.\n\nLa concentración de family offices en Madrid/Barcelona (Pontegadea >135.000 M$) y su giro a co-inversión directa en pymes industriales genera deal flow cualificado para mandatos sell-side de medianas empresas que buscan socio financiero-industrial.\n\nEl crédito bancario a servicios crece al 5,4% interanual mientras industria/construcción frenan, señalando reasignación de capacidad prestamista hacia sectores de mayor recurrencia, oportunidad de refinancing y acquisition finance en services.\n\nFuentes: Albia IMAP, Iberian Lawyer / TTR Data, Dealsuite / You are Capital, Dakota Marketplace, BBVA Research"
+  "markdown": "## Hoy\nEurostat confirmó el 2 de octubre que la inflación de la eurozona repuntó al 3,8% en septiembre, con España destacando al 5,0%, más de un punto sobre la media, lo que tensiona el Euríbor al 3,303% y complica la revisión de hipotecas.\n\nEn el segmento medio español, Queka Real Partners anunció el 5 de octubre la adquisición de una participación mayoritaria en Expertia Formación, centro especializado en oficios técnicos de alta demanda, como cuarta inversión de su segundo fondo QRP PEF 2.\n\nDWS (Deutsche Bank) firmó el mismo día un acuerdo vinculante para adquirir la totalidad de Peakside Capital Advisors, reforzando su plataforma inmobiliaria europea de cara al cierre de transacciones a finales de 2026.\n\nFuentes: El Español, Webcapitalriesgo, Merca2.es\n\n## Esta semana\nGoogle DeepMind lanzó entre el 30 de septiembre y el 1 de octubre su modelo insignia Gemini 4 Argon, con rendimiento puntero en ciberdefensa, ingeniería de software y finanzas, restringiendo inicialmente su acceso a expertos de ciberseguridad gubernamentales y corporativos evaluados para evitar riesgos de uso malicioso.\n\nAnthropic consolidó su posición en septiembre con el despliegue de Claude Opus 5.5 (líder en el Intelligence Index de Artificial Analysis con 57,6 puntos) y Claude Sonnet 5.5, optimizados para razonamiento agéntico y flujos de trabajo empresariales complejos.\n\nFuentes: The Guardian, Fello AI / AIFOD\n\n## Este mes\nEl BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos llevando el tipo de depósito al 2,50% ante la persistencia de presiones inflacionistas importadas de Oriente Medio, revisando al alza las previsiones de inflación general de la eurozona al 3,0% para 2026.\n\nInformes sectoriales de Knight Frank sitúan a España en el \"top 3\" europeo de inversión directa extranjera, impulsada por un ecosistema de family offices internacionales y un volumen de capital extranjero que representa ya el 73,8% del valor de las carteras de private equity en el país.\n\nFuentes: BCE, Estrategias de Inversión\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa compra de Expertia Formación por Queka Real Partners (fondo QRP PEF 2) y de Talleres Electromecánicos L. Pinazo por Artá Capital señalan apetito de private equity medio por activos industriales y de formación técnica con demanda estructural y caja recurrente, perfiles encajables en mandatos sell-side de pymes andaluzas.\n\nLa venta de Farmol por Portobello a dalli group (holding 2021-2026) ilustra la ventana de salida en contract manufacturing farma/cosmética con múltiplos de salida validados por industriales alemanes.\n\nLa adquisición de Peakside Capital Advisors por DWS refuerza la tesis de consolidación de plataformas inmobiliarias paneuropeas gestionadas por grandes asset managers bancarios, relevante para asesorar a family offices locales en coinvest o secondary.\n\nEspaña en \"top 3\" europeo de IDE y 73,8% de capital extranjero en carteras de private equity confirma el deal flow entrante de compradores institucionales no españoles, abriendo mandato de buy-side assistance para vehículos locales que buscan coinvertir junto a anchors internacionales.\n\nFuentes: Webcapitalriesgo, Merca2.es, Estrategias de Inversión"
 }
