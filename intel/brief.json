@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-10-06",
+  "fecha": "2026-10-07",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Inflación España",
-      "valor": "5,0%",
-      "fuente": "El Español"
+      "etiqueta": "Brent",
+      "valor": "101,5 $/barril",
+      "fuente": "Gulf News"
     },
     {
-      "etiqueta": "Tipo depósito BCE",
-      "valor": "2,50%",
-      "fuente": "BCE"
+      "etiqueta": "Financiación SpaceX",
+      "valor": "40.000 M$",
+      "fuente": "Financial Times"
     },
     {
-      "etiqueta": "Brent suelo",
-      "valor": "100 $/bbl",
-      "fuente": "The Daily Star"
+      "etiqueta": "M&A España 1S 2026",
+      "valor": "50.474 M€",
+      "fuente": "Capittal"
     },
     {
-      "etiqueta": "Reducciones arancelarias EE. UU./China",
-      "valor": "30.000 M$",
-      "fuente": "Deloitte"
+      "etiqueta": "Facilidad depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "European Central Bank"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 2
+      "n": 8
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,16 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Eurostat confirmó el 2 de octubre que la inflación de la eurozona repuntó al 3,8% en septiembre, con España destacando al 5,0%, más de un punto sobre la media, lo que tensiona el Euríbor al 3,303% y complica la revisión de hipotecas",
-          "fuente": "El Español"
+          "texto": "El mar Negro se convierte en nuevo foco de tensión tras confirmarse el ataque con drones contra dos buques comerciales en la zona económica exclusiva de Bulgaria, un suceso que el primer ministro Rumen Radev calificó de violación del derecho marítimo internacional. En paralelo, el crudo Brent escala a 101,5 $/barril y el WTI a 90,15 $/barril, impulsados por la prima de riesgo geopolítico que emana de Oriente Medio",
+          "fuente": "The Guardian, Gulf News"
         },
         {
-          "texto": "En el segmento medio español, Queka Real Partners anunció el 5 de octubre la adquisición de una participación mayoritaria en Expertia Formación, centro especializado en oficios técnicos de alta demanda, como cuarta inversión de su segundo fondo QRP PEF 2",
-          "fuente": "Webcapitalriesgo"
+          "texto": "China endurece su posición frente a EE. UU. tras la entrega de dos cazas F-16V a Taiwán y la previsión de incorporar 64 unidades adicionales este año, reiterando su oposición formal a las ventas de armamento",
+          "fuente": "驻德国大使馆"
         },
         {
-          "texto": "DWS (Deutsche Bank) firmó el mismo día un acuerdo vinculante para adquirir la totalidad de Peakside Capital Advisors, reforzando su plataforma inmobiliaria europea de cara al cierre de transacciones a finales de 2026",
-          "fuente": "Merca2.es"
+          "texto": "SpaceX negocia una emisión de deuda de 40.000 millones de dólares liderada por Apollo para financiar una compra masiva de chips de Nvidia y expandir su infraestructura de centros de datos y computación IA",
+          "fuente": "Financial Times"
         }
       ]
     },
@@ -68,12 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Google DeepMind lanzó entre el 30 de septiembre y el 1 de octubre su modelo insignia Gemini 4 Argon, con rendimiento puntero en ciberdefensa, ingeniería de software y finanzas, restringiendo inicialmente su acceso a expertos de ciberseguridad gubernamentales y corporativos evaluados para evitar riesgos de uso malicioso",
-          "fuente": "The Guardian"
+          "texto": "Zelenski anuncia una reunión técnica a tres bandas (Rusia, Ucrania, EE. UU.) para finales de octubre impulsada por Washington, mientras la inteligencia militar ucraniana cifra en 46.230 las bajas rusas de septiembre, el récord mensual del año",
+          "fuente": "Defence24.com, Al Jazeera"
         },
         {
-          "texto": "Anthropic consolidó su posición en septiembre con el despliegue de Claude Opus 5.5 (líder en el Intelligence Index de Artificial Analysis con 57,6 puntos) y Claude Sonnet 5.5, optimizados para razonamiento agéntico y flujos de trabajo empresariales complejos",
-          "fuente": "Fello AI / AIFOD"
+          "texto": "EE. UU. y China oficializan el marco \"30-for-30\" con reducciones arancelarias recíprocas sobre 60.000 millones de dólares en mercancías, creando un paraguas de desescalada gestionada que no toca bienes tecnológicos sensibles",
+          "fuente": "TIME"
+        },
+        {
+          "texto": "Mistral lanza Mistral Large 4 y VAST Data consolida su posición como proveedor crítico de almacenamiento para arquitecturas Nvidia, alcanzando una valoración de 30.000 millones de dólares y una puntuación de 228 en la Regla del 40",
+          "fuente": "AI Release Tracker, Dealroom News"
+        },
+        {
+          "texto": "Inveready crea SERCOM integrando Sercomgas, Easyner y Syneron en un grupo europeo de servicios energéticos, mientras Impact Bridge fusiona Esgir y Airos Delicatessen en un grupo sin gluten de 30 millones de facturación y Grupo Fuertes adquiere Jamones Albarracín para reforzarse en cárnicos",
+          "fuente": "Albia IMAP"
         }
       ]
     },
@@ -81,12 +89,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos llevando el tipo de depósito al 2,50% ante la persistencia de presiones inflacionistas importadas de Oriente Medio, revisando al alza las previsiones de inflación general de la eurozona al 3,0% para 2026",
-          "fuente": "BCE"
+          "texto": "La crisis de navegación en Oriente Medio se enquista: fuerzas de EE. UU. han interceptado o redirigido más de 130 buques comerciales desde el inicio del conflicto y los fletes VLCC Golfo-China se mantienen en 1,22 millones de dólares diarios según la Bolsa Báltica",
+          "fuente": "UANI"
         },
         {
-          "texto": "Informes sectoriales de Knight Frank sitúan a España en el \"top 3\" europeo de inversión directa extranjera, impulsada por un ecosistema de family offices internacionales y un volumen de capital extranjero que representa ya el 73,8% del valor de las carteras de private equity en el país",
-          "fuente": "Estrategias de Inversión"
+          "texto": "El BCE subió 25 puntos básicos el 10 de septiembre llevando la facilidad de depósito al 2,50 % y revisó al alza la inflación media 2026 al 3,0 %, anclando la política monetaria a la prima de riesgo energético",
+          "fuente": "European Central Bank"
+        },
+        {
+          "texto": "Septiembre concentra el salto de frontera en IA: Claude Opus 5.5 lidera índices con 57,6 puntos, OpenAI lanza GPT-6 Sol/Luna recortando a la mitad el coste de API, y Google despliega Gemini 4 Argon restringido a expertos de ciberseguridad",
+          "fuente": "Best AI Models in October 2026"
+        },
+        {
+          "texto": "TTR Data certifica un mercado M&A español en \"K\": 1.485 operaciones en el primer semestre (, 15 % interanual) pero 50.474 millones de euros de importe agregado, confirmando la concentración en deals corporativos y de private equity selectivo. Los family offices españoles destinan un 44 % de media a inmobiliario y operan vía coinversión y club deals para ganar control operativo directo",
+          "fuente": "Family Office & Private Wealth Real Estate Forum 2026"
         }
       ]
     },
@@ -98,25 +114,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La compra de Expertia Formación por Queka Real Partners (fondo QRP PEF 2) y de Talleres Electromecánicos L. Pinazo por Artá Capital señalan apetito de private equity medio por activos industriales y de formación técnica con demanda estructural y caja recurrente, perfiles encajables en mandatos sell-side de pymes andaluzas",
-              "fuente": "Webcapitalriesgo"
+              "texto": "La creación de SERCOM por Inveready (roll-up de servicios energéticos), la fusión sin gluten de Impact Bridge (30 M€ facturación) y la compra de Jamones Albarracín por Grupo Fuertes dibujan apetito de private equity y corporativo por plataformas industriales y de consumo nicho con caja recurrente y escala ibérica",
+              "fuente": "Albia IMAP"
             },
             {
-              "texto": "La venta de Farmol por Portobello a dalli group (holding 2021-2026) ilustra la ventana de salida en contract manufacturing farma/cosmética con múltiplos de salida validados por industriales alemanes",
-              "fuente": "Webcapitalriesgo"
-            },
-            {
-              "texto": "La adquisición de Peakside Capital Advisors por DWS refuerza la tesis de consolidación de plataformas inmobiliarias paneuropeas gestionadas por grandes asset managers bancarios, relevante para asesorar a family offices locales en coinvest o secondary",
-              "fuente": "Merca2.es"
-            },
-            {
-              "texto": "España en \"top 3\" europeo de IDE y 73,8% de capital extranjero en carteras de private equity confirma el deal flow entrante de compradores institucionales no españoles, abriendo mandato de buy-side assistance para vehículos locales que buscan coinvertir junto a anchors internacionales",
-              "fuente": "Estrategias de Inversión"
+              "texto": "El patrón M&A en \"K\" (menos deals, más valor) y la asignación del 44 % a inmobiliario de los family offices abren mandato de buy-side assistance para vehículos locales que coinviertan junto a anchors internacionales en operaciones de escala media",
+              "fuente": "Family Office & Private Wealth Real Estate Forum 2026"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEurostat confirmó el 2 de octubre que la inflación de la eurozona repuntó al 3,8% en septiembre, con España destacando al 5,0%, más de un punto sobre la media, lo que tensiona el Euríbor al 3,303% y complica la revisión de hipotecas.\n\nEn el segmento medio español, Queka Real Partners anunció el 5 de octubre la adquisición de una participación mayoritaria en Expertia Formación, centro especializado en oficios técnicos de alta demanda, como cuarta inversión de su segundo fondo QRP PEF 2.\n\nDWS (Deutsche Bank) firmó el mismo día un acuerdo vinculante para adquirir la totalidad de Peakside Capital Advisors, reforzando su plataforma inmobiliaria europea de cara al cierre de transacciones a finales de 2026.\n\nFuentes: El Español, Webcapitalriesgo, Merca2.es\n\n## Esta semana\nGoogle DeepMind lanzó entre el 30 de septiembre y el 1 de octubre su modelo insignia Gemini 4 Argon, con rendimiento puntero en ciberdefensa, ingeniería de software y finanzas, restringiendo inicialmente su acceso a expertos de ciberseguridad gubernamentales y corporativos evaluados para evitar riesgos de uso malicioso.\n\nAnthropic consolidó su posición en septiembre con el despliegue de Claude Opus 5.5 (líder en el Intelligence Index de Artificial Analysis con 57,6 puntos) y Claude Sonnet 5.5, optimizados para razonamiento agéntico y flujos de trabajo empresariales complejos.\n\nFuentes: The Guardian, Fello AI / AIFOD\n\n## Este mes\nEl BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos llevando el tipo de depósito al 2,50% ante la persistencia de presiones inflacionistas importadas de Oriente Medio, revisando al alza las previsiones de inflación general de la eurozona al 3,0% para 2026.\n\nInformes sectoriales de Knight Frank sitúan a España en el \"top 3\" europeo de inversión directa extranjera, impulsada por un ecosistema de family offices internacionales y un volumen de capital extranjero que representa ya el 73,8% del valor de las carteras de private equity en el país.\n\nFuentes: BCE, Estrategias de Inversión\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa compra de Expertia Formación por Queka Real Partners (fondo QRP PEF 2) y de Talleres Electromecánicos L. Pinazo por Artá Capital señalan apetito de private equity medio por activos industriales y de formación técnica con demanda estructural y caja recurrente, perfiles encajables en mandatos sell-side de pymes andaluzas.\n\nLa venta de Farmol por Portobello a dalli group (holding 2021-2026) ilustra la ventana de salida en contract manufacturing farma/cosmética con múltiplos de salida validados por industriales alemanes.\n\nLa adquisición de Peakside Capital Advisors por DWS refuerza la tesis de consolidación de plataformas inmobiliarias paneuropeas gestionadas por grandes asset managers bancarios, relevante para asesorar a family offices locales en coinvest o secondary.\n\nEspaña en \"top 3\" europeo de IDE y 73,8% de capital extranjero en carteras de private equity confirma el deal flow entrante de compradores institucionales no españoles, abriendo mandato de buy-side assistance para vehículos locales que buscan coinvertir junto a anchors internacionales.\n\nFuentes: Webcapitalriesgo, Merca2.es, Estrategias de Inversión"
+  "markdown": "## Hoy\nEl mar Negro se convierte en nuevo foco de tensión tras confirmarse el ataque con drones contra dos buques comerciales en la zona económica exclusiva de Bulgaria, un suceso que el primer ministro Rumen Radev calificó de violación del derecho marítimo internacional. En paralelo, el crudo Brent escala a 101,5 $/barril y el WTI a 90,15 $/barril, impulsados por la prima de riesgo geopolítico que emana de Oriente Medio.\n\nChina endurece su posición frente a EE. UU. tras la entrega de dos cazas F-16V a Taiwán y la previsión de incorporar 64 unidades adicionales este año, reiterando su oposición formal a las ventas de armamento.\n\nSpaceX negocia una emisión de deuda de 40.000 millones de dólares liderada por Apollo para financiar una compra masiva de chips de Nvidia y expandir su infraestructura de centros de datos y computación IA.\n\nFuentes: The Guardian, Gulf News, 驻德国大使馆, Financial Times\n\n## Esta semana\nZelenski anuncia una reunión técnica a tres bandas (Rusia, Ucrania, EE. UU.) para finales de octubre impulsada por Washington, mientras la inteligencia militar ucraniana cifra en 46.230 las bajas rusas de septiembre, el récord mensual del año.\n\nEE. UU. y China oficializan el marco \"30-for-30\" con reducciones arancelarias recíprocas sobre 60.000 millones de dólares en mercancías, creando un paraguas de desescalada gestionada que no toca bienes tecnológicos sensibles.\n\nMistral lanza Mistral Large 4 y VAST Data consolida su posición como proveedor crítico de almacenamiento para arquitecturas Nvidia, alcanzando una valoración de 30.000 millones de dólares y una puntuación de 228 en la Regla del 40.\n\nInveready crea SERCOM integrando Sercomgas, Easyner y Syneron en un grupo europeo de servicios energéticos, mientras Impact Bridge fusiona Esgir y Airos Delicatessen en un grupo sin gluten de 30 millones de facturación y Grupo Fuertes adquiere Jamones Albarracín para reforzarse en cárnicos.\n\nFuentes: Defence24.com, Al Jazeera, TIME, AI Release Tracker, Dealroom News, Albia IMAP\n\n## Este mes\nLa crisis de navegación en Oriente Medio se enquista: fuerzas de EE. UU. han interceptado o redirigido más de 130 buques comerciales desde el inicio del conflicto y los fletes VLCC Golfo-China se mantienen en 1,22 millones de dólares diarios según la Bolsa Báltica.\n\nEl BCE subió 25 puntos básicos el 10 de septiembre llevando la facilidad de depósito al 2,50 % y revisó al alza la inflación media 2026 al 3,0 %, anclando la política monetaria a la prima de riesgo energético.\n\nSeptiembre concentra el salto de frontera en IA: Claude Opus 5.5 lidera índices con 57,6 puntos, OpenAI lanza GPT-6 Sol/Luna recortando a la mitad el coste de API, y Google despliega Gemini 4 Argon restringido a expertos de ciberseguridad.\n\nTTR Data certifica un mercado M&A español en \"K\": 1.485 operaciones en el primer semestre (, 15 % interanual) pero 50.474 millones de euros de importe agregado, confirmando la concentración en deals corporativos y de private equity selectivo. Los family offices españoles destinan un 44 % de media a inmobiliario y operan vía coinversión y club deals para ganar control operativo directo.\n\nFuentes: UANI, European Central Bank, Best AI Models in October 2026, Capittal, Family Office & Private Wealth Real Estate Forum 2026\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa creación de SERCOM por Inveready (roll-up de servicios energéticos), la fusión sin gluten de Impact Bridge (30 M€ facturación) y la compra de Jamones Albarracín por Grupo Fuertes dibujan apetito de private equity y corporativo por plataformas industriales y de consumo nicho con caja recurrente y escala ibérica.\n\nEl patrón M&A en \"K\" (menos deals, más valor) y la asignación del 44 % a inmobiliario de los family offices abren mandato de buy-side assistance para vehículos locales que coinviertan junto a anchors internacionales en operaciones de escala media.\n\nFuentes: Albia IMAP, Capittal, Family Office & Private Wealth Real Estate Forum 2026"
 }
