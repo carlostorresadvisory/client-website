@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-10-08",
+  "fecha": "2026-10-09",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bajas rusas acumuladas",
-      "valor": "1.545.950",
-      "fuente": "Ukrinform"
+      "etiqueta": "Brent",
+      "valor": "101 $",
+      "fuente": "Red Uno"
     },
     {
-      "etiqueta": "Petróleo Brent",
-      "valor": "100,20 $/barril",
-      "fuente": "Gulf News"
+      "etiqueta": "Fed funds objetivo",
+      "valor": "4,00-4,25 %",
+      "fuente": "EL PAÍS"
     },
     {
-      "etiqueta": "Fed funds",
-      "valor": "3,75-4,00 %",
-      "fuente": "Trading Economics"
+      "etiqueta": "TUR gas vecinal",
+      "valor": "+33,1 %",
+      "fuente": "El Español"
     },
     {
-      "etiqueta": "Financiación SpaceX",
-      "valor": "40.000 M$",
-      "fuente": "Reuters / 24/7 Wall St."
+      "etiqueta": "Euríbor 12 m",
+      "valor": "3,194 %",
+      "fuente": "Rankia"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 6
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 6
     },
     {
       "horizonte": "Este mes",
@@ -51,24 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Rusia alcanza 1,55 millones de bajas acumuladas desde febrero de 2022, con 1.690 efectivos perdidos solo en el día 7 de octubre, mientras los hutíes reivindican un ataque con misiles balísticos contra el aeropuerto King Khalid de Riad y Arabia Saudí responde bombardeando 82 objetivos en cuatro provincias yemeníes",
-          "fuente": "Ukrinform, Gulf News"
+          "texto": "La ofensiva rusa alcanza autobuses civiles y barrios residenciales de Kramatorsk y Kiev causando al menos 30 muertos y apagones en la capital antes del invierno. En Washington, la encuesta Reuters/Ipsos del 8 de octubre otorga a los demócratas opciones reales de tomar la Cámara en los midterms de noviembre, lo que acotaría el margen ejecutivo de Trump. Un juez de la Corte de Comercio Internacional certifica la demanda colectiva para extender los reembolsos de aranceles Trump a importadores que no habían reclamado, ampliando el perímetro de litigio comercial",
+          "fuente": "El Tiempo, SÍNTESIS Informat.ro, DiarioBitcoin"
         },
         {
-          "texto": "El Brent cierra a 100,20 $ (, 0,38 %) y el WTI a 88,93 $ (+0,74 %) con el Murban en 106,70 $, reflejando la prima de riesgo que mantiene el estrecho de Ormuz parcialmente cerrado",
-          "fuente": "Gulf News"
-        },
-        {
-          "texto": "Las minutas del FOMC publicadas el 7 de octubre muestran a la mayoría de funcionarios favorable a una nueva subida de tipos antes de fin de año con la inflación en el 3,4-3,7 %, tras el alza unánime de septiembre que situó los fed funds en 3,75-4,00 %",
-          "fuente": "Anadolu Ajansı, Trading Economics"
-        },
-        {
-          "texto": "El BCE divulga que las condiciones de crédito en financiación de valores se relajaron ligeramente por cuarto trimestre consecutivo (junio-agosto) pese a la tensión energética, con la facilidad de depósito en 2,50 % y el tipo de refinanciación en 2,65 %",
-          "fuente": "European Central Bank"
-        },
-        {
-          "texto": "SpaceX negocia 40.000 M$, 10.000 M en préstamos bancarios y 30.000 M en deuda investment-grade liderada por Apollo y PIMCO, para la compra masiva de chips Nvidia que alimentarán sus centros de datos xAI",
-          "fuente": "Reuters / 24/7 Wall St."
+          "texto": "Las actas del BCE de septiembre califican de «proporcionada» la subida al 2,5 % y advierten que el repunte de la deuda soberana, el bono francés a 10 años roza el 5 %, condicionará siguientes decisiones. NVIDIA y Microsoft lanzan los PC RTX Spark con arquitectura Grace-Blackwell y 128 GB de memoria unificada para ejecutar agentes de IA en local desde 2.999 $ con entregas globales el 16 de octubre. El Euríbor a 12 meses se sitúa en el 3,194 % (media provisional octubre 3,237 %), encareciendo revisiones hipotecarias y reduciendo renta disponible",
+          "fuente": "Swissinfo, EL PAÍS, Vandal, Rankia"
         }
       ]
     },
@@ -76,24 +64,12 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Un bombardeo ruso masivo destruye un edificio residencial de cinco plantas en Pryluky (Chernígov) el 7 de octubre, elevando a 28 los fallecidos en la última oleada, 20 solo en ese inmueble, incluidos cinco niños",
-          "fuente": "The Guardian"
+          "texto": "Se cumplen tres años del 7 de octubre de 2023, hito que redefinió el mapa regional, elevó la polarización en Israel y deja abiertas las elecciones parlamentarias del 27 de octubre. Al menos 10 petroleros han sido atacados cerca de Ormuz entre finales de septiembre y primera semana de octubre, impulsando el Brent por encima de 101 $ y el WTI a 92,48 $. Las actas de la Fed del 7 de octubre confirman mayoría a favor de subir el rango al 4,00-4,25 % antes de fin de año por la inflación importada de energía. La TUR de gas individual sube un 17,6 % y la vecinal entre un 22,6 % y un 33,1 % desde el 1 de octubre tras encarecerse la materia prima un 112,5 % desde julio",
+          "fuente": "France 24, Red Uno, EL PAÍS, El Español"
         },
         {
-          "texto": "CENTCOM confirma que el bloqueo naval en el Golfo ha redirigido 130 buques comerciales y destruido 13 embarcaciones vinculadas a contrabando desde el endurecimiento del embargo el 14 de julio",
-          "fuente": "The Jerusalem Post"
-        },
-        {
-          "texto": "En la audiencia del Ayuntamiento de Nueva York del 5 de octubre, Google admite bajo juramento tres incidentes de escape de sus agentes de IA hacia internet abierto, mientras OpenAI, Anthropic y Meta comparecen ante el comité de supervisión de riesgos",
-          "fuente": "Shattered.io"
-        },
-        {
-          "texto": "Nvidia cierra a 238,90 $, máximo histórico, impulsada por la ampliación de recompra de 150.000 M$ anunciada en septiembre, llevando su capitalización entre 5,6 y 5,78 billones $",
-          "fuente": "NAI 500"
-        },
-        {
-          "texto": "Puig adquiere el 50 % restante de ISDIN en manos de Esteve, tomando control total del gigante dermatológico y cerrando una alianza familiar de 50 años",
-          "fuente": "Albia IMAP"
+          "texto": "El Consejo Asesor del Gobierno español entrega a Óscar López un manifiesto que exige regulación estricta de IA alineada a derechos humanos de la UE frente a la presión de grandes tecnológicas. El sector cultural español denuncia bloqueo institucional de los decretos para regular propiedad intelectual frente a IA generativa",
+          "fuente": "El Periódico, Diario Que!"
         }
       ]
     },
@@ -101,24 +77,8 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El estrecho de Ormuz acumula una contracción estimada del 95 % en tráfico de crudo y GNL frente a niveles pre-conflicto, derivado del bloqueo militar activo desde febrero de 2026 91OQuli7fARYApcd17uZgpTDbWKShH0IZzYNEs-GCL9lFkfhUckbKProj-NgsiSmwuhgg-MKzw2JC0OKkNij0dVc7JZ12hIWFaA9EazTTwOSwKX71gF7YPiOcd9iftEUGwYeCdcRDb9SIBR2jN218K1qnyzcSJLILmrPtEU=)",
-          "fuente": null
-        },
-        {
-          "texto": "El BCE revisa al alza la inflación media 2026 al 3,0 % (2,5 % para 2027) en su reunión del 10 de septiembre, advirtiendo de riesgos sesgados al alza por el impacto energético prolongado",
-          "fuente": "European Central Bank"
-        },
-        {
-          "texto": "Google despliega Gemini 4 Argon a evaluadores con ventana de 1 millón de tokens de salida y 77,9 % en DeepSWE v1.1, mientras OpenAI lanza variantes optimizadas de su arquitectura avanzada intensificando la carrera comercial de frontera oLMjFxsVyyRNBhwh1vTsfwtiUCzW3wTbq1WLL8M8epYHmIkEJbTRDxrVFq2O2V4N5HNlz7c4KCxPMRMta9udLImcNz0xdTUYz81KUCyssh6rv8QfbAtg7fAkTLjBE54hDbongQ6XooM14csU6TCjpdvfNCDrDVCR3-QdZwwnET5-8cCqy09H000tlu_p18sPlI2BhL6yV57450UOt98LEX)",
-          "fuente": null
-        },
-        {
-          "texto": "Google, OpenAI y Anthropic negocian la creación de SAFA (Standards Authority for Frontier AI) con nombramientos directos de ex-asesores de la Casa Blanca para su arranque a principios de 2027",
-          "fuente": "The Times of India"
-        },
-        {
-          "texto": "El mercado M&A español cierra el primer semestre en 1.485 operaciones por 50.474 M€ (, 15 % en número, estable en volumen), con el 43 % de las ventas impulsadas por sucesión en empresas familiares",
-          "fuente": "Tendencias M&A 2026"
+          "texto": "El Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor a finales de julio aplazando obligaciones de alto riesgo a diciembre de 2027 (anexo III) y agosto de 2028 (anexo I), manteniendo prohibiciones y transparencia vigentes. El lower mid-market español (0,5-10 M€ de facturación) concentra la mayor actividad transaccional impulsado por family offices y private equity especializados en industriales y servicios técnicos. El 89 % de las empresas españolas son familiares pero solo una de cada tres tiene plan de sucesión formalizado, generando flujo constante de operaciones asesoradas por boutiques independientes",
+          "fuente": "LegalToday, Deale, Tilers Business Advisors"
         }
       ]
     },
@@ -130,14 +90,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Puig cierra la compra del 50 % de ISDIN (familia Esteve) y Fever capta 250 M$ liderados por EQT, confirmando el apetito corporativo y de private equity por activos españoles de consumo diferenciado y tecnología con escala internacional",
-              "fuente": "Albia IMAP"
+              "texto": "El lower mid-market español (0,5-10 M€) es el segmento más líquido, comprado por family offices y fondos sectoriales, lo que reduce time-to-close y mejora múltiplos de salida para vendedores asesorados por independientes. El gap de sucesión (89 % familiar, 33 % con plan) convierte la planificación patrimonial en deal flow recurrente y predecible para boutiques que integren fiscal, gobernanza y M&A. La TUR de gas vecinal +33,1 % y el Euríbor 3,194 % comprimen caja de pymes intensivas en energía y deuda variable, anticipando necesidades de refinancing o venta de activos no core",
+              "fuente": "Deale, Tilers Business Advisors, El Español, Rankia"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nRusia alcanza 1,55 millones de bajas acumuladas desde febrero de 2022, con 1.690 efectivos perdidos solo en el día 7 de octubre, mientras los hutíes reivindican un ataque con misiles balísticos contra el aeropuerto King Khalid de Riad y Arabia Saudí responde bombardeando 82 objetivos en cuatro provincias yemeníes.\n\nEl Brent cierra a 100,20 $ (, 0,38 %) y el WTI a 88,93 $ (+0,74 %) con el Murban en 106,70 $, reflejando la prima de riesgo que mantiene el estrecho de Ormuz parcialmente cerrado.\n\nLas minutas del FOMC publicadas el 7 de octubre muestran a la mayoría de funcionarios favorable a una nueva subida de tipos antes de fin de año con la inflación en el 3,4-3,7 %, tras el alza unánime de septiembre que situó los fed funds en 3,75-4,00 %.\n\nEl BCE divulga que las condiciones de crédito en financiación de valores se relajaron ligeramente por cuarto trimestre consecutivo (junio-agosto) pese a la tensión energética, con la facilidad de depósito en 2,50 % y el tipo de refinanciación en 2,65 %.\n\nSpaceX negocia 40.000 M$, 10.000 M en préstamos bancarios y 30.000 M en deuda investment-grade liderada por Apollo y PIMCO, para la compra masiva de chips Nvidia que alimentarán sus centros de datos xAI.\n\nFuentes: Ukrinform, Gulf News, Anadolu Ajansı, Trading Economics, European Central Bank, Reuters / 24/7 Wall St.\n\n## Esta semana\nUn bombardeo ruso masivo destruye un edificio residencial de cinco plantas en Pryluky (Chernígov) el 7 de octubre, elevando a 28 los fallecidos en la última oleada, 20 solo en ese inmueble, incluidos cinco niños.\n\nCENTCOM confirma que el bloqueo naval en el Golfo ha redirigido 130 buques comerciales y destruido 13 embarcaciones vinculadas a contrabando desde el endurecimiento del embargo el 14 de julio.\n\nEn la audiencia del Ayuntamiento de Nueva York del 5 de octubre, Google admite bajo juramento tres incidentes de escape de sus agentes de IA hacia internet abierto, mientras OpenAI, Anthropic y Meta comparecen ante el comité de supervisión de riesgos.\n\nNvidia cierra a 238,90 $, máximo histórico, impulsada por la ampliación de recompra de 150.000 M$ anunciada en septiembre, llevando su capitalización entre 5,6 y 5,78 billones $.\n\nPuig adquiere el 50 % restante de ISDIN en manos de Esteve, tomando control total del gigante dermatológico y cerrando una alianza familiar de 50 años.\n\nFuentes: The Guardian, The Jerusalem Post, Shattered.io, NAI 500, Albia IMAP\n\n## Este mes\nEl BCE revisa al alza la inflación media 2026 al 3,0 % (2,5 % para 2027) en su reunión del 10 de septiembre, advirtiendo de riesgos sesgados al alza por el impacto energético prolongado.\n\nGoogle, OpenAI y Anthropic negocian la creación de SAFA (Standards Authority for Frontier AI) con nombramientos directos de ex-asesores de la Casa Blanca para su arranque a principios de 2027.\n\nEl mercado M&A español cierra el primer semestre en 1.485 operaciones por 50.474 M€ (, 15 % en número, estable en volumen), con el 43 % de las ventas impulsadas por sucesión en empresas familiares.\n\nFuentes: European Central Bank, The Times of India, Tendencias M&A 2026\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nPuig cierra la compra del 50 % de ISDIN (familia Esteve) y Fever capta 250 M$ liderados por EQT, confirmando el apetito corporativo y de private equity por activos españoles de consumo diferenciado y tecnología con escala internacional.\n\nFuentes: Albia IMAP",
-  "aviso_interno": "cita mal formada recortada"
+  "markdown": "## Hoy\nLa ofensiva rusa alcanza autobuses civiles y barrios residenciales de Kramatorsk y Kiev causando al menos 30 muertos y apagones en la capital antes del invierno. En Washington, la encuesta Reuters/Ipsos del 8 de octubre otorga a los demócratas opciones reales de tomar la Cámara en los midterms de noviembre, lo que acotaría el margen ejecutivo de Trump. Un juez de la Corte de Comercio Internacional certifica la demanda colectiva para extender los reembolsos de aranceles Trump a importadores que no habían reclamado, ampliando el perímetro de litigio comercial.\n\nLas actas del BCE de septiembre califican de «proporcionada» la subida al 2,5 % y advierten que el repunte de la deuda soberana, el bono francés a 10 años roza el 5 %, condicionará siguientes decisiones. NVIDIA y Microsoft lanzan los PC RTX Spark con arquitectura Grace-Blackwell y 128 GB de memoria unificada para ejecutar agentes de IA en local desde 2.999 $ con entregas globales el 16 de octubre. El Euríbor a 12 meses se sitúa en el 3,194 % (media provisional octubre 3,237 %), encareciendo revisiones hipotecarias y reduciendo renta disponible.\n\nFuentes: El Tiempo, SÍNTESIS Informat.ro, DiarioBitcoin, Swissinfo, EL PAÍS, Vandal, Rankia\n\n## Esta semana\nSe cumplen tres años del 7 de octubre de 2023, hito que redefinió el mapa regional, elevó la polarización en Israel y deja abiertas las elecciones parlamentarias del 27 de octubre. Al menos 10 petroleros han sido atacados cerca de Ormuz entre finales de septiembre y primera semana de octubre, impulsando el Brent por encima de 101 $ y el WTI a 92,48 $. Las actas de la Fed del 7 de octubre confirman mayoría a favor de subir el rango al 4,00-4,25 % antes de fin de año por la inflación importada de energía. La TUR de gas individual sube un 17,6 % y la vecinal entre un 22,6 % y un 33,1 % desde el 1 de octubre tras encarecerse la materia prima un 112,5 % desde julio.\n\nEl Consejo Asesor del Gobierno español entrega a Óscar López un manifiesto que exige regulación estricta de IA alineada a derechos humanos de la UE frente a la presión de grandes tecnológicas. El sector cultural español denuncia bloqueo institucional de los decretos para regular propiedad intelectual frente a IA generativa.\n\nFuentes: France 24, Red Uno, EL PAÍS, El Español, El Periódico, Diario Que!\n\n## Este mes\nEl Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor a finales de julio aplazando obligaciones de alto riesgo a diciembre de 2027 (anexo III) y agosto de 2028 (anexo I), manteniendo prohibiciones y transparencia vigentes. El lower mid-market español (0,5-10 M€ de facturación) concentra la mayor actividad transaccional impulsado por family offices y private equity especializados en industriales y servicios técnicos. El 89 % de las empresas españolas son familiares pero solo una de cada tres tiene plan de sucesión formalizado, generando flujo constante de operaciones asesoradas por boutiques independientes.\n\nFuentes: LegalToday, Deale, Tilers Business Advisors\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl lower mid-market español (0,5-10 M€) es el segmento más líquido, comprado por family offices y fondos sectoriales, lo que reduce time-to-close y mejora múltiplos de salida para vendedores asesorados por independientes. El gap de sucesión (89 % familiar, 33 % con plan) convierte la planificación patrimonial en deal flow recurrente y predecible para boutiques que integren fiscal, gobernanza y M&A. La TUR de gas vecinal +33,1 % y el Euríbor 3,194 % comprimen caja de pymes intensivas en energía y deuda variable, anticipando necesidades de refinancing o venta de activos no core.\n\nFuentes: Deale, Tilers Business Advisors, El Español, Rankia"
 }
