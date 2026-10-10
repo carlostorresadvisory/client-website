@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-10-09",
+  "fecha": "2026-10-10",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Brent",
-      "valor": "101 $",
-      "fuente": "Red Uno"
+      "etiqueta": "Transacciones M&A España (ene-sep)",
+      "valor": "2.261",
+      "fuente": "Demócrata"
     },
     {
-      "etiqueta": "Fed funds objetivo",
-      "valor": "4,00-4,25 %",
-      "fuente": "EL PAÍS"
+      "etiqueta": "Valor M&A España (ene-sep)",
+      "valor": "73.803 M€",
+      "fuente": "Demócrata"
     },
     {
-      "etiqueta": "TUR gas vecinal",
-      "valor": "+33,1 %",
-      "fuente": "El Español"
+      "etiqueta": "Brent crudo",
+      "valor": ">100 $/barril",
+      "fuente": "The Guardian"
     },
     {
-      "etiqueta": "Euríbor 12 m",
-      "valor": "3,194 %",
-      "fuente": "Rankia"
+      "etiqueta": "Subida tipos Fed (prob. futuros)",
+      "valor": "85 %",
+      "fuente": "Federal Reserve"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 6
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
@@ -51,12 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La ofensiva rusa alcanza autobuses civiles y barrios residenciales de Kramatorsk y Kiev causando al menos 30 muertos y apagones en la capital antes del invierno. En Washington, la encuesta Reuters/Ipsos del 8 de octubre otorga a los demócratas opciones reales de tomar la Cámara en los midterms de noviembre, lo que acotaría el margen ejecutivo de Trump. Un juez de la Corte de Comercio Internacional certifica la demanda colectiva para extender los reembolsos de aranceles Trump a importadores que no habían reclamado, ampliando el perímetro de litigio comercial",
-          "fuente": "El Tiempo, SÍNTESIS Informat.ro, DiarioBitcoin"
+          "texto": "Trump anuncia una licencia general temporal del Tesoro que exime de sanciones el diésel ruso para inyectar oferta y bajar precios, mientras Zelenskyy califica el pacto de \"traición\" y senadores demócratas liderados por Schumer denuncian la medida en plena negociación de paz de seis horas en Miami entre EE. UU., Ucrania y Europa",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Las actas del BCE de septiembre califican de «proporcionada» la subida al 2,5 % y advierten que el repunte de la deuda soberana, el bono francés a 10 años roza el 5 %, condicionará siguientes decisiones. NVIDIA y Microsoft lanzan los PC RTX Spark con arquitectura Grace-Blackwell y 128 GB de memoria unificada para ejecutar agentes de IA en local desde 2.999 $ con entregas globales el 16 de octubre. El Euríbor a 12 meses se sitúa en el 3,194 % (media provisional octubre 3,237 %), encareciendo revisiones hipotecarias y reduciendo renta disponible",
-          "fuente": "Swissinfo, EL PAÍS, Vandal, Rankia"
+          "texto": "Un ataque contra el superpetrolero Gem No.2 (bandera de Panamá, operado por Global Energy Maritime) a 13 millas náuticas de Al Jazeera (EAU) provocó un incendio controlado y eleva la presión sobre el Estrecho de Ormuz, donde la UKMTO mantiene avisos diarios continuos durante octubre",
+          "fuente": "Seatrade Maritime News"
+        },
+        {
+          "texto": "En España, el 7 de octubre concluyó el periodo de enmiendas del Proyecto de Ley Orgánica de Uso y Gobernanza de la IA (121/000096), que complementa el AI Act europeo y define el régimen sancionador y competencias de AESIA, Banco de España y CNMV",
+          "fuente": "AI Regulation in Spain"
         }
       ]
     },
@@ -64,12 +68,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Se cumplen tres años del 7 de octubre de 2023, hito que redefinió el mapa regional, elevó la polarización en Israel y deja abiertas las elecciones parlamentarias del 27 de octubre. Al menos 10 petroleros han sido atacados cerca de Ormuz entre finales de septiembre y primera semana de octubre, impulsando el Brent por encima de 101 $ y el WTI a 92,48 $. Las actas de la Fed del 7 de octubre confirman mayoría a favor de subir el rango al 4,00-4,25 % antes de fin de año por la inflación importada de energía. La TUR de gas individual sube un 17,6 % y la vecinal entre un 22,6 % y un 33,1 % desde el 1 de octubre tras encarecerse la materia prima un 112,5 % desde julio",
-          "fuente": "France 24, Red Uno, EL PAÍS, El Español"
+          "texto": "NVIDIA y Microsoft presentan la DGX Station for Windows con superchip GB300 Grace Blackwell Ultra (748 GB memoria coherente, 20 petaFLOPS FP4) para ejecutar localmente modelos de hasta un billón de parámetros y agentes autónomos. Anthropic lanza Claude Haiku 5.5, ampliando la competencia en velocidad y eficiencia en LLMs comerciales",
+          "fuente": "NVIDIA Blog, AI Release Tracker"
         },
         {
-          "texto": "El Consejo Asesor del Gobierno español entrega a Óscar López un manifiesto que exige regulación estricta de IA alineada a derechos humanos de la UE frente a la presión de grandes tecnológicas. El sector cultural español denuncia bloqueo institucional de los decretos para regular propiedad intelectual frente a IA generativa",
-          "fuente": "El Periódico, Diario Que!"
+          "texto": "El mercado M&A español acumula 2.261 operaciones por 73.803 M€ hasta septiembre, con caída interanual del 15 % en volumen pero solo 6 % en capital, manteniendo foco en operaciones de mayor tamaño y consolidación sectorial. Puig adquiere el 50 % restante de ISDIN a Esteve, cerrando 50 años de copropiedad familiar y reforzando la reestructuración accionarial en grandes firmas patrias",
+          "fuente": "Demócrata, Albia IMAP"
+        },
+        {
+          "texto": "Al menos 12 ataques contra buques tanque y gaseros en la semana previa al 8 de octubre cerca de Ormuz, cifra semanal más alta desde febrero de 2026, impulsan el Brent por encima de 100 $/barril. Unidades navales de la OTAN interceptan submarinos rusos en tareas de reconocimiento y simulación de ataque cerca de cables submarinos e infraestructura energética en Svalbard (Noruega) el 5 de octubre",
+          "fuente": "The Guardian, Global Tensions Report"
         }
       ]
     },
@@ -77,8 +85,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor a finales de julio aplazando obligaciones de alto riesgo a diciembre de 2027 (anexo III) y agosto de 2028 (anexo I), manteniendo prohibiciones y transparencia vigentes. El lower mid-market español (0,5-10 M€ de facturación) concentra la mayor actividad transaccional impulsado por family offices y private equity especializados en industriales y servicios técnicos. El 89 % de las empresas españolas son familiares pero solo una de cada tres tiene plan de sucesión formalizado, generando flujo constante de operaciones asesoradas por boutiques independientes",
-          "fuente": "LegalToday, Deale, Tilers Business Advisors"
+          "texto": "EE. UU. mantiene bloqueo naval en el Golfo habiendo interceptado o redirigido 130 barcos vinculados a flujos sancionados y bloqueos cruzados con hutíes en Yemen, según UANI a principios de octubre",
+          "fuente": "UANI Shipping Update"
+        },
+        {
+          "texto": "Desde el 2 de agosto, AESIA y el AI Act (UE 2024/1689) exigen inventarios obligatorios de sistemas de IA y registros de supervisión humana a empresas desplegadoras en España, con sanciones de hasta 15 M€ o 3 % de facturación global",
+          "fuente": "Overseas Translations"
+        },
+        {
+          "texto": "Real Estate lidera M&A España en los nueve primeros meses con 510 operaciones (-13 %), seguido por Internet, Software y Servicios IT (203, -13 %) y Servicios de Apoyo Empresarial (168, +4 %), consolidando nichos objetivo para mandatos de valoración y venta en pymes de servicios profesionales e industriales",
+          "fuente": "Demócrata"
         }
       ]
     },
@@ -90,13 +106,21 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El lower mid-market español (0,5-10 M€) es el segmento más líquido, comprado por family offices y fondos sectoriales, lo que reduce time-to-close y mejora múltiplos de salida para vendedores asesorados por independientes. El gap de sucesión (89 % familiar, 33 % con plan) convierte la planificación patrimonial en deal flow recurrente y predecible para boutiques que integren fiscal, gobernanza y M&A. La TUR de gas vecinal +33,1 % y el Euríbor 3,194 % comprimen caja de pymes intensivas en energía y deuda variable, anticipando necesidades de refinancing o venta de activos no core",
-              "fuente": "Deale, Tilers Business Advisors, El Español, Rankia"
+              "texto": "El mercado M&A español muestra polarización: menos deals (2.261, -15 %) pero mayor ticket medio (73.803 M€, -6 % solo en capital) concentrado en Real Estate (510 ops), IT Services (203) y Business Services (168, +4 %), confirmando que el lower mid-market de servicios profesionales e industriales es el segmento más líquido para mandatos de venta",
+              "fuente": "Demócrata"
+            },
+            {
+              "texto": "La operación Puig/ISDIN (fin a 50 años de copropiedad familiar 50/50) ejemplifica la ola de reestructuración accionarial en grandes empresas familiares que genera deal flow predecible para boutiques que integren gobernanza, fiscal y M&A",
+              "fuente": "Albia IMAP"
+            },
+            {
+              "texto": "El endurecimiento regulatorio IA (inventarios obligatorios, supervisión humana, sanciones 15 M€/3 % facturación) desde agosto crea necesidad inmediata de compliance en pymes desplegadoras, abriendo línea de asesoramiento recurrente para firmas que cubran el gap técnico-legal",
+              "fuente": "Overseas Translations"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa ofensiva rusa alcanza autobuses civiles y barrios residenciales de Kramatorsk y Kiev causando al menos 30 muertos y apagones en la capital antes del invierno. En Washington, la encuesta Reuters/Ipsos del 8 de octubre otorga a los demócratas opciones reales de tomar la Cámara en los midterms de noviembre, lo que acotaría el margen ejecutivo de Trump. Un juez de la Corte de Comercio Internacional certifica la demanda colectiva para extender los reembolsos de aranceles Trump a importadores que no habían reclamado, ampliando el perímetro de litigio comercial.\n\nLas actas del BCE de septiembre califican de «proporcionada» la subida al 2,5 % y advierten que el repunte de la deuda soberana, el bono francés a 10 años roza el 5 %, condicionará siguientes decisiones. NVIDIA y Microsoft lanzan los PC RTX Spark con arquitectura Grace-Blackwell y 128 GB de memoria unificada para ejecutar agentes de IA en local desde 2.999 $ con entregas globales el 16 de octubre. El Euríbor a 12 meses se sitúa en el 3,194 % (media provisional octubre 3,237 %), encareciendo revisiones hipotecarias y reduciendo renta disponible.\n\nFuentes: El Tiempo, SÍNTESIS Informat.ro, DiarioBitcoin, Swissinfo, EL PAÍS, Vandal, Rankia\n\n## Esta semana\nSe cumplen tres años del 7 de octubre de 2023, hito que redefinió el mapa regional, elevó la polarización en Israel y deja abiertas las elecciones parlamentarias del 27 de octubre. Al menos 10 petroleros han sido atacados cerca de Ormuz entre finales de septiembre y primera semana de octubre, impulsando el Brent por encima de 101 $ y el WTI a 92,48 $. Las actas de la Fed del 7 de octubre confirman mayoría a favor de subir el rango al 4,00-4,25 % antes de fin de año por la inflación importada de energía. La TUR de gas individual sube un 17,6 % y la vecinal entre un 22,6 % y un 33,1 % desde el 1 de octubre tras encarecerse la materia prima un 112,5 % desde julio.\n\nEl Consejo Asesor del Gobierno español entrega a Óscar López un manifiesto que exige regulación estricta de IA alineada a derechos humanos de la UE frente a la presión de grandes tecnológicas. El sector cultural español denuncia bloqueo institucional de los decretos para regular propiedad intelectual frente a IA generativa.\n\nFuentes: France 24, Red Uno, EL PAÍS, El Español, El Periódico, Diario Que!\n\n## Este mes\nEl Reglamento (UE) 2026/1744 (Ómnibus digital sobre IA) entró en vigor a finales de julio aplazando obligaciones de alto riesgo a diciembre de 2027 (anexo III) y agosto de 2028 (anexo I), manteniendo prohibiciones y transparencia vigentes. El lower mid-market español (0,5-10 M€ de facturación) concentra la mayor actividad transaccional impulsado por family offices y private equity especializados en industriales y servicios técnicos. El 89 % de las empresas españolas son familiares pero solo una de cada tres tiene plan de sucesión formalizado, generando flujo constante de operaciones asesoradas por boutiques independientes.\n\nFuentes: LegalToday, Deale, Tilers Business Advisors\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl lower mid-market español (0,5-10 M€) es el segmento más líquido, comprado por family offices y fondos sectoriales, lo que reduce time-to-close y mejora múltiplos de salida para vendedores asesorados por independientes. El gap de sucesión (89 % familiar, 33 % con plan) convierte la planificación patrimonial en deal flow recurrente y predecible para boutiques que integren fiscal, gobernanza y M&A. La TUR de gas vecinal +33,1 % y el Euríbor 3,194 % comprimen caja de pymes intensivas en energía y deuda variable, anticipando necesidades de refinancing o venta de activos no core.\n\nFuentes: Deale, Tilers Business Advisors, El Español, Rankia"
+  "markdown": "## Hoy\nTrump anuncia una licencia general temporal del Tesoro que exime de sanciones el diésel ruso para inyectar oferta y bajar precios, mientras Zelenskyy califica el pacto de \"traición\" y senadores demócratas liderados por Schumer denuncian la medida en plena negociación de paz de seis horas en Miami entre EE. UU., Ucrania y Europa.\n\nUn ataque contra el superpetrolero Gem No.2 (bandera de Panamá, operado por Global Energy Maritime) a 13 millas náuticas de Al Jazeera (EAU) provocó un incendio controlado y eleva la presión sobre el Estrecho de Ormuz, donde la UKMTO mantiene avisos diarios continuos durante octubre.\n\nEn España, el 7 de octubre concluyó el periodo de enmiendas del Proyecto de Ley Orgánica de Uso y Gobernanza de la IA (121/000096), que complementa el AI Act europeo y define el régimen sancionador y competencias de AESIA, Banco de España y CNMV.\n\nFuentes: The Guardian, Seatrade Maritime News, AI Regulation in Spain\n\n## Esta semana\nNVIDIA y Microsoft presentan la DGX Station for Windows con superchip GB300 Grace Blackwell Ultra (748 GB memoria coherente, 20 petaFLOPS FP4) para ejecutar localmente modelos de hasta un billón de parámetros y agentes autónomos. Anthropic lanza Claude Haiku 5.5, ampliando la competencia en velocidad y eficiencia en LLMs comerciales.\n\nEl mercado M&A español acumula 2.261 operaciones por 73.803 M€ hasta septiembre, con caída interanual del 15 % en volumen pero solo 6 % en capital, manteniendo foco en operaciones de mayor tamaño y consolidación sectorial. Puig adquiere el 50 % restante de ISDIN a Esteve, cerrando 50 años de copropiedad familiar y reforzando la reestructuración accionarial en grandes firmas patrias.\n\nAl menos 12 ataques contra buques tanque y gaseros en la semana previa al 8 de octubre cerca de Ormuz, cifra semanal más alta desde febrero de 2026, impulsan el Brent por encima de 100 $/barril. Unidades navales de la OTAN interceptan submarinos rusos en tareas de reconocimiento y simulación de ataque cerca de cables submarinos e infraestructura energética en Svalbard (Noruega) el 5 de octubre.\n\nFuentes: NVIDIA Blog, AI Release Tracker, Demócrata, Albia IMAP, The Guardian, Global Tensions Report\n\n## Este mes\nEE. UU. mantiene bloqueo naval en el Golfo habiendo interceptado o redirigido 130 barcos vinculados a flujos sancionados y bloqueos cruzados con hutíes en Yemen, según UANI a principios de octubre.\n\nDesde el 2 de agosto, AESIA y el AI Act (UE 2024/1689) exigen inventarios obligatorios de sistemas de IA y registros de supervisión humana a empresas desplegadoras en España, con sanciones de hasta 15 M€ o 3 % de facturación global.\n\nReal Estate lidera M&A España en los nueve primeros meses con 510 operaciones (-13 %), seguido por Internet, Software y Servicios IT (203, -13 %) y Servicios de Apoyo Empresarial (168, +4 %), consolidando nichos objetivo para mandatos de valoración y venta en pymes de servicios profesionales e industriales.\n\nFuentes: UANI Shipping Update, Overseas Translations, Demócrata\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mercado M&A español muestra polarización: menos deals (2.261, -15 %) pero mayor ticket medio (73.803 M€, -6 % solo en capital) concentrado en Real Estate (510 ops), IT Services (203) y Business Services (168, +4 %), confirmando que el lower mid-market de servicios profesionales e industriales es el segmento más líquido para mandatos de venta.\n\nLa operación Puig/ISDIN (fin a 50 años de copropiedad familiar 50/50) ejemplifica la ola de reestructuración accionarial en grandes empresas familiares que genera deal flow predecible para boutiques que integren gobernanza, fiscal y M&A.\n\nEl endurecimiento regulatorio IA (inventarios obligatorios, supervisión humana, sanciones 15 M€/3 % facturación) desde agosto crea necesidad inmediata de compliance en pymes desplegadoras, abriendo línea de asesoramiento recurrente para firmas que cubran el gap técnico-legal.\n\nFuentes: Demócrata, Albia IMAP, Overseas Translations"
 }
