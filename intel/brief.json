@@ -1,66 +1,66 @@
 {
-  "fecha": "2026-10-10",
+  "fecha": "2026-10-11",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Transacciones M&A España (ene-sep)",
-      "valor": "2.261",
-      "fuente": "Demócrata"
+      "etiqueta": "Bajas militares de EE. UU. en Irán",
+      "valor": "21 efectivos",
+      "fuente": "The Jerusalem Post"
     },
     {
-      "etiqueta": "Valor M&A España (ene-sep)",
-      "valor": "73.803 M€",
-      "fuente": "Demócrata"
+      "etiqueta": "Financiación de SpaceX para IA",
+      "valor": "40.000 M$",
+      "fuente": "Techzine Global"
     },
     {
-      "etiqueta": "Brent crudo",
-      "valor": ">100 $/barril",
-      "fuente": "The Guardian"
+      "etiqueta": "Entrada de BPCE en Banco Sabadell",
+      "valor": "7 %",
+      "fuente": "Financecommunity ES"
     },
     {
-      "etiqueta": "Subida tipos Fed (prob. futuros)",
-      "valor": "85 %",
-      "fuente": "Federal Reserve"
+      "etiqueta": "Múltiplo Software pymes España",
+      "valor": "6x - 10x EBITDA",
+      "fuente": "Bolsamania"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 9
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 5
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Nemotron"
+      "Gemini"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Nemotron"
+    "texto": "Investigación: Gemini · Redacción: Gemini"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Trump anuncia una licencia general temporal del Tesoro que exime de sanciones el diésel ruso para inyectar oferta y bajar precios, mientras Zelenskyy califica el pacto de \"traición\" y senadores demócratas liderados por Schumer denuncian la medida en plena negociación de paz de seis horas en Miami entre EE. UU., Ucrania y Europa",
+          "texto": "Tras el acuerdo que exime de sanciones al diésel ruso, Donald Trump exige públicamente un cambio de liderazgo en Ucrania afirmando que el país debe elegir un nuevo presidente, mientras la presión militar sobre el terreno se cobra 20 muertos en Zaporiyia tras bombardeos rusos",
           "fuente": "The Guardian"
         },
         {
-          "texto": "Un ataque contra el superpetrolero Gem No.2 (bandera de Panamá, operado por Global Energy Maritime) a 13 millas náuticas de Al Jazeera (EAU) provocó un incendio controlado y eleva la presión sobre el Estrecho de Ormuz, donde la UKMTO mantiene avisos diarios continuos durante octubre",
-          "fuente": "Seatrade Maritime News"
+          "texto": "La tensión en Oriente Medio da un salto con un ataque de misiles hutíes contra la terminal del Aeropuerto Internacional Rey Khalid en Riad que deja 12 muertos y más de 300 heridos, impulsando a Trump a evaluar ataques ofensivos directos de EE. UU. junto a la coalición saudí. En este escenario de escalada, el Pentágono eleva a 21 las bajas mortales de militares estadounidenses en la Operation Epic Fury frente a Irán",
+          "fuente": "The Jerusalem Post"
         },
         {
-          "texto": "En España, el 7 de octubre concluyó el periodo de enmiendas del Proyecto de Ley Orgánica de Uso y Gobernanza de la IA (121/000096), que complementa el AI Act europeo y define el régimen sancionador y competencias de AESIA, Banco de España y CNMV",
-          "fuente": "AI Regulation in Spain"
+          "texto": "En el sector de semiconductores e infraestructura, Nvidia planea una inversión estratégica en el desarrollador de chips d-Matrix para integrar su tecnología de inferencia con la arquitectura NVLink Fusion en centros de datos",
+          "fuente": "Konsulteer"
         }
       ]
     },
@@ -68,16 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "NVIDIA y Microsoft presentan la DGX Station for Windows con superchip GB300 Grace Blackwell Ultra (748 GB memoria coherente, 20 petaFLOPS FP4) para ejecutar localmente modelos de hasta un billón de parámetros y agentes autónomos. Anthropic lanza Claude Haiku 5.5, ampliando la competencia en velocidad y eficiencia en LLMs comerciales",
-          "fuente": "NVIDIA Blog, AI Release Tracker"
+          "texto": "Pekín y Washington pactan formalmente enmarcar su relación como una estabilidad estratégica constructiva basada en la reciprocidad, al tiempo que la administración estadounidense prorroga hasta el 10 de enero de 2027 la tregua sobre las tasas e importaciones portuarias a buques vinculados a la cadena china",
+          "fuente": "South China Morning Post, CalChamber"
         },
         {
-          "texto": "El mercado M&A español acumula 2.261 operaciones por 73.803 M€ hasta septiembre, con caída interanual del 15 % en volumen pero solo 6 % en capital, manteniendo foco en operaciones de mayor tamaño y consolidación sectorial. Puig adquiere el 50 % restante de ISDIN a Esteve, cerrando 50 años de copropiedad familiar y reforzando la reestructuración accionarial en grandes firmas patrias",
-          "fuente": "Demócrata, Albia IMAP"
+          "texto": "En el frente monetario, la mayoría de economistas encuestados por Reuters anticipa que el Banco Central Europeo mantendrá el tipo de facilidad de depósito en el 2,50 % en su reunión del 29 de octubre, proyectando una subida al 2,75 % en diciembre por la inflación del crudo, mientras la Reserva Federal mantendrá los tipos en el rango 3,75 %-4,00 % tras su decisión de septiembre",
+          "fuente": "FXStreet, Admiral Markets"
         },
         {
-          "texto": "Al menos 12 ataques contra buques tanque y gaseros en la semana previa al 8 de octubre cerca de Ormuz, cifra semanal más alta desde febrero de 2026, impulsan el Brent por encima de 100 $/barril. Unidades navales de la OTAN interceptan submarinos rusos en tareas de reconocimiento y simulación de ataque cerca de cables submarinos e infraestructura energética en Svalbard (Noruega) el 5 de octubre",
-          "fuente": "The Guardian, Global Tensions Report"
+          "texto": "En infraestructura de IA, SpaceX negocia una financiación récord de 40.000 millones de dólares liderada por Apollo Global Management para comprar procesadores a Nvidia utilizando las propias GPUs como colateral a 7 años, mientras Nvidia compromete 1.000 millones de dólares en cinco años para supercomputación científica en EE. UU.. En el ámbito de modelos, la competencia se reaviva con los lanzamientos de Mistral Large 4, de 1,05 billones de parámetros, y Claude Haiku 5.5 de Anthropic",
+          "fuente": "AI Release Tracker"
+        },
+        {
+          "texto": "En la banca y el M&A español, el grupo francés BPCE adquiere una participación del 7 % en Banco Sabadell con la intención de explorar alianzas estratégicas en banca corporativa",
+          "fuente": "Financecommunity ES"
         }
       ]
     },
@@ -85,16 +89,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "EE. UU. mantiene bloqueo naval en el Golfo habiendo interceptado o redirigido 130 barcos vinculados a flujos sancionados y bloqueos cruzados con hutíes en Yemen, según UANI a principios de octubre",
-          "fuente": "UANI Shipping Update"
+          "texto": "El M&A del mid-market en España fija referencias de valoración a través del informe de Capittal Transacciones, situando las pymes de software en 6x-10x EBITDA, servicios sanitarios en 6x-10x, servicios profesionales en 5x-8x y B2B recurrentes en 4,5x-7x. En un mercado dominado por compradores industriales, plataformas como Deale alcanzan 18 operaciones por 52 millones de euros en el semestre y ONEtoONE entra en el Top 10 con 7 transacciones, en un entorno donde se recuerda la exigencia de due diligence medioambiental y de datos obligatoria para operaciones superiores a 3 millones de euros",
+          "fuente": "Gestoría y Abogados"
         },
         {
-          "texto": "Desde el 2 de agosto, AESIA y el AI Act (UE 2024/1689) exigen inventarios obligatorios de sistemas de IA y registros de supervisión humana a empresas desplegadoras en España, con sanciones de hasta 15 M€ o 3 % de facturación global",
-          "fuente": "Overseas Translations"
-        },
-        {
-          "texto": "Real Estate lidera M&A España en los nueve primeros meses con 510 operaciones (-13 %), seguido por Internet, Software y Servicios IT (203, -13 %) y Servicios de Apoyo Empresarial (168, +4 %), consolidando nichos objetivo para mandatos de valoración y venta en pymes de servicios profesionales e industriales",
-          "fuente": "Demócrata"
+          "texto": "En el frente militar ucraniano, análisis de OSINT certifican el estancamiento del conflicto tras registrar que Rusia avanzó apenas 4 millas cuadradas netas de territorio en las últimas cuatro semanas",
+          "fuente": "The Russia-Ukraine War Report Card, Oct. 7, 2026"
         }
       ]
     },
@@ -104,23 +104,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "El mercado M&A español muestra polarización: menos deals (2.261, -15 %) pero mayor ticket medio (73.803 M€, -6 % solo en capital) concentrado en Real Estate (510 ops), IT Services (203) y Business Services (168, +4 %), confirmando que el lower mid-market de servicios profesionales e industriales es el segmento más líquido para mandatos de venta",
-              "fuente": "Demócrata"
-            },
-            {
-              "texto": "La operación Puig/ISDIN (fin a 50 años de copropiedad familiar 50/50) ejemplifica la ola de reestructuración accionarial en grandes empresas familiares que genera deal flow predecible para boutiques que integren gobernanza, fiscal y M&A",
-              "fuente": "Albia IMAP"
-            },
-            {
-              "texto": "El endurecimiento regulatorio IA (inventarios obligatorios, supervisión humana, sanciones 15 M€/3 % facturación) desde agosto crea necesidad inmediata de compliance en pymes desplegadoras, abriendo línea de asesoramiento recurrente para firmas que cubran el gap técnico-legal",
-              "fuente": "Overseas Translations"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nTrump anuncia una licencia general temporal del Tesoro que exime de sanciones el diésel ruso para inyectar oferta y bajar precios, mientras Zelenskyy califica el pacto de \"traición\" y senadores demócratas liderados por Schumer denuncian la medida en plena negociación de paz de seis horas en Miami entre EE. UU., Ucrania y Europa.\n\nUn ataque contra el superpetrolero Gem No.2 (bandera de Panamá, operado por Global Energy Maritime) a 13 millas náuticas de Al Jazeera (EAU) provocó un incendio controlado y eleva la presión sobre el Estrecho de Ormuz, donde la UKMTO mantiene avisos diarios continuos durante octubre.\n\nEn España, el 7 de octubre concluyó el periodo de enmiendas del Proyecto de Ley Orgánica de Uso y Gobernanza de la IA (121/000096), que complementa el AI Act europeo y define el régimen sancionador y competencias de AESIA, Banco de España y CNMV.\n\nFuentes: The Guardian, Seatrade Maritime News, AI Regulation in Spain\n\n## Esta semana\nNVIDIA y Microsoft presentan la DGX Station for Windows con superchip GB300 Grace Blackwell Ultra (748 GB memoria coherente, 20 petaFLOPS FP4) para ejecutar localmente modelos de hasta un billón de parámetros y agentes autónomos. Anthropic lanza Claude Haiku 5.5, ampliando la competencia en velocidad y eficiencia en LLMs comerciales.\n\nEl mercado M&A español acumula 2.261 operaciones por 73.803 M€ hasta septiembre, con caída interanual del 15 % en volumen pero solo 6 % en capital, manteniendo foco en operaciones de mayor tamaño y consolidación sectorial. Puig adquiere el 50 % restante de ISDIN a Esteve, cerrando 50 años de copropiedad familiar y reforzando la reestructuración accionarial en grandes firmas patrias.\n\nAl menos 12 ataques contra buques tanque y gaseros en la semana previa al 8 de octubre cerca de Ormuz, cifra semanal más alta desde febrero de 2026, impulsan el Brent por encima de 100 $/barril. Unidades navales de la OTAN interceptan submarinos rusos en tareas de reconocimiento y simulación de ataque cerca de cables submarinos e infraestructura energética en Svalbard (Noruega) el 5 de octubre.\n\nFuentes: NVIDIA Blog, AI Release Tracker, Demócrata, Albia IMAP, The Guardian, Global Tensions Report\n\n## Este mes\nEE. UU. mantiene bloqueo naval en el Golfo habiendo interceptado o redirigido 130 barcos vinculados a flujos sancionados y bloqueos cruzados con hutíes en Yemen, según UANI a principios de octubre.\n\nDesde el 2 de agosto, AESIA y el AI Act (UE 2024/1689) exigen inventarios obligatorios de sistemas de IA y registros de supervisión humana a empresas desplegadoras en España, con sanciones de hasta 15 M€ o 3 % de facturación global.\n\nReal Estate lidera M&A España en los nueve primeros meses con 510 operaciones (-13 %), seguido por Internet, Software y Servicios IT (203, -13 %) y Servicios de Apoyo Empresarial (168, +4 %), consolidando nichos objetivo para mandatos de valoración y venta en pymes de servicios profesionales e industriales.\n\nFuentes: UANI Shipping Update, Overseas Translations, Demócrata\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mercado M&A español muestra polarización: menos deals (2.261, -15 %) pero mayor ticket medio (73.803 M€, -6 % solo en capital) concentrado en Real Estate (510 ops), IT Services (203) y Business Services (168, +4 %), confirmando que el lower mid-market de servicios profesionales e industriales es el segmento más líquido para mandatos de venta.\n\nLa operación Puig/ISDIN (fin a 50 años de copropiedad familiar 50/50) ejemplifica la ola de reestructuración accionarial en grandes empresas familiares que genera deal flow predecible para boutiques que integren gobernanza, fiscal y M&A.\n\nEl endurecimiento regulatorio IA (inventarios obligatorios, supervisión humana, sanciones 15 M€/3 % facturación) desde agosto crea necesidad inmediata de compliance en pymes desplegadoras, abriendo línea de asesoramiento recurrente para firmas que cubran el gap técnico-legal.\n\nFuentes: Demócrata, Albia IMAP, Overseas Translations"
+  "markdown": "## Hoy\nTras el acuerdo que exime de sanciones al diésel ruso, Donald Trump exige públicamente un cambio de liderazgo en Ucrania afirmando que el país debe elegir un nuevo presidente, mientras la presión militar sobre el terreno se cobra 20 muertos en Zaporiyia tras bombardeos rusos.\n\nLa tensión en Oriente Medio da un salto con un ataque de misiles hutíes contra la terminal del Aeropuerto Internacional Rey Khalid en Riad que deja 12 muertos y más de 300 heridos, impulsando a Trump a evaluar ataques ofensivos directos de EE. UU. junto a la coalición saudí. En este escenario de escalada, el Pentágono eleva a 21 las bajas mortales de militares estadounidenses en la Operation Epic Fury frente a Irán.\n\nEn el sector de semiconductores e infraestructura, Nvidia planea una inversión estratégica en el desarrollador de chips d-Matrix para integrar su tecnología de inferencia con la arquitectura NVLink Fusion en centros de datos.\n\nFuentes: The Guardian, The Jerusalem Post, Konsulteer\n\n## Esta semana\nPekín y Washington pactan formalmente enmarcar su relación como una estabilidad estratégica constructiva basada en la reciprocidad, al tiempo que la administración estadounidense prorroga hasta el 10 de enero de 2027 la tregua sobre las tasas e importaciones portuarias a buques vinculados a la cadena china.\n\nEn el frente monetario, la mayoría de economistas encuestados por Reuters anticipa que el Banco Central Europeo mantendrá el tipo de facilidad de depósito en el 2,50 % en su reunión del 29 de octubre, proyectando una subida al 2,75 % en diciembre por la inflación del crudo, mientras la Reserva Federal mantendrá los tipos en el rango 3,75 %-4,00 % tras su decisión de septiembre.\n\nEn infraestructura de IA, SpaceX negocia una financiación récord de 40.000 millones de dólares liderada por Apollo Global Management para comprar procesadores a Nvidia utilizando las propias GPUs como colateral a 7 años, mientras Nvidia compromete 1.000 millones de dólares en cinco años para supercomputación científica en EE. UU.. En el ámbito de modelos, la competencia se reaviva con los lanzamientos de Mistral Large 4, de 1,05 billones de parámetros, y Claude Haiku 5.5 de Anthropic.\n\nEn la banca y el M&A español, el grupo francés BPCE adquiere una participación del 7 % en Banco Sabadell con la intención de explorar alianzas estratégicas en banca corporativa.\n\nFuentes: South China Morning Post, CalChamber, FXStreet, Admiral Markets, Techzine Global, Quantum Computing Report, No Code MBA, AI Release Tracker, Financecommunity ES\n\n## Este mes\nEl M&A del mid-market en España fija referencias de valoración a través del informe de Capittal Transacciones, situando las pymes de software en 6x-10x EBITDA, servicios sanitarios en 6x-10x, servicios profesionales en 5x-8x y B2B recurrentes en 4,5x-7x. En un mercado dominado por compradores industriales, plataformas como Deale alcanzan 18 operaciones por 52 millones de euros en el semestre y ONEtoONE entra en el Top 10 con 7 transacciones, en un entorno donde se recuerda la exigencia de due diligence medioambiental y de datos obligatoria para operaciones superiores a 3 millones de euros.\n\nEn el frente militar ucraniano, análisis de OSINT certifican el estancamiento del conflicto tras registrar que Rusia avanzó apenas 4 millas cuadradas netas de territorio en las últimas cuatro semanas.\n\nFuentes: Bolsamania, Cinco Días, ONEtoONE Corporate Finance, Gestoría y Abogados, The Russia-Ukraine War Report Card, Oct. 7, 2026"
 }
