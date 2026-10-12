@@ -1,66 +1,70 @@
 {
-  "fecha": "2026-10-11",
+  "fecha": "2026-10-12",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bajas militares de EE. UU. en Irán",
-      "valor": "21 efectivos",
-      "fuente": "The Jerusalem Post"
+      "etiqueta": "Petróleo Brent",
+      "valor": "105,48 $/barril",
+      "fuente": "Nation Thailand"
     },
     {
-      "etiqueta": "Financiación de SpaceX para IA",
-      "valor": "40.000 M$",
-      "fuente": "Techzine Global"
+      "etiqueta": "M&A España 9M26",
+      "valor": "2.261 ops / 73.803 M€",
+      "fuente": "Demócrata"
     },
     {
-      "etiqueta": "Entrada de BPCE en Banco Sabadell",
-      "valor": "7 %",
-      "fuente": "Financecommunity ES"
+      "etiqueta": "Divergencia Fed/BCE",
+      "valor": "140 pb",
+      "fuente": "Admiral Markets"
     },
     {
-      "etiqueta": "Múltiplo Software pymes España",
-      "valor": "6x - 10x EBITDA",
-      "fuente": "Bolsamania"
+      "etiqueta": "Empresarios sin sucesor 2030",
+      "valor": ">500.000",
+      "fuente": "Tendencias M&A 2026"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 6
     },
     {
       "horizonte": "Esta semana",
-      "n": 9
+      "n": 6
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Gemini"
+      "Nemotron"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Gemini"
+    "texto": "Investigación: Gemini · Redacción: Nemotron"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Tras el acuerdo que exime de sanciones al diésel ruso, Donald Trump exige públicamente un cambio de liderazgo en Ucrania afirmando que el país debe elegir un nuevo presidente, mientras la presión militar sobre el terreno se cobra 20 muertos en Zaporiyia tras bombardeos rusos",
-          "fuente": "The Guardian"
+          "texto": "Zelenski ordena a las fuerzas ucranianas cesar los ataques sobre refinerías e infraestructura energética rusa condicionado a la reciprocidad de Moscú, un giro diplomático impulsado por la presión de la administración Trump tras el polémico acuerdo de compra de diésel ruso",
+          "fuente": "Salon"
         },
         {
-          "texto": "La tensión en Oriente Medio da un salto con un ataque de misiles hutíes contra la terminal del Aeropuerto Internacional Rey Khalid en Riad que deja 12 muertos y más de 300 heridos, impulsando a Trump a evaluar ataques ofensivos directos de EE. UU. junto a la coalición saudí. En este escenario de escalada, el Pentágono eleva a 21 las bajas mortales de militares estadounidenses en la Operation Epic Fury frente a Irán",
-          "fuente": "The Jerusalem Post"
+          "texto": "El crudo Brent escala a 105,48 dólares y el WTI a 92,44 dólares tras los ataques hutíes del fin de semana contra el aeropuerto de Riad y dos petroleros, tensionando la oferta global",
+          "fuente": "Nation Thailand"
         },
         {
-          "texto": "En el sector de semiconductores e infraestructura, Nvidia planea una inversión estratégica en el desarrollador de chips d-Matrix para integrar su tecnología de inferencia con la arquitectura NVLink Fusion en centros de datos",
-          "fuente": "Konsulteer"
+          "texto": "Washington y Pekín ratifican el marco \"30-por-30\" que elimina aranceles recíprocos sobre 60.000 millones de dólares en bienes no sensibles, devolviendo las tasas a niveles de nación más favorecida en 1.619 partidas estadounidenses y 77 categorías chinas",
+          "fuente": "AgriNews"
+        },
+        {
+          "texto": "OpenAI activa marcas de agua invisibles en ChatGPT para usuarios de la UE, primera aplicación práctica de las obligaciones de transparencia del EU AI Act. SpaceXAI (antes xAI) lanza Grok 4.7 duplicando puntuaciones en benchmarks de programación extensa y posicionándose en el tramo de costes bajos frente a Claude 5.5. TTR Data certifica que el mercado español acumula 2.261 operaciones por 73.803 millones hasta septiembre, con caídas del 15% en volumen y 6% en capital respecto a 2025",
+          "fuente": "Enterprise Times, Tech Insider, Demócrata"
         }
       ]
     },
@@ -68,20 +72,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Pekín y Washington pactan formalmente enmarcar su relación como una estabilidad estratégica constructiva basada en la reciprocidad, al tiempo que la administración estadounidense prorroga hasta el 10 de enero de 2027 la tregua sobre las tasas e importaciones portuarias a buques vinculados a la cadena china",
-          "fuente": "South China Morning Post, CalChamber"
+          "texto": "La FAA emite alerta hasta el 10 de diciembre instando a extremar precaución sobre el espacio aéreo saudí tras el impacto de misiles hutíes en el aeropuerto de Riad con 13 muertos y más de 300 heridos. Cinco servicios de inteligencia europeos advierten al Financial Times de que Rusia intensifica planes de atentados y asesinatos selectivos contra directivos de la industria de defensa, forzando revisiones de seguridad ejecutiva",
+          "fuente": "The Jerusalem Post, i24NEWS"
         },
         {
-          "texto": "En el frente monetario, la mayoría de economistas encuestados por Reuters anticipa que el Banco Central Europeo mantendrá el tipo de facilidad de depósito en el 2,50 % en su reunión del 29 de octubre, proyectando una subida al 2,75 % en diciembre por la inflación del crudo, mientras la Reserva Federal mantendrá los tipos en el rango 3,75 %-4,00 % tras su decisión de septiembre",
-          "fuente": "FXStreet, Admiral Markets"
+          "texto": "Enviados estadounidenses Witkoff y Kushner convocan a negociadores ucranianos y europeos en Miami para presentar propuestas de desbloqueo antes del invierno. Las actas del BCE revelan total flexibilidad sin senda predeterminada, con riesgos inflacionarios sesgados al alza por el conflicto en Oriente Medio y energía persistente, manteniendo depósito en 2,50% y referencia en 2,65%",
+          "fuente": "Axios, Trading Economics, European Union"
         },
         {
-          "texto": "En infraestructura de IA, SpaceX negocia una financiación récord de 40.000 millones de dólares liderada por Apollo Global Management para comprar procesadores a Nvidia utilizando las propias GPUs como colateral a 7 años, mientras Nvidia compromete 1.000 millones de dólares en cinco años para supercomputación científica en EE. UU.. En el ámbito de modelos, la competencia se reaviva con los lanzamientos de Mistral Large 4, de 1,05 billones de parámetros, y Claude Haiku 5.5 de Anthropic",
-          "fuente": "AI Release Tracker"
-        },
-        {
-          "texto": "En la banca y el M&A español, el grupo francés BPCE adquiere una participación del 7 % en Banco Sabadell con la intención de explorar alianzas estratégicas en banca corporativa",
-          "fuente": "Financecommunity ES"
+          "texto": "OpenAI notifica a inversores un desvío de 50.000 millones frente al objetivo de ingresos anuales mientras negocia 30.000 millones a 1,3 billones de valoración. Dakota mapea los family offices españoles: Pontegadea (Ortega) lidera con 135.560 millones de dólares, seguido por Boyser (Barcelona) con 5.000 millones, como principales vehículos en private equity e inmobiliario prime",
+          "fuente": "Enterprise Times, Dakota"
         }
       ]
     },
@@ -89,12 +89,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El M&A del mid-market en España fija referencias de valoración a través del informe de Capittal Transacciones, situando las pymes de software en 6x-10x EBITDA, servicios sanitarios en 6x-10x, servicios profesionales en 5x-8x y B2B recurrentes en 4,5x-7x. En un mercado dominado por compradores industriales, plataformas como Deale alcanzan 18 operaciones por 52 millones de euros en el semestre y ONEtoONE entra en el Top 10 con 7 transacciones, en un entorno donde se recuerda la exigencia de due diligence medioambiental y de datos obligatoria para operaciones superiores a 3 millones de euros",
-          "fuente": "Gestoría y Abogados"
+          "texto": "La divergencia transatlántica se consolida con la Fed en 3,75%-4,00% y el BCE en 2,50%, abriendo 140 puntos básicos de diferencial que sostienen el DXY en 101,9 y el spread Treasuries 10Y/Bunds en 180 pb (5,28% vs 3,48%)",
+          "fuente": "Admiral Markets"
         },
         {
-          "texto": "En el frente militar ucraniano, análisis de OSINT certifican el estancamiento del conflicto tras registrar que Rusia avanzó apenas 4 millas cuadradas netas de territorio en las últimas cuatro semanas",
-          "fuente": "The Russia-Ukraine War Report Card, Oct. 7, 2026"
+          "texto": "El CEPR cuantifica el techo inflacionario de los aranceles globales post-2025 en un +3% sobre precios de bienes de consumo en febrero de 2026, dejando una estructura de costes permanentemente superior en cadenas de suministro",
+          "fuente": "CEPR"
+        },
+        {
+          "texto": "El primer semestre 2026 en España cierra 1.485 operaciones por 50.474 millones (-15% en número, -0,29% en capital), con el 43% de deals impulsados por sucesión familiar y más de 500.000 empresarios sin sucesor identificado antes de 2030",
+          "fuente": "Tendencias M&A 2026"
         }
       ]
     },
@@ -104,10 +108,15 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "TTR Data y el análisis semestral coinciden en la contracción del 15% en número de operaciones M&A en España con capital estable, confirmando un mercado de menos deals pero de mayor ticket medio donde el 43% responde a sucesión familiar y la ola de 500.000 empresarios sin heredero antes de 2030. La concentración de capital en family offices, Pontegadea 135.560 M$ y Boyser 5.000 M$, define el lado comprador en corporate finance y coinversión inmobiliaria prime, mientras la obligatoriedad de due diligence medioambiental y de datos sobre 3 M€ (recordatorio vigente) endurece el umbral de preparación de mandatos de venta",
+              "fuente": "Demócrata, Tendencias M&A 2026, Dakota, Gestoría y Abogados"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nTras el acuerdo que exime de sanciones al diésel ruso, Donald Trump exige públicamente un cambio de liderazgo en Ucrania afirmando que el país debe elegir un nuevo presidente, mientras la presión militar sobre el terreno se cobra 20 muertos en Zaporiyia tras bombardeos rusos.\n\nLa tensión en Oriente Medio da un salto con un ataque de misiles hutíes contra la terminal del Aeropuerto Internacional Rey Khalid en Riad que deja 12 muertos y más de 300 heridos, impulsando a Trump a evaluar ataques ofensivos directos de EE. UU. junto a la coalición saudí. En este escenario de escalada, el Pentágono eleva a 21 las bajas mortales de militares estadounidenses en la Operation Epic Fury frente a Irán.\n\nEn el sector de semiconductores e infraestructura, Nvidia planea una inversión estratégica en el desarrollador de chips d-Matrix para integrar su tecnología de inferencia con la arquitectura NVLink Fusion en centros de datos.\n\nFuentes: The Guardian, The Jerusalem Post, Konsulteer\n\n## Esta semana\nPekín y Washington pactan formalmente enmarcar su relación como una estabilidad estratégica constructiva basada en la reciprocidad, al tiempo que la administración estadounidense prorroga hasta el 10 de enero de 2027 la tregua sobre las tasas e importaciones portuarias a buques vinculados a la cadena china.\n\nEn el frente monetario, la mayoría de economistas encuestados por Reuters anticipa que el Banco Central Europeo mantendrá el tipo de facilidad de depósito en el 2,50 % en su reunión del 29 de octubre, proyectando una subida al 2,75 % en diciembre por la inflación del crudo, mientras la Reserva Federal mantendrá los tipos en el rango 3,75 %-4,00 % tras su decisión de septiembre.\n\nEn infraestructura de IA, SpaceX negocia una financiación récord de 40.000 millones de dólares liderada por Apollo Global Management para comprar procesadores a Nvidia utilizando las propias GPUs como colateral a 7 años, mientras Nvidia compromete 1.000 millones de dólares en cinco años para supercomputación científica en EE. UU.. En el ámbito de modelos, la competencia se reaviva con los lanzamientos de Mistral Large 4, de 1,05 billones de parámetros, y Claude Haiku 5.5 de Anthropic.\n\nEn la banca y el M&A español, el grupo francés BPCE adquiere una participación del 7 % en Banco Sabadell con la intención de explorar alianzas estratégicas en banca corporativa.\n\nFuentes: South China Morning Post, CalChamber, FXStreet, Admiral Markets, Techzine Global, Quantum Computing Report, No Code MBA, AI Release Tracker, Financecommunity ES\n\n## Este mes\nEl M&A del mid-market en España fija referencias de valoración a través del informe de Capittal Transacciones, situando las pymes de software en 6x-10x EBITDA, servicios sanitarios en 6x-10x, servicios profesionales en 5x-8x y B2B recurrentes en 4,5x-7x. En un mercado dominado por compradores industriales, plataformas como Deale alcanzan 18 operaciones por 52 millones de euros en el semestre y ONEtoONE entra en el Top 10 con 7 transacciones, en un entorno donde se recuerda la exigencia de due diligence medioambiental y de datos obligatoria para operaciones superiores a 3 millones de euros.\n\nEn el frente militar ucraniano, análisis de OSINT certifican el estancamiento del conflicto tras registrar que Rusia avanzó apenas 4 millas cuadradas netas de territorio en las últimas cuatro semanas.\n\nFuentes: Bolsamania, Cinco Días, ONEtoONE Corporate Finance, Gestoría y Abogados, The Russia-Ukraine War Report Card, Oct. 7, 2026"
+  "markdown": "## Hoy\nZelenski ordena a las fuerzas ucranianas cesar los ataques sobre refinerías e infraestructura energética rusa condicionado a la reciprocidad de Moscú, un giro diplomático impulsado por la presión de la administración Trump tras el polémico acuerdo de compra de diésel ruso.\n\nEl crudo Brent escala a 105,48 dólares y el WTI a 92,44 dólares tras los ataques hutíes del fin de semana contra el aeropuerto de Riad y dos petroleros, tensionando la oferta global.\n\nWashington y Pekín ratifican el marco \"30-por-30\" que elimina aranceles recíprocos sobre 60.000 millones de dólares en bienes no sensibles, devolviendo las tasas a niveles de nación más favorecida en 1.619 partidas estadounidenses y 77 categorías chinas.\n\nOpenAI activa marcas de agua invisibles en ChatGPT para usuarios de la UE, primera aplicación práctica de las obligaciones de transparencia del EU AI Act. SpaceXAI (antes xAI) lanza Grok 4.7 duplicando puntuaciones en benchmarks de programación extensa y posicionándose en el tramo de costes bajos frente a Claude 5.5. TTR Data certifica que el mercado español acumula 2.261 operaciones por 73.803 millones hasta septiembre, con caídas del 15% en volumen y 6% en capital respecto a 2025.\n\nFuentes: Salon, Nation Thailand, AgriNews, Enterprise Times, Tech Insider, Demócrata\n\n## Esta semana\nLa FAA emite alerta hasta el 10 de diciembre instando a extremar precaución sobre el espacio aéreo saudí tras el impacto de misiles hutíes en el aeropuerto de Riad con 13 muertos y más de 300 heridos. Cinco servicios de inteligencia europeos advierten al Financial Times de que Rusia intensifica planes de atentados y asesinatos selectivos contra directivos de la industria de defensa, forzando revisiones de seguridad ejecutiva.\n\nEnviados estadounidenses Witkoff y Kushner convocan a negociadores ucranianos y europeos en Miami para presentar propuestas de desbloqueo antes del invierno. Las actas del BCE revelan total flexibilidad sin senda predeterminada, con riesgos inflacionarios sesgados al alza por el conflicto en Oriente Medio y energía persistente, manteniendo depósito en 2,50% y referencia en 2,65%.\n\nOpenAI notifica a inversores un desvío de 50.000 millones frente al objetivo de ingresos anuales mientras negocia 30.000 millones a 1,3 billones de valoración. Dakota mapea los family offices españoles: Pontegadea (Ortega) lidera con 135.560 millones de dólares, seguido por Boyser (Barcelona) con 5.000 millones, como principales vehículos en private equity e inmobiliario prime.\n\nFuentes: The Jerusalem Post, i24NEWS, Axios, Trading Economics, European Union, Enterprise Times, Dakota\n\n## Este mes\nEl CEPR cuantifica el techo inflacionario de los aranceles globales post-2025 en un +3% sobre precios de bienes de consumo en febrero de 2026, dejando una estructura de costes permanentemente superior en cadenas de suministro.\n\nEl primer semestre 2026 en España cierra 1.485 operaciones por 50.474 millones (-15% en número, -0,29% en capital), con el 43% de deals impulsados por sucesión familiar y más de 500.000 empresarios sin sucesor identificado antes de 2030.\n\nFuentes: CEPR, Tendencias M&A 2026\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nTTR Data y el análisis semestral coinciden en la contracción del 15% en número de operaciones M&A en España con capital estable, confirmando un mercado de menos deals pero de mayor ticket medio donde el 43% responde a sucesión familiar y la ola de 500.000 empresarios sin heredero antes de 2030. La concentración de capital en family offices, Pontegadea 135.560 M$ y Boyser 5.000 M$, define el lado comprador en corporate finance y coinversión inmobiliaria prime, mientras la obligatoriedad de due diligence medioambiental y de datos sobre 3 M€ (recordatorio vigente) endurece el umbral de preparación de mandatos de venta.\n\nFuentes: Demócrata, Tendencias M&A 2026, Dakota, Gestoría y Abogados"
 }
