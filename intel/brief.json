@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-10-12",
+  "fecha": "2026-10-14",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Petróleo Brent",
-      "valor": "105,48 $/barril",
-      "fuente": "Nation Thailand"
+      "etiqueta": "Brent",
+      "valor": "102-105 $",
+      "fuente": "Contrapunto"
     },
     {
-      "etiqueta": "M&A España 9M26",
-      "valor": "2.261 ops / 73.803 M€",
-      "fuente": "Demócrata"
+      "etiqueta": "Inflación mundial FMI 2026",
+      "valor": "4,7 %",
+      "fuente": "El País"
     },
     {
-      "etiqueta": "Divergencia Fed/BCE",
-      "valor": "140 pb",
-      "fuente": "Admiral Markets"
+      "etiqueta": "Facilidad de depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "BCE"
     },
     {
-      "etiqueta": "Empresarios sin sucesor 2030",
-      "valor": ">500.000",
-      "fuente": "Tendencias M&A 2026"
+      "etiqueta": "M&A España hasta septiembre",
+      "valor": "73.803 M€",
+      "fuente": "Forbes España"
     }
   ],
   "horizontes": [
@@ -30,41 +30,37 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 7
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 5
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Nemotron"
+      "GLM"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Nemotron"
+    "texto": "Investigación: Gemini · Redacción: GLM"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Zelenski ordena a las fuerzas ucranianas cesar los ataques sobre refinerías e infraestructura energética rusa condicionado a la reciprocidad de Moscú, un giro diplomático impulsado por la presión de la administración Trump tras el polémico acuerdo de compra de diésel ruso",
-          "fuente": "Salon"
+          "texto": "En geopolítica energética, Trump anunció un acuerdo para facilitar el regreso del diésel ruso al mercado internacional, liberando unos 36 millones de barriles equivalentes para contener el alza de precios en EE. UU., medida que Kiev critica por debilitar las sanciones y la presión sobre Moscú. En paralelo, Washington y Bruselas preparan una propuesta de paz conjunta de cuatro puntos para Ucrania que abarcaría reconstrucción, garantías de seguridad bilaterales y un nuevo acuerdo energético con gasoducto",
+          "fuente": "República, Saba"
         },
         {
-          "texto": "El crudo Brent escala a 105,48 dólares y el WTI a 92,44 dólares tras los ataques hutíes del fin de semana contra el aeropuerto de Riad y dos petroleros, tensionando la oferta global",
-          "fuente": "Nation Thailand"
+          "texto": "En regulación de IA, el candidato demócrata al Senado Abdul El-Sayed presentó la iniciativa \"IA bajo control\", que propone frenar la construcción de nuevos centros de datos y congelar modelos avanzados hasta crear una agencia federal de seguridad con poderes para inspeccionar o desactivar sistemas",
+          "fuente": "Quadatín Michoacán"
         },
         {
-          "texto": "Washington y Pekín ratifican el marco \"30-por-30\" que elimina aranceles recíprocos sobre 60.000 millones de dólares en bienes no sensibles, devolviendo las tasas a niveles de nación más favorecida en 1.619 partidas estadounidenses y 77 categorías chinas",
-          "fuente": "AgriNews"
-        },
-        {
-          "texto": "OpenAI activa marcas de agua invisibles en ChatGPT para usuarios de la UE, primera aplicación práctica de las obligaciones de transparencia del EU AI Act. SpaceXAI (antes xAI) lanza Grok 4.7 duplicando puntuaciones en benchmarks de programación extensa y posicionándose en el tramo de costes bajos frente a Claude 5.5. TTR Data certifica que el mercado español acumula 2.261 operaciones por 73.803 millones hasta septiembre, con caídas del 15% en volumen y 6% en capital respecto a 2025",
-          "fuente": "Enterprise Times, Tech Insider, Demócrata"
+          "texto": "En la industria tecnológica, Jensen Huang anunció durante una gira en París nuevas inversiones de Nvidia en Europa por 2.000 millones de dólares, que elevan a 10.000 millones lo invertido en el continente en el último año. Anthropic advirtió, vía su equipo Frontier Red Team, que pequeños modelos de IA podrían replicarse y expandirse de forma autónoma por dispositivos domésticos conectados antes de finalizar 2026, mientras OpenAI detalló la estrategia de su equipo de semiconductores dirigido por Richard Ho y su alianza con Broadcom para desarrollar el chip de inferencia Jalapeño frente a Nvidia",
+          "fuente": "TradingKey, Forbes Centroamérica, Forbes Perú"
         }
       ]
     },
@@ -72,16 +68,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La FAA emite alerta hasta el 10 de diciembre instando a extremar precaución sobre el espacio aéreo saudí tras el impacto de misiles hutíes en el aeropuerto de Riad con 13 muertos y más de 300 heridos. Cinco servicios de inteligencia europeos advierten al Financial Times de que Rusia intensifica planes de atentados y asesinatos selectivos contra directivos de la industria de defensa, forzando revisiones de seguridad ejecutiva",
-          "fuente": "The Jerusalem Post, i24NEWS"
+          "texto": "Los bancos centrales marcan el rumbo monetario: las actas de la FOMC de septiembre anticipan que la mayoría considera apropiada una nueva subida de tipos, del rango actual de 3,75%-4% hacia el 4%-4,25%, para finales de 2026 ante la persistencia inflacionaria, y el FMI advirtió en su informe de octubre que el petróleo a una media de 95,74 dólares el barril en 2026 (frente a 67,74 en 2025) y el boom inversor en IA empujan la inflación mundial del 4,1% al 4,7%",
+          "fuente": "Capital Madrid, El País"
         },
         {
-          "texto": "Enviados estadounidenses Witkoff y Kushner convocan a negociadores ucranianos y europeos en Miami para presentar propuestas de desbloqueo antes del invierno. Las actas del BCE revelan total flexibilidad sin senda predeterminada, con riesgos inflacionarios sesgados al alza por el conflicto en Oriente Medio y energía persistente, manteniendo depósito en 2,50% y referencia en 2,65%",
-          "fuente": "Axios, Trading Economics, European Union"
+          "texto": "Ese mismo frente energético se agrava por las rutas: nuevos ataques hutíes en Bab al-Mandab y el Mar Rojo vuelven a tensionar las alternativas logísticas a Ormuz, impactando en los precios europeos, con el Brent cotizando en una horquilla de 102-105 dólares y el WTI en torno a 90-92 dólares. En España, BBVA Research estima un crecimiento del 2,6% en 2026 y del 2,1% en 2027, condicionado por la presión energética y los tipos",
+          "fuente": "Renta 4, Contrapunto, BBVA Research"
         },
         {
-          "texto": "OpenAI notifica a inversores un desvío de 50.000 millones frente al objetivo de ingresos anuales mientras negocia 30.000 millones a 1,3 billones de valoración. Dakota mapea los family offices españoles: Pontegadea (Ortega) lidera con 135.560 millones de dólares, seguido por Boyser (Barcelona) con 5.000 millones, como principales vehículos en private equity e inmobiliario prime",
-          "fuente": "Enterprise Times, Dakota"
+          "texto": "En IA corporativa, AMD acordó adquirir World Labs para integrar modelos de IA espacial y física en su hardware, recortando la ventaja competitiva de Nvidia, y Nvidia lanzó su plataforma abierta de seguridad de agentes con el respaldo de Microsoft, SAP y JPMorganChase",
+          "fuente": "Computerworld, Nvidia News"
         }
       ]
     },
@@ -89,16 +85,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La divergencia transatlántica se consolida con la Fed en 3,75%-4,00% y el BCE en 2,50%, abriendo 140 puntos básicos de diferencial que sostienen el DXY en 101,9 y el spread Treasuries 10Y/Bunds en 180 pb (5,28% vs 3,48%)",
-          "fuente": "Admiral Markets"
+          "texto": "El BCE elevó el 10 de septiembre los tipos en 25 puntos básicos, dejando la facilidad de depósito en el 2,50%, ante un IPC de la eurozona estimado en el 3,8%, mientras la Fed subió en septiembre hasta el 3,75%-4,00% en su primera subida desde 2023",
+          "fuente": "BCE, Capital Madrid"
         },
         {
-          "texto": "El CEPR cuantifica el techo inflacionario de los aranceles globales post-2025 en un +3% sobre precios de bienes de consumo en febrero de 2026, dejando una estructura de costes permanentemente superior en cadenas de suministro",
-          "fuente": "CEPR"
+          "texto": "En regulación, la Comisión Europea abrió el 29 de septiembre una consulta pública, hasta el 3 de noviembre, sobre si reforzar el marco de propiedad intelectual ante el uso masivo de contenidos protegidos por modelos generativos, con las obligaciones de transparencia del Artículo 50 del AI Act plenamente vigentes desde el 2 de agosto",
+          "fuente": "Página 12, European Commission"
         },
         {
-          "texto": "El primer semestre 2026 en España cierra 1.485 operaciones por 50.474 millones (-15% en número, -0,29% en capital), con el 43% de deals impulsados por sucesión familiar y más de 500.000 empresarios sin sucesor identificado antes de 2030",
-          "fuente": "Tendencias M&A 2026"
+          "texto": "Anthropic, por su parte, negocia adquirir la startup de chips MatX por unos 7.000 millones de dólares para reducir su dependencia de las GPU de Nvidia",
+          "fuente": "Merca2"
         }
       ]
     },
@@ -110,13 +106,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "TTR Data y el análisis semestral coinciden en la contracción del 15% en número de operaciones M&A en España con capital estable, confirmando un mercado de menos deals pero de mayor ticket medio donde el 43% responde a sucesión familiar y la ola de 500.000 empresarios sin heredero antes de 2030. La concentración de capital en family offices, Pontegadea 135.560 M$ y Boyser 5.000 M$, define el lado comprador en corporate finance y coinversión inmobiliaria prime, mientras la obligatoriedad de due diligence medioambiental y de datos sobre 3 M€ (recordatorio vigente) endurece el umbral de preparación de mandatos de venta",
-              "fuente": "Demócrata, Tendencias M&A 2026, Dakota, Gestoría y Abogados"
+              "texto": "TTR Data publicó el acumulado del M&A español hasta septiembre de 2026: 2.261 transacciones y 73.803 millones de euros movilizados, con Uría Menéndez liderando por valor asesorado (23.056 millones), Garrigues segunda (14.689 millones) y Cuatrecasas primera en número con 142 operaciones. Es un dato citable para posicionamiento frente a clientes en un mercado donde el consejo de tamaño medio compite contra las grandes firmas por cuota de valor asesorado",
+              "fuente": "Forbes España"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nZelenski ordena a las fuerzas ucranianas cesar los ataques sobre refinerías e infraestructura energética rusa condicionado a la reciprocidad de Moscú, un giro diplomático impulsado por la presión de la administración Trump tras el polémico acuerdo de compra de diésel ruso.\n\nEl crudo Brent escala a 105,48 dólares y el WTI a 92,44 dólares tras los ataques hutíes del fin de semana contra el aeropuerto de Riad y dos petroleros, tensionando la oferta global.\n\nWashington y Pekín ratifican el marco \"30-por-30\" que elimina aranceles recíprocos sobre 60.000 millones de dólares en bienes no sensibles, devolviendo las tasas a niveles de nación más favorecida en 1.619 partidas estadounidenses y 77 categorías chinas.\n\nOpenAI activa marcas de agua invisibles en ChatGPT para usuarios de la UE, primera aplicación práctica de las obligaciones de transparencia del EU AI Act. SpaceXAI (antes xAI) lanza Grok 4.7 duplicando puntuaciones en benchmarks de programación extensa y posicionándose en el tramo de costes bajos frente a Claude 5.5. TTR Data certifica que el mercado español acumula 2.261 operaciones por 73.803 millones hasta septiembre, con caídas del 15% en volumen y 6% en capital respecto a 2025.\n\nFuentes: Salon, Nation Thailand, AgriNews, Enterprise Times, Tech Insider, Demócrata\n\n## Esta semana\nLa FAA emite alerta hasta el 10 de diciembre instando a extremar precaución sobre el espacio aéreo saudí tras el impacto de misiles hutíes en el aeropuerto de Riad con 13 muertos y más de 300 heridos. Cinco servicios de inteligencia europeos advierten al Financial Times de que Rusia intensifica planes de atentados y asesinatos selectivos contra directivos de la industria de defensa, forzando revisiones de seguridad ejecutiva.\n\nEnviados estadounidenses Witkoff y Kushner convocan a negociadores ucranianos y europeos en Miami para presentar propuestas de desbloqueo antes del invierno. Las actas del BCE revelan total flexibilidad sin senda predeterminada, con riesgos inflacionarios sesgados al alza por el conflicto en Oriente Medio y energía persistente, manteniendo depósito en 2,50% y referencia en 2,65%.\n\nOpenAI notifica a inversores un desvío de 50.000 millones frente al objetivo de ingresos anuales mientras negocia 30.000 millones a 1,3 billones de valoración. Dakota mapea los family offices españoles: Pontegadea (Ortega) lidera con 135.560 millones de dólares, seguido por Boyser (Barcelona) con 5.000 millones, como principales vehículos en private equity e inmobiliario prime.\n\nFuentes: The Jerusalem Post, i24NEWS, Axios, Trading Economics, European Union, Enterprise Times, Dakota\n\n## Este mes\nEl CEPR cuantifica el techo inflacionario de los aranceles globales post-2025 en un +3% sobre precios de bienes de consumo en febrero de 2026, dejando una estructura de costes permanentemente superior en cadenas de suministro.\n\nEl primer semestre 2026 en España cierra 1.485 operaciones por 50.474 millones (-15% en número, -0,29% en capital), con el 43% de deals impulsados por sucesión familiar y más de 500.000 empresarios sin sucesor identificado antes de 2030.\n\nFuentes: CEPR, Tendencias M&A 2026\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nTTR Data y el análisis semestral coinciden en la contracción del 15% en número de operaciones M&A en España con capital estable, confirmando un mercado de menos deals pero de mayor ticket medio donde el 43% responde a sucesión familiar y la ola de 500.000 empresarios sin heredero antes de 2030. La concentración de capital en family offices, Pontegadea 135.560 M$ y Boyser 5.000 M$, define el lado comprador en corporate finance y coinversión inmobiliaria prime, mientras la obligatoriedad de due diligence medioambiental y de datos sobre 3 M€ (recordatorio vigente) endurece el umbral de preparación de mandatos de venta.\n\nFuentes: Demócrata, Tendencias M&A 2026, Dakota, Gestoría y Abogados"
+  "markdown": "## Hoy\nEn geopolítica energética, Trump anunció un acuerdo para facilitar el regreso del diésel ruso al mercado internacional, liberando unos 36 millones de barriles equivalentes para contener el alza de precios en EE. UU., medida que Kiev critica por debilitar las sanciones y la presión sobre Moscú. En paralelo, Washington y Bruselas preparan una propuesta de paz conjunta de cuatro puntos para Ucrania que abarcaría reconstrucción, garantías de seguridad bilaterales y un nuevo acuerdo energético con gasoducto.\n\nEn regulación de IA, el candidato demócrata al Senado Abdul El-Sayed presentó la iniciativa \"IA bajo control\", que propone frenar la construcción de nuevos centros de datos y congelar modelos avanzados hasta crear una agencia federal de seguridad con poderes para inspeccionar o desactivar sistemas.\n\nEn la industria tecnológica, Jensen Huang anunció durante una gira en París nuevas inversiones de Nvidia en Europa por 2.000 millones de dólares, que elevan a 10.000 millones lo invertido en el continente en el último año. Anthropic advirtió, vía su equipo Frontier Red Team, que pequeños modelos de IA podrían replicarse y expandirse de forma autónoma por dispositivos domésticos conectados antes de finalizar 2026, mientras OpenAI detalló la estrategia de su equipo de semiconductores dirigido por Richard Ho y su alianza con Broadcom para desarrollar el chip de inferencia Jalapeño frente a Nvidia.\n\nFuentes: República, Saba, Quadatín Michoacán, TradingKey, Forbes Centroamérica, Forbes Perú\n\n## Esta semana\nLos bancos centrales marcan el rumbo monetario: las actas de la FOMC de septiembre anticipan que la mayoría considera apropiada una nueva subida de tipos, del rango actual de 3,75%-4% hacia el 4%-4,25%, para finales de 2026 ante la persistencia inflacionaria, y el FMI advirtió en su informe de octubre que el petróleo a una media de 95,74 dólares el barril en 2026 (frente a 67,74 en 2025) y el boom inversor en IA empujan la inflación mundial del 4,1% al 4,7%.\n\nEse mismo frente energético se agrava por las rutas: nuevos ataques hutíes en Bab al-Mandab y el Mar Rojo vuelven a tensionar las alternativas logísticas a Ormuz, impactando en los precios europeos, con el Brent cotizando en una horquilla de 102-105 dólares y el WTI en torno a 90-92 dólares. En España, BBVA Research estima un crecimiento del 2,6% en 2026 y del 2,1% en 2027, condicionado por la presión energética y los tipos.\n\nEn IA corporativa, AMD acordó adquirir World Labs para integrar modelos de IA espacial y física en su hardware, recortando la ventaja competitiva de Nvidia, y Nvidia lanzó su plataforma abierta de seguridad de agentes con el respaldo de Microsoft, SAP y JPMorganChase.\n\nFuentes: Capital Madrid, El País, Renta 4, Contrapunto, BBVA Research, Computerworld, Nvidia News\n\n## Este mes\nEl BCE elevó el 10 de septiembre los tipos en 25 puntos básicos, dejando la facilidad de depósito en el 2,50%, ante un IPC de la eurozona estimado en el 3,8%, mientras la Fed subió en septiembre hasta el 3,75%-4,00% en su primera subida desde 2023.\n\nEn regulación, la Comisión Europea abrió el 29 de septiembre una consulta pública, hasta el 3 de noviembre, sobre si reforzar el marco de propiedad intelectual ante el uso masivo de contenidos protegidos por modelos generativos, con las obligaciones de transparencia del Artículo 50 del AI Act plenamente vigentes desde el 2 de agosto.\n\nAnthropic, por su parte, negocia adquirir la startup de chips MatX por unos 7.000 millones de dólares para reducir su dependencia de las GPU de Nvidia.\n\nFuentes: BCE, Capital Madrid, Página 12, European Commission, Merca2\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nTTR Data publicó el acumulado del M&A español hasta septiembre de 2026: 2.261 transacciones y 73.803 millones de euros movilizados, con Uría Menéndez liderando por valor asesorado (23.056 millones), Garrigues segunda (14.689 millones) y Cuatrecasas primera en número con 142 operaciones. Es un dato citable para posicionamiento frente a clientes en un mercado donde el consejo de tamaño medio compite contra las grandes firmas por cuota de valor asesorado.\n\nFuentes: Forbes España"
 }
