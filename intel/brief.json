@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-10-14",
+  "fecha": "2026-10-15",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Brent",
-      "valor": "102-105 $",
-      "fuente": "Contrapunto"
+      "etiqueta": "M&A España S1 2026",
+      "valor": "28.700 M€",
+      "fuente": "Capital-Riesgo.es"
     },
     {
-      "etiqueta": "Inflación mundial FMI 2026",
-      "valor": "4,7 %",
-      "fuente": "El País"
+      "etiqueta": "Tipo oficial eurozona",
+      "valor": "2,65 %",
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Facilidad de depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "BCE"
+      "etiqueta": "Nuevos sancionados UE",
+      "valor": "1.600",
+      "fuente": "Consilium.europa.eu"
     },
     {
-      "etiqueta": "M&A España hasta septiembre",
-      "valor": "73.803 M€",
-      "fuente": "Forbes España"
+      "etiqueta": "Múltiplo UMM en UE",
+      "valor": "8,54x EBITDA",
+      "fuente": "Ikei"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 6
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,16 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "En geopolítica energética, Trump anunció un acuerdo para facilitar el regreso del diésel ruso al mercado internacional, liberando unos 36 millones de barriles equivalentes para contener el alza de precios en EE. UU., medida que Kiev critica por debilitar las sanciones y la presión sobre Moscú. En paralelo, Washington y Bruselas preparan una propuesta de paz conjunta de cuatro puntos para Ucrania que abarcaría reconstrucción, garantías de seguridad bilaterales y un nuevo acuerdo energético con gasoducto",
-          "fuente": "República, Saba"
+          "texto": "El conflicto en Ucrania suma un nuevo compromiso financiero mientras la tensión marítima se desplaza a Ormuz: Gran Bretaña anuncia 17 millones de libras (23 millones de dólares) para reparar la central nuclear de Chernóbil tras los ataques con drones rusos. En paralelo, fuerzas de Estados Unidos destruyen una embarcación vinculada a Irán en el Golfo de Omán tras un ataque a buques estadounidenses, elevando la fricción en el Estrecho de Ormuz",
+          "fuente": "The Guardian, Gulf News"
         },
         {
-          "texto": "En regulación de IA, el candidato demócrata al Senado Abdul El-Sayed presentó la iniciativa \"IA bajo control\", que propone frenar la construcción de nuevos centros de datos y congelar modelos avanzados hasta crear una agencia federal de seguridad con poderes para inspeccionar o desactivar sistemas",
-          "fuente": "Quadatín Michoacán"
-        },
-        {
-          "texto": "En la industria tecnológica, Jensen Huang anunció durante una gira en París nuevas inversiones de Nvidia en Europa por 2.000 millones de dólares, que elevan a 10.000 millones lo invertido en el continente en el último año. Anthropic advirtió, vía su equipo Frontier Red Team, que pequeños modelos de IA podrían replicarse y expandirse de forma autónoma por dispositivos domésticos conectados antes de finalizar 2026, mientras OpenAI detalló la estrategia de su equipo de semiconductores dirigido por Richard Ho y su alianza con Broadcom para desarrollar el chip de inferencia Jalapeño frente a Nvidia",
-          "fuente": "TradingKey, Forbes Centroamérica, Forbes Perú"
+          "texto": "En el sector tecnológico, Nvidia presenta la librería cuPotencial para acelerar simulaciones de dinámica molecular entre dos y tres veces",
+          "fuente": "NVIDIA Investor Relations"
         }
       ]
     },
@@ -68,16 +64,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Los bancos centrales marcan el rumbo monetario: las actas de la FOMC de septiembre anticipan que la mayoría considera apropiada una nueva subida de tipos, del rango actual de 3,75%-4% hacia el 4%-4,25%, para finales de 2026 ante la persistencia inflacionaria, y el FMI advirtió en su informe de octubre que el petróleo a una media de 95,74 dólares el barril en 2026 (frente a 67,74 en 2025) y el boom inversor en IA empujan la inflación mundial del 4,1% al 4,7%",
-          "fuente": "Capital Madrid, El País"
+          "texto": "Rusia ha ganado un neto de 16 millas cuadradas de territorio ucraniano entre el 15 de septiembre y el 13 de octubre, situando el control total ruso en torno al 12% del territorio de Ucrania. La Unión Europea aprobó su mayor paquete de sanciones contra Rusia el 12 de octubre, incluyendo cerca de 1.600 nuevos listados de individuos y entidades del complejo militar-industrial ruso. En Oriente Medio, Arabia Saudí bombardeó un depósito petrolífero estratégico en Saná (Yemen) e interceptó misiles dirigidos hacia la sede de Saudi Aramco en Dharan, tras un ataque previo de los hutíes contra el aeropuerto internacional King Khalid de Riad que causó 13 muertos y 300 heridos",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Ese mismo frente energético se agrava por las rutas: nuevos ataques hutíes en Bab al-Mandab y el Mar Rojo vuelven a tensionar las alternativas logísticas a Ormuz, impactando en los precios europeos, con el Brent cotizando en una horquilla de 102-105 dólares y el WTI en torno a 90-92 dólares. En España, BBVA Research estima un crecimiento del 2,6% en 2026 y del 2,1% en 2027, condicionado por la presión energética y los tipos",
-          "fuente": "Renta 4, Contrapunto, BBVA Research"
+          "texto": "El Congreso estadounidense publicó un informe técnico detallando que la administración Trump aplica aranceles bajo la Sección 301, incluyendo gravámenes del 10% al 12,5% a 60 economías por trabajo forzoso, mientras mantiene abiertas investigaciones sobre exceso de capacidad manufacturera y comercio con China. Las actas del BCE de la reunión del 9-10 de septiembre reflejan que los riesgos de inflación están sesgados al alza debido al recrudecimiento del conflicto en Oriente Medio y precios energéticos elevados",
+          "fuente": "EveryCRSReport.com, European Central Bank"
         },
         {
-          "texto": "En IA corporativa, AMD acordó adquirir World Labs para integrar modelos de IA espacial y física en su hardware, recortando la ventaja competitiva de Nvidia, y Nvidia lanzó su plataforma abierta de seguridad de agentes con el respaldo de Microsoft, SAP y JPMorganChase",
-          "fuente": "Computerworld, Nvidia News"
+          "texto": "Anthropic emitió una advertencia técnica señalando que los modelos avanzados de IA se encuentran \"a meses\" de desarrollar capacidades de autorreplicación autónoma capaces de infiltrarse en dispositivos conectados sin centros de datos centrales. En la Cumbre OCP Global en San Jose, NVIDIA abrió sus diseños de bastidores y bandejas de computación Vera Rubin a través de la arquitectura MGX, mientras Navitas presentó una placa de potencia 24kW 800V-a-12V desarrollada con NVIDIA para centros de datos de IA",
+          "fuente": "The Guardian, Semiconductor Today"
         }
       ]
     },
@@ -85,34 +81,23 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE elevó el 10 de septiembre los tipos en 25 puntos básicos, dejando la facilidad de depósito en el 2,50%, ante un IPC de la eurozona estimado en el 3,8%, mientras la Fed subió en septiembre hasta el 3,75%-4,00% en su primera subida desde 2023",
-          "fuente": "BCE, Capital Madrid"
+          "texto": "La tregua comercial entre EE.UU. y China, tras la creación del Consejo de Comercio bilateral y el compromiso mutuo de reducción arancelaria de unos 30.000 millones de dólares por cada lado, fue extendida hasta el 10 de enero de 2027",
+          "fuente": "South China Morning Post"
         },
         {
-          "texto": "En regulación, la Comisión Europea abrió el 29 de septiembre una consulta pública, hasta el 3 de noviembre, sobre si reforzar el marco de propiedad intelectual ante el uso masivo de contenidos protegidos por modelos generativos, con las obligaciones de transparencia del Artículo 50 del AI Act plenamente vigentes desde el 2 de agosto",
-          "fuente": "Página 12, European Commission"
+          "texto": "Los gobernadores de los bancos centrales europeos advierten que la presión continuada de los precios de la energía acerca la inflación al escenario adverso del BCE, combinada con un aumento de los rendimientos de la deuda a largo plazo importados de EE.UU",
+          "fuente": "Bank for International Settlements"
         },
         {
-          "texto": "Anthropic, por su parte, negocia adquirir la startup de chips MatX por unos 7.000 millones de dólares para reducir su dependencia de las GPU de Nvidia",
-          "fuente": "Merca2"
+          "texto": "El ecosistema de IA ha transitado hacia una estrategia de eficiencia de costes y modelos especializados: Anthropic lanzó Claude Haiku 5.5 (con un abaratamiento del 75% frente a versiones anteriores) y Claude Opus 5.5, mientras Mistral presentó Mistral Large 4 (modelo de 1 billón de parámetros en formato Mixture of Experts)",
+          "fuente": "CNET"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": [],
-      "subsecciones": [
-        {
-          "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "TTR Data publicó el acumulado del M&A español hasta septiembre de 2026: 2.261 transacciones y 73.803 millones de euros movilizados, con Uría Menéndez liderando por valor asesorado (23.056 millones), Garrigues segunda (14.689 millones) y Cuatrecasas primera en número con 142 operaciones. Es un dato citable para posicionamiento frente a clientes en un mercado donde el consejo de tamaño medio compite contra las grandes firmas por cuota de valor asesorado",
-              "fuente": "Forbes España"
-            }
-          ]
-        }
-      ]
+      "lineas": []
     }
   ],
-  "markdown": "## Hoy\nEn geopolítica energética, Trump anunció un acuerdo para facilitar el regreso del diésel ruso al mercado internacional, liberando unos 36 millones de barriles equivalentes para contener el alza de precios en EE. UU., medida que Kiev critica por debilitar las sanciones y la presión sobre Moscú. En paralelo, Washington y Bruselas preparan una propuesta de paz conjunta de cuatro puntos para Ucrania que abarcaría reconstrucción, garantías de seguridad bilaterales y un nuevo acuerdo energético con gasoducto.\n\nEn regulación de IA, el candidato demócrata al Senado Abdul El-Sayed presentó la iniciativa \"IA bajo control\", que propone frenar la construcción de nuevos centros de datos y congelar modelos avanzados hasta crear una agencia federal de seguridad con poderes para inspeccionar o desactivar sistemas.\n\nEn la industria tecnológica, Jensen Huang anunció durante una gira en París nuevas inversiones de Nvidia en Europa por 2.000 millones de dólares, que elevan a 10.000 millones lo invertido en el continente en el último año. Anthropic advirtió, vía su equipo Frontier Red Team, que pequeños modelos de IA podrían replicarse y expandirse de forma autónoma por dispositivos domésticos conectados antes de finalizar 2026, mientras OpenAI detalló la estrategia de su equipo de semiconductores dirigido por Richard Ho y su alianza con Broadcom para desarrollar el chip de inferencia Jalapeño frente a Nvidia.\n\nFuentes: República, Saba, Quadatín Michoacán, TradingKey, Forbes Centroamérica, Forbes Perú\n\n## Esta semana\nLos bancos centrales marcan el rumbo monetario: las actas de la FOMC de septiembre anticipan que la mayoría considera apropiada una nueva subida de tipos, del rango actual de 3,75%-4% hacia el 4%-4,25%, para finales de 2026 ante la persistencia inflacionaria, y el FMI advirtió en su informe de octubre que el petróleo a una media de 95,74 dólares el barril en 2026 (frente a 67,74 en 2025) y el boom inversor en IA empujan la inflación mundial del 4,1% al 4,7%.\n\nEse mismo frente energético se agrava por las rutas: nuevos ataques hutíes en Bab al-Mandab y el Mar Rojo vuelven a tensionar las alternativas logísticas a Ormuz, impactando en los precios europeos, con el Brent cotizando en una horquilla de 102-105 dólares y el WTI en torno a 90-92 dólares. En España, BBVA Research estima un crecimiento del 2,6% en 2026 y del 2,1% en 2027, condicionado por la presión energética y los tipos.\n\nEn IA corporativa, AMD acordó adquirir World Labs para integrar modelos de IA espacial y física en su hardware, recortando la ventaja competitiva de Nvidia, y Nvidia lanzó su plataforma abierta de seguridad de agentes con el respaldo de Microsoft, SAP y JPMorganChase.\n\nFuentes: Capital Madrid, El País, Renta 4, Contrapunto, BBVA Research, Computerworld, Nvidia News\n\n## Este mes\nEl BCE elevó el 10 de septiembre los tipos en 25 puntos básicos, dejando la facilidad de depósito en el 2,50%, ante un IPC de la eurozona estimado en el 3,8%, mientras la Fed subió en septiembre hasta el 3,75%-4,00% en su primera subida desde 2023.\n\nEn regulación, la Comisión Europea abrió el 29 de septiembre una consulta pública, hasta el 3 de noviembre, sobre si reforzar el marco de propiedad intelectual ante el uso masivo de contenidos protegidos por modelos generativos, con las obligaciones de transparencia del Artículo 50 del AI Act plenamente vigentes desde el 2 de agosto.\n\nAnthropic, por su parte, negocia adquirir la startup de chips MatX por unos 7.000 millones de dólares para reducir su dependencia de las GPU de Nvidia.\n\nFuentes: BCE, Capital Madrid, Página 12, European Commission, Merca2\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nTTR Data publicó el acumulado del M&A español hasta septiembre de 2026: 2.261 transacciones y 73.803 millones de euros movilizados, con Uría Menéndez liderando por valor asesorado (23.056 millones), Garrigues segunda (14.689 millones) y Cuatrecasas primera en número con 142 operaciones. Es un dato citable para posicionamiento frente a clientes en un mercado donde el consejo de tamaño medio compite contra las grandes firmas por cuota de valor asesorado.\n\nFuentes: Forbes España"
+  "markdown": "## Hoy\nEl conflicto en Ucrania suma un nuevo compromiso financiero mientras la tensión marítima se desplaza a Ormuz: Gran Bretaña anuncia 17 millones de libras (23 millones de dólares) para reparar la central nuclear de Chernóbil tras los ataques con drones rusos. En paralelo, fuerzas de Estados Unidos destruyen una embarcación vinculada a Irán en el Golfo de Omán tras un ataque a buques estadounidenses, elevando la fricción en el Estrecho de Ormuz.\n\nEn el sector tecnológico, Nvidia presenta la librería cuPotencial para acelerar simulaciones de dinámica molecular entre dos y tres veces.\n\nFuentes: The Guardian, Gulf News, NVIDIA Investor Relations\n\n## Esta semana\nRusia ha ganado un neto de 16 millas cuadradas de territorio ucraniano entre el 15 de septiembre y el 13 de octubre, situando el control total ruso en torno al 12% del territorio de Ucrania. La Unión Europea aprobó su mayor paquete de sanciones contra Rusia el 12 de octubre, incluyendo cerca de 1.600 nuevos listados de individuos y entidades del complejo militar-industrial ruso. En Oriente Medio, Arabia Saudí bombardeó un depósito petrolífero estratégico en Saná (Yemen) e interceptó misiles dirigidos hacia la sede de Saudi Aramco en Dharan, tras un ataque previo de los hutíes contra el aeropuerto internacional King Khalid de Riad que causó 13 muertos y 300 heridos.\n\nEl Congreso estadounidense publicó un informe técnico detallando que la administración Trump aplica aranceles bajo la Sección 301, incluyendo gravámenes del 10% al 12,5% a 60 economías por trabajo forzoso, mientras mantiene abiertas investigaciones sobre exceso de capacidad manufacturera y comercio con China. Las actas del BCE de la reunión del 9-10 de septiembre reflejan que los riesgos de inflación están sesgados al alza debido al recrudecimiento del conflicto en Oriente Medio y precios energéticos elevados.\n\nAnthropic emitió una advertencia técnica señalando que los modelos avanzados de IA se encuentran \"a meses\" de desarrollar capacidades de autorreplicación autónoma capaces de infiltrarse en dispositivos conectados sin centros de datos centrales. En la Cumbre OCP Global en San Jose, NVIDIA abrió sus diseños de bastidores y bandejas de computación Vera Rubin a través de la arquitectura MGX, mientras Navitas presentó una placa de potencia 24kW 800V-a-12V desarrollada con NVIDIA para centros de datos de IA.\n\nFuentes: The Russia-Ukraine War Report Card, Consilium.europa.eu, The Guardian, EveryCRSReport.com, European Central Bank, Semiconductor Today\n\n## Este mes\nLa tregua comercial entre EE.UU. y China, tras la creación del Consejo de Comercio bilateral y el compromiso mutuo de reducción arancelaria de unos 30.000 millones de dólares por cada lado, fue extendida hasta el 10 de enero de 2027.\n\nLos gobernadores de los bancos centrales europeos advierten que la presión continuada de los precios de la energía acerca la inflación al escenario adverso del BCE, combinada con un aumento de los rendimientos de la deuda a largo plazo importados de EE.UU..\n\nEl ecosistema de IA ha transitado hacia una estrategia de eficiencia de costes y modelos especializados: Anthropic lanzó Claude Haiku 5.5 (con un abaratamiento del 75% frente a versiones anteriores) y Claude Opus 5.5, mientras Mistral presentó Mistral Large 4 (modelo de 1 billón de parámetros en formato Mixture of Experts).\n\nFuentes: South China Morning Post, Bank for International Settlements, CNET"
 }
