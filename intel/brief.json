@@ -1,62 +1,66 @@
 {
-  "fecha": "2026-10-15",
+  "fecha": "2026-10-16",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "M&A España S1 2026",
-      "valor": "28.700 M€",
-      "fuente": "Capital-Riesgo.es"
+      "etiqueta": "PIB MENA 2026",
+      "valor": "-2%",
+      "fuente": "SWI swissinfo.ch"
     },
     {
-      "etiqueta": "Tipo oficial eurozona",
-      "valor": "2,65 %",
-      "fuente": "European Central Bank"
+      "etiqueta": "Inflación EE.UU. sep",
+      "valor": "3,72%",
+      "fuente": "Finect"
     },
     {
-      "etiqueta": "Nuevos sancionados UE",
-      "valor": "1.600",
-      "fuente": "Consilium.europa.eu"
+      "etiqueta": "Facilidad depósito BCE",
+      "valor": "2,50%",
+      "fuente": "Rankia"
     },
     {
-      "etiqueta": "Múltiplo UMM en UE",
-      "valor": "8,54x EBITDA",
-      "fuente": "Ikei"
+      "etiqueta": "Family offices privados",
+      "valor": "47,2%",
+      "fuente": "Demócrata"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 7
+      "n": 8
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 4
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "GLM"
+      "Nemotron"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: GLM"
+    "texto": "Investigación: Gemini · Redacción: Nemotron"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El conflicto en Ucrania suma un nuevo compromiso financiero mientras la tensión marítima se desplaza a Ormuz: Gran Bretaña anuncia 17 millones de libras (23 millones de dólares) para reparar la central nuclear de Chernóbil tras los ataques con drones rusos. En paralelo, fuerzas de Estados Unidos destruyen una embarcación vinculada a Irán en el Golfo de Omán tras un ataque a buques estadounidenses, elevando la fricción en el Estrecho de Ormuz",
-          "fuente": "The Guardian, Gulf News"
+          "texto": "El FMI alertó que una guerra prolongada en Oriente Medio y las perturbaciones en infraestructura energética y rutas marítimas críticas son el mayor riesgo macroeconómico global, con presión fiscal desigual en los estados de la región. Ucrania reanudó los ataques con drones contra refinerías rusas, como la planta en Ryazan, dando por concluida la tregua energética tras acusar a Rusia de incumplirla",
+          "fuente": "La Jornada"
         },
         {
-          "texto": "En el sector tecnológico, Nvidia presenta la librería cuPotencial para acelerar simulaciones de dinámica molecular entre dos y tres veces",
-          "fuente": "NVIDIA Investor Relations"
+          "texto": "La Comisión Europea publicó en el DOUE la Decisión de Ejecución (UE) 2026/2274 sobre normas armonizadas para sistemas de IA de alto riesgo en apoyo del AI Act. Durante el Foro Anual de AESMIDE en Madrid, el Ministerio de Defensa avanzó la oficialización inmediata de nuevos Programas Especiales de Modernización (PEM) y recalcó la obligatoriedad de integrar a las pymes en la cadena de suministro de la industria militar",
+          "fuente": "BOE.es, The Objective"
+        },
+        {
+          "texto": "Más de 400 científicos publicaron una carta abierta en Barcelona cargando contra la \"irresponsabilidad\" de OpenAI y Anthropic, exigiendo un organismo internacional de ciberseguridad ante el riesgo descontrolado de los agentes autónomos de IA",
+          "fuente": "El Periódico"
         }
       ]
     },
@@ -64,16 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Rusia ha ganado un neto de 16 millas cuadradas de territorio ucraniano entre el 15 de septiembre y el 13 de octubre, situando el control total ruso en torno al 12% del territorio de Ucrania. La Unión Europea aprobó su mayor paquete de sanciones contra Rusia el 12 de octubre, incluyendo cerca de 1.600 nuevos listados de individuos y entidades del complejo militar-industrial ruso. En Oriente Medio, Arabia Saudí bombardeó un depósito petrolífero estratégico en Saná (Yemen) e interceptó misiles dirigidos hacia la sede de Saudi Aramco en Dharan, tras un ataque previo de los hutíes contra el aeropuerto internacional King Khalid de Riad que causó 13 muertos y 300 heridos",
-          "fuente": "The Guardian"
+          "texto": "El FMI proyectó una contracción del 2% para la economía de Oriente Medio y Norte de África en 2026, lastrada por el conflicto y la interrupción en el estrecho de Ormuz, cuya reapertura gradual no se espera hasta más adelante. El gobernador del Banco Central belga, Pierre Wunsch, advirtió desde Bangkok que el BCE probablemente tendrá que volver a subir los tipos ante una inflación de la eurozona cercana al 4%, aunque el encarecimiento de los bonos soberanos modera el margen de maniobra",
+          "fuente": "SWI swissinfo.ch, Revista Inversión"
         },
         {
-          "texto": "El Congreso estadounidense publicó un informe técnico detallando que la administración Trump aplica aranceles bajo la Sección 301, incluyendo gravámenes del 10% al 12,5% a 60 economías por trabajo forzoso, mientras mantiene abiertas investigaciones sobre exceso de capacidad manufacturera y comercio con China. Las actas del BCE de la reunión del 9-10 de septiembre reflejan que los riesgos de inflación están sesgados al alza debido al recrudecimiento del conflicto en Oriente Medio y precios energéticos elevados",
-          "fuente": "EveryCRSReport.com, European Central Bank"
+          "texto": "El IPC de EE.UU. de septiembre se disparó al 3,72% interanual, impulsado por un encarecimiento mensual del 9,1% en la gasolina, reviviendo la probabilidad de una nueva subida de tipos de la Fed el 28 de octubre. El informe de TTR Data al cierre de septiembre reflejó que el mercado de M&A en España suma 2.261 transacciones y 73.803 millones de euros movilizados, con Cuatrecasas liderando en número de operaciones y Uría Menéndez, Garrigues y Freshfields al frente por valor asesorado",
+          "fuente": "Finect, Forbes España"
         },
         {
-          "texto": "Anthropic emitió una advertencia técnica señalando que los modelos avanzados de IA se encuentran \"a meses\" de desarrollar capacidades de autorreplicación autónoma capaces de infiltrarse en dispositivos conectados sin centros de datos centrales. En la Cumbre OCP Global en San Jose, NVIDIA abrió sus diseños de bastidores y bandejas de computación Vera Rubin a través de la arquitectura MGX, mientras Navitas presentó una placa de potencia 24kW 800V-a-12V desarrollada con NVIDIA para centros de datos de IA",
-          "fuente": "The Guardian, Semiconductor Today"
+          "texto": "Un estudio del IE Family Offices Knowledge Hub reveló que los family offices españoles destinan en promedio un 47,2% de sus activos a mercados privados (13,2% a private equity y 10,5% a venture capital), y el 68,1% planea incrementar dicha exposición en los próximos cinco años. Expertos legales recordaron que España afronta la plena transposición e implementación de exigencias en materia de transparencia salarial y retributiva derivadas de normativa europea, obligando a las pymes a revisar procesos de contratación y registros retributivos",
+          "fuente": "Demócrata, Augusta Abogados / El Derecho"
+        },
+        {
+          "texto": "Google DeepMind y Google Cloud anunciaron en Dublín un acuerdo para permitir que 200 investigadores científicos europeos accedan a modelos avanzados como AlphaFold 3 y WeatherNext con 3 millones de dólares en créditos de computación a través del programa europeo RAISE. Anthropic advirtió que pequeños modelos de IA podrían ser capaces de replicarse y propagarse de forma autónoma a través de dispositivos domésticos conectados antes de finalizar 2026, planteando nuevos retos de ciberseguridad",
+          "fuente": "Infobae, Forbes Centroamérica"
         }
       ]
     },
@@ -81,23 +89,25 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La tregua comercial entre EE.UU. y China, tras la creación del Consejo de Comercio bilateral y el compromiso mutuo de reducción arancelaria de unos 30.000 millones de dólares por cada lado, fue extendida hasta el 10 de enero de 2027",
-          "fuente": "South China Morning Post"
+          "texto": "El BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos en sus tres tipos oficiales, dejando la facilidad de depósito en el 2,50%, el MRO en el 2,65% y el crédito marginal en el 2,90%, impulsado por una inflación general en la eurozona del 3,3% en agosto. La Reserva Federal aprobó el 16 de septiembre elevar los tipos al rango del 3,75%-4,00%, señalando su diagrama de puntos la previsión de un endurecimiento adicional antes de cerrar el año",
+          "fuente": "Rankia, TradingKey"
         },
         {
-          "texto": "Los gobernadores de los bancos centrales europeos advierten que la presión continuada de los precios de la energía acerca la inflación al escenario adverso del BCE, combinada con un aumento de los rendimientos de la deuda a largo plazo importados de EE.UU",
-          "fuente": "Bank for International Settlements"
-        },
-        {
-          "texto": "El ecosistema de IA ha transitado hacia una estrategia de eficiencia de costes y modelos especializados: Anthropic lanzó Claude Haiku 5.5 (con un abaratamiento del 75% frente a versiones anteriores) y Claude Opus 5.5, mientras Mistral presentó Mistral Large 4 (modelo de 1 billón de parámetros en formato Mixture of Experts)",
-          "fuente": "CNET"
+          "texto": "El FMI publicó en su informe WEO de octubre que el crecimiento mundial se desacelerará hasta el 3,1% en 2026, mientras que la inflación global repuntará hasta el 4,7% debido a las perturbaciones geopolíticas y energéticas. La Unión Europea consolida la aplicación progresiva de las obligaciones de transparencia y gobernanza del AI Act, combinadas con los ajustes de simplificación administrativa previstos para pymes en el marco regulatorio general",
+          "fuente": "IMF, Plataforma One / Comisión Europea"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": []
+      "lineas": [],
+      "subsecciones": [
+        {
+          "titulo": "Edges para CT Advisory",
+          "lineas": []
+        }
+      ]
     }
   ],
-  "markdown": "## Hoy\nEl conflicto en Ucrania suma un nuevo compromiso financiero mientras la tensión marítima se desplaza a Ormuz: Gran Bretaña anuncia 17 millones de libras (23 millones de dólares) para reparar la central nuclear de Chernóbil tras los ataques con drones rusos. En paralelo, fuerzas de Estados Unidos destruyen una embarcación vinculada a Irán en el Golfo de Omán tras un ataque a buques estadounidenses, elevando la fricción en el Estrecho de Ormuz.\n\nEn el sector tecnológico, Nvidia presenta la librería cuPotencial para acelerar simulaciones de dinámica molecular entre dos y tres veces.\n\nFuentes: The Guardian, Gulf News, NVIDIA Investor Relations\n\n## Esta semana\nRusia ha ganado un neto de 16 millas cuadradas de territorio ucraniano entre el 15 de septiembre y el 13 de octubre, situando el control total ruso en torno al 12% del territorio de Ucrania. La Unión Europea aprobó su mayor paquete de sanciones contra Rusia el 12 de octubre, incluyendo cerca de 1.600 nuevos listados de individuos y entidades del complejo militar-industrial ruso. En Oriente Medio, Arabia Saudí bombardeó un depósito petrolífero estratégico en Saná (Yemen) e interceptó misiles dirigidos hacia la sede de Saudi Aramco en Dharan, tras un ataque previo de los hutíes contra el aeropuerto internacional King Khalid de Riad que causó 13 muertos y 300 heridos.\n\nEl Congreso estadounidense publicó un informe técnico detallando que la administración Trump aplica aranceles bajo la Sección 301, incluyendo gravámenes del 10% al 12,5% a 60 economías por trabajo forzoso, mientras mantiene abiertas investigaciones sobre exceso de capacidad manufacturera y comercio con China. Las actas del BCE de la reunión del 9-10 de septiembre reflejan que los riesgos de inflación están sesgados al alza debido al recrudecimiento del conflicto en Oriente Medio y precios energéticos elevados.\n\nAnthropic emitió una advertencia técnica señalando que los modelos avanzados de IA se encuentran \"a meses\" de desarrollar capacidades de autorreplicación autónoma capaces de infiltrarse en dispositivos conectados sin centros de datos centrales. En la Cumbre OCP Global en San Jose, NVIDIA abrió sus diseños de bastidores y bandejas de computación Vera Rubin a través de la arquitectura MGX, mientras Navitas presentó una placa de potencia 24kW 800V-a-12V desarrollada con NVIDIA para centros de datos de IA.\n\nFuentes: The Russia-Ukraine War Report Card, Consilium.europa.eu, The Guardian, EveryCRSReport.com, European Central Bank, Semiconductor Today\n\n## Este mes\nLa tregua comercial entre EE.UU. y China, tras la creación del Consejo de Comercio bilateral y el compromiso mutuo de reducción arancelaria de unos 30.000 millones de dólares por cada lado, fue extendida hasta el 10 de enero de 2027.\n\nLos gobernadores de los bancos centrales europeos advierten que la presión continuada de los precios de la energía acerca la inflación al escenario adverso del BCE, combinada con un aumento de los rendimientos de la deuda a largo plazo importados de EE.UU..\n\nEl ecosistema de IA ha transitado hacia una estrategia de eficiencia de costes y modelos especializados: Anthropic lanzó Claude Haiku 5.5 (con un abaratamiento del 75% frente a versiones anteriores) y Claude Opus 5.5, mientras Mistral presentó Mistral Large 4 (modelo de 1 billón de parámetros en formato Mixture of Experts).\n\nFuentes: South China Morning Post, Bank for International Settlements, CNET"
+  "markdown": "## Hoy\nEl FMI alertó que una guerra prolongada en Oriente Medio y las perturbaciones en infraestructura energética y rutas marítimas críticas son el mayor riesgo macroeconómico global, con presión fiscal desigual en los estados de la región. Ucrania reanudó los ataques con drones contra refinerías rusas, como la planta en Ryazan, dando por concluida la tregua energética tras acusar a Rusia de incumplirla.\n\nLa Comisión Europea publicó en el DOUE la Decisión de Ejecución (UE) 2026/2274 sobre normas armonizadas para sistemas de IA de alto riesgo en apoyo del AI Act. Durante el Foro Anual de AESMIDE en Madrid, el Ministerio de Defensa avanzó la oficialización inmediata de nuevos Programas Especiales de Modernización (PEM) y recalcó la obligatoriedad de integrar a las pymes en la cadena de suministro de la industria militar.\n\nMás de 400 científicos publicaron una carta abierta en Barcelona cargando contra la \"irresponsabilidad\" de OpenAI y Anthropic, exigiendo un organismo internacional de ciberseguridad ante el riesgo descontrolado de los agentes autónomos de IA.\n\nFuentes: La Jornada, BOE.es, The Objective, El Periódico\n\n## Esta semana\nEl FMI proyectó una contracción del 2% para la economía de Oriente Medio y Norte de África en 2026, lastrada por el conflicto y la interrupción en el estrecho de Ormuz, cuya reapertura gradual no se espera hasta más adelante. El gobernador del Banco Central belga, Pierre Wunsch, advirtió desde Bangkok que el BCE probablemente tendrá que volver a subir los tipos ante una inflación de la eurozona cercana al 4%, aunque el encarecimiento de los bonos soberanos modera el margen de maniobra.\n\nEl IPC de EE.UU. de septiembre se disparó al 3,72% interanual, impulsado por un encarecimiento mensual del 9,1% en la gasolina, reviviendo la probabilidad de una nueva subida de tipos de la Fed el 28 de octubre. El informe de TTR Data al cierre de septiembre reflejó que el mercado de M&A en España suma 2.261 transacciones y 73.803 millones de euros movilizados, con Cuatrecasas liderando en número de operaciones y Uría Menéndez, Garrigues y Freshfields al frente por valor asesorado.\n\nUn estudio del IE Family Offices Knowledge Hub reveló que los family offices españoles destinan en promedio un 47,2% de sus activos a mercados privados (13,2% a private equity y 10,5% a venture capital), y el 68,1% planea incrementar dicha exposición en los próximos cinco años. Expertos legales recordaron que España afronta la plena transposición e implementación de exigencias en materia de transparencia salarial y retributiva derivadas de normativa europea, obligando a las pymes a revisar procesos de contratación y registros retributivos.\n\nGoogle DeepMind y Google Cloud anunciaron en Dublín un acuerdo para permitir que 200 investigadores científicos europeos accedan a modelos avanzados como AlphaFold 3 y WeatherNext con 3 millones de dólares en créditos de computación a través del programa europeo RAISE. Anthropic advirtió que pequeños modelos de IA podrían ser capaces de replicarse y propagarse de forma autónoma a través de dispositivos domésticos conectados antes de finalizar 2026, planteando nuevos retos de ciberseguridad.\n\nFuentes: SWI swissinfo.ch, Revista Inversión, Finect, Forbes España, Demócrata, Augusta Abogados / El Derecho, Infobae, Forbes Centroamérica\n\n## Este mes\nEl BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos en sus tres tipos oficiales, dejando la facilidad de depósito en el 2,50%, el MRO en el 2,65% y el crédito marginal en el 2,90%, impulsado por una inflación general en la eurozona del 3,3% en agosto. La Reserva Federal aprobó el 16 de septiembre elevar los tipos al rango del 3,75%-4,00%, señalando su diagrama de puntos la previsión de un endurecimiento adicional antes de cerrar el año.\n\nEl FMI publicó en su informe WEO de octubre que el crecimiento mundial se desacelerará hasta el 3,1% en 2026, mientras que la inflación global repuntará hasta el 4,7% debido a las perturbaciones geopolíticas y energéticas. La Unión Europea consolida la aplicación progresiva de las obligaciones de transparencia y gobernanza del AI Act, combinadas con los ajustes de simplificación administrativa previstos para pymes en el marco regulatorio general.\n\nFuentes: Rankia, TradingKey, IMF, Plataforma One / Comisión Europea"
 }
