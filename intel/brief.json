@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-10-16",
+  "fecha": "2026-10-17",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "PIB MENA 2026",
-      "valor": "-2%",
-      "fuente": "SWI swissinfo.ch"
+      "etiqueta": "Ingresos anualizados OpenAI",
+      "valor": "50.000M$",
+      "fuente": "HIPTHER"
     },
     {
-      "etiqueta": "Inflación EE.UU. sep",
-      "valor": "3,72%",
-      "fuente": "Finect"
+      "etiqueta": "Tipos BCE depósito",
+      "valor": "2,5%",
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50%",
-      "fuente": "Rankia"
+      "etiqueta": "M&A España transacciones",
+      "valor": "2.261",
+      "fuente": "Forbes España"
     },
     {
-      "etiqueta": "Family offices privados",
-      "valor": "47,2%",
-      "fuente": "Demócrata"
+      "etiqueta": "Crudo Brent",
+      "valor": "104-106 $/barril",
+      "fuente": "BlogForex"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,16 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El FMI alertó que una guerra prolongada en Oriente Medio y las perturbaciones en infraestructura energética y rutas marítimas críticas son el mayor riesgo macroeconómico global, con presión fiscal desigual en los estados de la región. Ucrania reanudó los ataques con drones contra refinerías rusas, como la planta en Ryazan, dando por concluida la tregua energética tras acusar a Rusia de incumplirla",
-          "fuente": "La Jornada"
+          "texto": "El Ministerio de Defensa de Rusia informó de un ataque ucraniano de gran escala contra una refinería en Riazán, mientras los hutíes continúan impactando infraestructura y tráfico marítimo comercial. En el otro frente, el FMI afirmó que el BCE probablemente necesitará subir los tipos de interés al menos 25 puntos básicos más este año para combatir la elevada inflación derivada del sector energético",
+          "fuente": "CNN Negocios, Investing.com"
         },
         {
-          "texto": "La Comisión Europea publicó en el DOUE la Decisión de Ejecución (UE) 2026/2274 sobre normas armonizadas para sistemas de IA de alto riesgo en apoyo del AI Act. Durante el Foro Anual de AESMIDE en Madrid, el Ministerio de Defensa avanzó la oficialización inmediata de nuevos Programas Especiales de Modernización (PEM) y recalcó la obligatoriedad de integrar a las pymes en la cadena de suministro de la industria militar",
-          "fuente": "BOE.es, The Objective"
-        },
-        {
-          "texto": "Más de 400 científicos publicaron una carta abierta en Barcelona cargando contra la \"irresponsabilidad\" de OpenAI y Anthropic, exigiendo un organismo internacional de ciberseguridad ante el riesgo descontrolado de los agentes autónomos de IA",
-          "fuente": "El Periódico"
+          "texto": "Nvidia introdujo su línea de modelos de código abierto Nemotron 3.5, incluyendo el modelo insignia Nemotron 3.5 Super VL (120 mil millones de parámetros) y las variantes Bolt, liberando pesos y datasets en Hugging Face. Albia IMAP cerró el asesoramiento en una operación donde Tresmares proporcionó financiación estructurada a Laboral Group y Comunidad 10 para impulsar un plan de crecimiento inorgánico en su red de más de 59.000 pymes y comunidades de propietarios en España",
+          "fuente": "TechTarget, Albia IMAP"
         }
       ]
     },
@@ -68,20 +64,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El FMI proyectó una contracción del 2% para la economía de Oriente Medio y Norte de África en 2026, lastrada por el conflicto y la interrupción en el estrecho de Ormuz, cuya reapertura gradual no se espera hasta más adelante. El gobernador del Banco Central belga, Pierre Wunsch, advirtió desde Bangkok que el BCE probablemente tendrá que volver a subir los tipos ante una inflación de la eurozona cercana al 4%, aunque el encarecimiento de los bonos soberanos modera el margen de maniobra",
-          "fuente": "SWI swissinfo.ch, Revista Inversión"
+          "texto": "El enviado de EE.UU., Steve Witkoff, anunció un encuentro tripartito preliminar en Miami entre funcionarios rusos, ucranianos y estadounidenses para tantear vías diplomáticas, compaginado con la presión de Washington para neutralizar el frente ucraniano temporalmente y volcar recursos en Oriente Medio. Legisladores demócratas clave como el representante Jim Himes declararon que un Congreso bajo control demócrata tras las midterms acelerará drásticamente los paquetes de ayuda militar y financiera a Ucrania",
+          "fuente": "Resumen Latinoamericano, World Socialist Web Site"
         },
         {
-          "texto": "El IPC de EE.UU. de septiembre se disparó al 3,72% interanual, impulsado por un encarecimiento mensual del 9,1% en la gasolina, reviviendo la probabilidad de una nueva subida de tipos de la Fed el 28 de octubre. El informe de TTR Data al cierre de septiembre reflejó que el mercado de M&A en España suma 2.261 transacciones y 73.803 millones de euros movilizados, con Cuatrecasas liderando en número de operaciones y Uría Menéndez, Garrigues y Freshfields al frente por valor asesorado",
-          "fuente": "Finect, Forbes España"
+          "texto": "Pierre Wunsch, miembro del Consejo de Gobierno del BCE, advirtió desde las reuniones del FMI en Bangkok que la institución probablemente tendrá que volver a subir los tipos de interés debido a una inflación en la eurozona que se acerca al 4%, lastrada por los costes energéticos. El crudo Brent se mantiene cotizando en torno a los 104-106 dólares por barril, presionado por los ataques sostenidos en el entorno de Bab el-Mandeb y el Mar Rojo por parte de los hutíes, que alteran las rutas alternativas al Estrecho de Ormuz",
+          "fuente": "Finanzas.com, BlogForex"
         },
         {
-          "texto": "Un estudio del IE Family Offices Knowledge Hub reveló que los family offices españoles destinan en promedio un 47,2% de sus activos a mercados privados (13,2% a private equity y 10,5% a venture capital), y el 68,1% planea incrementar dicha exposición en los próximos cinco años. Expertos legales recordaron que España afronta la plena transposición e implementación de exigencias en materia de transparencia salarial y retributiva derivadas de normativa europea, obligando a las pymes a revisar procesos de contratación y registros retributivos",
-          "fuente": "Demócrata, Augusta Abogados / El Derecho"
-        },
-        {
-          "texto": "Google DeepMind y Google Cloud anunciaron en Dublín un acuerdo para permitir que 200 investigadores científicos europeos accedan a modelos avanzados como AlphaFold 3 y WeatherNext con 3 millones de dólares en créditos de computación a través del programa europeo RAISE. Anthropic advirtió que pequeños modelos de IA podrían ser capaces de replicarse y propagarse de forma autónoma a través de dispositivos domésticos conectados antes de finalizar 2026, planteando nuevos retos de ciberseguridad",
-          "fuente": "Infobae, Forbes Centroamérica"
+          "texto": "Google abrió oficialmente su modelo Gemini 4 Argon al público general mediante su suscripción Google AI Pro ($19.99/mes) y Ultra, así como en la API de pago. Asimismo, se lanzó el benchmark AA-3D para evaluar capacidades de agentes en 3D, donde Claude Sonnet 5.5 lidera con un Elo de 1194. TTR Data publicó su radiografía del mercado transaccional español al cierre del tercer trimestre de 2026, contabilizando 2.261 transacciones y 73.803 millones de euros de capital total movilizado, con Cuatrecasas, Uría, Garrigues y Freshfields liderando el asesoramiento legal. En el ámbito industrial local, Grupo Cobra (Vinci) adquirió la madrileña Aguilera Ingenieros para potenciar capacidades tecnológicas y de diseño en centros de datos",
+          "fuente": "Micro Center, Forbes España, Albia IMAP"
         }
       ]
     },
@@ -89,12 +81,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos en sus tres tipos oficiales, dejando la facilidad de depósito en el 2,50%, el MRO en el 2,65% y el crédito marginal en el 2,90%, impulsado por una inflación general en la eurozona del 3,3% en agosto. La Reserva Federal aprobó el 16 de septiembre elevar los tipos al rango del 3,75%-4,00%, señalando su diagrama de puntos la previsión de un endurecimiento adicional antes de cerrar el año",
-          "fuente": "Rankia, TradingKey"
+          "texto": "En su reunión del 10 de septiembre de 2026, el Consejo de Gobierno del BCE subió los tres tipos de interés oficiales en 25 puntos básicos (situando la tasa de depósito en el 2,5%), lastrado por las presiones inflacionarias importadas del conflicto en Oriente Próximo",
+          "fuente": "European Central Bank"
         },
         {
-          "texto": "El FMI publicó en su informe WEO de octubre que el crecimiento mundial se desacelerará hasta el 3,1% en 2026, mientras que la inflación global repuntará hasta el 4,7% debido a las perturbaciones geopolíticas y energéticas. La Unión Europea consolida la aplicación progresiva de las obligaciones de transparencia y gobernanza del AI Act, combinadas con los ajustes de simplificación administrativa previstos para pymes en el marco regulatorio general",
-          "fuente": "IMF, Plataforma One / Comisión Europea"
+          "texto": "CNBC informó que OpenAI comunicó a sus inversores que su tasa de ingresos anualizada alcanzó aproximadamente 50.000 millones de dólares a finales de septiembre de 2026, una cifra situada por debajo de algunas expectativas de mercado previas cercanas a los 68.000 millones, lo que generó correcciones bursátiles en valores vinculados al ecosistema de IA como Nvidia y Oracle",
+          "fuente": "HIPTHER"
+        },
+        {
+          "texto": "Informes de demografía empresarial europea y de sucesión estiman que cientos de miles de medianas empresas afrontan cierres o procesos críticos de transmisión generacional por jubilación del titular antes de finalizar el ciclo (enero-octubre de 2026)",
+          "fuente": "MyBusinessFuture"
         }
       ]
     },
@@ -104,10 +100,15 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "Albia IMAP asesoró una operación donde Tresmares proporcionó financiación estructurada a Laboral Group y Comunidad 10 para impulsar un plan de crecimiento inorgánico en su red de más de 59.000 pymes y comunidades de propietarios en España. Grupo Cobra (Vinci) adquirió la madrileña Aguilera Ingenieros para potenciar capacidades tecnológicas y de diseño en centros de datos. Informes de demografía empresarial europea y de sucesión estiman que cientos de miles de medianas empresas afrontan cierres o procesos críticos de transmisión generacional por jubilación del titular antes de finalizar el ciclo (enero-octubre de 2026)",
+              "fuente": "Albia IMAP, MyBusinessFuture"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl FMI alertó que una guerra prolongada en Oriente Medio y las perturbaciones en infraestructura energética y rutas marítimas críticas son el mayor riesgo macroeconómico global, con presión fiscal desigual en los estados de la región. Ucrania reanudó los ataques con drones contra refinerías rusas, como la planta en Ryazan, dando por concluida la tregua energética tras acusar a Rusia de incumplirla.\n\nLa Comisión Europea publicó en el DOUE la Decisión de Ejecución (UE) 2026/2274 sobre normas armonizadas para sistemas de IA de alto riesgo en apoyo del AI Act. Durante el Foro Anual de AESMIDE en Madrid, el Ministerio de Defensa avanzó la oficialización inmediata de nuevos Programas Especiales de Modernización (PEM) y recalcó la obligatoriedad de integrar a las pymes en la cadena de suministro de la industria militar.\n\nMás de 400 científicos publicaron una carta abierta en Barcelona cargando contra la \"irresponsabilidad\" de OpenAI y Anthropic, exigiendo un organismo internacional de ciberseguridad ante el riesgo descontrolado de los agentes autónomos de IA.\n\nFuentes: La Jornada, BOE.es, The Objective, El Periódico\n\n## Esta semana\nEl FMI proyectó una contracción del 2% para la economía de Oriente Medio y Norte de África en 2026, lastrada por el conflicto y la interrupción en el estrecho de Ormuz, cuya reapertura gradual no se espera hasta más adelante. El gobernador del Banco Central belga, Pierre Wunsch, advirtió desde Bangkok que el BCE probablemente tendrá que volver a subir los tipos ante una inflación de la eurozona cercana al 4%, aunque el encarecimiento de los bonos soberanos modera el margen de maniobra.\n\nEl IPC de EE.UU. de septiembre se disparó al 3,72% interanual, impulsado por un encarecimiento mensual del 9,1% en la gasolina, reviviendo la probabilidad de una nueva subida de tipos de la Fed el 28 de octubre. El informe de TTR Data al cierre de septiembre reflejó que el mercado de M&A en España suma 2.261 transacciones y 73.803 millones de euros movilizados, con Cuatrecasas liderando en número de operaciones y Uría Menéndez, Garrigues y Freshfields al frente por valor asesorado.\n\nUn estudio del IE Family Offices Knowledge Hub reveló que los family offices españoles destinan en promedio un 47,2% de sus activos a mercados privados (13,2% a private equity y 10,5% a venture capital), y el 68,1% planea incrementar dicha exposición en los próximos cinco años. Expertos legales recordaron que España afronta la plena transposición e implementación de exigencias en materia de transparencia salarial y retributiva derivadas de normativa europea, obligando a las pymes a revisar procesos de contratación y registros retributivos.\n\nGoogle DeepMind y Google Cloud anunciaron en Dublín un acuerdo para permitir que 200 investigadores científicos europeos accedan a modelos avanzados como AlphaFold 3 y WeatherNext con 3 millones de dólares en créditos de computación a través del programa europeo RAISE. Anthropic advirtió que pequeños modelos de IA podrían ser capaces de replicarse y propagarse de forma autónoma a través de dispositivos domésticos conectados antes de finalizar 2026, planteando nuevos retos de ciberseguridad.\n\nFuentes: SWI swissinfo.ch, Revista Inversión, Finect, Forbes España, Demócrata, Augusta Abogados / El Derecho, Infobae, Forbes Centroamérica\n\n## Este mes\nEl BCE ejecutó el 10 de septiembre una subida de 25 puntos básicos en sus tres tipos oficiales, dejando la facilidad de depósito en el 2,50%, el MRO en el 2,65% y el crédito marginal en el 2,90%, impulsado por una inflación general en la eurozona del 3,3% en agosto. La Reserva Federal aprobó el 16 de septiembre elevar los tipos al rango del 3,75%-4,00%, señalando su diagrama de puntos la previsión de un endurecimiento adicional antes de cerrar el año.\n\nEl FMI publicó en su informe WEO de octubre que el crecimiento mundial se desacelerará hasta el 3,1% en 2026, mientras que la inflación global repuntará hasta el 4,7% debido a las perturbaciones geopolíticas y energéticas. La Unión Europea consolida la aplicación progresiva de las obligaciones de transparencia y gobernanza del AI Act, combinadas con los ajustes de simplificación administrativa previstos para pymes en el marco regulatorio general.\n\nFuentes: Rankia, TradingKey, IMF, Plataforma One / Comisión Europea"
+  "markdown": "## Hoy\nEl Ministerio de Defensa de Rusia informó de un ataque ucraniano de gran escala contra una refinería en Riazán, mientras los hutíes continúan impactando infraestructura y tráfico marítimo comercial. En el otro frente, el FMI afirmó que el BCE probablemente necesitará subir los tipos de interés al menos 25 puntos básicos más este año para combatir la elevada inflación derivada del sector energético.\n\nNvidia introdujo su línea de modelos de código abierto Nemotron 3.5, incluyendo el modelo insignia Nemotron 3.5 Super VL (120 mil millones de parámetros) y las variantes Bolt, liberando pesos y datasets en Hugging Face. Albia IMAP cerró el asesoramiento en una operación donde Tresmares proporcionó financiación estructurada a Laboral Group y Comunidad 10 para impulsar un plan de crecimiento inorgánico en su red de más de 59.000 pymes y comunidades de propietarios en España.\n\nFuentes: CNN Negocios, Investing.com, TechTarget, Albia IMAP\n\n## Esta semana\nEl enviado de EE.UU., Steve Witkoff, anunció un encuentro tripartito preliminar en Miami entre funcionarios rusos, ucranianos y estadounidenses para tantear vías diplomáticas, compaginado con la presión de Washington para neutralizar el frente ucraniano temporalmente y volcar recursos en Oriente Medio. Legisladores demócratas clave como el representante Jim Himes declararon que un Congreso bajo control demócrata tras las midterms acelerará drásticamente los paquetes de ayuda militar y financiera a Ucrania.\n\nPierre Wunsch, miembro del Consejo de Gobierno del BCE, advirtió desde las reuniones del FMI en Bangkok que la institución probablemente tendrá que volver a subir los tipos de interés debido a una inflación en la eurozona que se acerca al 4%, lastrada por los costes energéticos. El crudo Brent se mantiene cotizando en torno a los 104-106 dólares por barril, presionado por los ataques sostenidos en el entorno de Bab el-Mandeb y el Mar Rojo por parte de los hutíes, que alteran las rutas alternativas al Estrecho de Ormuz.\n\nGoogle abrió oficialmente su modelo Gemini 4 Argon al público general mediante su suscripción Google AI Pro ($19.99/mes) y Ultra, así como en la API de pago. Asimismo, se lanzó el benchmark AA-3D para evaluar capacidades de agentes en 3D, donde Claude Sonnet 5.5 lidera con un Elo de 1194. TTR Data publicó su radiografía del mercado transaccional español al cierre del tercer trimestre de 2026, contabilizando 2.261 transacciones y 73.803 millones de euros de capital total movilizado, con Cuatrecasas, Uría, Garrigues y Freshfields liderando el asesoramiento legal. En el ámbito industrial local, Grupo Cobra (Vinci) adquirió la madrileña Aguilera Ingenieros para potenciar capacidades tecnológicas y de diseño en centros de datos.\n\nFuentes: Resumen Latinoamericano, World Socialist Web Site, Finanzas.com, BlogForex, Micro Center, Forbes España, Albia IMAP\n\n## Este mes\nEn su reunión del 10 de septiembre de 2026, el Consejo de Gobierno del BCE subió los tres tipos de interés oficiales en 25 puntos básicos (situando la tasa de depósito en el 2,5%), lastrado por las presiones inflacionarias importadas del conflicto en Oriente Próximo.\n\nCNBC informó que OpenAI comunicó a sus inversores que su tasa de ingresos anualizada alcanzó aproximadamente 50.000 millones de dólares a finales de septiembre de 2026, una cifra situada por debajo de algunas expectativas de mercado previas cercanas a los 68.000 millones, lo que generó correcciones bursátiles en valores vinculados al ecosistema de IA como Nvidia y Oracle.\n\nInformes de demografía empresarial europea y de sucesión estiman que cientos de miles de medianas empresas afrontan cierres o procesos críticos de transmisión generacional por jubilación del titular antes de finalizar el ciclo (enero-octubre de 2026).\n\nFuentes: European Central Bank, HIPTHER, MyBusinessFuture\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nAlbia IMAP asesoró una operación donde Tresmares proporcionó financiación estructurada a Laboral Group y Comunidad 10 para impulsar un plan de crecimiento inorgánico en su red de más de 59.000 pymes y comunidades de propietarios en España. Grupo Cobra (Vinci) adquirió la madrileña Aguilera Ingenieros para potenciar capacidades tecnológicas y de diseño en centros de datos. Informes de demografía empresarial europea y de sucesión estiman que cientos de miles de medianas empresas afrontan cierres o procesos críticos de transmisión generacional por jubilación del titular antes de finalizar el ciclo (enero-octubre de 2026).\n\nFuentes: Albia IMAP, MyBusinessFuture"
 }
