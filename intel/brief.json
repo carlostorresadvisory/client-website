@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-10-18",
+  "fecha": "2026-10-19",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "European Central Bank"
+      "etiqueta": "Brent",
+      "valor": "109,86 $/barril",
+      "fuente": "La Jornada"
     },
     {
-      "etiqueta": "Exportaciones Oriente Medio",
-      "valor": "-17 %",
-      "fuente": "Euronext"
+      "etiqueta": "Probabilidad subida Fed",
+      "valor": "53%",
+      "fuente": "elEconomista.es"
     },
     {
-      "etiqueta": "M&A España 9M",
-      "valor": "73.803 M€",
-      "fuente": "Forbes España"
+      "etiqueta": "PIB Kuwait 2026",
+      "valor": "-16,7%",
+      "fuente": "Infobae"
     },
     {
-      "etiqueta": "Inflación eurozona agosto",
-      "valor": "3,2 %",
-      "fuente": "Gloriarms"
+      "etiqueta": "Nuevas sociedades España",
+      "valor": "101.425",
+      "fuente": "Axesor"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
-    },
-    {
-      "horizonte": "Esta semana",
       "n": 5
     },
     {
-      "horizonte": "Este mes",
+      "horizonte": "Esta semana",
       "n": 4
+    },
+    {
+      "horizonte": "Este mes",
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,16 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La flexibilización temporal de las sanciones OFAC al diésel ruso acordada entre EE. UU. y Rusia contradice la presión militar simultánea: Ucrania sigue golpeando refinerías rusas mientras el riesgo cinético en los cuellos de botella del Golfo Pérsico se intensifica, creando una disonancia estratégica entre alivio de precios interno y escalada energética",
-          "fuente": "Great Power Energy Management and Middle East Instability"
+          "texto": "Trump suspendió temporalmente hasta el 7 de abril de 2027 sanciones y suministro de diésel ruso para mantener a Putin negociando, desatando rechazo bipartidista en el Congreso y críticas de Kiev. Ucrania respondió con uno de sus mayores ataques aéreos lanzando más de 1.000 drones que incendiaron terminales y depósitos en San Petersburgo y Leningrado, dejando a 20.000 personas sin electricidad. Zelenski se reunió con los emisarios estadounidenses Witkoff y Kushner para rebajar tensiones tras denunciar que las restricciones de Washington buscan forzar su capitulación",
+          "fuente": "El Periódico, La Nación"
         },
         {
-          "texto": "El BCE justificó ante el IMFC la subida de 25 puntos básicos de septiembre, facilidad de depósito al 2,50 % y refinanciación al 2,65 %, argumentando que la perturbación energética actual es demasiado grande para ignorarse y exige prevenir efectos de segunda ronda sobre la inflación",
-          "fuente": "European Central Bank"
-        },
-        {
-          "texto": "DeepSeek lanzó `V4.1-Flash-1017` con mejoras transversales en benchmarks, salidas más cortas y precio inalterado, abriendo APIs de búsqueda y extracción a 0,75 $ por 1.000 llamadas y publicando pesos en Hugging Face",
-          "fuente": "October 2026 AI Model Updates"
+          "texto": "A nueve días de las elecciones israelíes, Trump respaldó públicamente la reelección de Netanyahu calificándolo de \"Gran Guerrero\" y socio clave frente a Irán. Una misión diplomática europea fue atacada por colonos enmascarados cerca de Taybeh en Cisjordania; Netanyahu cuestionó la solidez de las pruebas para identificar a los agresores",
+          "fuente": "Parabólica.Mx, Telesur"
         }
       ]
     },
@@ -68,24 +64,12 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El ataque hutí con misiles y drones contra el Palacio Presidencial Al-Maashiq en Adén causó 5 muertos y 16 heridos, marcando la primera vez que la sede del gobierno yemení reconocido internacionalmente es objetivo directo y elevando el riesgo político en el sur de la península arábiga",
-          "fuente": "10things.news"
+          "texto": "El IPC estadounidense rozó el 3,7% y la herramienta Fedwatch disparó al 53% la probabilidad de una subida de 25 puntos básicos en la reunión del 28 de octubre (rango 4%-4,25%), duplicando el 22% de la sesión anterior. El BCE mantiene tipos sin cambios el 29 de octubre, pero economistas y bancos sitúan en el 80% la probabilidad de +25 p.b. en diciembre para dejar la facilidad de depósito en el 2,75%",
+          "fuente": "elEconomista.es, Business Insider"
         },
         {
-          "texto": "La OMC advierte que los conflictos en Ucrania y Oriente Medio dejarán un impacto permanente en las rutas globales y prevé una caída del 17 % en las exportaciones de Oriente Medio este año, consolidando la reconfiguración estructural del comercio energético",
-          "fuente": "Euronext"
-        },
-        {
-          "texto": "Anthropic alerta de que los modelos frontera están a \"meses\" de desarrollar capacidades de autorreplicación autónoma, \"gusanos de IA\" capaces de infiltrar dispositivos e infraestructura sin intervención humana, moviendo la frontera de riesgo sistémico de teórico a inminente",
-          "fuente": "The Guardian"
-        },
-        {
-          "texto": "Google comercializó `Gemini 4 Argon` en API de pago (2 $ / 10 $ por millón de tokens) y suscripción Pro/Ultra (19,99 $/mes), situándose segundo en leaderboards de chat y razonamiento, mientras Meta estrenó `Muse Wonder`, su primer modelo frontera cerrado, a 4 $ / 20 $ por millón de tokens con rendimiento puntero en su plataforma Muse Code",
-          "fuente": "Fello AI, October 2026 AI Model Updates"
-        },
-        {
-          "texto": "TTR Data confirma 2.261 transacciones y 73.803 millones de euros en el mercado español de M&A hasta septiembre, con Cuatrecasas líder en número de operaciones (142) y Uría Menéndez en valor asesorado (23.056 millones)",
-          "fuente": "Forbes España"
+          "texto": "El Brent cerró la semana en 109,86 dólares (+3,94%) tocando brevemente 110 dólares por primera vez desde mayo, y el WTI subió a 101,41 dólares, impulsados por la tensión en Ormuz y dudas sobre el acuerdo de diésel ruso. Anthropic alertó que pequeños modelos de IA lograrán autorreplicación y propagación autónoma en dispositivos domésticos antes de fin de 2026, creando riesgos de ciberseguridad sin punto central de apagado",
+          "fuente": "La Jornada, Forbes Centroamérica"
         }
       ]
     },
@@ -93,20 +77,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La Fed subió 25 puntos básicos el 16 de septiembre (rango 3,75 %, 4,00 %, unanimidad 12-0), primera alza desde julio de 2023, citando riesgos inflacionarios del choque energético en Oriente Medio, mientras el BCE replicó la misma magnitud el 10 de septiembre (depósito 2,50 %, refinanciación 2,65 %, marginal 2,90 %) con efectos 16 de septiembre, sincronizando endurecimiento transatlántico",
-          "fuente": "Gloriarms, European Central Bank"
+          "texto": "El FMI recortó drásticamente sus previsiones para MENA proyectando una contracción del 2% del PIB regional en 2026 (3,1 puntos menos que en abril), asumiendo que la reapertura gradual del estrecho de Ormuz (20 millones de barriles/día) no comienza hasta marzo de 2027 y no se normaliza hasta octubre de 2027. Los productores del Golfo más expuestos sufrirán desplomes severos en 2026: Kuwait -16,7%, Irak -16,0%, Catar -15,6% y Baréin -11,3%, antes de un rebote medio del 7% en 2027",
+          "fuente": "Infobae"
         },
         {
-          "texto": "La inflación eurozona repuntó al 3,2 % en agosto (desde 2,9 % en julio) impulsada por energía +14,3 % interanual, dato que activó el giro hawkish coordinado de ambos bancos centrales",
-          "fuente": "Gloriarms"
-        },
-        {
-          "texto": "Anthropic lanzó `Claude Opus 5.5`, alcanzando el #1 del índice de inteligencia artificial con 57,6 puntos y reduciendo coste operativo un 40 % tras superar auditorías automatizadas en migraciones masivas de código",
-          "fuente": "Anthropic"
-        },
-        {
-          "texto": "TTR Data cierra el primer semestre 2026 con 1.485 operaciones y 50.474 millones de euros (-15 % en volumen, estable en importe por mayor tamaño medio), destacando inmobiliario (343 ops) e Internet/Software (144 ops) como sectores más activos",
-          "fuente": "AGM Abogados"
+          "texto": "La encuesta de IE University a 157 family offices globales revela una asignación media del 48,2% a mercados privados, con el 68,1% de los vehículos en España planeando incrementarla para buscar rendimientos estables. KPMG lidera el asesoramiento financiero y due diligence entre las Big Four en España con 184 transacciones y 40% de cuota en due diligence financiera. El 71% de inversores de Private Equity operan activamente en carve-outs (frente al 21% de corporaciones industriales) como palanca central de 2026 para simplificar carteras y liberar liquidez",
+          "fuente": "CaixaBank, KPMG"
         }
       ]
     },
@@ -116,10 +92,15 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "El calendario definitivo de facturación electrónica B2B (6 octubre 2027 para >8 M€, 6 octubre 2028 resto) crea una ventana de 12-24 meses para asesorar a clientes en adaptación de sistemas, selección de proveedores certificados y revisión de procesos de facturación; el repunte del 16,99% en concursos del tercer trimestre (25,09% solo en septiembre) señala deterioro de la calidad crediticia en pymes que anticipa oportunidades en reestructuración y distressed M&A",
+              "fuente": "Bové Montero, Axesor"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa flexibilización temporal de las sanciones OFAC al diésel ruso acordada entre EE. UU. y Rusia contradice la presión militar simultánea: Ucrania sigue golpeando refinerías rusas mientras el riesgo cinético en los cuellos de botella del Golfo Pérsico se intensifica, creando una disonancia estratégica entre alivio de precios interno y escalada energética.\n\nEl BCE justificó ante el IMFC la subida de 25 puntos básicos de septiembre, facilidad de depósito al 2,50 % y refinanciación al 2,65 %, argumentando que la perturbación energética actual es demasiado grande para ignorarse y exige prevenir efectos de segunda ronda sobre la inflación.\n\nDeepSeek lanzó `V4.1-Flash-1017` con mejoras transversales en benchmarks, salidas más cortas y precio inalterado, abriendo APIs de búsqueda y extracción a 0,75 $ por 1.000 llamadas y publicando pesos en Hugging Face.\n\nFuentes: Great Power Energy Management and Middle East Instability, European Central Bank, October 2026 AI Model Updates\n\n## Esta semana\nEl ataque hutí con misiles y drones contra el Palacio Presidencial Al-Maashiq en Adén causó 5 muertos y 16 heridos, marcando la primera vez que la sede del gobierno yemení reconocido internacionalmente es objetivo directo y elevando el riesgo político en el sur de la península arábiga.\n\nLa OMC advierte que los conflictos en Ucrania y Oriente Medio dejarán un impacto permanente en las rutas globales y prevé una caída del 17 % en las exportaciones de Oriente Medio este año, consolidando la reconfiguración estructural del comercio energético.\n\nAnthropic alerta de que los modelos frontera están a \"meses\" de desarrollar capacidades de autorreplicación autónoma, \"gusanos de IA\" capaces de infiltrar dispositivos e infraestructura sin intervención humana, moviendo la frontera de riesgo sistémico de teórico a inminente.\n\nGoogle comercializó `Gemini 4 Argon` en API de pago (2 $ / 10 $ por millón de tokens) y suscripción Pro/Ultra (19,99 $/mes), situándose segundo en leaderboards de chat y razonamiento, mientras Meta estrenó `Muse Wonder`, su primer modelo frontera cerrado, a 4 $ / 20 $ por millón de tokens con rendimiento puntero en su plataforma Muse Code.\n\nTTR Data confirma 2.261 transacciones y 73.803 millones de euros en el mercado español de M&A hasta septiembre, con Cuatrecasas líder en número de operaciones (142) y Uría Menéndez en valor asesorado (23.056 millones).\n\nFuentes: 10things.news, Euronext, The Guardian, Fello AI, October 2026 AI Model Updates, Forbes España\n\n## Este mes\nLa Fed subió 25 puntos básicos el 16 de septiembre (rango 3,75 %, 4,00 %, unanimidad 12-0), primera alza desde julio de 2023, citando riesgos inflacionarios del choque energético en Oriente Medio, mientras el BCE replicó la misma magnitud el 10 de septiembre (depósito 2,50 %, refinanciación 2,65 %, marginal 2,90 %) con efectos 16 de septiembre, sincronizando endurecimiento transatlántico.\n\nLa inflación eurozona repuntó al 3,2 % en agosto (desde 2,9 % en julio) impulsada por energía +14,3 % interanual, dato que activó el giro hawkish coordinado de ambos bancos centrales.\n\nAnthropic lanzó `Claude Opus 5.5`, alcanzando el #1 del índice de inteligencia artificial con 57,6 puntos y reduciendo coste operativo un 40 % tras superar auditorías automatizadas en migraciones masivas de código.\n\nTTR Data cierra el primer semestre 2026 con 1.485 operaciones y 50.474 millones de euros (-15 % en volumen, estable en importe por mayor tamaño medio), destacando inmobiliario (343 ops) e Internet/Software (144 ops) como sectores más activos.\n\nFuentes: Gloriarms, European Central Bank, Anthropic, AGM Abogados"
+  "markdown": "## Hoy\nTrump suspendió temporalmente hasta el 7 de abril de 2027 sanciones y suministro de diésel ruso para mantener a Putin negociando, desatando rechazo bipartidista en el Congreso y críticas de Kiev. Ucrania respondió con uno de sus mayores ataques aéreos lanzando más de 1.000 drones que incendiaron terminales y depósitos en San Petersburgo y Leningrado, dejando a 20.000 personas sin electricidad. Zelenski se reunió con los emisarios estadounidenses Witkoff y Kushner para rebajar tensiones tras denunciar que las restricciones de Washington buscan forzar su capitulación.\n\nA nueve días de las elecciones israelíes, Trump respaldó públicamente la reelección de Netanyahu calificándolo de \"Gran Guerrero\" y socio clave frente a Irán. Una misión diplomática europea fue atacada por colonos enmascarados cerca de Taybeh en Cisjordania; Netanyahu cuestionó la solidez de las pruebas para identificar a los agresores.\n\nFuentes: El Periódico, La Nación, Parabólica.Mx, Telesur\n\n## Esta semana\nEl IPC estadounidense rozó el 3,7% y la herramienta Fedwatch disparó al 53% la probabilidad de una subida de 25 puntos básicos en la reunión del 28 de octubre (rango 4%-4,25%), duplicando el 22% de la sesión anterior. El BCE mantiene tipos sin cambios el 29 de octubre, pero economistas y bancos sitúan en el 80% la probabilidad de +25 p.b. en diciembre para dejar la facilidad de depósito en el 2,75%.\n\nEl Brent cerró la semana en 109,86 dólares (+3,94%) tocando brevemente 110 dólares por primera vez desde mayo, y el WTI subió a 101,41 dólares, impulsados por la tensión en Ormuz y dudas sobre el acuerdo de diésel ruso. Anthropic alertó que pequeños modelos de IA lograrán autorreplicación y propagación autónoma en dispositivos domésticos antes de fin de 2026, creando riesgos de ciberseguridad sin punto central de apagado.\n\nFuentes: elEconomista.es, Business Insider, La Jornada, Forbes Centroamérica\n\n## Este mes\nEl FMI recortó drásticamente sus previsiones para MENA proyectando una contracción del 2% del PIB regional en 2026 (3,1 puntos menos que en abril), asumiendo que la reapertura gradual del estrecho de Ormuz (20 millones de barriles/día) no comienza hasta marzo de 2027 y no se normaliza hasta octubre de 2027. Los productores del Golfo más expuestos sufrirán desplomes severos en 2026: Kuwait -16,7%, Irak -16,0%, Catar -15,6% y Baréin -11,3%, antes de un rebote medio del 7% en 2027.\n\nLa encuesta de IE University a 157 family offices globales revela una asignación media del 48,2% a mercados privados, con el 68,1% de los vehículos en España planeando incrementarla para buscar rendimientos estables. KPMG lidera el asesoramiento financiero y due diligence entre las Big Four en España con 184 transacciones y 40% de cuota en due diligence financiera. El 71% de inversores de Private Equity operan activamente en carve-outs (frente al 21% de corporaciones industriales) como palanca central de 2026 para simplificar carteras y liberar liquidez.\n\nFuentes: Infobae, CaixaBank, KPMG\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl calendario definitivo de facturación electrónica B2B (6 octubre 2027 para >8 M€, 6 octubre 2028 resto) crea una ventana de 12-24 meses para asesorar a clientes en adaptación de sistemas, selección de proveedores certificados y revisión de procesos de facturación; el repunte del 16,99% en concursos del tercer trimestre (25,09% solo en septiembre) señala deterioro de la calidad crediticia en pymes que anticipa oportunidades en reestructuración y distressed M&A.\n\nFuentes: Bové Montero, Axesor"
 }
