@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-10-19",
+  "fecha": "2026-10-20",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Brent",
-      "valor": "109,86 $/barril",
-      "fuente": "La Jornada"
+      "etiqueta": "Infra IA PE",
+      "valor": "500.000 M$",
+      "fuente": "GuruFocus"
     },
     {
-      "etiqueta": "Probabilidad subida Fed",
-      "valor": "53%",
-      "fuente": "elEconomista.es"
+      "etiqueta": "Tenstorrent valoración",
+      "valor": "6.200 M$",
+      "fuente": "TechTarget"
     },
     {
-      "etiqueta": "PIB Kuwait 2026",
-      "valor": "-16,7%",
-      "fuente": "Infobae"
+      "etiqueta": "M&A España H1",
+      "valor": "28.700 M€",
+      "fuente": "Capital-Riesgo.es"
     },
     {
-      "etiqueta": "Nuevas sociedades España",
-      "valor": "101.425",
-      "fuente": "Axesor"
+      "etiqueta": "Facilidad depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "Morningstar"
     }
   ],
   "horizontes": [
@@ -30,11 +30,11 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 7
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,12 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Trump suspendió temporalmente hasta el 7 de abril de 2027 sanciones y suministro de diésel ruso para mantener a Putin negociando, desatando rechazo bipartidista en el Congreso y críticas de Kiev. Ucrania respondió con uno de sus mayores ataques aéreos lanzando más de 1.000 drones que incendiaron terminales y depósitos en San Petersburgo y Leningrado, dejando a 20.000 personas sin electricidad. Zelenski se reunió con los emisarios estadounidenses Witkoff y Kushner para rebajar tensiones tras denunciar que las restricciones de Washington buscan forzar su capitulación",
-          "fuente": "El Periódico, La Nación"
+          "texto": "Zelenski denuncia que EE. UU. retrasa deliberadamente la entrega de misiles interceptores ya pagados por países europeos bajo el programa PURL, bloqueando capacidades de defensa aérea mientras escalan los ataques a refinerías rusas y persisten las tensiones con el secretario de Defensa Pete Hegseth",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "A nueve días de las elecciones israelíes, Trump respaldó públicamente la reelección de Netanyahu calificándolo de \"Gran Guerrero\" y socio clave frente a Irán. Una misión diplomática europea fue atacada por colonos enmascarados cerca de Taybeh en Cisjordania; Netanyahu cuestionó la solidez de las pruebas para identificar a los agresores",
-          "fuente": "Parabólica.Mx, Telesur"
+          "texto": "El Centro Soufan alerta de que la presión militar en el estrecho de Ormuz se intensifica y Trump evalúa opciones de represalia incluyendo el uso del explosivo MOAB ante el estancamiento con Irán",
+          "fuente": "The Soufan Center"
+        },
+        {
+          "texto": "El índice DHL Global Connectedness confirma que la globalización alcanzó un récord del 25,8 % en 2025, aunque el comercio directo EE. UU.-China cayó del 3,5 % mundial en 2015 al 1,6 % en los primeros cinco meses de 2026, persistiendo flujos indirectos de componentes",
+          "fuente": "PRNewswire"
+        },
+        {
+          "texto": "Anthropic, Google y OpenAI preparan una nueva generación de modelos con capacidades avanzadas de razonamiento e inferencia de objetivos implícitos, con Google trabajando en Gemini 4 Carbon. La startup Modal adopta los procesadores Nvidia Vera para agentes de IA, duplicando el rendimiento frente a chips de Intel y AMD y abriendo competencia directa en CPUs",
+          "fuente": "Investing.com, Tech Wire Asia"
         }
       ]
     },
@@ -64,12 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El IPC estadounidense rozó el 3,7% y la herramienta Fedwatch disparó al 53% la probabilidad de una subida de 25 puntos básicos en la reunión del 28 de octubre (rango 4%-4,25%), duplicando el 22% de la sesión anterior. El BCE mantiene tipos sin cambios el 29 de octubre, pero economistas y bancos sitúan en el 80% la probabilidad de +25 p.b. en diciembre para dejar la facilidad de depósito en el 2,75%",
-          "fuente": "elEconomista.es, Business Insider"
+          "texto": "Arabia Saudí aplaza hasta 2027 su cumbre Future Investment Initiative (FII), el \"Davos del Desierto\", por la persistencia de ataques con misiles hutíes respaldados por Irán contra infraestructuras del reino",
+          "fuente": "Al Jazeera"
         },
         {
-          "texto": "El Brent cerró la semana en 109,86 dólares (+3,94%) tocando brevemente 110 dólares por primera vez desde mayo, y el WTI subió a 101,41 dólares, impulsados por la tensión en Ormuz y dudas sobre el acuerdo de diésel ruso. Anthropic alertó que pequeños modelos de IA lograrán autorreplicación y propagación autónoma en dispositivos domésticos antes de fin de 2026, creando riesgos de ciberseguridad sin punto central de apagado",
-          "fuente": "La Jornada, Forbes Centroamérica"
+          "texto": "El BCE mantiene la facilidad de depósito en el 2,50 % y el tipo de referencia en el 2,65 % tras la subida de septiembre, apuntando a pausa en la reunión del 29 de octubre pero con alta probabilidad de nuevo incremento de 25 p.b. en diciembre por inflación energética importada",
+          "fuente": "Morningstar"
+        },
+        {
+          "texto": "Albia IMAP registra la entrada de 21 Invest en España adquiriendo Grupo Celesa (Bizkaia) y la compra de la plataforma Joinup por Grupo EYSA (fondo Tikehau). Forvis Mazars y Mergermarket sitúan el M&A español en 600 operaciones y 28.700 M€ en el primer semestre, segundo mercado más activo del sur de Europa con el 41 % de las transacciones regionales. Informes sectoriales elevan el acumulado hasta septiembre a 2.261 operaciones por 73.803 M€, impulsado por grandes operaciones corporativas y mid-market dinámico",
+          "fuente": "Albia IMAP, Capital-Riesgo.es, Forbes.es"
+        },
+        {
+          "texto": "Meta lanza Muse Wonder, su primera familia de modelos frontera cerrados, compitiendo a 4 $/M tokens de entrada. Alemania y Nvidia firman Declaración Conjunta de Intenciones para impulsar la \"IA física\" en el tejido industrial y el Mittelstand",
+          "fuente": "Local AI Zone, Blockchain.News"
         }
       ]
     },
@@ -77,12 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El FMI recortó drásticamente sus previsiones para MENA proyectando una contracción del 2% del PIB regional en 2026 (3,1 puntos menos que en abril), asumiendo que la reapertura gradual del estrecho de Ormuz (20 millones de barriles/día) no comienza hasta marzo de 2027 y no se normaliza hasta octubre de 2027. Los productores del Golfo más expuestos sufrirán desplomes severos en 2026: Kuwait -16,7%, Irak -16,0%, Catar -15,6% y Baréin -11,3%, antes de un rebote medio del 7% en 2027",
-          "fuente": "Infobae"
+          "texto": "La UE aprueba su mayor paquete de sanciones contra Rusia con cerca de 1.600 individuos y entidades vinculados al complejo militar-industrial",
+          "fuente": "Consilium"
         },
         {
-          "texto": "La encuesta de IE University a 157 family offices globales revela una asignación media del 48,2% a mercados privados, con el 68,1% de los vehículos en España planeando incrementarla para buscar rendimientos estables. KPMG lidera el asesoramiento financiero y due diligence entre las Big Four en España con 184 transacciones y 40% de cuota en due diligence financiera. El 71% de inversores de Private Equity operan activamente en carve-outs (frente al 21% de corporaciones industriales) como palanca central de 2026 para simplificar carteras y liberar liquidez",
-          "fuente": "CaixaBank, KPMG"
+          "texto": "EE. UU. y China activan la iniciativa \"30-for-30\" para recortar aranceles recíprocos sobre 30.000 M$ en importaciones de bienes específicos como dispositivos médicos y pequeños aparatos",
+          "fuente": "EY"
+        },
+        {
+          "texto": "El BCE ratificó en septiembre la subida de 25 p.b. situando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 % ante riesgos de inflación al alza por la crisis energética de Oriente Medio",
+          "fuente": "ECB"
+        },
+        {
+          "texto": "TTR Data y despachos sitúan el mercado transaccional español en 1.485 operaciones y 50.474 M€ en el primer semestre, con contracción del 15 % interanual en número pero mayor concentración de capital en operaciones medio-altas impulsadas por private equity (177 transacciones por 8.749 M€)",
+          "fuente": "AGM Abogados"
         }
       ]
     },
@@ -92,15 +116,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "El calendario definitivo de facturación electrónica B2B (6 octubre 2027 para >8 M€, 6 octubre 2028 resto) crea una ventana de 12-24 meses para asesorar a clientes en adaptación de sistemas, selección de proveedores certificados y revisión de procesos de facturación; el repunte del 16,99% en concursos del tercer trimestre (25,09% solo en septiembre) señala deterioro de la calidad crediticia en pymes que anticipa oportunidades en reestructuración y distressed M&A",
-              "fuente": "Bové Montero, Axesor"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nTrump suspendió temporalmente hasta el 7 de abril de 2027 sanciones y suministro de diésel ruso para mantener a Putin negociando, desatando rechazo bipartidista en el Congreso y críticas de Kiev. Ucrania respondió con uno de sus mayores ataques aéreos lanzando más de 1.000 drones que incendiaron terminales y depósitos en San Petersburgo y Leningrado, dejando a 20.000 personas sin electricidad. Zelenski se reunió con los emisarios estadounidenses Witkoff y Kushner para rebajar tensiones tras denunciar que las restricciones de Washington buscan forzar su capitulación.\n\nA nueve días de las elecciones israelíes, Trump respaldó públicamente la reelección de Netanyahu calificándolo de \"Gran Guerrero\" y socio clave frente a Irán. Una misión diplomática europea fue atacada por colonos enmascarados cerca de Taybeh en Cisjordania; Netanyahu cuestionó la solidez de las pruebas para identificar a los agresores.\n\nFuentes: El Periódico, La Nación, Parabólica.Mx, Telesur\n\n## Esta semana\nEl IPC estadounidense rozó el 3,7% y la herramienta Fedwatch disparó al 53% la probabilidad de una subida de 25 puntos básicos en la reunión del 28 de octubre (rango 4%-4,25%), duplicando el 22% de la sesión anterior. El BCE mantiene tipos sin cambios el 29 de octubre, pero economistas y bancos sitúan en el 80% la probabilidad de +25 p.b. en diciembre para dejar la facilidad de depósito en el 2,75%.\n\nEl Brent cerró la semana en 109,86 dólares (+3,94%) tocando brevemente 110 dólares por primera vez desde mayo, y el WTI subió a 101,41 dólares, impulsados por la tensión en Ormuz y dudas sobre el acuerdo de diésel ruso. Anthropic alertó que pequeños modelos de IA lograrán autorreplicación y propagación autónoma en dispositivos domésticos antes de fin de 2026, creando riesgos de ciberseguridad sin punto central de apagado.\n\nFuentes: elEconomista.es, Business Insider, La Jornada, Forbes Centroamérica\n\n## Este mes\nEl FMI recortó drásticamente sus previsiones para MENA proyectando una contracción del 2% del PIB regional en 2026 (3,1 puntos menos que en abril), asumiendo que la reapertura gradual del estrecho de Ormuz (20 millones de barriles/día) no comienza hasta marzo de 2027 y no se normaliza hasta octubre de 2027. Los productores del Golfo más expuestos sufrirán desplomes severos en 2026: Kuwait -16,7%, Irak -16,0%, Catar -15,6% y Baréin -11,3%, antes de un rebote medio del 7% en 2027.\n\nLa encuesta de IE University a 157 family offices globales revela una asignación media del 48,2% a mercados privados, con el 68,1% de los vehículos en España planeando incrementarla para buscar rendimientos estables. KPMG lidera el asesoramiento financiero y due diligence entre las Big Four en España con 184 transacciones y 40% de cuota en due diligence financiera. El 71% de inversores de Private Equity operan activamente en carve-outs (frente al 21% de corporaciones industriales) como palanca central de 2026 para simplificar carteras y liberar liquidez.\n\nFuentes: Infobae, CaixaBank, KPMG\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl calendario definitivo de facturación electrónica B2B (6 octubre 2027 para >8 M€, 6 octubre 2028 resto) crea una ventana de 12-24 meses para asesorar a clientes en adaptación de sistemas, selección de proveedores certificados y revisión de procesos de facturación; el repunte del 16,99% en concursos del tercer trimestre (25,09% solo en septiembre) señala deterioro de la calidad crediticia en pymes que anticipa oportunidades en reestructuración y distressed M&A.\n\nFuentes: Bové Montero, Axesor"
+  "markdown": "## Hoy\nZelenski denuncia que EE. UU. retrasa deliberadamente la entrega de misiles interceptores ya pagados por países europeos bajo el programa PURL, bloqueando capacidades de defensa aérea mientras escalan los ataques a refinerías rusas y persisten las tensiones con el secretario de Defensa Pete Hegseth.\n\nEl Centro Soufan alerta de que la presión militar en el estrecho de Ormuz se intensifica y Trump evalúa opciones de represalia incluyendo el uso del explosivo MOAB ante el estancamiento con Irán.\n\nEl índice DHL Global Connectedness confirma que la globalización alcanzó un récord del 25,8 % en 2025, aunque el comercio directo EE. UU.-China cayó del 3,5 % mundial en 2015 al 1,6 % en los primeros cinco meses de 2026, persistiendo flujos indirectos de componentes.\n\nAnthropic, Google y OpenAI preparan una nueva generación de modelos con capacidades avanzadas de razonamiento e inferencia de objetivos implícitos, con Google trabajando en Gemini 4 Carbon. La startup Modal adopta los procesadores Nvidia Vera para agentes de IA, duplicando el rendimiento frente a chips de Intel y AMD y abriendo competencia directa en CPUs.\n\nFuentes: The Guardian, The Soufan Center, PRNewswire, Investing.com, Tech Wire Asia\n\n## Esta semana\nArabia Saudí aplaza hasta 2027 su cumbre Future Investment Initiative (FII), el \"Davos del Desierto\", por la persistencia de ataques con misiles hutíes respaldados por Irán contra infraestructuras del reino.\n\nEl BCE mantiene la facilidad de depósito en el 2,50 % y el tipo de referencia en el 2,65 % tras la subida de septiembre, apuntando a pausa en la reunión del 29 de octubre pero con alta probabilidad de nuevo incremento de 25 p.b. en diciembre por inflación energética importada.\n\nAlbia IMAP registra la entrada de 21 Invest en España adquiriendo Grupo Celesa (Bizkaia) y la compra de la plataforma Joinup por Grupo EYSA (fondo Tikehau). Forvis Mazars y Mergermarket sitúan el M&A español en 600 operaciones y 28.700 M€ en el primer semestre, segundo mercado más activo del sur de Europa con el 41 % de las transacciones regionales. Informes sectoriales elevan el acumulado hasta septiembre a 2.261 operaciones por 73.803 M€, impulsado por grandes operaciones corporativas y mid-market dinámico.\n\nMeta lanza Muse Wonder, su primera familia de modelos frontera cerrados, compitiendo a 4 $/M tokens de entrada. Alemania y Nvidia firman Declaración Conjunta de Intenciones para impulsar la \"IA física\" en el tejido industrial y el Mittelstand.\n\nFuentes: Al Jazeera, Morningstar, Albia IMAP, Capital-Riesgo.es, Forbes.es, Local AI Zone, Blockchain.News\n\n## Este mes\nLa UE aprueba su mayor paquete de sanciones contra Rusia con cerca de 1.600 individuos y entidades vinculados al complejo militar-industrial.\n\nEE. UU. y China activan la iniciativa \"30-for-30\" para recortar aranceles recíprocos sobre 30.000 M$ en importaciones de bienes específicos como dispositivos médicos y pequeños aparatos.\n\nEl BCE ratificó en septiembre la subida de 25 p.b. situando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 % ante riesgos de inflación al alza por la crisis energética de Oriente Medio.\n\nTTR Data y despachos sitúan el mercado transaccional español en 1.485 operaciones y 50.474 M€ en el primer semestre, con contracción del 15 % interanual en número pero mayor concentración de capital en operaciones medio-altas impulsadas por private equity (177 transacciones por 8.749 M€).\n\nFuentes: Consilium, EY, ECB, AGM Abogados"
 }
