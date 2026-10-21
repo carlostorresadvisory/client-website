@@ -1,70 +1,62 @@
 {
-  "fecha": "2026-10-20",
+  "fecha": "2026-10-21",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Infra IA PE",
-      "valor": "500.000 M$",
-      "fuente": "GuruFocus"
+      "etiqueta": "Financiación inmobiliaria alternativa (España)",
+      "valor": "3.891 M€",
+      "fuente": "PwC"
     },
     {
-      "etiqueta": "Tenstorrent valoración",
-      "valor": "6.200 M$",
-      "fuente": "TechTarget"
-    },
-    {
-      "etiqueta": "M&A España H1",
-      "valor": "28.700 M€",
+      "etiqueta": "Adquisición de Marosa por Wolters Kluwer",
+      "valor": "112 M€",
       "fuente": "Capital-Riesgo.es"
     },
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "Morningstar"
+      "etiqueta": "Probabilidad de pausa de la Fed en octubre",
+      "valor": "80 %",
+      "fuente": "Forbes"
+    },
+    {
+      "etiqueta": "Alianza en Alemania para IA industrial",
+      "valor": "1.000 M€",
+      "fuente": "Notebookcheck"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 7
+      "n": 6
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 5
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Nemotron"
+      "Gemini"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Nemotron"
+    "texto": "Investigación: Gemini · Redacción: Gemini"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Zelenski denuncia que EE. UU. retrasa deliberadamente la entrega de misiles interceptores ya pagados por países europeos bajo el programa PURL, bloqueando capacidades de defensa aérea mientras escalan los ataques a refinerías rusas y persisten las tensiones con el secretario de Defensa Pete Hegseth",
-          "fuente": "The Guardian"
+          "texto": "El presidente ucraniano Volodímir Zelenski acusó a Washington de buscar la capitulación de su país en medio de crecientes tensiones con Donald Trump sobre la vía negociadora con Rusia y China, mientras en el Estrecho de Ormuz persisten los enfrentamientos y la inestabilidad tras el cierre de la ruta marítima decretado por Teherán",
+          "fuente": "RTPA, El Periódico"
         },
         {
-          "texto": "El Centro Soufan alerta de que la presión militar en el estrecho de Ormuz se intensifica y Trump evalúa opciones de represalia incluyendo el uso del explosivo MOAB ante el estancamiento con Irán",
-          "fuente": "The Soufan Center"
-        },
-        {
-          "texto": "El índice DHL Global Connectedness confirma que la globalización alcanzó un récord del 25,8 % en 2025, aunque el comercio directo EE. UU.-China cayó del 3,5 % mundial en 2015 al 1,6 % en los primeros cinco meses de 2026, persistiendo flujos indirectos de componentes",
-          "fuente": "PRNewswire"
-        },
-        {
-          "texto": "Anthropic, Google y OpenAI preparan una nueva generación de modelos con capacidades avanzadas de razonamiento e inferencia de objetivos implícitos, con Google trabajando en Gemini 4 Carbon. La startup Modal adopta los procesadores Nvidia Vera para agentes de IA, duplicando el rendimiento frente a chips de Intel y AMD y abriendo competencia directa en CPUs",
-          "fuente": "Investing.com, Tech Wire Asia"
+          "texto": "En el ámbito industrial y financiero, Alemania formalizó en Berlín una alianza estratégica entre el canciller Friedrich Merz y Jensen Huang para desplegar IA industrial respaldada en la infraestructura Cloud de Deutsche Telekom de 1.000 millones de euros",
+          "fuente": "Notebookcheck"
         }
       ]
     },
@@ -72,20 +64,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Arabia Saudí aplaza hasta 2027 su cumbre Future Investment Initiative (FII), el \"Davos del Desierto\", por la persistencia de ataques con misiles hutíes respaldados por Irán contra infraestructuras del reino",
-          "fuente": "Al Jazeera"
+          "texto": "Ucrania ejecutó un ataque masivo con drones sobre 15 regiones rusas, al tiempo que EE.UU. suspendió temporalmente ciertas sanciones a Rusia por razones de estabilidad energética",
+          "fuente": "El Español"
         },
         {
-          "texto": "El BCE mantiene la facilidad de depósito en el 2,50 % y el tipo de referencia en el 2,65 % tras la subida de septiembre, apuntando a pausa en la reunión del 29 de octubre pero con alta probabilidad de nuevo incremento de 25 p.b. en diciembre por inflación energética importada",
-          "fuente": "Morningstar"
+          "texto": "En el terreno monetario, los mercados asignan un 80% de probabilidad a una pausa de la Fed y prevén mantenimiento de tipos por parte del BCE el 29 de octubre",
+          "fuente": "Forbes, Morningstar / Financial Times"
         },
         {
-          "texto": "Albia IMAP registra la entrada de 21 Invest en España adquiriendo Grupo Celesa (Bizkaia) y la compra de la plataforma Joinup por Grupo EYSA (fondo Tikehau). Forvis Mazars y Mergermarket sitúan el M&A español en 600 operaciones y 28.700 M€ en el primer semestre, segundo mercado más activo del sur de Europa con el 41 % de las transacciones regionales. Informes sectoriales elevan el acumulado hasta septiembre a 2.261 operaciones por 73.803 M€, impulsado por grandes operaciones corporativas y mid-market dinámico",
-          "fuente": "Albia IMAP, Capital-Riesgo.es, Forbes.es"
-        },
-        {
-          "texto": "Meta lanza Muse Wonder, su primera familia de modelos frontera cerrados, compitiendo a 4 $/M tokens de entrada. Alemania y Nvidia firman Declaración Conjunta de Intenciones para impulsar la \"IA física\" en el tejido industrial y el Mittelstand",
-          "fuente": "Local AI Zone, Blockchain.News"
+          "texto": "En M&A y tecnología, Wolters Kluwer adquirió Marosa por 112 M€ y Nvidia negocia una alianza o compra con Reflection AI",
+          "fuente": "Capital-Riesgo.es, Xataka / Bloomberg"
         }
       ]
     },
@@ -93,33 +81,23 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La UE aprueba su mayor paquete de sanciones contra Rusia con cerca de 1.600 individuos y entidades vinculados al complejo militar-industrial",
-          "fuente": "Consilium"
+          "texto": "La ONU advirtió del estancamiento de la paz en Gaza y Líbano con más de 1.500 muertos recientes",
+          "fuente": "Noticias ONU"
         },
         {
-          "texto": "EE. UU. y China activan la iniciativa \"30-for-30\" para recortar aranceles recíprocos sobre 30.000 M$ en importaciones de bienes específicos como dispositivos médicos y pequeños aparatos",
-          "fuente": "EY"
+          "texto": "Tras la subida de 25 pb del BCE en septiembre, la actividad transaccional en España muestra solidez con 73.803 M€ acumulados al cierre del tercer trimestre y un 80% de gestores de private equity planeando incrementar su inversión",
+          "fuente": "Rankia, TTR Data / Law&Trends, Merca2"
         },
         {
-          "texto": "El BCE ratificó en septiembre la subida de 25 p.b. situando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 % ante riesgos de inflación al alza por la crisis energética de Oriente Medio",
-          "fuente": "ECB"
-        },
-        {
-          "texto": "TTR Data y despachos sitúan el mercado transaccional español en 1.485 operaciones y 50.474 M€ en el primer semestre, con contracción del 15 % interanual en número pero mayor concentración de capital en operaciones medio-altas impulsadas por private equity (177 transacciones por 8.749 M€)",
-          "fuente": "AGM Abogados"
+          "texto": "Asimismo, se consolida la adopción de IA en el borde (\"edge AI\") sobre hardware especializado",
+          "fuente": "Nvidia News"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": [],
-      "subsecciones": [
-        {
-          "titulo": "Edges para CT Advisory",
-          "lineas": []
-        }
-      ]
+      "lineas": []
     }
   ],
-  "markdown": "## Hoy\nZelenski denuncia que EE. UU. retrasa deliberadamente la entrega de misiles interceptores ya pagados por países europeos bajo el programa PURL, bloqueando capacidades de defensa aérea mientras escalan los ataques a refinerías rusas y persisten las tensiones con el secretario de Defensa Pete Hegseth.\n\nEl Centro Soufan alerta de que la presión militar en el estrecho de Ormuz se intensifica y Trump evalúa opciones de represalia incluyendo el uso del explosivo MOAB ante el estancamiento con Irán.\n\nEl índice DHL Global Connectedness confirma que la globalización alcanzó un récord del 25,8 % en 2025, aunque el comercio directo EE. UU.-China cayó del 3,5 % mundial en 2015 al 1,6 % en los primeros cinco meses de 2026, persistiendo flujos indirectos de componentes.\n\nAnthropic, Google y OpenAI preparan una nueva generación de modelos con capacidades avanzadas de razonamiento e inferencia de objetivos implícitos, con Google trabajando en Gemini 4 Carbon. La startup Modal adopta los procesadores Nvidia Vera para agentes de IA, duplicando el rendimiento frente a chips de Intel y AMD y abriendo competencia directa en CPUs.\n\nFuentes: The Guardian, The Soufan Center, PRNewswire, Investing.com, Tech Wire Asia\n\n## Esta semana\nArabia Saudí aplaza hasta 2027 su cumbre Future Investment Initiative (FII), el \"Davos del Desierto\", por la persistencia de ataques con misiles hutíes respaldados por Irán contra infraestructuras del reino.\n\nEl BCE mantiene la facilidad de depósito en el 2,50 % y el tipo de referencia en el 2,65 % tras la subida de septiembre, apuntando a pausa en la reunión del 29 de octubre pero con alta probabilidad de nuevo incremento de 25 p.b. en diciembre por inflación energética importada.\n\nAlbia IMAP registra la entrada de 21 Invest en España adquiriendo Grupo Celesa (Bizkaia) y la compra de la plataforma Joinup por Grupo EYSA (fondo Tikehau). Forvis Mazars y Mergermarket sitúan el M&A español en 600 operaciones y 28.700 M€ en el primer semestre, segundo mercado más activo del sur de Europa con el 41 % de las transacciones regionales. Informes sectoriales elevan el acumulado hasta septiembre a 2.261 operaciones por 73.803 M€, impulsado por grandes operaciones corporativas y mid-market dinámico.\n\nMeta lanza Muse Wonder, su primera familia de modelos frontera cerrados, compitiendo a 4 $/M tokens de entrada. Alemania y Nvidia firman Declaración Conjunta de Intenciones para impulsar la \"IA física\" en el tejido industrial y el Mittelstand.\n\nFuentes: Al Jazeera, Morningstar, Albia IMAP, Capital-Riesgo.es, Forbes.es, Local AI Zone, Blockchain.News\n\n## Este mes\nLa UE aprueba su mayor paquete de sanciones contra Rusia con cerca de 1.600 individuos y entidades vinculados al complejo militar-industrial.\n\nEE. UU. y China activan la iniciativa \"30-for-30\" para recortar aranceles recíprocos sobre 30.000 M$ en importaciones de bienes específicos como dispositivos médicos y pequeños aparatos.\n\nEl BCE ratificó en septiembre la subida de 25 p.b. situando la facilidad de depósito en el 2,50 % y el tipo principal en el 2,65 % ante riesgos de inflación al alza por la crisis energética de Oriente Medio.\n\nTTR Data y despachos sitúan el mercado transaccional español en 1.485 operaciones y 50.474 M€ en el primer semestre, con contracción del 15 % interanual en número pero mayor concentración de capital en operaciones medio-altas impulsadas por private equity (177 transacciones por 8.749 M€).\n\nFuentes: Consilium, EY, ECB, AGM Abogados"
+  "markdown": "## Hoy\nEl presidente ucraniano Volodímir Zelenski acusó a Washington de buscar la capitulación de su país en medio de crecientes tensiones con Donald Trump sobre la vía negociadora con Rusia y China, mientras en el Estrecho de Ormuz persisten los enfrentamientos y la inestabilidad tras el cierre de la ruta marítima decretado por Teherán.\n\nEn el ámbito industrial y financiero, Alemania formalizó en Berlín una alianza estratégica entre el canciller Friedrich Merz y Jensen Huang para desplegar IA industrial respaldada en la infraestructura Cloud de Deutsche Telekom de 1.000 millones de euros.\n\nFuentes: RTPA, El Periódico, Notebookcheck\n\n## Esta semana\nUcrania ejecutó un ataque masivo con drones sobre 15 regiones rusas, al tiempo que EE.UU. suspendió temporalmente ciertas sanciones a Rusia por razones de estabilidad energética.\n\nEn el terreno monetario, los mercados asignan un 80% de probabilidad a una pausa de la Fed y prevén mantenimiento de tipos por parte del BCE el 29 de octubre.\n\nEn M&A y tecnología, Wolters Kluwer adquirió Marosa por 112 M€ y Nvidia negocia una alianza o compra con Reflection AI.\n\nFuentes: El Español, Forbes, Morningstar / Financial Times, Capital-Riesgo.es, Xataka / Bloomberg\n\n## Este mes\nLa ONU advirtió del estancamiento de la paz en Gaza y Líbano con más de 1.500 muertos recientes.\n\nTras la subida de 25 pb del BCE en septiembre, la actividad transaccional en España muestra solidez con 73.803 M€ acumulados al cierre del tercer trimestre y un 80% de gestores de private equity planeando incrementar su inversión.\n\nAsimismo, se consolida la adopción de IA en el borde (\"edge AI\") sobre hardware especializado.\n\nFuentes: Noticias ONU, Rankia, TTR Data / Law&Trends, Merca2, Nvidia News"
 }
