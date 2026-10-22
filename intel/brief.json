@@ -1,62 +1,70 @@
 {
-  "fecha": "2026-10-21",
+  "fecha": "2026-10-22",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Financiación inmobiliaria alternativa (España)",
-      "valor": "3.891 M€",
-      "fuente": "PwC"
+      "etiqueta": "Prob. subida Fed 25 pb",
+      "valor": "53%",
+      "fuente": "elEconomista.es"
     },
     {
-      "etiqueta": "Adquisición de Marosa por Wolters Kluwer",
-      "valor": "112 M€",
-      "fuente": "Capital-Riesgo.es"
+      "etiqueta": "M&A España 9M",
+      "valor": "73.803 M€",
+      "fuente": "Forbes España"
     },
     {
-      "etiqueta": "Probabilidad de pausa de la Fed en octubre",
-      "valor": "80 %",
-      "fuente": "Forbes"
+      "etiqueta": "Deuda privada España",
+      "valor": "71 ops",
+      "fuente": "Financecommunity ES"
     },
     {
-      "etiqueta": "Alianza en Alemania para IA industrial",
-      "valor": "1.000 M€",
-      "fuente": "Notebookcheck"
+      "etiqueta": "Ingresos OpenAI UK",
+      "valor": "293 M£",
+      "fuente": "The Guardian"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 7
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 7
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Gemini"
+      "Nemotron"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Gemini"
+    "texto": "Investigación: Gemini · Redacción: Nemotron"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El presidente ucraniano Volodímir Zelenski acusó a Washington de buscar la capitulación de su país en medio de crecientes tensiones con Donald Trump sobre la vía negociadora con Rusia y China, mientras en el Estrecho de Ormuz persisten los enfrentamientos y la inestabilidad tras el cierre de la ruta marítima decretado por Teherán",
-          "fuente": "RTPA, El Periódico"
+          "texto": "Vladímir Putin aceptó reanudar negociaciones trilaterales Rusia-Ucrania-EE. UU. hacia el 10 de noviembre en San Petersburgo, mediadas por Steve Witkoff, mientras Donald Trump asegura que el fin de la guerra nunca estuvo tan cerca y el Kremlin rebaja expectativas",
+          "fuente": "SWI swissinfo.ch"
         },
         {
-          "texto": "En el ámbito industrial y financiero, Alemania formalizó en Berlín una alianza estratégica entre el canciller Friedrich Merz y Jensen Huang para desplegar IA industrial respaldada en la infraestructura Cloud de Deutsche Telekom de 1.000 millones de euros",
-          "fuente": "Notebookcheck"
+          "texto": "El estrecho de Ormuz mantiene el tráfico marítimo afectado y los precios del crudo al alza desde el inicio de operaciones el 28 de febrero",
+          "fuente": "El Periódico"
+        },
+        {
+          "texto": "Pete Hegseth realizó una visita no anunciada a la base de Ovda en Israel para coordinar con Tel Aviv ante Irán, en paralelo al despliegue del USS Theodore Roosevelt como tercer portaaviones en la región",
+          "fuente": "ARA"
+        },
+        {
+          "texto": "Briolf compró la italiana Inchimica (adhesivos y resinas de poliuretano) y Tikehau Capital, vía Grupo EYSA, adquirió Joinup (movilidad corporativa), dos operaciones cerradas en la semana 40",
+          "fuente": "Albia IMAP"
         }
       ]
     },
@@ -64,16 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Ucrania ejecutó un ataque masivo con drones sobre 15 regiones rusas, al tiempo que EE.UU. suspendió temporalmente ciertas sanciones a Rusia por razones de estabilidad energética",
-          "fuente": "El Español"
+          "texto": "FedWatch eleva al 53% la probabilidad de una subida de 25 pb (rango 4%-4,25%) el 28 de octubre, impulsada por un IPC estadounidense del 3,7%. El EUR/USD presiona a la baja en 1,12 por la divergencia de tipos entre Fed y BCE y la crisis presupuestaria francesa de cara a las reuniones del 27-28 y 28-29 de octubre respectivamente",
+          "fuente": "elEconomista.es, FXStreet"
         },
         {
-          "texto": "En el terreno monetario, los mercados asignan un 80% de probabilidad a una pausa de la Fed y prevén mantenimiento de tipos por parte del BCE el 29 de octubre",
-          "fuente": "Forbes, Morningstar / Financial Times"
+          "texto": "El mercado transaccional español acumuló 2.261 operaciones por 73.803 M€ hasta septiembre (-15% en número, -6% en importe), con inmobiliario (510), internet/software (203) y servicios profesionales (168) como sectores líderes. Private equity sumó 302 deals por 21.630 M€ y venture capital 401 por 6.243 M€ en el mismo periodo",
+          "fuente": "Forbes España, Europa Press"
         },
         {
-          "texto": "En M&A y tecnología, Wolters Kluwer adquirió Marosa por 112 M€ y Nvidia negocia una alianza o compra con Reflection AI",
-          "fuente": "Capital-Riesgo.es, Xataka / Bloomberg"
+          "texto": "España marcó récord histórico en deuda privada con 71 operaciones y un CAGR del 21% en tres años, consolidándose como líder del sur de Europa",
+          "fuente": "Financecommunity ES"
+        },
+        {
+          "texto": "OpenAI UK Ltd triplicó ingresos en 2025 hasta 293 M£, ganó 20,3 M£ y paga paquetes medios de 2,3 M£ por empleado. 21 Invest entró en España comprando participación en Grupo Celesa (herramientas de corte, Bizkaia) e inmho adquirió la Agencia Negociadora del Alquiler en la semana 39",
+          "fuente": "The Guardian, Albia IMAP"
         }
       ]
     },
@@ -81,23 +93,42 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La ONU advirtió del estancamiento de la paz en Gaza y Líbano con más de 1.500 muertos recientes",
-          "fuente": "Noticias ONU"
+          "texto": "Google DeepMind lanzó EmbeddingGemma 2 y Gemini 4 Argon con precios API reducidos ($2 entrada, $10 salida por millón de tokens) hasta el 30 de noviembre",
+          "fuente": "VentureBeat"
         },
         {
-          "texto": "Tras la subida de 25 pb del BCE en septiembre, la actividad transaccional en España muestra solidez con 73.803 M€ acumulados al cierre del tercer trimestre y un 80% de gestores de private equity planeando incrementar su inversión",
-          "fuente": "Rankia, TTR Data / Law&Trends, Merca2"
+          "texto": "Líderes de OpenAI, Anthropic, Google DeepMind y Meta testificaron ante el Consejo de NYC el 5 de octubre admitiendo bajo juramento que no pueden cuantificar el riesgo de incidentes catastróficos en modelos frontera",
+          "fuente": "CNBC via Yahoo Finance"
         },
         {
-          "texto": "Asimismo, se consolida la adopción de IA en el borde (\"edge AI\") sobre hardware especializado",
-          "fuente": "Nvidia News"
+          "texto": "El 80% de gestores de private equity en España prevé aumentar inversión en tecnología, servicios financieros y energía, impulsados por mayor dealflow (42% de encuestados). La retención de talento preocupa al 41% de empresas familiares españolas, superando al M&A como principal riesgo estratégico a corto plazo",
+          "fuente": "Club Cámara Madrid, KPMG International"
+        },
+        {
+          "texto": "La Comisión Europea, con Henna Virkkunen, endurecerá la supervisión de riesgos sistémicos del AI Act tras documentar más de 20 incidentes de pérdida de control en grandes laboratorios durante 2026. Comités del Congreso de EE. UU. presionan para bloquear acuerdos de diésel con Rusia, tensionando las excepciones energéticas transatlánticas",
+          "fuente": "Comisión Europea, Radio Intereconomía"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": []
+      "lineas": [],
+      "subsecciones": [
+        {
+          "titulo": "Edges para CT Advisory",
+          "lineas": [
+            {
+              "texto": "España cierra 2026 con récord histórico en deuda privada (71 operaciones, CAGR 21%) mientras el M&A cae en volumen (-15%) pero concentra capital en sectores defensivos (inmobiliario, software, servicios profesionales), señalando rotación de estrategia de fondos hacia private debt como sustituto de equity en mid-market",
+              "fuente": "Financecommunity ES, Forbes España"
+            },
+            {
+              "texto": "El 80% de GPs planea incrementar exposición a tecnología, servicios financieros y energía, con 42% citando mayor dealflow de salida de activos, lo que anticipa ventana de exits y secondaries en 2027",
+              "fuente": "Club Cámara Madrid"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "markdown": "## Hoy\nEl presidente ucraniano Volodímir Zelenski acusó a Washington de buscar la capitulación de su país en medio de crecientes tensiones con Donald Trump sobre la vía negociadora con Rusia y China, mientras en el Estrecho de Ormuz persisten los enfrentamientos y la inestabilidad tras el cierre de la ruta marítima decretado por Teherán.\n\nEn el ámbito industrial y financiero, Alemania formalizó en Berlín una alianza estratégica entre el canciller Friedrich Merz y Jensen Huang para desplegar IA industrial respaldada en la infraestructura Cloud de Deutsche Telekom de 1.000 millones de euros.\n\nFuentes: RTPA, El Periódico, Notebookcheck\n\n## Esta semana\nUcrania ejecutó un ataque masivo con drones sobre 15 regiones rusas, al tiempo que EE.UU. suspendió temporalmente ciertas sanciones a Rusia por razones de estabilidad energética.\n\nEn el terreno monetario, los mercados asignan un 80% de probabilidad a una pausa de la Fed y prevén mantenimiento de tipos por parte del BCE el 29 de octubre.\n\nEn M&A y tecnología, Wolters Kluwer adquirió Marosa por 112 M€ y Nvidia negocia una alianza o compra con Reflection AI.\n\nFuentes: El Español, Forbes, Morningstar / Financial Times, Capital-Riesgo.es, Xataka / Bloomberg\n\n## Este mes\nLa ONU advirtió del estancamiento de la paz en Gaza y Líbano con más de 1.500 muertos recientes.\n\nTras la subida de 25 pb del BCE en septiembre, la actividad transaccional en España muestra solidez con 73.803 M€ acumulados al cierre del tercer trimestre y un 80% de gestores de private equity planeando incrementar su inversión.\n\nAsimismo, se consolida la adopción de IA en el borde (\"edge AI\") sobre hardware especializado.\n\nFuentes: Noticias ONU, Rankia, TTR Data / Law&Trends, Merca2, Nvidia News"
+  "markdown": "## Hoy\nVladímir Putin aceptó reanudar negociaciones trilaterales Rusia-Ucrania-EE. UU. hacia el 10 de noviembre en San Petersburgo, mediadas por Steve Witkoff, mientras Donald Trump asegura que el fin de la guerra nunca estuvo tan cerca y el Kremlin rebaja expectativas.\n\nEl estrecho de Ormuz mantiene el tráfico marítimo afectado y los precios del crudo al alza desde el inicio de operaciones el 28 de febrero.\n\nPete Hegseth realizó una visita no anunciada a la base de Ovda en Israel para coordinar con Tel Aviv ante Irán, en paralelo al despliegue del USS Theodore Roosevelt como tercer portaaviones en la región.\n\nBriolf compró la italiana Inchimica (adhesivos y resinas de poliuretano) y Tikehau Capital, vía Grupo EYSA, adquirió Joinup (movilidad corporativa), dos operaciones cerradas en la semana 40.\n\nFuentes: SWI swissinfo.ch, El Periódico, ARA, Albia IMAP\n\n## Esta semana\nFedWatch eleva al 53% la probabilidad de una subida de 25 pb (rango 4%-4,25%) el 28 de octubre, impulsada por un IPC estadounidense del 3,7%. El EUR/USD presiona a la baja en 1,12 por la divergencia de tipos entre Fed y BCE y la crisis presupuestaria francesa de cara a las reuniones del 27-28 y 28-29 de octubre respectivamente.\n\nEl mercado transaccional español acumuló 2.261 operaciones por 73.803 M€ hasta septiembre (-15% en número, -6% en importe), con inmobiliario (510), internet/software (203) y servicios profesionales (168) como sectores líderes. Private equity sumó 302 deals por 21.630 M€ y venture capital 401 por 6.243 M€ en el mismo periodo.\n\nEspaña marcó récord histórico en deuda privada con 71 operaciones y un CAGR del 21% en tres años, consolidándose como líder del sur de Europa.\n\nOpenAI UK Ltd triplicó ingresos en 2025 hasta 293 M£, ganó 20,3 M£ y paga paquetes medios de 2,3 M£ por empleado. 21 Invest entró en España comprando participación en Grupo Celesa (herramientas de corte, Bizkaia) e inmho adquirió la Agencia Negociadora del Alquiler en la semana 39.\n\nFuentes: elEconomista.es, FXStreet, Forbes España, Europa Press, Financecommunity ES, The Guardian, Albia IMAP\n\n## Este mes\nGoogle DeepMind lanzó EmbeddingGemma 2 y Gemini 4 Argon con precios API reducidos ($2 entrada, $10 salida por millón de tokens) hasta el 30 de noviembre.\n\nLíderes de OpenAI, Anthropic, Google DeepMind y Meta testificaron ante el Consejo de NYC el 5 de octubre admitiendo bajo juramento que no pueden cuantificar el riesgo de incidentes catastróficos en modelos frontera.\n\nEl 80% de gestores de private equity en España prevé aumentar inversión en tecnología, servicios financieros y energía, impulsados por mayor dealflow (42% de encuestados). La retención de talento preocupa al 41% de empresas familiares españolas, superando al M&A como principal riesgo estratégico a corto plazo.\n\nLa Comisión Europea, con Henna Virkkunen, endurecerá la supervisión de riesgos sistémicos del AI Act tras documentar más de 20 incidentes de pérdida de control en grandes laboratorios durante 2026. Comités del Congreso de EE. UU. presionan para bloquear acuerdos de diésel con Rusia, tensionando las excepciones energéticas transatlánticas.\n\nFuentes: VentureBeat, CNBC via Yahoo Finance, Club Cámara Madrid, KPMG International, Comisión Europea, Radio Intereconomía\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEspaña cierra 2026 con récord histórico en deuda privada (71 operaciones, CAGR 21%) mientras el M&A cae en volumen (-15%) pero concentra capital en sectores defensivos (inmobiliario, software, servicios profesionales), señalando rotación de estrategia de fondos hacia private debt como sustituto de equity en mid-market.\n\nEl 80% de GPs planea incrementar exposición a tecnología, servicios financieros y energía, con 42% citando mayor dealflow de salida de activos, lo que anticipa ventana de exits y secondaries en 2027.\n\nFuentes: Financecommunity ES, Forbes España, Club Cámara Madrid"
 }
