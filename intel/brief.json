@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-10-23",
+  "fecha": "2026-10-24",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Prima de riesgo guerra Ormuz",
-      "valor": "3-10% casco",
-      "fuente": "House of Saud"
+      "etiqueta": "Petróleo Brent",
+      "valor": "115,16 $/bbl /",
+      "fuente": "Mi bolsillo"
     },
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50%",
-      "fuente": "BCE"
+      "etiqueta": "Contracción PIB MENA",
+      "valor": "-1,3 % a -2 % /",
+      "fuente": "SWI swissinfo.ch"
     },
     {
-      "etiqueta": "M&A España H1 2026",
-      "valor": "50.474 M€",
-      "fuente": "Tendencias M&A 2026"
+      "etiqueta": "Instalación centro de datos IA",
+      "valor": "14 días",
+      "fuente": "Infobae"
     },
     {
-      "etiqueta": "Ataques buques Ormuz octubre",
-      "valor": "27",
-      "fuente": "USNI News"
+      "etiqueta": "Múltiplo pymes España",
+      "valor": "4x, 18x EBITDA /",
+      "fuente": "Capittal"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 2
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -48,11 +48,44 @@
   },
   "secciones": [
     {
+      "titulo": "Cifras clave",
+      "lineas": [
+        {
+          "texto": "Petróleo Brent: 115,16 $/bbl",
+          "fuente": "Revista País, Mi bolsillo"
+        },
+        {
+          "texto": "Contracción PIB MENA: -1,3 % a -2 %",
+          "fuente": "Prensa Ágil, SWI swissinfo.ch"
+        },
+        {
+          "texto": "Instalación centro de datos IA: 14 días",
+          "fuente": "Infobae"
+        },
+        {
+          "texto": "Múltiplo pymes España: 4x, 18x EBITDA",
+          "fuente": "MyBusinessFuture, Capittal"
+        }
+      ]
+    },
+    {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Las fuerzas hutíes capturaron el 22 de octubre un segmento crítico de la vía terrestre entre Taiz y Adén en el valle de al Dhabab, consolidando el control del acceso vial en el sur de Yemen. En respuesta a los ataques hutíes contra infraestructuras críticas y aeropuertos civiles saudíes, el Departamento de Estado ordenó el mismo día la salida de diplomáticos no esenciales y familiares de la embajada y consulados en Arabia Saudí",
-          "fuente": "Institute for the Study of War (ISW), EA WorldView"
+          "texto": "Rusia y Ucrania activaron un alto al fuego temporal en Oleshky (Jersón) a partir del 27 de octubre para el paso de un convoy humanitario, tregua coordinada por Melania Trump tras contactos directos entre Donald Trump y Vladímir Putin",
+          "fuente": "Vertex AI Search"
+        },
+        {
+          "texto": "En el frente comercial, Trump firmó el 23 de octubre una proclamación que elimina aranceles del 50 % sobre contrachapado, papel de embalaje y equipos de refrigeración canadienses, mientras impone el mismo gravamen a válvulas industriales y alfombras para proteger sectores de Maine a dos semanas de las elecciones de medio mandato",
+          "fuente": "The White House / El Nacional"
+        },
+        {
+          "texto": "La escalada en Oriente Medio disparó el crudo: el Brent tocó 115,16 $/bbl y el WTI superó 101,27 $/bbl el 23 de octubre tras nuevos ataques hutíes",
+          "fuente": "Revista País, Mi bolsillo"
+        },
+        {
+          "texto": "En infraestructura de IA, Nvidia presentó en GTC Berlín el diseño modular DSX POD sobre arquitectura Vera Rubin, que reduce el despliegue de centros de datos de seis meses a 14 días. OpenAI donó su especificación Open Responses a la Agentic AI Foundation junto a Anthropic (Agent Skills) y Alibaba (OpenSandbox) para unificar ecosistemas de agentes autónomos",
+          "fuente": "Infobae, Blog Donweb"
         }
       ]
     },
@@ -60,12 +93,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Las primas de seguro de guerra para tránsitos por Ormuz se dispararon al 3-10% del valor del casco (frente al 0,15-0,25% previo), añadiendo 3-10 millones de dólares por viaje de un petrolero de 100 millones y forzando a Saudi Aramco, QatarEnergy, Shell y Kuwait Petroleum a declarar force majeure en contratos de suministro. La OMI registra en octubre el pico histórico de ataques a buques comerciales desde febrero, con 27 incidentes en lo que va de mes",
-          "fuente": "House of Saud, USNI News"
+          "texto": "De cara a las reuniones de la Fed (27-28 octubre) y el BCE (28-29 octubre), los mercados descuentan una pausa generalizada con el tipo de depósito anclado en el 2,50 % y la Fed en 3,75 %-4,00 %, lastrados por la presión inflacionista energética",
+          "fuente": "FXStreet, CaixaBank Research"
         },
         {
-          "texto": "Zelenski reiteró el 21 de octubre en Fox News su disposición a congelar la línea del frente como alto el fuego inmediato, condicionado a garantías de seguridad bilaterales de EE. UU. (bajo administración Trump) y Europa. The Information filtró el 19 de octubre una carrera coordinada entre Anthropic, Google y OpenAI para lanzar sistemas de nueva generación antes de fin de año, enfocados en razonamiento profundo y multimodalidad avanzada",
-          "fuente": "The Information via Yahoo Finance / Investing"
+          "texto": "El FMI advirtió el 22 de octubre que la región MENA y Pakistán se contraerán entre el 1,3 % y el 2 % en 2026 por el impacto de los conflictos en la producción energética y las rutas comerciales",
+          "fuente": "Prensa Ágil, SWI swissinfo.ch"
+        },
+        {
+          "texto": "Anthropic entregó al Congreso de EE. UU. un borrador legislativo que facultaría al Departamento de Comercio para ordenar la paralización judicial de un modelo de IA si causa daños superiores a 1.000 millones de dólares o más de 50 muertes",
+          "fuente": "Europa Press"
+        },
+        {
+          "texto": "En la misma cumbre GTC Berlín, Jensen Huang anunció acuerdos plurianuales con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar por 2,5 la capacidad mundial de sustratos avanzados en tres años",
+          "fuente": "NVIDIA News"
         }
       ]
     },
@@ -73,20 +114,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE subió 25 puntos básicos el 10 de septiembre (facilidad de depósito al 2,50%, refinanciación al 2,65%) citando presiones inflacionistas persistentes de la crisis energética en Oriente Medio, con proyección de inflación media del 3,0% en 2026 y 2,5% en 2027",
-          "fuente": "Banco Central Europeo (BCE)"
+          "texto": "El Consejo de la UE aprobó el 12 de octubre el mayor paquete de sanciones contra el complejo militar-industrial ruso, listando cerca de 1.600 individuos y entidades tras la intensificación de ataques sobre infraestructuras civiles en Ucrania",
+          "fuente": "Diario Oficial de la UE"
         },
         {
-          "texto": "El mercado transaccional español cerró el primer semestre con 1.485 operaciones por 50.474 millones: el volumen cayó un 15% interanual pero el capital movilizado se mantuvo plano (-0,29%), evidenciando concentración de valor en deals mayores y consolidación sectorial",
-          "fuente": "Tendencias M&A 2026"
+          "texto": "Microsoft confirmó que su acelerador propio Maia 300 entrará en producción masiva en 2027 para reducir su dependencia directa del hardware de Nvidia",
+          "fuente": "Xataka"
         },
         {
-          "texto": "El régimen transitorio del Real Decreto-Ley 1/2025 mantiene hasta el 31 de diciembre de 2026 la obligación de autorización previa del Consejo de Ministros (art. 7 bis Ley 19/2003) para inversiones exteriores de la UE y EFTA en sectores estratégicos e infraestructuras críticas",
-          "fuente": "Global Law Experts"
-        },
-        {
-          "texto": "La Comisión Europea y BBVA Research sitúan el crecimiento del PIB español en el 2,5% para 2026 (por encima de la eurozona) mientras advierten del reto estructural de la deuda pública, estimada en torno al 99% del PIB para 2027. La autoridad neerlandesa de protección de datos (Autoriteit Persoonsgegevens) creó el 9 de octubre una dirección específica de supervisión de IA y algoritmos, estructurando un departamento técnico exclusivo para la vigilancia de mercado bajo el AI Act",
-          "fuente": "BBVA Research, Hello Growth"
+          "texto": "Los múltiplos de valoración de pymes en España se mantienen en la horquilla de 4x a 18x EBITDA según sector, impulsados por la presión de relevo generacional y la asfixia regulatoria que empuja a miles de empresas familiares a buscar salida",
+          "fuente": "MyBusinessFuture, Capittal"
         }
       ]
     },
@@ -98,21 +135,21 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El mid-market español consolida su rol de motor transaccional con 50.474 M€ en H1 2026 (-0,29% en valor pese a -15% en deals) y estructuras híbridas (deuda + earn-out + equity) como estándar para cerrar brechas de valoración",
-              "fuente": "Tendencias M&A 2026, Gómez-Acebo & Pombo"
+              "texto": "Los compradores europeos en mid-market exigen justificación estratégica estricta y ejecución blindada, lo que eleva la barra de entrada y favorece mandatos con vendedores preparados y data rooms listos",
+              "fuente": "MOORE España"
             },
             {
-              "texto": "La entrada de 21 Invest en Grupo Celesa (herramientas de precisión, Bizkaia) confirma el apetito de fondos paneuropeos por plataformas industriales medianas españolas, mientras el régimen de FDI transitorio mantiene hasta fin de año la autorización previa del Consejo de Ministros para inversiones UE/EFTA en sectores estratégicos, ventana de compliance que vence el 31-dic-2026",
-              "fuente": "Albia IMAP, Global Law Experts"
+              "texto": "Los múltiplos de 4x-18x EBITDA en pymes españolas reflejan dispersión sectorial real: la presión de relevo generacional y la asfixia burocrática crean deal flow estructural, pero la congelación de contrataciones (66,7 % de pymes) y el salto de costes (76 %) exigen earn-outs y estructuras híbridas para cerrar brechas de valoración",
+              "fuente": "Dir&Ge, MyBusinessFuture, Capittal"
             },
             {
-              "texto": "El PIB español al 2,5% en 2026 con deuda proyectada al 99% en 2027 dibuja un escenario de crecimiento diferencial pero restricción fiscal creciente para operaciones apalancadas",
-              "fuente": "BBVA Research"
+              "texto": "El paquete de sanciones UE a 1.600 entidades rusas amplía el perímetro de compliance en due diligence de cualquier operación con exposición a cadenas de suministro industriales",
+              "fuente": "Diario Oficial de la UE"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLas fuerzas hutíes capturaron el 22 de octubre un segmento crítico de la vía terrestre entre Taiz y Adén en el valle de al Dhabab, consolidando el control del acceso vial en el sur de Yemen. En respuesta a los ataques hutíes contra infraestructuras críticas y aeropuertos civiles saudíes, el Departamento de Estado ordenó el mismo día la salida de diplomáticos no esenciales y familiares de la embajada y consulados en Arabia Saudí.\n\nFuentes: Institute for the Study of War (ISW), EA WorldView\n\n## Esta semana\nLas primas de seguro de guerra para tránsitos por Ormuz se dispararon al 3-10% del valor del casco (frente al 0,15-0,25% previo), añadiendo 3-10 millones de dólares por viaje de un petrolero de 100 millones y forzando a Saudi Aramco, QatarEnergy, Shell y Kuwait Petroleum a declarar force majeure en contratos de suministro. La OMI registra en octubre el pico histórico de ataques a buques comerciales desde febrero, con 27 incidentes en lo que va de mes.\n\nZelenski reiteró el 21 de octubre en Fox News su disposición a congelar la línea del frente como alto el fuego inmediato, condicionado a garantías de seguridad bilaterales de EE. UU. (bajo administración Trump) y Europa. The Information filtró el 19 de octubre una carrera coordinada entre Anthropic, Google y OpenAI para lanzar sistemas de nueva generación antes de fin de año, enfocados en razonamiento profundo y multimodalidad avanzada.\n\nFuentes: House of Saud, USNI News, Critical Threats / ISW, The Information via Yahoo Finance / Investing\n\n## Este mes\nEl BCE subió 25 puntos básicos el 10 de septiembre (facilidad de depósito al 2,50%, refinanciación al 2,65%) citando presiones inflacionistas persistentes de la crisis energética en Oriente Medio, con proyección de inflación media del 3,0% en 2026 y 2,5% en 2027.\n\nEl mercado transaccional español cerró el primer semestre con 1.485 operaciones por 50.474 millones: el volumen cayó un 15% interanual pero el capital movilizado se mantuvo plano (-0,29%), evidenciando concentración de valor en deals mayores y consolidación sectorial.\n\nEl régimen transitorio del Real Decreto-Ley 1/2025 mantiene hasta el 31 de diciembre de 2026 la obligación de autorización previa del Consejo de Ministros (art. 7 bis Ley 19/2003) para inversiones exteriores de la UE y EFTA en sectores estratégicos e infraestructuras críticas.\n\nLa Comisión Europea y BBVA Research sitúan el crecimiento del PIB español en el 2,5% para 2026 (por encima de la eurozona) mientras advierten del reto estructural de la deuda pública, estimada en torno al 99% del PIB para 2027. La autoridad neerlandesa de protección de datos (Autoriteit Persoonsgegevens) creó el 9 de octubre una dirección específica de supervisión de IA y algoritmos, estructurando un departamento técnico exclusivo para la vigilancia de mercado bajo el AI Act.\n\nFuentes: Banco Central Europeo (BCE), Tendencias M&A 2026, Global Law Experts, BBVA Research, Hello Growth\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mid-market español consolida su rol de motor transaccional con 50.474 M€ en H1 2026 (-0,29% en valor pese a -15% en deals) y estructuras híbridas (deuda + earn-out + equity) como estándar para cerrar brechas de valoración.\n\nLa entrada de 21 Invest en Grupo Celesa (herramientas de precisión, Bizkaia) confirma el apetito de fondos paneuropeos por plataformas industriales medianas españolas, mientras el régimen de FDI transitorio mantiene hasta fin de año la autorización previa del Consejo de Ministros para inversiones UE/EFTA en sectores estratégicos, ventana de compliance que vence el 31-dic-2026.\n\nEl PIB español al 2,5% en 2026 con deuda proyectada al 99% en 2027 dibuja un escenario de crecimiento diferencial pero restricción fiscal creciente para operaciones apalancadas.\n\nFuentes: Tendencias M&A 2026, Gómez-Acebo & Pombo, Albia IMAP, Global Law Experts, BBVA Research"
+  "markdown": "## Hoy\nRusia y Ucrania activaron un alto al fuego temporal en Oleshky (Jersón) a partir del 27 de octubre para el paso de un convoy humanitario, tregua coordinada por Melania Trump tras contactos directos entre Donald Trump y Vladímir Putin.\n\nEn el frente comercial, Trump firmó el 23 de octubre una proclamación que elimina aranceles del 50 % sobre contrachapado, papel de embalaje y equipos de refrigeración canadienses, mientras impone el mismo gravamen a válvulas industriales y alfombras para proteger sectores de Maine a dos semanas de las elecciones de medio mandato.\n\nLa escalada en Oriente Medio disparó el crudo: el Brent tocó 115,16 $/bbl y el WTI superó 101,27 $/bbl el 23 de octubre tras nuevos ataques hutíes.\n\nEn infraestructura de IA, Nvidia presentó en GTC Berlín el diseño modular DSX POD sobre arquitectura Vera Rubin, que reduce el despliegue de centros de datos de seis meses a 14 días. OpenAI donó su especificación Open Responses a la Agentic AI Foundation junto a Anthropic (Agent Skills) y Alibaba (OpenSandbox) para unificar ecosistemas de agentes autónomos.\n\nFuentes: Vertex AI Search, The White House / El Nacional, Revista País, Mi bolsillo, Infobae, Blog Donweb\n\n## Esta semana\nDe cara a las reuniones de la Fed (27-28 octubre) y el BCE (28-29 octubre), los mercados descuentan una pausa generalizada con el tipo de depósito anclado en el 2,50 % y la Fed en 3,75 %-4,00 %, lastrados por la presión inflacionista energética.\n\nEl FMI advirtió el 22 de octubre que la región MENA y Pakistán se contraerán entre el 1,3 % y el 2 % en 2026 por el impacto de los conflictos en la producción energética y las rutas comerciales.\n\nAnthropic entregó al Congreso de EE. UU. un borrador legislativo que facultaría al Departamento de Comercio para ordenar la paralización judicial de un modelo de IA si causa daños superiores a 1.000 millones de dólares o más de 50 muertes.\n\nEn la misma cumbre GTC Berlín, Jensen Huang anunció acuerdos plurianuales con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar por 2,5 la capacidad mundial de sustratos avanzados en tres años.\n\nFuentes: FXStreet, CaixaBank Research, Prensa Ágil, SWI swissinfo.ch, Europa Press, NVIDIA News\n\n## Este mes\nEl Consejo de la UE aprobó el 12 de octubre el mayor paquete de sanciones contra el complejo militar-industrial ruso, listando cerca de 1.600 individuos y entidades tras la intensificación de ataques sobre infraestructuras civiles en Ucrania.\n\nMicrosoft confirmó que su acelerador propio Maia 300 entrará en producción masiva en 2027 para reducir su dependencia directa del hardware de Nvidia.\n\nLos múltiplos de valoración de pymes en España se mantienen en la horquilla de 4x a 18x EBITDA según sector, impulsados por la presión de relevo generacional y la asfixia regulatoria que empuja a miles de empresas familiares a buscar salida.\n\nFuentes: Diario Oficial de la UE, Xataka, MyBusinessFuture, Capittal\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLos compradores europeos en mid-market exigen justificación estratégica estricta y ejecución blindada, lo que eleva la barra de entrada y favorece mandatos con vendedores preparados y data rooms listos.\n\nLos múltiplos de 4x-18x EBITDA en pymes españolas reflejan dispersión sectorial real: la presión de relevo generacional y la asfixia burocrática crean deal flow estructural, pero la congelación de contrataciones (66,7 % de pymes) y el salto de costes (76 %) exigen earn-outs y estructuras híbridas para cerrar brechas de valoración.\n\nEl paquete de sanciones UE a 1.600 entidades rusas amplía el perímetro de compliance en due diligence de cualquier operación con exposición a cadenas de suministro industriales.\n\nFuentes: MOORE España, Dir&Ge, MyBusinessFuture, Capittal, Diario Oficial de la UE"
 }
