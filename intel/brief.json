@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-10-24",
+  "fecha": "2026-10-25",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Petróleo Brent",
-      "valor": "115,16 $/bbl /",
-      "fuente": "Mi bolsillo"
+      "etiqueta": "Crudo Brent",
+      "valor": "116-117 $/bbl",
+      "fuente": "El Español"
     },
     {
-      "etiqueta": "Contracción PIB MENA",
-      "valor": "-1,3 % a -2 % /",
-      "fuente": "SWI swissinfo.ch"
+      "etiqueta": "M&A España 9M 2026",
+      "valor": "73.803 M€ (-6 % i.a.)",
+      "fuente": "AGM Abogados"
     },
     {
-      "etiqueta": "Instalación centro de datos IA",
-      "valor": "14 días",
-      "fuente": "Infobae"
+      "etiqueta": "Family offices España en privados",
+      "valor": "47,2 %",
+      "fuente": "Demócrata"
     },
     {
-      "etiqueta": "Múltiplo pymes España",
-      "valor": "4x, 18x EBITDA /",
-      "fuente": "Capittal"
+      "etiqueta": "Especulación FDI UE sector TIC",
+      "valor": "27 %",
+      "fuente": "Herbert Smith Freehills Kramer"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Este mes",
@@ -48,44 +48,19 @@
   },
   "secciones": [
     {
-      "titulo": "Cifras clave",
-      "lineas": [
-        {
-          "texto": "Petróleo Brent: 115,16 $/bbl",
-          "fuente": "Revista País, Mi bolsillo"
-        },
-        {
-          "texto": "Contracción PIB MENA: -1,3 % a -2 %",
-          "fuente": "Prensa Ágil, SWI swissinfo.ch"
-        },
-        {
-          "texto": "Instalación centro de datos IA: 14 días",
-          "fuente": "Infobae"
-        },
-        {
-          "texto": "Múltiplo pymes España: 4x, 18x EBITDA",
-          "fuente": "MyBusinessFuture, Capittal"
-        }
-      ]
-    },
-    {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Rusia y Ucrania activaron un alto al fuego temporal en Oleshky (Jersón) a partir del 27 de octubre para el paso de un convoy humanitario, tregua coordinada por Melania Trump tras contactos directos entre Donald Trump y Vladímir Putin",
-          "fuente": "Vertex AI Search"
+          "texto": "El crudo Brent supera los 116-117 dólares por barril, rozando los umbrales de crisis del Banco de España (120 $) y del BCE (130 $), impulsado por ataques hutíes a instalaciones petroleras y aeropuertos saudíes y la tensión persistente en el estrecho de Ormuz; los márgenes de refino se disparan por encima de 36 dólares",
+          "fuente": "El Español"
         },
         {
-          "texto": "En el frente comercial, Trump firmó el 23 de octubre una proclamación que elimina aranceles del 50 % sobre contrachapado, papel de embalaje y equipos de refrigeración canadienses, mientras impone el mismo gravamen a válvulas industriales y alfombras para proteger sectores de Maine a dos semanas de las elecciones de medio mandato",
-          "fuente": "The White House / El Nacional"
+          "texto": "El director de Inteligencia Nacional de EE. UU., Jay Clayton, advirtió el 23-24 de octubre en un memorándum a Marco Rubio que Irán se encuentra en etapas avanzadas para planificar ataques contra objetivos estadounidenses en Oriente Medio, situando la amenaza en el nivel más alto desde febrero de 2026",
+          "fuente": "ISW"
         },
         {
-          "texto": "La escalada en Oriente Medio disparó el crudo: el Brent tocó 115,16 $/bbl y el WTI superó 101,27 $/bbl el 23 de octubre tras nuevos ataques hutíes",
-          "fuente": "Revista País, Mi bolsillo"
-        },
-        {
-          "texto": "En infraestructura de IA, Nvidia presentó en GTC Berlín el diseño modular DSX POD sobre arquitectura Vera Rubin, que reduce el despliegue de centros de datos de seis meses a 14 días. OpenAI donó su especificación Open Responses a la Agentic AI Foundation junto a Anthropic (Agent Skills) y Alibaba (OpenSandbox) para unificar ecosistemas de agentes autónomos",
-          "fuente": "Infobae, Blog Donweb"
+          "texto": "Ucrania ejecutó una masiva ofensiva nocturna con drones contra Bélgorod el 25 de octubre, impactando el centro comercial MegaGRINN (163.000 m²) y dejando al menos un civil muerto y 14 heridos",
+          "fuente": "The Kyiv Independent"
         }
       ]
     },
@@ -93,20 +68,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "De cara a las reuniones de la Fed (27-28 octubre) y el BCE (28-29 octubre), los mercados descuentan una pausa generalizada con el tipo de depósito anclado en el 2,50 % y la Fed en 3,75 %-4,00 %, lastrados por la presión inflacionista energética",
-          "fuente": "FXStreet, CaixaBank Research"
+          "texto": "Rusia y Ucrania acordaron un alto el fuego localizado en Oleshky (Jersón) a partir del 27 de octubre, facilitado por la intervención de Melania Trump, con vistas a preparar nuevas rondas de conversaciones técnicas en Abu Dabi o Suiza en noviembre",
+          "fuente": "The Moscow Times"
         },
         {
-          "texto": "El FMI advirtió el 22 de octubre que la región MENA y Pakistán se contraerán entre el 1,3 % y el 2 % en 2026 por el impacto de los conflictos en la producción energética y las rutas comerciales",
-          "fuente": "Prensa Ágil, SWI swissinfo.ch"
+          "texto": "Se consolidan los detalles del acuerdo comercial \"30-for-30\" EE. UU., China, con reducciones recíprocas de aranceles sobre 30.000 millones de dólares de importaciones por bando y extensión de la tregua hasta el 10 de enero de 2027",
+          "fuente": "PwC Ireland"
         },
         {
-          "texto": "Anthropic entregó al Congreso de EE. UU. un borrador legislativo que facultaría al Departamento de Comercio para ordenar la paralización judicial de un modelo de IA si causa daños superiores a 1.000 millones de dólares o más de 50 muertes",
-          "fuente": "Europa Press"
+          "texto": "Las actas del BCE publicadas el 8 de octubre y los informes de mediados de mes mantienen los tipos (depósito en 2,50 %, referencia principal en 2,65 %), con expectativas divididas sobre una posible subida en diciembre ante la presión inflacionaria energética",
+          "fuente": "Morningstar"
         },
         {
-          "texto": "En la misma cumbre GTC Berlín, Jensen Huang anunció acuerdos plurianuales con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar por 2,5 la capacidad mundial de sustratos avanzados en tres años",
+          "texto": "NVIDIA presentó el 21 de octubre en GTC Berlín la arquitectura OpenShell, un diseño de infraestructura y software de ejecución segura (Vera Rubin, CPUs Vera, BlueField-4 DPU) para contener y auditar agentes autónomos de IA a escala industrial, con respaldo de grandes tecnológicas y corporaciones europeas",
           "fuente": "NVIDIA News"
+        },
+        {
+          "texto": "Ursula von der Leyen propuso formalmente ante el Parlamento Europeo un mecanismo de agregación de demanda para compras conjuntas de energía entre Estados miembros, buscando frenar el sobrecoste acumulado de 100.000 millones de euros en combustibles fósiles desde el inicio del conflicto con Irán",
+          "fuente": "Xataka"
         }
       ]
     },
@@ -114,16 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Consejo de la UE aprobó el 12 de octubre el mayor paquete de sanciones contra el complejo militar-industrial ruso, listando cerca de 1.600 individuos y entidades tras la intensificación de ataques sobre infraestructuras civiles en Ucrania",
-          "fuente": "Diario Oficial de la UE"
+          "texto": "El balance TTR Data de los primeros nueve meses de 2026 registra 2.261 operaciones en España por 73.803 M€, caídas interanuales del 15 % en número y del 6 % en capital respecto a 2025",
+          "fuente": "AGM Abogados"
         },
         {
-          "texto": "Microsoft confirmó que su acelerador propio Maia 300 entrará en producción masiva en 2027 para reducir su dependencia directa del hardware de Nvidia",
-          "fuente": "Xataka"
+          "texto": "Informes sectoriales actualizados recuerdan que más de medio millón de empresarios españoles alcanzarán la edad de jubilación antes de 2030 sin relevo generacional claro, situando la sucesión como motor estructural del mid-market",
+          "fuente": "Global Advisory Experts"
         },
         {
-          "texto": "Los múltiplos de valoración de pymes en España se mantienen en la horquilla de 4x a 18x EBITDA según sector, impulsados por la presión de relevo generacional y la asfixia regulatoria que empuja a miles de empresas familiares a buscar salida",
-          "fuente": "MyBusinessFuture, Capittal"
+          "texto": "La Comisión Europea publicó el 14 de octubre su Sexto Informe Anual sobre control de IED en la UE, situando al sector TIC como principal destino de adquisiciones exteriores en 2025 (27 % de los acuerdos), superando al manufacturero",
+          "fuente": "Herbert Smith Freehills Kramer"
+        },
+        {
+          "texto": "Persiste la tensión en la deuda soberana europea: los diferenciales de los bonos franceses a 10 años se mantienen por encima de 150 puntos básicos respecto al bund alemán, máximos desde 2012, por incertidumbre fiscal y política interna",
+          "fuente": "Allianz Global Investors"
         }
       ]
     },
@@ -135,21 +118,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Los compradores europeos en mid-market exigen justificación estratégica estricta y ejecución blindada, lo que eleva la barra de entrada y favorece mandatos con vendedores preparados y data rooms listos",
-              "fuente": "MOORE España"
+              "texto": "La caída del 15 % en número de deals y del 6 % en capital en el mercado español 9M 2026 coexiste con una oleada de sucesiones forzadas (500.000+ empresarios a jubilación antes de 2030) y una asignación media del 47,2 % de family offices a privados con intención de subirla al 68 %",
+              "fuente": "AGM Abogados, Global Advisory Experts, Demócrata"
             },
             {
-              "texto": "Los múltiplos de 4x-18x EBITDA en pymes españolas reflejan dispersión sectorial real: la presión de relevo generacional y la asfixia burocrática crean deal flow estructural, pero la congelación de contrataciones (66,7 % de pymes) y el salto de costes (76 %) exigen earn-outs y estructuras híbridas para cerrar brechas de valoración",
-              "fuente": "Dir&Ge, MyBusinessFuture, Capittal"
-            },
-            {
-              "texto": "El paquete de sanciones UE a 1.600 entidades rusas amplía el perímetro de compliance en due diligence de cualquier operación con exposición a cadenas de suministro industriales",
-              "fuente": "Diario Oficial de la UE"
+              "texto": "Las operaciones cruzadas de Miura/HTBA (Specnova en EE. UU.) y Noucor/MCH (Helm Pharma en Alemania) confirman el apetito por build-ups internacionales en healthtech y farma para escalar a 200 M€",
+              "fuente": "Albia IMAP"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nRusia y Ucrania activaron un alto al fuego temporal en Oleshky (Jersón) a partir del 27 de octubre para el paso de un convoy humanitario, tregua coordinada por Melania Trump tras contactos directos entre Donald Trump y Vladímir Putin.\n\nEn el frente comercial, Trump firmó el 23 de octubre una proclamación que elimina aranceles del 50 % sobre contrachapado, papel de embalaje y equipos de refrigeración canadienses, mientras impone el mismo gravamen a válvulas industriales y alfombras para proteger sectores de Maine a dos semanas de las elecciones de medio mandato.\n\nLa escalada en Oriente Medio disparó el crudo: el Brent tocó 115,16 $/bbl y el WTI superó 101,27 $/bbl el 23 de octubre tras nuevos ataques hutíes.\n\nEn infraestructura de IA, Nvidia presentó en GTC Berlín el diseño modular DSX POD sobre arquitectura Vera Rubin, que reduce el despliegue de centros de datos de seis meses a 14 días. OpenAI donó su especificación Open Responses a la Agentic AI Foundation junto a Anthropic (Agent Skills) y Alibaba (OpenSandbox) para unificar ecosistemas de agentes autónomos.\n\nFuentes: Vertex AI Search, The White House / El Nacional, Revista País, Mi bolsillo, Infobae, Blog Donweb\n\n## Esta semana\nDe cara a las reuniones de la Fed (27-28 octubre) y el BCE (28-29 octubre), los mercados descuentan una pausa generalizada con el tipo de depósito anclado en el 2,50 % y la Fed en 3,75 %-4,00 %, lastrados por la presión inflacionista energética.\n\nEl FMI advirtió el 22 de octubre que la región MENA y Pakistán se contraerán entre el 1,3 % y el 2 % en 2026 por el impacto de los conflictos en la producción energética y las rutas comerciales.\n\nAnthropic entregó al Congreso de EE. UU. un borrador legislativo que facultaría al Departamento de Comercio para ordenar la paralización judicial de un modelo de IA si causa daños superiores a 1.000 millones de dólares o más de 50 muertes.\n\nEn la misma cumbre GTC Berlín, Jensen Huang anunció acuerdos plurianuales con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar por 2,5 la capacidad mundial de sustratos avanzados en tres años.\n\nFuentes: FXStreet, CaixaBank Research, Prensa Ágil, SWI swissinfo.ch, Europa Press, NVIDIA News\n\n## Este mes\nEl Consejo de la UE aprobó el 12 de octubre el mayor paquete de sanciones contra el complejo militar-industrial ruso, listando cerca de 1.600 individuos y entidades tras la intensificación de ataques sobre infraestructuras civiles en Ucrania.\n\nMicrosoft confirmó que su acelerador propio Maia 300 entrará en producción masiva en 2027 para reducir su dependencia directa del hardware de Nvidia.\n\nLos múltiplos de valoración de pymes en España se mantienen en la horquilla de 4x a 18x EBITDA según sector, impulsados por la presión de relevo generacional y la asfixia regulatoria que empuja a miles de empresas familiares a buscar salida.\n\nFuentes: Diario Oficial de la UE, Xataka, MyBusinessFuture, Capittal\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLos compradores europeos en mid-market exigen justificación estratégica estricta y ejecución blindada, lo que eleva la barra de entrada y favorece mandatos con vendedores preparados y data rooms listos.\n\nLos múltiplos de 4x-18x EBITDA en pymes españolas reflejan dispersión sectorial real: la presión de relevo generacional y la asfixia burocrática crean deal flow estructural, pero la congelación de contrataciones (66,7 % de pymes) y el salto de costes (76 %) exigen earn-outs y estructuras híbridas para cerrar brechas de valoración.\n\nEl paquete de sanciones UE a 1.600 entidades rusas amplía el perímetro de compliance en due diligence de cualquier operación con exposición a cadenas de suministro industriales.\n\nFuentes: MOORE España, Dir&Ge, MyBusinessFuture, Capittal, Diario Oficial de la UE"
+  "markdown": "## Hoy\nEl crudo Brent supera los 116-117 dólares por barril, rozando los umbrales de crisis del Banco de España (120 $) y del BCE (130 $), impulsado por ataques hutíes a instalaciones petroleras y aeropuertos saudíes y la tensión persistente en el estrecho de Ormuz; los márgenes de refino se disparan por encima de 36 dólares.\n\nEl director de Inteligencia Nacional de EE. UU., Jay Clayton, advirtió el 23-24 de octubre en un memorándum a Marco Rubio que Irán se encuentra en etapas avanzadas para planificar ataques contra objetivos estadounidenses en Oriente Medio, situando la amenaza en el nivel más alto desde febrero de 2026.\n\nUcrania ejecutó una masiva ofensiva nocturna con drones contra Bélgorod el 25 de octubre, impactando el centro comercial MegaGRINN (163.000 m²) y dejando al menos un civil muerto y 14 heridos.\n\nFuentes: El Español, ISW, The Kyiv Independent\n\n## Esta semana\nRusia y Ucrania acordaron un alto el fuego localizado en Oleshky (Jersón) a partir del 27 de octubre, facilitado por la intervención de Melania Trump, con vistas a preparar nuevas rondas de conversaciones técnicas en Abu Dabi o Suiza en noviembre.\n\nSe consolidan los detalles del acuerdo comercial \"30-for-30\" EE. UU., China, con reducciones recíprocas de aranceles sobre 30.000 millones de dólares de importaciones por bando y extensión de la tregua hasta el 10 de enero de 2027.\n\nLas actas del BCE publicadas el 8 de octubre y los informes de mediados de mes mantienen los tipos (depósito en 2,50 %, referencia principal en 2,65 %), con expectativas divididas sobre una posible subida en diciembre ante la presión inflacionaria energética.\n\nNVIDIA presentó el 21 de octubre en GTC Berlín la arquitectura OpenShell, un diseño de infraestructura y software de ejecución segura (Vera Rubin, CPUs Vera, BlueField-4 DPU) para contener y auditar agentes autónomos de IA a escala industrial, con respaldo de grandes tecnológicas y corporaciones europeas.\n\nUrsula von der Leyen propuso formalmente ante el Parlamento Europeo un mecanismo de agregación de demanda para compras conjuntas de energía entre Estados miembros, buscando frenar el sobrecoste acumulado de 100.000 millones de euros en combustibles fósiles desde el inicio del conflicto con Irán.\n\nFuentes: The Moscow Times, PwC Ireland, Morningstar, NVIDIA News, Xataka\n\n## Este mes\nEl balance TTR Data de los primeros nueve meses de 2026 registra 2.261 operaciones en España por 73.803 M€, caídas interanuales del 15 % en número y del 6 % en capital respecto a 2025.\n\nInformes sectoriales actualizados recuerdan que más de medio millón de empresarios españoles alcanzarán la edad de jubilación antes de 2030 sin relevo generacional claro, situando la sucesión como motor estructural del mid-market.\n\nLa Comisión Europea publicó el 14 de octubre su Sexto Informe Anual sobre control de IED en la UE, situando al sector TIC como principal destino de adquisiciones exteriores en 2025 (27 % de los acuerdos), superando al manufacturero.\n\nPersiste la tensión en la deuda soberana europea: los diferenciales de los bonos franceses a 10 años se mantienen por encima de 150 puntos básicos respecto al bund alemán, máximos desde 2012, por incertidumbre fiscal y política interna.\n\nFuentes: AGM Abogados, Global Advisory Experts, Herbert Smith Freehills Kramer, Allianz Global Investors\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa caída del 15 % en número de deals y del 6 % en capital en el mercado español 9M 2026 coexiste con una oleada de sucesiones forzadas (500.000+ empresarios a jubilación antes de 2030) y una asignación media del 47,2 % de family offices a privados con intención de subirla al 68 %.\n\nLas operaciones cruzadas de Miura/HTBA (Specnova en EE. UU.) y Noucor/MCH (Helm Pharma en Alemania) confirman el apetito por build-ups internacionales en healthtech y farma para escalar a 200 M€.\n\nFuentes: AGM Abogados, Global Advisory Experts, Demócrata, Albia IMAP"
 }
