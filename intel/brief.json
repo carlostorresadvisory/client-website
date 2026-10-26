@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-10-25",
+  "fecha": "2026-10-26",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Crudo Brent",
-      "valor": "116-117 $/bbl",
-      "fuente": "El Español"
+      "etiqueta": "Incentivo recluta Rusia",
+      "valor": "5,2 M rublos",
+      "fuente": "CNN"
     },
     {
-      "etiqueta": "M&A España 9M 2026",
-      "valor": "73.803 M€ (-6 % i.a.)",
-      "fuente": "AGM Abogados"
+      "etiqueta": "Probabilidad pausa BCE",
+      "valor": "97,0 %",
+      "fuente": "ECB Watch Tool"
     },
     {
-      "etiqueta": "Family offices España en privados",
-      "valor": "47,2 %",
-      "fuente": "Demócrata"
+      "etiqueta": "Gas TTF 1 mes",
+      "valor": "95-96 €/MWh",
+      "fuente": "Trading Economics"
     },
     {
-      "etiqueta": "Especulación FDI UE sector TIC",
-      "valor": "27 %",
-      "fuente": "Herbert Smith Freehills Kramer"
+      "etiqueta": "Tregua EE. UU.-China hasta",
+      "valor": "10-ene-2027",
+      "fuente": "American Action Forum"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 7
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,16 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El crudo Brent supera los 116-117 dólares por barril, rozando los umbrales de crisis del Banco de España (120 $) y del BCE (130 $), impulsado por ataques hutíes a instalaciones petroleras y aeropuertos saudíes y la tensión persistente en el estrecho de Ormuz; los márgenes de refino se disparan por encima de 36 dólares",
-          "fuente": "El Español"
+          "texto": "Rusia eleva a 5,2 millones de rublos la prima del primer año para atraer soldados por contrato, señal de que el Kremlin prefiere incentivos económicos a una movilización declarada que erosionaría apoyo interno",
+          "fuente": "CNN"
         },
         {
-          "texto": "El director de Inteligencia Nacional de EE. UU., Jay Clayton, advirtió el 23-24 de octubre en un memorándum a Marco Rubio que Irán se encuentra en etapas avanzadas para planificar ataques contra objetivos estadounidenses en Oriente Medio, situando la amenaza en el nivel más alto desde febrero de 2026",
-          "fuente": "ISW"
+          "texto": "Trump respalda abiertamente a Netanyahu a 24 horas de las elecciones israelíes y mantiene la amenaza de ataque a instalaciones nucleares iraníes, endureciendo la disuasión mientras Teherán promete cambios en el estrecho de Ormuz y los hutíes reivindican golpes en Arabia Saudí",
+          "fuente": "Gulf News"
         },
         {
-          "texto": "Ucrania ejecutó una masiva ofensiva nocturna con drones contra Bélgorod el 25 de octubre, impactando el centro comercial MegaGRINN (163.000 m²) y dejando al menos un civil muerto y 14 heridos",
-          "fuente": "The Kyiv Independent"
+          "texto": "Los mercados descuentan al 97 % que el BCE mantenga la facilidad de depósito en el 2,50 % el 29 de octubre, consolidando la pausa tras la subida de septiembre pese al repunte energético",
+          "fuente": "ECB Watch Tool"
+        },
+        {
+          "texto": "El gas TTF supera 95 €/MWh en máximos anuales con los almacenamientos al 74,6 %, reflejando la prima de riesgo por las rutas del Golfo y Ormuz aún cortadas",
+          "fuente": "Trading Economics"
         }
       ]
     },
@@ -68,24 +72,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Rusia y Ucrania acordaron un alto el fuego localizado en Oleshky (Jersón) a partir del 27 de octubre, facilitado por la intervención de Melania Trump, con vistas a preparar nuevas rondas de conversaciones técnicas en Abu Dabi o Suiza en noviembre",
-          "fuente": "The Moscow Times"
+          "texto": "La inteligencia estadounidense (DNI Jay Clayton) sitúa a Irán en fase avanzada de planificación de ataques contra intereses de EE. UU. en la región, nivel de amenaza máximo desde febrero, lo que obliga a reforzar posturas defensivas y coordina la respuesta diplomática. EE. UU. y China formalizan la prórroga de la tregua comercial hasta el 10 de enero de 2027 y activan el esquema \"30-for-30\" de rebajas arancelarias recíprocas sobre 30.000 millones de dólares de bienes no sensibles, creando certidumbre temporal en cadenas de suministro",
+          "fuente": "ISW, American Action Forum"
         },
         {
-          "texto": "Se consolidan los detalles del acuerdo comercial \"30-for-30\" EE. UU., China, con reducciones recíprocas de aranceles sobre 30.000 millones de dólares de importaciones por bando y extensión de la tregua hasta el 10 de enero de 2027",
-          "fuente": "PwC Ireland"
+          "texto": "BofA prevé dos subidas adicionales de la Fed en 2026 por la tensión entre la emisión masiva del Tesoro y la demanda de capital de los hiperescaladores de IA, ensanchando la divergencia de políticas con el BCE",
+          "fuente": "Morningstar UK"
         },
         {
-          "texto": "Las actas del BCE publicadas el 8 de octubre y los informes de mediados de mes mantienen los tipos (depósito en 2,50 %, referencia principal en 2,65 %), con expectativas divididas sobre una posible subida en diciembre ante la presión inflacionaria energética",
-          "fuente": "Morningstar"
+          "texto": "La UE publica EN 18286:2026, primera norma armonizada del AI Act (Art. 17), que ancla la conformidad en sistemas de gestión de calidad compatibles con ISO 42001 e ISO 9001 y acelera la certificación de proveedores de alto riesgo. Italia aprueba el Decreto Legislativo 179/2026 exigiendo validación humana en decisiones algorítmicas de contratación, despido y evaluación, adelantando la aplicación práctica del AI Act en el ámbito laboral",
+          "fuente": "AI Weekly, DLA Piper GENIE"
         },
         {
-          "texto": "NVIDIA presentó el 21 de octubre en GTC Berlín la arquitectura OpenShell, un diseño de infraestructura y software de ejecución segura (Vera Rubin, CPUs Vera, BlueField-4 DPU) para contener y auditar agentes autónomos de IA a escala industrial, con respaldo de grandes tecnológicas y corporaciones europeas",
-          "fuente": "NVIDIA News"
+          "texto": "El M&A español cae un 15 % interanual en número (9M 2026) con polarización en K: mid-market exige earn-outs y estructuras híbridas, mientras Uría Menéndez lidera valor asesorado (37.730 M$) y Cuatrecasas mandatos (151 operaciones)",
+          "fuente": "IMAP Corporate Finance"
         },
         {
-          "texto": "Ursula von der Leyen propuso formalmente ante el Parlamento Europeo un mecanismo de agregación de demanda para compras conjuntas de energía entre Estados miembros, buscando frenar el sobrecoste acumulado de 100.000 millones de euros en combustibles fósiles desde el inicio del conflicto con Irán",
-          "fuente": "Xataka"
+          "texto": "OpenAI y Google Cloud sellan la integración de modelos frontera y agentes Codex en Model Garden con gobernanza centralizada, moviendo el estándar empresarial hacia despliegues multi-nube controlados",
+          "fuente": "OpenAI Community"
         }
       ]
     },
@@ -93,20 +97,24 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El balance TTR Data de los primeros nueve meses de 2026 registra 2.261 operaciones en España por 73.803 M€, caídas interanuales del 15 % en número y del 6 % en capital respecto a 2025",
-          "fuente": "AGM Abogados"
-        },
-        {
-          "texto": "Informes sectoriales actualizados recuerdan que más de medio millón de empresarios españoles alcanzarán la edad de jubilación antes de 2030 sin relevo generacional claro, situando la sucesión como motor estructural del mid-market",
-          "fuente": "Global Advisory Experts"
-        },
-        {
-          "texto": "La Comisión Europea publicó el 14 de octubre su Sexto Informe Anual sobre control de IED en la UE, situando al sector TIC como principal destino de adquisiciones exteriores en 2025 (27 % de los acuerdos), superando al manufacturero",
+          "texto": "El 6º Informe FDI de la Comisión eleva un 40 % las notificaciones de cooperación en 2025 y confirma los 27 marcos nacionales de cribado operativos de cara a la revisión del reglamento en enero de 2028, endureciendo el filtro sobre capital extranjero en sectores estratégicos",
           "fuente": "Herbert Smith Freehills Kramer"
         },
         {
-          "texto": "Persiste la tensión en la deuda soberana europea: los diferenciales de los bonos franceses a 10 años se mantienen por encima de 150 puntos básicos respecto al bund alemán, máximos desde 2012, por incertidumbre fiscal y política interna",
-          "fuente": "Allianz Global Investors"
+          "texto": "La IEA prevé caída de 2,5 mb/d en la demanda mundial de petróleo en el 4T 2026 por la crisis de Oriente Medio y restricción de refinados, con oferta de septiembre en 102,3 mb/d sostenida por recortes OPEP+ y rutas alternativas",
+          "fuente": "IEA"
+        },
+        {
+          "texto": "El BCE subió 25 pb en septiembre (depósito 2,50 %, refinanciación 2,65 %) proyectando inflación media 3,0 % en 2026 y 2,5 % en 2027, y pasó a pausa dependiente de datos en octubre",
+          "fuente": "Banco Central Europeo"
+        },
+        {
+          "texto": "Los múltiplos de EBITDA en el mid-market español muestran dispersión sectorial extrema (tecnología e industrias críticas en rangos altos; distribución y construcción en bajos), convirtiéndose en referencia crítica para valoraciones en sucesiones y compraventas de pymes",
+          "fuente": "Fundenza"
+        },
+        {
+          "texto": "Nueva oleada de modelos eficientes y multimodales en octubre: Claude Haiku 5.5 (1M tokens a 0,10/0,50 $/M, 75-90 % más barato), Gemini 4 Argon y DeepSeek V4.1-Flash (pesos abiertos en Hugging Face), redefiniendo economía unitaria en entornos de desarrollo corporativo",
+          "fuente": "QCode / AI Model Updates"
         }
       ]
     },
@@ -116,19 +124,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "La caída del 15 % en número de deals y del 6 % en capital en el mercado español 9M 2026 coexiste con una oleada de sucesiones forzadas (500.000+ empresarios a jubilación antes de 2030) y una asignación media del 47,2 % de family offices a privados con intención de subirla al 68 %",
-              "fuente": "AGM Abogados, Global Advisory Experts, Demócrata"
-            },
-            {
-              "texto": "Las operaciones cruzadas de Miura/HTBA (Specnova en EE. UU.) y Noucor/MCH (Helm Pharma en Alemania) confirman el apetito por build-ups internacionales en healthtech y farma para escalar a 200 M€",
-              "fuente": "Albia IMAP"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl crudo Brent supera los 116-117 dólares por barril, rozando los umbrales de crisis del Banco de España (120 $) y del BCE (130 $), impulsado por ataques hutíes a instalaciones petroleras y aeropuertos saudíes y la tensión persistente en el estrecho de Ormuz; los márgenes de refino se disparan por encima de 36 dólares.\n\nEl director de Inteligencia Nacional de EE. UU., Jay Clayton, advirtió el 23-24 de octubre en un memorándum a Marco Rubio que Irán se encuentra en etapas avanzadas para planificar ataques contra objetivos estadounidenses en Oriente Medio, situando la amenaza en el nivel más alto desde febrero de 2026.\n\nUcrania ejecutó una masiva ofensiva nocturna con drones contra Bélgorod el 25 de octubre, impactando el centro comercial MegaGRINN (163.000 m²) y dejando al menos un civil muerto y 14 heridos.\n\nFuentes: El Español, ISW, The Kyiv Independent\n\n## Esta semana\nRusia y Ucrania acordaron un alto el fuego localizado en Oleshky (Jersón) a partir del 27 de octubre, facilitado por la intervención de Melania Trump, con vistas a preparar nuevas rondas de conversaciones técnicas en Abu Dabi o Suiza en noviembre.\n\nSe consolidan los detalles del acuerdo comercial \"30-for-30\" EE. UU., China, con reducciones recíprocas de aranceles sobre 30.000 millones de dólares de importaciones por bando y extensión de la tregua hasta el 10 de enero de 2027.\n\nLas actas del BCE publicadas el 8 de octubre y los informes de mediados de mes mantienen los tipos (depósito en 2,50 %, referencia principal en 2,65 %), con expectativas divididas sobre una posible subida en diciembre ante la presión inflacionaria energética.\n\nNVIDIA presentó el 21 de octubre en GTC Berlín la arquitectura OpenShell, un diseño de infraestructura y software de ejecución segura (Vera Rubin, CPUs Vera, BlueField-4 DPU) para contener y auditar agentes autónomos de IA a escala industrial, con respaldo de grandes tecnológicas y corporaciones europeas.\n\nUrsula von der Leyen propuso formalmente ante el Parlamento Europeo un mecanismo de agregación de demanda para compras conjuntas de energía entre Estados miembros, buscando frenar el sobrecoste acumulado de 100.000 millones de euros en combustibles fósiles desde el inicio del conflicto con Irán.\n\nFuentes: The Moscow Times, PwC Ireland, Morningstar, NVIDIA News, Xataka\n\n## Este mes\nEl balance TTR Data de los primeros nueve meses de 2026 registra 2.261 operaciones en España por 73.803 M€, caídas interanuales del 15 % en número y del 6 % en capital respecto a 2025.\n\nInformes sectoriales actualizados recuerdan que más de medio millón de empresarios españoles alcanzarán la edad de jubilación antes de 2030 sin relevo generacional claro, situando la sucesión como motor estructural del mid-market.\n\nLa Comisión Europea publicó el 14 de octubre su Sexto Informe Anual sobre control de IED en la UE, situando al sector TIC como principal destino de adquisiciones exteriores en 2025 (27 % de los acuerdos), superando al manufacturero.\n\nPersiste la tensión en la deuda soberana europea: los diferenciales de los bonos franceses a 10 años se mantienen por encima de 150 puntos básicos respecto al bund alemán, máximos desde 2012, por incertidumbre fiscal y política interna.\n\nFuentes: AGM Abogados, Global Advisory Experts, Herbert Smith Freehills Kramer, Allianz Global Investors\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa caída del 15 % en número de deals y del 6 % en capital en el mercado español 9M 2026 coexiste con una oleada de sucesiones forzadas (500.000+ empresarios a jubilación antes de 2030) y una asignación media del 47,2 % de family offices a privados con intención de subirla al 68 %.\n\nLas operaciones cruzadas de Miura/HTBA (Specnova en EE. UU.) y Noucor/MCH (Helm Pharma en Alemania) confirman el apetito por build-ups internacionales en healthtech y farma para escalar a 200 M€.\n\nFuentes: AGM Abogados, Global Advisory Experts, Demócrata, Albia IMAP"
+  "markdown": "## Hoy\nRusia eleva a 5,2 millones de rublos la prima del primer año para atraer soldados por contrato, señal de que el Kremlin prefiere incentivos económicos a una movilización declarada que erosionaría apoyo interno.\n\nTrump respalda abiertamente a Netanyahu a 24 horas de las elecciones israelíes y mantiene la amenaza de ataque a instalaciones nucleares iraníes, endureciendo la disuasión mientras Teherán promete cambios en el estrecho de Ormuz y los hutíes reivindican golpes en Arabia Saudí.\n\nLos mercados descuentan al 97 % que el BCE mantenga la facilidad de depósito en el 2,50 % el 29 de octubre, consolidando la pausa tras la subida de septiembre pese al repunte energético.\n\nEl gas TTF supera 95 €/MWh en máximos anuales con los almacenamientos al 74,6 %, reflejando la prima de riesgo por las rutas del Golfo y Ormuz aún cortadas.\n\nFuentes: CNN, Gulf News, ECB Watch Tool, Trading Economics\n\n## Esta semana\nLa inteligencia estadounidense (DNI Jay Clayton) sitúa a Irán en fase avanzada de planificación de ataques contra intereses de EE. UU. en la región, nivel de amenaza máximo desde febrero, lo que obliga a reforzar posturas defensivas y coordina la respuesta diplomática. EE. UU. y China formalizan la prórroga de la tregua comercial hasta el 10 de enero de 2027 y activan el esquema \"30-for-30\" de rebajas arancelarias recíprocas sobre 30.000 millones de dólares de bienes no sensibles, creando certidumbre temporal en cadenas de suministro.\n\nBofA prevé dos subidas adicionales de la Fed en 2026 por la tensión entre la emisión masiva del Tesoro y la demanda de capital de los hiperescaladores de IA, ensanchando la divergencia de políticas con el BCE.\n\nLa UE publica EN 18286:2026, primera norma armonizada del AI Act (Art. 17), que ancla la conformidad en sistemas de gestión de calidad compatibles con ISO 42001 e ISO 9001 y acelera la certificación de proveedores de alto riesgo. Italia aprueba el Decreto Legislativo 179/2026 exigiendo validación humana en decisiones algorítmicas de contratación, despido y evaluación, adelantando la aplicación práctica del AI Act en el ámbito laboral.\n\nEl M&A español cae un 15 % interanual en número (9M 2026) con polarización en K: mid-market exige earn-outs y estructuras híbridas, mientras Uría Menéndez lidera valor asesorado (37.730 M$) y Cuatrecasas mandatos (151 operaciones).\n\nOpenAI y Google Cloud sellan la integración de modelos frontera y agentes Codex en Model Garden con gobernanza centralizada, moviendo el estándar empresarial hacia despliegues multi-nube controlados.\n\nFuentes: ISW, American Action Forum, Morningstar UK, AI Weekly, DLA Piper GENIE, IMAP Corporate Finance, OpenAI Community\n\n## Este mes\nEl 6º Informe FDI de la Comisión eleva un 40 % las notificaciones de cooperación en 2025 y confirma los 27 marcos nacionales de cribado operativos de cara a la revisión del reglamento en enero de 2028, endureciendo el filtro sobre capital extranjero en sectores estratégicos.\n\nLa IEA prevé caída de 2,5 mb/d en la demanda mundial de petróleo en el 4T 2026 por la crisis de Oriente Medio y restricción de refinados, con oferta de septiembre en 102,3 mb/d sostenida por recortes OPEP+ y rutas alternativas.\n\nEl BCE subió 25 pb en septiembre (depósito 2,50 %, refinanciación 2,65 %) proyectando inflación media 3,0 % en 2026 y 2,5 % en 2027, y pasó a pausa dependiente de datos en octubre.\n\nLos múltiplos de EBITDA en el mid-market español muestran dispersión sectorial extrema (tecnología e industrias críticas en rangos altos; distribución y construcción en bajos), convirtiéndose en referencia crítica para valoraciones en sucesiones y compraventas de pymes.\n\nNueva oleada de modelos eficientes y multimodales en octubre: Claude Haiku 5.5 (1M tokens a 0,10/0,50 $/M, 75-90 % más barato), Gemini 4 Argon y DeepSeek V4.1-Flash (pesos abiertos en Hugging Face), redefiniendo economía unitaria en entornos de desarrollo corporativo.\n\nFuentes: Herbert Smith Freehills Kramer, IEA, Banco Central Europeo, Fundenza, QCode / AI Model Updates"
 }
