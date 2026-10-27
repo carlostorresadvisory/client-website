@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-10-26",
+  "fecha": "2026-10-27",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Incentivo recluta Rusia",
-      "valor": "5,2 M rublos",
-      "fuente": "CNN"
+      "etiqueta": "Tipos Fed",
+      "valor": "3,75%-4,00%",
+      "fuente": null
     },
     {
-      "etiqueta": "Probabilidad pausa BCE",
-      "valor": "97,0 %",
-      "fuente": "ECB Watch Tool"
+      "etiqueta": "Tipo depósito BCE",
+      "valor": "2,50%",
+      "fuente": "Morningstar España"
     },
     {
-      "etiqueta": "Gas TTF 1 mes",
-      "valor": "95-96 €/MWh",
-      "fuente": "Trading Economics"
+      "etiqueta": "Bono Francia 10a",
+      "valor": "5,1%",
+      "fuente": "Morningstar España"
     },
     {
-      "etiqueta": "Tregua EE. UU.-China hasta",
-      "valor": "10-ene-2027",
-      "fuente": "American Action Forum"
+      "etiqueta": "M&A España 9M",
+      "valor": "50.474 M€",
+      "fuente": "Capittal"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 7
+      "n": 5
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 6
     }
   ],
   "radar": null,
@@ -51,20 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Rusia eleva a 5,2 millones de rublos la prima del primer año para atraer soldados por contrato, señal de que el Kremlin prefiere incentivos económicos a una movilización declarada que erosionaría apoyo interno",
-          "fuente": "CNN"
+          "texto": "Rusia y Ucrania pactaron un alto el fuego humanitario en Oleshky (Jersón) para hoy 27 de octubre con el fin de evacuar a entre 1.700 y 2.000 civiles bloqueados, un gesto puntual que no altera la dinámica bélica de fondo. En Israel arrancan las elecciones a la 26ª Knéset en un clima de alta fragmentación y tensión por la gestión de la seguridad, mientras Haaretz advierte que la propuesta de Netanyahu de una economía circular basada en criptomonedas ante potenciales sanciones bancarias internacionales pone en riesgo el comercio y la estabilidad financiera del país",
+          "fuente": "Nueva Tribuna, SWI swissinfo.ch, Haaretz"
         },
         {
-          "texto": "Trump respalda abiertamente a Netanyahu a 24 horas de las elecciones israelíes y mantiene la amenaza de ataque a instalaciones nucleares iraníes, endureciendo la disuasión mientras Teherán promete cambios en el estrecho de Ormuz y los hutíes reivindican golpes en Arabia Saudí",
-          "fuente": "Gulf News"
-        },
-        {
-          "texto": "Los mercados descuentan al 97 % que el BCE mantenga la facilidad de depósito en el 2,50 % el 29 de octubre, consolidando la pausa tras la subida de septiembre pese al repunte energético",
-          "fuente": "ECB Watch Tool"
-        },
-        {
-          "texto": "El gas TTF supera 95 €/MWh en máximos anuales con los almacenamientos al 74,6 %, reflejando la prima de riesgo por las rutas del Golfo y Ormuz aún cortadas",
-          "fuente": "Trading Economics"
+          "texto": "La Reserva Federal inicia hoy su reunión de dos días del FOMC con los mercados descontando un 90 % de probabilidades de que mantenga los tipos en el rango 3,75 %-4,00 %, consolidando la pausa tras la bajada de septiembre. En el frente tecnológico, Anthropic lanzó ayer Claude Duet, un agente autónomo basado en Claude Opus 5.5 que anticipa tareas corporativas y opera en segundo plano mediante una máquina virtual en la nube, moviendo el estándar empresarial hacia la autonomía operativa",
+          "fuente": "itsitio.com"
         }
       ]
     },
@@ -72,24 +64,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La inteligencia estadounidense (DNI Jay Clayton) sitúa a Irán en fase avanzada de planificación de ataques contra intereses de EE. UU. en la región, nivel de amenaza máximo desde febrero, lo que obliga a reforzar posturas defensivas y coordina la respuesta diplomática. EE. UU. y China formalizan la prórroga de la tregua comercial hasta el 10 de enero de 2027 y activan el esquema \"30-for-30\" de rebajas arancelarias recíprocas sobre 30.000 millones de dólares de bienes no sensibles, creando certidumbre temporal en cadenas de suministro",
-          "fuente": "ISW, American Action Forum"
+          "texto": "Los analistas apuntan a que el BCE mantendrá el tipo de depósito en el 2,50 % en su reunión del 29 de octubre, presionado al alza por la crisis de la deuda soberana francesa tras superar el bono a 10 años el 5,1 % el 22 de octubre, máximo de 24 años",
+          "fuente": "Morningstar España"
         },
         {
-          "texto": "BofA prevé dos subidas adicionales de la Fed en 2026 por la tensión entre la emisión masiva del Tesoro y la demanda de capital de los hiperescaladores de IA, ensanchando la divergencia de políticas con el BCE",
-          "fuente": "Morningstar UK"
+          "texto": "En infraestructura de IA, Nvidia presentó en GTC Berlín el diseño modular DSX POD (arquitectura Vera Rubin), capaz de reducir el despliegue de una fábrica de IA en contenedor de seis meses a catorce días, y anunció junto a Siemens herramientas que recortan la validación térmica de chips de días a menos de cinco minutos, acelerando drásticamente el time-to-market de capacidad de cómputo",
+          "fuente": "Nvidia, Europa Press"
         },
         {
-          "texto": "La UE publica EN 18286:2026, primera norma armonizada del AI Act (Art. 17), que ancla la conformidad en sistemas de gestión de calidad compatibles con ISO 42001 e ISO 9001 y acelera la certificación de proveedores de alto riesgo. Italia aprueba el Decreto Legislativo 179/2026 exigiendo validación humana en decisiones algorítmicas de contratación, despido y evaluación, adelantando la aplicación práctica del AI Act en el ámbito laboral",
-          "fuente": "AI Weekly, DLA Piper GENIE"
-        },
-        {
-          "texto": "El M&A español cae un 15 % interanual en número (9M 2026) con polarización en K: mid-market exige earn-outs y estructuras híbridas, mientras Uría Menéndez lidera valor asesorado (37.730 M$) y Cuatrecasas mandatos (151 operaciones)",
-          "fuente": "IMAP Corporate Finance"
-        },
-        {
-          "texto": "OpenAI y Google Cloud sellan la integración de modelos frontera y agentes Codex en Model Garden con gobernanza centralizada, moviendo el estándar empresarial hacia despliegues multi-nube controlados",
-          "fuente": "OpenAI Community"
+          "texto": "En el mid-market español, la farmacéutica catalana Noucor (participada por MCH Private Equity y family offices) adquirió la alemana Helm Pharmaceuticals en una operación cerrada a mediados de octubre que duplica su tamaño hasta los 200 millones de euros de facturación estimada, y la coruñesa OfiPro (ERP para pymes, 35 años de historia) fue adquirida por el grupo francés Dellen a través de SoftNext, confirmando el apetito por consolidadores de software de gestión",
+          "fuente": "Albia Capital"
         }
       ]
     },
@@ -97,24 +81,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El 6º Informe FDI de la Comisión eleva un 40 % las notificaciones de cooperación en 2025 y confirma los 27 marcos nacionales de cribado operativos de cara a la revisión del reglamento en enero de 2028, endureciendo el filtro sobre capital extranjero en sectores estratégicos",
-          "fuente": "Herbert Smith Freehills Kramer"
+          "texto": "A principios de octubre se intensificaron las presiones de Washington sobre Kiev para modular ataques a refinerías rusas y abrir cauces de negociación a tres bandas previstas para noviembre en Abu Dabi, señal de que EE. UU. busca encauzar el conflicto antes de fin de año",
+          "fuente": "Negocios.com, La geopolítica y el nuevo balance energético"
         },
         {
-          "texto": "La IEA prevé caída de 2,5 mb/d en la demanda mundial de petróleo en el 4T 2026 por la crisis de Oriente Medio y restricción de refinados, con oferta de septiembre en 102,3 mb/d sostenida por recortes OPEP+ y rutas alternativas",
-          "fuente": "IEA"
+          "texto": "En regulación tecnológica, Apple restringió drásticamente el \"acceso completo al disco\" en macOS para agentes de IA de terceros tras alertas de privacidad sobre interacciones con datos locales, endureciendo el perímetro de seguridad del sistema operativo",
+          "fuente": "IA de Visión Mental"
         },
         {
-          "texto": "El BCE subió 25 pb en septiembre (depósito 2,50 %, refinanciación 2,65 %) proyectando inflación media 3,0 % en 2026 y 2,5 % en 2027, y pasó a pausa dependiente de datos en octubre",
-          "fuente": "Banco Central Europeo"
-        },
-        {
-          "texto": "Los múltiplos de EBITDA en el mid-market español muestran dispersión sectorial extrema (tecnología e industrias críticas en rangos altos; distribución y construcción en bajos), convirtiéndose en referencia crítica para valoraciones en sucesiones y compraventas de pymes",
-          "fuente": "Fundenza"
-        },
-        {
-          "texto": "Nueva oleada de modelos eficientes y multimodales en octubre: Claude Haiku 5.5 (1M tokens a 0,10/0,50 $/M, 75-90 % más barato), Gemini 4 Argon y DeepSeek V4.1-Flash (pesos abiertos en Hugging Face), redefiniendo economía unitaria en entornos de desarrollo corporativo",
-          "fuente": "QCode / AI Model Updates"
+          "texto": "OpenAI integró a finales de septiembre e inicio de octubre su familia GPT-6 (Astra, Sol y Luna) en Model Garden de Google Cloud, abriendo un precedente multi-nube en hiperescalares. Los datos semestrales de TTR Data reflejan 1.485 operaciones de M&A en España (-15 % interanual) por 50.474 M€, contracción en número compensada por grandes operaciones corporativas. Miura Partners, a través de su participada HealthTech Bio Actives, completó la adquisición de la biotecnológica estadounidense Specnova, evidenciando estrategias transfronterizas desde la base industrial española",
+          "fuente": "Noticias tecnológicas, Capittal, Albia Capital"
         }
       ]
     },
@@ -124,10 +100,15 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "La adquisición cross-border de Specnova por Miura/HTBA y la de Get Engaged por Bridgepoint/SAMY validan el apetito de sponsors con base española o europea por activos estadounidenses en biotech y marketing B2B, ampliando el universo de buyers y exit para carteras locales",
+              "fuente": "Albia Capital"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nRusia eleva a 5,2 millones de rublos la prima del primer año para atraer soldados por contrato, señal de que el Kremlin prefiere incentivos económicos a una movilización declarada que erosionaría apoyo interno.\n\nTrump respalda abiertamente a Netanyahu a 24 horas de las elecciones israelíes y mantiene la amenaza de ataque a instalaciones nucleares iraníes, endureciendo la disuasión mientras Teherán promete cambios en el estrecho de Ormuz y los hutíes reivindican golpes en Arabia Saudí.\n\nLos mercados descuentan al 97 % que el BCE mantenga la facilidad de depósito en el 2,50 % el 29 de octubre, consolidando la pausa tras la subida de septiembre pese al repunte energético.\n\nEl gas TTF supera 95 €/MWh en máximos anuales con los almacenamientos al 74,6 %, reflejando la prima de riesgo por las rutas del Golfo y Ormuz aún cortadas.\n\nFuentes: CNN, Gulf News, ECB Watch Tool, Trading Economics\n\n## Esta semana\nLa inteligencia estadounidense (DNI Jay Clayton) sitúa a Irán en fase avanzada de planificación de ataques contra intereses de EE. UU. en la región, nivel de amenaza máximo desde febrero, lo que obliga a reforzar posturas defensivas y coordina la respuesta diplomática. EE. UU. y China formalizan la prórroga de la tregua comercial hasta el 10 de enero de 2027 y activan el esquema \"30-for-30\" de rebajas arancelarias recíprocas sobre 30.000 millones de dólares de bienes no sensibles, creando certidumbre temporal en cadenas de suministro.\n\nBofA prevé dos subidas adicionales de la Fed en 2026 por la tensión entre la emisión masiva del Tesoro y la demanda de capital de los hiperescaladores de IA, ensanchando la divergencia de políticas con el BCE.\n\nLa UE publica EN 18286:2026, primera norma armonizada del AI Act (Art. 17), que ancla la conformidad en sistemas de gestión de calidad compatibles con ISO 42001 e ISO 9001 y acelera la certificación de proveedores de alto riesgo. Italia aprueba el Decreto Legislativo 179/2026 exigiendo validación humana en decisiones algorítmicas de contratación, despido y evaluación, adelantando la aplicación práctica del AI Act en el ámbito laboral.\n\nEl M&A español cae un 15 % interanual en número (9M 2026) con polarización en K: mid-market exige earn-outs y estructuras híbridas, mientras Uría Menéndez lidera valor asesorado (37.730 M$) y Cuatrecasas mandatos (151 operaciones).\n\nOpenAI y Google Cloud sellan la integración de modelos frontera y agentes Codex en Model Garden con gobernanza centralizada, moviendo el estándar empresarial hacia despliegues multi-nube controlados.\n\nFuentes: ISW, American Action Forum, Morningstar UK, AI Weekly, DLA Piper GENIE, IMAP Corporate Finance, OpenAI Community\n\n## Este mes\nEl 6º Informe FDI de la Comisión eleva un 40 % las notificaciones de cooperación en 2025 y confirma los 27 marcos nacionales de cribado operativos de cara a la revisión del reglamento en enero de 2028, endureciendo el filtro sobre capital extranjero en sectores estratégicos.\n\nLa IEA prevé caída de 2,5 mb/d en la demanda mundial de petróleo en el 4T 2026 por la crisis de Oriente Medio y restricción de refinados, con oferta de septiembre en 102,3 mb/d sostenida por recortes OPEP+ y rutas alternativas.\n\nEl BCE subió 25 pb en septiembre (depósito 2,50 %, refinanciación 2,65 %) proyectando inflación media 3,0 % en 2026 y 2,5 % en 2027, y pasó a pausa dependiente de datos en octubre.\n\nLos múltiplos de EBITDA en el mid-market español muestran dispersión sectorial extrema (tecnología e industrias críticas en rangos altos; distribución y construcción en bajos), convirtiéndose en referencia crítica para valoraciones en sucesiones y compraventas de pymes.\n\nNueva oleada de modelos eficientes y multimodales en octubre: Claude Haiku 5.5 (1M tokens a 0,10/0,50 $/M, 75-90 % más barato), Gemini 4 Argon y DeepSeek V4.1-Flash (pesos abiertos en Hugging Face), redefiniendo economía unitaria en entornos de desarrollo corporativo.\n\nFuentes: Herbert Smith Freehills Kramer, IEA, Banco Central Europeo, Fundenza, QCode / AI Model Updates"
+  "markdown": "## Hoy\nRusia y Ucrania pactaron un alto el fuego humanitario en Oleshky (Jersón) para hoy 27 de octubre con el fin de evacuar a entre 1.700 y 2.000 civiles bloqueados, un gesto puntual que no altera la dinámica bélica de fondo. En Israel arrancan las elecciones a la 26ª Knéset en un clima de alta fragmentación y tensión por la gestión de la seguridad, mientras Haaretz advierte que la propuesta de Netanyahu de una economía circular basada en criptomonedas ante potenciales sanciones bancarias internacionales pone en riesgo el comercio y la estabilidad financiera del país.\n\nLa Reserva Federal inicia hoy su reunión de dos días del FOMC con los mercados descontando un 90 % de probabilidades de que mantenga los tipos en el rango 3,75 %-4,00 %, consolidando la pausa tras la bajada de septiembre. En el frente tecnológico, Anthropic lanzó ayer Claude Duet, un agente autónomo basado en Claude Opus 5.5 que anticipa tareas corporativas y opera en segundo plano mediante una máquina virtual en la nube, moviendo el estándar empresarial hacia la autonomía operativa.\n\nFuentes: Nueva Tribuna, SWI swissinfo.ch, Haaretz, La Reserva Federal de EE.UU. se reúne con la perspectiva de mantener los tipos de interés, itsitio.com\n\n## Esta semana\nLos analistas apuntan a que el BCE mantendrá el tipo de depósito en el 2,50 % en su reunión del 29 de octubre, presionado al alza por la crisis de la deuda soberana francesa tras superar el bono a 10 años el 5,1 % el 22 de octubre, máximo de 24 años.\n\nEn infraestructura de IA, Nvidia presentó en GTC Berlín el diseño modular DSX POD (arquitectura Vera Rubin), capaz de reducir el despliegue de una fábrica de IA en contenedor de seis meses a catorce días, y anunció junto a Siemens herramientas que recortan la validación térmica de chips de días a menos de cinco minutos, acelerando drásticamente el time-to-market de capacidad de cómputo.\n\nEn el mid-market español, la farmacéutica catalana Noucor (participada por MCH Private Equity y family offices) adquirió la alemana Helm Pharmaceuticals en una operación cerrada a mediados de octubre que duplica su tamaño hasta los 200 millones de euros de facturación estimada, y la coruñesa OfiPro (ERP para pymes, 35 años de historia) fue adquirida por el grupo francés Dellen a través de SoftNext, confirmando el apetito por consolidadores de software de gestión.\n\nFuentes: Morningstar España, Nvidia, Europa Press, Albia Capital\n\n## Este mes\nA principios de octubre se intensificaron las presiones de Washington sobre Kiev para modular ataques a refinerías rusas y abrir cauces de negociación a tres bandas previstas para noviembre en Abu Dabi, señal de que EE. UU. busca encauzar el conflicto antes de fin de año.\n\nEn regulación tecnológica, Apple restringió drásticamente el \"acceso completo al disco\" en macOS para agentes de IA de terceros tras alertas de privacidad sobre interacciones con datos locales, endureciendo el perímetro de seguridad del sistema operativo.\n\nOpenAI integró a finales de septiembre e inicio de octubre su familia GPT-6 (Astra, Sol y Luna) en Model Garden de Google Cloud, abriendo un precedente multi-nube en hiperescalares. Los datos semestrales de TTR Data reflejan 1.485 operaciones de M&A en España (-15 % interanual) por 50.474 M€, contracción en número compensada por grandes operaciones corporativas. Miura Partners, a través de su participada HealthTech Bio Actives, completó la adquisición de la biotecnológica estadounidense Specnova, evidenciando estrategias transfronterizas desde la base industrial española.\n\nFuentes: Negocios.com, La geopolítica y el nuevo balance energético, IA de Visión Mental, Noticias tecnológicas, Capittal, Albia Capital\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa adquisición cross-border de Specnova por Miura/HTBA y la de Get Engaged por Bridgepoint/SAMY validan el apetito de sponsors con base española o europea por activos estadounidenses en biotech y marketing B2B, ampliando el universo de buyers y exit para carteras locales.\n\nFuentes: Albia Capital"
 }
