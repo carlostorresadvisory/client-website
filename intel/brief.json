@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-10-28",
+  "fecha": "2026-10-29",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Financiación IA (SPV)",
-      "valor": "63.000 M$",
-      "fuente": "PR Newswire"
+      "etiqueta": "Tipo BCE (fac. depósito)",
+      "valor": "2,50 %",
+      "fuente": "Finect"
     },
     {
-      "etiqueta": "Retención armas EE.UU.-Taiwán",
-      "valor": "14.000 M$",
-      "fuente": "Taipei Times"
+      "etiqueta": "Tipo Fed (fed funds)",
+      "valor": "3,75-4,00 %",
+      "fuente": "CryptoTicker"
     },
     {
-      "etiqueta": "Tráfico Ormuz (actual)",
-      "valor": "4 tránsitos/día",
-      "fuente": "The Guardian"
+      "etiqueta": "pymes que esperan crecer facturación",
+      "valor": "40,9 %",
+      "fuente": "Dir&Ge"
     },
     {
-      "etiqueta": "Inflación eurozona (sep)",
-      "valor": "3,8 %",
-      "fuente": "Morningstar Europe"
+      "etiqueta": "Brent rango mes",
+      "valor": "105-115 $/barril",
+      "fuente": "BlogForex"
     }
   ],
   "horizontes": [
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,16 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Zelenski asegura que la posición táctica ucraniana es la más sólida de los últimos tiempos tras las contraofensivas \"Veles\" y \"Vivaldi\" en el noreste, mientras Finlandia y Noruega mantuvieron una llamada de 90 minutos con Putin el 27 de octubre exigiendo el fin de la guerra, coincidiendo con ataques rusos nocturnos con cuatro misiles Iskander sobre el Puente del Sur de Kyiv e infraestructuras en diez regiones",
-          "fuente": "The Guardian"
+          "texto": "El Banco Central Europeo celebra hoy su reunión en Fráncfort con el tipo de depósito en el 2,50 % y el mercado descuenta una pausa unánime, vigilando el repunte de la inflación eurozona al 3,8 % en septiembre por el componente energético y la tensión soberana francesa que lleva el bono a 10 años por encima del 5 %",
+          "fuente": "Finect"
         },
         {
-          "texto": "En el flanco energético, CENTCOM desmintió el 27 de octubre la retirada estadounidense del estrecho de Ormuz que proclamaba la marina de los Guardianes de la Revolución iraní, reafirmando su control operativo en la vía",
-          "fuente": "SANA"
+          "texto": "En el otro lado del Atlántico, la Reserva Federal mantuvo ayer el rango del fed funds en 3,75 %-4,00 % con una votación de 10 a 2, registrando la disidencia histórica de la gobernadora Lisa Cook y la presidenta de la Fed de Cleveland, Beth Hammack, que pedían una subida de 25 puntos básicos",
+          "fuente": "CryptoTicker"
         },
         {
-          "texto": "La encuesta de préstamos bancarios del BCE (BLS) del tercer trimestre revela un endurecimiento neto de los estándares crediticios corporativos ligeramente superior al previsto y por encima de la media histórica del 8 %, impulsado por la incertidumbre geopolítica y energética",
-          "fuente": "ECB"
+          "texto": "En tecnología, Google lanzó oficialmente ayer Gemini 4 Carbon, evolución directa de su familia Gemini 4, reforzando la carrera de modelos frontera en el tramo final de 2026",
+          "fuente": "AI Release Tracker"
         }
       ]
     },
@@ -68,20 +68,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Países del Golfo negocian un acuerdo multipartito para reabrir el estrecho de Ormuz, donde el tráfico ha caído a 4 tránsitos diarios frente a una base de 85, y levantar sanciones a cambio de la retirada hutí en Yemen",
-          "fuente": "The Guardian"
+          "texto": "La escalada en torno a Irán domina el tablero geopolítico: CNN informa que fuerzas estadounidenses pueden desplegar operaciones a gran escala en 96 horas, mientras Arabia Saudí, Pakistán y Turquía envían emisarios a Teherán y los hutíes intensifican ataques con misiles y drones contra infraestructura saudí",
+          "fuente": "Atalayar"
         },
         {
-          "texto": "Taiwán denuncia que Pekín intensifica campañas de desinformación antes de las elecciones locales del 28 de noviembre, mientras la administración Trump retiene un paquete de venta de armas de 14.000 millones de dólares a la isla",
-          "fuente": "Taipei Times"
+          "texto": "La campaña rusa contra la red energética ucraniana entra en fase crítica de invierno: informes del 27 de octubre estiman interceptores Patriot prácticamente agotados, tasas de derribo de drones en el 54 % y 10,8 millones de personas precisando asistencia de la ONU",
+          "fuente": "The Objective"
         },
         {
-          "texto": "Mercados anticipan pausa unánime de tipos: BCE mantiene el depósito en el 2,50 % el 29 de octubre y Fed el rango 3,75 %-4,00 %, lastrados por el bono francés a 10 años superando el 5,1 % (máximo 24 años) por la crisis fiscal gala",
-          "fuente": "Morningstar Europe, Kiplinger"
-        },
-        {
-          "texto": "Italia adoptó el Decreto Ley 179/2026 para alinearse con el EU AI Act, prohibiendo decisiones laborales algorítmicas sin validación humana e imponiendo evaluación de riesgos a empleadores",
-          "fuente": "DLA Piper GENIE"
+          "texto": "En el tejido productivo español, el III Informe Hiscox revela que el 40,9 % de las pymes espera aumentar facturación y el 36,5 % confía en mayores beneficios, pero el 66,7 % mantendrá plantilla invariable y el 76 % sufre encarecimiento notable de costes operativos. Un estudio de mediados de mes añade que el 70 % de los pagos internacionales de pymes españolas se cursa en dólares pese a no operar directamente con EE. UU., elevando su exposición al riesgo de cambio",
+          "fuente": "Dir&Ge, El Periódico"
         }
       ]
     },
@@ -89,20 +85,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "EE. UU. emitió a principios de octubre licencias temporales hasta abril de 2027 y exenciones a la Lindsey O. Graham Act para autorizar más de 4 millones de toneladas de diésel ruso a mercados globales, conteniendo precios de combustibles antes de las elecciones de medio mandato",
-          "fuente": "Westbrook Advisory"
+          "texto": "La familia GPT-6 Astra de OpenAI, presentada a finales de septiembre, fija un nuevo estándar con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic despliega Claude Sonnet 5.5 optimizado y The Information reporta una carrera sincronizada de los tres gigantes (OpenAI, Google, Anthropic) para nuevos insignia antes de fin de año",
+          "fuente": "OpenAI / Anthropic / Emergent"
         },
         {
-          "texto": "La inflación interanual de la eurozona repuntó en septiembre al 3,8 % (desde el 3,3 % de agosto), impulsada por la crisis energética de Oriente Medio que sitúa la inflación energética en el 18,9 %, mientras la subyacente se modera al 2,5 %",
-          "fuente": "Morningstar Europe"
+          "texto": "En el flanco estructural español, monitorajes del KfW y estimaciones de KPMG y CMS sitúan a cientos de miles de pymes ante procesos urgentes de relevo o cierre: más del 55 % de los fundadores supera los 55 años, impulsando un repunte selectivo de operaciones corporativas nacionales movido por la reorganización y la liquidez acumulada de fondos de private equity",
+          "fuente": "MyBusinessFuture"
         },
         {
-          "texto": "OpenAI formalizó el 21 de octubre alianza estratégica con Google Cloud para integrar modelos frontera y flujos agénticos (Codex) en Model Garden y Marketplace, diversificando su dependencia histórica de Azure y cubriendo los tres hyperscalers estadounidenses",
-          "fuente": "Google Cloud Blog"
-        },
-        {
-          "texto": "Informes de Chambers & Partners y despachos internacionales confirman en octubre que España mantiene diferencial positivo de crecimiento trimestral en la eurozona (PIB 0,2 %-0,7 % en T2/T3), consolidando auge de operaciones sponsor-to-sponsor, vehículos de continuación y fuerte apetito de private equity en pymes con mecanismos locked-box dominando en subastas competitivas",
-          "fuente": "Global Practice Guides"
+          "texto": "En energía, el crudo Brent se sostiene en la franja alta de volatilidad (105-115 $/barril en octubre) condicionado por los riesgos geopolíticos en Ormuz y los conflictos superpuestos en Oriente Medio",
+          "fuente": "BlogForex / Finect"
         }
       ]
     },
@@ -114,13 +106,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La clausura de CAPCorp 2026 confirma que los carve-out son ya la pieza central de despliegue de fondos en España ante la selectividad por tipos altos, alineándose con la oleada de pymes industriales y tecnológicas: 21 Invest (Grupo Celesa, herramientas precisión, Bizkaia), Dellen (OfiPro, ERP pymes) y EYSA (Joinup) en una misma semana",
-              "fuente": "Demócrata, Albia IMAP"
+              "texto": "El 40,9 % de pymes españolas prevé crecer en facturación pero el 66,7 % congelará plantillas y el 76 % sufre costes al alza, configurando un escenario de expansión intensiva en capital y no en trabajo que encaja con la tesis de carve-out industriales y tecnológicos como vía de despliegue de fondos",
+              "fuente": "Dir&Ge"
+            },
+            {
+              "texto": "La exposición cambiaria oculta (70 % de pagos internacionales en USD sin operativa directa en EE. UU.) crea una necesidad estructural de coberturas y reestructuración de pasivos en dólares que los asesores locales no suelen cubrir",
+              "fuente": "El Periódico"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nZelenski asegura que la posición táctica ucraniana es la más sólida de los últimos tiempos tras las contraofensivas \"Veles\" y \"Vivaldi\" en el noreste, mientras Finlandia y Noruega mantuvieron una llamada de 90 minutos con Putin el 27 de octubre exigiendo el fin de la guerra, coincidiendo con ataques rusos nocturnos con cuatro misiles Iskander sobre el Puente del Sur de Kyiv e infraestructuras en diez regiones.\n\nEn el flanco energético, CENTCOM desmintió el 27 de octubre la retirada estadounidense del estrecho de Ormuz que proclamaba la marina de los Guardianes de la Revolución iraní, reafirmando su control operativo en la vía.\n\nLa encuesta de préstamos bancarios del BCE (BLS) del tercer trimestre revela un endurecimiento neto de los estándares crediticios corporativos ligeramente superior al previsto y por encima de la media histórica del 8 %, impulsado por la incertidumbre geopolítica y energética.\n\nFuentes: The Guardian, SANA, ECB\n\n## Esta semana\nPaíses del Golfo negocian un acuerdo multipartito para reabrir el estrecho de Ormuz, donde el tráfico ha caído a 4 tránsitos diarios frente a una base de 85, y levantar sanciones a cambio de la retirada hutí en Yemen.\n\nTaiwán denuncia que Pekín intensifica campañas de desinformación antes de las elecciones locales del 28 de noviembre, mientras la administración Trump retiene un paquete de venta de armas de 14.000 millones de dólares a la isla.\n\nMercados anticipan pausa unánime de tipos: BCE mantiene el depósito en el 2,50 % el 29 de octubre y Fed el rango 3,75 %-4,00 %, lastrados por el bono francés a 10 años superando el 5,1 % (máximo 24 años) por la crisis fiscal gala.\n\nItalia adoptó el Decreto Ley 179/2026 para alinearse con el EU AI Act, prohibiendo decisiones laborales algorítmicas sin validación humana e imponiendo evaluación de riesgos a empleadores.\n\nFuentes: The Guardian, Taipei Times, Morningstar Europe, Kiplinger, DLA Piper GENIE\n\n## Este mes\nEE. UU. emitió a principios de octubre licencias temporales hasta abril de 2027 y exenciones a la Lindsey O. Graham Act para autorizar más de 4 millones de toneladas de diésel ruso a mercados globales, conteniendo precios de combustibles antes de las elecciones de medio mandato.\n\nLa inflación interanual de la eurozona repuntó en septiembre al 3,8 % (desde el 3,3 % de agosto), impulsada por la crisis energética de Oriente Medio que sitúa la inflación energética en el 18,9 %, mientras la subyacente se modera al 2,5 %.\n\nOpenAI formalizó el 21 de octubre alianza estratégica con Google Cloud para integrar modelos frontera y flujos agénticos (Codex) en Model Garden y Marketplace, diversificando su dependencia histórica de Azure y cubriendo los tres hyperscalers estadounidenses.\n\nInformes de Chambers & Partners y despachos internacionales confirman en octubre que España mantiene diferencial positivo de crecimiento trimestral en la eurozona (PIB 0,2 %-0,7 % en T2/T3), consolidando auge de operaciones sponsor-to-sponsor, vehículos de continuación y fuerte apetito de private equity en pymes con mecanismos locked-box dominando en subastas competitivas.\n\nFuentes: Westbrook Advisory, Morningstar Europe, Google Cloud Blog, Global Practice Guides\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa clausura de CAPCorp 2026 confirma que los carve-out son ya la pieza central de despliegue de fondos en España ante la selectividad por tipos altos, alineándose con la oleada de pymes industriales y tecnológicas: 21 Invest (Grupo Celesa, herramientas precisión, Bizkaia), Dellen (OfiPro, ERP pymes) y EYSA (Joinup) en una misma semana.\n\nFuentes: Demócrata, Albia IMAP"
+  "markdown": "## Hoy\nEl Banco Central Europeo celebra hoy su reunión en Fráncfort con el tipo de depósito en el 2,50 % y el mercado descuenta una pausa unánime, vigilando el repunte de la inflación eurozona al 3,8 % en septiembre por el componente energético y la tensión soberana francesa que lleva el bono a 10 años por encima del 5 %.\n\nEn el otro lado del Atlántico, la Reserva Federal mantuvo ayer el rango del fed funds en 3,75 %-4,00 % con una votación de 10 a 2, registrando la disidencia histórica de la gobernadora Lisa Cook y la presidenta de la Fed de Cleveland, Beth Hammack, que pedían una subida de 25 puntos básicos.\n\nEn tecnología, Google lanzó oficialmente ayer Gemini 4 Carbon, evolución directa de su familia Gemini 4, reforzando la carrera de modelos frontera en el tramo final de 2026.\n\nFuentes: Finect, CryptoTicker, AI Release Tracker\n\n## Esta semana\nLa escalada en torno a Irán domina el tablero geopolítico: CNN informa que fuerzas estadounidenses pueden desplegar operaciones a gran escala en 96 horas, mientras Arabia Saudí, Pakistán y Turquía envían emisarios a Teherán y los hutíes intensifican ataques con misiles y drones contra infraestructura saudí.\n\nEn Ucrania, Rusia y Kiev confirmaron una tregua temporal en Oleshky (Jersón) mediada por Melania Trump para abrir un corredor humanitario desde el 27 de octubre.\n\nLa campaña rusa contra la red energética ucraniana entra en fase crítica de invierno: informes del 27 de octubre estiman interceptores Patriot prácticamente agotados, tasas de derribo de drones en el 54 % y 10,8 millones de personas precisando asistencia de la ONU.\n\nEn el tejido productivo español, el III Informe Hiscox revela que el 40,9 % de las pymes espera aumentar facturación y el 36,5 % confía en mayores beneficios, pero el 66,7 % mantendrá plantilla invariable y el 76 % sufre encarecimiento notable de costes operativos. Un estudio de mediados de mes añade que el 70 % de los pagos internacionales de pymes españolas se cursa en dólares pese a no operar directamente con EE. UU., elevando su exposición al riesgo de cambio.\n\nFuentes: Atalayar, Rusia y Ucrania confirman la tregua temporal en Oleshky anunciada por Melania Trump, The Objective, Dir&Ge, El Periódico\n\n## Este mes\nLa familia GPT-6 Astra de OpenAI, presentada a finales de septiembre, fija un nuevo estándar con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic despliega Claude Sonnet 5.5 optimizado y The Information reporta una carrera sincronizada de los tres gigantes (OpenAI, Google, Anthropic) para nuevos insignia antes de fin de año.\n\nEn el flanco estructural español, monitorajes del KfW y estimaciones de KPMG y CMS sitúan a cientos de miles de pymes ante procesos urgentes de relevo o cierre: más del 55 % de los fundadores supera los 55 años, impulsando un repunte selectivo de operaciones corporativas nacionales movido por la reorganización y la liquidez acumulada de fondos de private equity.\n\nEn energía, el crudo Brent se sostiene en la franja alta de volatilidad (105-115 $/barril en octubre) condicionado por los riesgos geopolíticos en Ormuz y los conflictos superpuestos en Oriente Medio.\n\nFuentes: OpenAI / Anthropic / Emergent, MyBusinessFuture, BlogForex / Finect\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl 40,9 % de pymes españolas prevé crecer en facturación pero el 66,7 % congelará plantillas y el 76 % sufre costes al alza, configurando un escenario de expansión intensiva en capital y no en trabajo que encaja con la tesis de carve-out industriales y tecnológicos como vía de despliegue de fondos.\n\nLa exposición cambiaria oculta (70 % de pagos internacionales en USD sin operativa directa en EE. UU.) crea una necesidad estructural de coberturas y reestructuración de pasivos en dólares que los asesores locales no suelen cubrir.\n\nFuentes: Dir&Ge, El Periódico"
 }
