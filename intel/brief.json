@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-10-29",
+  "fecha": "2026-10-30",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipo BCE (fac. depósito)",
-      "valor": "2,50 %",
-      "fuente": "Finect"
+      "etiqueta": "Tipos BCE depósito",
+      "valor": "2,50%",
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Tipo Fed (fed funds)",
-      "valor": "3,75-4,00 %",
-      "fuente": "CryptoTicker"
+      "etiqueta": "Inflación eurozona",
+      "valor": "3,8%",
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "pymes que esperan crecer facturación",
-      "valor": "40,9 %",
-      "fuente": "Dir&Ge"
+      "etiqueta": "M&A España 9M",
+      "valor": "73.803 M€",
+      "fuente": "AGM Abogados"
     },
     {
-      "etiqueta": "Brent rango mes",
-      "valor": "105-115 $/barril",
-      "fuente": "BlogForex"
+      "etiqueta": "Brent",
+      "valor": "115 $",
+      "fuente": "Foresight Group"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 2
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,16 +51,8 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El Banco Central Europeo celebra hoy su reunión en Fráncfort con el tipo de depósito en el 2,50 % y el mercado descuenta una pausa unánime, vigilando el repunte de la inflación eurozona al 3,8 % en septiembre por el componente energético y la tensión soberana francesa que lleva el bono a 10 años por encima del 5 %",
-          "fuente": "Finect"
-        },
-        {
-          "texto": "En el otro lado del Atlántico, la Reserva Federal mantuvo ayer el rango del fed funds en 3,75 %-4,00 % con una votación de 10 a 2, registrando la disidencia histórica de la gobernadora Lisa Cook y la presidenta de la Fed de Cleveland, Beth Hammack, que pedían una subida de 25 puntos básicos",
-          "fuente": "CryptoTicker"
-        },
-        {
-          "texto": "En tecnología, Google lanzó oficialmente ayer Gemini 4 Carbon, evolución directa de su familia Gemini 4, reforzando la carrera de modelos frontera en el tramo final de 2026",
-          "fuente": "AI Release Tracker"
+          "texto": "El BCE mantuvo los tipos sin cambios el 29 de octubre, con la facilidad de depósito en el 2,50% y la inflación eurozona repuntando al 3,8% por el componente energético, mientras Christine Lagarde anunció sorpresivamente su salida anticipada el 7 de febrero de 2027, abriendo la pugna por la sucesión en plena tensión inflacionaria. En el estrecho de Gibraltar, CVC DIF completó el 27 de octubre la adquisición de una participación mayoritaria en Cernaval, astillero de la Bahía de Algeciras que operó 68 embarcaciones en 2025, reforzando la apuesta de private equity por infraestructuras críticas en el Estrecho",
+          "fuente": "European Central Bank, Finect, CVC Capital Partners"
         }
       ]
     },
@@ -68,16 +60,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La escalada en torno a Irán domina el tablero geopolítico: CNN informa que fuerzas estadounidenses pueden desplegar operaciones a gran escala en 96 horas, mientras Arabia Saudí, Pakistán y Turquía envían emisarios a Teherán y los hutíes intensifican ataques con misiles y drones contra infraestructura saudí",
-          "fuente": "Atalayar"
+          "texto": "La Fed mantuvo el rango del 3,75% al 4,00% el 28 de octubre con una votación dividida de 10 a 2, registrando dos disidencias que pedían subir un cuarto de punto ante la persistencia inflacionaria, lo que contrasta con la pausa unánime del BCE y sitúa a los dos bancos centrales en fases distintas de reacción",
+          "fuente": "Federal Reserve"
         },
         {
-          "texto": "La campaña rusa contra la red energética ucraniana entra en fase crítica de invierno: informes del 27 de octubre estiman interceptores Patriot prácticamente agotados, tasas de derribo de drones en el 54 % y 10,8 millones de personas precisando asistencia de la ONU",
-          "fuente": "The Objective"
+          "texto": "En el mercado español, Kirkland & Ellis asesoró a Pitchwise Holdings en la compra del 42% del Valencia CF valorando el club en 1.250 millones de enterprise value, mientras TTR Data cerró el tercer trimestre con 2.261 operaciones por 73.803 millones, cayendo un 15% en número y un 6% en capital frente a 2025, con el private equity concentrando 244 transacciones por 17.263 millones",
+          "fuente": "Latham & Watkins, AGM Abogados"
         },
         {
-          "texto": "En el tejido productivo español, el III Informe Hiscox revela que el 40,9 % de las pymes espera aumentar facturación y el 36,5 % confía en mayores beneficios, pero el 66,7 % mantendrá plantilla invariable y el 76 % sufre encarecimiento notable de costes operativos. Un estudio de mediados de mes añade que el 70 % de los pagos internacionales de pymes españolas se cursa en dólares pese a no operar directamente con EE. UU., elevando su exposición al riesgo de cambio",
-          "fuente": "Dir&Ge, El Periódico"
+          "texto": "En actividad corporativa transfronteriza, Noucor, respaldada por MCH y family offices catalanes, duplicó su tamaño comprando la alemana Helm Pharmaceuticals hasta proyectar 200 millones de ingresos, mientras SAMY (Bridgepoint) y HTBA (Miura) adquirieron sendas empresas estadounidenses para expandir su huella transatlántica. La crisis de Ormuz mantiene el Brent en torno a 115 dólares el 29 de octubre, testeando la resiliencia de la combinación energética española ante perturbaciones de hidrocarburos",
+          "fuente": "Albia IMAP, Foresight Group"
         }
       ]
     },
@@ -85,16 +77,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La familia GPT-6 Astra de OpenAI, presentada a finales de septiembre, fija un nuevo estándar con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic despliega Claude Sonnet 5.5 optimizado y The Information reporta una carrera sincronizada de los tres gigantes (OpenAI, Google, Anthropic) para nuevos insignia antes de fin de año",
-          "fuente": "OpenAI / Anthropic / Emergent"
+          "texto": "Las tablas de Mergermarket a 9M 2026 sitúan a Uría Menéndez líder por valor con 81 operaciones y 37.730 millones de dólares (44,9% del total), Cuatrecasas primera por volumen con 151 transacciones (16.310 millones), y Deloitte Legal ascendiendo al segundo puesto por valor con 47 operaciones y 24.120 millones",
+          "fuente": "Iberian Lawyer"
         },
         {
-          "texto": "En el flanco estructural español, monitorajes del KfW y estimaciones de KPMG y CMS sitúan a cientos de miles de pymes ante procesos urgentes de relevo o cierre: más del 55 % de los fundadores supera los 55 años, impulsando un repunte selectivo de operaciones corporativas nacionales movido por la reorganización y la liquidez acumulada de fondos de private equity",
-          "fuente": "MyBusinessFuture"
+          "texto": "El mercado de M&A de clubes de fútbol en España marcó un récord histórico en 2026 con 13 operaciones completadas a 21 de octubre, cuarto año consecutivo de crecimiento según el Off The Pitch M&A Tracker",
+          "fuente": "Off The Pitch"
         },
         {
-          "texto": "En energía, el crudo Brent se sostiene en la franja alta de volatilidad (105-115 $/barril en octubre) condicionado por los riesgos geopolíticos en Ormuz y los conflictos superpuestos en Oriente Medio",
-          "fuente": "BlogForex / Finect"
+          "texto": "Portobello Capital acordó la mayoría de JBM (100-120 millones de valor, ~20 millones EBITDA) y de Martínez Otero vía su fondo Portobello Fund V, mientras 21 Invest debutó en España comprando Grupo Celesa y el grupo inmho adquirió la Agencia Negociadora del Alquiler",
+          "fuente": "Albia IMAP"
+        },
+        {
+          "texto": "El primer semestre cerró con 1.485 operaciones por 50.474 millones, cayendo un 15% en número pero estable en capital (-0,29%), confirmando la concentración en deals de mayor escala",
+          "fuente": "Grafton Corporate"
         }
       ]
     },
@@ -106,17 +102,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El 40,9 % de pymes españolas prevé crecer en facturación pero el 66,7 % congelará plantillas y el 76 % sufre costes al alza, configurando un escenario de expansión intensiva en capital y no en trabajo que encaja con la tesis de carve-out industriales y tecnológicos como vía de despliegue de fondos",
-              "fuente": "Dir&Ge"
+              "texto": "La adquisición de Cernaval por CVC DIF en el Estrecho de Gibraltar y la compra de JBM por Portobello (100-120 M€, 20 M€ EBITDA) ilustran la tesis de carve-out industriales y de nicho en corredores logísticos críticos, mientras la generalización de W&I para tickets de 1 M€ abre vía a estructurar salidas de sucesión en pymes sin arrastrar contingencias ilimitadas",
+              "fuente": "CVC Capital Partners, Albia IMAP, Clyde & Co"
             },
             {
-              "texto": "La exposición cambiaria oculta (70 % de pagos internacionales en USD sin operativa directa en EE. UU.) crea una necesidad estructural de coberturas y reestructuración de pasivos en dólares que los asesores locales no suelen cubrir",
-              "fuente": "El Periódico"
+              "texto": "El récord de 13 transacciones en clubes de fútbol y la entrada de family offices en el Valencia CF (1.250 M€ EV) confirman el activo deportivo como clase de alternativa con liquidez institucional, y la internacionalización de Noucor, SAMY y HTBA comprando en EE. UU. muestra el apetito de plataformas españolas respaldadas por private equity por escala transatlántica",
+              "fuente": "Off The Pitch, Latham & Watkins, Albia IMAP"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl Banco Central Europeo celebra hoy su reunión en Fráncfort con el tipo de depósito en el 2,50 % y el mercado descuenta una pausa unánime, vigilando el repunte de la inflación eurozona al 3,8 % en septiembre por el componente energético y la tensión soberana francesa que lleva el bono a 10 años por encima del 5 %.\n\nEn el otro lado del Atlántico, la Reserva Federal mantuvo ayer el rango del fed funds en 3,75 %-4,00 % con una votación de 10 a 2, registrando la disidencia histórica de la gobernadora Lisa Cook y la presidenta de la Fed de Cleveland, Beth Hammack, que pedían una subida de 25 puntos básicos.\n\nEn tecnología, Google lanzó oficialmente ayer Gemini 4 Carbon, evolución directa de su familia Gemini 4, reforzando la carrera de modelos frontera en el tramo final de 2026.\n\nFuentes: Finect, CryptoTicker, AI Release Tracker\n\n## Esta semana\nLa escalada en torno a Irán domina el tablero geopolítico: CNN informa que fuerzas estadounidenses pueden desplegar operaciones a gran escala en 96 horas, mientras Arabia Saudí, Pakistán y Turquía envían emisarios a Teherán y los hutíes intensifican ataques con misiles y drones contra infraestructura saudí.\n\nEn Ucrania, Rusia y Kiev confirmaron una tregua temporal en Oleshky (Jersón) mediada por Melania Trump para abrir un corredor humanitario desde el 27 de octubre.\n\nLa campaña rusa contra la red energética ucraniana entra en fase crítica de invierno: informes del 27 de octubre estiman interceptores Patriot prácticamente agotados, tasas de derribo de drones en el 54 % y 10,8 millones de personas precisando asistencia de la ONU.\n\nEn el tejido productivo español, el III Informe Hiscox revela que el 40,9 % de las pymes espera aumentar facturación y el 36,5 % confía en mayores beneficios, pero el 66,7 % mantendrá plantilla invariable y el 76 % sufre encarecimiento notable de costes operativos. Un estudio de mediados de mes añade que el 70 % de los pagos internacionales de pymes españolas se cursa en dólares pese a no operar directamente con EE. UU., elevando su exposición al riesgo de cambio.\n\nFuentes: Atalayar, Rusia y Ucrania confirman la tregua temporal en Oleshky anunciada por Melania Trump, The Objective, Dir&Ge, El Periódico\n\n## Este mes\nLa familia GPT-6 Astra de OpenAI, presentada a finales de septiembre, fija un nuevo estándar con 98 % en FrontierMath Tier 4 y 99,9 % en ARC-AGI-3, mientras Anthropic despliega Claude Sonnet 5.5 optimizado y The Information reporta una carrera sincronizada de los tres gigantes (OpenAI, Google, Anthropic) para nuevos insignia antes de fin de año.\n\nEn el flanco estructural español, monitorajes del KfW y estimaciones de KPMG y CMS sitúan a cientos de miles de pymes ante procesos urgentes de relevo o cierre: más del 55 % de los fundadores supera los 55 años, impulsando un repunte selectivo de operaciones corporativas nacionales movido por la reorganización y la liquidez acumulada de fondos de private equity.\n\nEn energía, el crudo Brent se sostiene en la franja alta de volatilidad (105-115 $/barril en octubre) condicionado por los riesgos geopolíticos en Ormuz y los conflictos superpuestos en Oriente Medio.\n\nFuentes: OpenAI / Anthropic / Emergent, MyBusinessFuture, BlogForex / Finect\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl 40,9 % de pymes españolas prevé crecer en facturación pero el 66,7 % congelará plantillas y el 76 % sufre costes al alza, configurando un escenario de expansión intensiva en capital y no en trabajo que encaja con la tesis de carve-out industriales y tecnológicos como vía de despliegue de fondos.\n\nLa exposición cambiaria oculta (70 % de pagos internacionales en USD sin operativa directa en EE. UU.) crea una necesidad estructural de coberturas y reestructuración de pasivos en dólares que los asesores locales no suelen cubrir.\n\nFuentes: Dir&Ge, El Periódico"
+  "markdown": "## Hoy\nEl BCE mantuvo los tipos sin cambios el 29 de octubre, con la facilidad de depósito en el 2,50% y la inflación eurozona repuntando al 3,8% por el componente energético, mientras Christine Lagarde anunció sorpresivamente su salida anticipada el 7 de febrero de 2027, abriendo la pugna por la sucesión en plena tensión inflacionaria. En el estrecho de Gibraltar, CVC DIF completó el 27 de octubre la adquisición de una participación mayoritaria en Cernaval, astillero de la Bahía de Algeciras que operó 68 embarcaciones en 2025, reforzando la apuesta de private equity por infraestructuras críticas en el Estrecho.\n\nFuentes: European Central Bank, Finect, CVC Capital Partners\n\n## Esta semana\nLa Fed mantuvo el rango del 3,75% al 4,00% el 28 de octubre con una votación dividida de 10 a 2, registrando dos disidencias que pedían subir un cuarto de punto ante la persistencia inflacionaria, lo que contrasta con la pausa unánime del BCE y sitúa a los dos bancos centrales en fases distintas de reacción.\n\nEn el mercado español, Kirkland & Ellis asesoró a Pitchwise Holdings en la compra del 42% del Valencia CF valorando el club en 1.250 millones de enterprise value, mientras TTR Data cerró el tercer trimestre con 2.261 operaciones por 73.803 millones, cayendo un 15% en número y un 6% en capital frente a 2025, con el private equity concentrando 244 transacciones por 17.263 millones.\n\nEn actividad corporativa transfronteriza, Noucor, respaldada por MCH y family offices catalanes, duplicó su tamaño comprando la alemana Helm Pharmaceuticals hasta proyectar 200 millones de ingresos, mientras SAMY (Bridgepoint) y HTBA (Miura) adquirieron sendas empresas estadounidenses para expandir su huella transatlántica. La crisis de Ormuz mantiene el Brent en torno a 115 dólares el 29 de octubre, testeando la resiliencia de la combinación energética española ante perturbaciones de hidrocarburos.\n\nFuentes: Federal Reserve, Latham & Watkins, AGM Abogados, Albia IMAP, Foresight Group\n\n## Este mes\nLas tablas de Mergermarket a 9M 2026 sitúan a Uría Menéndez líder por valor con 81 operaciones y 37.730 millones de dólares (44,9% del total), Cuatrecasas primera por volumen con 151 transacciones (16.310 millones), y Deloitte Legal ascendiendo al segundo puesto por valor con 47 operaciones y 24.120 millones.\n\nEl mercado de M&A de clubes de fútbol en España marcó un récord histórico en 2026 con 13 operaciones completadas a 21 de octubre, cuarto año consecutivo de crecimiento según el Off The Pitch M&A Tracker.\n\nPortobello Capital acordó la mayoría de JBM (100-120 millones de valor, ~20 millones EBITDA) y de Martínez Otero vía su fondo Portobello Fund V, mientras 21 Invest debutó en España comprando Grupo Celesa y el grupo inmho adquirió la Agencia Negociadora del Alquiler.\n\nEl primer semestre cerró con 1.485 operaciones por 50.474 millones, cayendo un 15% en número pero estable en capital (-0,29%), confirmando la concentración en deals de mayor escala.\n\nFuentes: Iberian Lawyer, Off The Pitch, Albia IMAP, Grafton Corporate\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa adquisición de Cernaval por CVC DIF en el Estrecho de Gibraltar y la compra de JBM por Portobello (100-120 M€, 20 M€ EBITDA) ilustran la tesis de carve-out industriales y de nicho en corredores logísticos críticos, mientras la generalización de W&I para tickets de 1 M€ abre vía a estructurar salidas de sucesión en pymes sin arrastrar contingencias ilimitadas.\n\nEl récord de 13 transacciones en clubes de fútbol y la entrada de family offices en el Valencia CF (1.250 M€ EV) confirman el activo deportivo como clase de alternativa con liquidez institucional, y la internacionalización de Noucor, SAMY y HTBA comprando en EE. UU. muestra el apetito de plataformas españolas respaldadas por private equity por escala transatlántica.\n\nFuentes: CVC Capital Partners, Albia IMAP, Clyde & Co, Off The Pitch, Latham & Watkins"
 }
