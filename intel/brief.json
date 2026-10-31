@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-10-30",
+  "fecha": "2026-10-31",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipos BCE depósito",
-      "valor": "2,50%",
+      "etiqueta": "Facilidad depósito BCE",
+      "valor": "2,50 %",
       "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Inflación eurozona",
-      "valor": "3,8%",
-      "fuente": "European Central Bank"
+      "etiqueta": "Rango tipos Fed",
+      "valor": "3,75 %, 4,00 %",
+      "fuente": "The Guardian"
     },
     {
-      "etiqueta": "M&A España 9M",
-      "valor": "73.803 M€",
-      "fuente": "AGM Abogados"
+      "etiqueta": "Brent cierre mes",
+      "valor": "113,43 $/barril",
+      "fuente": "EnergyNow.com"
     },
     {
-      "etiqueta": "Brent",
-      "valor": "115 $",
-      "fuente": "Foresight Group"
+      "etiqueta": "Importaciones ocultas EE. UU.-China",
+      "valor": "167.100 M$",
+      "fuente": "Strategy Review"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 2
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,8 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El BCE mantuvo los tipos sin cambios el 29 de octubre, con la facilidad de depósito en el 2,50% y la inflación eurozona repuntando al 3,8% por el componente energético, mientras Christine Lagarde anunció sorpresivamente su salida anticipada el 7 de febrero de 2027, abriendo la pugna por la sucesión en plena tensión inflacionaria. En el estrecho de Gibraltar, CVC DIF completó el 27 de octubre la adquisición de una participación mayoritaria en Cernaval, astillero de la Bahía de Algeciras que operó 68 embarcaciones en 2025, reforzando la apuesta de private equity por infraestructuras críticas en el Estrecho",
-          "fuente": "European Central Bank, Finect, CVC Capital Partners"
+          "texto": "La tensión en Oriente Medio cerró octubre con el Brent en 113,43 $ y el WTI en 104,12 $, reflejando la prima de riesgo geopolítico que el mercado embebe mientras el Kremlin reitera que solo aceptará un acuerdo que satisfaga sus objetivos de guerra en Ucrania",
+          "fuente": "ISW, EnergyNow.com"
+        },
+        {
+          "texto": "Trump firmó el 28 de octubre una proclamación bajo la Sección 232 que abre 180 días de negociaciones sobre importaciones de robótica y maquinaria industrial, dejando en suspenso la imposición de aranceles hasta el 26 de abril de 2027",
+          "fuente": "SmarTrade | Thompson Hine"
+        },
+        {
+          "texto": "OpenAI, Google, Microsoft y Anthropic publicaron el 30 de octubre un token estándar en `robots.txt` (`_usageai-training`) para que los editores excluyan sus contenidos del entrenamiento con una sola línea, bajo un borrador IETF que expira en mayo de 2027",
+          "fuente": "AI Weekly"
+        },
+        {
+          "texto": "TTR Data consolida el mercado español a 9M en 73.803 M€, un 6 % menos interanual, confirmando la selectividad extrema que exige el capital privado y los asesores",
+          "fuente": "Forbes España via TTR Data"
         }
       ]
     },
@@ -60,16 +72,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La Fed mantuvo el rango del 3,75% al 4,00% el 28 de octubre con una votación dividida de 10 a 2, registrando dos disidencias que pedían subir un cuarto de punto ante la persistencia inflacionaria, lo que contrasta con la pausa unánime del BCE y sitúa a los dos bancos centrales en fases distintas de reacción",
-          "fuente": "Federal Reserve"
+          "texto": "El BCE mantuvo el 29 de octubre la facilidad de depósito en el 2,50 %, advirtiendo que la crisis energética presiona al alza la inflación, mientras la Fed de Kevin Warsh pausó en el 3,75 %, 4,00 % con dos disidencias que pedían subir un cuarto de punto en su última reunión antes de los midterms",
+          "fuente": "European Central Bank, The Guardian"
         },
         {
-          "texto": "En el mercado español, Kirkland & Ellis asesoró a Pitchwise Holdings en la compra del 42% del Valencia CF valorando el club en 1.250 millones de enterprise value, mientras TTR Data cerró el tercer trimestre con 2.261 operaciones por 73.803 millones, cayendo un 15% en número y un 6% en capital frente a 2025, con el private equity concentrando 244 transacciones por 17.263 millones",
-          "fuente": "Latham & Watkins, AGM Abogados"
+          "texto": "Satélites militares rusos han estado alimentando con inteligencia cenital a los hutíes para golpear infraestructura petrolera y militar saudí, según informes de inteligencia y AP del 28 de octubre",
+          "fuente": "ISW"
         },
         {
-          "texto": "En actividad corporativa transfronteriza, Noucor, respaldada por MCH y family offices catalanes, duplicó su tamaño comprando la alemana Helm Pharmaceuticals hasta proyectar 200 millones de ingresos, mientras SAMY (Bridgepoint) y HTBA (Miura) adquirieron sendas empresas estadounidenses para expandir su huella transatlántica. La crisis de Ormuz mantiene el Brent en torno a 115 dólares el 29 de octubre, testeando la resiliencia de la combinación energética española ante perturbaciones de hidrocarburos",
-          "fuente": "Albia IMAP, Foresight Group"
+          "texto": "La Casa Blanca suspendió indefinidamente el 16 de octubre los aranceles y sanciones más severas de la Ley Lindsey O. Graham contra Rusia, priorizando la exención de diésel ruso para contener precios antes de las elecciones",
+          "fuente": "Freshfields"
+        },
+        {
+          "texto": "Anthropic, Google (Gemini 4 Carbon el 28 de octubre) y OpenAI (GPT-6.1 Terra el 26) filtraron lanzamientos que compiten agresivamente en coste y razonamiento",
+          "fuente": "LLM Stats, The Information via InvestingPro"
+        },
+        {
+          "texto": "Un estudio del CEPR cuantifica que el subregistro aduanero explicó un tercio de la caída comercial EE. UU.-China 2018-2023, equivalente a 167.100 M$ en mercancías ocultas",
+          "fuente": "Strategy Review"
         }
       ]
     },
@@ -77,20 +97,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Las tablas de Mergermarket a 9M 2026 sitúan a Uría Menéndez líder por valor con 81 operaciones y 37.730 millones de dólares (44,9% del total), Cuatrecasas primera por volumen con 151 transacciones (16.310 millones), y Deloitte Legal ascendiendo al segundo puesto por valor con 47 operaciones y 24.120 millones",
-          "fuente": "Iberian Lawyer"
+          "texto": "La AIE alerta de que la escasez estructural de diésel global se extenderá durante 2027, con producción de destilados medios en 27,2 Mbd, 1,7 Mbd por debajo del año anterior",
+          "fuente": "OilPrice.com"
         },
         {
-          "texto": "El mercado de M&A de clubes de fútbol en España marcó un récord histórico en 2026 con 13 operaciones completadas a 21 de octubre, cuarto año consecutivo de crecimiento según el Off The Pitch M&A Tracker",
-          "fuente": "Off The Pitch"
+          "texto": "EE. UU. y China extendieron hasta el 10 de enero de 2027 la tregua arancelaria acordada en la visita de Estado de septiembre-octubre, con reducción de gravámenes sobre 60.000 M$ (30.000 M$ por bando) en productos no sensibles",
+          "fuente": "Everstream Analytics, Lighthill Law"
         },
         {
-          "texto": "Portobello Capital acordó la mayoría de JBM (100-120 millones de valor, ~20 millones EBITDA) y de Martínez Otero vía su fondo Portobello Fund V, mientras 21 Invest debutó en España comprando Grupo Celesa y el grupo inmho adquirió la Agencia Negociadora del Alquiler",
-          "fuente": "Albia IMAP"
+          "texto": "El plazo de cumplimiento del Anexo III del AI Act se aplaza formalmente al 2 de diciembre de 2027 tras las enmiendas del Omnibus digital de julio, mientras la alfabetización en IA y la prohibición de prácticas inaceptables siguen vigentes",
+          "fuente": "Alation"
         },
         {
-          "texto": "El primer semestre cerró con 1.485 operaciones por 50.474 millones, cayendo un 15% en número pero estable en capital (-0,29%), confirmando la concentración en deals de mayor escala",
-          "fuente": "Grafton Corporate"
+          "texto": "KPMG lidera el segmento Big Four en España con 184 operaciones registradas en su histórico reciente de M&A y due diligence, marcando la pauta de selectividad corporativa",
+          "fuente": "KPMG Spain"
         }
       ]
     },
@@ -102,17 +122,25 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La adquisición de Cernaval por CVC DIF en el Estrecho de Gibraltar y la compra de JBM por Portobello (100-120 M€, 20 M€ EBITDA) ilustran la tesis de carve-out industriales y de nicho en corredores logísticos críticos, mientras la generalización de W&I para tickets de 1 M€ abre vía a estructurar salidas de sucesión en pymes sin arrastrar contingencias ilimitadas",
-              "fuente": "CVC Capital Partners, Albia IMAP, Clyde & Co"
+              "texto": "La selectividad extrema del mercado español (73.803 M€ a 9M, -6 % interanual) y el liderazgo de KPMG con 184 operaciones en Big Four confirman que los deals medianos exigen due diligence reforzada y estructuración con seguros W&I para tickets bajos",
+              "fuente": "Forbes España via TTR Data, KPMG Spain"
             },
             {
-              "texto": "El récord de 13 transacciones en clubes de fútbol y la entrada de family offices en el Valencia CF (1.250 M€ EV) confirman el activo deportivo como clase de alternativa con liquidez institucional, y la internacionalización de Noucor, SAMY y HTBA comprando en EE. UU. muestra el apetito de plataformas españolas respaldadas por private equity por escala transatlántica",
-              "fuente": "Off The Pitch, Latham & Watkins, Albia IMAP"
+              "texto": "La proclamación Sección 232 sobre robótica y maquinaria (180 días, límite abril 2027) crea una ventana para que plataformas industriales españolas con cadena de suministro en EE. UU. anticipen nearshoring y reclasificación arancelaria",
+              "fuente": "SmarTrade | Thompson Hine"
+            },
+            {
+              "texto": "El token estándar `_usageai-training` en `robots.txt` (expira mayo 2027) obliga a cualquier cliente con activos de datos propietarios a auditar su exposición al scraping y a decidir opt-out masivo o licenciamiento selectivo antes de que el estándar se consolide",
+              "fuente": "AI Weekly"
+            },
+            {
+              "texto": "El aplazamiento del Anexo III al 2-12-2027 da aire a roll-outs de IA de alto riesgo en España, pero la obligación de alfabetización ya vigente exige planes de formación documentados ya",
+              "fuente": "Alation"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl BCE mantuvo los tipos sin cambios el 29 de octubre, con la facilidad de depósito en el 2,50% y la inflación eurozona repuntando al 3,8% por el componente energético, mientras Christine Lagarde anunció sorpresivamente su salida anticipada el 7 de febrero de 2027, abriendo la pugna por la sucesión en plena tensión inflacionaria. En el estrecho de Gibraltar, CVC DIF completó el 27 de octubre la adquisición de una participación mayoritaria en Cernaval, astillero de la Bahía de Algeciras que operó 68 embarcaciones en 2025, reforzando la apuesta de private equity por infraestructuras críticas en el Estrecho.\n\nFuentes: European Central Bank, Finect, CVC Capital Partners\n\n## Esta semana\nLa Fed mantuvo el rango del 3,75% al 4,00% el 28 de octubre con una votación dividida de 10 a 2, registrando dos disidencias que pedían subir un cuarto de punto ante la persistencia inflacionaria, lo que contrasta con la pausa unánime del BCE y sitúa a los dos bancos centrales en fases distintas de reacción.\n\nEn el mercado español, Kirkland & Ellis asesoró a Pitchwise Holdings en la compra del 42% del Valencia CF valorando el club en 1.250 millones de enterprise value, mientras TTR Data cerró el tercer trimestre con 2.261 operaciones por 73.803 millones, cayendo un 15% en número y un 6% en capital frente a 2025, con el private equity concentrando 244 transacciones por 17.263 millones.\n\nEn actividad corporativa transfronteriza, Noucor, respaldada por MCH y family offices catalanes, duplicó su tamaño comprando la alemana Helm Pharmaceuticals hasta proyectar 200 millones de ingresos, mientras SAMY (Bridgepoint) y HTBA (Miura) adquirieron sendas empresas estadounidenses para expandir su huella transatlántica. La crisis de Ormuz mantiene el Brent en torno a 115 dólares el 29 de octubre, testeando la resiliencia de la combinación energética española ante perturbaciones de hidrocarburos.\n\nFuentes: Federal Reserve, Latham & Watkins, AGM Abogados, Albia IMAP, Foresight Group\n\n## Este mes\nLas tablas de Mergermarket a 9M 2026 sitúan a Uría Menéndez líder por valor con 81 operaciones y 37.730 millones de dólares (44,9% del total), Cuatrecasas primera por volumen con 151 transacciones (16.310 millones), y Deloitte Legal ascendiendo al segundo puesto por valor con 47 operaciones y 24.120 millones.\n\nEl mercado de M&A de clubes de fútbol en España marcó un récord histórico en 2026 con 13 operaciones completadas a 21 de octubre, cuarto año consecutivo de crecimiento según el Off The Pitch M&A Tracker.\n\nPortobello Capital acordó la mayoría de JBM (100-120 millones de valor, ~20 millones EBITDA) y de Martínez Otero vía su fondo Portobello Fund V, mientras 21 Invest debutó en España comprando Grupo Celesa y el grupo inmho adquirió la Agencia Negociadora del Alquiler.\n\nEl primer semestre cerró con 1.485 operaciones por 50.474 millones, cayendo un 15% en número pero estable en capital (-0,29%), confirmando la concentración en deals de mayor escala.\n\nFuentes: Iberian Lawyer, Off The Pitch, Albia IMAP, Grafton Corporate\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa adquisición de Cernaval por CVC DIF en el Estrecho de Gibraltar y la compra de JBM por Portobello (100-120 M€, 20 M€ EBITDA) ilustran la tesis de carve-out industriales y de nicho en corredores logísticos críticos, mientras la generalización de W&I para tickets de 1 M€ abre vía a estructurar salidas de sucesión en pymes sin arrastrar contingencias ilimitadas.\n\nEl récord de 13 transacciones en clubes de fútbol y la entrada de family offices en el Valencia CF (1.250 M€ EV) confirman el activo deportivo como clase de alternativa con liquidez institucional, y la internacionalización de Noucor, SAMY y HTBA comprando en EE. UU. muestra el apetito de plataformas españolas respaldadas por private equity por escala transatlántica.\n\nFuentes: CVC Capital Partners, Albia IMAP, Clyde & Co, Off The Pitch, Latham & Watkins"
+  "markdown": "## Hoy\nLa tensión en Oriente Medio cerró octubre con el Brent en 113,43 $ y el WTI en 104,12 $, reflejando la prima de riesgo geopolítico que el mercado embebe mientras el Kremlin reitera que solo aceptará un acuerdo que satisfaga sus objetivos de guerra en Ucrania.\n\nTrump firmó el 28 de octubre una proclamación bajo la Sección 232 que abre 180 días de negociaciones sobre importaciones de robótica y maquinaria industrial, dejando en suspenso la imposición de aranceles hasta el 26 de abril de 2027.\n\nOpenAI, Google, Microsoft y Anthropic publicaron el 30 de octubre un token estándar en `robots.txt` (`_usageai-training`) para que los editores excluyan sus contenidos del entrenamiento con una sola línea, bajo un borrador IETF que expira en mayo de 2027.\n\nTTR Data consolida el mercado español a 9M en 73.803 M€, un 6 % menos interanual, confirmando la selectividad extrema que exige el capital privado y los asesores.\n\nFuentes: ISW, EnergyNow.com, SmarTrade | Thompson Hine, AI Weekly, Forbes España via TTR Data\n\n## Esta semana\nEl BCE mantuvo el 29 de octubre la facilidad de depósito en el 2,50 %, advirtiendo que la crisis energética presiona al alza la inflación, mientras la Fed de Kevin Warsh pausó en el 3,75 %, 4,00 % con dos disidencias que pedían subir un cuarto de punto en su última reunión antes de los midterms.\n\nSatélites militares rusos han estado alimentando con inteligencia cenital a los hutíes para golpear infraestructura petrolera y militar saudí, según informes de inteligencia y AP del 28 de octubre.\n\nLa Casa Blanca suspendió indefinidamente el 16 de octubre los aranceles y sanciones más severas de la Ley Lindsey O. Graham contra Rusia, priorizando la exención de diésel ruso para contener precios antes de las elecciones.\n\nAnthropic, Google (Gemini 4 Carbon el 28 de octubre) y OpenAI (GPT-6.1 Terra el 26) filtraron lanzamientos que compiten agresivamente en coste y razonamiento.\n\nUn estudio del CEPR cuantifica que el subregistro aduanero explicó un tercio de la caída comercial EE. UU.-China 2018-2023, equivalente a 167.100 M$ en mercancías ocultas.\n\nFuentes: European Central Bank, The Guardian, ISW, Freshfields, LLM Stats, The Information via InvestingPro, Strategy Review\n\n## Este mes\nLa AIE alerta de que la escasez estructural de diésel global se extenderá durante 2027, con producción de destilados medios en 27,2 Mbd, 1,7 Mbd por debajo del año anterior.\n\nEE. UU. y China extendieron hasta el 10 de enero de 2027 la tregua arancelaria acordada en la visita de Estado de septiembre-octubre, con reducción de gravámenes sobre 60.000 M$ (30.000 M$ por bando) en productos no sensibles.\n\nEl plazo de cumplimiento del Anexo III del AI Act se aplaza formalmente al 2 de diciembre de 2027 tras las enmiendas del Omnibus digital de julio, mientras la alfabetización en IA y la prohibición de prácticas inaceptables siguen vigentes.\n\nKPMG lidera el segmento Big Four en España con 184 operaciones registradas en su histórico reciente de M&A y due diligence, marcando la pauta de selectividad corporativa.\n\nFuentes: OilPrice.com, Everstream Analytics, Lighthill Law, Alation, KPMG Spain\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa selectividad extrema del mercado español (73.803 M€ a 9M, -6 % interanual) y el liderazgo de KPMG con 184 operaciones en Big Four confirman que los deals medianos exigen due diligence reforzada y estructuración con seguros W&I para tickets bajos.\n\nLa proclamación Sección 232 sobre robótica y maquinaria (180 días, límite abril 2027) crea una ventana para que plataformas industriales españolas con cadena de suministro en EE. UU. anticipen nearshoring y reclasificación arancelaria.\n\nEl token estándar `_usageai-training` en `robots.txt` (expira mayo 2027) obliga a cualquier cliente con activos de datos propietarios a auditar su exposición al scraping y a decidir opt-out masivo o licenciamiento selectivo antes de que el estándar se consolide.\n\nEl aplazamiento del Anexo III al 2-12-2027 da aire a roll-outs de IA de alto riesgo en España, pero la obligación de alfabetización ya vigente exige planes de formación documentados ya.\n\nFuentes: Forbes España via TTR Data, KPMG Spain, SmarTrade | Thompson Hine, AI Weekly, Alation"
 }
