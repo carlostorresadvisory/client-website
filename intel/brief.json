@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-10-31",
+  "fecha": "2026-11-01",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %",
+      "etiqueta": "Tipos Fed",
+      "valor": "3,75-4,00%",
+      "fuente": "Board of Governors of the Federal Reserve System"
+    },
+    {
+      "etiqueta": "Tipos BCE depósito",
+      "valor": "2,50%",
       "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Rango tipos Fed",
-      "valor": "3,75 %, 4,00 %",
-      "fuente": "The Guardian"
+      "etiqueta": "GPT-6.1 Terra precio",
+      "valor": "1$/5$ por M tokens",
+      "fuente": "explainx.ai Blog"
     },
     {
-      "etiqueta": "Brent cierre mes",
-      "valor": "113,43 $/barril",
-      "fuente": "EnergyNow.com"
-    },
-    {
-      "etiqueta": "Importaciones ocultas EE. UU.-China",
-      "valor": "167.100 M$",
-      "fuente": "Strategy Review"
+      "etiqueta": "M&A España 9M",
+      "valor": "73.803 M€ (-6%)",
+      "fuente": "AGM Abogados"
     }
   ],
   "horizontes": [
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,20 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La tensión en Oriente Medio cerró octubre con el Brent en 113,43 $ y el WTI en 104,12 $, reflejando la prima de riesgo geopolítico que el mercado embebe mientras el Kremlin reitera que solo aceptará un acuerdo que satisfaga sus objetivos de guerra en Ucrania",
-          "fuente": "ISW, EnergyNow.com"
+          "texto": "La tregua humanitaria en Oleshky permite a Zelenskyy afirmar desde Estambul que la desescalada con Rusia es factible, mientras EE. UU. detecta un interés multilateral creciente por un alto el fuego limitado en el Mar Negro",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Trump firmó el 28 de octubre una proclamación bajo la Sección 232 que abre 180 días de negociaciones sobre importaciones de robótica y maquinaria industrial, dejando en suspenso la imposición de aranceles hasta el 26 de abril de 2027",
-          "fuente": "SmarTrade | Thompson Hine"
+          "texto": "El líder supremo iraní Mojtaba Khamenei advierte de una respuesta militar \"sin límites geográficos\" ante cualquier nuevo ataque de EE. UU. o Israel, tensionando el Estrecho de Ormuz, mientras Rubio confirma que los contactos diplomáticos con Teherán persisten",
+          "fuente": "Gulf News, Anadolu Ajansı"
         },
         {
-          "texto": "OpenAI, Google, Microsoft y Anthropic publicaron el 30 de octubre un token estándar en `robots.txt` (`_usageai-training`) para que los editores excluyan sus contenidos del entrenamiento con una sola línea, bajo un borrador IETF que expira en mayo de 2027",
-          "fuente": "AI Weekly"
+          "texto": "La fragmentación del G20 en Atlanta se salda sin comunicado conjunto ni consenso sobre Ucrania, Irán o el Mar de la China Meridional, reflejando la parálisis de la gobernanza global",
+          "fuente": "Gulf News"
         },
         {
-          "texto": "TTR Data consolida el mercado español a 9M en 73.803 M€, un 6 % menos interanual, confirmando la selectividad extrema que exige el capital privado y los asesores",
-          "fuente": "Forbes España via TTR Data"
+          "texto": "La OCHA eleva a 290.000 los desplazados en Yemen desde agosto por la intensificación de los combates, disparando precios de alimentos y carburantes",
+          "fuente": "News.az"
         }
       ]
     },
@@ -72,24 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El BCE mantuvo el 29 de octubre la facilidad de depósito en el 2,50 %, advirtiendo que la crisis energética presiona al alza la inflación, mientras la Fed de Kevin Warsh pausó en el 3,75 %, 4,00 % con dos disidencias que pedían subir un cuarto de punto en su última reunión antes de los midterms",
-          "fuente": "European Central Bank, The Guardian"
+          "texto": "La Fed mantuvo el 28 de octubre los tipos en el 3,75-4,00% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos en su última reunión antes de los midterms",
+          "fuente": "Board of Governors of the Federal Reserve System"
         },
         {
-          "texto": "Satélites militares rusos han estado alimentando con inteligencia cenital a los hutíes para golpear infraestructura petrolera y militar saudí, según informes de inteligencia y AP del 28 de octubre",
-          "fuente": "ISW"
+          "texto": "El BCE replicó el 29 de octubre sin mover sus tres tasas (depósito 2,50%, principal 2,65%, marginal 2,90%) pero alertó de riesgos inflacionistas por el encarecimiento energético",
+          "fuente": "European Central Bank"
         },
         {
-          "texto": "La Casa Blanca suspendió indefinidamente el 16 de octubre los aranceles y sanciones más severas de la Ley Lindsey O. Graham contra Rusia, priorizando la exención de diésel ruso para contener precios antes de las elecciones",
-          "fuente": "Freshfields"
+          "texto": "Washington ha advertido a sus aliados del Golfo de posibles ataques selectivos contra Irán a partir del 4 de noviembre, tras las elecciones legislativas",
+          "fuente": "The Times of Israel"
         },
         {
-          "texto": "Anthropic, Google (Gemini 4 Carbon el 28 de octubre) y OpenAI (GPT-6.1 Terra el 26) filtraron lanzamientos que compiten agresivamente en coste y razonamiento",
-          "fuente": "LLM Stats, The Information via InvestingPro"
-        },
-        {
-          "texto": "Un estudio del CEPR cuantifica que el subregistro aduanero explicó un tercio de la caída comercial EE. UU.-China 2018-2023, equivalente a 167.100 M$ en mercancías ocultas",
-          "fuente": "Strategy Review"
+          "texto": "OpenAI lanzó el 26 de octubre GPT-6.1 Terra a 1$/5$ por millón de tokens (entrada/salida), integrándolo en ChatGPT Work, Codex y API. Google Cloud y OpenAI sellaron el 21 de octubre una alianza para alojar modelos frontera y flujos Codex en Model Garden, permitiendo a las empresas usar sus compromisos de gasto en GCP",
+          "fuente": "explainx.ai Blog, OpenAI"
         }
       ]
     },
@@ -97,20 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La AIE alerta de que la escasez estructural de diésel global se extenderá durante 2027, con producción de destilados medios en 27,2 Mbd, 1,7 Mbd por debajo del año anterior",
-          "fuente": "OilPrice.com"
+          "texto": "TTR Data cierra septiembre con 2.261 operaciones y 73.803 M€ en España (-15% en volumen, -6% en importe interanual), confirmando la concentración de valor en tickets mayores y la selectividad extrema del capital",
+          "fuente": "AGM Abogados"
         },
         {
-          "texto": "EE. UU. y China extendieron hasta el 10 de enero de 2027 la tregua arancelaria acordada en la visita de Estado de septiembre-octubre, con reducción de gravámenes sobre 60.000 M$ (30.000 M$ por bando) en productos no sensibles",
-          "fuente": "Everstream Analytics, Lighthill Law"
+          "texto": "Más de medio millón de empresarios españoles alcanzarán la jubilación antes de 2030 sin sucesor familiar identificado, consolidando la transmisión a private equity o industriales como palanca estructural del mid-market",
+          "fuente": "Capital-Riesgo.es"
         },
         {
-          "texto": "El plazo de cumplimiento del Anexo III del AI Act se aplaza formalmente al 2 de diciembre de 2027 tras las enmiendas del Omnibus digital de julio, mientras la alfabetización en IA y la prohibición de prácticas inaceptables siguen vigentes",
-          "fuente": "Alation"
+          "texto": "El capex de los cinco hiperescaladores en infraestructura de IA se encamina a 800.000 M$ en 2026 y 1,3 B$ en 2027, trasladando el foco inversor a redes ópticas, data centers y capacidad energética",
+          "fuente": "Quartz"
         },
         {
-          "texto": "KPMG lidera el segmento Big Four en España con 184 operaciones registradas en su histórico reciente de M&A y due diligence, marcando la pauta de selectividad corporativa",
-          "fuente": "KPMG Spain"
+          "texto": "La fragmentación tecnológica EE. UU.-Europa-China endurece las restricciones a exportaciones de computación avanzada y acelera la relocalización de cadenas críticas de minerales y semiconductores",
+          "fuente": "Persistence Market Research"
         }
       ]
     },
@@ -122,25 +118,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "La selectividad extrema del mercado español (73.803 M€ a 9M, -6 % interanual) y el liderazgo de KPMG con 184 operaciones en Big Four confirman que los deals medianos exigen due diligence reforzada y estructuración con seguros W&I para tickets bajos",
-              "fuente": "Forbes España via TTR Data, KPMG Spain"
-            },
-            {
-              "texto": "La proclamación Sección 232 sobre robótica y maquinaria (180 días, límite abril 2027) crea una ventana para que plataformas industriales españolas con cadena de suministro en EE. UU. anticipen nearshoring y reclasificación arancelaria",
-              "fuente": "SmarTrade | Thompson Hine"
-            },
-            {
-              "texto": "El token estándar `_usageai-training` en `robots.txt` (expira mayo 2027) obliga a cualquier cliente con activos de datos propietarios a auditar su exposición al scraping y a decidir opt-out masivo o licenciamiento selectivo antes de que el estándar se consolide",
-              "fuente": "AI Weekly"
-            },
-            {
-              "texto": "El aplazamiento del Anexo III al 2-12-2027 da aire a roll-outs de IA de alto riesgo en España, pero la obligación de alfabetización ya vigente exige planes de formación documentados ya",
-              "fuente": "Alation"
+              "texto": "El 68,1% de los family offices españoles planea aumentar exposición a private equity (IE/Cuartrecasas/CaixaBank), validando la tesis de que el capital paciente nacional será comprador neto en el mid-market mientras la demografía (500.000 sucesiones pendientes) expulsa vendedores. La operación Noucor/Helm Pharmaceuticals (objetivo 200 M€ ingresos con MCH y family offices catalanes) ilustra el playbook ganador: roll-up transfronterizo sectorial, apalancamiento moderado y salida a industrial o fondo mayor. La selectividad TTR (-15% deals, -6% valor) obliga a presentar activos con due diligence reforzada y seguros W&I para cerrar en rangos de valoración defendibles",
+              "fuente": "CaixaBank, Capital-Riesgo.es, AGM Abogados"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa tensión en Oriente Medio cerró octubre con el Brent en 113,43 $ y el WTI en 104,12 $, reflejando la prima de riesgo geopolítico que el mercado embebe mientras el Kremlin reitera que solo aceptará un acuerdo que satisfaga sus objetivos de guerra en Ucrania.\n\nTrump firmó el 28 de octubre una proclamación bajo la Sección 232 que abre 180 días de negociaciones sobre importaciones de robótica y maquinaria industrial, dejando en suspenso la imposición de aranceles hasta el 26 de abril de 2027.\n\nOpenAI, Google, Microsoft y Anthropic publicaron el 30 de octubre un token estándar en `robots.txt` (`_usageai-training`) para que los editores excluyan sus contenidos del entrenamiento con una sola línea, bajo un borrador IETF que expira en mayo de 2027.\n\nTTR Data consolida el mercado español a 9M en 73.803 M€, un 6 % menos interanual, confirmando la selectividad extrema que exige el capital privado y los asesores.\n\nFuentes: ISW, EnergyNow.com, SmarTrade | Thompson Hine, AI Weekly, Forbes España via TTR Data\n\n## Esta semana\nEl BCE mantuvo el 29 de octubre la facilidad de depósito en el 2,50 %, advirtiendo que la crisis energética presiona al alza la inflación, mientras la Fed de Kevin Warsh pausó en el 3,75 %, 4,00 % con dos disidencias que pedían subir un cuarto de punto en su última reunión antes de los midterms.\n\nSatélites militares rusos han estado alimentando con inteligencia cenital a los hutíes para golpear infraestructura petrolera y militar saudí, según informes de inteligencia y AP del 28 de octubre.\n\nLa Casa Blanca suspendió indefinidamente el 16 de octubre los aranceles y sanciones más severas de la Ley Lindsey O. Graham contra Rusia, priorizando la exención de diésel ruso para contener precios antes de las elecciones.\n\nAnthropic, Google (Gemini 4 Carbon el 28 de octubre) y OpenAI (GPT-6.1 Terra el 26) filtraron lanzamientos que compiten agresivamente en coste y razonamiento.\n\nUn estudio del CEPR cuantifica que el subregistro aduanero explicó un tercio de la caída comercial EE. UU.-China 2018-2023, equivalente a 167.100 M$ en mercancías ocultas.\n\nFuentes: European Central Bank, The Guardian, ISW, Freshfields, LLM Stats, The Information via InvestingPro, Strategy Review\n\n## Este mes\nLa AIE alerta de que la escasez estructural de diésel global se extenderá durante 2027, con producción de destilados medios en 27,2 Mbd, 1,7 Mbd por debajo del año anterior.\n\nEE. UU. y China extendieron hasta el 10 de enero de 2027 la tregua arancelaria acordada en la visita de Estado de septiembre-octubre, con reducción de gravámenes sobre 60.000 M$ (30.000 M$ por bando) en productos no sensibles.\n\nEl plazo de cumplimiento del Anexo III del AI Act se aplaza formalmente al 2 de diciembre de 2027 tras las enmiendas del Omnibus digital de julio, mientras la alfabetización en IA y la prohibición de prácticas inaceptables siguen vigentes.\n\nKPMG lidera el segmento Big Four en España con 184 operaciones registradas en su histórico reciente de M&A y due diligence, marcando la pauta de selectividad corporativa.\n\nFuentes: OilPrice.com, Everstream Analytics, Lighthill Law, Alation, KPMG Spain\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa selectividad extrema del mercado español (73.803 M€ a 9M, -6 % interanual) y el liderazgo de KPMG con 184 operaciones en Big Four confirman que los deals medianos exigen due diligence reforzada y estructuración con seguros W&I para tickets bajos.\n\nLa proclamación Sección 232 sobre robótica y maquinaria (180 días, límite abril 2027) crea una ventana para que plataformas industriales españolas con cadena de suministro en EE. UU. anticipen nearshoring y reclasificación arancelaria.\n\nEl token estándar `_usageai-training` en `robots.txt` (expira mayo 2027) obliga a cualquier cliente con activos de datos propietarios a auditar su exposición al scraping y a decidir opt-out masivo o licenciamiento selectivo antes de que el estándar se consolide.\n\nEl aplazamiento del Anexo III al 2-12-2027 da aire a roll-outs de IA de alto riesgo en España, pero la obligación de alfabetización ya vigente exige planes de formación documentados ya.\n\nFuentes: Forbes España via TTR Data, KPMG Spain, SmarTrade | Thompson Hine, AI Weekly, Alation"
+  "markdown": "## Hoy\nLa tregua humanitaria en Oleshky permite a Zelenskyy afirmar desde Estambul que la desescalada con Rusia es factible, mientras EE. UU. detecta un interés multilateral creciente por un alto el fuego limitado en el Mar Negro.\n\nEl líder supremo iraní Mojtaba Khamenei advierte de una respuesta militar \"sin límites geográficos\" ante cualquier nuevo ataque de EE. UU. o Israel, tensionando el Estrecho de Ormuz, mientras Rubio confirma que los contactos diplomáticos con Teherán persisten.\n\nLa fragmentación del G20 en Atlanta se salda sin comunicado conjunto ni consenso sobre Ucrania, Irán o el Mar de la China Meridional, reflejando la parálisis de la gobernanza global.\n\nLa OCHA eleva a 290.000 los desplazados en Yemen desde agosto por la intensificación de los combates, disparando precios de alimentos y carburantes.\n\nFuentes: The Guardian, Gulf News, Anadolu Ajansı, News.az\n\n## Esta semana\nLa Fed mantuvo el 28 de octubre los tipos en el 3,75-4,00% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos en su última reunión antes de los midterms.\n\nEl BCE replicó el 29 de octubre sin mover sus tres tasas (depósito 2,50%, principal 2,65%, marginal 2,90%) pero alertó de riesgos inflacionistas por el encarecimiento energético.\n\nWashington ha advertido a sus aliados del Golfo de posibles ataques selectivos contra Irán a partir del 4 de noviembre, tras las elecciones legislativas.\n\nOpenAI lanzó el 26 de octubre GPT-6.1 Terra a 1$/5$ por millón de tokens (entrada/salida), integrándolo en ChatGPT Work, Codex y API. Google Cloud y OpenAI sellaron el 21 de octubre una alianza para alojar modelos frontera y flujos Codex en Model Garden, permitiendo a las empresas usar sus compromisos de gasto en GCP.\n\nFuentes: Board of Governors of the Federal Reserve System, European Central Bank, The Times of Israel, explainx.ai Blog, OpenAI\n\n## Este mes\nTTR Data cierra septiembre con 2.261 operaciones y 73.803 M€ en España (-15% en volumen, -6% en importe interanual), confirmando la concentración de valor en tickets mayores y la selectividad extrema del capital.\n\nMás de medio millón de empresarios españoles alcanzarán la jubilación antes de 2030 sin sucesor familiar identificado, consolidando la transmisión a private equity o industriales como palanca estructural del mid-market.\n\nEl capex de los cinco hiperescaladores en infraestructura de IA se encamina a 800.000 M$ en 2026 y 1,3 B$ en 2027, trasladando el foco inversor a redes ópticas, data centers y capacidad energética.\n\nLa fragmentación tecnológica EE. UU.-Europa-China endurece las restricciones a exportaciones de computación avanzada y acelera la relocalización de cadenas críticas de minerales y semiconductores.\n\nFuentes: AGM Abogados, Capital-Riesgo.es, Quartz, Persistence Market Research\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl 68,1% de los family offices españoles planea aumentar exposición a private equity (IE/Cuartrecasas/CaixaBank), validando la tesis de que el capital paciente nacional será comprador neto en el mid-market mientras la demografía (500.000 sucesiones pendientes) expulsa vendedores. La operación Noucor/Helm Pharmaceuticals (objetivo 200 M€ ingresos con MCH y family offices catalanes) ilustra el playbook ganador: roll-up transfronterizo sectorial, apalancamiento moderado y salida a industrial o fondo mayor. La selectividad TTR (-15% deals, -6% valor) obliga a presentar activos con due diligence reforzada y seguros W&I para cerrar en rangos de valoración defendibles.\n\nFuentes: CaixaBank, Capital-Riesgo.es, AGM Abogados"
 }
