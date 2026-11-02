@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-11-01",
+  "fecha": "2026-11-02",
   "lectura": "",
   "cifras": [
     {
       "etiqueta": "Tipos Fed",
-      "valor": "3,75-4,00%",
-      "fuente": "Board of Governors of the Federal Reserve System"
+      "valor": "3,75%-4,00%",
+      "fuente": "Bank of Ireland Corporate"
     },
     {
-      "etiqueta": "Tipos BCE depósito",
-      "valor": "2,50%",
-      "fuente": "European Central Bank"
+      "etiqueta": "Petróleo Brent",
+      "valor": "111 $/barril",
+      "fuente": "The Edge Malaysia"
     },
     {
-      "etiqueta": "GPT-6.1 Terra precio",
-      "valor": "1$/5$ por M tokens",
-      "fuente": "explainx.ai Blog"
+      "etiqueta": "Precios combustibles",
+      "valor": "+32% en 2026",
+      "fuente": "Textile Today"
     },
     {
-      "etiqueta": "M&A España 9M",
-      "valor": "73.803 M€ (-6%)",
-      "fuente": "AGM Abogados"
+      "etiqueta": "Operaciones M&A España",
+      "valor": "1.938",
+      "fuente": "Forbes España / TTR Data"
     }
   ],
   "horizontes": [
@@ -30,7 +30,7 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 6
     },
     {
       "horizonte": "Este mes",
@@ -41,30 +41,30 @@
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Nemotron"
+      "GLM"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Nemotron"
+    "texto": "Investigación: Gemini · Redacción: GLM"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La tregua humanitaria en Oleshky permite a Zelenskyy afirmar desde Estambul que la desescalada con Rusia es factible, mientras EE. UU. detecta un interés multilateral creciente por un alto el fuego limitado en el Mar Negro",
-          "fuente": "The Guardian"
+          "texto": "Ataques informáticos masivos afectaron este lunes a las aplicaciones móviles de alertas de emergencia en Rusia y Ucrania, enviando notificaciones falsas, mientras se registran combates aéreos masivos con drones",
+          "fuente": "El Periódico"
         },
         {
-          "texto": "El líder supremo iraní Mojtaba Khamenei advierte de una respuesta militar \"sin límites geográficos\" ante cualquier nuevo ataque de EE. UU. o Israel, tensionando el Estrecho de Ormuz, mientras Rubio confirma que los contactos diplomáticos con Teherán persisten",
-          "fuente": "Gulf News, Anadolu Ajansı"
+          "texto": "Irán advirtió que una nueva guerra con EE. UU. podría durar más que las anteriores, después de que Trump amenazara con más ataques y manifestara que debe ocuparse de más objetivos antes o después de los midterms",
+          "fuente": "The Daily Star"
         },
         {
-          "texto": "La fragmentación del G20 en Atlanta se salda sin comunicado conjunto ni consenso sobre Ucrania, Irán o el Mar de la China Meridional, reflejando la parálisis de la gobernanza global",
-          "fuente": "Gulf News"
+          "texto": "El petróleo Brent bajó hacia los 111 dólares por barril tras informes de que Trump prefiere dar más tiempo a la diplomacia con Irán, templando los temores sobre un corte en el Estrecho de Ormuz",
+          "fuente": "The Edge Malaysia"
         },
         {
-          "texto": "La OCHA eleva a 290.000 los desplazados en Yemen desde agosto por la intensificación de los combates, disparando precios de alimentos y carburantes",
-          "fuente": "News.az"
+          "texto": "Fondos oportunistas de crédito alternativo, como Oak Hill Advisors, han empezado a mapear oportunidades de reestructuración en el sector renovable español ante precios de electricidad por debajo de previsiones y tensiones en los covenants de deuda",
+          "fuente": "elEconomista"
         }
       ]
     },
@@ -72,20 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La Fed mantuvo el 28 de octubre los tipos en el 3,75-4,00% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos en su última reunión antes de los midterms",
-          "fuente": "Board of Governors of the Federal Reserve System"
+          "texto": "El Departamento de Estado de EE. UU. autorizó la venta de 500 misiles para sistemas Patriot a Ucrania ante los retrasos en los suministros defensivos",
+          "fuente": "El Periódico"
         },
         {
-          "texto": "El BCE replicó el 29 de octubre sin mover sus tres tasas (depósito 2,50%, principal 2,65%, marginal 2,90%) pero alertó de riesgos inflacionistas por el encarecimiento energético",
-          "fuente": "European Central Bank"
+          "texto": "El Banco Mundial advirtió que los precios mundiales del combustible subirán un 32% en promedio en 2026, estimando el crudo Brent en 91 dólares por barril debido a interrupciones de suministro en Oriente Medio y Ucrania. La Fed mantuvo los tipos en el 3,75%-4% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos, dejando la puerta abierta a un endurecimiento en diciembre ante datos de inflación persistentes",
+          "fuente": "Textile Today, Bank of Ireland Corporate"
         },
         {
-          "texto": "Washington ha advertido a sus aliados del Golfo de posibles ataques selectivos contra Irán a partir del 4 de noviembre, tras las elecciones legislativas",
-          "fuente": "The Times of Israel"
+          "texto": "BDO España asesoró a LINK Mobility en la adquisición de LabsMobile por 2,4 millones de euros, mientras Deloitte y CaixaBank CIB asesoraron en la adquisición de Cernaval Group Shipyards por CVC DIF",
+          "fuente": "Financecommunity ES"
         },
         {
-          "texto": "OpenAI lanzó el 26 de octubre GPT-6.1 Terra a 1$/5$ por millón de tokens (entrada/salida), integrándolo en ChatGPT Work, Codex y API. Google Cloud y OpenAI sellaron el 21 de octubre una alianza para alojar modelos frontera y flujos Codex en Model Garden, permitiendo a las empresas usar sus compromisos de gasto en GCP",
-          "fuente": "explainx.ai Blog, OpenAI"
+          "texto": "ARK Invest destacó a Google Gemini 4 Carbon (59 puntos), Anthropic Claude Opus 5.5 y OpenAI GPT-6 Astra a la vanguardia en eficiencia de costes y razonamiento. OpenAI actualizó su Model Spec público estructurando la alineación de sus modelos en cinco valores clave, preparando el terreno para la familia Terra",
+          "fuente": "Crypto Briefing, OpenAI"
         }
       ]
     },
@@ -93,38 +93,27 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "TTR Data cierra septiembre con 2.261 operaciones y 73.803 M€ en España (-15% en volumen, -6% en importe interanual), confirmando la concentración de valor en tickets mayores y la selectividad extrema del capital",
-          "fuente": "AGM Abogados"
+          "texto": "El BCE mantuvo inalterados sus tipos (depósito 2,50%, principal 2,65%) tras las subidas de junio y septiembre para contrarrestar la presión inflacionaria importada por la crisis energética",
+          "fuente": "Trading Economics / BCE"
         },
         {
-          "texto": "Más de medio millón de empresarios españoles alcanzarán la jubilación antes de 2030 sin sucesor familiar identificado, consolidando la transmisión a private equity o industriales como palanca estructural del mid-market",
-          "fuente": "Capital-Riesgo.es"
+          "texto": "El mercado transaccional en España cerró agosto con 1.938 operaciones y 63.787 M€, un descenso interanual del 17% en número de transacciones y del 9% en capital movilizado",
+          "fuente": "Forbes España / TTR Data"
         },
         {
-          "texto": "El capex de los cinco hiperescaladores en infraestructura de IA se encamina a 800.000 M$ en 2026 y 1,3 B$ en 2027, trasladando el foco inversor a redes ópticas, data centers y capacidad energética",
-          "fuente": "Quartz"
+          "texto": "Los fondos de private equity acumulan más de 32.000 empresas en cartera con una antigüedad media superior a cinco años, incrementando la presión para desinvertir mediante operaciones secundarias o ventas a industriales",
+          "fuente": "Capital-Riesgo.es / TTR Data"
         },
         {
-          "texto": "La fragmentación tecnológica EE. UU.-Europa-China endurece las restricciones a exportaciones de computación avanzada y acelera la relocalización de cadenas críticas de minerales y semiconductores",
-          "fuente": "Persistence Market Research"
+          "texto": "Entrenamientos y filtraciones industriales documentan que OpenAI, Anthic y Google han sincronizado ciclos de desarrollo avanzado para lanzar modelos frontera orientados a la autonomía en software y razonamiento complejos a finales de 2026",
+          "fuente": "InvestingPro / The Information"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": [],
-      "subsecciones": [
-        {
-          "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "El 68,1% de los family offices españoles planea aumentar exposición a private equity (IE/Cuartrecasas/CaixaBank), validando la tesis de que el capital paciente nacional será comprador neto en el mid-market mientras la demografía (500.000 sucesiones pendientes) expulsa vendedores. La operación Noucor/Helm Pharmaceuticals (objetivo 200 M€ ingresos con MCH y family offices catalanes) ilustra el playbook ganador: roll-up transfronterizo sectorial, apalancamiento moderado y salida a industrial o fondo mayor. La selectividad TTR (-15% deals, -6% valor) obliga a presentar activos con due diligence reforzada y seguros W&I para cerrar en rangos de valoración defendibles",
-              "fuente": "CaixaBank, Capital-Riesgo.es, AGM Abogados"
-            }
-          ]
-        }
-      ]
+      "lineas": []
     }
   ],
-  "markdown": "## Hoy\nLa tregua humanitaria en Oleshky permite a Zelenskyy afirmar desde Estambul que la desescalada con Rusia es factible, mientras EE. UU. detecta un interés multilateral creciente por un alto el fuego limitado en el Mar Negro.\n\nEl líder supremo iraní Mojtaba Khamenei advierte de una respuesta militar \"sin límites geográficos\" ante cualquier nuevo ataque de EE. UU. o Israel, tensionando el Estrecho de Ormuz, mientras Rubio confirma que los contactos diplomáticos con Teherán persisten.\n\nLa fragmentación del G20 en Atlanta se salda sin comunicado conjunto ni consenso sobre Ucrania, Irán o el Mar de la China Meridional, reflejando la parálisis de la gobernanza global.\n\nLa OCHA eleva a 290.000 los desplazados en Yemen desde agosto por la intensificación de los combates, disparando precios de alimentos y carburantes.\n\nFuentes: The Guardian, Gulf News, Anadolu Ajansı, News.az\n\n## Esta semana\nLa Fed mantuvo el 28 de octubre los tipos en el 3,75-4,00% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos en su última reunión antes de los midterms.\n\nEl BCE replicó el 29 de octubre sin mover sus tres tasas (depósito 2,50%, principal 2,65%, marginal 2,90%) pero alertó de riesgos inflacionistas por el encarecimiento energético.\n\nWashington ha advertido a sus aliados del Golfo de posibles ataques selectivos contra Irán a partir del 4 de noviembre, tras las elecciones legislativas.\n\nOpenAI lanzó el 26 de octubre GPT-6.1 Terra a 1$/5$ por millón de tokens (entrada/salida), integrándolo en ChatGPT Work, Codex y API. Google Cloud y OpenAI sellaron el 21 de octubre una alianza para alojar modelos frontera y flujos Codex en Model Garden, permitiendo a las empresas usar sus compromisos de gasto en GCP.\n\nFuentes: Board of Governors of the Federal Reserve System, European Central Bank, The Times of Israel, explainx.ai Blog, OpenAI\n\n## Este mes\nTTR Data cierra septiembre con 2.261 operaciones y 73.803 M€ en España (-15% en volumen, -6% en importe interanual), confirmando la concentración de valor en tickets mayores y la selectividad extrema del capital.\n\nMás de medio millón de empresarios españoles alcanzarán la jubilación antes de 2030 sin sucesor familiar identificado, consolidando la transmisión a private equity o industriales como palanca estructural del mid-market.\n\nEl capex de los cinco hiperescaladores en infraestructura de IA se encamina a 800.000 M$ en 2026 y 1,3 B$ en 2027, trasladando el foco inversor a redes ópticas, data centers y capacidad energética.\n\nLa fragmentación tecnológica EE. UU.-Europa-China endurece las restricciones a exportaciones de computación avanzada y acelera la relocalización de cadenas críticas de minerales y semiconductores.\n\nFuentes: AGM Abogados, Capital-Riesgo.es, Quartz, Persistence Market Research\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl 68,1% de los family offices españoles planea aumentar exposición a private equity (IE/Cuartrecasas/CaixaBank), validando la tesis de que el capital paciente nacional será comprador neto en el mid-market mientras la demografía (500.000 sucesiones pendientes) expulsa vendedores. La operación Noucor/Helm Pharmaceuticals (objetivo 200 M€ ingresos con MCH y family offices catalanes) ilustra el playbook ganador: roll-up transfronterizo sectorial, apalancamiento moderado y salida a industrial o fondo mayor. La selectividad TTR (-15% deals, -6% valor) obliga a presentar activos con due diligence reforzada y seguros W&I para cerrar en rangos de valoración defendibles.\n\nFuentes: CaixaBank, Capital-Riesgo.es, AGM Abogados"
+  "markdown": "## Hoy\nAtaques informáticos masivos afectaron este lunes a las aplicaciones móviles de alertas de emergencia en Rusia y Ucrania, enviando notificaciones falsas, mientras se registran combates aéreos masivos con drones.\n\nIrán advirtió que una nueva guerra con EE. UU. podría durar más que las anteriores, después de que Trump amenazara con más ataques y manifestara que debe ocuparse de más objetivos antes o después de los midterms.\n\nEl petróleo Brent bajó hacia los 111 dólares por barril tras informes de que Trump prefiere dar más tiempo a la diplomacia con Irán, templando los temores sobre un corte en el Estrecho de Ormuz.\n\nFondos oportunistas de crédito alternativo, como Oak Hill Advisors, han empezado a mapear oportunidades de reestructuración en el sector renovable español ante precios de electricidad por debajo de previsiones y tensiones en los covenants de deuda.\n\nFuentes: El Periódico, The Daily Star, The Edge Malaysia, elEconomista\n\n## Esta semana\nEl Departamento de Estado de EE. UU. autorizó la venta de 500 misiles para sistemas Patriot a Ucrania ante los retrasos en los suministros defensivos.\n\nEl Banco Mundial advirtió que los precios mundiales del combustible subirán un 32% en promedio en 2026, estimando el crudo Brent en 91 dólares por barril debido a interrupciones de suministro en Oriente Medio y Ucrania. La Fed mantuvo los tipos en el 3,75%-4% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos, dejando la puerta abierta a un endurecimiento en diciembre ante datos de inflación persistentes.\n\nBDO España asesoró a LINK Mobility en la adquisición de LabsMobile por 2,4 millones de euros, mientras Deloitte y CaixaBank CIB asesoraron en la adquisición de Cernaval Group Shipyards por CVC DIF.\n\nARK Invest destacó a Google Gemini 4 Carbon (59 puntos), Anthropic Claude Opus 5.5 y OpenAI GPT-6 Astra a la vanguardia en eficiencia de costes y razonamiento. OpenAI actualizó su Model Spec público estructurando la alineación de sus modelos en cinco valores clave, preparando el terreno para la familia Terra.\n\nFuentes: El Periódico, Textile Today, Bank of Ireland Corporate, Financecommunity ES, Crypto Briefing, OpenAI\n\n## Este mes\nEl BCE mantuvo inalterados sus tipos (depósito 2,50%, principal 2,65%) tras las subidas de junio y septiembre para contrarrestar la presión inflacionaria importada por la crisis energética.\n\nEl mercado transaccional en España cerró agosto con 1.938 operaciones y 63.787 M€, un descenso interanual del 17% en número de transacciones y del 9% en capital movilizado.\n\nLos fondos de private equity acumulan más de 32.000 empresas en cartera con una antigüedad media superior a cinco años, incrementando la presión para desinvertir mediante operaciones secundarias o ventas a industriales.\n\nEntrenamientos y filtraciones industriales documentan que OpenAI, Anthic y Google han sincronizado ciclos de desarrollo avanzado para lanzar modelos frontera orientados a la autonomía en software y razonamiento complejos a finales de 2026.\n\nFuentes: Trading Economics / BCE, Forbes España / TTR Data, Capital-Riesgo.es / TTR Data, InvestingPro / The Information"
 }
