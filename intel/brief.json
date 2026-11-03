@@ -1,70 +1,74 @@
 {
-  "fecha": "2026-11-02",
+  "fecha": "2026-11-03",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipos Fed",
-      "valor": "3,75%-4,00%",
-      "fuente": "Bank of Ireland Corporate"
+      "etiqueta": "Flujo caja NOCs Oriente Medio",
+      "valor": "+35.000 M$",
+      "fuente": "GlobeNewswire"
     },
     {
-      "etiqueta": "Petróleo Brent",
-      "valor": "111 $/barril",
-      "fuente": "The Edge Malaysia"
+      "etiqueta": "Tipo depósito BCE",
+      "valor": "2,50%",
+      "fuente": "El País / Bankinter"
     },
     {
-      "etiqueta": "Precios combustibles",
-      "valor": "+32% en 2026",
-      "fuente": "Textile Today"
+      "etiqueta": "Plazo alto riesgo AI Act",
+      "valor": "2 dic 2027",
+      "fuente": "Cloud Security Alliance"
     },
     {
-      "etiqueta": "Operaciones M&A España",
-      "valor": "1.938",
-      "fuente": "Forbes España / TTR Data"
+      "etiqueta": "Search funds España",
+      "valor": "118 vehículos",
+      "fuente": "M&A sin Rodeos"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 5
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "GLM"
+      "Nemotron"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: GLM"
+    "texto": "Investigación: Gemini · Redacción: Nemotron"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Ataques informáticos masivos afectaron este lunes a las aplicaciones móviles de alertas de emergencia en Rusia y Ucrania, enviando notificaciones falsas, mientras se registran combates aéreos masivos con drones",
-          "fuente": "El Periódico"
+          "texto": "El enviado especial Steve Witkoff confirmó la mediación estadounidense en una cumbre trilateral Ucrania-Rusia los días 10 y 11 de noviembre en Abu Dabi, mientras Kiev denuncia un ataque ruso contra una escuela-refugio en Zaporiyia con 26 víctimas mortales",
+          "fuente": "RTVE"
         },
         {
-          "texto": "Irán advirtió que una nueva guerra con EE. UU. podría durar más que las anteriores, después de que Trump amenazara con más ataques y manifestara que debe ocuparse de más objetivos antes o después de los midterms",
-          "fuente": "The Daily Star"
+          "texto": "En el frente comercial norteamericano, Mark Carney y Donald Trump anunciaron avances decisivos para un acuerdo bilateral Canadá-EE. UU. que incluiría la construcción del gasoducto Keystone XL financiada por Ottawa, a días de las elecciones legislativas estadounidenses",
+          "fuente": "iPolitics"
         },
         {
-          "texto": "El petróleo Brent bajó hacia los 111 dólares por barril tras informes de que Trump prefiere dar más tiempo a la diplomacia con Irán, templando los temores sobre un corte en el Estrecho de Ormuz",
-          "fuente": "The Edge Malaysia"
+          "texto": "Taiwán endurece su marco legal contra la fuga de tecnología: el Yuan Legislativo tramita una enmienda que castiga con hasta 10 años de cárcel y multas de 310.000 dólares el contrabando de chips de IA avanzados hacia China, tras detectarse desvíos de servidores con GPUs Nvidia B300 por terceros países",
+          "fuente": "Asia Times"
         },
         {
-          "texto": "Fondos oportunistas de crédito alternativo, como Oak Hill Advisors, han empezado a mapear oportunidades de reestructuración en el sector renovable español ante precios de electricidad por debajo de previsiones y tensiones en los covenants de deuda",
-          "fuente": "elEconomista"
+          "texto": "Anthropic activa desde hoy marcas de agua textuales en sus familias Mythos 5, Opus 4.7, Opus 4.6 y Sonnet 4.6 para rastrear contenido sintético mediante patrones léxicos derivados de SynthID",
+          "fuente": "Pasquale Pillitteri"
+        },
+        {
+          "texto": "Nvidia impone a sus clientes cloud la obligación de destinar al menos el 51% de su capacidad GPU a entidades no chinas, mientras sus racks MGX y sistemas NVL72 con silicio Blackwell alcanzan un ritmo de despliegue de 1.000 unidades semanales entre los hiperescaladores",
+          "fuente": "Crypto Briefing / Crypto Briefing (Racks)"
         }
       ]
     },
@@ -72,20 +76,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El Departamento de Estado de EE. UU. autorizó la venta de 500 misiles para sistemas Patriot a Ucrania ante los retrasos en los suministros defensivos",
-          "fuente": "El Periódico"
+          "texto": "Wood Mackenzie cuantifica en 35.000 millones de dólares adicionales el flujo de caja operativo que ADNOC, Saudi Aramco y QatarEnergy han capturado gracias a rutas de bypass y transferencias barco a barco, un 25% más pese a los riesgos en Ormuz y el Mar Rojo",
+          "fuente": "GlobeNewswire"
         },
         {
-          "texto": "El Banco Mundial advirtió que los precios mundiales del combustible subirán un 32% en promedio en 2026, estimando el crudo Brent en 91 dólares por barril debido a interrupciones de suministro en Oriente Medio y Ucrania. La Fed mantuvo los tipos en el 3,75%-4% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos, dejando la puerta abierta a un endurecimiento en diciembre ante datos de inflación persistentes",
-          "fuente": "Textile Today, Bank of Ireland Corporate"
+          "texto": "La Fed de Kevin Warsh y el BCE de Christine Lagarde mantuvieron tipos invariados (3,75%-4,00% y 2,50% depósito respectivamente) ante las midterms, aunque Lagarde condiciona una posible subida en diciembre a la persistencia de las presiones inflacionarias energéticas",
+          "fuente": "El País / Bankinter"
         },
         {
-          "texto": "BDO España asesoró a LINK Mobility en la adquisición de LabsMobile por 2,4 millones de euros, mientras Deloitte y CaixaBank CIB asesoraron en la adquisición de Cernaval Group Shipyards por CVC DIF",
-          "fuente": "Financecommunity ES"
+          "texto": "Google DeepMind coloca a Gemini 4 Carbon al frente del índice v5.0 de Artificial Analysis con 59 puntos, superando a Claude Opus 5.5 y GPT-6 Astra, consolidando su ventaja en ciberseguridad y razonamiento de largo alcance",
+          "fuente": "Dealroom News"
         },
         {
-          "texto": "ARK Invest destacó a Google Gemini 4 Carbon (59 puntos), Anthropic Claude Opus 5.5 y OpenAI GPT-6 Astra a la vanguardia en eficiencia de costes y razonamiento. OpenAI actualizó su Model Spec público estructurando la alineación de sus modelos en cinco valores clave, preparando el terreno para la familia Terra",
-          "fuente": "Crypto Briefing, OpenAI"
+          "texto": "OpenAI, Microsoft, Anthropic y Google acuerdan un estándar unificado en robots.txt que permite a los editores bloquear selectivamente el entrenamiento de modelos generativos sin perder indexación en buscadores tradicionales",
+          "fuente": "The Verge"
+        },
+        {
+          "texto": "El mercado M&A español registró 1.485 operaciones en el primer semestre (-15% interanual) pero mantuvo el capital movilizado en 50.474 millones, impulsado por un modelo \"transformacional\" centrado en adquirir talento y capacidades tecnológicas frente a volumen inorgánico",
+          "fuente": "Law&Trends"
         }
       ]
     },
@@ -93,27 +101,34 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE mantuvo inalterados sus tipos (depósito 2,50%, principal 2,65%) tras las subidas de junio y septiembre para contrarrestar la presión inflacionaria importada por la crisis energética",
-          "fuente": "Trading Economics / BCE"
+          "texto": "El Consejo de la UE aprueba el paquete Digital Omnibus on AI que aplaza 16 meses el cumplimiento de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y hasta agosto de 2028 para IA embebida en productos regulados, mientras transparencia (Art. 50) y gobernanza GPAI mantienen su calendario desde agosto de 2026",
+          "fuente": "Cloud Security Alliance"
         },
         {
-          "texto": "El mercado transaccional en España cerró agosto con 1.938 operaciones y 63.787 M€, un descenso interanual del 17% en número de transacciones y del 9% en capital movilizado",
-          "fuente": "Forbes España / TTR Data"
+          "texto": "EE. UU. y China mantienen formalmente la tregua arancelaria de 2025 a la espera de las revisiones de noviembre, aunque ambas potencias consolidan una desvinculación estructural con refuerzo de cadenas críticas bajo criterios de seguridad nacional",
+          "fuente": "Hallazgo sin medio citado en la lista"
         },
         {
-          "texto": "Los fondos de private equity acumulan más de 32.000 empresas en cartera con una antigüedad media superior a cinco años, incrementando la presión para desinvertir mediante operaciones secundarias o ventas a industriales",
-          "fuente": "Capital-Riesgo.es / TTR Data"
-        },
-        {
-          "texto": "Entrenamientos y filtraciones industriales documentan que OpenAI, Anthic y Google han sincronizado ciclos de desarrollo avanzado para lanzar modelos frontera orientados a la autonomía en software y razonamiento complejos a finales de 2026",
-          "fuente": "InvestingPro / The Information"
+          "texto": "La cadena de suministro de memorias GDDR y DRAM sufre triplicación de precios spot según TrendForce, forzando a Nvidia a replantear la distribución directa de dies de silicio a partners y ensambladores",
+          "fuente": "Hallazgo sin medio citado en la lista"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": []
+      "lineas": [],
+      "subsecciones": [
+        {
+          "titulo": "Edges para CT Advisory",
+          "lineas": [
+            {
+              "texto": "Bondo Advisors mapea 118 search funds en España (2011-oct 2026) con 66 adquisiciones cerradas, 13 eventos de salida y series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en el segmento de transferencia empresarial",
+              "fuente": "M&A sin Rodeos"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "markdown": "## Hoy\nAtaques informáticos masivos afectaron este lunes a las aplicaciones móviles de alertas de emergencia en Rusia y Ucrania, enviando notificaciones falsas, mientras se registran combates aéreos masivos con drones.\n\nIrán advirtió que una nueva guerra con EE. UU. podría durar más que las anteriores, después de que Trump amenazara con más ataques y manifestara que debe ocuparse de más objetivos antes o después de los midterms.\n\nEl petróleo Brent bajó hacia los 111 dólares por barril tras informes de que Trump prefiere dar más tiempo a la diplomacia con Irán, templando los temores sobre un corte en el Estrecho de Ormuz.\n\nFondos oportunistas de crédito alternativo, como Oak Hill Advisors, han empezado a mapear oportunidades de reestructuración en el sector renovable español ante precios de electricidad por debajo de previsiones y tensiones en los covenants de deuda.\n\nFuentes: El Periódico, The Daily Star, The Edge Malaysia, elEconomista\n\n## Esta semana\nEl Departamento de Estado de EE. UU. autorizó la venta de 500 misiles para sistemas Patriot a Ucrania ante los retrasos en los suministros defensivos.\n\nEl Banco Mundial advirtió que los precios mundiales del combustible subirán un 32% en promedio en 2026, estimando el crudo Brent en 91 dólares por barril debido a interrupciones de suministro en Oriente Medio y Ucrania. La Fed mantuvo los tipos en el 3,75%-4% con dos disidencias (Cook y Hammack) que pedían subir 25 puntos básicos, dejando la puerta abierta a un endurecimiento en diciembre ante datos de inflación persistentes.\n\nBDO España asesoró a LINK Mobility en la adquisición de LabsMobile por 2,4 millones de euros, mientras Deloitte y CaixaBank CIB asesoraron en la adquisición de Cernaval Group Shipyards por CVC DIF.\n\nARK Invest destacó a Google Gemini 4 Carbon (59 puntos), Anthropic Claude Opus 5.5 y OpenAI GPT-6 Astra a la vanguardia en eficiencia de costes y razonamiento. OpenAI actualizó su Model Spec público estructurando la alineación de sus modelos en cinco valores clave, preparando el terreno para la familia Terra.\n\nFuentes: El Periódico, Textile Today, Bank of Ireland Corporate, Financecommunity ES, Crypto Briefing, OpenAI\n\n## Este mes\nEl BCE mantuvo inalterados sus tipos (depósito 2,50%, principal 2,65%) tras las subidas de junio y septiembre para contrarrestar la presión inflacionaria importada por la crisis energética.\n\nEl mercado transaccional en España cerró agosto con 1.938 operaciones y 63.787 M€, un descenso interanual del 17% en número de transacciones y del 9% en capital movilizado.\n\nLos fondos de private equity acumulan más de 32.000 empresas en cartera con una antigüedad media superior a cinco años, incrementando la presión para desinvertir mediante operaciones secundarias o ventas a industriales.\n\nEntrenamientos y filtraciones industriales documentan que OpenAI, Anthic y Google han sincronizado ciclos de desarrollo avanzado para lanzar modelos frontera orientados a la autonomía en software y razonamiento complejos a finales de 2026.\n\nFuentes: Trading Economics / BCE, Forbes España / TTR Data, Capital-Riesgo.es / TTR Data, InvestingPro / The Information"
+  "markdown": "## Hoy\nEl enviado especial Steve Witkoff confirmó la mediación estadounidense en una cumbre trilateral Ucrania-Rusia los días 10 y 11 de noviembre en Abu Dabi, mientras Kiev denuncia un ataque ruso contra una escuela-refugio en Zaporiyia con 26 víctimas mortales.\n\nEn el frente comercial norteamericano, Mark Carney y Donald Trump anunciaron avances decisivos para un acuerdo bilateral Canadá-EE. UU. que incluiría la construcción del gasoducto Keystone XL financiada por Ottawa, a días de las elecciones legislativas estadounidenses.\n\nTaiwán endurece su marco legal contra la fuga de tecnología: el Yuan Legislativo tramita una enmienda que castiga con hasta 10 años de cárcel y multas de 310.000 dólares el contrabando de chips de IA avanzados hacia China, tras detectarse desvíos de servidores con GPUs Nvidia B300 por terceros países.\n\nAnthropic activa desde hoy marcas de agua textuales en sus familias Mythos 5, Opus 4.7, Opus 4.6 y Sonnet 4.6 para rastrear contenido sintético mediante patrones léxicos derivados de SynthID.\n\nNvidia impone a sus clientes cloud la obligación de destinar al menos el 51% de su capacidad GPU a entidades no chinas, mientras sus racks MGX y sistemas NVL72 con silicio Blackwell alcanzan un ritmo de despliegue de 1.000 unidades semanales entre los hiperescaladores.\n\nFuentes: RTVE, iPolitics, Asia Times, Pasquale Pillitteri, Crypto Briefing / Crypto Briefing (Racks)\n\n## Esta semana\nWood Mackenzie cuantifica en 35.000 millones de dólares adicionales el flujo de caja operativo que ADNOC, Saudi Aramco y QatarEnergy han capturado gracias a rutas de bypass y transferencias barco a barco, un 25% más pese a los riesgos en Ormuz y el Mar Rojo.\n\nLa Fed de Kevin Warsh y el BCE de Christine Lagarde mantuvieron tipos invariados (3,75%-4,00% y 2,50% depósito respectivamente) ante las midterms, aunque Lagarde condiciona una posible subida en diciembre a la persistencia de las presiones inflacionarias energéticas.\n\nGoogle DeepMind coloca a Gemini 4 Carbon al frente del índice v5.0 de Artificial Analysis con 59 puntos, superando a Claude Opus 5.5 y GPT-6 Astra, consolidando su ventaja en ciberseguridad y razonamiento de largo alcance.\n\nOpenAI, Microsoft, Anthropic y Google acuerdan un estándar unificado en robots.txt que permite a los editores bloquear selectivamente el entrenamiento de modelos generativos sin perder indexación en buscadores tradicionales.\n\nEl mercado M&A español registró 1.485 operaciones en el primer semestre (-15% interanual) pero mantuvo el capital movilizado en 50.474 millones, impulsado por un modelo \"transformacional\" centrado en adquirir talento y capacidades tecnológicas frente a volumen inorgánico.\n\nFuentes: GlobeNewswire, El País / Bankinter, Dealroom News, The Verge, Law&Trends\n\n## Este mes\nEl Consejo de la UE aprueba el paquete Digital Omnibus on AI que aplaza 16 meses el cumplimiento de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y hasta agosto de 2028 para IA embebida en productos regulados, mientras transparencia (Art. 50) y gobernanza GPAI mantienen su calendario desde agosto de 2026.\n\nEE. UU. y China mantienen formalmente la tregua arancelaria de 2025 a la espera de las revisiones de noviembre, aunque ambas potencias consolidan una desvinculación estructural con refuerzo de cadenas críticas bajo criterios de seguridad nacional.\n\nLa cadena de suministro de memorias GDDR y DRAM sufre triplicación de precios spot según TrendForce, forzando a Nvidia a replantear la distribución directa de dies de silicio a partners y ensambladores.\n\nFuentes: Cloud Security Alliance, Hallazgo sin medio citado en la lista\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nBondo Advisors mapea 118 search funds en España (2011-oct 2026) con 66 adquisiciones cerradas, 13 eventos de salida y series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en el segmento de transferencia empresarial.\n\nFuentes: M&A sin Rodeos"
 }
