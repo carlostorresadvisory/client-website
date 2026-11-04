@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-03",
+  "fecha": "2026-11-04",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Flujo caja NOCs Oriente Medio",
-      "valor": "+35.000 M$",
-      "fuente": "GlobeNewswire"
+      "etiqueta": "Capital movilizado M&A España",
+      "valor": "73.803 M€",
+      "fuente": "Europa Press"
     },
     {
-      "etiqueta": "Tipo depósito BCE",
-      "valor": "2,50%",
-      "fuente": "El País / Bankinter"
+      "etiqueta": "Tipo facilidad depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "ECB"
     },
     {
-      "etiqueta": "Plazo alto riesgo AI Act",
-      "valor": "2 dic 2027",
-      "fuente": "Cloud Security Alliance"
+      "etiqueta": "Tipo fondos federales Fed",
+      "valor": "3,75%-4,00 %",
+      "fuente": "Federal Reserve"
     },
     {
-      "etiqueta": "Search funds España",
-      "valor": "118 vehículos",
-      "fuente": "M&A sin Rodeos"
+      "etiqueta": "Liderazgo IA benchmarks",
+      "valor": "59,4 pts",
+      "fuente": "Fello AI"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 3
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,24 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El enviado especial Steve Witkoff confirmó la mediación estadounidense en una cumbre trilateral Ucrania-Rusia los días 10 y 11 de noviembre en Abu Dabi, mientras Kiev denuncia un ataque ruso contra una escuela-refugio en Zaporiyia con 26 víctimas mortales",
-          "fuente": "RTVE"
+          "texto": "Irán intentó derribar un avión militar estadounidense cerca de la isla de Qeshm en el Estrecho de Ormuz el 2 de noviembre, lo que provocó una respuesta defensiva de Washington confirmada por el Wall Street Journal",
+          "fuente": "ISW"
         },
         {
-          "texto": "En el frente comercial norteamericano, Mark Carney y Donald Trump anunciaron avances decisivos para un acuerdo bilateral Canadá-EE. UU. que incluiría la construcción del gasoducto Keystone XL financiada por Ottawa, a días de las elecciones legislativas estadounidenses",
-          "fuente": "iPolitics"
+          "texto": "Trump confirmó al día siguiente ataques selectivos de castigo en el Estrecho manteniendo la puerta abierta a una mayor escalada militar en vísperas de las elecciones de mitad de mandato del 3 de noviembre",
+          "fuente": "CBS News"
         },
         {
-          "texto": "Taiwán endurece su marco legal contra la fuga de tecnología: el Yuan Legislativo tramita una enmienda que castiga con hasta 10 años de cárcel y multas de 310.000 dólares el contrabando de chips de IA avanzados hacia China, tras detectarse desvíos de servidores con GPUs Nvidia B300 por terceros países",
-          "fuente": "Asia Times"
+          "texto": "Un petrolero fue alcanzado el 3 de noviembre por dos proyectiles en su sala de máquinas cerca de las costas de Omán sin heridos graves, según la agencia UKMTO",
+          "fuente": "CBS News"
         },
         {
-          "texto": "Anthropic activa desde hoy marcas de agua textuales en sus familias Mythos 5, Opus 4.7, Opus 4.6 y Sonnet 4.6 para rastrear contenido sintético mediante patrones léxicos derivados de SynthID",
-          "fuente": "Pasquale Pillitteri"
-        },
-        {
-          "texto": "Nvidia impone a sus clientes cloud la obligación de destinar al menos el 51% de su capacidad GPU a entidades no chinas, mientras sus racks MGX y sistemas NVL72 con silicio Blackwell alcanzan un ritmo de despliegue de 1.000 unidades semanales entre los hiperescaladores",
-          "fuente": "Crypto Briefing / Crypto Briefing (Racks)"
+          "texto": "Lukashenko pronosticó en la Conferencia de Minsk del 3 de noviembre que la guerra en Ucrania terminará en meses por agotamiento total de recursos en todos los frentes",
+          "fuente": "Lukashenko believes war in Ukraine will end within months"
         }
       ]
     },
@@ -76,24 +72,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Wood Mackenzie cuantifica en 35.000 millones de dólares adicionales el flujo de caja operativo que ADNOC, Saudi Aramco y QatarEnergy han capturado gracias a rutas de bypass y transferencias barco a barco, un 25% más pese a los riesgos en Ormuz y el Mar Rojo",
-          "fuente": "GlobeNewswire"
+          "texto": "El índice Artificial Analysis v5 sitúa a Google Gemini 4 Carbon al frente con 59,4 puntos, seguido por Claude Opus 5,5 con 58,4 y GPT-6 Astra con 56,9, en un mercado donde Mistral liberó el 29 de octubre los pesos abiertos de Mistral Large 4, modelo MoE de ~1 billón de parámetros con 49B activos",
+          "fuente": "Fello AI"
         },
         {
-          "texto": "La Fed de Kevin Warsh y el BCE de Christine Lagarde mantuvieron tipos invariados (3,75%-4,00% y 2,50% depósito respectivamente) ante las midterms, aunque Lagarde condiciona una posible subida en diciembre a la persistencia de las presiones inflacionarias energéticas",
-          "fuente": "El País / Bankinter"
+          "texto": "Anthropic lanzó el 28 de octubre Claude Sonnet 5,5, que opera un 30 % más rápido y reduce costes un 30 % respecto a su antecesor, registrando un 70,6 % en el benchmark de programación autónoma Terminal-Bench 4.0",
+          "fuente": "Anthropic"
         },
         {
-          "texto": "Google DeepMind coloca a Gemini 4 Carbon al frente del índice v5.0 de Artificial Analysis con 59 puntos, superando a Claude Opus 5.5 y GPT-6 Astra, consolidando su ventaja en ciberseguridad y razonamiento de largo alcance",
-          "fuente": "Dealroom News"
-        },
-        {
-          "texto": "OpenAI, Microsoft, Anthropic y Google acuerdan un estándar unificado en robots.txt que permite a los editores bloquear selectivamente el entrenamiento de modelos generativos sin perder indexación en buscadores tradicionales",
-          "fuente": "The Verge"
-        },
-        {
-          "texto": "El mercado M&A español registró 1.485 operaciones en el primer semestre (-15% interanual) pero mantuvo el capital movilizado en 50.474 millones, impulsado por un modelo \"transformacional\" centrado en adquirir talento y capacidades tecnológicas frente a volumen inorgánico",
-          "fuente": "Law&Trends"
+          "texto": "OpenAI actualizó el 29 de octubre su Model Spec público reorganizando la alineación de seguridad en torno a cinco valores nucleares: fidelidad a la intención humana, minimización de daños, honestidad, agencia humana y cuidado",
+          "fuente": "OpenAI"
         }
       ]
     },
@@ -101,16 +89,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Consejo de la UE aprueba el paquete Digital Omnibus on AI que aplaza 16 meses el cumplimiento de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y hasta agosto de 2028 para IA embebida en productos regulados, mientras transparencia (Art. 50) y gobernanza GPAI mantienen su calendario desde agosto de 2026",
-          "fuente": "Cloud Security Alliance"
+          "texto": "El mercado transaccional español acumuló 73.803 M€ a través de 2.261 operaciones anunciadas o cerradas hasta septiembre, un 6 % menos interanual en volumen global, según TTR Data publicado el 8 de octubre. La adquisición de Webster Financial Corporation por Banco Santander, valorada en 10.325 M€, encabeza el ranking de grandes salidas de entidades españolas con cierre de asesoramiento estructurado registrado en informes del Q3 2026",
+          "fuente": "M&A en España: 73.803 millones hasta septiembre"
         },
         {
-          "texto": "EE. UU. y China mantienen formalmente la tregua arancelaria de 2025 a la espera de las revisiones de noviembre, aunque ambas potencias consolidan una desvinculación estructural con refuerzo de cadenas críticas bajo criterios de seguridad nacional",
-          "fuente": "Hallazgo sin medio citado en la lista"
+          "texto": "Los family offices españoles destinan de media un 47,2 % de su asignación a mercados privados (16,2 % inmobiliario, 13,2 % private equity, 10,5 % venture capital) y el 68 % planea incrementar su peso en activos alternativos en los próximos cinco años, según el estudio del IE Family Offices Knowledge Hub presentado a mediados de octubre junto a Cuatrecasas, Franklin Templeton y OpenWealth",
+          "fuente": "El Asesor Financiero"
         },
         {
-          "texto": "La cadena de suministro de memorias GDDR y DRAM sufre triplicación de precios spot según TrendForce, forzando a Nvidia a replantear la distribución directa de dies de silicio a partners y ensambladores",
-          "fuente": "Hallazgo sin medio citado en la lista"
+          "texto": "En financiación estructurada, Tresmares facilitó en octubre un paquete a Laboral Group y Comunidad 10 para consolidar su presencia en las 17 comunidades autónomas prestando servicios a más de 59.000 pymes. Despachos como Cuatrecasas y Andersen actualizaron en octubre sus guías sobre simplificación de reorganizaciones empresariales y régimen de incentivos a la transmisión de empresa familiar bajo el RDL 5/2023, instando a separar activos no afectos antes de procesos de due diligence",
+          "fuente": "Albia IMAP, Cuatrecasas"
         }
       ]
     },
@@ -122,13 +110,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Bondo Advisors mapea 118 search funds en España (2011-oct 2026) con 66 adquisiciones cerradas, 13 eventos de salida y series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en el segmento de transferencia empresarial",
+              "texto": "El mapa de search funds en España (2011-oct 2026) contabiliza 118 vehículos con 66 adquisiciones cerradas y 13 salidas, junto a series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en transferencia empresarial",
               "fuente": "M&A sin Rodeos"
+            },
+            {
+              "texto": "La simplificación de reorganizaciones bajo RDL 5/2023 y la separación de activos no afectos previa a due diligence abren ventana operativa para restructuraciones eficientes en sucesión de empresa familiar",
+              "fuente": "Cuatrecasas"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl enviado especial Steve Witkoff confirmó la mediación estadounidense en una cumbre trilateral Ucrania-Rusia los días 10 y 11 de noviembre en Abu Dabi, mientras Kiev denuncia un ataque ruso contra una escuela-refugio en Zaporiyia con 26 víctimas mortales.\n\nEn el frente comercial norteamericano, Mark Carney y Donald Trump anunciaron avances decisivos para un acuerdo bilateral Canadá-EE. UU. que incluiría la construcción del gasoducto Keystone XL financiada por Ottawa, a días de las elecciones legislativas estadounidenses.\n\nTaiwán endurece su marco legal contra la fuga de tecnología: el Yuan Legislativo tramita una enmienda que castiga con hasta 10 años de cárcel y multas de 310.000 dólares el contrabando de chips de IA avanzados hacia China, tras detectarse desvíos de servidores con GPUs Nvidia B300 por terceros países.\n\nAnthropic activa desde hoy marcas de agua textuales en sus familias Mythos 5, Opus 4.7, Opus 4.6 y Sonnet 4.6 para rastrear contenido sintético mediante patrones léxicos derivados de SynthID.\n\nNvidia impone a sus clientes cloud la obligación de destinar al menos el 51% de su capacidad GPU a entidades no chinas, mientras sus racks MGX y sistemas NVL72 con silicio Blackwell alcanzan un ritmo de despliegue de 1.000 unidades semanales entre los hiperescaladores.\n\nFuentes: RTVE, iPolitics, Asia Times, Pasquale Pillitteri, Crypto Briefing / Crypto Briefing (Racks)\n\n## Esta semana\nWood Mackenzie cuantifica en 35.000 millones de dólares adicionales el flujo de caja operativo que ADNOC, Saudi Aramco y QatarEnergy han capturado gracias a rutas de bypass y transferencias barco a barco, un 25% más pese a los riesgos en Ormuz y el Mar Rojo.\n\nLa Fed de Kevin Warsh y el BCE de Christine Lagarde mantuvieron tipos invariados (3,75%-4,00% y 2,50% depósito respectivamente) ante las midterms, aunque Lagarde condiciona una posible subida en diciembre a la persistencia de las presiones inflacionarias energéticas.\n\nGoogle DeepMind coloca a Gemini 4 Carbon al frente del índice v5.0 de Artificial Analysis con 59 puntos, superando a Claude Opus 5.5 y GPT-6 Astra, consolidando su ventaja en ciberseguridad y razonamiento de largo alcance.\n\nOpenAI, Microsoft, Anthropic y Google acuerdan un estándar unificado en robots.txt que permite a los editores bloquear selectivamente el entrenamiento de modelos generativos sin perder indexación en buscadores tradicionales.\n\nEl mercado M&A español registró 1.485 operaciones en el primer semestre (-15% interanual) pero mantuvo el capital movilizado en 50.474 millones, impulsado por un modelo \"transformacional\" centrado en adquirir talento y capacidades tecnológicas frente a volumen inorgánico.\n\nFuentes: GlobeNewswire, El País / Bankinter, Dealroom News, The Verge, Law&Trends\n\n## Este mes\nEl Consejo de la UE aprueba el paquete Digital Omnibus on AI que aplaza 16 meses el cumplimiento de alto riesgo (Annex III) hasta el 2 de diciembre de 2027 y hasta agosto de 2028 para IA embebida en productos regulados, mientras transparencia (Art. 50) y gobernanza GPAI mantienen su calendario desde agosto de 2026.\n\nEE. UU. y China mantienen formalmente la tregua arancelaria de 2025 a la espera de las revisiones de noviembre, aunque ambas potencias consolidan una desvinculación estructural con refuerzo de cadenas críticas bajo criterios de seguridad nacional.\n\nLa cadena de suministro de memorias GDDR y DRAM sufre triplicación de precios spot según TrendForce, forzando a Nvidia a replantear la distribución directa de dies de silicio a partners y ensambladores.\n\nFuentes: Cloud Security Alliance, Hallazgo sin medio citado en la lista\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nBondo Advisors mapea 118 search funds en España (2011-oct 2026) con 66 adquisiciones cerradas, 13 eventos de salida y series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en el segmento de transferencia empresarial.\n\nFuentes: M&A sin Rodeos"
+  "markdown": "## Hoy\nIrán intentó derribar un avión militar estadounidense cerca de la isla de Qeshm en el Estrecho de Ormuz el 2 de noviembre, lo que provocó una respuesta defensiva de Washington confirmada por el Wall Street Journal.\n\nTrump confirmó al día siguiente ataques selectivos de castigo en el Estrecho manteniendo la puerta abierta a una mayor escalada militar en vísperas de las elecciones de mitad de mandato del 3 de noviembre.\n\nUn petrolero fue alcanzado el 3 de noviembre por dos proyectiles en su sala de máquinas cerca de las costas de Omán sin heridos graves, según la agencia UKMTO.\n\nLukashenko pronosticó en la Conferencia de Minsk del 3 de noviembre que la guerra en Ucrania terminará en meses por agotamiento total de recursos en todos los frentes.\n\nFuentes: ISW, CBS News, Lukashenko believes war in Ukraine will end within months\n\n## Esta semana\nEl índice Artificial Analysis v5 sitúa a Google Gemini 4 Carbon al frente con 59,4 puntos, seguido por Claude Opus 5,5 con 58,4 y GPT-6 Astra con 56,9, en un mercado donde Mistral liberó el 29 de octubre los pesos abiertos de Mistral Large 4, modelo MoE de ~1 billón de parámetros con 49B activos.\n\nAnthropic lanzó el 28 de octubre Claude Sonnet 5,5, que opera un 30 % más rápido y reduce costes un 30 % respecto a su antecesor, registrando un 70,6 % en el benchmark de programación autónoma Terminal-Bench 4.0.\n\nOpenAI actualizó el 29 de octubre su Model Spec público reorganizando la alineación de seguridad en torno a cinco valores nucleares: fidelidad a la intención humana, minimización de daños, honestidad, agencia humana y cuidado.\n\nFuentes: Fello AI, Anthropic, OpenAI\n\n## Este mes\nEl mercado transaccional español acumuló 73.803 M€ a través de 2.261 operaciones anunciadas o cerradas hasta septiembre, un 6 % menos interanual en volumen global, según TTR Data publicado el 8 de octubre. La adquisición de Webster Financial Corporation por Banco Santander, valorada en 10.325 M€, encabeza el ranking de grandes salidas de entidades españolas con cierre de asesoramiento estructurado registrado en informes del Q3 2026.\n\nLos family offices españoles destinan de media un 47,2 % de su asignación a mercados privados (16,2 % inmobiliario, 13,2 % private equity, 10,5 % venture capital) y el 68 % planea incrementar su peso en activos alternativos en los próximos cinco años, según el estudio del IE Family Offices Knowledge Hub presentado a mediados de octubre junto a Cuatrecasas, Franklin Templeton y OpenWealth.\n\nEn financiación estructurada, Tresmares facilitó en octubre un paquete a Laboral Group y Comunidad 10 para consolidar su presencia en las 17 comunidades autónomas prestando servicios a más de 59.000 pymes. Despachos como Cuatrecasas y Andersen actualizaron en octubre sus guías sobre simplificación de reorganizaciones empresariales y régimen de incentivos a la transmisión de empresa familiar bajo el RDL 5/2023, instando a separar activos no afectos antes de procesos de due diligence.\n\nFuentes: Europa Press, M&A en España: 73.803 millones hasta septiembre, El Asesor Financiero, Albia IMAP, Cuatrecasas\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mapa de search funds en España (2011-oct 2026) contabiliza 118 vehículos con 66 adquisiciones cerradas y 13 salidas, junto a series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en transferencia empresarial.\n\nLos family offices elevan su asignación a mercados privados al 47,2 % con intención del 68 % de aumentarla, mientras la macrooperación Santander-Webster (10.325 M€) y la actividad de mid-market de Tresmares (59.000 pymes cubiertas) dibujan un espectro de deal flow desde large-cap transfronterizo hasta consolidación de pymes multisectoriales.\n\nLa simplificación de reorganizaciones bajo RDL 5/2023 y la separación de activos no afectos previa a due diligence abren ventana operativa para restructuraciones eficientes en sucesión de empresa familiar.\n\nFuentes: M&A sin Rodeos, El Asesor Financiero / M&A en España: 73.803 millones hasta septiembre / Albia IMAP, Cuatrecasas"
 }
