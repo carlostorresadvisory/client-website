@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-04",
+  "fecha": "2026-11-05",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Capital movilizado M&A España",
+      "etiqueta": "Pérdida neta territorio RU",
+      "valor": "-27,29 km²",
+      "fuente": "ISW"
+    },
+    {
+      "etiqueta": "Operaciones M&A España",
+      "valor": "2.261",
+      "fuente": "TTR Data"
+    },
+    {
+      "etiqueta": "Importe M&A España",
       "valor": "73.803 M€",
-      "fuente": "Europa Press"
+      "fuente": "TTR Data"
     },
     {
-      "etiqueta": "Tipo facilidad depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "ECB"
-    },
-    {
-      "etiqueta": "Tipo fondos federales Fed",
-      "valor": "3,75%-4,00 %",
-      "fuente": "Federal Reserve"
-    },
-    {
-      "etiqueta": "Liderazgo IA benchmarks",
-      "valor": "59,4 pts",
-      "fuente": "Fello AI"
+      "etiqueta": "Cartera FO mercados privados",
+      "valor": "47,2%",
+      "fuente": "IE Family Offices"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
-    },
-    {
-      "horizonte": "Esta semana",
       "n": 3
     },
     {
+      "horizonte": "Esta semana",
+      "n": 4
+    },
+    {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,20 +51,8 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Irán intentó derribar un avión militar estadounidense cerca de la isla de Qeshm en el Estrecho de Ormuz el 2 de noviembre, lo que provocó una respuesta defensiva de Washington confirmada por el Wall Street Journal",
-          "fuente": "ISW"
-        },
-        {
-          "texto": "Trump confirmó al día siguiente ataques selectivos de castigo en el Estrecho manteniendo la puerta abierta a una mayor escalada militar en vísperas de las elecciones de mitad de mandato del 3 de noviembre",
-          "fuente": "CBS News"
-        },
-        {
-          "texto": "Un petrolero fue alcanzado el 3 de noviembre por dos proyectiles en su sala de máquinas cerca de las costas de Omán sin heridos graves, según la agencia UKMTO",
-          "fuente": "CBS News"
-        },
-        {
-          "texto": "Lukashenko pronosticó en la Conferencia de Minsk del 3 de noviembre que la guerra en Ucrania terminará en meses por agotamiento total de recursos en todos los frentes",
-          "fuente": "Lukashenko believes war in Ukraine will end within months"
+          "texto": "Irán reclama el incendio de dos petroleros y un remolcador en el estrecho de Ormuz el 4 de noviembre, mientras el crudo cae un 9% tras las elecciones estadounidenses de mitad de mandato, un movimiento que el líder supremo Mojtaba Khamenei atribuye al fracaso de la administración saliente frente a la estrategia de resistencia iraní",
+          "fuente": "Middle East Eye, Iran Update, November 4, 2026 | ISW"
         }
       ]
     },
@@ -72,16 +60,8 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El índice Artificial Analysis v5 sitúa a Google Gemini 4 Carbon al frente con 59,4 puntos, seguido por Claude Opus 5,5 con 58,4 y GPT-6 Astra con 56,9, en un mercado donde Mistral liberó el 29 de octubre los pesos abiertos de Mistral Large 4, modelo MoE de ~1 billón de parámetros con 49B activos",
-          "fuente": "Fello AI"
-        },
-        {
-          "texto": "Anthropic lanzó el 28 de octubre Claude Sonnet 5,5, que opera un 30 % más rápido y reduce costes un 30 % respecto a su antecesor, registrando un 70,6 % en el benchmark de programación autónoma Terminal-Bench 4.0",
-          "fuente": "Anthropic"
-        },
-        {
-          "texto": "OpenAI actualizó el 29 de octubre su Model Spec público reorganizando la alineación de seguridad en torno a cinco valores nucleares: fidelidad a la intención humana, minimización de daños, honestidad, agencia humana y cuidado",
-          "fuente": "OpenAI"
+          "texto": "La farmacéutica catalana Noucor, respaldada por MCH y family offices, cerró la compra de la alemana Helm Pharmaceuticals para duplicar facturación hasta 200 M€ en 2026",
+          "fuente": "M&A AND PRIVATE EQUITY IN SPAIN: WEEK 41 2026"
         }
       ]
     },
@@ -89,16 +69,8 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado transaccional español acumuló 73.803 M€ a través de 2.261 operaciones anunciadas o cerradas hasta septiembre, un 6 % menos interanual en volumen global, según TTR Data publicado el 8 de octubre. La adquisición de Webster Financial Corporation por Banco Santander, valorada en 10.325 M€, encabeza el ranking de grandes salidas de entidades españolas con cierre de asesoramiento estructurado registrado en informes del Q3 2026",
-          "fuente": "M&A en España: 73.803 millones hasta septiembre"
-        },
-        {
-          "texto": "Los family offices españoles destinan de media un 47,2 % de su asignación a mercados privados (16,2 % inmobiliario, 13,2 % private equity, 10,5 % venture capital) y el 68 % planea incrementar su peso en activos alternativos en los próximos cinco años, según el estudio del IE Family Offices Knowledge Hub presentado a mediados de octubre junto a Cuatrecasas, Franklin Templeton y OpenWealth",
-          "fuente": "El Asesor Financiero"
-        },
-        {
-          "texto": "En financiación estructurada, Tresmares facilitó en octubre un paquete a Laboral Group y Comunidad 10 para consolidar su presencia en las 17 comunidades autónomas prestando servicios a más de 59.000 pymes. Despachos como Cuatrecasas y Andersen actualizaron en octubre sus guías sobre simplificación de reorganizaciones empresariales y régimen de incentivos a la transmisión de empresa familiar bajo el RDL 5/2023, instando a separar activos no afectos antes de procesos de due diligence",
-          "fuente": "Albia IMAP, Cuatrecasas"
+          "texto": "El BCE mantuvo tipos el 29 de octubre (depósito 2,50 %, principal 2,65 %, marginal 2,90 %) alertando de riesgos al alza en inflación por la presión energética",
+          "fuente": "Monetary policy decisions - European Central Bank"
         }
       ]
     },
@@ -108,19 +80,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "El mapa de search funds en España (2011-oct 2026) contabiliza 118 vehículos con 66 adquisiciones cerradas y 13 salidas, junto a series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en transferencia empresarial",
-              "fuente": "M&A sin Rodeos"
-            },
-            {
-              "texto": "La simplificación de reorganizaciones bajo RDL 5/2023 y la separación de activos no afectos previa a due diligence abren ventana operativa para restructuraciones eficientes en sucesión de empresa familiar",
-              "fuente": "Cuatrecasas"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nIrán intentó derribar un avión militar estadounidense cerca de la isla de Qeshm en el Estrecho de Ormuz el 2 de noviembre, lo que provocó una respuesta defensiva de Washington confirmada por el Wall Street Journal.\n\nTrump confirmó al día siguiente ataques selectivos de castigo en el Estrecho manteniendo la puerta abierta a una mayor escalada militar en vísperas de las elecciones de mitad de mandato del 3 de noviembre.\n\nUn petrolero fue alcanzado el 3 de noviembre por dos proyectiles en su sala de máquinas cerca de las costas de Omán sin heridos graves, según la agencia UKMTO.\n\nLukashenko pronosticó en la Conferencia de Minsk del 3 de noviembre que la guerra en Ucrania terminará en meses por agotamiento total de recursos en todos los frentes.\n\nFuentes: ISW, CBS News, Lukashenko believes war in Ukraine will end within months\n\n## Esta semana\nEl índice Artificial Analysis v5 sitúa a Google Gemini 4 Carbon al frente con 59,4 puntos, seguido por Claude Opus 5,5 con 58,4 y GPT-6 Astra con 56,9, en un mercado donde Mistral liberó el 29 de octubre los pesos abiertos de Mistral Large 4, modelo MoE de ~1 billón de parámetros con 49B activos.\n\nAnthropic lanzó el 28 de octubre Claude Sonnet 5,5, que opera un 30 % más rápido y reduce costes un 30 % respecto a su antecesor, registrando un 70,6 % en el benchmark de programación autónoma Terminal-Bench 4.0.\n\nOpenAI actualizó el 29 de octubre su Model Spec público reorganizando la alineación de seguridad en torno a cinco valores nucleares: fidelidad a la intención humana, minimización de daños, honestidad, agencia humana y cuidado.\n\nFuentes: Fello AI, Anthropic, OpenAI\n\n## Este mes\nEl mercado transaccional español acumuló 73.803 M€ a través de 2.261 operaciones anunciadas o cerradas hasta septiembre, un 6 % menos interanual en volumen global, según TTR Data publicado el 8 de octubre. La adquisición de Webster Financial Corporation por Banco Santander, valorada en 10.325 M€, encabeza el ranking de grandes salidas de entidades españolas con cierre de asesoramiento estructurado registrado en informes del Q3 2026.\n\nLos family offices españoles destinan de media un 47,2 % de su asignación a mercados privados (16,2 % inmobiliario, 13,2 % private equity, 10,5 % venture capital) y el 68 % planea incrementar su peso en activos alternativos en los próximos cinco años, según el estudio del IE Family Offices Knowledge Hub presentado a mediados de octubre junto a Cuatrecasas, Franklin Templeton y OpenWealth.\n\nEn financiación estructurada, Tresmares facilitó en octubre un paquete a Laboral Group y Comunidad 10 para consolidar su presencia en las 17 comunidades autónomas prestando servicios a más de 59.000 pymes. Despachos como Cuatrecasas y Andersen actualizaron en octubre sus guías sobre simplificación de reorganizaciones empresariales y régimen de incentivos a la transmisión de empresa familiar bajo el RDL 5/2023, instando a separar activos no afectos antes de procesos de due diligence.\n\nFuentes: Europa Press, M&A en España: 73.803 millones hasta septiembre, El Asesor Financiero, Albia IMAP, Cuatrecasas\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mapa de search funds en España (2011-oct 2026) contabiliza 118 vehículos con 66 adquisiciones cerradas y 13 salidas, junto a series históricas de 44 pymes objetivo: base de datos accionable para múltiplos, valoraciones y origination en transferencia empresarial.\n\nLos family offices elevan su asignación a mercados privados al 47,2 % con intención del 68 % de aumentarla, mientras la macrooperación Santander-Webster (10.325 M€) y la actividad de mid-market de Tresmares (59.000 pymes cubiertas) dibujan un espectro de deal flow desde large-cap transfronterizo hasta consolidación de pymes multisectoriales.\n\nLa simplificación de reorganizaciones bajo RDL 5/2023 y la separación de activos no afectos previa a due diligence abren ventana operativa para restructuraciones eficientes en sucesión de empresa familiar.\n\nFuentes: M&A sin Rodeos, El Asesor Financiero / M&A en España: 73.803 millones hasta septiembre / Albia IMAP, Cuatrecasas"
+  "markdown": "## Hoy\nIrán reclama el incendio de dos petroleros y un remolcador en el estrecho de Ormuz el 4 de noviembre, mientras el crudo cae un 9% tras las elecciones estadounidenses de mitad de mandato, un movimiento que el líder supremo Mojtaba Khamenei atribuye al fracaso de la administración saliente frente a la estrategia de resistencia iraní.\n\nRusia lanzó en la noche del 3 al 4 de noviembre un ataque masivo con 289 drones, 17 misiles balísticos y 59 de crucero que sacó de servicio a tres de las cinco centrales térmicas de DTEK y causó al menos 33 muertos en un centro humanitario de Komyshuvakha.\n\nLa Reserva Federal mantuvo los fondos federales en el rango 3,75 %, 4,00 % el 4 de noviembre con disidencias de los gobernadores Michelle Bowman y Alberto Musalem, que pedían una subida adicional.\n\nFuentes: Middle East Eye, Iran Update, November 4, 2026 | ISW, Ukraine war briefing: race to free dozens trapped under rubble of Russian strikes on aid hub, H.15 - Selected Interest Rates (Daily) - November 04, 2026 - Federal Reserve Board\n\n## Esta semana\nBuenavista Equity Partners adquirió el 71,2 % de TIRYAQ Medical Group, compañía madrileña de traumatología y rehabilitación deportiva.\n\nLa farmacéutica catalana Noucor, respaldada por MCH y family offices, cerró la compra de la alemana Helm Pharmaceuticals para duplicar facturación hasta 200 M€ en 2026.\n\nLa plataforma Plazo (ID Finance) captó 545 M€ en equity y deuda de fondos internacionales, Kingsway Capital, WashU e i80 Group, para financiar su expansión, y Laboratorios Ordesa vendió su marca DonnaPlus a Aristo Pharma Iberia, filial del grupo alemán Aristo.\n\nOpenAI actualizó su Model Spec el 29 de octubre reorganizando la alineación en torno a cinco valores, fidelidad, minimización de daños, honestidad, agencia humana y cuidado, y el índice Artificial Analysis sitúa a Claude Opus 5,5 en cabeza con 59,1 puntos, por delante de GPT-6 Astra (56,9) y Gemini 4 Carbon (60,0, restringido a defensores cibernéticos).\n\nFuentes: M&A AND PRIVATE EQUITY EN ESPAÑA. PRINCIPALES OPERACIONES DE LA SEMANA 42 DE 2026 - Albia IMAP, M&A AND PRIVATE EQUITY IN SPAIN: WEEK 41 2026, An updated Model Spec for more capable and beneficial AI | OpenAI, Best AI Models in November 2026: Updated Rankings and Comparisons - Fello AI\n\n## Este mes\nEl mercado español de M&A acumuló 2.261 operaciones por 73.803 M€ hasta septiembre, un 15 % menos en número interanual, lo que confirma un entorno de selección muy exigente.\n\nEl estudio del IE Family Offices Knowledge Hub, 157 single-family offices, presentado el 15 de octubre, muestra una asignación media del 47,2 % a mercados privados (16,2 % inmobiliario, 13,2 % private equity) y un 68,1 % que prevé aumentarla en cinco años.\n\nEl BCE mantuvo tipos el 29 de octubre (depósito 2,50 %, principal 2,65 %, marginal 2,90 %) alertando de riesgos al alza en inflación por la presión energética.\n\nLos informes de mid-market indican que más del 43 % de los cierres en España responden a sucesión por jubilación del fundador, con due diligences más largas por la exigencia de márgenes recurrentes, mientras ISW documenta una pérdida neta rusa de 27,29 km² en octubre (capturaron 139,85 km² y perdieron 167,14 km²).\n\nFuentes: El mercado español de M&A moviliza 73.803 millones de euros hasta septiembre de 2026, Nearly 50% of Family Office Wealth is allocated to Private Markets, according to an IE University Report - CaixaBank, Monetary policy decisions - European Central Bank, Tendencias M&A 2026: mercado global y en España, Russian Offensive Campaign Assessment, November 1, 2026 - Institute for the Study of War"
 }
