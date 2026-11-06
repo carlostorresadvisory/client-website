@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-11-05",
+  "fecha": "2026-11-06",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Pérdida neta territorio RU",
-      "valor": "-27,29 km²",
-      "fuente": "ISW"
+      "etiqueta": "Inflación eurozona",
+      "valor": "4%",
+      "fuente": "El Español"
     },
     {
-      "etiqueta": "Operaciones M&A España",
-      "valor": "2.261",
-      "fuente": "TTR Data"
+      "etiqueta": "Facilidad depósito BCE",
+      "valor": "3%",
+      "fuente": "Moncloa"
     },
     {
-      "etiqueta": "Importe M&A España",
-      "valor": "73.803 M€",
-      "fuente": "TTR Data"
+      "etiqueta": "Petróleo Brent",
+      "valor": "99,90 $/barril",
+      "fuente": "Straits.live"
     },
     {
-      "etiqueta": "Cartera FO mercados privados",
-      "valor": "47,2%",
-      "fuente": "IE Family Offices"
+      "etiqueta": "Tasa aduanera UE",
+      "valor": "2 €/artículo",
+      "fuente": "EurEFE / El Periódico"
     }
   ],
   "horizontes": [
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,8 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Irán reclama el incendio de dos petroleros y un remolcador en el estrecho de Ormuz el 4 de noviembre, mientras el crudo cae un 9% tras las elecciones estadounidenses de mitad de mandato, un movimiento que el líder supremo Mojtaba Khamenei atribuye al fracaso de la administración saliente frente a la estrategia de resistencia iraní",
-          "fuente": "Middle East Eye, Iran Update, November 4, 2026 | ISW"
+          "texto": "La dinámica diplomática da un vuelco: Donald Trump anunció el 5 de noviembre un \"gran acuerdo\" con Rusia que cubriría toda Europa tras una reunión imprevista en la Casa Blanca con un enviado de Vladímir Putin y delegados ucranianos impulsados por Melania Trump, mientras Volodímir Zelenski reclamaba en Madrid que las negociaciones avancen \"a toda máquina\" de cara a la cumbre trilateral del 10 y 11 de noviembre en Abu Dabi con mediación estadounidense",
+          "fuente": "El Periódico, LaSexta"
+        },
+        {
+          "texto": "En el frente energético, el Estrecho de Ormuz permanece prácticamente cerrado al tráfico comercial a 6 de noviembre con solo dos buques operando frente a los 85 diarios habituales, y las fuerzas iraníes confirmaron el incendio de cinco petroleros y un remolcador tras colisionar con minas o sufrir ataques en rutas al este y sur del estrecho, llevando el Brent a 99,90 dólares por barril",
+          "fuente": "Straits.live, Newswav"
+        },
+        {
+          "texto": "La inflación de la eurozona repuntó al 4% interanual en octubre, dos décimas más que en septiembre, impulsada por un encarecimiento energético del 20,8%, con España en el 4,9%, y CaixaBank Research ya descuenta dos subidas adicionales del BCE que situarían la facilidad de depósito en el 3%",
+          "fuente": "El Español, Moncloa"
         }
       ]
     },
@@ -60,8 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La farmacéutica catalana Noucor, respaldada por MCH y family offices, cerró la compra de la alemana Helm Pharmaceuticals para duplicar facturación hasta 200 M€ en 2026",
-          "fuente": "M&A AND PRIVATE EQUITY IN SPAIN: WEEK 41 2026"
+          "texto": "La UE activó el 1 de noviembre una nueva tasa de tramitación aduanera de 2 euros por artículo, que se suma al arancel fijo de 3 euros por línea de producto vigente desde julio, para combatir el fraude en los 5.900 millones de paquetes de comercio electrónico importados",
+          "fuente": "EurEFE / El Periódico"
+        },
+        {
+          "texto": "Las elecciones legislativas estadounidenses del 3 de noviembre dieron el control de ambas cámaras a los Demócratas, que ganaron siete escaños, reduciendo el margen de maniobra de la Casa Blanca en política exterior y aranceles vinculados al coste político de la crisis iraní",
+          "fuente": "ORF Middle East"
+        },
+        {
+          "texto": "La Fed mantuvo los tipos en el rango 3,75%-4,00% en su reunión del 28 de octubre con dos votos disidentes a favor de subir un cuarto de punto, mientras Eurostat confirmó el 4 de noviembre la inflación de la eurozona en el 4% y la de España en el 4,9%",
+          "fuente": "Federal Reserve, El Español"
+        },
+        {
+          "texto": "En M&A español, Relevo Familiar actualizó sus múltiplos a noviembre situando la media en 5,3x EBITDA para pymes del sur de Europa (rango sectorial 3,8x-7,4x y por tamaño 4,3x-7,5x), y el Observatorio de Implica Corporate Finance registra que inversores financieros protagonizan el 46% de las transacciones del segmento con modelos de build-up modular en sectores atomizados como software y distribución",
+          "fuente": "Relevo Familiar, Economía 3"
         }
       ]
     },
@@ -69,8 +89,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE mantuvo tipos el 29 de octubre (depósito 2,50 %, principal 2,65 %, marginal 2,90 %) alertando de riesgos al alza en inflación por la presión energética",
-          "fuente": "Monetary policy decisions - European Central Bank"
+          "texto": "El mercado español de M&A acumuló 1.938 transacciones por 63.787 millones de euros hasta agosto, un 17% menos en número y un 9% menos en capital respecto a 2025, liderados por inmobiliario (454 deals) y software/Internet (174 deals)",
+          "fuente": "TTR Data Blog"
+        },
+        {
+          "texto": "Christine Lagarde anunció el 29 de octubre su salida anticipada de la presidencia del BCE con efectos el 7 de febrero de 2027, abriendo un proceso sucesorio en plena tensión inflacionaria por precios energéticos",
+          "fuente": "El País"
+        },
+        {
+          "texto": "El marco FDI español, consolidado desde 2020, sigue exigiendo análisis exhaustivos que los asesores de Corporate Finance deben integrar en los calendarios de cierre entre firma y closing, mientras los procesos de transición generacional en la empresa familiar copan gran parte de los mandatos de lower mid-market requiriendo financiación mixta (deuda senior más vendor loan) para salvar brechas de valoración",
+          "fuente": "Uría Menéndez, TeamOn Capital"
         }
       ]
     },
@@ -80,10 +108,15 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "El múltiplo medio de 5,3x EBITDA para pymes del sur de Europa (rango 3,8x-7,4x sectorial y 4,3x-7,5x por tamaño) ofrece una referencia concreta para fairness opinions en mandatos de lower mid-market, donde el 46% de las transacciones las lideran financieros con estrategias de build-up modular en software y distribución",
+              "fuente": "Relevo Familiar, Economía 3"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nIrán reclama el incendio de dos petroleros y un remolcador en el estrecho de Ormuz el 4 de noviembre, mientras el crudo cae un 9% tras las elecciones estadounidenses de mitad de mandato, un movimiento que el líder supremo Mojtaba Khamenei atribuye al fracaso de la administración saliente frente a la estrategia de resistencia iraní.\n\nRusia lanzó en la noche del 3 al 4 de noviembre un ataque masivo con 289 drones, 17 misiles balísticos y 59 de crucero que sacó de servicio a tres de las cinco centrales térmicas de DTEK y causó al menos 33 muertos en un centro humanitario de Komyshuvakha.\n\nLa Reserva Federal mantuvo los fondos federales en el rango 3,75 %, 4,00 % el 4 de noviembre con disidencias de los gobernadores Michelle Bowman y Alberto Musalem, que pedían una subida adicional.\n\nFuentes: Middle East Eye, Iran Update, November 4, 2026 | ISW, Ukraine war briefing: race to free dozens trapped under rubble of Russian strikes on aid hub, H.15 - Selected Interest Rates (Daily) - November 04, 2026 - Federal Reserve Board\n\n## Esta semana\nBuenavista Equity Partners adquirió el 71,2 % de TIRYAQ Medical Group, compañía madrileña de traumatología y rehabilitación deportiva.\n\nLa farmacéutica catalana Noucor, respaldada por MCH y family offices, cerró la compra de la alemana Helm Pharmaceuticals para duplicar facturación hasta 200 M€ en 2026.\n\nLa plataforma Plazo (ID Finance) captó 545 M€ en equity y deuda de fondos internacionales, Kingsway Capital, WashU e i80 Group, para financiar su expansión, y Laboratorios Ordesa vendió su marca DonnaPlus a Aristo Pharma Iberia, filial del grupo alemán Aristo.\n\nOpenAI actualizó su Model Spec el 29 de octubre reorganizando la alineación en torno a cinco valores, fidelidad, minimización de daños, honestidad, agencia humana y cuidado, y el índice Artificial Analysis sitúa a Claude Opus 5,5 en cabeza con 59,1 puntos, por delante de GPT-6 Astra (56,9) y Gemini 4 Carbon (60,0, restringido a defensores cibernéticos).\n\nFuentes: M&A AND PRIVATE EQUITY EN ESPAÑA. PRINCIPALES OPERACIONES DE LA SEMANA 42 DE 2026 - Albia IMAP, M&A AND PRIVATE EQUITY IN SPAIN: WEEK 41 2026, An updated Model Spec for more capable and beneficial AI | OpenAI, Best AI Models in November 2026: Updated Rankings and Comparisons - Fello AI\n\n## Este mes\nEl mercado español de M&A acumuló 2.261 operaciones por 73.803 M€ hasta septiembre, un 15 % menos en número interanual, lo que confirma un entorno de selección muy exigente.\n\nEl estudio del IE Family Offices Knowledge Hub, 157 single-family offices, presentado el 15 de octubre, muestra una asignación media del 47,2 % a mercados privados (16,2 % inmobiliario, 13,2 % private equity) y un 68,1 % que prevé aumentarla en cinco años.\n\nEl BCE mantuvo tipos el 29 de octubre (depósito 2,50 %, principal 2,65 %, marginal 2,90 %) alertando de riesgos al alza en inflación por la presión energética.\n\nLos informes de mid-market indican que más del 43 % de los cierres en España responden a sucesión por jubilación del fundador, con due diligences más largas por la exigencia de márgenes recurrentes, mientras ISW documenta una pérdida neta rusa de 27,29 km² en octubre (capturaron 139,85 km² y perdieron 167,14 km²).\n\nFuentes: El mercado español de M&A moviliza 73.803 millones de euros hasta septiembre de 2026, Nearly 50% of Family Office Wealth is allocated to Private Markets, according to an IE University Report - CaixaBank, Monetary policy decisions - European Central Bank, Tendencias M&A 2026: mercado global y en España, Russian Offensive Campaign Assessment, November 1, 2026 - Institute for the Study of War"
+  "markdown": "## Hoy\nLa dinámica diplomática da un vuelco: Donald Trump anunció el 5 de noviembre un \"gran acuerdo\" con Rusia que cubriría toda Europa tras una reunión imprevista en la Casa Blanca con un enviado de Vladímir Putin y delegados ucranianos impulsados por Melania Trump, mientras Volodímir Zelenski reclamaba en Madrid que las negociaciones avancen \"a toda máquina\" de cara a la cumbre trilateral del 10 y 11 de noviembre en Abu Dabi con mediación estadounidense.\n\nEn el frente energético, el Estrecho de Ormuz permanece prácticamente cerrado al tráfico comercial a 6 de noviembre con solo dos buques operando frente a los 85 diarios habituales, y las fuerzas iraníes confirmaron el incendio de cinco petroleros y un remolcador tras colisionar con minas o sufrir ataques en rutas al este y sur del estrecho, llevando el Brent a 99,90 dólares por barril.\n\nLa inflación de la eurozona repuntó al 4% interanual en octubre, dos décimas más que en septiembre, impulsada por un encarecimiento energético del 20,8%, con España en el 4,9%, y CaixaBank Research ya descuenta dos subidas adicionales del BCE que situarían la facilidad de depósito en el 3%.\n\nFuentes: El Periódico, LaSexta, Straits.live, Newswav, El Español, Moncloa\n\n## Esta semana\nLa UE activó el 1 de noviembre una nueva tasa de tramitación aduanera de 2 euros por artículo, que se suma al arancel fijo de 3 euros por línea de producto vigente desde julio, para combatir el fraude en los 5.900 millones de paquetes de comercio electrónico importados.\n\nLas elecciones legislativas estadounidenses del 3 de noviembre dieron el control de ambas cámaras a los Demócratas, que ganaron siete escaños, reduciendo el margen de maniobra de la Casa Blanca en política exterior y aranceles vinculados al coste político de la crisis iraní.\n\nLa Fed mantuvo los tipos en el rango 3,75%-4,00% en su reunión del 28 de octubre con dos votos disidentes a favor de subir un cuarto de punto, mientras Eurostat confirmó el 4 de noviembre la inflación de la eurozona en el 4% y la de España en el 4,9%.\n\nEn M&A español, Relevo Familiar actualizó sus múltiplos a noviembre situando la media en 5,3x EBITDA para pymes del sur de Europa (rango sectorial 3,8x-7,4x y por tamaño 4,3x-7,5x), y el Observatorio de Implica Corporate Finance registra que inversores financieros protagonizan el 46% de las transacciones del segmento con modelos de build-up modular en sectores atomizados como software y distribución.\n\nFuentes: EurEFE / El Periódico, ORF Middle East, Federal Reserve, El Español, Relevo Familiar, Economía 3\n\n## Este mes\nEl mercado español de M&A acumuló 1.938 transacciones por 63.787 millones de euros hasta agosto, un 17% menos en número y un 9% menos en capital respecto a 2025, liderados por inmobiliario (454 deals) y software/Internet (174 deals).\n\nChristine Lagarde anunció el 29 de octubre su salida anticipada de la presidencia del BCE con efectos el 7 de febrero de 2027, abriendo un proceso sucesorio en plena tensión inflacionaria por precios energéticos.\n\nEl marco FDI español, consolidado desde 2020, sigue exigiendo análisis exhaustivos que los asesores de Corporate Finance deben integrar en los calendarios de cierre entre firma y closing, mientras los procesos de transición generacional en la empresa familiar copan gran parte de los mandatos de lower mid-market requiriendo financiación mixta (deuda senior más vendor loan) para salvar brechas de valoración.\n\nFuentes: TTR Data Blog, El País, Uría Menéndez, TeamOn Capital\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl múltiplo medio de 5,3x EBITDA para pymes del sur de Europa (rango 3,8x-7,4x sectorial y 4,3x-7,5x por tamaño) ofrece una referencia concreta para fairness opinions en mandatos de lower mid-market, donde el 46% de las transacciones las lideran financieros con estrategias de build-up modular en software y distribución.\n\nFuentes: Relevo Familiar, Economía 3"
 }
