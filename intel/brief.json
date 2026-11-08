@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-07",
+  "fecha": "2026-11-08",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Múltiplo EBITDA medio pymes sur Europa",
-      "valor": "5,3x",
-      "fuente": "Relevo Familiar"
+      "etiqueta": "Tipo BoE",
+      "valor": "4,00%",
+      "fuente": "Bank of England Minutes"
     },
     {
-      "etiqueta": "Inflación eurozona octubre",
-      "valor": "4,0%",
-      "fuente": "XTB"
+      "etiqueta": "Liquidaciones cripto",
+      "valor": "1.080 M$",
+      "fuente": "TMGM"
     },
     {
-      "etiqueta": "Chips Nvidia H200 retenidos en Hong Kong",
-      "valor": "600.000",
-      "fuente": "C-Level Folha"
+      "etiqueta": "Mercado M&A España",
+      "valor": "73.803 M€",
+      "fuente": "Forbes España / TTR Data"
     },
     {
-      "etiqueta": "Transacciones M&A España 9M 2026",
-      "valor": "2.261",
-      "fuente": "AGM Abogados"
+      "etiqueta": "Inversión EE.UU. en España",
+      "valor": "7.717 M€",
+      "fuente": "Informa / TTR Data"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 4
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,8 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Trump reconoció que la crisis iraní pesó en la derrota republicana en los midterms, pero advirtió que un ataque militar a gran escala contra instalaciones nucleares y energéticas de Irán \"sigue sobre la mesa\" mientras EE.UU. refuerza la región con 9.000 tropas adicionales y un tercer portaaviones. En el flanco ucraniano, Putin reunió a su Consejo de Seguridad el 6 de noviembre para preparar las negociaciones trilaterales con Ucrania y EE.UU. que arrancan el 10-11 de noviembre en Abu Dabi, mientras Trump aseguró tras recibir en la Casa Blanca al enviado ruso Kirill Dmitriev que habrá \"un gran acuerdo\" que \"podría abarcar a toda Europa\"",
-          "fuente": "Resumen Latinoamericano, El Periódico, RTVE"
+          "texto": "EE.UU. aprobó la venta de chips Nvidia H200 a New Matrix, una entidad china que operaba desde oficinas vacías, lo que expone lagunas críticas en los controles de exportación de tecnología avanzada",
+          "fuente": "Emergent"
+        },
+        {
+          "texto": "La subida del Banco de Inglaterra al 4,00% y la persistencia inflacionaria dispararon la aversión al riesgo: el Nasdaq cayó hasta un 5%, Bitcoin retrocedió por debajo de 76.000 dólares y las liquidaciones cripto globales sumaron 1.080 millones en 24 horas",
+          "fuente": "TMGM"
+        },
+        {
+          "texto": "La victoria demócrata en ambas cámaras en los midterms impone frenos institucionales a la agenda económica y exterior de Trump en su tramo final de mandato",
+          "fuente": "The Daily Star"
+        },
+        {
+          "texto": "En España, el marco legal de M&A recuerda que retrasos superiores a 30 días en publicaciones obligatorias en el BORME acarrean sanciones de hasta 3.000 euros diarios, y la omisión de transmisiones de cuotas a la Seguridad Social multas fijas de 600 euros por cuota",
+          "fuente": "Gestoría y Abogados"
         }
       ]
     },
@@ -60,20 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Un bombardeo ruso con nueve bombas sobre un centro humanitario en Komyshuvakha (Zaporiyia) elevó a 43 los muertos confirmados el 5 de noviembre, en uno de los ataques más mortíferos contra infraestructura civil de la guerra. La Alta Representante de la UE, Kaja Kallas, advirtió el 6 de noviembre que los Veintisiete no aplicarán ningún acuerdo de paz del que hayan quedado excluidos, respaldando la exigencia de Giorgia Meloni de una posición europea unificada",
-          "fuente": "CNN en Español, La Sexta"
+          "texto": "El enviado estadounidense Steve Witkoff confirmó una nueva ronda de negociaciones Rusia-Ucrania mediada por Washington en Abu Dabi los días 10 y 11 de noviembre, centrada en arquitectura de seguridad post-guerra y desescalada",
+          "fuente": "Politis"
         },
         {
-          "texto": "Relevo Familiar actualizó el 1 de noviembre sus múltiplos de referencia situando la media en 5,3x EBITDA para pymes del sur de Europa (rangos sectoriales 3,8x-7,4x y por tamaño 4,3x-7,5x), y ETL Global reforzó su consolidación el 3 de noviembre integrando Dr. Reichmann en Mallorca bajo la marca ILIA ETL GLOBAL",
-          "fuente": "Relevo Familiar, ETL Global"
+          "texto": "El Banco de Inglaterra elevó su tipo oficial 25 puntos básicos hasta el 4,00%, justificando la postura restrictiva en la inflación persistente derivada del choque energético de Oriente Medio",
+          "fuente": "Bank of England Minutes"
         },
         {
-          "texto": "El Boletín Oficial de Canarias publicó el 4 de noviembre el Decreto-ley 7/2026, con efectos desde el 30 de octubre, que modifica las ayudas extraordinarias al sector primario para compensar el sobrecoste energético y logístico derivado de la crisis de Oriente Medio",
-          "fuente": "La Administración al Día"
+          "texto": "NVIDIA publicó un análisis sobre full-stack codesign en su infraestructura de IA para mitigar tensiones y restricciones de memoria en aceleradores mediante arquitecturas de almacenamiento en jerarquía",
+          "fuente": "NVIDIA Blog"
         },
         {
-          "texto": "La OIM y ACNUR alertaron el 6 de noviembre de que 15,4 millones de personas en Sudán requieren alojamiento de emergencia, aunque la falta de fondos limita la asistencia a menos del 10% de los afectados en la mayor crisis de desplazamiento global",
-          "fuente": "IOM International Organization for Migration"
+          "texto": "En el mercado medio del sur de Europa, los procesos de compraventa de pymes superan en un 28% de los casos los 12 meses de ejecución por la extrema rigurosidad en las due diligences de compradores institucionales",
+          "fuente": "You are Capital / Dealsuite"
         }
       ]
     },
@@ -81,16 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado transaccional español acumuló 2.261 operaciones por 73.803 millones de euros en los nueve primeros meses de 2026, un 15% menos en número y un 6% menos en capital que en 2025; el segmento de Private Equity concentró 244 transacciones por 17.263 millones, con inmobiliario (510 deals) y software/IT (203 deals) como sectores más activos",
-          "fuente": "AGM Abogados"
+          "texto": "El mercado transaccional español acumuló 2.261 operaciones y 73.803 millones de euros en los nueve primeros meses de 2026; Uría Menéndez lidera el asesoramiento legal por valor con 23.056 millones, seguida de Garrigues (14.689 millones) y Freshfields (8.664 millones), mientras Cuatrecasas encabeza el número de mandatos con 142",
+          "fuente": "Forbes España / TTR Data"
         },
         {
-          "texto": "El régimen FDI español, vigente desde 2020, sigue alargando los plazos entre firma y cierre en operaciones corporativas y reestructuraciones",
-          "fuente": "Uría Menéndez"
+          "texto": "Estados Unidos se consolida como primer inversor extranjero en España con 110 operaciones y 7.717 millones inyectados hasta el tercer trimestre, por delante de Francia (105 operaciones) y Reino Unido (87 transacciones)",
+          "fuente": "Informa / TTR Data"
         },
         {
-          "texto": "La Fed mantuvo tipos en el 3,75%-4,00% a finales de octubre (10 a 2, con disidentes pidiendo +25 pb), divergiendo del endurecimiento del BCE, y Christine Lagarde dejará la presidencia del BCE el 7 de febrero de 2027, abriendo sucesión en plena tensión financiera y energética",
-          "fuente": "TMGM"
+          "texto": "El BCE advirtió formalmente sobre la vulnerabilidad estructural de la eurozona ante la fragmentación geopolítica, señalando que su ratio de apertura comercial supera ampliamente a la estadounidense y expone a la economía continental a shocks arancelarios y de cadenas de suministro",
+          "fuente": "European Central Bank"
+        },
+        {
+          "texto": "NVIDIA lanzó el modelo abierto Nemotron 3.5 Super VL (120.000 millones de parámetros), optimizado para agentes multimodales empresariales con velocidad de proceso hasta 5 veces superior a la media de su clase",
+          "fuente": "NVIDIA News"
         }
       ]
     },
@@ -102,25 +118,21 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El múltiplo de referencia 5,3x EBITDA para pymes del sur de Europa (rangos 3,8x-7,4x sectorial y 4,3x-7,5x por tamaño) ofrece una ancla concreta para fairness opinions en mandatos de lower mid-market",
-              "fuente": "Relevo Familiar"
+              "texto": "El régimen sancionador español (3.000 euros/día por retraso en BORME y 600 euros por cuota no declarada en Seguridad Social) obliga a integrar compliance de plazos como condition precedent en cualquier timeline de cierre",
+              "fuente": "Gestoría y Abogados"
             },
             {
-              "texto": "La integración de Dr. Reichmann por ETL Global en Mallorca señala apetito de consolidadores internacionales por firmas locales de asesoramiento, abriendo oportunidades de sell-side en el segmento",
-              "fuente": "ETL Global"
+              "texto": "La mediana de ejecución de deals en pymes del sur de Europa supera ya los 12 meses en más de un cuarto de los casos por due diligences institucionales, lo que exige pricing y earn-outs diseñados para horizontes largos",
+              "fuente": "You are Capital / Dealsuite"
             },
             {
-              "texto": "El Decreto-ley canario 7/2026 (efectos 30 octubre) que ajusta ayudas al sector primario por sobrecostes energéticos y logísticos crea un nicho de asesoramiento en reestructuración de deuda y acceso a fondos públicos para clientes agroalimentarios",
-              "fuente": "La Administración al Día"
-            },
-            {
-              "texto": "La persistencia del régimen FDI como dilatador de timelines entre signing y closing obliga a integrar buffers regulatorios en los calendarios de cierre de cualquier operación con componente extranjero",
-              "fuente": "Uría Menéndez"
+              "texto": "El liderazgo de Uría Menéndez (23.056 millones) y Cuatrecasas (142 mandatos) en el league table legal español y la dominancia de EE.UU. como inversor inbound (7.717 millones) dibujan el mapa de counterparties y advisors relevantes para sell-side en 2026",
+              "fuente": "Forbes España / TTR Data, Informa / TTR Data"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nTrump reconoció que la crisis iraní pesó en la derrota republicana en los midterms, pero advirtió que un ataque militar a gran escala contra instalaciones nucleares y energéticas de Irán \"sigue sobre la mesa\" mientras EE.UU. refuerza la región con 9.000 tropas adicionales y un tercer portaaviones. En el flanco ucraniano, Putin reunió a su Consejo de Seguridad el 6 de noviembre para preparar las negociaciones trilaterales con Ucrania y EE.UU. que arrancan el 10-11 de noviembre en Abu Dabi, mientras Trump aseguró tras recibir en la Casa Blanca al enviado ruso Kirill Dmitriev que habrá \"un gran acuerdo\" que \"podría abarcar a toda Europa\".\n\nFuentes: Resumen Latinoamericano, El Periódico, RTVE\n\n## Esta semana\nUn bombardeo ruso con nueve bombas sobre un centro humanitario en Komyshuvakha (Zaporiyia) elevó a 43 los muertos confirmados el 5 de noviembre, en uno de los ataques más mortíferos contra infraestructura civil de la guerra. La Alta Representante de la UE, Kaja Kallas, advirtió el 6 de noviembre que los Veintisiete no aplicarán ningún acuerdo de paz del que hayan quedado excluidos, respaldando la exigencia de Giorgia Meloni de una posición europea unificada.\n\nRelevo Familiar actualizó el 1 de noviembre sus múltiplos de referencia situando la media en 5,3x EBITDA para pymes del sur de Europa (rangos sectoriales 3,8x-7,4x y por tamaño 4,3x-7,5x), y ETL Global reforzó su consolidación el 3 de noviembre integrando Dr. Reichmann en Mallorca bajo la marca ILIA ETL GLOBAL.\n\nEl Boletín Oficial de Canarias publicó el 4 de noviembre el Decreto-ley 7/2026, con efectos desde el 30 de octubre, que modifica las ayudas extraordinarias al sector primario para compensar el sobrecoste energético y logístico derivado de la crisis de Oriente Medio.\n\nLa OIM y ACNUR alertaron el 6 de noviembre de que 15,4 millones de personas en Sudán requieren alojamiento de emergencia, aunque la falta de fondos limita la asistencia a menos del 10% de los afectados en la mayor crisis de desplazamiento global.\n\nFuentes: CNN en Español, La Sexta, Relevo Familiar, ETL Global, La Administración al Día, IOM International Organization for Migration\n\n## Este mes\nEl mercado transaccional español acumuló 2.261 operaciones por 73.803 millones de euros en los nueve primeros meses de 2026, un 15% menos en número y un 6% menos en capital que en 2025; el segmento de Private Equity concentró 244 transacciones por 17.263 millones, con inmobiliario (510 deals) y software/IT (203 deals) como sectores más activos.\n\nEl régimen FDI español, vigente desde 2020, sigue alargando los plazos entre firma y cierre en operaciones corporativas y reestructuraciones.\n\nLa Fed mantuvo tipos en el 3,75%-4,00% a finales de octubre (10 a 2, con disidentes pidiendo +25 pb), divergiendo del endurecimiento del BCE, y Christine Lagarde dejará la presidencia del BCE el 7 de febrero de 2027, abriendo sucesión en plena tensión financiera y energética.\n\nFuentes: AGM Abogados, Uría Menéndez, TMGM\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl múltiplo de referencia 5,3x EBITDA para pymes del sur de Europa (rangos 3,8x-7,4x sectorial y 4,3x-7,5x por tamaño) ofrece una ancla concreta para fairness opinions en mandatos de lower mid-market.\n\nLa integración de Dr. Reichmann por ETL Global en Mallorca señala apetito de consolidadores internacionales por firmas locales de asesoramiento, abriendo oportunidades de sell-side en el segmento.\n\nEl Decreto-ley canario 7/2026 (efectos 30 octubre) que ajusta ayudas al sector primario por sobrecostes energéticos y logísticos crea un nicho de asesoramiento en reestructuración de deuda y acceso a fondos públicos para clientes agroalimentarios.\n\nLa persistencia del régimen FDI como dilatador de timelines entre signing y closing obliga a integrar buffers regulatorios en los calendarios de cierre de cualquier operación con componente extranjero.\n\nFuentes: Relevo Familiar, ETL Global, La Administración al Día, Uría Menéndez"
+  "markdown": "## Hoy\nEE.UU. aprobó la venta de chips Nvidia H200 a New Matrix, una entidad china que operaba desde oficinas vacías, lo que expone lagunas críticas en los controles de exportación de tecnología avanzada.\n\nLa subida del Banco de Inglaterra al 4,00% y la persistencia inflacionaria dispararon la aversión al riesgo: el Nasdaq cayó hasta un 5%, Bitcoin retrocedió por debajo de 76.000 dólares y las liquidaciones cripto globales sumaron 1.080 millones en 24 horas.\n\nLa victoria demócrata en ambas cámaras en los midterms impone frenos institucionales a la agenda económica y exterior de Trump en su tramo final de mandato.\n\nEn España, el marco legal de M&A recuerda que retrasos superiores a 30 días en publicaciones obligatorias en el BORME acarrean sanciones de hasta 3.000 euros diarios, y la omisión de transmisiones de cuotas a la Seguridad Social multas fijas de 600 euros por cuota.\n\nFuentes: Emergent, TMGM, The Daily Star, Gestoría y Abogados\n\n## Esta semana\nEl enviado estadounidense Steve Witkoff confirmó una nueva ronda de negociaciones Rusia-Ucrania mediada por Washington en Abu Dabi los días 10 y 11 de noviembre, centrada en arquitectura de seguridad post-guerra y desescalada.\n\nEl Banco de Inglaterra elevó su tipo oficial 25 puntos básicos hasta el 4,00%, justificando la postura restrictiva en la inflación persistente derivada del choque energético de Oriente Medio.\n\nNVIDIA publicó un análisis sobre full-stack codesign en su infraestructura de IA para mitigar tensiones y restricciones de memoria en aceleradores mediante arquitecturas de almacenamiento en jerarquía.\n\nEn el mercado medio del sur de Europa, los procesos de compraventa de pymes superan en un 28% de los casos los 12 meses de ejecución por la extrema rigurosidad en las due diligences de compradores institucionales.\n\nFuentes: Politis, Bank of England Minutes, NVIDIA Blog, You are Capital / Dealsuite\n\n## Este mes\nEl mercado transaccional español acumuló 2.261 operaciones y 73.803 millones de euros en los nueve primeros meses de 2026; Uría Menéndez lidera el asesoramiento legal por valor con 23.056 millones, seguida de Garrigues (14.689 millones) y Freshfields (8.664 millones), mientras Cuatrecasas encabeza el número de mandatos con 142.\n\nEstados Unidos se consolida como primer inversor extranjero en España con 110 operaciones y 7.717 millones inyectados hasta el tercer trimestre, por delante de Francia (105 operaciones) y Reino Unido (87 transacciones).\n\nEl BCE advirtió formalmente sobre la vulnerabilidad estructural de la eurozona ante la fragmentación geopolítica, señalando que su ratio de apertura comercial supera ampliamente a la estadounidense y expone a la economía continental a shocks arancelarios y de cadenas de suministro.\n\nNVIDIA lanzó el modelo abierto Nemotron 3.5 Super VL (120.000 millones de parámetros), optimizado para agentes multimodales empresariales con velocidad de proceso hasta 5 veces superior a la media de su clase.\n\nFuentes: Forbes España / TTR Data, Informa / TTR Data, European Central Bank, NVIDIA News\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl régimen sancionador español (3.000 euros/día por retraso en BORME y 600 euros por cuota no declarada en Seguridad Social) obliga a integrar compliance de plazos como condition precedent en cualquier timeline de cierre.\n\nLa mediana de ejecución de deals en pymes del sur de Europa supera ya los 12 meses en más de un cuarto de los casos por due diligences institucionales, lo que exige pricing y earn-outs diseñados para horizontes largos.\n\nEl liderazgo de Uría Menéndez (23.056 millones) y Cuatrecasas (142 mandatos) en el league table legal español y la dominancia de EE.UU. como inversor inbound (7.717 millones) dibujan el mapa de counterparties y advisors relevantes para sell-side en 2026.\n\nFuentes: Gestoría y Abogados, You are Capital / Dealsuite, Forbes España / TTR Data, Informa / TTR Data"
 }
