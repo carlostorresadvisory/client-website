@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-08",
+  "fecha": "2026-11-10",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipo BoE",
-      "valor": "4,00%",
-      "fuente": "Bank of England Minutes"
+      "etiqueta": "Bajas rusas acumuladas",
+      "valor": "1,61 M",
+      "fuente": "mod.gov.ua"
     },
     {
-      "etiqueta": "Liquidaciones cripto",
-      "valor": "1.080 M$",
-      "fuente": "TMGM"
+      "etiqueta": "Arancel adicional China a EE. UU.",
+      "valor": "10%",
+      "fuente": "english.www.gov.cn"
     },
     {
-      "etiqueta": "Mercado M&A España",
+      "etiqueta": "Tasa depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "ecb.europa.eu"
+    },
+    {
+      "etiqueta": "M&A España 9M 2026",
       "valor": "73.803 M€",
-      "fuente": "Forbes España / TTR Data"
-    },
-    {
-      "etiqueta": "Inversión EE.UU. en España",
-      "valor": "7.717 M€",
-      "fuente": "Informa / TTR Data"
+      "fuente": "AGM Abogados"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,20 +51,24 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "EE.UU. aprobó la venta de chips Nvidia H200 a New Matrix, una entidad china que operaba desde oficinas vacías, lo que expone lagunas críticas en los controles de exportación de tecnología avanzada",
-          "fuente": "Emergent"
+          "texto": "Las negociaciones trilateral de paz en Abu Dabi arrancan con el telón de fondo de 1,61 millones de bajas rusas acumuladas y 2.220 adicionales en el parte del 10 de noviembre",
+          "fuente": "mod.gov.ua"
         },
         {
-          "texto": "La subida del Banco de Inglaterra al 4,00% y la persistencia inflacionaria dispararon la aversión al riesgo: el Nasdaq cayó hasta un 5%, Bitcoin retrocedió por debajo de 76.000 dólares y las liquidaciones cripto globales sumaron 1.080 millones en 24 horas",
-          "fuente": "TMGM"
+          "texto": "China prorroga dos meses la suspensión del arancel extra del 24 % a productos estadounidenses, manteniendo el recargo del 10 % mientras EE. UU. extiende su exención de tasas portuarias hasta enero de 2027",
+          "fuente": "english.www.gov.cn"
         },
         {
-          "texto": "La victoria demócrata en ambas cámaras en los midterms impone frenos institucionales a la agenda económica y exterior de Trump en su tramo final de mandato",
-          "fuente": "The Daily Star"
+          "texto": "Anthropic lanza Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens entrada y 40 $/M salida, como movimiento previo a su salida a bolsa",
+          "fuente": "Fortune"
         },
         {
-          "texto": "En España, el marco legal de M&A recuerda que retrasos superiores a 30 días en publicaciones obligatorias en el BORME acarrean sanciones de hasta 3.000 euros diarios, y la omisión de transmisiones de cuotas a la Seguridad Social multas fijas de 600 euros por cuota",
-          "fuente": "Gestoría y Abogados"
+          "texto": "El consejo de Nvidia abre investigación independiente sobre posibles intentos de inteligencia extranjera contra Jensen Huang, y en paralelo anuncia con el MSIT surcoreano inversiones en Point2 Technology y alianzas NVLink Fusion con SK Telecom y Rebellions",
+          "fuente": "NVIDIA Newsroom / NVIDIA Blogs"
+        },
+        {
+          "texto": "El mercado M&A español cierra septiembre con 2.261 operaciones por 73.803 M€, cayendo 15 % en número y 6 % en valor interanual",
+          "fuente": "AGM Abogados"
         }
       ]
     },
@@ -72,20 +76,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El enviado estadounidense Steve Witkoff confirmó una nueva ronda de negociaciones Rusia-Ucrania mediada por Washington en Abu Dabi los días 10 y 11 de noviembre, centrada en arquitectura de seguridad post-guerra y desescalada",
-          "fuente": "Politis"
+          "texto": "La UE prorroga dos años el mandato de EUMAM Ukraine hasta noviembre de 2028 con ~300 M€ de dotación, anclando el apoyo militar estructural",
+          "fuente": "Consilium"
         },
         {
-          "texto": "El Banco de Inglaterra elevó su tipo oficial 25 puntos básicos hasta el 4,00%, justificando la postura restrictiva en la inflación persistente derivada del choque energético de Oriente Medio",
-          "fuente": "Bank of England Minutes"
+          "texto": "El Banco de Inglaterra mantiene tipos al 4 % en sus actas del 4 de noviembre, alertando de presiones inflacionistas energéticas y subida de casi 50 pb en hipotecas a dos años. La Fed mantiene el fed funds en 3,88 % según su boletín H.15 del 9 de noviembre",
+          "fuente": "Bank of England, Federal Reserve Board"
         },
         {
-          "texto": "NVIDIA publicó un análisis sobre full-stack codesign en su infraestructura de IA para mitigar tensiones y restricciones de memoria en aceleradores mediante arquitecturas de almacenamiento en jerarquía",
-          "fuente": "NVIDIA Blog"
+          "texto": "El plazo del 2 de diciembre para etiquetado máquina-legible de contenidos sintéticos bajo el Art. 50 del Reglamento IA se vuelve inminente para tecnológicas y pymes en la UE",
+          "fuente": "Morrison Foerster"
         },
         {
-          "texto": "En el mercado medio del sur de Europa, los procesos de compraventa de pymes superan en un 28% de los casos los 12 meses de ejecución por la extrema rigurosidad en las due diligences de compradores institucionales",
-          "fuente": "You are Capital / Dealsuite"
+          "texto": "Private equity en España moviliza 17.263 M€ en 244 operaciones a septiembre, mientras inmobiliario lidera con 510 deals en un mercado de pymes marcado por la brecha valoración comprador-vendedor",
+          "fuente": "AGM Abogados"
         }
       ]
     },
@@ -93,20 +97,24 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado transaccional español acumuló 2.261 operaciones y 73.803 millones de euros en los nueve primeros meses de 2026; Uría Menéndez lidera el asesoramiento legal por valor con 23.056 millones, seguida de Garrigues (14.689 millones) y Freshfields (8.664 millones), mientras Cuatrecasas encabeza el número de mandatos con 142",
-          "fuente": "Forbes España / TTR Data"
+          "texto": "Oxford Economics eleva por encima del 50 % la probabilidad de acción militar directa sobre Irán a finales de año, tensionando Brent por encima de 115 $/barril y el tráfico en Ormuz",
+          "fuente": "Oxford Economics"
         },
         {
-          "texto": "Estados Unidos se consolida como primer inversor extranjero en España con 110 operaciones y 7.717 millones inyectados hasta el tercer trimestre, por delante de Francia (105 operaciones) y Reino Unido (87 transacciones)",
-          "fuente": "Informa / TTR Data"
+          "texto": "El BCE pausa en 2,50 % depósito y 2,65 % refinanciación, condicionado a la volatilidad energética",
+          "fuente": "ECB"
         },
         {
-          "texto": "El BCE advirtió formalmente sobre la vulnerabilidad estructural de la eurozona ante la fragmentación geopolítica, señalando que su ratio de apertura comercial supera ampliamente a la estadounidense y expone a la economía continental a shocks arancelarios y de cadenas de suministro",
-          "fuente": "European Central Bank"
+          "texto": "Nvidia cierra acuerdos con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar 2,5x capacidad de sustratos y empaquetado avanzado en tres años",
+          "fuente": "NVIDIA Newsroom"
         },
         {
-          "texto": "NVIDIA lanzó el modelo abierto Nemotron 3.5 Super VL (120.000 millones de parámetros), optimizado para agentes multimodales empresariales con velocidad de proceso hasta 5 veces superior a la media de su clase",
-          "fuente": "NVIDIA News"
+          "texto": "OpenAI y Google Cloud integran modelos frontera y agentes Codex en Model Garden de GCP, permitiendo a corporaciones canalizar gasto cloud hacia IA de terceros bajo gobernanza centralizada",
+          "fuente": "OpenAI"
+        },
+        {
+          "texto": "El M&A español dibuja un patrón en K: caída en pymes por selectividad de private equity y coste financiación, contra concentración en grandes deals de infraestructuras y energía",
+          "fuente": "AGM Abogados"
         }
       ]
     },
@@ -118,21 +126,21 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El régimen sancionador español (3.000 euros/día por retraso en BORME y 600 euros por cuota no declarada en Seguridad Social) obliga a integrar compliance de plazos como condition precedent en cualquier timeline de cierre",
-              "fuente": "Gestoría y Abogados"
+              "texto": "M&A España 9M 2026: 2.261 deals / 73.803 M€ (-15 %/#, -6 %/€) con private equity en 17.263 M€ (244 ops) e inmobiliario en 510 deals, confirmando mercado en K donde la brecha valoración comprador-vendedor frena pymes y la selectividad de fondos concentra ticket grande en infra/energía",
+              "fuente": "AGM Abogados"
             },
             {
-              "texto": "La mediana de ejecución de deals en pymes del sur de Europa supera ya los 12 meses en más de un cuarto de los casos por due diligences institucionales, lo que exige pricing y earn-outs diseñados para horizontes largos",
-              "fuente": "You are Capital / Dealsuite"
+              "texto": "El plazo 2-diciembre Art. 50 Reglamento IA obliga a cualquier cliente con despliegue en UE a auditoría de etiquetado máquina-legible ya, riesgo de sanción y palanca de venta para servicios de compliance tecnológico",
+              "fuente": "Morrison Foerster"
             },
             {
-              "texto": "El liderazgo de Uría Menéndez (23.056 millones) y Cuatrecasas (142 mandatos) en el league table legal español y la dominancia de EE.UU. como inversor inbound (7.717 millones) dibujan el mapa de counterparties y advisors relevantes para sell-side en 2026",
-              "fuente": "Forbes España / TTR Data, Informa / TTR Data"
+              "texto": "Nvidia bajo investigación de consejo por inteligencia extranjera sobre CEO + expansión soberana en Corea (Point2, SK Telecom, Rebellions) ilustra riesgo geopolítico en cadena de valor IA que clientes de corporate finance deben valorar en due diligence de proveedores críticos",
+              "fuente": "NVIDIA Newsroom / NVIDIA Blogs"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEE.UU. aprobó la venta de chips Nvidia H200 a New Matrix, una entidad china que operaba desde oficinas vacías, lo que expone lagunas críticas en los controles de exportación de tecnología avanzada.\n\nLa subida del Banco de Inglaterra al 4,00% y la persistencia inflacionaria dispararon la aversión al riesgo: el Nasdaq cayó hasta un 5%, Bitcoin retrocedió por debajo de 76.000 dólares y las liquidaciones cripto globales sumaron 1.080 millones en 24 horas.\n\nLa victoria demócrata en ambas cámaras en los midterms impone frenos institucionales a la agenda económica y exterior de Trump en su tramo final de mandato.\n\nEn España, el marco legal de M&A recuerda que retrasos superiores a 30 días en publicaciones obligatorias en el BORME acarrean sanciones de hasta 3.000 euros diarios, y la omisión de transmisiones de cuotas a la Seguridad Social multas fijas de 600 euros por cuota.\n\nFuentes: Emergent, TMGM, The Daily Star, Gestoría y Abogados\n\n## Esta semana\nEl enviado estadounidense Steve Witkoff confirmó una nueva ronda de negociaciones Rusia-Ucrania mediada por Washington en Abu Dabi los días 10 y 11 de noviembre, centrada en arquitectura de seguridad post-guerra y desescalada.\n\nEl Banco de Inglaterra elevó su tipo oficial 25 puntos básicos hasta el 4,00%, justificando la postura restrictiva en la inflación persistente derivada del choque energético de Oriente Medio.\n\nNVIDIA publicó un análisis sobre full-stack codesign en su infraestructura de IA para mitigar tensiones y restricciones de memoria en aceleradores mediante arquitecturas de almacenamiento en jerarquía.\n\nEn el mercado medio del sur de Europa, los procesos de compraventa de pymes superan en un 28% de los casos los 12 meses de ejecución por la extrema rigurosidad en las due diligences de compradores institucionales.\n\nFuentes: Politis, Bank of England Minutes, NVIDIA Blog, You are Capital / Dealsuite\n\n## Este mes\nEl mercado transaccional español acumuló 2.261 operaciones y 73.803 millones de euros en los nueve primeros meses de 2026; Uría Menéndez lidera el asesoramiento legal por valor con 23.056 millones, seguida de Garrigues (14.689 millones) y Freshfields (8.664 millones), mientras Cuatrecasas encabeza el número de mandatos con 142.\n\nEstados Unidos se consolida como primer inversor extranjero en España con 110 operaciones y 7.717 millones inyectados hasta el tercer trimestre, por delante de Francia (105 operaciones) y Reino Unido (87 transacciones).\n\nEl BCE advirtió formalmente sobre la vulnerabilidad estructural de la eurozona ante la fragmentación geopolítica, señalando que su ratio de apertura comercial supera ampliamente a la estadounidense y expone a la economía continental a shocks arancelarios y de cadenas de suministro.\n\nNVIDIA lanzó el modelo abierto Nemotron 3.5 Super VL (120.000 millones de parámetros), optimizado para agentes multimodales empresariales con velocidad de proceso hasta 5 veces superior a la media de su clase.\n\nFuentes: Forbes España / TTR Data, Informa / TTR Data, European Central Bank, NVIDIA News\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl régimen sancionador español (3.000 euros/día por retraso en BORME y 600 euros por cuota no declarada en Seguridad Social) obliga a integrar compliance de plazos como condition precedent en cualquier timeline de cierre.\n\nLa mediana de ejecución de deals en pymes del sur de Europa supera ya los 12 meses en más de un cuarto de los casos por due diligences institucionales, lo que exige pricing y earn-outs diseñados para horizontes largos.\n\nEl liderazgo de Uría Menéndez (23.056 millones) y Cuatrecasas (142 mandatos) en el league table legal español y la dominancia de EE.UU. como inversor inbound (7.717 millones) dibujan el mapa de counterparties y advisors relevantes para sell-side en 2026.\n\nFuentes: Gestoría y Abogados, You are Capital / Dealsuite, Forbes España / TTR Data, Informa / TTR Data"
+  "markdown": "## Hoy\nLas negociaciones trilateral de paz en Abu Dabi arrancan con el telón de fondo de 1,61 millones de bajas rusas acumuladas y 2.220 adicionales en el parte del 10 de noviembre.\n\nChina prorroga dos meses la suspensión del arancel extra del 24 % a productos estadounidenses, manteniendo el recargo del 10 % mientras EE. UU. extiende su exención de tasas portuarias hasta enero de 2027.\n\nAnthropic lanza Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens entrada y 40 $/M salida, como movimiento previo a su salida a bolsa.\n\nEl consejo de Nvidia abre investigación independiente sobre posibles intentos de inteligencia extranjera contra Jensen Huang, y en paralelo anuncia con el MSIT surcoreano inversiones en Point2 Technology y alianzas NVLink Fusion con SK Telecom y Rebellions.\n\nEl mercado M&A español cierra septiembre con 2.261 operaciones por 73.803 M€, cayendo 15 % en número y 6 % en valor interanual.\n\nFuentes: mod.gov.ua, english.www.gov.cn, Fortune, NVIDIA Newsroom / NVIDIA Blogs, AGM Abogados\n\n## Esta semana\nLa UE prorroga dos años el mandato de EUMAM Ukraine hasta noviembre de 2028 con ~300 M€ de dotación, anclando el apoyo militar estructural.\n\nEl Banco de Inglaterra mantiene tipos al 4 % en sus actas del 4 de noviembre, alertando de presiones inflacionistas energéticas y subida de casi 50 pb en hipotecas a dos años. La Fed mantiene el fed funds en 3,88 % según su boletín H.15 del 9 de noviembre.\n\nEl plazo del 2 de diciembre para etiquetado máquina-legible de contenidos sintéticos bajo el Art. 50 del Reglamento IA se vuelve inminente para tecnológicas y pymes en la UE.\n\nPrivate equity en España moviliza 17.263 M€ en 244 operaciones a septiembre, mientras inmobiliario lidera con 510 deals en un mercado de pymes marcado por la brecha valoración comprador-vendedor.\n\nFuentes: Consilium, Bank of England, Federal Reserve Board, Morrison Foerster, AGM Abogados\n\n## Este mes\nOxford Economics eleva por encima del 50 % la probabilidad de acción militar directa sobre Irán a finales de año, tensionando Brent por encima de 115 $/barril y el tráfico en Ormuz.\n\nEl BCE pausa en 2,50 % depósito y 2,65 % refinanciación, condicionado a la volatilidad energética.\n\nNvidia cierra acuerdos con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar 2,5x capacidad de sustratos y empaquetado avanzado en tres años.\n\nOpenAI y Google Cloud integran modelos frontera y agentes Codex en Model Garden de GCP, permitiendo a corporaciones canalizar gasto cloud hacia IA de terceros bajo gobernanza centralizada.\n\nEl M&A español dibuja un patrón en K: caída en pymes por selectividad de private equity y coste financiación, contra concentración en grandes deals de infraestructuras y energía.\n\nFuentes: Oxford Economics, ECB, NVIDIA Newsroom, OpenAI, AGM Abogados\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nM&A España 9M 2026: 2.261 deals / 73.803 M€ (-15 %/#, -6 %/€) con private equity en 17.263 M€ (244 ops) e inmobiliario en 510 deals, confirmando mercado en K donde la brecha valoración comprador-vendedor frena pymes y la selectividad de fondos concentra ticket grande en infra/energía.\n\nEl plazo 2-diciembre Art. 50 Reglamento IA obliga a cualquier cliente con despliegue en UE a auditoría de etiquetado máquina-legible ya, riesgo de sanción y palanca de venta para servicios de compliance tecnológico.\n\nNvidia bajo investigación de consejo por inteligencia extranjera sobre CEO + expansión soberana en Corea (Point2, SK Telecom, Rebellions) ilustra riesgo geopolítico en cadena de valor IA que clientes de corporate finance deben valorar en due diligence de proveedores críticos.\n\nFuentes: AGM Abogados, Morrison Foerster, NVIDIA Newsroom / NVIDIA Blogs"
 }
