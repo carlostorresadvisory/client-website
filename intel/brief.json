@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-10",
+  "fecha": "2026-11-11",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bajas rusas acumuladas",
-      "valor": "1,61 M",
-      "fuente": "mod.gov.ua"
+      "etiqueta": "Brent",
+      "valor": "91,49 $/barril",
+      "fuente": "The Star"
     },
     {
-      "etiqueta": "Arancel adicional China a EE. UU.",
-      "valor": "10%",
-      "fuente": "english.www.gov.cn"
+      "etiqueta": "Modelos Claude",
+      "valor": "8 $/M tok. entrada",
+      "fuente": "Fortune"
     },
     {
-      "etiqueta": "Tasa depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "ecb.europa.eu"
-    },
-    {
-      "etiqueta": "M&A España 9M 2026",
-      "valor": "73.803 M€",
+      "etiqueta": "M&A España 9M",
+      "valor": "2.261 ops",
       "fuente": "AGM Abogados"
+    },
+    {
+      "etiqueta": "Family offices",
+      "valor": "47,2% activos privados",
+      "fuente": "Demócrata"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,24 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Las negociaciones trilateral de paz en Abu Dabi arrancan con el telón de fondo de 1,61 millones de bajas rusas acumuladas y 2.220 adicionales en el parte del 10 de noviembre",
-          "fuente": "mod.gov.ua"
+          "texto": "El crudo Brent cae a 91,49 dólares, mínimos de dos meses, al descontar el mercado la distensión declarada por Trump sobre Irán y la rebaja de prima de riesgo en Ormuz. En paralelo, las conversaciones trilaterales de Abu Dabi entran en su segundo día con Zelenski valorando positivamente el giro de los mediadores estadounidenses (Kushner y Witkoff) hacia una arquitectura de seguridad europea, lo que sugiere un cambio de incentivos en la mesa de negociación",
+          "fuente": "The Star, The Guardian"
         },
         {
-          "texto": "China prorroga dos meses la suspensión del arancel extra del 24 % a productos estadounidenses, manteniendo el recargo del 10 % mientras EE. UU. extiende su exención de tasas portuarias hasta enero de 2027",
-          "fuente": "english.www.gov.cn"
-        },
-        {
-          "texto": "Anthropic lanza Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens entrada y 40 $/M salida, como movimiento previo a su salida a bolsa",
-          "fuente": "Fortune"
-        },
-        {
-          "texto": "El consejo de Nvidia abre investigación independiente sobre posibles intentos de inteligencia extranjera contra Jensen Huang, y en paralelo anuncia con el MSIT surcoreano inversiones en Point2 Technology y alianzas NVLink Fusion con SK Telecom y Rebellions",
-          "fuente": "NVIDIA Newsroom / NVIDIA Blogs"
-        },
-        {
-          "texto": "El mercado M&A español cierra septiembre con 2.261 operaciones por 73.803 M€, cayendo 15 % en número y 6 % en valor interanual",
-          "fuente": "AGM Abogados"
+          "texto": "Anthropic lanza oficialmente Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens de entrada y 40 $/M de salida, y rebaja un 80 % el coste de tokens cacheados a 0,20 $/M, movimiento competitivo previo a su salida a bolsa que redefine el suelo de precios en inferencia. La DGT publica la consulta vinculante V1033-26, de 7 de mayo y analizada en doctrina este mes, que precisa los requisitos de \"unidad económica autónoma\" para la no sujeción al IVA en transmisiones del 100 % de participaciones dentro de grupos mercantiles, dando seguridad jurídica a restructuraciones intra-grupo",
+          "fuente": "Fortune, Legal 500"
         }
       ]
     },
@@ -76,20 +64,12 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La UE prorroga dos años el mandato de EUMAM Ukraine hasta noviembre de 2028 con ~300 M€ de dotación, anclando el apoyo militar estructural",
-          "fuente": "Consilium"
+          "texto": "Trump declara la guerra con Irán \"efectivamente acabada\" tras reunirse con el primer ministro de Qatar, rebajando expectativas de escalada militar tras la derrota republicana en midterms, mientras inteligencia occidental estima que Irán mantiene capacidad de 50 misiles balísticos/mes y un arsenal de al menos 1.700 unidades pese a la campaña aérea reciente. Los bancos centrales mantienen pausa a la espera de diciembre: BCE en depósito al 2,50 % y Fed en fondos federales 3,50 %-3,75 %, con la volatilidad energética como variable clave para el siguiente movimiento",
+          "fuente": "The Guardian, The National, Federal Reserve Board"
         },
         {
-          "texto": "El Banco de Inglaterra mantiene tipos al 4 % en sus actas del 4 de noviembre, alertando de presiones inflacionistas energéticas y subida de casi 50 pb en hipotecas a dos años. La Fed mantiene el fed funds en 3,88 % según su boletín H.15 del 9 de noviembre",
-          "fuente": "Bank of England, Federal Reserve Board"
-        },
-        {
-          "texto": "El plazo del 2 de diciembre para etiquetado máquina-legible de contenidos sintéticos bajo el Art. 50 del Reglamento IA se vuelve inminente para tecnológicas y pymes en la UE",
-          "fuente": "Morrison Foerster"
-        },
-        {
-          "texto": "Private equity en España moviliza 17.263 M€ en 244 operaciones a septiembre, mientras inmobiliario lidera con 510 deals en un mercado de pymes marcado por la brecha valoración comprador-vendedor",
-          "fuente": "AGM Abogados"
+          "texto": "El estudio IE Family Offices Knowledge Hub, difundido esta semana por Cuatrecasas y CaixaBank, revela que los family offices españoles destinan de media el 47,2 % de sus activos a mercados privados y el 68,1 % planea incrementar exposición en cinco años, señalando una fuente de capital seco estructural para dealflow en mid-market español. Anthropic se consolida como laboratorio privado más valioso del sector con 965.000 M$ de valoración estimada (S-1 presentada para ticker ANT en Nasdaq), superando a OpenAI en 852.000 M$, lo que marca un hito en la carrera de capitalización de la IA generativa",
+          "fuente": "Demócrata, Second Talent"
         }
       ]
     },
@@ -97,24 +77,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Oxford Economics eleva por encima del 50 % la probabilidad de acción militar directa sobre Irán a finales de año, tensionando Brent por encima de 115 $/barril y el tráfico en Ormuz",
-          "fuente": "Oxford Economics"
+          "texto": "El mercado transaccional español cierra 9M 2026 con 2.261 operaciones y 73.803 M€, cayendo 15 % en volumen y 6 % en valor interanual; inmobiliario lidera con 510 deals e Internet/Software suma 203, dibujo en K donde private equity selecciona tickets grandes en infra/energía mientras pymes frenan por brecha valoración y coste de financiación. Los fondos de private equity acumulan presión global con más de 32.000 participadas maduras (muchas >5 años), obligando a acelerar salidas, secundarios y continuation funds, lo que alimentará dealflow en los próximos trimestres",
+          "fuente": "AGM Abogados, Global Advisory Experts"
         },
         {
-          "texto": "El BCE pausa en 2,50 % depósito y 2,65 % refinanciación, condicionado a la volatilidad energética",
-          "fuente": "ECB"
-        },
-        {
-          "texto": "Nvidia cierra acuerdos con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar 2,5x capacidad de sustratos y empaquetado avanzado en tres años",
-          "fuente": "NVIDIA Newsroom"
-        },
-        {
-          "texto": "OpenAI y Google Cloud integran modelos frontera y agentes Codex en Model Garden de GCP, permitiendo a corporaciones canalizar gasto cloud hacia IA de terceros bajo gobernanza centralizada",
-          "fuente": "OpenAI"
-        },
-        {
-          "texto": "El M&A español dibuja un patrón en K: caída en pymes por selectividad de private equity y coste financiación, contra concentración en grandes deals de infraestructuras y energía",
-          "fuente": "AGM Abogados"
+          "texto": "En el frente oriental, informes de inteligencia y OSINT DeepState confirman que el avance neto ruso se ha ralentizado a ganancias marginales de ~20 millas cuadradas/mes en octubre-noviembre, girando Moscú a campaña masiva de desgaste contra infraestructura energética ucraniana de cara al invierno, lo que refuerza la urgencia negociadora en Abu Dabi. El Anteproyecto de Ley Orgánica de Integridad Pública endurece trazabilidad y otorga carácter constitutivo a la inscripción en Registro Mercantil de transmisiones de participaciones en SL, cambiando el perímetro de due diligence en operaciones de corporate finance",
+          "fuente": "The Russia-Ukraine War Report Card, Osborne Clarke"
         }
       ]
     },
@@ -126,21 +94,17 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "M&A España 9M 2026: 2.261 deals / 73.803 M€ (-15 %/#, -6 %/€) con private equity en 17.263 M€ (244 ops) e inmobiliario en 510 deals, confirmando mercado en K donde la brecha valoración comprador-vendedor frena pymes y la selectividad de fondos concentra ticket grande en infra/energía",
-              "fuente": "AGM Abogados"
+              "texto": "Family offices españoles con 47,2 % en privados y 68 % intención de subir exposición constituyen fuente de capital paciente para sucesiones y buy-and-build en mid-market, especialmente en tecnología y salud donde Investcorp (Connectif), Namirial (ZeroComa) y Miura (Farmadosis) acaban de cerrar deals",
+              "fuente": "Demócrata / Albia IMAP"
             },
             {
-              "texto": "El plazo 2-diciembre Art. 50 Reglamento IA obliga a cualquier cliente con despliegue en UE a auditoría de etiquetado máquina-legible ya, riesgo de sanción y palanca de venta para servicios de compliance tecnológico",
-              "fuente": "Morrison Foerster"
-            },
-            {
-              "texto": "Nvidia bajo investigación de consejo por inteligencia extranjera sobre CEO + expansión soberana en Corea (Point2, SK Telecom, Rebellions) ilustra riesgo geopolítico en cadena de valor IA que clientes de corporate finance deben valorar en due diligence de proveedores críticos",
-              "fuente": "NVIDIA Newsroom / NVIDIA Blogs"
+              "texto": "La consulta V1033-26 sobre \"unidad económica autónoma\" da certidumbre a transmisiones 100 % intra-grupo sin IVA, herramienta directa para diseñar restructuraciones pre-venta eficientes",
+              "fuente": "Legal 500"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLas negociaciones trilateral de paz en Abu Dabi arrancan con el telón de fondo de 1,61 millones de bajas rusas acumuladas y 2.220 adicionales en el parte del 10 de noviembre.\n\nChina prorroga dos meses la suspensión del arancel extra del 24 % a productos estadounidenses, manteniendo el recargo del 10 % mientras EE. UU. extiende su exención de tasas portuarias hasta enero de 2027.\n\nAnthropic lanza Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens entrada y 40 $/M salida, como movimiento previo a su salida a bolsa.\n\nEl consejo de Nvidia abre investigación independiente sobre posibles intentos de inteligencia extranjera contra Jensen Huang, y en paralelo anuncia con el MSIT surcoreano inversiones en Point2 Technology y alianzas NVLink Fusion con SK Telecom y Rebellions.\n\nEl mercado M&A español cierra septiembre con 2.261 operaciones por 73.803 M€, cayendo 15 % en número y 6 % en valor interanual.\n\nFuentes: mod.gov.ua, english.www.gov.cn, Fortune, NVIDIA Newsroom / NVIDIA Blogs, AGM Abogados\n\n## Esta semana\nLa UE prorroga dos años el mandato de EUMAM Ukraine hasta noviembre de 2028 con ~300 M€ de dotación, anclando el apoyo militar estructural.\n\nEl Banco de Inglaterra mantiene tipos al 4 % en sus actas del 4 de noviembre, alertando de presiones inflacionistas energéticas y subida de casi 50 pb en hipotecas a dos años. La Fed mantiene el fed funds en 3,88 % según su boletín H.15 del 9 de noviembre.\n\nEl plazo del 2 de diciembre para etiquetado máquina-legible de contenidos sintéticos bajo el Art. 50 del Reglamento IA se vuelve inminente para tecnológicas y pymes en la UE.\n\nPrivate equity en España moviliza 17.263 M€ en 244 operaciones a septiembre, mientras inmobiliario lidera con 510 deals en un mercado de pymes marcado por la brecha valoración comprador-vendedor.\n\nFuentes: Consilium, Bank of England, Federal Reserve Board, Morrison Foerster, AGM Abogados\n\n## Este mes\nOxford Economics eleva por encima del 50 % la probabilidad de acción militar directa sobre Irán a finales de año, tensionando Brent por encima de 115 $/barril y el tráfico en Ormuz.\n\nEl BCE pausa en 2,50 % depósito y 2,65 % refinanciación, condicionado a la volatilidad energética.\n\nNvidia cierra acuerdos con IBIDEN, Samsung Electro-Mechanics y Unimicron para multiplicar 2,5x capacidad de sustratos y empaquetado avanzado en tres años.\n\nOpenAI y Google Cloud integran modelos frontera y agentes Codex en Model Garden de GCP, permitiendo a corporaciones canalizar gasto cloud hacia IA de terceros bajo gobernanza centralizada.\n\nEl M&A español dibuja un patrón en K: caída en pymes por selectividad de private equity y coste financiación, contra concentración en grandes deals de infraestructuras y energía.\n\nFuentes: Oxford Economics, ECB, NVIDIA Newsroom, OpenAI, AGM Abogados\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nM&A España 9M 2026: 2.261 deals / 73.803 M€ (-15 %/#, -6 %/€) con private equity en 17.263 M€ (244 ops) e inmobiliario en 510 deals, confirmando mercado en K donde la brecha valoración comprador-vendedor frena pymes y la selectividad de fondos concentra ticket grande en infra/energía.\n\nEl plazo 2-diciembre Art. 50 Reglamento IA obliga a cualquier cliente con despliegue en UE a auditoría de etiquetado máquina-legible ya, riesgo de sanción y palanca de venta para servicios de compliance tecnológico.\n\nNvidia bajo investigación de consejo por inteligencia extranjera sobre CEO + expansión soberana en Corea (Point2, SK Telecom, Rebellions) ilustra riesgo geopolítico en cadena de valor IA que clientes de corporate finance deben valorar en due diligence de proveedores críticos.\n\nFuentes: AGM Abogados, Morrison Foerster, NVIDIA Newsroom / NVIDIA Blogs"
+  "markdown": "## Hoy\nEl crudo Brent cae a 91,49 dólares, mínimos de dos meses, al descontar el mercado la distensión declarada por Trump sobre Irán y la rebaja de prima de riesgo en Ormuz. En paralelo, las conversaciones trilaterales de Abu Dabi entran en su segundo día con Zelenski valorando positivamente el giro de los mediadores estadounidenses (Kushner y Witkoff) hacia una arquitectura de seguridad europea, lo que sugiere un cambio de incentivos en la mesa de negociación.\n\nAnthropic lanza oficialmente Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens de entrada y 40 $/M de salida, y rebaja un 80 % el coste de tokens cacheados a 0,20 $/M, movimiento competitivo previo a su salida a bolsa que redefine el suelo de precios en inferencia. La DGT publica la consulta vinculante V1033-26, de 7 de mayo y analizada en doctrina este mes, que precisa los requisitos de \"unidad económica autónoma\" para la no sujeción al IVA en transmisiones del 100 % de participaciones dentro de grupos mercantiles, dando seguridad jurídica a restructuraciones intra-grupo.\n\nFuentes: The Star, The Guardian, Fortune, Legal 500\n\n## Esta semana\nTrump declara la guerra con Irán \"efectivamente acabada\" tras reunirse con el primer ministro de Qatar, rebajando expectativas de escalada militar tras la derrota republicana en midterms, mientras inteligencia occidental estima que Irán mantiene capacidad de 50 misiles balísticos/mes y un arsenal de al menos 1.700 unidades pese a la campaña aérea reciente. Los bancos centrales mantienen pausa a la espera de diciembre: BCE en depósito al 2,50 % y Fed en fondos federales 3,50 %-3,75 %, con la volatilidad energética como variable clave para el siguiente movimiento.\n\nEl estudio IE Family Offices Knowledge Hub, difundido esta semana por Cuatrecasas y CaixaBank, revela que los family offices españoles destinan de media el 47,2 % de sus activos a mercados privados y el 68,1 % planea incrementar exposición en cinco años, señalando una fuente de capital seco estructural para dealflow en mid-market español. Anthropic se consolida como laboratorio privado más valioso del sector con 965.000 M$ de valoración estimada (S-1 presentada para ticker ANT en Nasdaq), superando a OpenAI en 852.000 M$, lo que marca un hito en la carrera de capitalización de la IA generativa.\n\nFuentes: The Guardian, The National, Federal Reserve Board, Demócrata, Second Talent\n\n## Este mes\nEl mercado transaccional español cierra 9M 2026 con 2.261 operaciones y 73.803 M€, cayendo 15 % en volumen y 6 % en valor interanual; inmobiliario lidera con 510 deals e Internet/Software suma 203, dibujo en K donde private equity selecciona tickets grandes en infra/energía mientras pymes frenan por brecha valoración y coste de financiación. Los fondos de private equity acumulan presión global con más de 32.000 participadas maduras (muchas >5 años), obligando a acelerar salidas, secundarios y continuation funds, lo que alimentará dealflow en los próximos trimestres.\n\nEn el frente oriental, informes de inteligencia y OSINT DeepState confirman que el avance neto ruso se ha ralentizado a ganancias marginales de ~20 millas cuadradas/mes en octubre-noviembre, girando Moscú a campaña masiva de desgaste contra infraestructura energética ucraniana de cara al invierno, lo que refuerza la urgencia negociadora en Abu Dabi. El Anteproyecto de Ley Orgánica de Integridad Pública endurece trazabilidad y otorga carácter constitutivo a la inscripción en Registro Mercantil de transmisiones de participaciones en SL, cambiando el perímetro de due diligence en operaciones de corporate finance.\n\nFuentes: AGM Abogados, Global Advisory Experts, The Russia-Ukraine War Report Card, Osborne Clarke\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nFamily offices españoles con 47,2 % en privados y 68 % intención de subir exposición constituyen fuente de capital paciente para sucesiones y buy-and-build en mid-market, especialmente en tecnología y salud donde Investcorp (Connectif), Namirial (ZeroComa) y Miura (Farmadosis) acaban de cerrar deals.\n\nLa consulta V1033-26 sobre \"unidad económica autónoma\" da certidumbre a transmisiones 100 % intra-grupo sin IVA, herramienta directa para diseñar restructuraciones pre-venta eficientes.\n\nFuentes: Demócrata / Albia IMAP, Legal 500"
 }
