@@ -1673,7 +1673,6 @@ p,li,summary,dd,label,.pp-x,.pp-pie,.puente-n{text-wrap:pretty}
     .hero-inner{max-width:none}
   }
   @media (max-width:420px){
-    .mode-switch{flex-direction:column;align-items:flex-start;gap:var(--e-1)}
     .hero-cta{width:100%;justify-content:center}
   }
 
@@ -2453,6 +2452,15 @@ main,footer{position:relative;z-index:1}
 
 /* Copia de `acabado.css`, puesta aquí por `inyectar-tokens.js`.
      No la edites en este fichero: se pisa en la siguiente pasada. */
+/* Móvil (<=700 px): todo el texto va alineado a la izquierda, sin justificar y
+   sin partir palabras (Carlos, 12-nov-2026). En escritorio el justificado de
+   arriba se queda tal cual; esta es la única regla que lo anula en móvil. */
+@media (max-width:700px){
+  .si-inner p,.faq-a p,.ph-sub,.idea-p,.puente-n,.pp-x,.ci-d,.brf-lectura,
+  .phase-cierre,.cont-sub,.pie-legal,.intel-aviso,.ci-aviso,.about-txt p,.brf-md-p{
+    text-align:left;hyphens:none;-webkit-hyphens:none;
+  }
+}
 /* ⟦IMPRESO⟧ — este bloque lo copia `inyectar-tokens.js` a la home,
    que lleva su propia copia de esta capa por estar escrita a mano.
    Se edita AQUÍ. */

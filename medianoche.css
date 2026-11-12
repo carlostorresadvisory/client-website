@@ -1031,6 +1031,11 @@ body > canvas.trama-global{
 
 :root{--h-portada:url(/img/informe-portada.jpg);--h-multiplo:url(/img/informe-multiplo.jpg);--h-rango:url(/img/informe-rango.jpg);}
 
+/* Móvil (<=700 px): texto legal alineado a la izquierda, sin justificar y sin
+   partir palabras (Carlos, 12-nov-2026); el justificado de escritorio se queda. */
+@media (max-width:700px){
+  .legal-body p,.legal-body li{text-align:left;hyphens:none;-webkit-hyphens:none}
+}
 /* ⟦IMPRESO⟧ — este bloque lo copia `inyectar-tokens.js` a la home,
    que lleva su propia copia de esta capa por estar escrita a mano.
    Se edita AQUÍ. */
