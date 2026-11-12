@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-11-11",
+  "fecha": "2026-11-12",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Brent",
-      "valor": "91,49 $/barril",
-      "fuente": "The Star"
+      "etiqueta": "IPC EE.UU. mensual",
+      "valor": "0,4 %",
+      "fuente": "The Edge Malaysia"
     },
     {
-      "etiqueta": "Modelos Claude",
-      "valor": "8 $/M tok. entrada",
-      "fuente": "Fortune"
+      "etiqueta": "Bank Rate BoE",
+      "valor": "4,0 %",
+      "fuente": "Bank of England"
     },
     {
-      "etiqueta": "M&A España 9M",
-      "valor": "2.261 ops",
-      "fuente": "AGM Abogados"
+      "etiqueta": "TTF gas europeo",
+      "valor": "87 €/MWh",
+      "fuente": "Eurasia Business News"
     },
     {
-      "etiqueta": "Family offices",
-      "valor": "47,2% activos privados",
-      "fuente": "Demócrata"
+      "etiqueta": "OPA Atom Hoteles",
+      "valor": "510 M€",
+      "fuente": "Europa Press"
     }
   ],
   "horizontes": [
@@ -30,11 +30,11 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 8
     }
   ],
   "radar": null,
@@ -51,12 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El crudo Brent cae a 91,49 dólares, mínimos de dos meses, al descontar el mercado la distensión declarada por Trump sobre Irán y la rebaja de prima de riesgo en Ormuz. En paralelo, las conversaciones trilaterales de Abu Dabi entran en su segundo día con Zelenski valorando positivamente el giro de los mediadores estadounidenses (Kushner y Witkoff) hacia una arquitectura de seguridad europea, lo que sugiere un cambio de incentivos en la mesa de negociación",
-          "fuente": "The Star, The Guardian"
+          "texto": "En EE. UU., el IPC de octubre repunta al 0,4 % mensual y el subyacente al 0,3 % por tercer mes consecutivo, reforzando las apuestas de endurecimiento de la Fed",
+          "fuente": "The Edge Malaysia"
         },
         {
-          "texto": "Anthropic lanza oficialmente Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens de entrada y 40 $/M de salida, y rebaja un 80 % el coste de tokens cacheados a 0,20 $/M, movimiento competitivo previo a su salida a bolsa que redefine el suelo de precios en inferencia. La DGT publica la consulta vinculante V1033-26, de 7 de mayo y analizada en doctrina este mes, que precisa los requisitos de \"unidad económica autónoma\" para la no sujeción al IVA en transmisiones del 100 % de participaciones dentro de grupos mercantiles, dando seguridad jurídica a restructuraciones intra-grupo",
-          "fuente": "Fortune, Legal 500"
+          "texto": "La EMA crea un observatorio y canal de seguimiento de IA bajo principios éticos compartidos con la FDA, primer paso regulatorio transatlántico para IA en medicamentos",
+          "fuente": "European Medicines Agency"
+        },
+        {
+          "texto": "En España, Bankinter Investment lanza OPA sobre el 100 % de Atom Hoteles Socimi valorando la compañía en 510 M€, operación que añade dealflow al segmento inmobiliario cotizado",
+          "fuente": "Europa Press"
+        },
+        {
+          "texto": "Anthropic presenta Claude Fable 5.2 a 8 $/M tokens entrada y 40 $/M salida con 49,1 % en FrontierCode 2.0, rebajando el suelo de precios de inferencia frente a GPT-6 Astra",
+          "fuente": "AIFOD"
         }
       ]
     },
@@ -64,12 +72,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Trump declara la guerra con Irán \"efectivamente acabada\" tras reunirse con el primer ministro de Qatar, rebajando expectativas de escalada militar tras la derrota republicana en midterms, mientras inteligencia occidental estima que Irán mantiene capacidad de 50 misiles balísticos/mes y un arsenal de al menos 1.700 unidades pese a la campaña aérea reciente. Los bancos centrales mantienen pausa a la espera de diciembre: BCE en depósito al 2,50 % y Fed en fondos federales 3,50 %-3,75 %, con la volatilidad energética como variable clave para el siguiente movimiento",
-          "fuente": "The Guardian, The National, Federal Reserve Board"
+          "texto": "El Banco de Inglaterra sube el Bank Rate al 4,0 % en su reunión de noviembre citando presiones inflacionarias internas persistentes",
+          "fuente": "Bank of England"
         },
         {
-          "texto": "El estudio IE Family Offices Knowledge Hub, difundido esta semana por Cuatrecasas y CaixaBank, revela que los family offices españoles destinan de media el 47,2 % de sus activos a mercados privados y el 68,1 % planea incrementar exposición en cinco años, señalando una fuente de capital seco estructural para dealflow en mid-market español. Anthropic se consolida como laboratorio privado más valioso del sector con 965.000 M$ de valoración estimada (S-1 presentada para ticker ANT en Nasdaq), superando a OpenAI en 852.000 M$, lo que marca un hito en la carrera de capitalización de la IA generativa",
-          "fuente": "Demócrata, Second Talent"
+          "texto": "Nueva York promulga la ley S.9051B/A.10379C que restringe drásticamente chatbots conversacionales de IA dirigidos a menores de 18 años, primera norma estatal estadounidense de hard-law sobre IA de consumo",
+          "fuente": "Simmons & Simmons"
+        },
+        {
+          "texto": "Rystad Energy sitúa el GNL por encima de 30 $/MMBtu con inventarios europeos en mínimos de la década",
+          "fuente": "Rystad Energy"
+        },
+        {
+          "texto": "TTR Data confirma descenso interanual del 17 % en volumen de operaciones M&A en España, con inmobiliario liderando (454 transacciones)",
+          "fuente": "TTR Data Blog"
+        },
+        {
+          "texto": "Nvidia corrige un 8,6 % en bolsa el 12 de noviembre por informaciones de investigación interna a Jensen Huang, aunque capitalización se mantiene en 4,07 B$ respaldada por demanda de infraestructura",
+          "fuente": "The Motley Fool"
         }
       ]
     },
@@ -77,12 +97,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado transaccional español cierra 9M 2026 con 2.261 operaciones y 73.803 M€, cayendo 15 % en volumen y 6 % en valor interanual; inmobiliario lidera con 510 deals e Internet/Software suma 203, dibujo en K donde private equity selecciona tickets grandes en infra/energía mientras pymes frenan por brecha valoración y coste de financiación. Los fondos de private equity acumulan presión global con más de 32.000 participadas maduras (muchas >5 años), obligando a acelerar salidas, secundarios y continuation funds, lo que alimentará dealflow en los próximos trimestres",
-          "fuente": "AGM Abogados, Global Advisory Experts"
+          "texto": "La OMI contabiliza 131 incidentes marítimos y ataques a buques en Golfo Pérsico y Ormuz desde el inicio de hostilidades en 2026, confirmando la militarización sostenida de la ruta petrolera crítica. Las midterms de noviembre entregan el Congreso a los demócratas impulsados por descontento con inflación y coste de la guerra de Irán, reconfigurando el poder legislativo en Washington. La EIA proyecta Brent estabilizado en torno a 100 $/barril a cierre de año por recortes de 2,5 Mb/d en Oriente Medio. CaixaBank Research atribuye el repunte global de tipos reales a largo plazo a mayores necesidades netas de inversión pública y privada combinadas con base inversora más sensible al precio del capital",
+          "fuente": "CaixaBank Research"
         },
         {
-          "texto": "En el frente oriental, informes de inteligencia y OSINT DeepState confirman que el avance neto ruso se ha ralentizado a ganancias marginales de ~20 millas cuadradas/mes en octubre-noviembre, girando Moscú a campaña masiva de desgaste contra infraestructura energética ucraniana de cara al invierno, lo que refuerza la urgencia negociadora en Abu Dabi. El Anteproyecto de Ley Orgánica de Integridad Pública endurece trazabilidad y otorga carácter constitutivo a la inscripción en Registro Mercantil de transmisiones de participaciones en SL, cambiando el perímetro de due diligence en operaciones de corporate finance",
-          "fuente": "The Russia-Ukraine War Report Card, Osborne Clarke"
+          "texto": "La Comisión Europea adopta la Decisión de Ejecución 2026/2274 homologando la EN 18286:2026, primera norma armonizada de gestión de calidad para IA de alto riesgo bajo el AI Act. TTR Data y asesores legales cierran 9M 2026 con 2.261 transacciones y 73.803 M€ en España (-15 % en número, resiliencia en PE con 17.263 M€ en 244 deals). Los registros globales de LLM Gateway superan 190 modelos de lenguaje lanzados en 2026, consolidando el giro estructural hacia arquitecturas MoE de ultra gran escala. Investcorp completa a finales de octubre la adquisición mayoritaria de Connectif, reforzando el foco de PE internacional en mid-market software ibérico",
+          "fuente": "Dentons, AGM Abogados, Mean CEO's BLOG, Capital-Riesgo.es"
         }
       ]
     },
@@ -94,17 +114,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "Family offices españoles con 47,2 % en privados y 68 % intención de subir exposición constituyen fuente de capital paciente para sucesiones y buy-and-build en mid-market, especialmente en tecnología y salud donde Investcorp (Connectif), Namirial (ZeroComa) y Miura (Farmadosis) acaban de cerrar deals",
-              "fuente": "Demócrata / Albia IMAP"
-            },
-            {
-              "texto": "La consulta V1033-26 sobre \"unidad económica autónoma\" da certidumbre a transmisiones 100 % intra-grupo sin IVA, herramienta directa para diseñar restructuraciones pre-venta eficientes",
-              "fuente": "Legal 500"
+              "texto": "El mercado tecnológico español de octubre (37 deals, 16 corporate/PE) con Connectif (Investcorp) y ZeroComa (Namirial) como banderas confirma que el mid-market de software atrae capital internacional y corporativo, mientras Artá Capital en Industrias Pinazo y la OPA de Bankinter sobre Atom Hoteles (510 M€) dibujan apetito complementario en industrial mediana e inmobiliario cotizado",
+              "fuente": "Capital-Riesgo.es / Europa Press"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEl crudo Brent cae a 91,49 dólares, mínimos de dos meses, al descontar el mercado la distensión declarada por Trump sobre Irán y la rebaja de prima de riesgo en Ormuz. En paralelo, las conversaciones trilaterales de Abu Dabi entran en su segundo día con Zelenski valorando positivamente el giro de los mediadores estadounidenses (Kushner y Witkoff) hacia una arquitectura de seguridad europea, lo que sugiere un cambio de incentivos en la mesa de negociación.\n\nAnthropic lanza oficialmente Claude Fable 5.2 y Mythos 5.2 con precios un 20 % por debajo de GPT-6 Astra, 8 $/M tokens de entrada y 40 $/M de salida, y rebaja un 80 % el coste de tokens cacheados a 0,20 $/M, movimiento competitivo previo a su salida a bolsa que redefine el suelo de precios en inferencia. La DGT publica la consulta vinculante V1033-26, de 7 de mayo y analizada en doctrina este mes, que precisa los requisitos de \"unidad económica autónoma\" para la no sujeción al IVA en transmisiones del 100 % de participaciones dentro de grupos mercantiles, dando seguridad jurídica a restructuraciones intra-grupo.\n\nFuentes: The Star, The Guardian, Fortune, Legal 500\n\n## Esta semana\nTrump declara la guerra con Irán \"efectivamente acabada\" tras reunirse con el primer ministro de Qatar, rebajando expectativas de escalada militar tras la derrota republicana en midterms, mientras inteligencia occidental estima que Irán mantiene capacidad de 50 misiles balísticos/mes y un arsenal de al menos 1.700 unidades pese a la campaña aérea reciente. Los bancos centrales mantienen pausa a la espera de diciembre: BCE en depósito al 2,50 % y Fed en fondos federales 3,50 %-3,75 %, con la volatilidad energética como variable clave para el siguiente movimiento.\n\nEl estudio IE Family Offices Knowledge Hub, difundido esta semana por Cuatrecasas y CaixaBank, revela que los family offices españoles destinan de media el 47,2 % de sus activos a mercados privados y el 68,1 % planea incrementar exposición en cinco años, señalando una fuente de capital seco estructural para dealflow en mid-market español. Anthropic se consolida como laboratorio privado más valioso del sector con 965.000 M$ de valoración estimada (S-1 presentada para ticker ANT en Nasdaq), superando a OpenAI en 852.000 M$, lo que marca un hito en la carrera de capitalización de la IA generativa.\n\nFuentes: The Guardian, The National, Federal Reserve Board, Demócrata, Second Talent\n\n## Este mes\nEl mercado transaccional español cierra 9M 2026 con 2.261 operaciones y 73.803 M€, cayendo 15 % en volumen y 6 % en valor interanual; inmobiliario lidera con 510 deals e Internet/Software suma 203, dibujo en K donde private equity selecciona tickets grandes en infra/energía mientras pymes frenan por brecha valoración y coste de financiación. Los fondos de private equity acumulan presión global con más de 32.000 participadas maduras (muchas >5 años), obligando a acelerar salidas, secundarios y continuation funds, lo que alimentará dealflow en los próximos trimestres.\n\nEn el frente oriental, informes de inteligencia y OSINT DeepState confirman que el avance neto ruso se ha ralentizado a ganancias marginales de ~20 millas cuadradas/mes en octubre-noviembre, girando Moscú a campaña masiva de desgaste contra infraestructura energética ucraniana de cara al invierno, lo que refuerza la urgencia negociadora en Abu Dabi. El Anteproyecto de Ley Orgánica de Integridad Pública endurece trazabilidad y otorga carácter constitutivo a la inscripción en Registro Mercantil de transmisiones de participaciones en SL, cambiando el perímetro de due diligence en operaciones de corporate finance.\n\nFuentes: AGM Abogados, Global Advisory Experts, The Russia-Ukraine War Report Card, Osborne Clarke\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nFamily offices españoles con 47,2 % en privados y 68 % intención de subir exposición constituyen fuente de capital paciente para sucesiones y buy-and-build en mid-market, especialmente en tecnología y salud donde Investcorp (Connectif), Namirial (ZeroComa) y Miura (Farmadosis) acaban de cerrar deals.\n\nLa consulta V1033-26 sobre \"unidad económica autónoma\" da certidumbre a transmisiones 100 % intra-grupo sin IVA, herramienta directa para diseñar restructuraciones pre-venta eficientes.\n\nFuentes: Demócrata / Albia IMAP, Legal 500"
+  "markdown": "## Hoy\nEn EE. UU., el IPC de octubre repunta al 0,4 % mensual y el subyacente al 0,3 % por tercer mes consecutivo, reforzando las apuestas de endurecimiento de la Fed.\n\nLa EMA crea un observatorio y canal de seguimiento de IA bajo principios éticos compartidos con la FDA, primer paso regulatorio transatlántico para IA en medicamentos.\n\nEn España, Bankinter Investment lanza OPA sobre el 100 % de Atom Hoteles Socimi valorando la compañía en 510 M€, operación que añade dealflow al segmento inmobiliario cotizado.\n\nAnthropic presenta Claude Fable 5.2 a 8 $/M tokens entrada y 40 $/M salida con 49,1 % en FrontierCode 2.0, rebajando el suelo de precios de inferencia frente a GPT-6 Astra.\n\nFuentes: The Edge Malaysia, European Medicines Agency, Europa Press, AIFOD\n\n## Esta semana\nEl Banco de Inglaterra sube el Bank Rate al 4,0 % en su reunión de noviembre citando presiones inflacionarias internas persistentes.\n\nRystad Energy sitúa el GNL por encima de 30 $/MMBtu con inventarios europeos en mínimos de la década.\n\nTTR Data confirma descenso interanual del 17 % en volumen de operaciones M&A en España, con inmobiliario liderando (454 transacciones).\n\nNvidia corrige un 8,6 % en bolsa el 12 de noviembre por informaciones de investigación interna a Jensen Huang, aunque capitalización se mantiene en 4,07 B$ respaldada por demanda de infraestructura.\n\nFuentes: Bank of England, Rystad Energy, TTR Data Blog, The Motley Fool\n\n## Este mes\nLa OMI contabiliza 131 incidentes marítimos y ataques a buques en Golfo Pérsico y Ormuz desde el inicio de hostilidades en 2026, confirmando la militarización sostenida de la ruta petrolera crítica. Las midterms de noviembre entregan el Congreso a los demócratas impulsados por descontento con inflación y coste de la guerra de Irán, reconfigurando el poder legislativo en Washington. La EIA proyecta Brent estabilizado en torno a 100 $/barril a cierre de año por recortes de 2,5 Mb/d en Oriente Medio. CaixaBank Research atribuye el repunte global de tipos reales a largo plazo a mayores necesidades netas de inversión pública y privada combinadas con base inversora más sensible al precio del capital.\n\nLa Comisión Europea adopta la Decisión de Ejecución 2026/2274 homologando la EN 18286:2026, primera norma armonizada de gestión de calidad para IA de alto riesgo bajo el AI Act. TTR Data y asesores legales cierran 9M 2026 con 2.261 transacciones y 73.803 M€ en España (-15 % en número, resiliencia en PE con 17.263 M€ en 244 deals). Los registros globales de LLM Gateway superan 190 modelos de lenguaje lanzados en 2026, consolidando el giro estructural hacia arquitecturas MoE de ultra gran escala. Investcorp completa a finales de octubre la adquisición mayoritaria de Connectif, reforzando el foco de PE internacional en mid-market software ibérico.\n\nFuentes: UANI, International Banker, Oil & Gas Journal, CaixaBank Research, Dentons, AGM Abogados, Mean CEO's BLOG, Capital-Riesgo.es\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mercado tecnológico español de octubre (37 deals, 16 corporate/PE) con Connectif (Investcorp) y ZeroComa (Namirial) como banderas confirma que el mid-market de software atrae capital internacional y corporativo, mientras Artá Capital en Industrias Pinazo y la OPA de Bankinter sobre Atom Hoteles (510 M€) dibujan apetito complementario en industrial mediana e inmobiliario cotizado.\n\nFuentes: Capital-Riesgo.es / Europa Press"
 }
