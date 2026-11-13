@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-11-12",
+  "fecha": "2026-11-13",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "IPC EE.UU. mensual",
-      "valor": "0,4 %",
-      "fuente": "The Edge Malaysia"
+      "etiqueta": "Tipo depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "Trading Economics"
     },
     {
-      "etiqueta": "Bank Rate BoE",
-      "valor": "4,0 %",
-      "fuente": "Bank of England"
+      "etiqueta": "Operaciones M&A España 9M",
+      "valor": "2.261",
+      "fuente": "AGM Abogados"
     },
     {
-      "etiqueta": "TTF gas europeo",
-      "valor": "87 €/MWh",
-      "fuente": "Eurasia Business News"
+      "etiqueta": "Valor transacciones España 9M",
+      "valor": "73.803 M€",
+      "fuente": "AGM Abogados"
     },
     {
-      "etiqueta": "OPA Atom Hoteles",
-      "valor": "510 M€",
-      "fuente": "Europa Press"
+      "etiqueta": "Operaciones tech España octubre",
+      "valor": "37",
+      "fuente": "Capital-Riesgo.es"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 8
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,20 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "En EE. UU., el IPC de octubre repunta al 0,4 % mensual y el subyacente al 0,3 % por tercer mes consecutivo, reforzando las apuestas de endurecimiento de la Fed",
-          "fuente": "The Edge Malaysia"
+          "texto": "La junta de Nvidia inicia el relevo de Jensen Huang tras 33 años, provocando una caída superior al 7 % en acciones fuera de horas",
+          "fuente": "AI Weekly"
         },
         {
-          "texto": "La EMA crea un observatorio y canal de seguimiento de IA bajo principios éticos compartidos con la FDA, primer paso regulatorio transatlántico para IA en medicamentos",
-          "fuente": "European Medicines Agency"
+          "texto": "Google DeepMind lanza AlphaGenome 2, entrenado con 100 millones de perfiles unicelulares en 68 tejidos, que eleva al 30 % la identificación de variantes causales en el inmunitario TenK10K frente al 16 % previo",
+          "fuente": "AI Weekly"
         },
         {
-          "texto": "En España, Bankinter Investment lanza OPA sobre el 100 % de Atom Hoteles Socimi valorando la compañía en 510 M€, operación que añade dealflow al segmento inmobiliario cotizado",
-          "fuente": "Europa Press"
-        },
-        {
-          "texto": "Anthropic presenta Claude Fable 5.2 a 8 $/M tokens entrada y 40 $/M salida con 49,1 % en FrontierCode 2.0, rebajando el suelo de precios de inferencia frente a GPT-6 Astra",
-          "fuente": "AIFOD"
+          "texto": "Orlen rescinde su contrato a largo plazo de GNL con QatarEnergy por fuerza mayor derivada del conflicto en Oriente Medio, primera cancelación contractual confirmada que traslada el riesgo de suministro a los vendedores",
+          "fuente": "Industrial Info Resources"
         }
       ]
     },
@@ -72,24 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El Banco de Inglaterra sube el Bank Rate al 4,0 % en su reunión de noviembre citando presiones inflacionarias internas persistentes",
-          "fuente": "Bank of England"
+          "texto": "China prorroga dos meses la suspensión del arancel adicional del 24 % a importaciones estadounidenses manteniendo el 10 %, señal de estabilización comercial bilateral tras los consensos entre jefes de Estado",
+          "fuente": "Gov.cn"
         },
         {
-          "texto": "Nueva York promulga la ley S.9051B/A.10379C que restringe drásticamente chatbots conversacionales de IA dirigidos a menores de 18 años, primera norma estatal estadounidense de hard-law sobre IA de consumo",
-          "fuente": "Simmons & Simmons"
+          "texto": "Philip R. Lane ancla las expectativas del BCE en estabilidad de tipos con el depósito en 2,50 % de cara a fin de año, mientras los hutíes lanzan ofensiva combinada en Lahij para cortar la línea logística Mokha-Adén y aislar fuerzas gubernamentales en la costa del mar Rojo",
+          "fuente": "European Central Bank, Institute for the Study of War"
         },
         {
-          "texto": "Rystad Energy sitúa el GNL por encima de 30 $/MMBtu con inventarios europeos en mínimos de la década",
-          "fuente": "Rystad Energy"
+          "texto": "OpenAI lanza la beta de Businesses in ChatGPT permitiendo a empresas estadounidenses reclamar perfiles verificados y desplegar agentes comerciales integrados",
+          "fuente": "AI Weekly"
         },
         {
-          "texto": "TTR Data confirma descenso interanual del 17 % en volumen de operaciones M&A en España, con inmobiliario liderando (454 transacciones)",
-          "fuente": "TTR Data Blog"
-        },
-        {
-          "texto": "Nvidia corrige un 8,6 % en bolsa el 12 de noviembre por informaciones de investigación interna a Jensen Huang, aunque capitalización se mantiene en 4,07 B$ respaldada por demanda de infraestructura",
-          "fuente": "The Motley Fool"
+          "texto": "El informe de Capital-Riesgo.es registra 37 operaciones tech en octubre (16 corporate/PE, 21 VC) con 62,2 % cross-border, destacando Investcorp en Connectif, Namirial en ZeroComa y Artá Capital en Industrias Pinazo",
+          "fuente": "Capital-Riesgo.es"
         }
       ]
     },
@@ -97,12 +89,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "La OMI contabiliza 131 incidentes marítimos y ataques a buques en Golfo Pérsico y Ormuz desde el inicio de hostilidades en 2026, confirmando la militarización sostenida de la ruta petrolera crítica. Las midterms de noviembre entregan el Congreso a los demócratas impulsados por descontento con inflación y coste de la guerra de Irán, reconfigurando el poder legislativo en Washington. La EIA proyecta Brent estabilizado en torno a 100 $/barril a cierre de año por recortes de 2,5 Mb/d en Oriente Medio. CaixaBank Research atribuye el repunte global de tipos reales a largo plazo a mayores necesidades netas de inversión pública y privada combinadas con base inversora más sensible al precio del capital",
-          "fuente": "CaixaBank Research"
+          "texto": "El mercado M&A español acumula 2.261 operaciones y 73.803 M€ en 9M 2026 (-15 % en número, -6 % en capital), con PE resistente en 244 deals y 17.263 M€ y VC en 348 operaciones por 5.338 M€",
+          "fuente": "AGM Abogados"
         },
         {
-          "texto": "La Comisión Europea adopta la Decisión de Ejecución 2026/2274 homologando la EN 18286:2026, primera norma armonizada de gestión de calidad para IA de alto riesgo bajo el AI Act. TTR Data y asesores legales cierran 9M 2026 con 2.261 transacciones y 73.803 M€ en España (-15 % en número, resiliencia en PE con 17.263 M€ en 244 deals). Los registros globales de LLM Gateway superan 190 modelos de lenguaje lanzados en 2026, consolidando el giro estructural hacia arquitecturas MoE de ultra gran escala. Investcorp completa a finales de octubre la adquisición mayoritaria de Connectif, reforzando el foco de PE internacional en mid-market software ibérico",
-          "fuente": "Dentons, AGM Abogados, Mean CEO's BLOG, Capital-Riesgo.es"
+          "texto": "El Digital Omnibus on AI pospone hasta diciembre de 2027 las obligaciones estrictas para IA de alto riesgo (Anexo III) por falta de estándares armonizados, mientras el 68,1 % de family offices españoles planea aumentar exposición a mercados privados en cinco años, por encima de la media internacional en private equity y real estate",
+          "fuente": "SZA Schilling, Zutt & Anschütz, CaixaBank"
+        },
+        {
+          "texto": "Anthropic prepara OPI masiva apuntando a 1,5 billones $ de valoración, redefiniendo la liquidez tecnológica global, y el BCE mantiene la pausa con depósito en 2,50 %, refinanciación en 2,65 % y marginal en 2,90 % tras la subida de septiembre",
+          "fuente": "Investing.com, Trading Economics"
         }
       ]
     },
@@ -114,13 +110,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El mercado tecnológico español de octubre (37 deals, 16 corporate/PE) con Connectif (Investcorp) y ZeroComa (Namirial) como banderas confirma que el mid-market de software atrae capital internacional y corporativo, mientras Artá Capital en Industrias Pinazo y la OPA de Bankinter sobre Atom Hoteles (510 M€) dibujan apetito complementario en industrial mediana e inmobiliario cotizado",
-              "fuente": "Capital-Riesgo.es / Europa Press"
+              "texto": "El tech español de octubre (37 deals, 62,2 % cross-border) con banderas Investcorp/Connectif, Namirial/ZeroComa y Artá/Industrias Pinazo confirma que el mid-market software e industrial mediana atraen capital internacional y corporativo",
+              "fuente": "Capital-Riesgo.es"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nEn EE. UU., el IPC de octubre repunta al 0,4 % mensual y el subyacente al 0,3 % por tercer mes consecutivo, reforzando las apuestas de endurecimiento de la Fed.\n\nLa EMA crea un observatorio y canal de seguimiento de IA bajo principios éticos compartidos con la FDA, primer paso regulatorio transatlántico para IA en medicamentos.\n\nEn España, Bankinter Investment lanza OPA sobre el 100 % de Atom Hoteles Socimi valorando la compañía en 510 M€, operación que añade dealflow al segmento inmobiliario cotizado.\n\nAnthropic presenta Claude Fable 5.2 a 8 $/M tokens entrada y 40 $/M salida con 49,1 % en FrontierCode 2.0, rebajando el suelo de precios de inferencia frente a GPT-6 Astra.\n\nFuentes: The Edge Malaysia, European Medicines Agency, Europa Press, AIFOD\n\n## Esta semana\nEl Banco de Inglaterra sube el Bank Rate al 4,0 % en su reunión de noviembre citando presiones inflacionarias internas persistentes.\n\nRystad Energy sitúa el GNL por encima de 30 $/MMBtu con inventarios europeos en mínimos de la década.\n\nTTR Data confirma descenso interanual del 17 % en volumen de operaciones M&A en España, con inmobiliario liderando (454 transacciones).\n\nNvidia corrige un 8,6 % en bolsa el 12 de noviembre por informaciones de investigación interna a Jensen Huang, aunque capitalización se mantiene en 4,07 B$ respaldada por demanda de infraestructura.\n\nFuentes: Bank of England, Rystad Energy, TTR Data Blog, The Motley Fool\n\n## Este mes\nLa OMI contabiliza 131 incidentes marítimos y ataques a buques en Golfo Pérsico y Ormuz desde el inicio de hostilidades en 2026, confirmando la militarización sostenida de la ruta petrolera crítica. Las midterms de noviembre entregan el Congreso a los demócratas impulsados por descontento con inflación y coste de la guerra de Irán, reconfigurando el poder legislativo en Washington. La EIA proyecta Brent estabilizado en torno a 100 $/barril a cierre de año por recortes de 2,5 Mb/d en Oriente Medio. CaixaBank Research atribuye el repunte global de tipos reales a largo plazo a mayores necesidades netas de inversión pública y privada combinadas con base inversora más sensible al precio del capital.\n\nLa Comisión Europea adopta la Decisión de Ejecución 2026/2274 homologando la EN 18286:2026, primera norma armonizada de gestión de calidad para IA de alto riesgo bajo el AI Act. TTR Data y asesores legales cierran 9M 2026 con 2.261 transacciones y 73.803 M€ en España (-15 % en número, resiliencia en PE con 17.263 M€ en 244 deals). Los registros globales de LLM Gateway superan 190 modelos de lenguaje lanzados en 2026, consolidando el giro estructural hacia arquitecturas MoE de ultra gran escala. Investcorp completa a finales de octubre la adquisición mayoritaria de Connectif, reforzando el foco de PE internacional en mid-market software ibérico.\n\nFuentes: UANI, International Banker, Oil & Gas Journal, CaixaBank Research, Dentons, AGM Abogados, Mean CEO's BLOG, Capital-Riesgo.es\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl mercado tecnológico español de octubre (37 deals, 16 corporate/PE) con Connectif (Investcorp) y ZeroComa (Namirial) como banderas confirma que el mid-market de software atrae capital internacional y corporativo, mientras Artá Capital en Industrias Pinazo y la OPA de Bankinter sobre Atom Hoteles (510 M€) dibujan apetito complementario en industrial mediana e inmobiliario cotizado.\n\nFuentes: Capital-Riesgo.es / Europa Press"
+  "markdown": "## Hoy\nLa junta de Nvidia inicia el relevo de Jensen Huang tras 33 años, provocando una caída superior al 7 % en acciones fuera de horas.\n\nGoogle DeepMind lanza AlphaGenome 2, entrenado con 100 millones de perfiles unicelulares en 68 tejidos, que eleva al 30 % la identificación de variantes causales en el inmunitario TenK10K frente al 16 % previo.\n\nFuentes: AI Weekly\n\n## Esta semana\nChina prorroga dos meses la suspensión del arancel adicional del 24 % a importaciones estadounidenses manteniendo el 10 %, señal de estabilización comercial bilateral tras los consensos entre jefes de Estado.\n\nPhilip R. Lane ancla las expectativas del BCE en estabilidad de tipos con el depósito en 2,50 % de cara a fin de año, mientras los hutíes lanzan ofensiva combinada en Lahij para cortar la línea logística Mokha-Adén y aislar fuerzas gubernamentales en la costa del mar Rojo.\n\nOpenAI lanza la beta de Businesses in ChatGPT permitiendo a empresas estadounidenses reclamar perfiles verificados y desplegar agentes comerciales integrados.\n\nEl informe de Capital-Riesgo.es registra 37 operaciones tech en octubre (16 corporate/PE, 21 VC) con 62,2 % cross-border, destacando Investcorp en Connectif, Namirial en ZeroComa y Artá Capital en Industrias Pinazo.\n\nFuentes: Gov.cn, European Central Bank, Institute for the Study of War, AI Weekly, Capital-Riesgo.es\n\n## Este mes\nEl mercado M&A español acumula 2.261 operaciones y 73.803 M€ en 9M 2026 (-15 % en número, -6 % en capital), con PE resistente en 244 deals y 17.263 M€ y VC en 348 operaciones por 5.338 M€.\n\nEl Digital Omnibus on AI pospone hasta diciembre de 2027 las obligaciones estrictas para IA de alto riesgo (Anexo III) por falta de estándares armonizados, mientras el 68,1 % de family offices españoles planea aumentar exposición a mercados privados en cinco años, por encima de la media internacional en private equity y real estate.\n\nAnthropic prepara OPI masiva apuntando a 1,5 billones $ de valoración, redefiniendo la liquidez tecnológica global, y el BCE mantiene la pausa con depósito en 2,50 %, refinanciación en 2,65 % y marginal en 2,90 % tras la subida de septiembre.\n\nFuentes: AGM Abogados, SZA Schilling, Zutt & Anschütz, CaixaBank, Investing.com, Trading Economics\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl tech español de octubre (37 deals, 62,2 % cross-border) con banderas Investcorp/Connectif, Namirial/ZeroComa y Artá/Industrias Pinazo confirma que el mid-market software e industrial mediana atraen capital internacional y corporativo.\n\nFuentes: Capital-Riesgo.es"
 }
