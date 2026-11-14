@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-11-13",
+  "fecha": "2026-11-14",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tipo depósito BCE",
+      "etiqueta": "Tránsito Ormuz",
+      "valor": "-65 %",
+      "fuente": "Gulf News"
+    },
+    {
+      "etiqueta": "Empresas incautadas Rusia",
+      "valor": "7.100 M RUB",
+      "fuente": "Institute for the Study of War"
+    },
+    {
+      "etiqueta": "Tipos BCE depósito",
       "valor": "2,50 %",
-      "fuente": "Trading Economics"
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Operaciones M&A España 9M",
-      "valor": "2.261",
-      "fuente": "AGM Abogados"
-    },
-    {
-      "etiqueta": "Valor transacciones España 9M",
-      "valor": "73.803 M€",
-      "fuente": "AGM Abogados"
-    },
-    {
-      "etiqueta": "Operaciones tech España octubre",
-      "valor": "37",
-      "fuente": "Capital-Riesgo.es"
+      "etiqueta": "Family offices España",
+      "valor": "68,1 %",
+      "fuente": "CaixaBank"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
@@ -51,16 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La junta de Nvidia inicia el relevo de Jensen Huang tras 33 años, provocando una caída superior al 7 % en acciones fuera de horas",
-          "fuente": "AI Weekly"
+          "texto": "El Estrecho de Ormuz opera al 35 % de su capacidad habitual con solo 308 tránsitos semanales y 8 incidentes nuevos, elevando a 163 el total de incidentes vinculados al conflicto Irán-EE.UU. desde febrero, mientras Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán",
+          "fuente": "Gulf News"
         },
         {
-          "texto": "Google DeepMind lanza AlphaGenome 2, entrenado con 100 millones de perfiles unicelulares en 68 tejidos, que eleva al 30 % la identificación de variantes causales en el inmunitario TenK10K frente al 16 % previo",
-          "fuente": "AI Weekly"
+          "texto": "En el frente ruso, el Kremlin ha canalizado 7.100 millones de rublos (86,86 M$) procedentes de al menos seis empresas occidentales bajo gestión temporal hacia fundaciones militares que compran drones y sistemas de comunicación, convirtiendo la expropiación de activos en financiación directa del esfuerzo bélico",
+          "fuente": "Institute for the Study of War"
         },
         {
-          "texto": "Orlen rescinde su contrato a largo plazo de GNL con QatarEnergy por fuerza mayor derivada del conflicto en Oriente Medio, primera cancelación contractual confirmada que traslada el riesgo de suministro a los vendedores",
-          "fuente": "Industrial Info Resources"
+          "texto": "En el plano regulatorio europeo, el BOE publicó el 12 de noviembre las directrices prácticas de la Comisión sobre el artículo 50 del Reglamento de IA (transparencia para sistemas de uso general), de obligado cumplimiento desde el 2 de agosto, dando seguridad jurídica inmediata a proveedores y desplegadores en España",
+          "fuente": "BOE.es"
+        },
+        {
+          "texto": "El M&A español cierra 9M con 2.261 operaciones y 73.803 M€ (-15 % en número, -6 % en valor), mientras el mid-market (5-50 M€ facturación) mantiene múltiplos EV/EBITDA entre 7x y 11x según recurrencia de caja, confirmando que el segmento resiste la caída de grandes deals",
+          "fuente": "AGM Abogados"
         }
       ]
     },
@@ -68,20 +72,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "China prorroga dos meses la suspensión del arancel adicional del 24 % a importaciones estadounidenses manteniendo el 10 %, señal de estabilización comercial bilateral tras los consensos entre jefes de Estado",
-          "fuente": "Gov.cn"
+          "texto": "China y EE.UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico",
+          "fuente": "Emirates News Agency (WAM), Holland & Knight"
         },
         {
-          "texto": "Philip R. Lane ancla las expectativas del BCE en estabilidad de tipos con el depósito en 2,50 % de cara a fin de año, mientras los hutíes lanzan ofensiva combinada en Lahij para cortar la línea logística Mokha-Adén y aislar fuerzas gubernamentales en la costa del mar Rojo",
-          "fuente": "European Central Bank, Institute for the Study of War"
+          "texto": "Google presenta sus TPU 8tx (entrenamiento confidencial con seguridad en hardware junto a AMD) y TPU 8i Max (memoria duplicada para inferencia masiva de agentes), marcando la octava generación de silicio propio orientada a cargas de IA agente",
+          "fuente": "TechCrunch"
         },
         {
-          "texto": "OpenAI lanza la beta de Businesses in ChatGPT permitiendo a empresas estadounidenses reclamar perfiles verificados y desplegar agentes comerciales integrados",
-          "fuente": "AI Weekly"
+          "texto": "La Comisión Europea propone la Ley de Equidad Digital para prohibir patrones oscuros, suscripciones tramposas y marketing manipulador, añadiendo una capa transversal de protección al consumidor que complementa al AI Act y al DSA",
+          "fuente": "NeoTeo"
         },
         {
-          "texto": "El informe de Capital-Riesgo.es registra 37 operaciones tech en octubre (16 corporate/PE, 21 VC) con 62,2 % cross-border, destacando Investcorp en Connectif, Namirial en ZeroComa y Artá Capital en Industrias Pinazo",
-          "fuente": "Capital-Riesgo.es"
+          "texto": "EE.UU. imputa a tres operativos de Kataib Hezbollah por planes de atentados en Europa y EE.UU., incluido el frustrado contra la base RAF Fairford en septiembre, confirmando la proyección exterior de milicias iraquíes alineadas con Irán",
+          "fuente": "Critical Threats Project / ISW"
+        },
+        {
+          "texto": "Irán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL",
+          "fuente": "Gulf News"
         }
       ]
     },
@@ -89,16 +97,24 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado M&A español acumula 2.261 operaciones y 73.803 M€ en 9M 2026 (-15 % en número, -6 % en capital), con PE resistente en 244 deals y 17.263 M€ y VC en 348 operaciones por 5.338 M€",
-          "fuente": "AGM Abogados"
+          "texto": "El BCE mantiene tipos (depósito 2,50 %, refinanciación 2,65 %, marginal 2,90 %) y alerta de riesgos inflacionistas al alza por la volatilidad energética sostenida, anclando la política monetaria europea en pausa vigilante",
+          "fuente": "European Central Bank"
         },
         {
-          "texto": "El Digital Omnibus on AI pospone hasta diciembre de 2027 las obligaciones estrictas para IA de alto riesgo (Anexo III) por falta de estándares armonizados, mientras el 68,1 % de family offices españoles planea aumentar exposición a mercados privados en cinco años, por encima de la media internacional en private equity y real estate",
-          "fuente": "SZA Schilling, Zutt & Anschütz, CaixaBank"
+          "texto": "La Fed estabiliza el tipo efectivo en la banda del 3,88 % durante las primeras semanas de noviembre, confirmando que el ciclo de relajación estadounidense sigue en espera",
+          "fuente": "Federal Reserve Board"
         },
         {
-          "texto": "Anthropic prepara OPI masiva apuntando a 1,5 billones $ de valoración, redefiniendo la liquidez tecnológica global, y el BCE mantiene la pausa con depósito en 2,50 %, refinanciación en 2,65 % y marginal en 2,90 % tras la subida de septiembre",
-          "fuente": "Investing.com, Trading Economics"
+          "texto": "Los family offices españoles elevan al 68,1 % la intención de incrementar asignación a mercados privados (PE y Real Estate), situando el peso medio en carteras de alto patrimonio por encima del 45-50 %, lo que alimenta secundaria y continuation funds",
+          "fuente": "CaixaBank"
+        },
+        {
+          "texto": "Rusia avanza 41-42 millas cuadradas netas en octubre-noviembre y consolida el control del 19 % de Ucrania (~45.227 millas² incluyendo Crimea y Donbás previo), demostrando que la guerra de desgaste sigue desplazando la línea de frente pese a la ayuda occidental",
+          "fuente": "The Russia-Ukraine War Report Card"
+        },
+        {
+          "texto": "La capacidad global de cómputo IA salta de 0,8 M equivalentes H100 (1T 2024) a 6,3 M (2T 2026), con EE.UU. acaparando el 72 % de las llegadas acumuladas frente al 10 % de China, una brecha de infraestructura que define la carrera tecnológica",
+          "fuente": "Alephic"
         }
       ]
     },
@@ -108,15 +124,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "El tech español de octubre (37 deals, 62,2 % cross-border) con banderas Investcorp/Connectif, Namirial/ZeroComa y Artá/Industrias Pinazo confirma que el mid-market software e industrial mediana atraen capital internacional y corporativo",
-              "fuente": "Capital-Riesgo.es"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa junta de Nvidia inicia el relevo de Jensen Huang tras 33 años, provocando una caída superior al 7 % en acciones fuera de horas.\n\nGoogle DeepMind lanza AlphaGenome 2, entrenado con 100 millones de perfiles unicelulares en 68 tejidos, que eleva al 30 % la identificación de variantes causales en el inmunitario TenK10K frente al 16 % previo.\n\nFuentes: AI Weekly\n\n## Esta semana\nChina prorroga dos meses la suspensión del arancel adicional del 24 % a importaciones estadounidenses manteniendo el 10 %, señal de estabilización comercial bilateral tras los consensos entre jefes de Estado.\n\nPhilip R. Lane ancla las expectativas del BCE en estabilidad de tipos con el depósito en 2,50 % de cara a fin de año, mientras los hutíes lanzan ofensiva combinada en Lahij para cortar la línea logística Mokha-Adén y aislar fuerzas gubernamentales en la costa del mar Rojo.\n\nOpenAI lanza la beta de Businesses in ChatGPT permitiendo a empresas estadounidenses reclamar perfiles verificados y desplegar agentes comerciales integrados.\n\nEl informe de Capital-Riesgo.es registra 37 operaciones tech en octubre (16 corporate/PE, 21 VC) con 62,2 % cross-border, destacando Investcorp en Connectif, Namirial en ZeroComa y Artá Capital en Industrias Pinazo.\n\nFuentes: Gov.cn, European Central Bank, Institute for the Study of War, AI Weekly, Capital-Riesgo.es\n\n## Este mes\nEl mercado M&A español acumula 2.261 operaciones y 73.803 M€ en 9M 2026 (-15 % en número, -6 % en capital), con PE resistente en 244 deals y 17.263 M€ y VC en 348 operaciones por 5.338 M€.\n\nEl Digital Omnibus on AI pospone hasta diciembre de 2027 las obligaciones estrictas para IA de alto riesgo (Anexo III) por falta de estándares armonizados, mientras el 68,1 % de family offices españoles planea aumentar exposición a mercados privados en cinco años, por encima de la media internacional en private equity y real estate.\n\nAnthropic prepara OPI masiva apuntando a 1,5 billones $ de valoración, redefiniendo la liquidez tecnológica global, y el BCE mantiene la pausa con depósito en 2,50 %, refinanciación en 2,65 % y marginal en 2,90 % tras la subida de septiembre.\n\nFuentes: AGM Abogados, SZA Schilling, Zutt & Anschütz, CaixaBank, Investing.com, Trading Economics\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl tech español de octubre (37 deals, 62,2 % cross-border) con banderas Investcorp/Connectif, Namirial/ZeroComa y Artá/Industrias Pinazo confirma que el mid-market software e industrial mediana atraen capital internacional y corporativo.\n\nFuentes: Capital-Riesgo.es"
+  "markdown": "## Hoy\nEl Estrecho de Ormuz opera al 35 % de su capacidad habitual con solo 308 tránsitos semanales y 8 incidentes nuevos, elevando a 163 el total de incidentes vinculados al conflicto Irán-EE.UU. desde febrero, mientras Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán.\n\nEn el frente ruso, el Kremlin ha canalizado 7.100 millones de rublos (86,86 M$) procedentes de al menos seis empresas occidentales bajo gestión temporal hacia fundaciones militares que compran drones y sistemas de comunicación, convirtiendo la expropiación de activos en financiación directa del esfuerzo bélico.\n\nEn el plano regulatorio europeo, el BOE publicó el 12 de noviembre las directrices prácticas de la Comisión sobre el artículo 50 del Reglamento de IA (transparencia para sistemas de uso general), de obligado cumplimiento desde el 2 de agosto, dando seguridad jurídica inmediata a proveedores y desplegadores en España.\n\nEl M&A español cierra 9M con 2.261 operaciones y 73.803 M€ (-15 % en número, -6 % en valor), mientras el mid-market (5-50 M€ facturación) mantiene múltiplos EV/EBITDA entre 7x y 11x según recurrencia de caja, confirmando que el segmento resiste la caída de grandes deals.\n\nFuentes: Gulf News, Institute for the Study of War, BOE.es, AGM Abogados\n\n## Esta semana\nChina y EE.UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico.\n\nGoogle presenta sus TPU 8tx (entrenamiento confidencial con seguridad en hardware junto a AMD) y TPU 8i Max (memoria duplicada para inferencia masiva de agentes), marcando la octava generación de silicio propio orientada a cargas de IA agente.\n\nLa Comisión Europea propone la Ley de Equidad Digital para prohibir patrones oscuros, suscripciones tramposas y marketing manipulador, añadiendo una capa transversal de protección al consumidor que complementa al AI Act y al DSA.\n\nEE.UU. imputa a tres operativos de Kataib Hezbollah por planes de atentados en Europa y EE.UU., incluido el frustrado contra la base RAF Fairford en septiembre, confirmando la proyección exterior de milicias iraquíes alineadas con Irán.\n\nIrán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL.\n\nFuentes: Emirates News Agency (WAM), Holland & Knight, TechCrunch, NeoTeo, Critical Threats Project / ISW, Gulf News\n\n## Este mes\nEl BCE mantiene tipos (depósito 2,50 %, refinanciación 2,65 %, marginal 2,90 %) y alerta de riesgos inflacionistas al alza por la volatilidad energética sostenida, anclando la política monetaria europea en pausa vigilante.\n\nLa Fed estabiliza el tipo efectivo en la banda del 3,88 % durante las primeras semanas de noviembre, confirmando que el ciclo de relajación estadounidense sigue en espera.\n\nLos family offices españoles elevan al 68,1 % la intención de incrementar asignación a mercados privados (PE y Real Estate), situando el peso medio en carteras de alto patrimonio por encima del 45-50 %, lo que alimenta secundaria y continuation funds.\n\nRusia avanza 41-42 millas cuadradas netas en octubre-noviembre y consolida el control del 19 % de Ucrania (~45.227 millas² incluyendo Crimea y Donbás previo), demostrando que la guerra de desgaste sigue desplazando la línea de frente pese a la ayuda occidental.\n\nLa capacidad global de cómputo IA salta de 0,8 M equivalentes H100 (1T 2024) a 6,3 M (2T 2026), con EE.UU. acaparando el 72 % de las llegadas acumuladas frente al 10 % de China, una brecha de infraestructura que define la carrera tecnológica.\n\nFuentes: European Central Bank, Federal Reserve Board, CaixaBank, The Russia-Ukraine War Report Card, Alephic"
 }
