@@ -1,24 +1,24 @@
 {
-  "fecha": "2026-11-14",
+  "fecha": "2026-11-15",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tránsito Ormuz",
-      "valor": "-65 %",
+      "etiqueta": "Tráfico Ormuz",
+      "valor": "35 %",
       "fuente": "Gulf News"
     },
     {
-      "etiqueta": "Empresas incautadas Rusia",
-      "valor": "7.100 M RUB",
+      "etiqueta": "Expropiación rusa",
+      "valor": "86,86 M$",
       "fuente": "Institute for the Study of War"
     },
     {
-      "etiqueta": "Tipos BCE depósito",
-      "valor": "2,50 %",
-      "fuente": "European Central Bank"
+      "etiqueta": "Déficit gas iraní",
+      "valor": "430 M m³/día",
+      "fuente": "Gulf News"
     },
     {
-      "etiqueta": "Family offices España",
+      "etiqueta": "Intención family offices",
       "valor": "68,1 %",
       "fuente": "CaixaBank"
     }
@@ -30,11 +30,11 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,20 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "El Estrecho de Ormuz opera al 35 % de su capacidad habitual con solo 308 tránsitos semanales y 8 incidentes nuevos, elevando a 163 el total de incidentes vinculados al conflicto Irán-EE.UU. desde febrero, mientras Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán",
+          "texto": "La Casa Blanca y el Kremlin confirman una cumbre trilateral inédita entre Donald Trump, Vladimir Putin y Xi Jinping para el próximo jueves en Shenzhen al margen del APEC, centrada en Oriente Medio y desarme nuclear con Ucrania expresamente fuera de agenda y Elon Musk en la comitiva estadounidense",
+          "fuente": "Diario Crónica"
+        },
+        {
+          "texto": "Altos mandos de inteligencia de EE. UU. e Israel, incluyendo a John Ratcliffe de la CIA y Roman Gofman del Mossad, se reúnen en Washington y Miami con el enviado Steve Witkoff para calibrar escenarios de escalada contra Irán, mientras Trump declara en redes que «tenemos su dinero, cientos de miles de millones, y tenemos su estrecho»",
+          "fuente": "Resumen Latinoamericano"
+        },
+        {
+          "texto": "El Estrecho de Ormuz opera ya al 35 % de su capacidad habitual con 308 tránsitos semanales y 8 incidentes nuevos que elevan a 163 el total desde febrero, y Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán. Irán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL",
           "fuente": "Gulf News"
-        },
-        {
-          "texto": "En el frente ruso, el Kremlin ha canalizado 7.100 millones de rublos (86,86 M$) procedentes de al menos seis empresas occidentales bajo gestión temporal hacia fundaciones militares que compran drones y sistemas de comunicación, convirtiendo la expropiación de activos en financiación directa del esfuerzo bélico",
-          "fuente": "Institute for the Study of War"
-        },
-        {
-          "texto": "En el plano regulatorio europeo, el BOE publicó el 12 de noviembre las directrices prácticas de la Comisión sobre el artículo 50 del Reglamento de IA (transparencia para sistemas de uso general), de obligado cumplimiento desde el 2 de agosto, dando seguridad jurídica inmediata a proveedores y desplegadores en España",
-          "fuente": "BOE.es"
-        },
-        {
-          "texto": "El M&A español cierra 9M con 2.261 operaciones y 73.803 M€ (-15 % en número, -6 % en valor), mientras el mid-market (5-50 M€ facturación) mantiene múltiplos EV/EBITDA entre 7x y 11x según recurrencia de caja, confirmando que el segmento resiste la caída de grandes deals",
-          "fuente": "AGM Abogados"
         }
       ]
     },
@@ -72,7 +68,7 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "China y EE.UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico",
+          "texto": "China y EE. UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico",
           "fuente": "Emirates News Agency (WAM), Holland & Knight"
         },
         {
@@ -80,16 +76,8 @@
           "fuente": "TechCrunch"
         },
         {
-          "texto": "La Comisión Europea propone la Ley de Equidad Digital para prohibir patrones oscuros, suscripciones tramposas y marketing manipulador, añadiendo una capa transversal de protección al consumidor que complementa al AI Act y al DSA",
-          "fuente": "NeoTeo"
-        },
-        {
-          "texto": "EE.UU. imputa a tres operativos de Kataib Hezbollah por planes de atentados en Europa y EE.UU., incluido el frustrado contra la base RAF Fairford en septiembre, confirmando la proyección exterior de milicias iraquíes alineadas con Irán",
-          "fuente": "Critical Threats Project / ISW"
-        },
-        {
-          "texto": "Irán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL",
-          "fuente": "Gulf News"
+          "texto": "El fondo global AURELIUS firma el 12 de noviembre un acuerdo definitivo para adquirir la unidad de grafito de Resonac Corporation en una compleja operación de carve-out que incluye activos industriales críticos en España (planta principal en La Coruña), EE. UU. y Austria. Cinven anuncia el 6 de noviembre la venta de su participación en Restaurant Brands Europe, master-franquiciado de Burger King en España y Portugal, Popeyes en España e Italia y Tim Hortons en España, con más de 1.400 establecimientos, a un consorcio liderado por el fundador Gregorio Jiménez, sin revelar términos financieros",
+          "fuente": "AURELIUS, Cinven"
         }
       ]
     },
@@ -97,24 +85,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE mantiene tipos (depósito 2,50 %, refinanciación 2,65 %, marginal 2,90 %) y alerta de riesgos inflacionistas al alza por la volatilidad energética sostenida, anclando la política monetaria europea en pausa vigilante",
-          "fuente": "European Central Bank"
+          "texto": "El Gobierno español aprueba el Real Decreto 731/2026 abriendo una vía de tramitación preferente para Proyectos de Inversión Estratégica, y Freshfields advierte que la convocatoria de elecciones generales anticipadas para el 29 de noviembre de 2026 y la exigencia estricta de autorizaciones de Inversión Extranjera Directa obligan a los inversores a recalcular plazos con periodos de declaración de 1 a 3 meses en los cronogramas de transacciones",
+          "fuente": "Freshfields"
         },
         {
-          "texto": "La Fed estabiliza el tipo efectivo en la banda del 3,88 % durante las primeras semanas de noviembre, confirmando que el ciclo de relajación estadounidense sigue en espera",
-          "fuente": "Federal Reserve Board"
+          "texto": "Los datos de Mergermarket de los primeros nueve meses sitúan a Uría Menéndez al frente del valor de M&A en España con 81 operaciones por US$37.730 millones (44,9 % del volumen total, +48,7 % interanual), mientras Cuatrecasas revalida el primer puesto en número con 151 operaciones (19,7 % del mercado), seguida por Garrigues (98) y Uría Menéndez (81)",
+          "fuente": "Iberian Lawyer"
         },
         {
-          "texto": "Los family offices españoles elevan al 68,1 % la intención de incrementar asignación a mercados privados (PE y Real Estate), situando el peso medio en carteras de alto patrimonio por encima del 45-50 %, lo que alimenta secundaria y continuation funds",
-          "fuente": "CaixaBank"
-        },
-        {
-          "texto": "Rusia avanza 41-42 millas cuadradas netas en octubre-noviembre y consolida el control del 19 % de Ucrania (~45.227 millas² incluyendo Crimea y Donbás previo), demostrando que la guerra de desgaste sigue desplazando la línea de frente pese a la ayuda occidental",
-          "fuente": "The Russia-Ukraine War Report Card"
-        },
-        {
-          "texto": "La capacidad global de cómputo IA salta de 0,8 M equivalentes H100 (1T 2024) a 6,3 M (2T 2026), con EE.UU. acaparando el 72 % de las llegadas acumuladas frente al 10 % de China, una brecha de infraestructura que define la carrera tecnológica",
-          "fuente": "Alephic"
+          "texto": "El informe de Forvis Mazars y Mergermarket sobre el primer semestre cierra con 600 operaciones y 28.700 M€ en España: aunque el número desciende un 14 % interanual, el importe total crece un 9 %, confirmando un patrón estructural de menor volumen pero mayor tamaño medio impulsado por el mid-market y grandes operaciones como la venta de Urbaser",
+          "fuente": "Demócrata"
         }
       ]
     },
@@ -129,5 +109,5 @@
       ]
     }
   ],
-  "markdown": "## Hoy\nEl Estrecho de Ormuz opera al 35 % de su capacidad habitual con solo 308 tránsitos semanales y 8 incidentes nuevos, elevando a 163 el total de incidentes vinculados al conflicto Irán-EE.UU. desde febrero, mientras Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán.\n\nEn el frente ruso, el Kremlin ha canalizado 7.100 millones de rublos (86,86 M$) procedentes de al menos seis empresas occidentales bajo gestión temporal hacia fundaciones militares que compran drones y sistemas de comunicación, convirtiendo la expropiación de activos en financiación directa del esfuerzo bélico.\n\nEn el plano regulatorio europeo, el BOE publicó el 12 de noviembre las directrices prácticas de la Comisión sobre el artículo 50 del Reglamento de IA (transparencia para sistemas de uso general), de obligado cumplimiento desde el 2 de agosto, dando seguridad jurídica inmediata a proveedores y desplegadores en España.\n\nEl M&A español cierra 9M con 2.261 operaciones y 73.803 M€ (-15 % en número, -6 % en valor), mientras el mid-market (5-50 M€ facturación) mantiene múltiplos EV/EBITDA entre 7x y 11x según recurrencia de caja, confirmando que el segmento resiste la caída de grandes deals.\n\nFuentes: Gulf News, Institute for the Study of War, BOE.es, AGM Abogados\n\n## Esta semana\nChina y EE.UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico.\n\nGoogle presenta sus TPU 8tx (entrenamiento confidencial con seguridad en hardware junto a AMD) y TPU 8i Max (memoria duplicada para inferencia masiva de agentes), marcando la octava generación de silicio propio orientada a cargas de IA agente.\n\nLa Comisión Europea propone la Ley de Equidad Digital para prohibir patrones oscuros, suscripciones tramposas y marketing manipulador, añadiendo una capa transversal de protección al consumidor que complementa al AI Act y al DSA.\n\nEE.UU. imputa a tres operativos de Kataib Hezbollah por planes de atentados en Europa y EE.UU., incluido el frustrado contra la base RAF Fairford en septiembre, confirmando la proyección exterior de milicias iraquíes alineadas con Irán.\n\nIrán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL.\n\nFuentes: Emirates News Agency (WAM), Holland & Knight, TechCrunch, NeoTeo, Critical Threats Project / ISW, Gulf News\n\n## Este mes\nEl BCE mantiene tipos (depósito 2,50 %, refinanciación 2,65 %, marginal 2,90 %) y alerta de riesgos inflacionistas al alza por la volatilidad energética sostenida, anclando la política monetaria europea en pausa vigilante.\n\nLa Fed estabiliza el tipo efectivo en la banda del 3,88 % durante las primeras semanas de noviembre, confirmando que el ciclo de relajación estadounidense sigue en espera.\n\nLos family offices españoles elevan al 68,1 % la intención de incrementar asignación a mercados privados (PE y Real Estate), situando el peso medio en carteras de alto patrimonio por encima del 45-50 %, lo que alimenta secundaria y continuation funds.\n\nRusia avanza 41-42 millas cuadradas netas en octubre-noviembre y consolida el control del 19 % de Ucrania (~45.227 millas² incluyendo Crimea y Donbás previo), demostrando que la guerra de desgaste sigue desplazando la línea de frente pese a la ayuda occidental.\n\nLa capacidad global de cómputo IA salta de 0,8 M equivalentes H100 (1T 2024) a 6,3 M (2T 2026), con EE.UU. acaparando el 72 % de las llegadas acumuladas frente al 10 % de China, una brecha de infraestructura que define la carrera tecnológica.\n\nFuentes: European Central Bank, Federal Reserve Board, CaixaBank, The Russia-Ukraine War Report Card, Alephic"
+  "markdown": "## Hoy\nLa Casa Blanca y el Kremlin confirman una cumbre trilateral inédita entre Donald Trump, Vladimir Putin y Xi Jinping para el próximo jueves en Shenzhen al margen del APEC, centrada en Oriente Medio y desarme nuclear con Ucrania expresamente fuera de agenda y Elon Musk en la comitiva estadounidense.\n\nAltos mandos de inteligencia de EE. UU. e Israel, incluyendo a John Ratcliffe de la CIA y Roman Gofman del Mossad, se reúnen en Washington y Miami con el enviado Steve Witkoff para calibrar escenarios de escalada contra Irán, mientras Trump declara en redes que «tenemos su dinero, cientos de miles de millones, y tenemos su estrecho».\n\nEl Estrecho de Ormuz opera ya al 35 % de su capacidad habitual con 308 tránsitos semanales y 8 incidentes nuevos que elevan a 163 el total desde febrero, y Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán. Irán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL.\n\nFuentes: Diario Crónica, Resumen Latinoamericano, Gulf News\n\n## Esta semana\nChina y EE. UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico.\n\nGoogle presenta sus TPU 8tx (entrenamiento confidencial con seguridad en hardware junto a AMD) y TPU 8i Max (memoria duplicada para inferencia masiva de agentes), marcando la octava generación de silicio propio orientada a cargas de IA agente.\n\nEl fondo global AURELIUS firma el 12 de noviembre un acuerdo definitivo para adquirir la unidad de grafito de Resonac Corporation en una compleja operación de carve-out que incluye activos industriales críticos en España (planta principal en La Coruña), EE. UU. y Austria. Cinven anuncia el 6 de noviembre la venta de su participación en Restaurant Brands Europe, master-franquiciado de Burger King en España y Portugal, Popeyes en España e Italia y Tim Hortons en España, con más de 1.400 establecimientos, a un consorcio liderado por el fundador Gregorio Jiménez, sin revelar términos financieros.\n\nFuentes: Emirates News Agency (WAM), Holland & Knight, TechCrunch, AURELIUS, Cinven\n\n## Este mes\nEl Gobierno español aprueba el Real Decreto 731/2026 abriendo una vía de tramitación preferente para Proyectos de Inversión Estratégica, y Freshfields advierte que la convocatoria de elecciones generales anticipadas para el 29 de noviembre de 2026 y la exigencia estricta de autorizaciones de Inversión Extranjera Directa obligan a los inversores a recalcular plazos con periodos de declaración de 1 a 3 meses en los cronogramas de transacciones.\n\nLos datos de Mergermarket de los primeros nueve meses sitúan a Uría Menéndez al frente del valor de M&A en España con 81 operaciones por US$37.730 millones (44,9 % del volumen total, +48,7 % interanual), mientras Cuatrecasas revalida el primer puesto en número con 151 operaciones (19,7 % del mercado), seguida por Garrigues (98) y Uría Menéndez (81).\n\nEl informe de Forvis Mazars y Mergermarket sobre el primer semestre cierra con 600 operaciones y 28.700 M€ en España: aunque el número desciende un 14 % interanual, el importe total crece un 9 %, confirmando un patrón estructural de menor volumen pero mayor tamaño medio impulsado por el mid-market y grandes operaciones como la venta de Urbaser.\n\nFuentes: Freshfields, Iberian Lawyer, Demócrata"
 }
