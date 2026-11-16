@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-11-15",
+  "fecha": "2026-11-16",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Tráfico Ormuz",
-      "valor": "35 %",
-      "fuente": "Gulf News"
+      "etiqueta": "Bajas rusas acumuladas",
+      "valor": "1.622.860",
+      "fuente": "Ukrainska Pravda"
     },
     {
-      "etiqueta": "Expropiación rusa",
-      "valor": "86,86 M$",
-      "fuente": "Institute for the Study of War"
+      "etiqueta": "Portaviones EE. UU. en CENTCOM",
+      "valor": "3",
+      "fuente": "Anadolu Ajansı"
     },
     {
-      "etiqueta": "Déficit gas iraní",
-      "valor": "430 M m³/día",
-      "fuente": "Gulf News"
+      "etiqueta": "Tipos BCE depósito",
+      "valor": "2,50%",
+      "fuente": "European Central Bank"
     },
     {
-      "etiqueta": "Intención family offices",
-      "valor": "68,1 %",
-      "fuente": "CaixaBank"
+      "etiqueta": "M&A España 9M valor",
+      "valor": "€73.803 M",
+      "fuente": "AGM Abogados"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 7
     },
     {
       "horizonte": "Esta semana",
@@ -34,7 +34,7 @@
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,16 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La Casa Blanca y el Kremlin confirman una cumbre trilateral inédita entre Donald Trump, Vladimir Putin y Xi Jinping para el próximo jueves en Shenzhen al margen del APEC, centrada en Oriente Medio y desarme nuclear con Ucrania expresamente fuera de agenda y Elon Musk en la comitiva estadounidense",
-          "fuente": "Diario Crónica"
+          "texto": "La escalada militar en Oriente Medio marca la jornada: el USS Theodore Roosevelt se incorpora a otros dos grupos elevando a tres la presencia de portaviones estadounidenses en CENTCOM, mientras el viceministro iraní Kazem Gharibabadi advierte que Teherán \"no esperará a que EE. UU. ataque primero\" y condiciona el acceso de la Guardia Revolucionaria a instalaciones nucleares al fin de la guerra y a garantías de Washington",
+          "fuente": "Anadolu Ajansı, Gulf News"
         },
         {
-          "texto": "Altos mandos de inteligencia de EE. UU. e Israel, incluyendo a John Ratcliffe de la CIA y Roman Gofman del Mossad, se reúnen en Washington y Miami con el enviado Steve Witkoff para calibrar escenarios de escalada contra Irán, mientras Trump declara en redes que «tenemos su dinero, cientos de miles de millones, y tenemos su estrecho»",
-          "fuente": "Resumen Latinoamericano"
+          "texto": "Arabia Saudita, Catar, Jordania y Egipto condenan conjuntamente el ataque con drones iraní contra la base aérea de Al Riffa en Baréin, reactivando la tensión tras la pausa de septiembre, y el Consejo de Seguridad de la ONU celebró sesión abierta el 13 de noviembre a petición de Baréin por la interrupción casi total del tránsito en el Estrecho de Ormuz",
+          "fuente": "The Guardian, Security Council Report"
         },
         {
-          "texto": "El Estrecho de Ormuz opera ya al 35 % de su capacidad habitual con 308 tránsitos semanales y 8 incidentes nuevos que elevan a 163 el total desde febrero, y Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán. Irán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL",
-          "fuente": "Gulf News"
+          "texto": "En el frente oriental, Ucrania eleva a 1.622.860 las bajas acumuladas de personal ruso desde febrero de 2022, con 2.230 efectivos adicionales en las últimas 24 horas, mientras ejecuta ataques con drones contra el complejo petroquímico Nizhnekamskneftekhim en Tatarstan, a 1.200 km de la frontera, y la planta de aviación Monolit en Briansk",
+          "fuente": "Ukrainska Pravda, The Kyiv Independent"
+        },
+        {
+          "texto": "Australia, Canadá, Italia y el Reino Unido emiten un llamamiento urgente conjunto a Israel para permitir la entrada inmediata de 150.000 tiendas de campaña y ayuda humanitaria a Gaza ante la llegada del invierno",
+          "fuente": "Anadolu Ajansı"
         }
       ]
     },
@@ -68,16 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "China y EE. UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico",
-          "fuente": "Emirates News Agency (WAM), Holland & Knight"
+          "texto": "El resultado de las elecciones de mitad de mandato del 3 de noviembre en EE. UU. entrega al Partido Demócrata el control de ambas cámaras del Congreso, configurando un escenario de bloqueo institucional y mayor fiscalización sobre la política exterior de la administración Trump",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Google presenta sus TPU 8tx (entrenamiento confidencial con seguridad en hardware junto a AMD) y TPU 8i Max (memoria duplicada para inferencia masiva de agentes), marcando la octava generación de silicio propio orientada a cargas de IA agente",
-          "fuente": "TechCrunch"
+          "texto": "Anthropic lanza comercialmente por API los modelos Claude Fable 5.2 y Claude Mythos 5.2 con tarifas de 8/40 dólares por millón de tokens (entrada/salida), ventana de 1 millón y disponibilidad para clientes de API, AWS y Google Cloud",
+          "fuente": "BeevR"
         },
         {
-          "texto": "El fondo global AURELIUS firma el 12 de noviembre un acuerdo definitivo para adquirir la unidad de grafito de Resonac Corporation en una compleja operación de carve-out que incluye activos industriales críticos en España (planta principal en La Coruña), EE. UU. y Austria. Cinven anuncia el 6 de noviembre la venta de su participación en Restaurant Brands Europe, master-franquiciado de Burger King en España y Portugal, Popeyes en España e Italia y Tim Hortons en España, con más de 1.400 establecimientos, a un consorcio liderado por el fundador Gregorio Jiménez, sin revelar términos financieros",
-          "fuente": "AURELIUS, Cinven"
+          "texto": "El Real Decreto-Ley de noviembre de 2026 introduce modificaciones en IRPF y obligaciones fiscales accesorias para el cierre de ejercicio con efectos directos en la planificación corporativa",
+          "fuente": "Agencia Tributaria"
+        },
+        {
+          "texto": "Philip R. Lane, del Comité Ejecutivo del BCE, subraya en la conferencia del Banco de Inglaterra la comunicación como ancla de expectativas financieras mientras el tipo de facilidad de depósito se mantiene en el 2,50% tras la reunión del 29 de octubre",
+          "fuente": "European Central Bank"
         }
       ]
     },
@@ -85,16 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Gobierno español aprueba el Real Decreto 731/2026 abriendo una vía de tramitación preferente para Proyectos de Inversión Estratégica, y Freshfields advierte que la convocatoria de elecciones generales anticipadas para el 29 de noviembre de 2026 y la exigencia estricta de autorizaciones de Inversión Extranjera Directa obligan a los inversores a recalcular plazos con periodos de declaración de 1 a 3 meses en los cronogramas de transacciones",
-          "fuente": "Freshfields"
+          "texto": "El mercado transaccional español acumula 2.261 operaciones hasta septiembre por un valor agregado de 73.803 millones de euros, con caídas interanuales del 15% en número y del 6% en valor, mientras el private equity moviliza 17.263 millones en 244 transacciones y el inmobiliario lidera con 510 operaciones",
+          "fuente": "AGM Abogados"
         },
         {
-          "texto": "Los datos de Mergermarket de los primeros nueve meses sitúan a Uría Menéndez al frente del valor de M&A en España con 81 operaciones por US$37.730 millones (44,9 % del volumen total, +48,7 % interanual), mientras Cuatrecasas revalida el primer puesto en número con 151 operaciones (19,7 % del mercado), seguida por Garrigues (98) y Uría Menéndez (81)",
-          "fuente": "Iberian Lawyer"
+          "texto": "La administración Trump autoriza exportaciones de diésel ruso a mercados globales para contener precios internos, medida que sorprendió a Kiev según el informe de FDD del 3 de noviembre",
+          "fuente": "FDD"
         },
         {
-          "texto": "El informe de Forvis Mazars y Mergermarket sobre el primer semestre cierra con 600 operaciones y 28.700 M€ en España: aunque el número desciende un 14 % interanual, el importe total crece un 9 %, confirmando un patrón estructural de menor volumen pero mayor tamaño medio impulsado por el mid-market y grandes operaciones como la venta de Urbaser",
-          "fuente": "Demócrata"
+          "texto": "El marco del Impuesto sobre Sociedades consolida tipos reducidos para pymes y microempresas, límites estrictos en la compensación de bases imponibles negativas y requerimientos avanzados de control electrónico por la Agencia Tributaria, derivados de los Reales Decretos-Leyes de finales de 2025",
+          "fuente": "Global Law Experts"
+        },
+        {
+          "texto": "Nvidia presenta en GTC Berlin la arquitectura OpenShell para agentes de IA seguros integrando infraestructura Vera Rubin, CPUs Vera y BlueField-4 con gobernanza y aislamiento a escala industrial",
+          "fuente": "NVIDIA Newsroom"
         }
       ]
     },
@@ -109,5 +121,5 @@
       ]
     }
   ],
-  "markdown": "## Hoy\nLa Casa Blanca y el Kremlin confirman una cumbre trilateral inédita entre Donald Trump, Vladimir Putin y Xi Jinping para el próximo jueves en Shenzhen al margen del APEC, centrada en Oriente Medio y desarme nuclear con Ucrania expresamente fuera de agenda y Elon Musk en la comitiva estadounidense.\n\nAltos mandos de inteligencia de EE. UU. e Israel, incluyendo a John Ratcliffe de la CIA y Roman Gofman del Mossad, se reúnen en Washington y Miami con el enviado Steve Witkoff para calibrar escenarios de escalada contra Irán, mientras Trump declara en redes que «tenemos su dinero, cientos de miles de millones, y tenemos su estrecho».\n\nEl Estrecho de Ormuz opera ya al 35 % de su capacidad habitual con 308 tránsitos semanales y 8 incidentes nuevos que elevan a 163 el total desde febrero, y Turquía y Catar blindan su alineación con un pacto de defensa mutua firmado bajo la sombra de las amenazas de Trump a Teherán. Irán admite un déficit de gas de 430 M m³/día para el invierno por daños en cuatro plantas de procesamiento, lo que convierte al exportador neto en importador forzoso y tensiona los mercados regionales de GNL.\n\nFuentes: Diario Crónica, Resumen Latinoamericano, Gulf News\n\n## Esta semana\nChina y EE. UU. extienden dos meses (hasta el 10 de enero de 2027) la suspensión del arancel adicional del 24 % manteniendo el 10 % base, y la USTR replica la prórroga para tasas portuarias y aranceles a grúas chinas bajo Sección 301, consolidando la tregua comercial bilateral en ambos lados del Pacífico.\n\nGoogle presenta sus TPU 8tx (entrenamiento confidencial con seguridad en hardware junto a AMD) y TPU 8i Max (memoria duplicada para inferencia masiva de agentes), marcando la octava generación de silicio propio orientada a cargas de IA agente.\n\nEl fondo global AURELIUS firma el 12 de noviembre un acuerdo definitivo para adquirir la unidad de grafito de Resonac Corporation en una compleja operación de carve-out que incluye activos industriales críticos en España (planta principal en La Coruña), EE. UU. y Austria. Cinven anuncia el 6 de noviembre la venta de su participación en Restaurant Brands Europe, master-franquiciado de Burger King en España y Portugal, Popeyes en España e Italia y Tim Hortons en España, con más de 1.400 establecimientos, a un consorcio liderado por el fundador Gregorio Jiménez, sin revelar términos financieros.\n\nFuentes: Emirates News Agency (WAM), Holland & Knight, TechCrunch, AURELIUS, Cinven\n\n## Este mes\nEl Gobierno español aprueba el Real Decreto 731/2026 abriendo una vía de tramitación preferente para Proyectos de Inversión Estratégica, y Freshfields advierte que la convocatoria de elecciones generales anticipadas para el 29 de noviembre de 2026 y la exigencia estricta de autorizaciones de Inversión Extranjera Directa obligan a los inversores a recalcular plazos con periodos de declaración de 1 a 3 meses en los cronogramas de transacciones.\n\nLos datos de Mergermarket de los primeros nueve meses sitúan a Uría Menéndez al frente del valor de M&A en España con 81 operaciones por US$37.730 millones (44,9 % del volumen total, +48,7 % interanual), mientras Cuatrecasas revalida el primer puesto en número con 151 operaciones (19,7 % del mercado), seguida por Garrigues (98) y Uría Menéndez (81).\n\nEl informe de Forvis Mazars y Mergermarket sobre el primer semestre cierra con 600 operaciones y 28.700 M€ en España: aunque el número desciende un 14 % interanual, el importe total crece un 9 %, confirmando un patrón estructural de menor volumen pero mayor tamaño medio impulsado por el mid-market y grandes operaciones como la venta de Urbaser.\n\nFuentes: Freshfields, Iberian Lawyer, Demócrata"
+  "markdown": "## Hoy\nLa escalada militar en Oriente Medio marca la jornada: el USS Theodore Roosevelt se incorpora a otros dos grupos elevando a tres la presencia de portaviones estadounidenses en CENTCOM, mientras el viceministro iraní Kazem Gharibabadi advierte que Teherán \"no esperará a que EE. UU. ataque primero\" y condiciona el acceso de la Guardia Revolucionaria a instalaciones nucleares al fin de la guerra y a garantías de Washington.\n\nArabia Saudita, Catar, Jordania y Egipto condenan conjuntamente el ataque con drones iraní contra la base aérea de Al Riffa en Baréin, reactivando la tensión tras la pausa de septiembre, y el Consejo de Seguridad de la ONU celebró sesión abierta el 13 de noviembre a petición de Baréin por la interrupción casi total del tránsito en el Estrecho de Ormuz.\n\nEn el frente oriental, Ucrania eleva a 1.622.860 las bajas acumuladas de personal ruso desde febrero de 2022, con 2.230 efectivos adicionales en las últimas 24 horas, mientras ejecuta ataques con drones contra el complejo petroquímico Nizhnekamskneftekhim en Tatarstan, a 1.200 km de la frontera, y la planta de aviación Monolit en Briansk.\n\nAustralia, Canadá, Italia y el Reino Unido emiten un llamamiento urgente conjunto a Israel para permitir la entrada inmediata de 150.000 tiendas de campaña y ayuda humanitaria a Gaza ante la llegada del invierno.\n\nFuentes: Anadolu Ajansı, Gulf News, The Guardian, Security Council Report, Ukrainska Pravda, The Kyiv Independent\n\n## Esta semana\nEl resultado de las elecciones de mitad de mandato del 3 de noviembre en EE. UU. entrega al Partido Demócrata el control de ambas cámaras del Congreso, configurando un escenario de bloqueo institucional y mayor fiscalización sobre la política exterior de la administración Trump.\n\nAnthropic lanza comercialmente por API los modelos Claude Fable 5.2 y Claude Mythos 5.2 con tarifas de 8/40 dólares por millón de tokens (entrada/salida), ventana de 1 millón y disponibilidad para clientes de API, AWS y Google Cloud.\n\nEl Real Decreto-Ley de noviembre de 2026 introduce modificaciones en IRPF y obligaciones fiscales accesorias para el cierre de ejercicio con efectos directos en la planificación corporativa.\n\nPhilip R. Lane, del Comité Ejecutivo del BCE, subraya en la conferencia del Banco de Inglaterra la comunicación como ancla de expectativas financieras mientras el tipo de facilidad de depósito se mantiene en el 2,50% tras la reunión del 29 de octubre.\n\nFuentes: The Guardian, BeevR, Agencia Tributaria, European Central Bank\n\n## Este mes\nEl mercado transaccional español acumula 2.261 operaciones hasta septiembre por un valor agregado de 73.803 millones de euros, con caídas interanuales del 15% en número y del 6% en valor, mientras el private equity moviliza 17.263 millones en 244 transacciones y el inmobiliario lidera con 510 operaciones.\n\nLa administración Trump autoriza exportaciones de diésel ruso a mercados globales para contener precios internos, medida que sorprendió a Kiev según el informe de FDD del 3 de noviembre.\n\nEl marco del Impuesto sobre Sociedades consolida tipos reducidos para pymes y microempresas, límites estrictos en la compensación de bases imponibles negativas y requerimientos avanzados de control electrónico por la Agencia Tributaria, derivados de los Reales Decretos-Leyes de finales de 2025.\n\nNvidia presenta en GTC Berlin la arquitectura OpenShell para agentes de IA seguros integrando infraestructura Vera Rubin, CPUs Vera y BlueField-4 con gobernanza y aislamiento a escala industrial.\n\nFuentes: AGM Abogados, FDD, Global Law Experts, NVIDIA Newsroom"
 }
