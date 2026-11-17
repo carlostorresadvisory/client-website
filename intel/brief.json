@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-16",
+  "fecha": "2026-11-17",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bajas rusas acumuladas",
-      "valor": "1.622.860",
-      "fuente": "Ukrainska Pravda"
+      "etiqueta": "Tipos BCE",
+      "valor": "2,5 %",
+      "fuente": "Radio Intereconomía"
     },
     {
-      "etiqueta": "Portaviones EE. UU. en CENTCOM",
-      "valor": "3",
-      "fuente": "Anadolu Ajansı"
+      "etiqueta": "Transacciones M&A España",
+      "valor": "2.525",
+      "fuente": "Iberian Lawyer"
     },
     {
-      "etiqueta": "Tipos BCE depósito",
-      "valor": "2,50%",
-      "fuente": "European Central Bank"
+      "etiqueta": "Valor M&A España",
+      "valor": "81.328 M€",
+      "fuente": "Iberian Lawyer"
     },
     {
-      "etiqueta": "M&A España 9M valor",
-      "valor": "€73.803 M",
-      "fuente": "AGM Abogados"
+      "etiqueta": "Probabilidad subida Fed diciembre",
+      "valor": "100 %",
+      "fuente": "The Motley Fool"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 7
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 3
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
@@ -51,20 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La escalada militar en Oriente Medio marca la jornada: el USS Theodore Roosevelt se incorpora a otros dos grupos elevando a tres la presencia de portaviones estadounidenses en CENTCOM, mientras el viceministro iraní Kazem Gharibabadi advierte que Teherán \"no esperará a que EE. UU. ataque primero\" y condiciona el acceso de la Guardia Revolucionaria a instalaciones nucleares al fin de la guerra y a garantías de Washington",
-          "fuente": "Anadolu Ajansı, Gulf News"
+          "texto": "Fresenius completó la adquisición del 45 % restante de mAbxience a Insud Pharma por aproximadamente 750 millones de euros, operación seleccionada por TTR Data como la transacción del mes, con asesoramiento legal de Linklaters Spain y Baker McKenzie",
+          "fuente": "Iberian Lawyer"
         },
         {
-          "texto": "Arabia Saudita, Catar, Jordania y Egipto condenan conjuntamente el ataque con drones iraní contra la base aérea de Al Riffa en Baréin, reactivando la tensión tras la pausa de septiembre, y el Consejo de Seguridad de la ONU celebró sesión abierta el 13 de noviembre a petición de Baréin por la interrupción casi total del tránsito en el Estrecho de Ormuz",
-          "fuente": "The Guardian, Security Council Report"
+          "texto": "Grupo Dia vendió su filial en Argentina a Dorinka (controlada por Grupo de Narváez) por 53,8 millones de dólares, con asesoramiento legal de Pérez-Llorca y Freshfields",
+          "fuente": "Iberian Lawyer"
         },
         {
-          "texto": "En el frente oriental, Ucrania eleva a 1.622.860 las bajas acumuladas de personal ruso desde febrero de 2022, con 2.230 efectivos adicionales en las últimas 24 horas, mientras ejecuta ataques con drones contra el complejo petroquímico Nizhnekamskneftekhim en Tatarstan, a 1.200 km de la frontera, y la planta de aviación Monolit en Briansk",
-          "fuente": "Ukrainska Pravda, The Kyiv Independent"
+          "texto": "Cuatrecasas asesoró a JME Venture Capital en la creación y lanzamiento de su nuevo fondo de capital riesgo JME Longevity I",
+          "fuente": "Iberian Lawyer"
         },
         {
-          "texto": "Australia, Canadá, Italia y el Reino Unido emiten un llamamiento urgente conjunto a Israel para permitir la entrada inmediata de 150.000 tiendas de campaña y ayuda humanitaria a Gaza ante la llegada del invierno",
-          "fuente": "Anadolu Ajansı"
+          "texto": "La Junta de Socios de Garrigues aprobó el 16 de noviembre la promoción de 20 nuevos socios de cuota con efectos a 1 de enero de 2027, elevando el total a 387 socios",
+          "fuente": "Iberian Lawyer"
         }
       ]
     },
@@ -72,20 +72,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El resultado de las elecciones de mitad de mandato del 3 de noviembre en EE. UU. entrega al Partido Demócrata el control de ambas cámaras del Congreso, configurando un escenario de bloqueo institucional y mayor fiscalización sobre la política exterior de la administración Trump",
-          "fuente": "The Guardian"
+          "texto": "Las proyecciones de CME FedWatch Tool basadas en futuros de fondos federales reflejan una probabilidad del 100 % de una nueva subida de tipos de interés por parte de la Reserva Federal (FOMC) en su reunión del 9 de diciembre de 2026, impulsada por un sólido informe de empleo de octubre con 165.000 nuevos empleos no agrícolas",
+          "fuente": "The Motley Fool"
         },
         {
-          "texto": "Anthropic lanza comercialmente por API los modelos Claude Fable 5.2 y Claude Mythos 5.2 con tarifas de 8/40 dólares por millón de tokens (entrada/salida), ventana de 1 millón y disponibilidad para clientes de API, AWS y Google Cloud",
-          "fuente": "BeevR"
+          "texto": "El despacho internacional Addleshaw Goddard anunció una alianza estratégica para integrar la plataforma legal de IA Harvey a partir de enero de 2027 en toda su plantilla de más de 3.400 abogados en Europa, Asia y Oriente Medio",
+          "fuente": "Iberian Lawyer"
         },
         {
-          "texto": "El Real Decreto-Ley de noviembre de 2026 introduce modificaciones en IRPF y obligaciones fiscales accesorias para el cierre de ejercicio con efectos directos en la planificación corporativa",
-          "fuente": "Agencia Tributaria"
-        },
-        {
-          "texto": "Philip R. Lane, del Comité Ejecutivo del BCE, subraya en la conferencia del Banco de Inglaterra la comunicación como ancla de expectativas financieras mientras el tipo de facilidad de depósito se mantiene en el 2,50% tras la reunión del 29 de octubre",
-          "fuente": "European Central Bank"
+          "texto": "La Comisión Europea confirmó a principios de noviembre de 2026 que varias capitales europeas arrastran retrasos en la designación definitiva de las autoridades nacionales de supervisión competentes para hacer cumplir el AI Act",
+          "fuente": "MuyComputerPRO"
         }
       ]
     },
@@ -93,20 +89,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El mercado transaccional español acumula 2.261 operaciones hasta septiembre por un valor agregado de 73.803 millones de euros, con caídas interanuales del 15% en número y del 6% en valor, mientras el private equity moviliza 17.263 millones en 244 transacciones y el inmobiliario lidera con 510 operaciones",
-          "fuente": "AGM Abogados"
+          "texto": "Desde el 2 de agosto de 2026 se encuentra plenamente en vigor el Artículo 50 del AI Act europeo, que obliga comercialmente a etiquetar e identificar de forma transparente cualquier chatbot o asistente virtual ante usuarios finales; ante las dificultades técnicas de armonización, la aplicación de obligaciones estructurales para sistemas de alto riesgo se aplazó formalmente hacia finales de 2027",
+          "fuente": "Raccoon Now, ebizlatam.com"
         },
         {
-          "texto": "La administración Trump autoriza exportaciones de diésel ruso a mercados globales para contener precios internos, medida que sorprendió a Kiev según el informe de FDD del 3 de noviembre",
-          "fuente": "FDD"
-        },
-        {
-          "texto": "El marco del Impuesto sobre Sociedades consolida tipos reducidos para pymes y microempresas, límites estrictos en la compensación de bases imponibles negativas y requerimientos avanzados de control electrónico por la Agencia Tributaria, derivados de los Reales Decretos-Leyes de finales de 2025",
-          "fuente": "Global Law Experts"
-        },
-        {
-          "texto": "Nvidia presenta en GTC Berlin la arquitectura OpenShell para agentes de IA seguros integrando infraestructura Vera Rubin, CPUs Vera y BlueField-4 con gobernanza y aislamiento a escala industrial",
-          "fuente": "NVIDIA Newsroom"
+          "texto": "Mistral AI consolidó a principios de noviembre el despliegue comercial de su modelo Mistral Large 4 (Le Chonk), un sistema multimodal de un billón de parámetros optimizado para agentes autónomos y código, situando los costes de API en el rango de los 0,70 $ a 2,10 $ por millón de tokens",
+          "fuente": "arcadig hub"
         }
       ]
     },
@@ -121,5 +109,5 @@
       ]
     }
   ],
-  "markdown": "## Hoy\nLa escalada militar en Oriente Medio marca la jornada: el USS Theodore Roosevelt se incorpora a otros dos grupos elevando a tres la presencia de portaviones estadounidenses en CENTCOM, mientras el viceministro iraní Kazem Gharibabadi advierte que Teherán \"no esperará a que EE. UU. ataque primero\" y condiciona el acceso de la Guardia Revolucionaria a instalaciones nucleares al fin de la guerra y a garantías de Washington.\n\nArabia Saudita, Catar, Jordania y Egipto condenan conjuntamente el ataque con drones iraní contra la base aérea de Al Riffa en Baréin, reactivando la tensión tras la pausa de septiembre, y el Consejo de Seguridad de la ONU celebró sesión abierta el 13 de noviembre a petición de Baréin por la interrupción casi total del tránsito en el Estrecho de Ormuz.\n\nEn el frente oriental, Ucrania eleva a 1.622.860 las bajas acumuladas de personal ruso desde febrero de 2022, con 2.230 efectivos adicionales en las últimas 24 horas, mientras ejecuta ataques con drones contra el complejo petroquímico Nizhnekamskneftekhim en Tatarstan, a 1.200 km de la frontera, y la planta de aviación Monolit en Briansk.\n\nAustralia, Canadá, Italia y el Reino Unido emiten un llamamiento urgente conjunto a Israel para permitir la entrada inmediata de 150.000 tiendas de campaña y ayuda humanitaria a Gaza ante la llegada del invierno.\n\nFuentes: Anadolu Ajansı, Gulf News, The Guardian, Security Council Report, Ukrainska Pravda, The Kyiv Independent\n\n## Esta semana\nEl resultado de las elecciones de mitad de mandato del 3 de noviembre en EE. UU. entrega al Partido Demócrata el control de ambas cámaras del Congreso, configurando un escenario de bloqueo institucional y mayor fiscalización sobre la política exterior de la administración Trump.\n\nAnthropic lanza comercialmente por API los modelos Claude Fable 5.2 y Claude Mythos 5.2 con tarifas de 8/40 dólares por millón de tokens (entrada/salida), ventana de 1 millón y disponibilidad para clientes de API, AWS y Google Cloud.\n\nEl Real Decreto-Ley de noviembre de 2026 introduce modificaciones en IRPF y obligaciones fiscales accesorias para el cierre de ejercicio con efectos directos en la planificación corporativa.\n\nPhilip R. Lane, del Comité Ejecutivo del BCE, subraya en la conferencia del Banco de Inglaterra la comunicación como ancla de expectativas financieras mientras el tipo de facilidad de depósito se mantiene en el 2,50% tras la reunión del 29 de octubre.\n\nFuentes: The Guardian, BeevR, Agencia Tributaria, European Central Bank\n\n## Este mes\nEl mercado transaccional español acumula 2.261 operaciones hasta septiembre por un valor agregado de 73.803 millones de euros, con caídas interanuales del 15% en número y del 6% en valor, mientras el private equity moviliza 17.263 millones en 244 transacciones y el inmobiliario lidera con 510 operaciones.\n\nLa administración Trump autoriza exportaciones de diésel ruso a mercados globales para contener precios internos, medida que sorprendió a Kiev según el informe de FDD del 3 de noviembre.\n\nEl marco del Impuesto sobre Sociedades consolida tipos reducidos para pymes y microempresas, límites estrictos en la compensación de bases imponibles negativas y requerimientos avanzados de control electrónico por la Agencia Tributaria, derivados de los Reales Decretos-Leyes de finales de 2025.\n\nNvidia presenta en GTC Berlin la arquitectura OpenShell para agentes de IA seguros integrando infraestructura Vera Rubin, CPUs Vera y BlueField-4 con gobernanza y aislamiento a escala industrial.\n\nFuentes: AGM Abogados, FDD, Global Law Experts, NVIDIA Newsroom"
+  "markdown": "## Hoy\nFresenius completó la adquisición del 45 % restante de mAbxience a Insud Pharma por aproximadamente 750 millones de euros, operación seleccionada por TTR Data como la transacción del mes, con asesoramiento legal de Linklaters Spain y Baker McKenzie.\n\nGrupo Dia vendió su filial en Argentina a Dorinka (controlada por Grupo de Narváez) por 53,8 millones de dólares, con asesoramiento legal de Pérez-Llorca y Freshfields.\n\nCuatrecasas asesoró a JME Venture Capital en la creación y lanzamiento de su nuevo fondo de capital riesgo JME Longevity I.\n\nLa Junta de Socios de Garrigues aprobó el 16 de noviembre la promoción de 20 nuevos socios de cuota con efectos a 1 de enero de 2027, elevando el total a 387 socios.\n\nFuentes: Iberian Lawyer\n\n## Esta semana\nLas proyecciones de CME FedWatch Tool basadas en futuros de fondos federales reflejan una probabilidad del 100 % de una nueva subida de tipos de interés por parte de la Reserva Federal (FOMC) en su reunión del 9 de diciembre de 2026, impulsada por un sólido informe de empleo de octubre con 165.000 nuevos empleos no agrícolas.\n\nEl despacho internacional Addleshaw Goddard anunció una alianza estratégica para integrar la plataforma legal de IA Harvey a partir de enero de 2027 en toda su plantilla de más de 3.400 abogados en Europa, Asia y Oriente Medio.\n\nLa Comisión Europea confirmó a principios de noviembre de 2026 que varias capitales europeas arrastran retrasos en la designación definitiva de las autoridades nacionales de supervisión competentes para hacer cumplir el AI Act.\n\nFuentes: The Motley Fool, Iberian Lawyer, MuyComputerPRO\n\n## Este mes\nDesde el 2 de agosto de 2026 se encuentra plenamente en vigor el Artículo 50 del AI Act europeo, que obliga comercialmente a etiquetar e identificar de forma transparente cualquier chatbot o asistente virtual ante usuarios finales; ante las dificultades técnicas de armonización, la aplicación de obligaciones estructurales para sistemas de alto riesgo se aplazó formalmente hacia finales de 2027.\n\nMistral AI consolidó a principios de noviembre el despliegue comercial de su modelo Mistral Large 4 (Le Chonk), un sistema multimodal de un billón de parámetros optimizado para agentes autónomos y código, situando los costes de API en el rango de los 0,70 $ a 2,10 $ por millón de tokens.\n\nFuentes: Raccoon Now, ebizlatam.com, arcadig hub"
 }
