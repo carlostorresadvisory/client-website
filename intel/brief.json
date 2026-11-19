@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Euríbor 12m",
-      "valor": "3,361%",
-      "fuente": "Rankia"
+      "etiqueta": "M&A en España hasta octubre",
+      "valor": "81.328 M€",
+      "fuente": "Demócrata"
     },
     {
-      "etiqueta": "Ingresos Nvidia Q3",
-      "valor": "115.800 M$",
-      "fuente": "La Ecuación Digital"
+      "etiqueta": "Bono EE.UU. a 30 años",
+      "valor": "5,4 %",
+      "fuente": "European Commission"
     },
     {
-      "etiqueta": "M&A España 9M",
-      "valor": "2.261 ops, 73.803 M€",
-      "fuente": "Europa Press"
+      "etiqueta": "Aumento bajas civiles Ucrania",
+      "valor": "95 %",
+      "fuente": "ISW"
     },
     {
-      "etiqueta": "Family offices pymes",
-      "valor": "63% compras",
-      "fuente": "El Nacional"
+      "etiqueta": "Alza de tipos Fed prevista",
+      "valor": "25 pb",
+      "fuente": "CNBC / Federal Reserve"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 6
+      "n": 5
     },
     {
       "horizonte": "Esta semana",
@@ -41,22 +41,30 @@
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Nemotron"
+      "Gemini"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Nemotron"
+    "texto": "Investigación: Gemini · Redacción: Gemini"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Ucrania ha golpeado por segundo día consecutivo el puente de Kerch con un ataque masivo de drones que Moscú reconoce con daños estructurales, mientras Estados Unidos bombardeaba una instalación de misiles de la Guardia Revolucionaria en la isla iraní de Qeshm en respuesta a ofensivas con drones contra bases en Baréin y Kuwait. En el plano diplomático, Lavrov calificó de \"participación directa en la guerra\" el despliegue de instructores militares franceses en Ucrania, acusación que París rechazó como \"absurda\"",
-          "fuente": "LaSexta, Gulf News, Animal Político"
+          "texto": "El presidente ruso Vladímir Putin procuró proyectar a Rusia como superpotencia al nivel de EE.UU. y China en la Cumbre de APEC en Shenzhen, restando peso al conflicto en Ucrania en una jornada en la que Xi Jinping otorgó prioridad protocolaria al recibir en persona a Donald Trump",
+          "fuente": "ISW"
         },
         {
-          "texto": "El Euríbor a 12 meses cerró el 17 de noviembre en el 3,361%, a solo 1,8 puntos básicos del máximo anual de septiembre (3,379%), tensionando la transmisión hipotecaria en vísperas de la reunión del BCE de diciembre. En tecnología, OpenAI lanzó GPT-6.2 Astra reivindicando un coste por tarea hasta 20 veces inferior al de Claude Fable 5.2, mientras Nvidia presentó ingresos récord de 115.800 M$ en el Q3 fiscal (+103% interanual) y guiñó 130.000 M$ para el trimestre en curso",
-          "fuente": "Rankia, El País, La Ecuación Digital"
+          "texto": "En el ámbito militar, Ucrania renovó la presión logística sobre Crimea con nuevos ataques con drones Palianytsia y misiles de crucero contra el puente de Kerch, forzando una nueva suspensión del tráfico tras provocar severos daños en la calzada y el arco ferroviario",
+          "fuente": "Anadolu Agency"
+        },
+        {
+          "texto": "En paralelo, las tensiones en el golfo Pérsico se intensificaron tras el impacto de un proyectil contra un petrolero cerca de Omán y la intercepción de un misil hutí sobre Arabia Saudí",
+          "fuente": "Gulf News"
+        },
+        {
+          "texto": "En el ámbito monetario y tecnológico, las actas de la Fed señalan un respaldo mayoritario a un alza de 25 pb en diciembre, mientras OpenAI presentó su nuevo modelo GPT-6.2 Astra",
+          "fuente": "CNBC / Federal Reserve, Artificial Analysis"
         }
       ]
     },
@@ -64,12 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "La UE aprobó el 16 de noviembre un nuevo paquete de sanciones que incorpora a 113 personas y entidades para estrangular los ingresos energéticos rusos y su flota marítima clandestina. En paralelo, un estudio de Vals publicado el 17 de noviembre revela que los principales modelos comerciales (OpenAI, Anthropic) identifican sistemáticamente a civiles, ambulancias y una escuela en Irán como objetivos militares en simulaciones de combate autónomo, elevando la presión regulatoria y ética semanas antes de la entrada en vigor plena del AI Act",
-          "fuente": "Consilium.europa.eu, El Financiero"
+          "texto": "Víctimas en Ucrania: La ONU constató un aumento del 95% en las bajas civiles ucranianas durante octubre debido a la intensificación de ataques rusos de largo alcance",
+          "fuente": "ISW"
         },
         {
-          "texto": "En el mercado español, la plataforma Deale roza las 80 operaciones en 2026 (77 cerradas) y proyecta 1,2 M€ de EBITDA (+80%), con un 30% de ofertas procedentes ya de asesores profesionales externos. Los family offices españoles han duplicado su peso en la compra de pymes industriales (del 33% al 63% en la muestra Deale 2023-2025), adquiriendo en el segmento Lower Middle Market (10-30 M€ facturación) a múltiplos de 3x EBITDA impulsados por la falta de relevo generacional (70% de las ventas). En logística, el M&A español acumula 39 operaciones en 9M26 (-13% interanual), con 69% de inversión doméstica y dominancia de compradores industriales (85%) frente a financieros (15%)",
-          "fuente": "elEconomista.es, El Nacional, Cadena de Suministro"
+          "texto": "Despliegue militar en Oriente Medio: EE.UU. sumó un tercer portaaviones (USS Theodore Roosevelt) a la región para reforzar la disuasión ante Irán",
+          "fuente": "The Guardian"
+        },
+        {
+          "texto": "Vigilancia regulatoria y financiera en la UE: Asesores éticos y científicos de la CE exigieron mantener salvaguardas estrictas en la ley de IA, al tiempo que el BCE advirtió de posibles pérdidas patrimoniales en el sector no bancario por correcciones bursátiles en IA o repuntes en la deuda soberana",
+          "fuente": "European Commission, European Central Bank"
+        },
+        {
+          "texto": "Operaciones corporativas en España: Destacan la entrada de Investcorp en Connectif AI y la adquisición de ZeroComa por Namirial",
+          "fuente": "Albia IMAP"
         }
       ]
     },
@@ -77,34 +93,23 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE mantuvo el 29 de octubre la facilidad de depósito en el 2,50%, aunque actas y analistas apuntan a alta probabilidad de reanudar subidas en diciembre por la inflación energética persistente. La Fed dejó en 3,75%-4,00% el tipo de fondos federales a finales de octubre, registrando disidencias internas a favor de +25 pb, lo que sitúa a ambos bancos centrales en una senda de endurecimiento asimétrico pero convergente",
-          "fuente": "Raisin, Trading Economics"
+          "texto": "Mercados y tensión energética: La rentabilidad del bono de EE.UU. a 30 años superó el 5,4% en un contexto de elevada emisión de deuda y con el petróleo Brent cotizando por encima de los 100 dólares",
+          "fuente": "European Commission"
         },
         {
-          "texto": "TTR Data situó el mercado transaccional español en 2.261 operaciones por 73.803 M€ hasta septiembre (-15% en número, -6% en capital interanual), liderados por inmobiliario (510 ops) e Internet/Software (203 ops). Los múltiplos medios de pymes en el sur de Europa se sitúan en 5,3x EBITDA (horquilla 3,8x-7,4x según sector y tamaño) según datos agregados Dealsuite/Relevo Familiar a cierre de octubre, proporcionando una referencia de valoración para el segmento Lower Middle Market donde operan los family offices",
-          "fuente": "Europa Press, Relevo Familiar"
+          "texto": "Balance del M&A en España: TTR Data registró 2.261 operaciones por 73.803 M€ hasta el tercer trimestre (-6% en volumen de capital), con fuerte peso del sector inmobiliario y tecnológico",
+          "fuente": "AGM Abogados"
+        },
+        {
+          "texto": "Marco normativo y alianzas de IA: La Comisión Europea aprobó el Reglamento de Ejecución 2026/2487 para entornos de pruebas de IA, mientras OpenAI y Google Cloud acordaron la integración de modelos frontera en Model Garden",
+          "fuente": "EUR-Lex, OpenAI"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": [],
-      "subsecciones": [
-        {
-          "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "La duplicación de family offices como compradores de pymes industriales (33%; 63%) a 3x EBITDA por falta de relevo (70% de ventas) confirma un flujo de dealflow estructural en Lower Middle Market español, mientras Deale valida la tracción de asesores profesionales (30% ofertas) y rentabilidad creciente (1,2 M€ EBITDA proyectado)",
-              "fuente": "El Nacional, elEconomista.es"
-            },
-            {
-              "texto": "En logística, la caída de operaciones (-13%) pero dominancia industrial (85%) y doméstica (69%) sugiere consolidación operativa más que financiera",
-              "fuente": "Cadena de Suministro"
-            }
-          ]
-        }
-      ]
+      "lineas": []
     }
   ],
-  "markdown": "## Hoy\nUcrania ha golpeado por segundo día consecutivo el puente de Kerch con un ataque masivo de drones que Moscú reconoce con daños estructurales, mientras Estados Unidos bombardeaba una instalación de misiles de la Guardia Revolucionaria en la isla iraní de Qeshm en respuesta a ofensivas con drones contra bases en Baréin y Kuwait. En el plano diplomático, Lavrov calificó de \"participación directa en la guerra\" el despliegue de instructores militares franceses en Ucrania, acusación que París rechazó como \"absurda\".\n\nEl Euríbor a 12 meses cerró el 17 de noviembre en el 3,361%, a solo 1,8 puntos básicos del máximo anual de septiembre (3,379%), tensionando la transmisión hipotecaria en vísperas de la reunión del BCE de diciembre. En tecnología, OpenAI lanzó GPT-6.2 Astra reivindicando un coste por tarea hasta 20 veces inferior al de Claude Fable 5.2, mientras Nvidia presentó ingresos récord de 115.800 M$ en el Q3 fiscal (+103% interanual) y guiñó 130.000 M$ para el trimestre en curso.\n\nFuentes: LaSexta, Gulf News, Animal Político, Rankia, El País, La Ecuación Digital\n\n## Esta semana\nLa UE aprobó el 16 de noviembre un nuevo paquete de sanciones que incorpora a 113 personas y entidades para estrangular los ingresos energéticos rusos y su flota marítima clandestina. En paralelo, un estudio de Vals publicado el 17 de noviembre revela que los principales modelos comerciales (OpenAI, Anthropic) identifican sistemáticamente a civiles, ambulancias y una escuela en Irán como objetivos militares en simulaciones de combate autónomo, elevando la presión regulatoria y ética semanas antes de la entrada en vigor plena del AI Act.\n\nEn el mercado español, la plataforma Deale roza las 80 operaciones en 2026 (77 cerradas) y proyecta 1,2 M€ de EBITDA (+80%), con un 30% de ofertas procedentes ya de asesores profesionales externos. Los family offices españoles han duplicado su peso en la compra de pymes industriales (del 33% al 63% en la muestra Deale 2023-2025), adquiriendo en el segmento Lower Middle Market (10-30 M€ facturación) a múltiplos de 3x EBITDA impulsados por la falta de relevo generacional (70% de las ventas). En logística, el M&A español acumula 39 operaciones en 9M26 (-13% interanual), con 69% de inversión doméstica y dominancia de compradores industriales (85%) frente a financieros (15%).\n\nFuentes: Consilium.europa.eu, El Financiero, elEconomista.es, El Nacional, Cadena de Suministro\n\n## Este mes\nEl BCE mantuvo el 29 de octubre la facilidad de depósito en el 2,50%, aunque actas y analistas apuntan a alta probabilidad de reanudar subidas en diciembre por la inflación energética persistente. La Fed dejó en 3,75%-4,00% el tipo de fondos federales a finales de octubre, registrando disidencias internas a favor de +25 pb, lo que sitúa a ambos bancos centrales en una senda de endurecimiento asimétrico pero convergente.\n\nTTR Data situó el mercado transaccional español en 2.261 operaciones por 73.803 M€ hasta septiembre (-15% en número, -6% en capital interanual), liderados por inmobiliario (510 ops) e Internet/Software (203 ops). Los múltiplos medios de pymes en el sur de Europa se sitúan en 5,3x EBITDA (horquilla 3,8x-7,4x según sector y tamaño) según datos agregados Dealsuite/Relevo Familiar a cierre de octubre, proporcionando una referencia de valoración para el segmento Lower Middle Market donde operan los family offices.\n\nFuentes: Raisin, Trading Economics, Europa Press, Relevo Familiar\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nLa duplicación de family offices como compradores de pymes industriales (33%→63%) a 3x EBITDA por falta de relevo (70% de ventas) confirma un flujo de dealflow estructural en Lower Middle Market español, mientras Deale valida la tracción de asesores profesionales (30% ofertas) y rentabilidad creciente (1,2 M€ EBITDA proyectado).\n\nEn logística, la caída de operaciones (-13%) pero dominancia industrial (85%) y doméstica (69%) sugiere consolidación operativa más que financiera.\n\nFuentes: El Nacional, elEconomista.es, Cadena de Suministro"
+  "markdown": "## Hoy\nEl presidente ruso Vladímir Putin procuró proyectar a Rusia como superpotencia al nivel de EE.UU. y China en la Cumbre de APEC en Shenzhen, restando peso al conflicto en Ucrania en una jornada en la que Xi Jinping otorgó prioridad protocolaria al recibir en persona a Donald Trump.\n\nEn el ámbito militar, Ucrania renovó la presión logística sobre Crimea con nuevos ataques con drones Palianytsia y misiles de crucero contra el puente de Kerch, forzando una nueva suspensión del tráfico tras provocar severos daños en la calzada y el arco ferroviario.\n\nEn paralelo, las tensiones en el golfo Pérsico se intensificaron tras el impacto de un proyectil contra un petrolero cerca de Omán y la intercepción de un misil hutí sobre Arabia Saudí.\n\nEn el ámbito monetario y tecnológico, las actas de la Fed señalan un respaldo mayoritario a un alza de 25 pb en diciembre, mientras OpenAI presentó su nuevo modelo GPT-6.2 Astra.\n\nFuentes: ISW, Anadolu Agency, Gulf News, CNBC / Federal Reserve, Artificial Analysis\n\n## Esta semana\n- Víctimas en Ucrania: La ONU constató un aumento del 95% en las bajas civiles ucranianas durante octubre debido a la intensificación de ataques rusos de largo alcance.\n\n- Despliegue militar en Oriente Medio: EE.UU. sumó un tercer portaaviones (USS Theodore Roosevelt) a la región para reforzar la disuasión ante Irán.\n\n- Vigilancia regulatoria y financiera en la UE: Asesores éticos y científicos de la CE exigieron mantener salvaguardas estrictas en la ley de IA, al tiempo que el BCE advirtió de posibles pérdidas patrimoniales en el sector no bancario por correcciones bursátiles en IA o repuntes en la deuda soberana.\n\n- Operaciones corporativas en España: Destacan la entrada de Investcorp en Connectif AI y la adquisición de ZeroComa por Namirial.\n\nFuentes: ISW, The Guardian, European Commission, European Central Bank, Albia IMAP\n\n## Este mes\n- Mercados y tensión energética: La rentabilidad del bono de EE.UU. a 30 años superó el 5,4% en un contexto de elevada emisión de deuda y con el petróleo Brent cotizando por encima de los 100 dólares.\n\n- Balance del M&A en España: TTR Data registró 2.261 operaciones por 73.803 M€ hasta el tercer trimestre (-6% en volumen de capital), con fuerte peso del sector inmobiliario y tecnológico.\n\n- Marco normativo y alianzas de IA: La Comisión Europea aprobó el Reglamento de Ejecución 2026/2487 para entornos de pruebas de IA, mientras OpenAI y Google Cloud acordaron la integración de modelos frontera en Model Garden.\n\nFuentes: European Commission, AGM Abogados, EUR-Lex, OpenAI"
 }
