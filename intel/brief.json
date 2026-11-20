@@ -1,36 +1,31 @@
 {
-  "fecha": "2026-11-19",
+  "fecha": "2026-11-20",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "M&A en España hasta octubre",
-      "valor": "81.328 M€",
-      "fuente": "Demócrata"
+      "etiqueta": "Caída M&A Energía España",
+      "valor": "38% interanual",
+      "fuente": null
     },
     {
-      "etiqueta": "Bono EE.UU. a 30 años",
-      "valor": "5,4 %",
-      "fuente": "European Commission"
+      "etiqueta": "Gemini 4 Neon",
+      "valor": "110 tokens por segundo",
+      "fuente": null
     },
     {
-      "etiqueta": "Aumento bajas civiles Ucrania",
-      "valor": "95 %",
-      "fuente": "ISW"
-    },
-    {
-      "etiqueta": "Alza de tipos Fed prevista",
-      "valor": "25 pb",
-      "fuente": "CNBC / Federal Reserve"
+      "etiqueta": "Obligaciones AI Act",
+      "valor": "2 de diciembre de 2027",
+      "fuente": null
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Este mes",
@@ -41,75 +36,48 @@
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Gemini"
+      "GLM"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Gemini"
+    "texto": "Investigación: Gemini · Redacción: GLM"
   },
   "secciones": [
     {
+      "titulo": "Cifras clave",
+      "lineas": []
+    },
+    {
       "titulo": "Hoy",
-      "lineas": [
-        {
-          "texto": "El presidente ruso Vladímir Putin procuró proyectar a Rusia como superpotencia al nivel de EE.UU. y China en la Cumbre de APEC en Shenzhen, restando peso al conflicto en Ucrania en una jornada en la que Xi Jinping otorgó prioridad protocolaria al recibir en persona a Donald Trump",
-          "fuente": "ISW"
-        },
-        {
-          "texto": "En el ámbito militar, Ucrania renovó la presión logística sobre Crimea con nuevos ataques con drones Palianytsia y misiles de crucero contra el puente de Kerch, forzando una nueva suspensión del tráfico tras provocar severos daños en la calzada y el arco ferroviario",
-          "fuente": "Anadolu Agency"
-        },
-        {
-          "texto": "En paralelo, las tensiones en el golfo Pérsico se intensificaron tras el impacto de un proyectil contra un petrolero cerca de Omán y la intercepción de un misil hutí sobre Arabia Saudí",
-          "fuente": "Gulf News"
-        },
-        {
-          "texto": "En el ámbito monetario y tecnológico, las actas de la Fed señalan un respaldo mayoritario a un alza de 25 pb en diciembre, mientras OpenAI presentó su nuevo modelo GPT-6.2 Astra",
-          "fuente": "CNBC / Federal Reserve, Artificial Analysis"
-        }
-      ]
+      "lineas": []
     },
     {
       "titulo": "Esta semana",
-      "lineas": [
-        {
-          "texto": "Víctimas en Ucrania: La ONU constató un aumento del 95% en las bajas civiles ucranianas durante octubre debido a la intensificación de ataques rusos de largo alcance",
-          "fuente": "ISW"
-        },
-        {
-          "texto": "Despliegue militar en Oriente Medio: EE.UU. sumó un tercer portaaviones (USS Theodore Roosevelt) a la región para reforzar la disuasión ante Irán",
-          "fuente": "The Guardian"
-        },
-        {
-          "texto": "Vigilancia regulatoria y financiera en la UE: Asesores éticos y científicos de la CE exigieron mantener salvaguardas estrictas en la ley de IA, al tiempo que el BCE advirtió de posibles pérdidas patrimoniales en el sector no bancario por correcciones bursátiles en IA o repuntes en la deuda soberana",
-          "fuente": "European Commission, European Central Bank"
-        },
-        {
-          "texto": "Operaciones corporativas en España: Destacan la entrada de Investcorp en Connectif AI y la adquisición de ZeroComa por Namirial",
-          "fuente": "Albia IMAP"
-        }
-      ]
+      "lineas": []
     },
     {
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Mercados y tensión energética: La rentabilidad del bono de EE.UU. a 30 años superó el 5,4% en un contexto de elevada emisión de deuda y con el petróleo Brent cotizando por encima de los 100 dólares",
-          "fuente": "European Commission"
-        },
-        {
-          "texto": "Balance del M&A en España: TTR Data registró 2.261 operaciones por 73.803 M€ hasta el tercer trimestre (-6% en volumen de capital), con fuerte peso del sector inmobiliario y tecnológico",
-          "fuente": "AGM Abogados"
-        },
-        {
-          "texto": "Marco normativo y alianzas de IA: La Comisión Europea aprobó el Reglamento de Ejecución 2026/2487 para entornos de pruebas de IA, mientras OpenAI y Google Cloud acordaron la integración de modelos frontera en Model Garden",
-          "fuente": "EUR-Lex, OpenAI"
+          "texto": "En materia de asesoría M&A, Mergermarket ha reportado que Uría Menéndez ha liderado la cuota de mercado en España con 81 operaciones por valor de 37.730 millones de dólares, mientras que Cuatrecasas ha encabezado el volumen de transacciones con 151 operaciones",
+          "fuente": "Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": []
+      "lineas": [],
+      "subsecciones": [
+        {
+          "titulo": "Edges para CT Advisory",
+          "lineas": [
+            {
+              "texto": "El sector energético español ofrece oportunidades selectivas de M&A, donde el biomethano destaca con una inversión privada proyectada de 4.800 millones de euros hasta 2030. Se identifican actores clave en el mercado de transacciones con la experiencia de Uría Menéndez (81 operaciones valor de 37.730 M€) y Cuatrecasas (151 transacciones)",
+              "fuente": "Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "markdown": "## Hoy\nEl presidente ruso Vladímir Putin procuró proyectar a Rusia como superpotencia al nivel de EE.UU. y China en la Cumbre de APEC en Shenzhen, restando peso al conflicto en Ucrania en una jornada en la que Xi Jinping otorgó prioridad protocolaria al recibir en persona a Donald Trump.\n\nEn el ámbito militar, Ucrania renovó la presión logística sobre Crimea con nuevos ataques con drones Palianytsia y misiles de crucero contra el puente de Kerch, forzando una nueva suspensión del tráfico tras provocar severos daños en la calzada y el arco ferroviario.\n\nEn paralelo, las tensiones en el golfo Pérsico se intensificaron tras el impacto de un proyectil contra un petrolero cerca de Omán y la intercepción de un misil hutí sobre Arabia Saudí.\n\nEn el ámbito monetario y tecnológico, las actas de la Fed señalan un respaldo mayoritario a un alza de 25 pb en diciembre, mientras OpenAI presentó su nuevo modelo GPT-6.2 Astra.\n\nFuentes: ISW, Anadolu Agency, Gulf News, CNBC / Federal Reserve, Artificial Analysis\n\n## Esta semana\n- Víctimas en Ucrania: La ONU constató un aumento del 95% en las bajas civiles ucranianas durante octubre debido a la intensificación de ataques rusos de largo alcance.\n\n- Despliegue militar en Oriente Medio: EE.UU. sumó un tercer portaaviones (USS Theodore Roosevelt) a la región para reforzar la disuasión ante Irán.\n\n- Vigilancia regulatoria y financiera en la UE: Asesores éticos y científicos de la CE exigieron mantener salvaguardas estrictas en la ley de IA, al tiempo que el BCE advirtió de posibles pérdidas patrimoniales en el sector no bancario por correcciones bursátiles en IA o repuntes en la deuda soberana.\n\n- Operaciones corporativas en España: Destacan la entrada de Investcorp en Connectif AI y la adquisición de ZeroComa por Namirial.\n\nFuentes: ISW, The Guardian, European Commission, European Central Bank, Albia IMAP\n\n## Este mes\n- Mercados y tensión energética: La rentabilidad del bono de EE.UU. a 30 años superó el 5,4% en un contexto de elevada emisión de deuda y con el petróleo Brent cotizando por encima de los 100 dólares.\n\n- Balance del M&A en España: TTR Data registró 2.261 operaciones por 73.803 M€ hasta el tercer trimestre (-6% en volumen de capital), con fuerte peso del sector inmobiliario y tecnológico.\n\n- Marco normativo y alianzas de IA: La Comisión Europea aprobó el Reglamento de Ejecución 2026/2487 para entornos de pruebas de IA, mientras OpenAI y Google Cloud acordaron la integración de modelos frontera en Model Garden.\n\nFuentes: European Commission, AGM Abogados, EUR-Lex, OpenAI"
+  "markdown": "## Hoy\nLa geopolítica global está dominada por una insólita \"declaración de paz\" adoptada por China, Estados Unidos y Rusia durante su primera cumbre tripartita, mientras la ONU alerta de que los ataques a buques en Oriente Medio han elevado el número de marinos fallecidos a al menos 25. Esta situación se agrava debido a que el estrecho de Ormuz opera con tránsitos un 65% por debajo de los niveles previos.\n\nEn el ámbito macrofinanciero, el Bundesbank advierte que el BCE podría verse obligado a subir los tipos de interés de nuevo para contener la inflación de la eurozona, actualmente situada en el 4% en octubre.\n\nDesde el punto de vista tecnológico, Google DeepMind utiliza Gemini 4 Neon, un modelo optimizado que opera a unos 110 tokens por segundo y permite reducir costes en tareas de programación.\n\nFuentes: La ONU alerta de que Ormuz sigue casi cerrado y de que los ataques a buques aumentan, El Bundesbank considera que volver a subir tipos enviaría \"una clara señal\", Gemini 4 Neon: Google setzt im KI-Wettlauf auf Tempo und Preiskampf\n\n## Esta semana\nNvidia ha publicado resultados financieros récord para el tercer trimestre fiscal de 2027, con ingresos por 115.800 millones de dólares, mientras anuncia una proyección de 130.000 millones de dólares para el cuarto trimestre, bajo la dirección interina de Colette Kress. En paralelo, Anthropic debutó en el Nasdaq con el ticker ANT, situando su precio de salida en una horquilla de 70 a 78 dólares por acción, y reportando ingresos de 33.240 millones de dólares en sus primeros nueve meses de 2026.\n\nEl contexto de comercio y sanciones sigue tensado, ya que Pekín intensifica su búsqueda de procesadores avanzados de Nvidia, como los chips H200, para el desarrollo de inteligencia artificial militar.\n\nA nivel interno, la compañía energética Moeve se sumó formalmente a la Alianza Net-Zero MAR, avanzando en la producción de combustible sostenible de aviación (SAF) en San Roque.\n\nFuentes: NVIDIA Announces Financial Results for Third Quarter Fiscal 2027, AI news roundup, November 2026: Nvidia, Anthropic IPO, new models | AI Week, Nvidia stops chip shipments to China as Jensen Huang faces Congressional scrutiny, Moeve begins producing sustainable aviation fuel from used cooking oil at its San Roque Energy Park\n\n## Este mes\nSe está consolidando la aplicación del Digital Omnibus on AI, Reglamento UE 2026/1744, que ha reestructurado el calendario del AI Act al retrasar las obligaciones para los sistemas de IA de alto riesgo de categoría Annex III hasta el 2 de diciembre de 2027, preservando vigentes las prohibiciones.\n\nEn materia de asesoría M&A, Mergermarket ha reportado que Uría Menéndez ha liderado la cuota de mercado en España con 81 operaciones por valor de 37.730 millones de dólares, mientras que Cuatrecasas ha encabezado el volumen de transacciones con 151 operaciones.\n\nSe observa una tendencia estructural de inversión en la península ibérica a través de vehículos de capital privado, destacando fondos tecnológicos como el de Seaya para Europa, con un capital inicial de 600 millones de euros destinado a pymes digitales. Además, el control de inversiones exteriores se mantiene plenamente operativo gracias al Real Decreto-Ley 1/2025, el cual exige la autorización previa del Consejo de Ministros a inversores UE y EFTA en sectores estratégicos hasta finales de diciembre de 2026.\n\nFuentes: The EU AI Act after the 2026 amendments: what applies now and how to prepare, Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables, Seaya launches new fund for European technology companies with €600 million first close, Spain FDI Screening and M&A in 2026: What Cross‑border Buyers and Sellers Must Know\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl sector energético español ofrece oportunidades selectivas de M&A, donde el biomethano destaca con una inversión privada proyectada de 4.800 millones de euros hasta 2030. Se identifican actores clave en el mercado de transacciones con la experiencia de Uría Menéndez (81 operaciones valor de 37.730 M€) y Cuatrecasas (151 transacciones).\n\nFuentes: ENERGY M&A ACTIVITY IN SPAIN FALLS BY 38% IN ONE YEAR, ACCORDANDO ALVAREZ & MARSAL, Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables"
 }
