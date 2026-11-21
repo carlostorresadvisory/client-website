@@ -1,65 +1,96 @@
 {
-  "fecha": "2026-11-20",
+  "fecha": "2026-11-21",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Caída M&A Energía España",
-      "valor": "38% interanual",
-      "fuente": null
+      "etiqueta": "M&A acumulado en España",
+      "valor": "81.328 M€",
+      "fuente": "Confilegal"
     },
     {
-      "etiqueta": "Gemini 4 Neon",
-      "valor": "110 tokens por segundo",
-      "fuente": null
+      "etiqueta": "Rendimiento GPT-6.2 en ARC-AGI-3",
+      "valor": "99,9 %",
+      "fuente": "OpenAI"
     },
     {
-      "etiqueta": "Obligaciones AI Act",
-      "valor": "2 de diciembre de 2027",
-      "fuente": null
+      "etiqueta": "IPC España (octubre)",
+      "valor": "4,9 %",
+      "fuente": "Bolsamania"
+    },
+    {
+      "etiqueta": "Fondo del WFP para 2027",
+      "valor": "12.150 M$",
+      "fuente": "WFP"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 6
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 7
     },
     {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 3
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "GLM"
+      "Gemini"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: GLM"
+    "texto": "Investigación: Gemini · Redacción: Gemini"
   },
   "secciones": [
     {
-      "titulo": "Cifras clave",
-      "lineas": []
-    },
-    {
       "titulo": "Hoy",
-      "lineas": []
+      "lineas": [
+        {
+          "texto": "Tras la cumbre tripartita en China, Donald Trump mantuvo una reunión bilateral de 40 minutos en Shenzhen con Vladimir Putin, en la que el mandatario ruso manifestó su disposición a cerrar el conflicto en Ucrania por vías diplomáticas en un contexto de 1.633.130 bajas acumuladas en su ejército. Sin embargo, la tensión bélica se mantiene alta tras un nuevo ataque masivo con misiles y drones sobre territorio ucraniano que causó al menos 8 muertos y provocó la caída de dos proyectiles en Polonia",
+          "fuente": "Minuto60, LaSexta"
+        },
+        {
+          "texto": "En la escena macroeconómica española, la atención del mercado se dirige hacia la publicación del IPC adelantado de noviembre fijada para el 27 de noviembre, tras registrar un 4,9 % en octubre, en la antesala de las elecciones generales del 29 de noviembre. Paralelamente, el consejero delegado de Kutxabank, Eduardo Ruiz de Gordejuela, confirmó la capacidad de la entidad para ejecutar adquisiciones corporativas, respaldado por una gestora de private equity que administra 600 millones de euros y participa en proyectos por 2.500 millones",
+          "fuente": "Bolsamania, Europa Press"
+        },
+        {
+          "texto": "En el mercado transaccional, TTR Data reporta que la actividad de M&A en España alcanzó las 2.525 operaciones por un importe de 81.328 millones de euros hasta octubre, lo que representa una caída del 3 % en capital y del 14 % en volumen de transacciones. Dentro de este balance, el private equity retrocedió un 13 % hasta los 22.061 millones de euros distribuidos en 347 operaciones, mientras que el venture capital experimentó un repunte del 51 % en volumen monetario hasta los 7.437 millones de euros",
+          "fuente": "Confilegal"
+        }
+      ]
     },
     {
       "titulo": "Esta semana",
-      "lineas": []
+      "lineas": [
+        {
+          "texto": "OpenAI lanzó oficialmente su modelo GPT-6.2 Astra, logrando un 98 % en el benchmark FrontierMath Tier 4 y un 99,9 % en ARC-AGI-3, situándose en el umbral superior de capacidad de automejora. Como respuesta competitiva, Anthropic hizo públicos los rendimientos actualizados de su modelo Claude Fable 5.2",
+          "fuente": "OpenAI, Visual Capitalist"
+        },
+        {
+          "texto": "En el ámbito de la geopolítica y los mercados mundiales, Vladimir Putin sostuvo durante el encuentro trilateral con Donald Trump y Xi Jinping que la responsabilidad del inicio de la guerra en Ucrania recae en los aliados europeos y no en Moscú. En paralelo, el gobernador del Banco de Inglaterra, Andrew Bailey, señaló que la persistencia del conflicto en Oriente Medio y el encarecimiento energético obligarán a aplicar nuevas subidas de tipos de interés. A esta inestabilidad se suma la petición del Programa Mundial de Alimentos, que solicita 12.150 millones de dólares para 2027 con el fin de asistir a 91 millones de personas, destinando 3.200 millones a Oriente Medio, Norte de África y Europa Oriental",
+          "fuente": "Quadratín, Central Banking, WFP"
+        },
+        {
+          "texto": "En la franja del mid-market español, las operaciones de M&A en pymes acumulan un descenso del 15 % hasta noviembre con 1.050 transacciones, registrando un fuerte protagonismo de family offices e inversores privados, que acapararon el 63 % de las compras concentradas en instalaciones eléctricas, fontanería y servicios profesionales. En el terreno de operaciones corporativas concretas, MaserGrup adquirió a través de Fruselva la unidad principal de Skjodt-Barrett Foods, con 100 millones de euros en ventas de alimentación infantil, al tiempo que Stellum Capital tomó una participación mayoritaria en Walter Pack",
+          "fuente": "Head Topics / Expansión, Albia IMAP"
+        }
+      ]
     },
     {
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "En materia de asesoría M&A, Mergermarket ha reportado que Uría Menéndez ha liderado la cuota de mercado en España con 81 operaciones por valor de 37.730 millones de dólares, mientras que Cuatrecasas ha encabezado el volumen de transacciones con 151 operaciones",
-          "fuente": "Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables"
+          "texto": "El Banco Central Europeo mantuvo el tipo de facilidad de depósito en el 2,5 % a finales de octubre a pesar de las tensiones inflacionarias y de la volatilidad del bono francés a 10 años, que alcanzó un máximo del 5,1 %, consolidando la expectativa del mercado sobre una subida de tipos en la reunión del 17 de diciembre",
+          "fuente": "Morningstar"
+        },
+        {
+          "texto": "El mercado español de fusiones y adquisiciones muestra un ajuste estructural hacia operaciones de menor tamaño, donde los fondos de private equity de mid-market han desplegado más de 3.039 millones de euros en estrategias de consolidación industrial mediante build-ups en un contexto de caída general del volumen del 3 al 4 %. Asimismo, el sector tecnológico refleja una intensa aceleración de lanzamientos, contabilizando 13 modelos frontera presentados por OpenAI y Anthropic en la primera mitad del año, acompañada de una rebaja continuada en las tarifas de API hacia el rango de 8 a 40 dólares por millón de tokens en gama alta",
+          "fuente": "Confilegal, BeevR"
         }
       ]
     },
@@ -71,13 +102,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El sector energético español ofrece oportunidades selectivas de M&A, donde el biomethano destaca con una inversión privada proyectada de 4.800 millones de euros hasta 2030. Se identifican actores clave en el mercado de transacciones con la experiencia de Uría Menéndez (81 operaciones valor de 37.730 M€) y Cuatrecasas (151 transacciones)",
-              "fuente": "Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables"
+              "texto": "El repliegue del 15 % en el M&A de pymes españolas convive con una demanda compradora activa liderada por family offices, responsables del 63 % de las operaciones en consultorías, servicios profesionales e instalaciones. Esta dinámica ofrece oportunidades claras para mandatos de venta en procesos de sucesión y consolidación sectorial",
+              "fuente": "Head Topics / Expansión"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa geopolítica global está dominada por una insólita \"declaración de paz\" adoptada por China, Estados Unidos y Rusia durante su primera cumbre tripartita, mientras la ONU alerta de que los ataques a buques en Oriente Medio han elevado el número de marinos fallecidos a al menos 25. Esta situación se agrava debido a que el estrecho de Ormuz opera con tránsitos un 65% por debajo de los niveles previos.\n\nEn el ámbito macrofinanciero, el Bundesbank advierte que el BCE podría verse obligado a subir los tipos de interés de nuevo para contener la inflación de la eurozona, actualmente situada en el 4% en octubre.\n\nDesde el punto de vista tecnológico, Google DeepMind utiliza Gemini 4 Neon, un modelo optimizado que opera a unos 110 tokens por segundo y permite reducir costes en tareas de programación.\n\nFuentes: La ONU alerta de que Ormuz sigue casi cerrado y de que los ataques a buques aumentan, El Bundesbank considera que volver a subir tipos enviaría \"una clara señal\", Gemini 4 Neon: Google setzt im KI-Wettlauf auf Tempo und Preiskampf\n\n## Esta semana\nNvidia ha publicado resultados financieros récord para el tercer trimestre fiscal de 2027, con ingresos por 115.800 millones de dólares, mientras anuncia una proyección de 130.000 millones de dólares para el cuarto trimestre, bajo la dirección interina de Colette Kress. En paralelo, Anthropic debutó en el Nasdaq con el ticker ANT, situando su precio de salida en una horquilla de 70 a 78 dólares por acción, y reportando ingresos de 33.240 millones de dólares en sus primeros nueve meses de 2026.\n\nEl contexto de comercio y sanciones sigue tensado, ya que Pekín intensifica su búsqueda de procesadores avanzados de Nvidia, como los chips H200, para el desarrollo de inteligencia artificial militar.\n\nA nivel interno, la compañía energética Moeve se sumó formalmente a la Alianza Net-Zero MAR, avanzando en la producción de combustible sostenible de aviación (SAF) en San Roque.\n\nFuentes: NVIDIA Announces Financial Results for Third Quarter Fiscal 2027, AI news roundup, November 2026: Nvidia, Anthropic IPO, new models | AI Week, Nvidia stops chip shipments to China as Jensen Huang faces Congressional scrutiny, Moeve begins producing sustainable aviation fuel from used cooking oil at its San Roque Energy Park\n\n## Este mes\nSe está consolidando la aplicación del Digital Omnibus on AI, Reglamento UE 2026/1744, que ha reestructurado el calendario del AI Act al retrasar las obligaciones para los sistemas de IA de alto riesgo de categoría Annex III hasta el 2 de diciembre de 2027, preservando vigentes las prohibiciones.\n\nEn materia de asesoría M&A, Mergermarket ha reportado que Uría Menéndez ha liderado la cuota de mercado en España con 81 operaciones por valor de 37.730 millones de dólares, mientras que Cuatrecasas ha encabezado el volumen de transacciones con 151 operaciones.\n\nSe observa una tendencia estructural de inversión en la península ibérica a través de vehículos de capital privado, destacando fondos tecnológicos como el de Seaya para Europa, con un capital inicial de 600 millones de euros destinado a pymes digitales. Además, el control de inversiones exteriores se mantiene plenamente operativo gracias al Real Decreto-Ley 1/2025, el cual exige la autorización previa del Consejo de Ministros a inversores UE y EFTA en sectores estratégicos hasta finales de diciembre de 2026.\n\nFuentes: The EU AI Act after the 2026 amendments: what applies now and how to prepare, Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables, Seaya launches new fund for European technology companies with €600 million first close, Spain FDI Screening and M&A in 2026: What Cross‑border Buyers and Sellers Must Know\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl sector energético español ofrece oportunidades selectivas de M&A, donde el biomethano destaca con una inversión privada proyectada de 4.800 millones de euros hasta 2030. Se identifican actores clave en el mercado de transacciones con la experiencia de Uría Menéndez (81 operaciones valor de 37.730 M€) y Cuatrecasas (151 transacciones).\n\nFuentes: ENERGY M&A ACTIVITY IN SPAIN FALLS BY 38% IN ONE YEAR, ACCORDANDO ALVAREZ & MARSAL, Mergermarket: Uría and Cuatrecasas top Spain's 9M M&A tables"
+  "markdown": "## Hoy\nTras la cumbre tripartita en China, Donald Trump mantuvo una reunión bilateral de 40 minutos en Shenzhen con Vladimir Putin, en la que el mandatario ruso manifestó su disposición a cerrar el conflicto en Ucrania por vías diplomáticas en un contexto de 1.633.130 bajas acumuladas en su ejército. Sin embargo, la tensión bélica se mantiene alta tras un nuevo ataque masivo con misiles y drones sobre territorio ucraniano que causó al menos 8 muertos y provocó la caída de dos proyectiles en Polonia.\n\nEn la escena macroeconómica española, la atención del mercado se dirige hacia la publicación del IPC adelantado de noviembre fijada para el 27 de noviembre, tras registrar un 4,9 % en octubre, en la antesala de las elecciones generales del 29 de noviembre. Paralelamente, el consejero delegado de Kutxabank, Eduardo Ruiz de Gordejuela, confirmó la capacidad de la entidad para ejecutar adquisiciones corporativas, respaldado por una gestora de private equity que administra 600 millones de euros y participa en proyectos por 2.500 millones.\n\nEn el mercado transaccional, TTR Data reporta que la actividad de M&A en España alcanzó las 2.525 operaciones por un importe de 81.328 millones de euros hasta octubre, lo que representa una caída del 3 % en capital y del 14 % en volumen de transacciones. Dentro de este balance, el private equity retrocedió un 13 % hasta los 22.061 millones de euros distribuidos en 347 operaciones, mientras que el venture capital experimentó un repunte del 51 % en volumen monetario hasta los 7.437 millones de euros.\n\nFuentes: Minuto60, LaSexta, Bolsamania, Europa Press, Confilegal\n\n## Esta semana\nOpenAI lanzó oficialmente su modelo GPT-6.2 Astra, logrando un 98 % en el benchmark FrontierMath Tier 4 y un 99,9 % en ARC-AGI-3, situándose en el umbral superior de capacidad de automejora. Como respuesta competitiva, Anthropic hizo públicos los rendimientos actualizados de su modelo Claude Fable 5.2.\n\nEn el ámbito de la geopolítica y los mercados mundiales, Vladimir Putin sostuvo durante el encuentro trilateral con Donald Trump y Xi Jinping que la responsabilidad del inicio de la guerra en Ucrania recae en los aliados europeos y no en Moscú. En paralelo, el gobernador del Banco de Inglaterra, Andrew Bailey, señaló que la persistencia del conflicto en Oriente Medio y el encarecimiento energético obligarán a aplicar nuevas subidas de tipos de interés. A esta inestabilidad se suma la petición del Programa Mundial de Alimentos, que solicita 12.150 millones de dólares para 2027 con el fin de asistir a 91 millones de personas, destinando 3.200 millones a Oriente Medio, Norte de África y Europa Oriental.\n\nEn la franja del mid-market español, las operaciones de M&A en pymes acumulan un descenso del 15 % hasta noviembre con 1.050 transacciones, registrando un fuerte protagonismo de family offices e inversores privados, que acapararon el 63 % de las compras concentradas en instalaciones eléctricas, fontanería y servicios profesionales. En el terreno de operaciones corporativas concretas, MaserGrup adquirió a través de Fruselva la unidad principal de Skjodt-Barrett Foods, con 100 millones de euros en ventas de alimentación infantil, al tiempo que Stellum Capital tomó una participación mayoritaria en Walter Pack.\n\nFuentes: OpenAI, Visual Capitalist, Quadratín, Central Banking, WFP, Head Topics / Expansión, Albia IMAP\n\n## Este mes\nEl Banco Central Europeo mantuvo el tipo de facilidad de depósito en el 2,5 % a finales de octubre a pesar de las tensiones inflacionarias y de la volatilidad del bono francés a 10 años, que alcanzó un máximo del 5,1 %, consolidando la expectativa del mercado sobre una subida de tipos en la reunión del 17 de diciembre.\n\nEl mercado español de fusiones y adquisiciones muestra un ajuste estructural hacia operaciones de menor tamaño, donde los fondos de private equity de mid-market han desplegado más de 3.039 millones de euros en estrategias de consolidación industrial mediante build-ups en un contexto de caída general del volumen del 3 al 4 %. Asimismo, el sector tecnológico refleja una intensa aceleración de lanzamientos, contabilizando 13 modelos frontera presentados por OpenAI y Anthropic en la primera mitad del año, acompañada de una rebaja continuada en las tarifas de API hacia el rango de 8 a 40 dólares por millón de tokens en gama alta.\n\nFuentes: Morningstar, Confilegal, BeevR\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl repliegue del 15 % en el M&A de pymes españolas convive con una demanda compradora activa liderada por family offices, responsables del 63 % de las operaciones en consultorías, servicios profesionales e instalaciones. Esta dinámica ofrece oportunidades claras para mandatos de venta en procesos de sucesión y consolidación sectorial.\n\nFuentes: Head Topics / Expansión"
 }
