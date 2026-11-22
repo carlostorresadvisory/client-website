@@ -1,66 +1,66 @@
 {
-  "fecha": "2026-11-21",
+  "fecha": "2026-11-22",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "M&A acumulado en España",
-      "valor": "81.328 M€",
-      "fuente": "Confilegal"
+      "etiqueta": "Bajas rusas acumuladas",
+      "valor": "1.637.170",
+      "fuente": "mod.gov.ua"
     },
     {
-      "etiqueta": "Rendimiento GPT-6.2 en ARC-AGI-3",
-      "valor": "99,9 %",
-      "fuente": "OpenAI"
+      "etiqueta": "Flujo marítimo Ormuz",
+      "valor": "-65% vs pre-2026",
+      "fuente": "inss.org.il"
     },
     {
-      "etiqueta": "IPC España (octubre)",
-      "valor": "4,9 %",
-      "fuente": "Bolsamania"
+      "etiqueta": "M&A España hasta oct",
+      "valor": "81.328 M€ (-3%)",
+      "fuente": "Europa Press"
     },
     {
-      "etiqueta": "Fondo del WFP para 2027",
-      "valor": "12.150 M$",
-      "fuente": "WFP"
+      "etiqueta": "Family offices en pymes",
+      "valor": "63% operaciones",
+      "fuente": "El Nacional"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 6
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 7
+      "n": 9
     },
     {
       "horizonte": "Este mes",
-      "n": 3
+      "n": 4
     }
   ],
   "radar": null,
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Gemini"
+      "Nemotron"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Gemini"
+    "texto": "Investigación: Gemini · Redacción: Nemotron"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Tras la cumbre tripartita en China, Donald Trump mantuvo una reunión bilateral de 40 minutos en Shenzhen con Vladimir Putin, en la que el mandatario ruso manifestó su disposición a cerrar el conflicto en Ucrania por vías diplomáticas en un contexto de 1.633.130 bajas acumuladas en su ejército. Sin embargo, la tensión bélica se mantiene alta tras un nuevo ataque masivo con misiles y drones sobre territorio ucraniano que causó al menos 8 muertos y provocó la caída de dos proyectiles en Polonia",
-          "fuente": "Minuto60, LaSexta"
+          "texto": "El parte oficial ucraniano eleva a 1.637.170 las bajas rusas acumuladas desde febrero de 2022 (+2.310 en la última jornada), mientras los hutíes blindan el estrecho de Bab al-Mandeb con fortificaciones y túneles para amenazar el tráfico civil a corta distancia",
+          "fuente": "mod.gov.ua / ISW"
         },
         {
-          "texto": "En la escena macroeconómica española, la atención del mercado se dirige hacia la publicación del IPC adelantado de noviembre fijada para el 27 de noviembre, tras registrar un 4,9 % en octubre, en la antesala de las elecciones generales del 29 de noviembre. Paralelamente, el consejero delegado de Kutxabank, Eduardo Ruiz de Gordejuela, confirmó la capacidad de la entidad para ejecutar adquisiciones corporativas, respaldado por una gestora de private equity que administra 600 millones de euros y participa en proyectos por 2.500 millones",
-          "fuente": "Bolsamania, Europa Press"
+          "texto": "En el frente corporativo vasco, Talde Private Equity ha cerrado la compra del 100% de Elgorriaga Brands (13,7 M€ de ventas en 2025) a Urbasa Global Brands, manteniendo el control en capital vasco",
+          "fuente": "El Economista"
         },
         {
-          "texto": "En el mercado transaccional, TTR Data reporta que la actividad de M&A en España alcanzó las 2.525 operaciones por un importe de 81.328 millones de euros hasta octubre, lo que representa una caída del 3 % en capital y del 14 % en volumen de transacciones. Dentro de este balance, el private equity retrocedió un 13 % hasta los 22.061 millones de euros distribuidos en 347 operaciones, mientras que el venture capital experimentó un repunte del 51 % en volumen monetario hasta los 7.437 millones de euros",
-          "fuente": "Confilegal"
+          "texto": "OpenAI ha presentado GPT-6.2 Astra y Sol, situados en el puesto #2 del Intelligence Index de Artificial Analysis, aunque con tasas de alucinación en pruebas de esfuerzo del 59% y 55% respectivamente",
+          "fuente": "Artificial Analysis"
         }
       ]
     },
@@ -68,16 +68,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "OpenAI lanzó oficialmente su modelo GPT-6.2 Astra, logrando un 98 % en el benchmark FrontierMath Tier 4 y un 99,9 % en ARC-AGI-3, situándose en el umbral superior de capacidad de automejora. Como respuesta competitiva, Anthropic hizo públicos los rendimientos actualizados de su modelo Claude Fable 5.2",
-          "fuente": "OpenAI, Visual Capitalist"
+          "texto": "Un dron impactó contra un buque ruso de Oboronlogistika en el golfo de Finlandia, llevando al primer ministro finlandés Petteri Orpo a avisar de que la guerra de Ucrania se está desbordando al Báltico. En Oriente Medio, aliados de EE. UU. (Golfo, Turquía, Pakistán) intensifican la diplomacia para frenar una campaña aérea conjunta EE. UU.-Israel contra Irán impulsada por Netanyahu",
+          "fuente": "CNN, OPB"
         },
         {
-          "texto": "En el ámbito de la geopolítica y los mercados mundiales, Vladimir Putin sostuvo durante el encuentro trilateral con Donald Trump y Xi Jinping que la responsabilidad del inicio de la guerra en Ucrania recae en los aliados europeos y no en Moscú. En paralelo, el gobernador del Banco de Inglaterra, Andrew Bailey, señaló que la persistencia del conflicto en Oriente Medio y el encarecimiento energético obligarán a aplicar nuevas subidas de tipos de interés. A esta inestabilidad se suma la petición del Programa Mundial de Alimentos, que solicita 12.150 millones de dólares para 2027 con el fin de asistir a 91 millones de personas, destinando 3.200 millones a Oriente Medio, Norte de África y Europa Oriental",
-          "fuente": "Quadratín, Central Banking, WFP"
+          "texto": "Las actas de la Fed de octubre muestran un 10-2 para mantener tipos en 3,75-4,00%, con disidencias a favor de subir y la mayoría viendo alzas futuras por inflación persistente (PCE 3,6% en septiembre). El BCE publicó su Financial Stability Review alertando de la emisión masiva de deuda corporativa ligada a infraestructura de IA y riesgos de refinanciación con tipos neutrales más altos",
+          "fuente": "securities.io, BCE"
         },
         {
-          "texto": "En la franja del mid-market español, las operaciones de M&A en pymes acumulan un descenso del 15 % hasta noviembre con 1.050 transacciones, registrando un fuerte protagonismo de family offices e inversores privados, que acapararon el 63 % de las compras concentradas en instalaciones eléctricas, fontanería y servicios profesionales. En el terreno de operaciones corporativas concretas, MaserGrup adquirió a través de Fruselva la unidad principal de Skjodt-Barrett Foods, con 100 millones de euros en ventas de alimentación infantil, al tiempo que Stellum Capital tomó una participación mayoritaria en Walter Pack",
-          "fuente": "Head Topics / Expansión, Albia IMAP"
+          "texto": "En España, Sodiar concede un préstamo participativo de ~1 M€ a Silmor (materiales de construcción, Calatayud) para nueva línea de morteros. TTR Data cierra octubre con 2.525 operaciones y 81.328 M€ (-14% nº, -3% importe), destacando el repunte del venture capital a 7.437 M€ (+51%)",
+          "fuente": "Capital-Riesgo, Europa Press"
+        },
+        {
+          "texto": "Google lanza Gemini 4 Neon para ingeniería y ciencia a 3$/15$ por millón de tokens entrada/salida. Nvidia reporta 115.800 M$ de ingresos en Q3 FY27 (+103%), respalda build-out de IA con 118.000 M$ en garantías y confirma la parada total de envíos de chips Hopper a China por controles de exportación. Jensen Huang dimitió como CEO el 12-N tras controversias personales; Colette Kress asume interinamente",
+          "fuente": "The Defiant, TechTarget / CASRAI, TechTarget"
         }
       ]
     },
@@ -85,12 +89,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El Banco Central Europeo mantuvo el tipo de facilidad de depósito en el 2,5 % a finales de octubre a pesar de las tensiones inflacionarias y de la volatilidad del bono francés a 10 años, que alcanzó un máximo del 5,1 %, consolidando la expectativa del mercado sobre una subida de tipos en la reunión del 17 de diciembre",
-          "fuente": "Morningstar"
+          "texto": "Los family offices españoles han duplicado su peso en compras de pymes industriales del 33% al 63% (2023-2025/26), huyendo de la inseguridad regulatoria inmobiliaria y resolviendo sucesiones (7 de cada 10 ventas por falta de relevo) a múltiplos medios de ~3x EBITDA. El venture capital español marcó en octubre 654,65 M€ en 28 deals, tirado por la macro-ronda de 545 M€ de ID Finance",
+          "fuente": "El Nacional, El Referente"
         },
         {
-          "texto": "El mercado español de fusiones y adquisiciones muestra un ajuste estructural hacia operaciones de menor tamaño, donde los fondos de private equity de mid-market han desplegado más de 3.039 millones de euros en estrategias de consolidación industrial mediante build-ups en un contexto de caída general del volumen del 3 al 4 %. Asimismo, el sector tecnológico refleja una intensa aceleración de lanzamientos, contabilizando 13 modelos frontera presentados por OpenAI y Anthropic en la primera mitad del año, acompañada de una rebaja continuada en las tarifas de API hacia el rango de 8 a 40 dólares por millón de tokens en gama alta",
-          "fuente": "Confilegal, BeevR"
+          "texto": "Mercados descuentan al menos dos subidas más del BCE llevando el depósito al 2,75% en diciembre por efectos de segunda ronda de la inflación energética. El tráfico por Ormuz permanece estructuralmente un 65% por debajo de niveles pre-2026, limitando exportaciones OPEP pese a escoltas EE. UU",
+          "fuente": "Irish Times, INSS"
         }
       ]
     },
@@ -102,13 +106,13 @@
           "titulo": "Edges para CT Advisory",
           "lineas": [
             {
-              "texto": "El repliegue del 15 % en el M&A de pymes españolas convive con una demanda compradora activa liderada por family offices, responsables del 63 % de las operaciones en consultorías, servicios profesionales e instalaciones. Esta dinámica ofrece oportunidades claras para mandatos de venta en procesos de sucesión y consolidación sectorial",
-              "fuente": "Head Topics / Expansión"
+              "texto": "Talde cierra Elgorriaga (13,7 M€ ventas) manteniendo capital vasco; Sodiar financia a Silmor (~1 M€) para nueva línea productiva; family offices ya copan el 63% de compras de pymes industriales a ~3x EBITDA resolviendo sucesiones. El venture capital español salta a 7.437 M€ YTD (+51%) y octubre cierra en 654,65 M€ liderado por la macro-ronda de ID Finance, señalando apetito por ticket grande en fase tardía",
+              "fuente": "Europa Press / El Referente"
             }
           ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nTras la cumbre tripartita en China, Donald Trump mantuvo una reunión bilateral de 40 minutos en Shenzhen con Vladimir Putin, en la que el mandatario ruso manifestó su disposición a cerrar el conflicto en Ucrania por vías diplomáticas en un contexto de 1.633.130 bajas acumuladas en su ejército. Sin embargo, la tensión bélica se mantiene alta tras un nuevo ataque masivo con misiles y drones sobre territorio ucraniano que causó al menos 8 muertos y provocó la caída de dos proyectiles en Polonia.\n\nEn la escena macroeconómica española, la atención del mercado se dirige hacia la publicación del IPC adelantado de noviembre fijada para el 27 de noviembre, tras registrar un 4,9 % en octubre, en la antesala de las elecciones generales del 29 de noviembre. Paralelamente, el consejero delegado de Kutxabank, Eduardo Ruiz de Gordejuela, confirmó la capacidad de la entidad para ejecutar adquisiciones corporativas, respaldado por una gestora de private equity que administra 600 millones de euros y participa en proyectos por 2.500 millones.\n\nEn el mercado transaccional, TTR Data reporta que la actividad de M&A en España alcanzó las 2.525 operaciones por un importe de 81.328 millones de euros hasta octubre, lo que representa una caída del 3 % en capital y del 14 % en volumen de transacciones. Dentro de este balance, el private equity retrocedió un 13 % hasta los 22.061 millones de euros distribuidos en 347 operaciones, mientras que el venture capital experimentó un repunte del 51 % en volumen monetario hasta los 7.437 millones de euros.\n\nFuentes: Minuto60, LaSexta, Bolsamania, Europa Press, Confilegal\n\n## Esta semana\nOpenAI lanzó oficialmente su modelo GPT-6.2 Astra, logrando un 98 % en el benchmark FrontierMath Tier 4 y un 99,9 % en ARC-AGI-3, situándose en el umbral superior de capacidad de automejora. Como respuesta competitiva, Anthropic hizo públicos los rendimientos actualizados de su modelo Claude Fable 5.2.\n\nEn el ámbito de la geopolítica y los mercados mundiales, Vladimir Putin sostuvo durante el encuentro trilateral con Donald Trump y Xi Jinping que la responsabilidad del inicio de la guerra en Ucrania recae en los aliados europeos y no en Moscú. En paralelo, el gobernador del Banco de Inglaterra, Andrew Bailey, señaló que la persistencia del conflicto en Oriente Medio y el encarecimiento energético obligarán a aplicar nuevas subidas de tipos de interés. A esta inestabilidad se suma la petición del Programa Mundial de Alimentos, que solicita 12.150 millones de dólares para 2027 con el fin de asistir a 91 millones de personas, destinando 3.200 millones a Oriente Medio, Norte de África y Europa Oriental.\n\nEn la franja del mid-market español, las operaciones de M&A en pymes acumulan un descenso del 15 % hasta noviembre con 1.050 transacciones, registrando un fuerte protagonismo de family offices e inversores privados, que acapararon el 63 % de las compras concentradas en instalaciones eléctricas, fontanería y servicios profesionales. En el terreno de operaciones corporativas concretas, MaserGrup adquirió a través de Fruselva la unidad principal de Skjodt-Barrett Foods, con 100 millones de euros en ventas de alimentación infantil, al tiempo que Stellum Capital tomó una participación mayoritaria en Walter Pack.\n\nFuentes: OpenAI, Visual Capitalist, Quadratín, Central Banking, WFP, Head Topics / Expansión, Albia IMAP\n\n## Este mes\nEl Banco Central Europeo mantuvo el tipo de facilidad de depósito en el 2,5 % a finales de octubre a pesar de las tensiones inflacionarias y de la volatilidad del bono francés a 10 años, que alcanzó un máximo del 5,1 %, consolidando la expectativa del mercado sobre una subida de tipos en la reunión del 17 de diciembre.\n\nEl mercado español de fusiones y adquisiciones muestra un ajuste estructural hacia operaciones de menor tamaño, donde los fondos de private equity de mid-market han desplegado más de 3.039 millones de euros en estrategias de consolidación industrial mediante build-ups en un contexto de caída general del volumen del 3 al 4 %. Asimismo, el sector tecnológico refleja una intensa aceleración de lanzamientos, contabilizando 13 modelos frontera presentados por OpenAI y Anthropic en la primera mitad del año, acompañada de una rebaja continuada en las tarifas de API hacia el rango de 8 a 40 dólares por millón de tokens en gama alta.\n\nFuentes: Morningstar, Confilegal, BeevR\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl repliegue del 15 % en el M&A de pymes españolas convive con una demanda compradora activa liderada por family offices, responsables del 63 % de las operaciones en consultorías, servicios profesionales e instalaciones. Esta dinámica ofrece oportunidades claras para mandatos de venta en procesos de sucesión y consolidación sectorial.\n\nFuentes: Head Topics / Expansión"
+  "markdown": "## Hoy\nEl parte oficial ucraniano eleva a 1.637.170 las bajas rusas acumuladas desde febrero de 2022 (+2.310 en la última jornada), mientras los hutíes blindan el estrecho de Bab al-Mandeb con fortificaciones y túneles para amenazar el tráfico civil a corta distancia.\n\nEn el frente corporativo vasco, Talde Private Equity ha cerrado la compra del 100% de Elgorriaga Brands (13,7 M€ de ventas en 2025) a Urbasa Global Brands, manteniendo el control en capital vasco.\n\nOpenAI ha presentado GPT-6.2 Astra y Sol, situados en el puesto #2 del Intelligence Index de Artificial Analysis, aunque con tasas de alucinación en pruebas de esfuerzo del 59% y 55% respectivamente.\n\nFuentes: mod.gov.ua / ISW, El Economista, Artificial Analysis\n\n## Esta semana\nUn dron impactó contra un buque ruso de Oboronlogistika en el golfo de Finlandia, llevando al primer ministro finlandés Petteri Orpo a avisar de que la guerra de Ucrania se está desbordando al Báltico. En Oriente Medio, aliados de EE. UU. (Golfo, Turquía, Pakistán) intensifican la diplomacia para frenar una campaña aérea conjunta EE. UU.-Israel contra Irán impulsada por Netanyahu.\n\nLas actas de la Fed de octubre muestran un 10-2 para mantener tipos en 3,75-4,00%, con disidencias a favor de subir y la mayoría viendo alzas futuras por inflación persistente (PCE 3,6% en septiembre). El BCE publicó su Financial Stability Review alertando de la emisión masiva de deuda corporativa ligada a infraestructura de IA y riesgos de refinanciación con tipos neutrales más altos.\n\nEn España, Sodiar concede un préstamo participativo de ~1 M€ a Silmor (materiales de construcción, Calatayud) para nueva línea de morteros. TTR Data cierra octubre con 2.525 operaciones y 81.328 M€ (-14% nº, -3% importe), destacando el repunte del venture capital a 7.437 M€ (+51%).\n\nGoogle lanza Gemini 4 Neon para ingeniería y ciencia a 3$/15$ por millón de tokens entrada/salida. Nvidia reporta 115.800 M$ de ingresos en Q3 FY27 (+103%), respalda build-out de IA con 118.000 M$ en garantías y confirma la parada total de envíos de chips Hopper a China por controles de exportación. Jensen Huang dimitió como CEO el 12-N tras controversias personales; Colette Kress asume interinamente.\n\nFuentes: CNN, OPB, securities.io, BCE, Capital-Riesgo, Europa Press, The Defiant, TechTarget / CASRAI, TechTarget\n\n## Este mes\nLos family offices españoles han duplicado su peso en compras de pymes industriales del 33% al 63% (2023-2025/26), huyendo de la inseguridad regulatoria inmobiliaria y resolviendo sucesiones (7 de cada 10 ventas por falta de relevo) a múltiplos medios de ~3x EBITDA. El venture capital español marcó en octubre 654,65 M€ en 28 deals, tirado por la macro-ronda de 545 M€ de ID Finance.\n\nMercados descuentan al menos dos subidas más del BCE llevando el depósito al 2,75% en diciembre por efectos de segunda ronda de la inflación energética. El tráfico por Ormuz permanece estructuralmente un 65% por debajo de niveles pre-2026, limitando exportaciones OPEP pese a escoltas EE. UU..\n\nFuentes: El Nacional, El Referente, Irish Times, INSS\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nTalde cierra Elgorriaga (13,7 M€ ventas) manteniendo capital vasco; Sodiar financia a Silmor (~1 M€) para nueva línea productiva; family offices ya copan el 63% de compras de pymes industriales a ~3x EBITDA resolviendo sucesiones. El venture capital español salta a 7.437 M€ YTD (+51%) y octubre cierra en 654,65 M€ liderado por la macro-ronda de ID Finance, señalando apetito por ticket grande en fase tardía.\n\nFuentes: El Economista / Capital-Riesgo / El Nacional, Europa Press / El Referente"
 }
