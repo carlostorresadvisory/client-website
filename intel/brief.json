@@ -1,26 +1,26 @@
 {
-  "fecha": "2026-11-23",
+  "fecha": "2026-11-24",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bajas rusas en Ucrania",
-      "valor": "1.637.170",
-      "fuente": "mod.gov.ua"
+      "etiqueta": "Bloqueo Ormuz",
+      "valor": "2.000 buques",
+      "fuente": "El Periódico"
     },
     {
-      "etiqueta": "Ingresos Nvidia Q3 FY27",
-      "valor": "115.800 M$",
-      "fuente": "TechTarget"
+      "etiqueta": "IPC España",
+      "valor": "4,9 %",
+      "fuente": "Política Electoral"
     },
     {
-      "etiqueta": "Volumen transaccional España hasta sep-2026",
-      "valor": "73.803 M€",
-      "fuente": "AGM Abogados"
+      "etiqueta": "Depósito BCE esperado",
+      "valor": "2,75 %",
+      "fuente": "InvestingLive"
     },
     {
-      "etiqueta": "Tipos facilidad depósito BCE",
-      "valor": "2,50%",
-      "fuente": "Key ECB Interest Rates Official Release"
+      "etiqueta": "Convenios colectivos",
+      "valor": "9,6 M trabajadores",
+      "fuente": "FEMZ"
     }
   ],
   "horizontes": [
@@ -30,11 +30,11 @@
     },
     {
       "horizonte": "Esta semana",
-      "n": 6
+      "n": 5
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,16 +51,16 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Las patrullas y ataques a buques en el Estrecho de Ormuz alcanzan los niveles más altos desde el inicio del conflicto, con al menos 22 ataques confirmados en noviembre según datos marítimos de la UKMTO, impulsados por intentos de Teherán de reassertar control ante la caída de precios del crudo",
-          "fuente": "CNN"
+          "texto": "Ucrania confirma una operación con siete drones marinos en el puerto libio de Bengasi que hunde la corbeta rusa Merkury y el buque logístico MV Avangard, ambos cargados de armamento para las fuerzas de Jalifa Hafter, extendiendo el teatro de guerra al Mediterráneo sur",
+          "fuente": "La Jornada"
         },
         {
-          "texto": "Irán desveló un nuevo lanzador capaz de disparar dos misiles de propelente líquido simultáneamente en una base subterránea, en un evento encabezado por Ahmad Vahidi y Majid Mousavi, que advirtieron de una escalada de respuestas contra EEUU",
-          "fuente": "Al Arabiya"
+          "texto": "Zelensky alerta de que la inteligencia ucraniana detecta preparativos rusos para nuevos ataques a gran escala y reclama a Washington garantías urgentes de suministro constante de sistemas antiaéreos",
+          "fuente": "Infobae"
         },
         {
-          "texto": "El secretario del Tesoro Scott Bessent exigió responsabilidades y transparencia sobre fallos en controles de venta de chips avanzados de IA, apuntando directamente a la firma singapurense Megaspeed por la supuesta desviación clandestina de semiconductores de Nvidia hacia China",
-          "fuente": "TechCrunch"
+          "texto": "El Kremlin confirma a través de Dmitri Peskov que se celebrará una nueva ronda de consultas trilaterales Rusia-EEUU-Ucrania, dando continuidad a la cita de Abu Dabi del 10-11 de noviembre",
+          "fuente": "teleSUR"
         }
       ]
     },
@@ -68,12 +68,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "El Departamento de Comercio de EEUU emitió el 16 de noviembre una regla provisional de emergencia que prohíbe el acceso remoto a chips avanzados de IA a través de centros de datos en terceros países, tapando el flanco de alquiler por horas para entidades de China y otros países del grupo D:5. El BCE publicó su Financial Stability Review el 18 de noviembre, advirtiendo sobre la creciente exposición de los fondos de la eurozona a activos de IA denominados en dólares y los riesgos derivados de desequilibrios fiscales y volatilidad en el endeudamiento soberano",
-          "fuente": "TechCrunch, ECB Financial Stability Review"
+          "texto": "Rusia lanza entre el 20 y el 22 de noviembre un macroataque de represalia con más de 400 drones y 110 misiles (27 balísticos) contra tres puentes sobre el Dniéper en Kiev y la infraestructura crítica de Kievvodokanal, respondiendo al ataque ucraniano contra el puente de Crimea",
+          "fuente": "Resumen Latinoamericano"
         },
         {
-          "texto": "La Comisión de Revisión Económica y de Seguridad EE.UU.-China publicó su informe anual al Congreso el 18 de noviembre, recomendando condicionar la exportación de chips de IA a la capacidad interna estadounidense y restringir el uso de modelos chinos de pesos abiertos en ámbitos sensibles. Los principales laboratorios diversificaron sus carteras de modelos: OpenAI lanzó GPT-6.2 Astra y Sol el 16-17 de noviembre; Google introdujo Gemini 4 Neon el 18 de noviembre; y Anthropic comercializa la escisión de accesos en Claude Fable/Mythos 5.2",
-          "fuente": "CASRAI, Gadgets Now"
+          "texto": "Aliados de EEUU en el Golfo, Turquía y Pakistán intensifican gestiones urgentes a mediados de noviembre para contener el intento de Netanyahu de arrastrar a la administración Trump a una campaña aérea conjunta contra Irán",
+          "fuente": "Los Angeles Times"
+        },
+        {
+          "texto": "En el ámbito institucional español, el Consejo General de Economistas presenta formalmente el Informe Pyme 2026 el 3 de noviembre como herramienta de diagnóstico continuado sobre estrategias, gobierno corporativo y palancas de competitividad de la pyme",
+          "fuente": "Consejo General de Economistas"
+        },
+        {
+          "texto": "A mediados de mes se celebra una jornada estratégica sobre el nuevo mapa de M&A y capital privado en defensa europea e industrial español, con Marktlink Spain, Anta Asset Management y Andersen, destacando oportunidades de integración para pymes de la cadena de valor de defensa",
+          "fuente": "Jornada Defensa Europa"
+        },
+        {
+          "texto": "Los datos de negociación colectiva a cierre de octubre registran 3.162 convenios con efectos económicos en 2026 que cubren a 9.578.780 trabajadores",
+          "fuente": "FEMZ"
         }
       ]
     },
@@ -81,26 +93,50 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Un informe del McKinsey Global Institute publicado en noviembre de 2026 advierte que alrededor del 23% de las importaciones mundiales de mercancías (excluyendo el comercio intraeuropeo) se enfrentan a vulnerabilidades superpuestas por concentración de proveedores y distancia geopolítica, afectando a 10 productos críticos que concentran el 35% de dicha exposición",
-          "fuente": "World Economic Forum / MGI"
-        }
-      ],
-      "subsecciones": [
+          "texto": "Desde el estallido del conflicto en torno a instalaciones nucleares iraníes el 28 de febrero de 2026, el Estrecho de Ormuz permanece prácticamente bloqueado con cerca de 2.000 buques afectados, consolidando una prima de riesgo estructural en los precios internacionales de la energía",
+          "fuente": "El Periódico"
+        },
         {
-          "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "Talde cierra Elgorriaga (13,7 M€ ventas) manteniendo capital vasco; Sodiar financia a Silmor (~1 M€) para nueva línea productiva; family offices ya copan el 63% de compras de pymes industriales a ~3x EBITDA resolviendo sucesiones. El venture capital español salta a 7.437 M€ YTD (+51%) y octubre cierra en 654,65 M€ liderado por la macro-ronda de ID Finance, señalando apetito por ticket grande en fase tardía",
-              "fuente": "Europa Press / El Referente"
-            }
-          ]
+          "texto": "Esa presión energética arrastra la inflación general en España al 4,9 % interanual sostenido en los últimos meses, frente al 3,1 % del ejercicio previo, por el encarecimiento directo del gas y el crudo",
+          "fuente": "Política Electoral"
+        },
+        {
+          "texto": "En la zona euro, la prima de riesgo de la deuda francesa (OAT a 10 años) supera el 5 % y rebasa los 170 puntos básicos de diferencial, impulsada por la elevada deuda pública y la fragmentación parlamentaria rumbo a las presidenciales de primavera, con el bono contenido tras la confirmación de Moody's en Aa3",
+          "fuente": "CaixaBank Research"
+        },
+        {
+          "texto": "En el plano regulatorio, la caducidad del Reglamento General de Exención por Categorías (RGEC) el 31 de diciembre de 2026 obligará a adaptar todas las bases de ayudas estatales y autonómicas a pymes a partir de esa fecha",
+          "fuente": "Comunidad de Madrid"
         }
       ]
     },
     {
       "titulo": "Radar estratégico",
-      "lineas": []
+      "lineas": [],
+      "subsecciones": [
+        {
+          "titulo": "Edges para CT Advisory",
+          "lineas": [
+            {
+              "texto": "Jordi Alberich confirma dinamismo intenso en el segmento pyme catalán y español impulsado por necesidad de escala y fondos con financiación a tipos moderados, alineado con la ventana de integración en defensa que marca la jornada de Marktlink/Anta/Andersen",
+              "fuente": "Foment del Treball, Jornada Defensa Europa"
+            },
+            {
+              "texto": "El Informe Pyme 2026 del Consejo General de Economistas aporta marco de diagnóstico continuado sobre gobierno corporativo y competitividad, útil para due diligence de sucesiones",
+              "fuente": "Consejo General de Economistas"
+            },
+            {
+              "texto": "La caducidad del RGEC el 31-12-2026 obliga a revisar todas las bases de ayudas a pymes, creando urgencia regulatoria en operaciones que dependan de incentivos públicos",
+              "fuente": "Comunidad de Madrid"
+            },
+            {
+              "texto": "Los 3.162 convenios colectivos vigentes cubriendo 9,6 millones de trabajadores fijan el coste laboral real en cualquier valoración de pyme industrial",
+              "fuente": "FEMZ"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "markdown": "## Hoy\nLas patrullas y ataques a buques en el Estrecho de Ormuz alcanzan los niveles más altos desde el inicio del conflicto, con al menos 22 ataques confirmados en noviembre según datos marítimos de la UKMTO, impulsados por intentos de Teherán de reassertar control ante la caída de precios del crudo.\n\nIrán desveló un nuevo lanzador capaz de disparar dos misiles de propelente líquido simultáneamente en una base subterránea, en un evento encabezado por Ahmad Vahidi y Majid Mousavi, que advirtieron de una escalada de respuestas contra EEUU.\n\nEl secretario del Tesoro Scott Bessent exigió responsabilidades y transparencia sobre fallos en controles de venta de chips avanzados de IA, apuntando directamente a la firma singapurense Megaspeed por la supuesta desviación clandestina de semiconductores de Nvidia hacia China.\n\nFuentes: CNN, Al Arabiya, TechCrunch\n\n## Esta semana\nEl Departamento de Comercio de EEUU emitió el 16 de noviembre una regla provisional de emergencia que prohíbe el acceso remoto a chips avanzados de IA a través de centros de datos en terceros países, tapando el flanco de alquiler por horas para entidades de China y otros países del grupo D:5. El BCE publicó su Financial Stability Review el 18 de noviembre, advirtiendo sobre la creciente exposición de los fondos de la eurozona a activos de IA denominados en dólares y los riesgos derivados de desequilibrios fiscales y volatilidad en el endeudamiento soberano.\n\nLa Comisión de Revisión Económica y de Seguridad EE.UU.-China publicó su informe anual al Congreso el 18 de noviembre, recomendando condicionar la exportación de chips de IA a la capacidad interna estadounidense y restringir el uso de modelos chinos de pesos abiertos en ámbitos sensibles. Los principales laboratorios diversificaron sus carteras de modelos: OpenAI lanzó GPT-6.2 Astra y Sol el 16-17 de noviembre; Google introdujo Gemini 4 Neon el 18 de noviembre; y Anthropic comercializa la escisión de accesos en Claude Fable/Mythos 5.2.\n\nFuentes: TechCrunch, ECB Financial Stability Review, CASRAI, Gadgets Now\n\n## Este mes\nUn informe del McKinsey Global Institute publicado en noviembre de 2026 advierte que alrededor del 23% de las importaciones mundiales de mercancías (excluyendo el comercio intraeuropeo) se enfrentan a vulnerabilidades superpuestas por concentración de proveedores y distancia geopolítica, afectando a 10 productos críticos que concentran el 35% de dicha exposición.\n\n### Operaciones y mercado de empresas\nTalde cierra Elgorriaga (13,7 M€ ventas) manteniendo capital vasco; Sodiar financia a Silmor (~1 M€) para nueva línea productiva; family offices ya copan el 63% de compras de pymes industriales a ~3x EBITDA resolviendo sucesiones. El venture capital español salta a 7.437 M€ YTD (+51%) y octubre cierra en 654,65 M€ liderado por la macro-ronda de ID Finance, señalando apetito por ticket grande en fase tardía.\n\nFuentes: World Economic Forum / MGI, El Economista / Capital-Riesgo / El Nacional, Europa Press / El Referente"
+  "markdown": "## Hoy\nUcrania confirma una operación con siete drones marinos en el puerto libio de Bengasi que hunde la corbeta rusa Merkury y el buque logístico MV Avangard, ambos cargados de armamento para las fuerzas de Jalifa Hafter, extendiendo el teatro de guerra al Mediterráneo sur.\n\nZelensky alerta de que la inteligencia ucraniana detecta preparativos rusos para nuevos ataques a gran escala y reclama a Washington garantías urgentes de suministro constante de sistemas antiaéreos.\n\nEl Kremlin confirma a través de Dmitri Peskov que se celebrará una nueva ronda de consultas trilaterales Rusia-EEUU-Ucrania, dando continuidad a la cita de Abu Dabi del 10-11 de noviembre.\n\nFuentes: La Jornada, Infobae, teleSUR\n\n## Esta semana\nRusia lanza entre el 20 y el 22 de noviembre un macroataque de represalia con más de 400 drones y 110 misiles (27 balísticos) contra tres puentes sobre el Dniéper en Kiev y la infraestructura crítica de Kievvodokanal, respondiendo al ataque ucraniano contra el puente de Crimea.\n\nAliados de EEUU en el Golfo, Turquía y Pakistán intensifican gestiones urgentes a mediados de noviembre para contener el intento de Netanyahu de arrastrar a la administración Trump a una campaña aérea conjunta contra Irán.\n\nEn el ámbito institucional español, el Consejo General de Economistas presenta formalmente el Informe Pyme 2026 el 3 de noviembre como herramienta de diagnóstico continuado sobre estrategias, gobierno corporativo y palancas de competitividad de la pyme.\n\nA mediados de mes se celebra una jornada estratégica sobre el nuevo mapa de M&A y capital privado en defensa europea e industrial español, con Marktlink Spain, Anta Asset Management y Andersen, destacando oportunidades de integración para pymes de la cadena de valor de defensa.\n\nLos datos de negociación colectiva a cierre de octubre registran 3.162 convenios con efectos económicos en 2026 que cubren a 9.578.780 trabajadores.\n\nFuentes: Resumen Latinoamericano, Los Angeles Times, Consejo General de Economistas, Jornada Defensa Europa, FEMZ\n\n## Este mes\nDesde el estallido del conflicto en torno a instalaciones nucleares iraníes el 28 de febrero de 2026, el Estrecho de Ormuz permanece prácticamente bloqueado con cerca de 2.000 buques afectados, consolidando una prima de riesgo estructural en los precios internacionales de la energía.\n\nEsa presión energética arrastra la inflación general en España al 4,9 % interanual sostenido en los últimos meses, frente al 3,1 % del ejercicio previo, por el encarecimiento directo del gas y el crudo.\n\nEn la zona euro, la prima de riesgo de la deuda francesa (OAT a 10 años) supera el 5 % y rebasa los 170 puntos básicos de diferencial, impulsada por la elevada deuda pública y la fragmentación parlamentaria rumbo a las presidenciales de primavera, con el bono contenido tras la confirmación de Moody's en Aa3.\n\nEn el plano regulatorio, la caducidad del Reglamento General de Exención por Categorías (RGEC) el 31 de diciembre de 2026 obligará a adaptar todas las bases de ayudas estatales y autonómicas a pymes a partir de esa fecha.\n\nFuentes: El Periódico, Política Electoral, CaixaBank Research, Comunidad de Madrid\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nJordi Alberich confirma dinamismo intenso en el segmento pyme catalán y español impulsado por necesidad de escala y fondos con financiación a tipos moderados, alineado con la ventana de integración en defensa que marca la jornada de Marktlink/Anta/Andersen.\n\nEl Informe Pyme 2026 del Consejo General de Economistas aporta marco de diagnóstico continuado sobre gobierno corporativo y competitividad, útil para due diligence de sucesiones.\n\nLa caducidad del RGEC el 31-12-2026 obliga a revisar todas las bases de ayudas a pymes, creando urgencia regulatoria en operaciones que dependan de incentivos públicos.\n\nLos 3.162 convenios colectivos vigentes cubriendo 9,6 millones de trabajadores fijan el coste laboral real en cualquier valoración de pyme industrial.\n\nFuentes: Foment del Treball, Jornada Defensa Europa, Consejo General de Economistas, Comunidad de Madrid, FEMZ"
 }
