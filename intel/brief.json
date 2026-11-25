@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-24",
+  "fecha": "2026-11-25",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Bloqueo Ormuz",
-      "valor": "2.000 buques",
-      "fuente": "El Periódico"
+      "etiqueta": "Pérdida Nvidia 11 días",
+      "valor": "1 billón $",
+      "fuente": "Dealroom News"
     },
     {
-      "etiqueta": "IPC España",
-      "valor": "4,9 %",
-      "fuente": "Política Electoral"
+      "etiqueta": "Backlog nube Nvidia",
+      "valor": "2,5 billones $",
+      "fuente": "The Motley Fool"
     },
     {
-      "etiqueta": "Depósito BCE esperado",
-      "valor": "2,75 %",
-      "fuente": "InvestingLive"
+      "etiqueta": "Inversión anual infra IA",
+      "valor": "500.000 M$",
+      "fuente": "Forbes"
     },
     {
-      "etiqueta": "Convenios colectivos",
-      "valor": "9,6 M trabajadores",
-      "fuente": "FEMZ"
+      "etiqueta": "Transacciones M&A España 9M 2026",
+      "valor": "2.261",
+      "fuente": "AGM Abogados"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 3
-    },
-    {
-      "horizonte": "Esta semana",
       "n": 5
     },
     {
+      "horizonte": "Esta semana",
+      "n": 7
+    },
+    {
       "horizonte": "Este mes",
-      "n": 4
+      "n": 5
     }
   ],
   "radar": null,
@@ -51,16 +51,12 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Ucrania confirma una operación con siete drones marinos en el puerto libio de Bengasi que hunde la corbeta rusa Merkury y el buque logístico MV Avangard, ambos cargados de armamento para las fuerzas de Jalifa Hafter, extendiendo el teatro de guerra al Mediterráneo sur",
-          "fuente": "La Jornada"
+          "texto": "Putin reconoce el 24 de noviembre que los ataques ucranianos a infraestructuras petroleras rusas obligan a restringir exportaciones de combustible y a subsidios e importaciones récord por vía marítima en octubre de 2026. La coalición saudí intercepta cuatro drones sobre Ras Tanura y bombardea el puerto de Hodeidah, mientras Trump advierte que la financiación para la guerra contra Irán solo alcanza hasta finales de enero",
+          "fuente": "ISW, Gulf News"
         },
         {
-          "texto": "Zelensky alerta de que la inteligencia ucraniana detecta preparativos rusos para nuevos ataques a gran escala y reclama a Washington garantías urgentes de suministro constante de sistemas antiaéreos",
-          "fuente": "Infobae"
-        },
-        {
-          "texto": "El Kremlin confirma a través de Dmitri Peskov que se celebrará una nueva ronda de consultas trilaterales Rusia-EEUU-Ucrania, dando continuidad a la cita de Abu Dabi del 10-11 de noviembre",
-          "fuente": "teleSUR"
+          "texto": "Jensen Huang celebra su primera reunión general tras su repentina reinstalación como CEO de Nvidia (ausencia de 11 días que borró más de 1 billón de dólares de capitalización) y descarta de nuevo un plan formal de sucesión. Informes sectoriales del 24 de noviembre revelan que OpenAI, Anthropic y Google usan IA avanzada para diseñar sus propios chips (\"recursive self-improvement\"), amenazando a medio plazo la dependencia absoluta del hardware de Nvidia. Las acciones de Nvidia caen un 5,86% el 24 de noviembre hasta 155,38 dólares, lastradas por la cautela ante posibles subidas de tipos de la Fed en diciembre",
+          "fuente": "Dealroom News, Business Insider, Gotrade"
         }
       ]
     },
@@ -68,24 +64,24 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Rusia lanza entre el 20 y el 22 de noviembre un macroataque de represalia con más de 400 drones y 110 misiles (27 balísticos) contra tres puentes sobre el Dniéper en Kiev y la infraestructura crítica de Kievvodokanal, respondiendo al ataque ucraniano contra el puente de Crimea",
-          "fuente": "Resumen Latinoamericano"
+          "texto": "\"Europe Defends\" lanza manifiesto el 25 de noviembre exigiendo a la cumbre UE del 26-27 un compromiso histórico (\"whatever it takes\") para Ucrania y un préstamo de hasta 45.000 millones para 2027, alertando de que el sabotaje ruso ya impacta infraestructuras críticas y redes eléctricas europeas",
+          "fuente": "Friends of Europe"
         },
         {
-          "texto": "Aliados de EEUU en el Golfo, Turquía y Pakistán intensifican gestiones urgentes a mediados de noviembre para contener el intento de Netanyahu de arrastrar a la administración Trump a una campaña aérea conjunta contra Irán",
-          "fuente": "Los Angeles Times"
+          "texto": "Análisis postelectorales del 23 de noviembre confirman mayorías demócratas consolidadas en ambas cámaras del Congreso EE. UU., limitando drásticamente la capacidad unilateral de Trump en comercio y fiscalidad en sus últimos dos años",
+          "fuente": "Davis Wright Tremaine"
         },
         {
-          "texto": "En el ámbito institucional español, el Consejo General de Economistas presenta formalmente el Informe Pyme 2026 el 3 de noviembre como herramienta de diagnóstico continuado sobre estrategias, gobierno corporativo y palancas de competitividad de la pyme",
-          "fuente": "Consejo General de Economistas"
+          "texto": "China extiende dos meses (hasta enero 2027) la suspensión de aranceles adicionales del 24% a productos EE. UU. (vigente desde el 9 de noviembre), manteniendo solo el 10% base a la espera de movimientos de Washington",
+          "fuente": "Global Compliance News"
         },
         {
-          "texto": "A mediados de mes se celebra una jornada estratégica sobre el nuevo mapa de M&A y capital privado en defensa europea e industrial español, con Marktlink Spain, Anta Asset Management y Andersen, destacando oportunidades de integración para pymes de la cadena de valor de defensa",
-          "fuente": "Jornada Defensa Europa"
+          "texto": "Nvidia publica resultados 3T fiscal 2027 el 17 de noviembre: ingresos de 11.580 M$ (+103% interanual) impulsados por centros de datos, eleva guía 2028 al 75% y cifra en 2,5 billones $ el backlog en la nube. Google DeepMind lanza Gemini 4 Neon el 18 de noviembre con 61 puntos en el Artificial Analysis Intelligence Index, destacando en eficiencia y tareas complejas de ingeniería de software corporativo",
+          "fuente": "The Motley Fool, Google Blog"
         },
         {
-          "texto": "Los datos de negociación colectiva a cierre de octubre registran 3.162 convenios con efectos económicos en 2026 que cubren a 9.578.780 trabajadores",
-          "fuente": "FEMZ"
+          "texto": "Análisis de infraestructura de finales de noviembre cifran en 500.000 M$ la inversión anual en la cadena física de IA (redes, refrigeración, suministro eléctrico), advirtiendo que las limitaciones de potencia en centros de datos ya son cuello de botella físico. En España, los sectores más activos en mid-market finales de 2026 se concentran en servicios profesionales, tecnología aplicada y agrifood, con valoraciones muy discriminatorias según capacidad de integración tecnológica y defensa de márgenes frente a coste de financiación",
+          "fuente": "Forbes, BMC Corporate Advisory"
         }
       ]
     },
@@ -93,20 +89,12 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Desde el estallido del conflicto en torno a instalaciones nucleares iraníes el 28 de febrero de 2026, el Estrecho de Ormuz permanece prácticamente bloqueado con cerca de 2.000 buques afectados, consolidando una prima de riesgo estructural en los precios internacionales de la energía",
-          "fuente": "El Periódico"
+          "texto": "El BCE publica el 18 de noviembre su Financial Stability Review alertando de vulnerabilidades crecientes en deuda soberana de la eurozona, costes de financiación elevados y riesgos sistémicos por valoraciones excesivas en tecnológicas e interconexiones con fondos no bancarios. Investigaciones de Mediazona y BBC del 22 de noviembre cifran en al menos 490.000 los fallecidos militares rusos registrados en archivos filtrados de Rosstat hasta septiembre 2026, reflejando desgaste demográfico y económico estructural",
+          "fuente": "European Central Bank, Mediazona"
         },
         {
-          "texto": "Esa presión energética arrastra la inflación general en España al 4,9 % interanual sostenido en los últimos meses, frente al 3,1 % del ejercicio previo, por el encarecimiento directo del gas y el crudo",
-          "fuente": "Política Electoral"
-        },
-        {
-          "texto": "En la zona euro, la prima de riesgo de la deuda francesa (OAT a 10 años) supera el 5 % y rebasa los 170 puntos básicos de diferencial, impulsada por la elevada deuda pública y la fragmentación parlamentaria rumbo a las presidenciales de primavera, con el bono contenido tras la confirmación de Moody's en Aa3",
-          "fuente": "CaixaBank Research"
-        },
-        {
-          "texto": "En el plano regulatorio, la caducidad del Reglamento General de Exención por Categorías (RGEC) el 31 de diciembre de 2026 obligará a adaptar todas las bases de ayudas estatales y autonómicas a pymes a partir de esa fecha",
-          "fuente": "Comunidad de Madrid"
+          "texto": "Datos TTR Data a cierre 3T 2026 (publicados octubre) muestran 2.261 transacciones M&A en España por 73.803 M€ (-15% en número, -6% en volumen), confirmando tendencia a operaciones de mayor tamaño y selectividad. Informe METR de principios de noviembre estima que la auto-mejora impulsada por IA ha duplicado el ritmo de desarrollo de Anthropic (~1,9x), comprimiendo en un año el equivalente a dos de progreso técnico anterior. En Private Equity España 9M 2026: 17.263 M€ en 244 transacciones; venture capital: 348 operaciones por 5.338 M€, con apetito sostenido por activos industriales medianos con capacidad de expansión cross-border",
+          "fuente": "AGM Abogados, Dealroom"
         }
       ]
     },
@@ -116,27 +104,10 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": [
-            {
-              "texto": "Jordi Alberich confirma dinamismo intenso en el segmento pyme catalán y español impulsado por necesidad de escala y fondos con financiación a tipos moderados, alineado con la ventana de integración en defensa que marca la jornada de Marktlink/Anta/Andersen",
-              "fuente": "Foment del Treball, Jornada Defensa Europa"
-            },
-            {
-              "texto": "El Informe Pyme 2026 del Consejo General de Economistas aporta marco de diagnóstico continuado sobre gobierno corporativo y competitividad, útil para due diligence de sucesiones",
-              "fuente": "Consejo General de Economistas"
-            },
-            {
-              "texto": "La caducidad del RGEC el 31-12-2026 obliga a revisar todas las bases de ayudas a pymes, creando urgencia regulatoria en operaciones que dependan de incentivos públicos",
-              "fuente": "Comunidad de Madrid"
-            },
-            {
-              "texto": "Los 3.162 convenios colectivos vigentes cubriendo 9,6 millones de trabajadores fijan el coste laboral real en cualquier valoración de pyme industrial",
-              "fuente": "FEMZ"
-            }
-          ]
+          "lineas": []
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nUcrania confirma una operación con siete drones marinos en el puerto libio de Bengasi que hunde la corbeta rusa Merkury y el buque logístico MV Avangard, ambos cargados de armamento para las fuerzas de Jalifa Hafter, extendiendo el teatro de guerra al Mediterráneo sur.\n\nZelensky alerta de que la inteligencia ucraniana detecta preparativos rusos para nuevos ataques a gran escala y reclama a Washington garantías urgentes de suministro constante de sistemas antiaéreos.\n\nEl Kremlin confirma a través de Dmitri Peskov que se celebrará una nueva ronda de consultas trilaterales Rusia-EEUU-Ucrania, dando continuidad a la cita de Abu Dabi del 10-11 de noviembre.\n\nFuentes: La Jornada, Infobae, teleSUR\n\n## Esta semana\nRusia lanza entre el 20 y el 22 de noviembre un macroataque de represalia con más de 400 drones y 110 misiles (27 balísticos) contra tres puentes sobre el Dniéper en Kiev y la infraestructura crítica de Kievvodokanal, respondiendo al ataque ucraniano contra el puente de Crimea.\n\nAliados de EEUU en el Golfo, Turquía y Pakistán intensifican gestiones urgentes a mediados de noviembre para contener el intento de Netanyahu de arrastrar a la administración Trump a una campaña aérea conjunta contra Irán.\n\nEn el ámbito institucional español, el Consejo General de Economistas presenta formalmente el Informe Pyme 2026 el 3 de noviembre como herramienta de diagnóstico continuado sobre estrategias, gobierno corporativo y palancas de competitividad de la pyme.\n\nA mediados de mes se celebra una jornada estratégica sobre el nuevo mapa de M&A y capital privado en defensa europea e industrial español, con Marktlink Spain, Anta Asset Management y Andersen, destacando oportunidades de integración para pymes de la cadena de valor de defensa.\n\nLos datos de negociación colectiva a cierre de octubre registran 3.162 convenios con efectos económicos en 2026 que cubren a 9.578.780 trabajadores.\n\nFuentes: Resumen Latinoamericano, Los Angeles Times, Consejo General de Economistas, Jornada Defensa Europa, FEMZ\n\n## Este mes\nDesde el estallido del conflicto en torno a instalaciones nucleares iraníes el 28 de febrero de 2026, el Estrecho de Ormuz permanece prácticamente bloqueado con cerca de 2.000 buques afectados, consolidando una prima de riesgo estructural en los precios internacionales de la energía.\n\nEsa presión energética arrastra la inflación general en España al 4,9 % interanual sostenido en los últimos meses, frente al 3,1 % del ejercicio previo, por el encarecimiento directo del gas y el crudo.\n\nEn la zona euro, la prima de riesgo de la deuda francesa (OAT a 10 años) supera el 5 % y rebasa los 170 puntos básicos de diferencial, impulsada por la elevada deuda pública y la fragmentación parlamentaria rumbo a las presidenciales de primavera, con el bono contenido tras la confirmación de Moody's en Aa3.\n\nEn el plano regulatorio, la caducidad del Reglamento General de Exención por Categorías (RGEC) el 31 de diciembre de 2026 obligará a adaptar todas las bases de ayudas estatales y autonómicas a pymes a partir de esa fecha.\n\nFuentes: El Periódico, Política Electoral, CaixaBank Research, Comunidad de Madrid\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nJordi Alberich confirma dinamismo intenso en el segmento pyme catalán y español impulsado por necesidad de escala y fondos con financiación a tipos moderados, alineado con la ventana de integración en defensa que marca la jornada de Marktlink/Anta/Andersen.\n\nEl Informe Pyme 2026 del Consejo General de Economistas aporta marco de diagnóstico continuado sobre gobierno corporativo y competitividad, útil para due diligence de sucesiones.\n\nLa caducidad del RGEC el 31-12-2026 obliga a revisar todas las bases de ayudas a pymes, creando urgencia regulatoria en operaciones que dependan de incentivos públicos.\n\nLos 3.162 convenios colectivos vigentes cubriendo 9,6 millones de trabajadores fijan el coste laboral real en cualquier valoración de pyme industrial.\n\nFuentes: Foment del Treball, Jornada Defensa Europa, Consejo General de Economistas, Comunidad de Madrid, FEMZ"
+  "markdown": "## Hoy\nPutin reconoce el 24 de noviembre que los ataques ucranianos a infraestructuras petroleras rusas obligan a restringir exportaciones de combustible y a subsidios e importaciones récord por vía marítima en octubre de 2026. La coalición saudí intercepta cuatro drones sobre Ras Tanura y bombardea el puerto de Hodeidah, mientras Trump advierte que la financiación para la guerra contra Irán solo alcanza hasta finales de enero.\n\nJensen Huang celebra su primera reunión general tras su repentina reinstalación como CEO de Nvidia (ausencia de 11 días que borró más de 1 billón de dólares de capitalización) y descarta de nuevo un plan formal de sucesión. Informes sectoriales del 24 de noviembre revelan que OpenAI, Anthropic y Google usan IA avanzada para diseñar sus propios chips (\"recursive self-improvement\"), amenazando a medio plazo la dependencia absoluta del hardware de Nvidia. Las acciones de Nvidia caen un 5,86% el 24 de noviembre hasta 155,38 dólares, lastradas por la cautela ante posibles subidas de tipos de la Fed en diciembre.\n\nFuentes: ISW, Gulf News, Dealroom News, Business Insider, Gotrade\n\n## Esta semana\n\"Europe Defends\" lanza manifiesto el 25 de noviembre exigiendo a la cumbre UE del 26-27 un compromiso histórico (\"whatever it takes\") para Ucrania y un préstamo de hasta 45.000 millones para 2027, alertando de que el sabotaje ruso ya impacta infraestructuras críticas y redes eléctricas europeas.\n\nAnálisis postelectorales del 23 de noviembre confirman mayorías demócratas consolidadas en ambas cámaras del Congreso EE. UU., limitando drásticamente la capacidad unilateral de Trump en comercio y fiscalidad en sus últimos dos años.\n\nChina extiende dos meses (hasta enero 2027) la suspensión de aranceles adicionales del 24% a productos EE. UU. (vigente desde el 9 de noviembre), manteniendo solo el 10% base a la espera de movimientos de Washington.\n\nNvidia publica resultados 3T fiscal 2027 el 17 de noviembre: ingresos de 11.580 M$ (+103% interanual) impulsados por centros de datos, eleva guía 2028 al 75% y cifra en 2,5 billones $ el backlog en la nube. Google DeepMind lanza Gemini 4 Neon el 18 de noviembre con 61 puntos en el Artificial Analysis Intelligence Index, destacando en eficiencia y tareas complejas de ingeniería de software corporativo.\n\nAnálisis de infraestructura de finales de noviembre cifran en 500.000 M$ la inversión anual en la cadena física de IA (redes, refrigeración, suministro eléctrico), advirtiendo que las limitaciones de potencia en centros de datos ya son cuello de botella físico. En España, los sectores más activos en mid-market finales de 2026 se concentran en servicios profesionales, tecnología aplicada y agrifood, con valoraciones muy discriminatorias según capacidad de integración tecnológica y defensa de márgenes frente a coste de financiación.\n\nFuentes: Friends of Europe, Davis Wright Tremaine, Global Compliance News, The Motley Fool, Google Blog, Forbes, BMC Corporate Advisory\n\n## Este mes\nEl BCE publica el 18 de noviembre su Financial Stability Review alertando de vulnerabilidades crecientes en deuda soberana de la eurozona, costes de financiación elevados y riesgos sistémicos por valoraciones excesivas en tecnológicas e interconexiones con fondos no bancarios. Investigaciones de Mediazona y BBC del 22 de noviembre cifran en al menos 490.000 los fallecidos militares rusos registrados en archivos filtrados de Rosstat hasta septiembre 2026, reflejando desgaste demográfico y económico estructural.\n\nDatos TTR Data a cierre 3T 2026 (publicados octubre) muestran 2.261 transacciones M&A en España por 73.803 M€ (-15% en número, -6% en volumen), confirmando tendencia a operaciones de mayor tamaño y selectividad. Informe METR de principios de noviembre estima que la auto-mejora impulsada por IA ha duplicado el ritmo de desarrollo de Anthropic (~1,9x), comprimiendo en un año el equivalente a dos de progreso técnico anterior. En Private Equity España 9M 2026: 17.263 M€ en 244 transacciones; venture capital: 348 operaciones por 5.338 M€, con apetito sostenido por activos industriales medianos con capacidad de expansión cross-border.\n\nFuentes: European Central Bank, Mediazona, AGM Abogados, Dealroom"
 }
