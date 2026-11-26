@@ -1,40 +1,40 @@
 {
-  "fecha": "2026-11-25",
+  "fecha": "2026-11-26",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Pérdida Nvidia 11 días",
-      "valor": "1 billón $",
-      "fuente": "Dealroom News"
+      "etiqueta": "Uso de armas químicas",
+      "valor": "34 países + UE",
+      "fuente": "The Guardian"
     },
     {
-      "etiqueta": "Backlog nube Nvidia",
-      "valor": "2,5 billones $",
-      "fuente": "The Motley Fool"
+      "etiqueta": "Refino ruso perdido",
+      "valor": "~30 %",
+      "fuente": "ISW"
     },
     {
-      "etiqueta": "Inversión anual infra IA",
-      "valor": "500.000 M$",
-      "fuente": "Forbes"
+      "etiqueta": "Facilidad depósito BCE",
+      "valor": "2,50 %",
+      "fuente": "KPMG"
     },
     {
-      "etiqueta": "Transacciones M&A España 9M 2026",
-      "valor": "2.261",
+      "etiqueta": "M&A España 3T 2026",
+      "valor": ">2.200 ops",
       "fuente": "AGM Abogados"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 5
+      "n": 4
     },
     {
       "horizonte": "Esta semana",
-      "n": 7
+      "n": 4
     },
     {
       "horizonte": "Este mes",
-      "n": 5
+      "n": 4
     }
   ],
   "radar": null,
@@ -51,12 +51,20 @@
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "Putin reconoce el 24 de noviembre que los ataques ucranianos a infraestructuras petroleras rusas obligan a restringir exportaciones de combustible y a subsidios e importaciones récord por vía marítima en octubre de 2026. La coalición saudí intercepta cuatro drones sobre Ras Tanura y bombardea el puerto de Hodeidah, mientras Trump advierte que la financiación para la guerra contra Irán solo alcanza hasta finales de enero",
-          "fuente": "ISW, Gulf News"
+          "texto": "La OPCW confirmó formalmente la presencia de agente antidisturbios (CS) en muestras de trincheras ucranianas atacadas con granadas rusas, lo que motivó una declaración conjunta de 34 países y la UE exigiendo a Moscú el cese inmediato de su uso en el campo de batalla el 25 de noviembre de 2026",
+          "fuente": "The Guardian"
         },
         {
-          "texto": "Jensen Huang celebra su primera reunión general tras su repentina reinstalación como CEO de Nvidia (ausencia de 11 días que borró más de 1 billón de dólares de capitalización) y descarta de nuevo un plan formal de sucesión. Informes sectoriales del 24 de noviembre revelan que OpenAI, Anthropic y Google usan IA avanzada para diseñar sus propios chips (\"recursive self-improvement\"), amenazando a medio plazo la dependencia absoluta del hardware de Nvidia. Las acciones de Nvidia caen un 5,86% el 24 de noviembre hasta 155,38 dólares, lastradas por la cautela ante posibles subidas de tipos de la Fed en diciembre",
-          "fuente": "Dealroom News, Business Insider, Gotrade"
+          "texto": "Negociadores de EE. UU. barajan dos escenarios para Ucrania: cesión del control del Donbás a cambio de plena entrada en la OTAN, o congelación de la línea de frente con garantías de seguridad tipo Artículo 5 sujetas al visto bueno del Congreso e implicación rusa",
+          "fuente": "ISW"
+        },
+        {
+          "texto": "Un petrolero reportó una explosión por un proyectil desconocido a unas 50 millas náuticas al oeste de Dubái el 26 de noviembre, extendiendo el riesgo a la navegación comercial más allá de Ormuz mientras el flujo de crudo regional cae a la mitad de los niveles normales",
+          "fuente": "Insurance Journal"
+        },
+        {
+          "texto": "La Autoridad del Estrecho del Golfo Pérsico (establecida por Irán) añadió 26 remolques y embarcaciones de apoyo a su lista negra el 25 de noviembre, elevando a 266 los buques sancionados por transitar Ormuz sin permiso de Teherán en un intento de asfixiar los servicios de salvaguarda a petroleros",
+          "fuente": "Lloyd's List"
         }
       ]
     },
@@ -64,24 +72,20 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "\"Europe Defends\" lanza manifiesto el 25 de noviembre exigiendo a la cumbre UE del 26-27 un compromiso histórico (\"whatever it takes\") para Ucrania y un préstamo de hasta 45.000 millones para 2027, alertando de que el sabotaje ruso ya impacta infraestructuras críticas y redes eléctricas europeas",
-          "fuente": "Friends of Europe"
+          "texto": "Más de dos docenas de empleados e investigadores internos en OpenAI y Anthropic lanzaron alertas de seguridad sobre modelos frontera no lanzados, advirtiendo que superan la capacidad humana de control y las soluciones técnicas de alineación vigentes",
+          "fuente": "Axios"
         },
         {
-          "texto": "Análisis postelectorales del 23 de noviembre confirman mayorías demócratas consolidadas en ambas cámaras del Congreso EE. UU., limitando drásticamente la capacidad unilateral de Trump en comercio y fiscalidad en sus últimos dos años",
-          "fuente": "Davis Wright Tremaine"
+          "texto": "Putin reconoció públicamente el 24 de noviembre que los ataques ucranianos contra refinerías e infraestructura petrolera rusa (reducción de capacidad de refino ~30 %) imponen una pesada carga financiera, forzando restricciones a la exportación de carburantes y subsidios multimillonarios para el mercado doméstico",
+          "fuente": "ISW"
         },
         {
-          "texto": "China extiende dos meses (hasta enero 2027) la suspensión de aranceles adicionales del 24% a productos EE. UU. (vigente desde el 9 de noviembre), manteniendo solo el 10% base a la espera de movimientos de Washington",
-          "fuente": "Global Compliance News"
+          "texto": "El CGRI iraní intensificó el desarrollo de misiles balísticos híbridos de combustible sólido (combinando propulsores del Haj Qassem con ojivas MaRV tipo Fattah‑1 y Kheibar Shekan‑2) para burlar bloqueos navales estadounidenses, según análisis de inteligencia del 24 de noviembre",
+          "fuente": "Critical Threats"
         },
         {
-          "texto": "Nvidia publica resultados 3T fiscal 2027 el 17 de noviembre: ingresos de 11.580 M$ (+103% interanual) impulsados por centros de datos, eleva guía 2028 al 75% y cifra en 2,5 billones $ el backlog en la nube. Google DeepMind lanza Gemini 4 Neon el 18 de noviembre con 61 puntos en el Artificial Analysis Intelligence Index, destacando en eficiencia y tareas complejas de ingeniería de software corporativo",
-          "fuente": "The Motley Fool, Google Blog"
-        },
-        {
-          "texto": "Análisis de infraestructura de finales de noviembre cifran en 500.000 M$ la inversión anual en la cadena física de IA (redes, refrigeración, suministro eléctrico), advirtiendo que las limitaciones de potencia en centros de datos ya son cuello de botella físico. En España, los sectores más activos en mid-market finales de 2026 se concentran en servicios profesionales, tecnología aplicada y agrifood, con valoraciones muy discriminatorias según capacidad de integración tecnológica y defensa de márgenes frente a coste de financiación",
-          "fuente": "Forbes, BMC Corporate Advisory"
+          "texto": "El BCE publicó su Financial Stability Review el 18‑19 de noviembre advirtiendo sobre el encarecimiento de la deuda soberana y riesgos sistémicos derivados del shock energético en Oriente Medio, la fragmentación comercial y las elevadas valoraciones apalancadas por el optimismo en IA",
+          "fuente": "ECB Banking Supervision"
         }
       ]
     },
@@ -89,12 +93,20 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "El BCE publica el 18 de noviembre su Financial Stability Review alertando de vulnerabilidades crecientes en deuda soberana de la eurozona, costes de financiación elevados y riesgos sistémicos por valoraciones excesivas en tecnológicas e interconexiones con fondos no bancarios. Investigaciones de Mediazona y BBC del 22 de noviembre cifran en al menos 490.000 los fallecidos militares rusos registrados en archivos filtrados de Rosstat hasta septiembre 2026, reflejando desgaste demográfico y económico estructural",
-          "fuente": "European Central Bank, Mediazona"
+          "texto": "Las proyecciones de noviembre sitúan la facilidad de depósito del BCE en el 2,50 % y los tipos de la Fed en el rango 3,75 %‑4,00 %, reflejando una divergencia monetaria marcada por la persistencia de la inflación importada de energía (eurozona rozó el 4 % en octubre) frente al dinamismo inesperado del crecimiento",
+          "fuente": "KPMG"
         },
         {
-          "texto": "Datos TTR Data a cierre 3T 2026 (publicados octubre) muestran 2.261 transacciones M&A en España por 73.803 M€ (-15% en número, -6% en volumen), confirmando tendencia a operaciones de mayor tamaño y selectividad. Informe METR de principios de noviembre estima que la auto-mejora impulsada por IA ha duplicado el ritmo de desarrollo de Anthropic (~1,9x), comprimiendo en un año el equivalente a dos de progreso técnico anterior. En Private Equity España 9M 2026: 17.263 M€ en 244 transacciones; venture capital: 348 operaciones por 5.338 M€, con apetito sostenido por activos industriales medianos con capacidad de expansión cross-border",
-          "fuente": "AGM Abogados, Dealroom"
+          "texto": "Datos acumulados de TTR Data a cierre de 3T 2026 muestran >2.200 transacciones en España, con descenso del 13 %‑15 % en número pero estabilidad o repunte en capital movilizado gracias a operaciones corporativas de mayor escala y tracción de capital extranjero (EE. UU., Francia, Reino Unido)",
+          "fuente": "AGM Abogados"
+        },
+        {
+          "texto": "CaixaBank Research y BBVA Research confirman que el PIB de España crecerá un 2,6 % en 2026, superando a la eurozona (~1 %) y a EE. UU. (~2 %), apoyado en consumo privado, empleo y prima de riesgo contenida entre 60‑65 p.b. (frente a >150 p.b. de Francia)",
+          "fuente": "CaixaBank Research"
+        },
+        {
+          "texto": "Operaciones medianas cerradas en otoño incluyen la adquisición por MaserGrup de la división principal de Skjodt‑Barrett (alimentación infantil, 100 M€ ventas, planta en Indiana, 360 empleados) para Global Fruselva, y la entrada de Stellum Capital como socio mayoritario en Walter Pack (componentes industriales/automoción Vizcaya, >450 empleados) vía ampliación de capital",
+          "fuente": "Fran Hidalgo-Barquero"
         }
       ]
     },
@@ -109,5 +121,5 @@
       ]
     }
   ],
-  "markdown": "## Hoy\nPutin reconoce el 24 de noviembre que los ataques ucranianos a infraestructuras petroleras rusas obligan a restringir exportaciones de combustible y a subsidios e importaciones récord por vía marítima en octubre de 2026. La coalición saudí intercepta cuatro drones sobre Ras Tanura y bombardea el puerto de Hodeidah, mientras Trump advierte que la financiación para la guerra contra Irán solo alcanza hasta finales de enero.\n\nJensen Huang celebra su primera reunión general tras su repentina reinstalación como CEO de Nvidia (ausencia de 11 días que borró más de 1 billón de dólares de capitalización) y descarta de nuevo un plan formal de sucesión. Informes sectoriales del 24 de noviembre revelan que OpenAI, Anthropic y Google usan IA avanzada para diseñar sus propios chips (\"recursive self-improvement\"), amenazando a medio plazo la dependencia absoluta del hardware de Nvidia. Las acciones de Nvidia caen un 5,86% el 24 de noviembre hasta 155,38 dólares, lastradas por la cautela ante posibles subidas de tipos de la Fed en diciembre.\n\nFuentes: ISW, Gulf News, Dealroom News, Business Insider, Gotrade\n\n## Esta semana\n\"Europe Defends\" lanza manifiesto el 25 de noviembre exigiendo a la cumbre UE del 26-27 un compromiso histórico (\"whatever it takes\") para Ucrania y un préstamo de hasta 45.000 millones para 2027, alertando de que el sabotaje ruso ya impacta infraestructuras críticas y redes eléctricas europeas.\n\nAnálisis postelectorales del 23 de noviembre confirman mayorías demócratas consolidadas en ambas cámaras del Congreso EE. UU., limitando drásticamente la capacidad unilateral de Trump en comercio y fiscalidad en sus últimos dos años.\n\nChina extiende dos meses (hasta enero 2027) la suspensión de aranceles adicionales del 24% a productos EE. UU. (vigente desde el 9 de noviembre), manteniendo solo el 10% base a la espera de movimientos de Washington.\n\nNvidia publica resultados 3T fiscal 2027 el 17 de noviembre: ingresos de 11.580 M$ (+103% interanual) impulsados por centros de datos, eleva guía 2028 al 75% y cifra en 2,5 billones $ el backlog en la nube. Google DeepMind lanza Gemini 4 Neon el 18 de noviembre con 61 puntos en el Artificial Analysis Intelligence Index, destacando en eficiencia y tareas complejas de ingeniería de software corporativo.\n\nAnálisis de infraestructura de finales de noviembre cifran en 500.000 M$ la inversión anual en la cadena física de IA (redes, refrigeración, suministro eléctrico), advirtiendo que las limitaciones de potencia en centros de datos ya son cuello de botella físico. En España, los sectores más activos en mid-market finales de 2026 se concentran en servicios profesionales, tecnología aplicada y agrifood, con valoraciones muy discriminatorias según capacidad de integración tecnológica y defensa de márgenes frente a coste de financiación.\n\nFuentes: Friends of Europe, Davis Wright Tremaine, Global Compliance News, The Motley Fool, Google Blog, Forbes, BMC Corporate Advisory\n\n## Este mes\nEl BCE publica el 18 de noviembre su Financial Stability Review alertando de vulnerabilidades crecientes en deuda soberana de la eurozona, costes de financiación elevados y riesgos sistémicos por valoraciones excesivas en tecnológicas e interconexiones con fondos no bancarios. Investigaciones de Mediazona y BBC del 22 de noviembre cifran en al menos 490.000 los fallecidos militares rusos registrados en archivos filtrados de Rosstat hasta septiembre 2026, reflejando desgaste demográfico y económico estructural.\n\nDatos TTR Data a cierre 3T 2026 (publicados octubre) muestran 2.261 transacciones M&A en España por 73.803 M€ (-15% en número, -6% en volumen), confirmando tendencia a operaciones de mayor tamaño y selectividad. Informe METR de principios de noviembre estima que la auto-mejora impulsada por IA ha duplicado el ritmo de desarrollo de Anthropic (~1,9x), comprimiendo en un año el equivalente a dos de progreso técnico anterior. En Private Equity España 9M 2026: 17.263 M€ en 244 transacciones; venture capital: 348 operaciones por 5.338 M€, con apetito sostenido por activos industriales medianos con capacidad de expansión cross-border.\n\nFuentes: European Central Bank, Mediazona, AGM Abogados, Dealroom"
+  "markdown": "## Hoy\nLa OPCW confirmó formalmente la presencia de agente antidisturbios (CS) en muestras de trincheras ucranianas atacadas con granadas rusas, lo que motivó una declaración conjunta de 34 países y la UE exigiendo a Moscú el cese inmediato de su uso en el campo de batalla el 25 de noviembre de 2026.\n\nNegociadores de EE. UU. barajan dos escenarios para Ucrania: cesión del control del Donbás a cambio de plena entrada en la OTAN, o congelación de la línea de frente con garantías de seguridad tipo Artículo 5 sujetas al visto bueno del Congreso e implicación rusa.\n\nUn petrolero reportó una explosión por un proyectil desconocido a unas 50 millas náuticas al oeste de Dubái el 26 de noviembre, extendiendo el riesgo a la navegación comercial más allá de Ormuz mientras el flujo de crudo regional cae a la mitad de los niveles normales.\n\nLa Autoridad del Estrecho del Golfo Pérsico (establecida por Irán) añadió 26 remolques y embarcaciones de apoyo a su lista negra el 25 de noviembre, elevando a 266 los buques sancionados por transitar Ormuz sin permiso de Teherán en un intento de asfixiar los servicios de salvaguarda a petroleros.\n\nFuentes: The Guardian, ISW, Insurance Journal, Lloyd's List\n\n## Esta semana\nMás de dos docenas de empleados e investigadores internos en OpenAI y Anthropic lanzaron alertas de seguridad sobre modelos frontera no lanzados, advirtiendo que superan la capacidad humana de control y las soluciones técnicas de alineación vigentes.\n\nPutin reconoció públicamente el 24 de noviembre que los ataques ucranianos contra refinerías e infraestructura petrolera rusa (reducción de capacidad de refino ~30 %) imponen una pesada carga financiera, forzando restricciones a la exportación de carburantes y subsidios multimillonarios para el mercado doméstico.\n\nEl CGRI iraní intensificó el desarrollo de misiles balísticos híbridos de combustible sólido (combinando propulsores del Haj Qassem con ojivas MaRV tipo Fattah‑1 y Kheibar Shekan‑2) para burlar bloqueos navales estadounidenses, según análisis de inteligencia del 24 de noviembre.\n\nEl BCE publicó su Financial Stability Review el 18‑19 de noviembre advirtiendo sobre el encarecimiento de la deuda soberana y riesgos sistémicos derivados del shock energético en Oriente Medio, la fragmentación comercial y las elevadas valoraciones apalancadas por el optimismo en IA.\n\nFuentes: Axios, ISW, Critical Threats, ECB Banking Supervision\n\n## Este mes\nLas proyecciones de noviembre sitúan la facilidad de depósito del BCE en el 2,50 % y los tipos de la Fed en el rango 3,75 %‑4,00 %, reflejando una divergencia monetaria marcada por la persistencia de la inflación importada de energía (eurozona rozó el 4 % en octubre) frente al dinamismo inesperado del crecimiento.\n\nDatos acumulados de TTR Data a cierre de 3T 2026 muestran >2.200 transacciones en España, con descenso del 13 %‑15 % en número pero estabilidad o repunte en capital movilizado gracias a operaciones corporativas de mayor escala y tracción de capital extranjero (EE. UU., Francia, Reino Unido).\n\nCaixaBank Research y BBVA Research confirman que el PIB de España crecerá un 2,6 % en 2026, superando a la eurozona (~1 %) y a EE. UU. (~2 %), apoyado en consumo privado, empleo y prima de riesgo contenida entre 60‑65 p.b. (frente a >150 p.b. de Francia).\n\nOperaciones medianas cerradas en otoño incluyen la adquisición por MaserGrup de la división principal de Skjodt‑Barrett (alimentación infantil, 100 M€ ventas, planta en Indiana, 360 empleados) para Global Fruselva, y la entrada de Stellum Capital como socio mayoritario en Walter Pack (componentes industriales/automoción Vizcaya, >450 empleados) vía ampliación de capital.\n\nFuentes: KPMG, AGM Abogados, CaixaBank Research, Fran Hidalgo-Barquero"
 }
