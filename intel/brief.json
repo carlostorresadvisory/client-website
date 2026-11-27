@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-11-26",
+  "fecha": "2026-11-27",
   "lectura": "",
   "cifras": [
     {
-      "etiqueta": "Uso de armas químicas",
-      "valor": "34 países + UE",
-      "fuente": "The Guardian"
+      "etiqueta": "Euríbor 12 meses",
+      "valor": "3,315 %",
+      "fuente": "HelpMyCash"
     },
     {
-      "etiqueta": "Refino ruso perdido",
-      "valor": "~30 %",
-      "fuente": "ISW"
+      "etiqueta": "Coste marítimo 2026",
+      "valor": "0 % crecimiento",
+      "fuente": "EFE / UNCTAD"
     },
     {
-      "etiqueta": "Facilidad depósito BCE",
-      "valor": "2,50 %",
-      "fuente": "KPMG"
+      "etiqueta": "M&A energía España",
+      "valor": "-38 % interanual",
+      "fuente": "Capital-Riesgo.es"
     },
     {
-      "etiqueta": "M&A España 3T 2026",
-      "valor": ">2.200 ops",
-      "fuente": "AGM Abogados"
+      "etiqueta": "Ingresos Nvidia 3T27",
+      "valor": "115.800 M$",
+      "fuente": "GlobeNewswire / Nvidia"
     }
   ],
   "horizontes": [
     {
       "horizonte": "Hoy",
-      "n": 4
+      "n": 3
     },
     {
       "horizonte": "Esta semana",
-      "n": 4
+      "n": 5
     },
     {
       "horizonte": "Este mes",
@@ -41,30 +41,22 @@
   "elaboracion": {
     "investigacion": "Gemini",
     "redaccion": [
-      "Nemotron"
+      "GLM"
     ],
     "revision": null,
-    "texto": "Investigación: Gemini · Redacción: Nemotron"
+    "texto": "Investigación: Gemini · Redacción: GLM"
   },
   "secciones": [
     {
       "titulo": "Hoy",
       "lineas": [
         {
-          "texto": "La OPCW confirmó formalmente la presencia de agente antidisturbios (CS) en muestras de trincheras ucranianas atacadas con granadas rusas, lo que motivó una declaración conjunta de 34 países y la UE exigiendo a Moscú el cese inmediato de su uso en el campo de batalla el 25 de noviembre de 2026",
-          "fuente": "The Guardian"
+          "texto": "Las actas del BCE publicadas el 26 de noviembre confirman que \"un gran número de miembros\" respaldó ya en octubre una subida de tipos ante el repunte energético y los riesgos de inflación, aplazando la decisión oficial al 17 de diciembre de 2026. El Euríbor a 12 meses cerrará noviembre en el 3,315 %, su nivel más alto del año y desde julio de 2024, lo que encarecerá las hipotecas variables en unos 90 euros al mes para una hipoteca media de 150.000 euros a 25 años",
+          "fuente": "Cinco Días, HelpMyCash"
         },
         {
-          "texto": "Negociadores de EE. UU. barajan dos escenarios para Ucrania: cesión del control del Donbás a cambio de plena entrada en la OTAN, o congelación de la línea de frente con garantías de seguridad tipo Artículo 5 sujetas al visto bueno del Congreso e implicación rusa",
-          "fuente": "ISW"
-        },
-        {
-          "texto": "Un petrolero reportó una explosión por un proyectil desconocido a unas 50 millas náuticas al oeste de Dubái el 26 de noviembre, extendiendo el riesgo a la navegación comercial más allá de Ormuz mientras el flujo de crudo regional cae a la mitad de los niveles normales",
-          "fuente": "Insurance Journal"
-        },
-        {
-          "texto": "La Autoridad del Estrecho del Golfo Pérsico (establecida por Irán) añadió 26 remolques y embarcaciones de apoyo a su lista negra el 25 de noviembre, elevando a 266 los buques sancionados por transitar Ormuz sin permiso de Teherán en un intento de asfixiar los servicios de salvaguarda a petroleros",
-          "fuente": "Lloyd's List"
+          "texto": "OpenAI anunció el 24 de noviembre que GPT-6.2 ha logrado diseñar proteínas funcionales con un 11 % de tasa de éxito (35 de 350 probadas en laboratorio se adhirieron a dianas de cáncer y trastornos inmunitarios), acercando el diseño farmacológico por instrucciones verbales",
+          "fuente": "Nature / Business Insider"
         }
       ]
     },
@@ -72,20 +64,16 @@
       "titulo": "Esta semana",
       "lineas": [
         {
-          "texto": "Más de dos docenas de empleados e investigadores internos en OpenAI y Anthropic lanzaron alertas de seguridad sobre modelos frontera no lanzados, advirtiendo que superan la capacidad humana de control y las soluciones técnicas de alineación vigentes",
-          "fuente": "Axios"
+          "texto": "El informe Spanish Energy Deal Pulse H1 2026 de Alvarez & Marsal (19 de noviembre) muestra que las transacciones M&A en el sector energético español cayeron un 38 % interanual en los doce meses hasta junio (de 96 a 60 operaciones), con el precio de captura solar desplomándose a 29,7 €/MWh frente a 35,9 €/MWh de 2025, virando el capital hacia almacenamiento, biometano y centros de datos. Análisis sectoriales de mediados de noviembre señalan que el 43 % de las operaciones M&A cerradas en España involucran a una empresa familiar como vendedora, impulsadas por la previsión de que más de 500.000 empresarios se jubilen sin sucesor hacia 2030",
+          "fuente": "Capital-Riesgo.es, Deale"
         },
         {
-          "texto": "Putin reconoció públicamente el 24 de noviembre que los ataques ucranianos contra refinerías e infraestructura petrolera rusa (reducción de capacidad de refino ~30 %) imponen una pesada carga financiera, forzando restricciones a la exportación de carburantes y subsidios multimillonarios para el mercado doméstico",
-          "fuente": "ISW"
+          "texto": "La cumbre de Bruselas finalizada el 26 de noviembre refleja una profunda división en torno a la propuesta de António Costa de recortar 204.000 millones de euros del presupuesto comunitario para articular el plan de reconstrucción y garantías de Ucrania",
+          "fuente": "Resumen Latinoamericano"
         },
         {
-          "texto": "El CGRI iraní intensificó el desarrollo de misiles balísticos híbridos de combustible sólido (combinando propulsores del Haj Qassem con ojivas MaRV tipo Fattah‑1 y Kheibar Shekan‑2) para burlar bloqueos navales estadounidenses, según análisis de inteligencia del 24 de noviembre",
-          "fuente": "Critical Threats"
-        },
-        {
-          "texto": "El BCE publicó su Financial Stability Review el 18‑19 de noviembre advirtiendo sobre el encarecimiento de la deuda soberana y riesgos sistémicos derivados del shock energético en Oriente Medio, la fragmentación comercial y las elevadas valoraciones apalancadas por el optimismo en IA",
-          "fuente": "ECB Banking Supervision"
+          "texto": "Nvidia reportó el 17 de noviembre ingresos de 115.800 millones de dólares en el tercer trimestre fiscal 2027 (+103 % interanual), impulsados por centros de datos (107.600 millones, +110 %) y el inicio de envíos de la plataforma Vera Rubin NVL72, pronosticando 130.000 millones para el cuarto trimestre. Wall Street vivió el 24 de noviembre su mayor rebote desde abril de 2025 (S&P 500 +4,7 %, Nasdaq +6,9 %) tras confirmarse la reincorporación de Jensen Huang como CEO de Nvidia",
+          "fuente": "GlobeNewswire / Nvidia, Saxo Bank"
         }
       ]
     },
@@ -93,20 +81,16 @@
       "titulo": "Este mes",
       "lineas": [
         {
-          "texto": "Las proyecciones de noviembre sitúan la facilidad de depósito del BCE en el 2,50 % y los tipos de la Fed en el rango 3,75 %‑4,00 %, reflejando una divergencia monetaria marcada por la persistencia de la inflación importada de energía (eurozona rozó el 4 % en octubre) frente al dinamismo inesperado del crecimiento",
-          "fuente": "KPMG"
+          "texto": "El informe mensual de TTR Data de octubre revela que el volumen de M&A en España se desplomó a 5.088 millones de euros (-7 % interanual), acumulando 81.328 millones en los diez primeros meses de 2026 (-3,3 %), lastrado por la incertidumbre de la convocatoria electoral general fijada para el 29 de noviembre. Los datos consolidados de TTR Data hasta el cierre del tercer trimestre sitúan el mercado español en 2.261 operaciones por 73.803 millones de euros (-15 % en número y -6 % en importe frente a 2025), con el sector Inmobiliario a la cabeza (510 deals) seguido por Internet y Software (203 deals)",
+          "fuente": "El Español, AGM Abogados / TTR Data"
         },
         {
-          "texto": "Datos acumulados de TTR Data a cierre de 3T 2026 muestran >2.200 transacciones en España, con descenso del 13 %‑15 % en número pero estabilidad o repunte en capital movilizado gracias a operaciones corporativas de mayor escala y tracción de capital extranjero (EE. UU., Francia, Reino Unido)",
-          "fuente": "AGM Abogados"
+          "texto": "Las tablas de Mergermarket a septiembre sitúan a Uría Menéndez como líder en valor con 37.730 millones de dólares en 81 acuerdos (44,9 % de cuota), mientras Cuatrecasas encabeza el volumen por número con 151 operaciones",
+          "fuente": "Iberian Lawyer"
         },
         {
-          "texto": "CaixaBank Research y BBVA Research confirman que el PIB de España crecerá un 2,6 % en 2026, superando a la eurozona (~1 %) y a EE. UU. (~2 %), apoyado en consumo privado, empleo y prima de riesgo contenida entre 60‑65 p.b. (frente a >150 p.b. de Francia)",
-          "fuente": "CaixaBank Research"
-        },
-        {
-          "texto": "Operaciones medianas cerradas en otoño incluyen la adquisición por MaserGrup de la división principal de Skjodt‑Barrett (alimentación infantil, 100 M€ ventas, planta en Indiana, 360 empleados) para Global Fruselva, y la entrada de Stellum Capital como socio mayoritario en Walter Pack (componentes industriales/automoción Vizcaya, >450 empleados) vía ampliación de capital",
-          "fuente": "Fran Hidalgo-Barquero"
+          "texto": "A principios de noviembre, el enviado especial estadounidense Steve Witkoff anunció el 2 de noviembre rondas de diálogo técnico en Abu Dabi mediadas por EE. UU., donde Kiev planteó como mínimos una tregua energética y corredores seguros de navegación en el Mar Negro",
+          "fuente": "La Jornada"
         }
       ]
     },
@@ -116,10 +100,15 @@
       "subsecciones": [
         {
           "titulo": "Edges para CT Advisory",
-          "lineas": []
+          "lineas": [
+            {
+              "texto": "El desplome del 38 % en M&A energético español y la caída del precio de captura solar a 29,7 €/MWh abren oportunidades en asesoramiento para reposicionar carteras hacia almacenamiento, biometano y centros de datos. El 43 % de deals con vendedor familiar y la ola de 500.000 sucesiones pendientes hacia 2030 crean pipeline estructural en family-office advisory y roll-ups sectoriales. La incertidumbre electoral del 29-N lastró el mercado a 5.088 M€ en octubre (-7 % interanual) y 81.328 M€ acumulados (-3,3 %), exigiendo scenario planning regulatorio y fiscal para clientes inversores. Uría Menéndez (37.730 M$, 44,9 % cuota) y Cuatrecasas (151 deals) marcan el benchmark de asesoramiento legal en grandes y medianas transacciones",
+              "fuente": "Capital-Riesgo.es, Deale, El Español, Iberian Lawyer"
+            }
+          ]
         }
       ]
     }
   ],
-  "markdown": "## Hoy\nLa OPCW confirmó formalmente la presencia de agente antidisturbios (CS) en muestras de trincheras ucranianas atacadas con granadas rusas, lo que motivó una declaración conjunta de 34 países y la UE exigiendo a Moscú el cese inmediato de su uso en el campo de batalla el 25 de noviembre de 2026.\n\nNegociadores de EE. UU. barajan dos escenarios para Ucrania: cesión del control del Donbás a cambio de plena entrada en la OTAN, o congelación de la línea de frente con garantías de seguridad tipo Artículo 5 sujetas al visto bueno del Congreso e implicación rusa.\n\nUn petrolero reportó una explosión por un proyectil desconocido a unas 50 millas náuticas al oeste de Dubái el 26 de noviembre, extendiendo el riesgo a la navegación comercial más allá de Ormuz mientras el flujo de crudo regional cae a la mitad de los niveles normales.\n\nLa Autoridad del Estrecho del Golfo Pérsico (establecida por Irán) añadió 26 remolques y embarcaciones de apoyo a su lista negra el 25 de noviembre, elevando a 266 los buques sancionados por transitar Ormuz sin permiso de Teherán en un intento de asfixiar los servicios de salvaguarda a petroleros.\n\nFuentes: The Guardian, ISW, Insurance Journal, Lloyd's List\n\n## Esta semana\nMás de dos docenas de empleados e investigadores internos en OpenAI y Anthropic lanzaron alertas de seguridad sobre modelos frontera no lanzados, advirtiendo que superan la capacidad humana de control y las soluciones técnicas de alineación vigentes.\n\nPutin reconoció públicamente el 24 de noviembre que los ataques ucranianos contra refinerías e infraestructura petrolera rusa (reducción de capacidad de refino ~30 %) imponen una pesada carga financiera, forzando restricciones a la exportación de carburantes y subsidios multimillonarios para el mercado doméstico.\n\nEl CGRI iraní intensificó el desarrollo de misiles balísticos híbridos de combustible sólido (combinando propulsores del Haj Qassem con ojivas MaRV tipo Fattah‑1 y Kheibar Shekan‑2) para burlar bloqueos navales estadounidenses, según análisis de inteligencia del 24 de noviembre.\n\nEl BCE publicó su Financial Stability Review el 18‑19 de noviembre advirtiendo sobre el encarecimiento de la deuda soberana y riesgos sistémicos derivados del shock energético en Oriente Medio, la fragmentación comercial y las elevadas valoraciones apalancadas por el optimismo en IA.\n\nFuentes: Axios, ISW, Critical Threats, ECB Banking Supervision\n\n## Este mes\nLas proyecciones de noviembre sitúan la facilidad de depósito del BCE en el 2,50 % y los tipos de la Fed en el rango 3,75 %‑4,00 %, reflejando una divergencia monetaria marcada por la persistencia de la inflación importada de energía (eurozona rozó el 4 % en octubre) frente al dinamismo inesperado del crecimiento.\n\nDatos acumulados de TTR Data a cierre de 3T 2026 muestran >2.200 transacciones en España, con descenso del 13 %‑15 % en número pero estabilidad o repunte en capital movilizado gracias a operaciones corporativas de mayor escala y tracción de capital extranjero (EE. UU., Francia, Reino Unido).\n\nCaixaBank Research y BBVA Research confirman que el PIB de España crecerá un 2,6 % en 2026, superando a la eurozona (~1 %) y a EE. UU. (~2 %), apoyado en consumo privado, empleo y prima de riesgo contenida entre 60‑65 p.b. (frente a >150 p.b. de Francia).\n\nOperaciones medianas cerradas en otoño incluyen la adquisición por MaserGrup de la división principal de Skjodt‑Barrett (alimentación infantil, 100 M€ ventas, planta en Indiana, 360 empleados) para Global Fruselva, y la entrada de Stellum Capital como socio mayoritario en Walter Pack (componentes industriales/automoción Vizcaya, >450 empleados) vía ampliación de capital.\n\nFuentes: KPMG, AGM Abogados, CaixaBank Research, Fran Hidalgo-Barquero"
+  "markdown": "## Hoy\nLas actas del BCE publicadas el 26 de noviembre confirman que \"un gran número de miembros\" respaldó ya en octubre una subida de tipos ante el repunte energético y los riesgos de inflación, aplazando la decisión oficial al 17 de diciembre de 2026. El Euríbor a 12 meses cerrará noviembre en el 3,315 %, su nivel más alto del año y desde julio de 2024, lo que encarecerá las hipotecas variables en unos 90 euros al mes para una hipoteca media de 150.000 euros a 25 años.\n\nOpenAI anunció el 24 de noviembre que GPT-6.2 ha logrado diseñar proteínas funcionales con un 11 % de tasa de éxito (35 de 350 probadas en laboratorio se adhirieron a dianas de cáncer y trastornos inmunitarios), acercando el diseño farmacológico por instrucciones verbales.\n\nFuentes: Cinco Días, HelpMyCash, Nature / Business Insider\n\n## Esta semana\nEl informe Spanish Energy Deal Pulse H1 2026 de Alvarez & Marsal (19 de noviembre) muestra que las transacciones M&A en el sector energético español cayeron un 38 % interanual en los doce meses hasta junio (de 96 a 60 operaciones), con el precio de captura solar desplomándose a 29,7 €/MWh frente a 35,9 €/MWh de 2025, virando el capital hacia almacenamiento, biometano y centros de datos. Análisis sectoriales de mediados de noviembre señalan que el 43 % de las operaciones M&A cerradas en España involucran a una empresa familiar como vendedora, impulsadas por la previsión de que más de 500.000 empresarios se jubilen sin sucesor hacia 2030.\n\nLa cumbre de Bruselas finalizada el 26 de noviembre refleja una profunda división en torno a la propuesta de António Costa de recortar 204.000 millones de euros del presupuesto comunitario para articular el plan de reconstrucción y garantías de Ucrania.\n\nNvidia reportó el 17 de noviembre ingresos de 115.800 millones de dólares en el tercer trimestre fiscal 2027 (+103 % interanual), impulsados por centros de datos (107.600 millones, +110 %) y el inicio de envíos de la plataforma Vera Rubin NVL72, pronosticando 130.000 millones para el cuarto trimestre. Wall Street vivió el 24 de noviembre su mayor rebote desde abril de 2025 (S&P 500 +4,7 %, Nasdaq +6,9 %) tras confirmarse la reincorporación de Jensen Huang como CEO de Nvidia.\n\nFuentes: Capital-Riesgo.es, Deale, Resumen Latinoamericano, GlobeNewswire / Nvidia, Saxo Bank\n\n## Este mes\nEl informe mensual de TTR Data de octubre revela que el volumen de M&A en España se desplomó a 5.088 millones de euros (-7 % interanual), acumulando 81.328 millones en los diez primeros meses de 2026 (-3,3 %), lastrado por la incertidumbre de la convocatoria electoral general fijada para el 29 de noviembre. Los datos consolidados de TTR Data hasta el cierre del tercer trimestre sitúan el mercado español en 2.261 operaciones por 73.803 millones de euros (-15 % en número y -6 % en importe frente a 2025), con el sector Inmobiliario a la cabeza (510 deals) seguido por Internet y Software (203 deals).\n\nLas tablas de Mergermarket a septiembre sitúan a Uría Menéndez como líder en valor con 37.730 millones de dólares en 81 acuerdos (44,9 % de cuota), mientras Cuatrecasas encabeza el volumen por número con 151 operaciones.\n\nA principios de noviembre, el enviado especial estadounidense Steve Witkoff anunció el 2 de noviembre rondas de diálogo técnico en Abu Dabi mediadas por EE. UU., donde Kiev planteó como mínimos una tregua energética y corredores seguros de navegación en el Mar Negro.\n\nFuentes: El Español, AGM Abogados / TTR Data, Iberian Lawyer, La Jornada\n\n## Radar estratégico\n### Operaciones y mercado de empresas\nEl desplome del 38 % en M&A energético español y la caída del precio de captura solar a 29,7 €/MWh abren oportunidades en asesoramiento para reposicionar carteras hacia almacenamiento, biometano y centros de datos. El 43 % de deals con vendedor familiar y la ola de 500.000 sucesiones pendientes hacia 2030 crean pipeline estructural en family-office advisory y roll-ups sectoriales. La incertidumbre electoral del 29-N lastró el mercado a 5.088 M€ en octubre (-7 % interanual) y 81.328 M€ acumulados (-3,3 %), exigiendo scenario planning regulatorio y fiscal para clientes inversores. Uría Menéndez (37.730 M$, 44,9 % cuota) y Cuatrecasas (151 deals) marcan el benchmark de asesoramiento legal en grandes y medianas transacciones.\n\nFuentes: Capital-Riesgo.es, Deale, El Español, Iberian Lawyer"
 }
